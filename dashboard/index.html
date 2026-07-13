@@ -165,8 +165,11 @@
   <h1>Spending Alerts</h1>
   <p class="updated" id="updated">Loading…</p>
 
-  <h2>Weekly caps</h2>
+  <h2>This pay period</h2>
   <div id="caps"></div>
+
+  <h2>Balance goals</h2>
+  <div id="goals"></div>
 
   <h2>Debt payoff</h2>
   <div id="debt"></div>
@@ -179,6 +182,9 @@
       groceries: "Groceries",
       gas: "Gas",
       going_out: "Going Out",
+      slop: "Slop",
+      dining_out: "Dining Out",
+      gym: "Gym",
       misc_other: "Misc / Other",
     };
 
@@ -194,6 +200,7 @@
     }
 
     function statusFor(spent, cap) {
+      if (cap === null) return "good"; // informational-only category, never alerts
       if (cap === 0) return spent > 0 ? "critical" : "good";
       const pct = spent / cap;
       if (pct >= 1) return "critical";
@@ -210,14 +217,30 @@
     function renderMeter(key, spent, cap) {
       const status = statusFor(spent, cap);
       const meta = STATUS_META[status];
-      const pct = cap > 0 ? Math.min(spent / cap, 1) * 100 : (spent > 0 ? 100 : 0);
       const label = CATEGORY_LABELS[key] || key;
-      const sub = cap > 0
-        ? `${fmt(spent)} of ${fmt(cap)} weekly cap`
-        : (spent > 0 ? `${fmt(spent)} spent (target: $0 this sprint)` : "No spend — on target");
-
       const div = document.createElement("div");
       div.className = "card";
+
+      if (cap === null) {
+        // Informational-only category (e.g. gym) — track spend, never alert.
+        div.innerHTML = `
+          <div class="meter-row">
+            <span class="meter-label">
+              <span class="meter-icon" style="color:${meta.color}">${meta.icon}</span>
+              ${label}
+            </span>
+            <span class="meter-value">${fmt(spent)}</span>
+          </div>
+          <div class="meter-sub">${fmt(spent)} spent this pay period — no cap</div>
+        `;
+        return div;
+      }
+
+      const pct = cap > 0 ? Math.min(spent / cap, 1) * 100 : (spent > 0 ? 100 : 0);
+      const sub = cap > 0
+        ? `${fmt(spent)} of ${fmt(cap)} this pay period`
+        : (spent > 0 ? `${fmt(spent)} spent (target: $0 this sprint)` : "No spend — on target");
+
       div.innerHTML = `
         <div class="meter-row">
           <span class="meter-label">
@@ -232,6 +255,30 @@
         <div class="meter-sub">${sub}</div>
       `;
       return div;
+    }
+
+    function renderGoals(goals) {
+      const container = document.getElementById("goals");
+      container.innerHTML = "";
+      if (!goals) {
+        container.innerHTML = `<div class="card empty">No goals set</div>`;
+        return;
+      }
+      const card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = `
+        <div class="debt-figures">
+          <div>
+            <div class="debt-figure-label">Target checking</div>
+            <div class="debt-figure-value">${fmt(goals.target_checking_balance)}</div>
+          </div>
+          <div>
+            <div class="debt-figure-label">Target savings</div>
+            <div class="debt-figure-value">${fmt(goals.target_savings_balance)}</div>
+          </div>
+        </div>
+      `;
+      container.appendChild(card);
     }
 
     function monthsToPayoff(balance, monthlyPayment, apr) {
@@ -289,7 +336,7 @@
       const container = document.getElementById("unmatched");
       container.innerHTML = "";
       if (!items || items.length === 0) {
-        container.innerHTML = `<div class="empty">Nothing uncategorized this week</div>`;
+        container.innerHTML = `<div class="empty">Nothing uncategorized this pay period</div>`;
         return;
       }
       for (const item of items) {
@@ -309,8 +356,15 @@
         if (!res.ok) throw new Error("data.json not found yet");
         const data = await res.json();
 
-        document.getElementById("updated").textContent =
-          "Updated " + parseLocalDate(data.last_updated).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+        const dateOpts = { year: "numeric", month: "short", day: "numeric" };
+        if (data.period_start && data.period_end) {
+          document.getElementById("updated").textContent =
+            parseLocalDate(data.period_start).toLocaleDateString(undefined, dateOpts) +
+            " – " + parseLocalDate(data.period_end).toLocaleDateString(undefined, dateOpts);
+        } else {
+          document.getElementById("updated").textContent =
+            "Updated " + parseLocalDate(data.last_updated).toLocaleDateString(undefined, dateOpts);
+        }
 
         const capsContainer = document.getElementById("caps");
         capsContainer.innerHTML = "";
@@ -322,6 +376,7 @@
           }
         }
 
+        renderGoals(data.goals);
         renderDebt(data.debt || {});
         renderUnmatched(data.unmatched_transactions);
       } catch (err) {

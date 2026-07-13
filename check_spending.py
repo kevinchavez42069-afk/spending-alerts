@@ -1,8 +1,8 @@
 """
-Weekly spending alert system.
+Bi-weekly spending alert system.
 
-Pulls the last 7 days of transactions from Plaid, checks them against the
-category caps in categories.json, sends a push notification via ntfy.sh
+Pulls the current pay period's transactions from Plaid, checks them against
+the category caps in categories.json, sends a push notification via ntfy.sh
 when you're approaching or over a cap, and writes dashboard/data.json so
 the home-screen dashboard can display current progress.
 
@@ -37,8 +37,18 @@ PLAID_HOSTS = {
     "production": "https://production.plaid.com",
 }
 
+# Pay periods are 14-day blocks starting from this anchor date (a payday).
+PAY_PERIOD_ANCHOR = date(2026, 7, 8)
+
 with open(os.path.join(os.path.dirname(__file__), "categories.json")) as f:
     CATEGORIES = json.load(f)
+
+
+def current_pay_period():
+    today = date.today()
+    period_index = (today - PAY_PERIOD_ANCHOR).days // 14
+    start_date = PAY_PERIOD_ANCHOR + timedelta(days=period_index * 14)
+    return start_date, today
 
 
 # ---------- Plaid setup ----------
@@ -52,10 +62,9 @@ def get_plaid_client():
     return plaid_api.PlaidApi(api_client)
 
 
-def get_last_7_days_transactions():
+def get_pay_period_transactions():
     client = get_plaid_client()
-    end_date = date.today()
-    start_date = end_date - timedelta(days=7)
+    start_date, end_date = current_pay_period()
 
     request = TransactionsGetRequest(
         access_token=PLAID_ACCESS_TOKEN,
@@ -129,23 +138,25 @@ def check_caps_and_alert(totals):
     alerts_sent = []
     for group in ("variable_needs", "variable_wants"):
         for cat, cfg in CATEGORIES[group].items():
-            cap = cfg["weekly_cap"]
+            cap = cfg["biweekly_cap"]
+            if cap is None:
+                continue  # informational-only category (e.g. gym), no alerting
             spent = totals[group][cat]
             label = cat.replace("_", " ").title()
 
             if cap == 0 and spent > 0:
-                msg = f"{label}: ${spent:.2f} spent this week (target: $0 during sprint)"
+                msg = f"{label}: ${spent:.2f} spent this pay period (target: $0 during sprint)"
                 send_ntfy(msg, title="⚠️ Sprint category spend", priority="high")
                 alerts_sent.append(msg)
             elif cap > 0:
                 pct = spent / cap
                 if pct >= 1.0:
-                    msg = f"{label}: ${spent:.2f} of ${cap:.2f} weekly cap — OVER by ${spent - cap:.2f}"
-                    send_ntfy(msg, title="🚨 Over weekly cap", priority="high")
+                    msg = f"{label}: ${spent:.2f} of ${cap:.2f} pay period cap — OVER by ${spent - cap:.2f}"
+                    send_ntfy(msg, title="🚨 Over pay period cap", priority="high")
                     alerts_sent.append(msg)
                 elif pct >= 0.8:
-                    msg = f"{label}: ${spent:.2f} of ${cap:.2f} weekly cap ({pct*100:.0f}%)"
-                    send_ntfy(msg, title="⚠️ Approaching weekly cap", priority="default")
+                    msg = f"{label}: ${spent:.2f} of ${cap:.2f} pay period cap ({pct*100:.0f}%)"
+                    send_ntfy(msg, title="⚠️ Approaching pay period cap", priority="default")
                     alerts_sent.append(msg)
     return alerts_sent
 
@@ -153,14 +164,18 @@ def check_caps_and_alert(totals):
 # ---------- Dashboard data ----------
 
 def write_dashboard_data(totals, unmatched):
+    period_start, period_end = current_pay_period()
     output = {
         "last_updated": date.today().isoformat(),
+        "period_start": period_start.isoformat(),
+        "period_end": period_end.isoformat(),
         "categories": totals,
         "unmatched_transactions": unmatched,
         "caps": {
-            group: {cat: cfg["weekly_cap"] for cat, cfg in CATEGORIES[group].items()}
+            group: {cat: cfg["biweekly_cap"] for cat, cfg in CATEGORIES[group].items()}
             for group in ("variable_needs", "variable_wants")
         },
+        "goals": CATEGORIES["goals"],
         "debt": CATEGORIES["debt"],
     }
     dashboard_path = os.path.join(
@@ -173,7 +188,7 @@ def write_dashboard_data(totals, unmatched):
 # ---------- Main ----------
 
 def main():
-    transactions = get_last_7_days_transactions()
+    transactions = get_pay_period_transactions()
     totals, unmatched = categorize(transactions)
     alerts = check_caps_and_alert(totals)
     write_dashboard_data(totals, unmatched)

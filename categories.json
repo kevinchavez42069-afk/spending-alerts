@@ -8,27 +8,43 @@
   },
   "variable_needs": {
     "groceries": {
-      "weekly_cap": 75.00,
+      "biweekly_cap": 150.00,
       "keywords": ["KROGER", "ALDI", "WAL-MART", "WALMART", "TARGET"]
     },
     "gas": {
-      "weekly_cap": 30.00,
-      "keywords": ["WAWA", "SHEETZ", "EXXON", "BP#", "CITGO", "7-ELEVEN"]
+      "biweekly_cap": 60.00,
+      "keywords": ["WAWA", "SHEETZ", "EXXON", "BP#", "CITGO"]
     }
   },
   "variable_wants": {
+    "dining_out": {
+      "biweekly_cap": 0.00,
+      "keywords": ["DOORDASH", "CHIPOTLE", "UBER EATS", "GRUBHUB"]
+    },
+    "slop": {
+      "biweekly_cap": 0.00,
+      "keywords": ["CLAY MARKET", "7-ELEVEN"]
+    },
+    "gym": {
+      "biweekly_cap": null,
+      "keywords": ["CARY STREET GYM", "GNC", "VITAMIN SHOPPE"]
+    },
     "going_out": {
-      "weekly_cap": 0.00,
+      "biweekly_cap": 0.00,
       "keywords": [
-        "DOORDASH", "UBER", "ELEMENTS", "ECHOSTAGE", "PROJECT GLOW",
-        "SHOTGUN", "TICKETMASTER", "TM *", "FANDUEL", "CHIPOTLE",
-        "CLAY MARKET", "TOBACCO COMPANY", "ABC STORE", "WORLD OF BEER"
+        "ELEMENTS", "ECHOSTAGE", "PROJECT GLOW", "SHOTGUN",
+        "TOBACCO COMPANY", "ABC STORE", "WORLD OF BEER",
+        "TICKETMASTER", "TM *", "FANDUEL", "UBER"
       ]
     },
     "misc_other": {
-      "weekly_cap": 0.00,
+      "biweekly_cap": 0.00,
       "keywords": []
     }
+  },
+  "goals": {
+    "target_checking_balance": 1500.00,
+    "target_savings_balance": 3000.00
   },
   "debt": {
     "delta_amex": {
