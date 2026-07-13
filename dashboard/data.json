@@ -3,17 +3,105 @@
   "period_start": "2026-07-08",
   "period_end": "2026-07-13",
   "categories": {
-    "variable_needs": { "groceries": 24.51, "gas": 0.0 },
-    "variable_wants": { "dining_out": 23.25, "slop": 0.0, "gym": 0.0, "going_out": 69.96, "misc_other": 0.0 }
+    "variable_needs": {
+      "groceries": 24.51,
+      "gas": 0.0
+    },
+    "variable_wants": {
+      "dining_out": 23.25,
+      "slop": 18.0,
+      "gym": 0.0,
+      "going_out": 69.96000000000001,
+      "misc_other": 164.87999999999997
+    }
   },
-  "unmatched_transactions": [],
+  "unmatched_transactions": [
+    {
+      "name": "City of Richmond/Parkh",
+      "amount": 4.45
+    },
+    {
+      "name": "City of Richmond/Parkh",
+      "amount": 4.45
+    },
+    {
+      "name": "City of Richmond/Parkh",
+      "amount": 4.45
+    },
+    {
+      "name": "Fandango",
+      "amount": 36.38
+    },
+    {
+      "name": "PARKING CITY OF RICHMO",
+      "amount": 1.65
+    },
+    {
+      "name": "City of Richmond/Parkh",
+      "amount": 4.45
+    },
+    {
+      "name": "GDP*GoGo Ice Cream Tru",
+      "amount": 7.89
+    },
+    {
+      "name": "Pivot Parking Virginia",
+      "amount": 21.0
+    },
+    {
+      "name": "3 STARS CONVENIENCE",
+      "amount": 17.0
+    },
+    {
+      "name": "TST* CASA DEL BARCO",
+      "amount": 20.9
+    },
+    {
+      "name": "TST* URBAN FARMHOUSE M",
+      "amount": 9.92
+    },
+    {
+      "name": "VILLAGE MARKET",
+      "amount": 3.88
+    },
+    {
+      "name": "ESSENTIAL EXPRESS",
+      "amount": 4.23
+    },
+    {
+      "name": "ANTHROPIC* CLAUDE SUB",
+      "amount": 20.0
+    },
+    {
+      "name": "ESSENTIAL EXPRESS",
+      "amount": 4.23
+    }
+  ],
   "caps": {
-    "variable_needs": { "groceries": 150.0, "gas": 60.0 },
-    "variable_wants": { "dining_out": 0.0, "slop": 0.0, "gym": null, "going_out": 0.0, "misc_other": 0.0 }
+    "variable_needs": {
+      "groceries": 150.0,
+      "gas": 60.0
+    },
+    "variable_wants": {
+      "dining_out": 0.0,
+      "slop": 0.0,
+      "gym": null,
+      "going_out": 0.0,
+      "misc_other": 0.0
+    }
   },
-  "goals": { "target_checking_balance": 1500.0, "target_savings_balance": 3000.0 },
+  "goals": {
+    "target_checking_balance": 1500.0,
+    "target_savings_balance": 3000.0
+  },
   "debt": {
-    "delta_amex": { "starting_balance": 5148.26, "monthly_target": 2429.0, "apr": 0.2824 },
-    "blue_cash_preferred": { "pay_in_full": true }
+    "delta_amex": {
+      "starting_balance": 5148.26,
+      "monthly_target": 2429.0,
+      "apr": 0.2824
+    },
+    "blue_cash_preferred": {
+      "pay_in_full": true
+    }
   }
 }
