@@ -1,0 +1,16 @@
+{
+  "last_updated": "2026-07-12",
+  "categories": {
+    "variable_needs": { "groceries": 0.0, "gas": 0.0 },
+    "variable_wants": { "going_out": 0.0, "misc_other": 0.0 }
+  },
+  "unmatched_transactions": [],
+  "caps": {
+    "variable_needs": { "groceries": 75.0, "gas": 30.0 },
+    "variable_wants": { "going_out": 0.0, "misc_other": 0.0 }
+  },
+  "debt": {
+    "delta_amex": { "starting_balance": 5148.26, "monthly_target": 2429.0, "apr": 0.2824 },
+    "blue_cash_preferred": { "pay_in_full": true }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "fixed": {
+    "rent": { "expected_amount": 850.00, "keywords": ["CVA Properties", "rent"] },
+    "subscriptions": {
+      "allowed": ["AMAZON PRIME", "ANTHROPIC", "SOUNDCLOUD"],
+      "expected_total": 50.98
+    }
+  },
+  "variable_needs": {
+    "groceries": {
+      "weekly_cap": 75.00,
+      "keywords": ["KROGER", "ALDI", "WAL-MART", "WALMART", "TARGET"]
+    },
+    "gas": {
+      "weekly_cap": 30.00,
+      "keywords": ["WAWA", "SHEETZ", "EXXON", "BP#", "CITGO", "7-ELEVEN"]
+    }
+  },
+  "variable_wants": {
+    "going_out": {
+      "weekly_cap": 0.00,
+      "keywords": [
+        "DOORDASH", "UBER", "ELEMENTS", "ECHOSTAGE", "PROJECT GLOW",
+        "SHOTGUN", "TICKETMASTER", "TM *", "FANDUEL", "CHIPOTLE",
+        "CLAY MARKET", "TOBACCO COMPANY", "ABC STORE", "WORLD OF BEER"
+      ]
+    },
+    "misc_other": {
+      "weekly_cap": 0.00,
+      "keywords": []
+    }
+  },
+  "debt": {
+    "delta_amex": {
+      "starting_balance": 5148.26,
+      "monthly_target": 2429.00,
+      "apr": 0.2824
+    },
+    "blue_cash_preferred": {
+      "pay_in_full": true
+    }
+  }
+}

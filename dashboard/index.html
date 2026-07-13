@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Spending Alerts</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<meta name="theme-color" content="#2a78d6">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<style>
+  :root {
+    --page: #f9f9f7;
+    --surface: #fcfcfb;
+    --text-primary: #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted: #898781;
+    --hairline: #e1e0d9;
+    --border: rgba(11,11,11,0.10);
+    --accent: #2a78d6;
+    --accent-track: #cde2fb;
+    --good: #0ca30c;
+    --warning: #fab219;
+    --critical: #d03b3b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --page: #0d0d0d;
+      --surface: #1a1a19;
+      --text-primary: #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted: #898781;
+      --hairline: #2c2c2a;
+      --border: rgba(255,255,255,0.10);
+      --accent: #3987e5;
+      --accent-track: #184f95;
+      --good: #0ca30c;
+      --warning: #fab219;
+      --critical: #d03b3b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--page);
+    color: var(--text-primary);
+    padding: 20px 16px 40px;
+    max-width: 480px;
+    margin-inline: auto;
+  }
+  h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 4px 0 2px;
+  }
+  .updated {
+    color: var(--text-muted);
+    font-size: 13px;
+    margin: 0 0 20px;
+  }
+  h2 {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-secondary);
+    margin: 28px 0 10px;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+  }
+  .meter-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+  }
+  .meter-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .meter-icon { font-size: 13px; line-height: 1; }
+  .meter-value {
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-variant-numeric: tabular-nums;
+  }
+  .meter-track {
+    height: 8px;
+    border-radius: 4px;
+    background: var(--hairline);
+    overflow: hidden;
+  }
+  .meter-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+  .meter-sub {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 6px;
+  }
+  .debt-name {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .debt-figures {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .debt-figure-label {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  .debt-figure-value {
+    font-size: 16px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--good);
+    background: color-mix(in srgb, var(--good) 12%, transparent);
+    padding: 2px 8px;
+    border-radius: 999px;
+  }
+  .unmatched-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .unmatched-item:last-child { border-bottom: none; }
+  .unmatched-name { color: var(--text-primary); }
+  .unmatched-amount { color: var(--text-secondary); font-variant-numeric: tabular-nums; }
+  .empty {
+    color: var(--text-muted);
+    font-size: 13px;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .error {
+    color: var(--critical);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+  <h1>Spending Alerts</h1>
+  <p class="updated" id="updated">Loading…</p>
+
+  <h2>Weekly caps</h2>
+  <div id="caps"></div>
+
+  <h2>Debt payoff</h2>
+  <div id="debt"></div>
+
+  <h2>Unmatched transactions</h2>
+  <div class="card" id="unmatched"></div>
+
+  <script>
+    const CATEGORY_LABELS = {
+      groceries: "Groceries",
+      gas: "Gas",
+      going_out: "Going Out",
+      misc_other: "Misc / Other",
+    };
+
+    function fmt(n) {
+      return "$" + n.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+
+    // Parse "YYYY-MM-DD" as a local date, not UTC midnight (avoids off-by-one
+    // day in timezones behind UTC when only the date, not time, is given).
+    function parseLocalDate(isoDate) {
+      const [y, m, d] = isoDate.split("-").map(Number);
+      return new Date(y, m - 1, d);
+    }
+
+    function statusFor(spent, cap) {
+      if (cap === 0) return spent > 0 ? "critical" : "good";
+      const pct = spent / cap;
+      if (pct >= 1) return "critical";
+      if (pct >= 0.8) return "warning";
+      return "good";
+    }
+
+    const STATUS_META = {
+      good: { icon: "●", color: "var(--good)", label: "on track" },
+      warning: { icon: "▲", color: "var(--warning)", label: "approaching cap" },
+      critical: { icon: "■", color: "var(--critical)", label: "over" },
+    };
+
+    function renderMeter(key, spent, cap) {
+      const status = statusFor(spent, cap);
+      const meta = STATUS_META[status];
+      const pct = cap > 0 ? Math.min(spent / cap, 1) * 100 : (spent > 0 ? 100 : 0);
+      const label = CATEGORY_LABELS[key] || key;
+      const sub = cap > 0
+        ? `${fmt(spent)} of ${fmt(cap)} weekly cap`
+        : (spent > 0 ? `${fmt(spent)} spent (target: $0 this sprint)` : "No spend — on target");
+
+      const div = document.createElement("div");
+      div.className = "card";
+      div.innerHTML = `
+        <div class="meter-row">
+          <span class="meter-label">
+            <span class="meter-icon" style="color:${meta.color}">${meta.icon}</span>
+            ${label}
+          </span>
+          <span class="meter-value">${cap > 0 ? Math.round(pct) + "%" : ""}</span>
+        </div>
+        <div class="meter-track">
+          <div class="meter-fill" style="width:${pct}%; background:${meta.color}"></div>
+        </div>
+        <div class="meter-sub">${sub}</div>
+      `;
+      return div;
+    }
+
+    function monthsToPayoff(balance, monthlyPayment, apr) {
+      const r = apr / 12;
+      if (monthlyPayment <= balance * r) return null; // never pays off
+      return Math.log(monthlyPayment / (monthlyPayment - balance * r)) / Math.log(1 + r);
+    }
+
+    function renderDebt(debt) {
+      const container = document.getElementById("debt");
+      container.innerHTML = "";
+
+      for (const [key, d] of Object.entries(debt)) {
+        const card = document.createElement("div");
+        card.className = "card";
+        const name = key.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+
+        if (d.pay_in_full) {
+          card.innerHTML = `
+            <div class="debt-name">${name}</div>
+            <span class="badge">Paid in full each cycle</span>
+          `;
+        } else {
+          const months = monthsToPayoff(d.starting_balance, d.monthly_target, d.apr);
+          let payoffText = "—";
+          if (months !== null) {
+            const payoffDate = new Date();
+            payoffDate.setDate(payoffDate.getDate() + Math.round(months * 30.4368));
+            payoffText = payoffDate.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+          }
+          card.innerHTML = `
+            <div class="debt-name">${name}</div>
+            <div class="meter-sub">${(d.apr * 100).toFixed(2)}% APR</div>
+            <div class="debt-figures">
+              <div>
+                <div class="debt-figure-label">Balance</div>
+                <div class="debt-figure-value">${fmt(d.starting_balance)}</div>
+              </div>
+              <div>
+                <div class="debt-figure-label">Monthly target</div>
+                <div class="debt-figure-value">${fmt(d.monthly_target)}</div>
+              </div>
+              <div>
+                <div class="debt-figure-label">Est. payoff</div>
+                <div class="debt-figure-value">${payoffText}</div>
+              </div>
+            </div>
+          `;
+        }
+        container.appendChild(card);
+      }
+    }
+
+    function renderUnmatched(items) {
+      const container = document.getElementById("unmatched");
+      container.innerHTML = "";
+      if (!items || items.length === 0) {
+        container.innerHTML = `<div class="empty">Nothing uncategorized this week</div>`;
+        return;
+      }
+      for (const item of items) {
+        const row = document.createElement("div");
+        row.className = "unmatched-item";
+        row.innerHTML = `
+          <span class="unmatched-name">${item.name}</span>
+          <span class="unmatched-amount">${fmt(item.amount)}</span>
+        `;
+        container.appendChild(row);
+      }
+    }
+
+    async function load() {
+      try {
+        const res = await fetch("data.json", { cache: "no-store" });
+        if (!res.ok) throw new Error("data.json not found yet");
+        const data = await res.json();
+
+        document.getElementById("updated").textContent =
+          "Updated " + parseLocalDate(data.last_updated).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+
+        const capsContainer = document.getElementById("caps");
+        capsContainer.innerHTML = "";
+        for (const group of ["variable_needs", "variable_wants"]) {
+          const spentGroup = data.categories[group] || {};
+          const capGroup = data.caps[group] || {};
+          for (const key of Object.keys(capGroup)) {
+            capsContainer.appendChild(renderMeter(key, spentGroup[key] || 0, capGroup[key]));
+          }
+        }
+
+        renderDebt(data.debt || {});
+        renderUnmatched(data.unmatched_transactions);
+      } catch (err) {
+        document.getElementById("updated").innerHTML = `<span class="error">${err.message}</span>`;
+        document.getElementById("caps").innerHTML = `<div class="card empty">No data yet — runs after the first daily check</div>`;
+      }
+    }
+
+    load();
+  </script>
+</body>
+</html>
