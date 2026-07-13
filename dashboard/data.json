@@ -12,10 +12,26 @@
       "slop": 18.0,
       "gym": 0.0,
       "going_out": 69.96000000000001,
-      "misc_other": 164.87999999999997
+      "misc_other": 201.2
     }
   },
   "unmatched_transactions": [
+    {
+      "name": "3 STARS CONVENIENCE",
+      "amount": 17.0
+    },
+    {
+      "name": "ANTHROPIC* CLAUDE SUB",
+      "amount": 20.0
+    },
+    {
+      "name": "GDP*GoGo Ice Cream Tru",
+      "amount": 7.89
+    },
+    {
+      "name": "Starbucks",
+      "amount": 16.32
+    },
     {
       "name": "City of Richmond/Parkh",
       "amount": 4.45
@@ -41,16 +57,8 @@
       "amount": 4.45
     },
     {
-      "name": "GDP*GoGo Ice Cream Tru",
-      "amount": 7.89
-    },
-    {
       "name": "Pivot Parking Virginia",
       "amount": 21.0
-    },
-    {
-      "name": "3 STARS CONVENIENCE",
-      "amount": 17.0
     },
     {
       "name": "TST* CASA DEL BARCO",
