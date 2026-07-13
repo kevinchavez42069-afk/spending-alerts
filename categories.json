@@ -23,7 +23,7 @@
     },
     "slop": {
       "biweekly_cap": 0.00,
-      "keywords": ["CLAY MARKET", "7-ELEVEN"]
+      "keywords": ["CLAYD MARKET", "7-ELEVEN"]
     },
     "gym": {
       "biweekly_cap": null,
@@ -45,6 +45,12 @@
   "goals": {
     "target_checking_balance": 1500.00,
     "target_savings_balance": 3000.00
+  },
+  "excluded": {
+    "keywords": [
+      "AMEX EPAYMENT", "TO SAVINGS", "ZELLE", "CASH APP",
+      "APPLE CASH SENT MONEY", "VENMO"
+    ]
   },
   "debt": {
     "delta_amex": {

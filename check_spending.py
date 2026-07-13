@@ -96,6 +96,7 @@ def categorize(transactions):
         "variable_needs": {cat: 0.0 for cat in CATEGORIES["variable_needs"]},
         "variable_wants": {cat: 0.0 for cat in CATEGORIES["variable_wants"]},
     }
+    excluded_keywords = [kw.upper() for kw in CATEGORIES.get("excluded", {}).get("keywords", [])]
     unmatched = []
 
     for txn in transactions:
@@ -103,6 +104,9 @@ def categorize(transactions):
         if amount <= 0:
             continue  # skip refunds/credits
         name = (txn["name"] or "").upper()
+
+        if any(kw in name for kw in excluded_keywords):
+            continue  # transfer/payment/credit card bill, not discretionary spending
 
         matched = False
         for group in ("variable_needs", "variable_wants"):

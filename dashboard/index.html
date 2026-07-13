@@ -69,6 +69,19 @@
     color: var(--text-secondary);
     margin: 28px 0 10px;
   }
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .categorize-link {
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--accent);
+    text-decoration: none;
+  }
   .card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -174,7 +187,10 @@
   <h2>Debt payoff</h2>
   <div id="debt"></div>
 
-  <h2>Unmatched transactions</h2>
+  <h2 class="section-header">
+    Unmatched transactions
+    <a class="categorize-link" id="categorize-link" href="categorize.html">Categorize &rarr;</a>
+  </h2>
   <div class="card" id="unmatched"></div>
 
   <script>
@@ -334,11 +350,15 @@
 
     function renderUnmatched(items) {
       const container = document.getElementById("unmatched");
+      const link = document.getElementById("categorize-link");
       container.innerHTML = "";
       if (!items || items.length === 0) {
         container.innerHTML = `<div class="empty">Nothing uncategorized this pay period</div>`;
+        link.style.display = "none";
         return;
       }
+      link.style.display = "";
+      link.textContent = `Categorize ${items.length} →`;
       for (const item of items) {
         const row = document.createElement("div");
         row.className = "unmatched-item";
