@@ -116,10 +116,12 @@ def categorize(transactions):
 # ---------- Alerts ----------
 
 def send_ntfy(message, title="Spending Alert", priority="default"):
+    # ntfy expects non-ASCII header values (e.g. emoji in the title) UTF-8
+    # encoded as bytes; HTTP headers are otherwise restricted to Latin-1.
     requests.post(
         f"https://ntfy.sh/{NTFY_TOPIC}",
         data=message.encode("utf-8"),
-        headers={"Title": title, "Priority": priority},
+        headers={"Title": title.encode("utf-8"), "Priority": priority},
     )
 
 
