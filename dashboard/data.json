@@ -1,16 +1,147 @@
 {
-  "last_updated": "2026-07-12",
+  "last_updated": "2026-07-13",
   "categories": {
-    "variable_needs": { "groceries": 0.0, "gas": 0.0 },
-    "variable_wants": { "going_out": 0.0, "misc_other": 0.0 }
+    "variable_needs": {
+      "groceries": 24.51,
+      "gas": 0.0
+    },
+    "variable_wants": {
+      "going_out": 213.21,
+      "misc_other": 3055.38
+    }
   },
-  "unmatched_transactions": [],
+  "unmatched_transactions": [
+    {
+      "name": "CASH APP*MARIELA HERNA",
+      "amount": 7.0
+    },
+    {
+      "name": "City of Richmond/Parkh",
+      "amount": 4.45
+    },
+    {
+      "name": "City of Richmond/Parkh",
+      "amount": 4.45
+    },
+    {
+      "name": "City of Richmond/Parkh",
+      "amount": 4.45
+    },
+    {
+      "name": "Fandango",
+      "amount": 36.38
+    },
+    {
+      "name": "PARKING CITY OF RICHMO",
+      "amount": 1.65
+    },
+    {
+      "name": "*CLAYD MARKET",
+      "amount": 18.0
+    },
+    {
+      "name": "City of Richmond/Parkh",
+      "amount": 4.45
+    },
+    {
+      "name": "GDP*GoGo Ice Cream Tru",
+      "amount": 7.89
+    },
+    {
+      "name": "Pivot Parking Virginia",
+      "amount": 21.0
+    },
+    {
+      "name": "3 STARS CONVENIENCE",
+      "amount": 17.0
+    },
+    {
+      "name": "TST* CASA DEL BARCO",
+      "amount": 20.9
+    },
+    {
+      "name": "TST* URBAN FARMHOUSE M",
+      "amount": 9.92
+    },
+    {
+      "name": "VILLAGE MARKET",
+      "amount": 3.88
+    },
+    {
+      "name": "APPLE CASH SENT MONEY",
+      "amount": 33.5
+    },
+    {
+      "name": "ESSENTIAL EXPRESS",
+      "amount": 4.23
+    },
+    {
+      "name": "Zelle\u00ae Payment to Ama",
+      "amount": 200.0
+    },
+    {
+      "name": "AMEX EPAYMENT",
+      "amount": 1000.0
+    },
+    {
+      "name": "ANTHROPIC* CLAUDE SUB",
+      "amount": 20.0
+    },
+    {
+      "name": "ESSENTIAL EXPRESS",
+      "amount": 4.23
+    },
+    {
+      "name": "To Savings - 8134",
+      "amount": 800.0
+    },
+    {
+      "name": "*CLAYD MARKET",
+      "amount": 10.99
+    },
+    {
+      "name": "Zelle\u00ae Payment to Ama",
+      "amount": 400.0
+    },
+    {
+      "name": "Zelle\u00ae Payment to Apa",
+      "amount": 200.0
+    },
+    {
+      "name": "Zelle\u00ae Payment to Erick",
+      "amount": 200.0
+    },
+    {
+      "name": "Cook Out",
+      "amount": 15.48
+    },
+    {
+      "name": "K H M CONVENIENCE STOR",
+      "amount": 2.61
+    },
+    {
+      "name": "K H M CONVENIENCE STOR",
+      "amount": 2.92
+    }
+  ],
   "caps": {
-    "variable_needs": { "groceries": 75.0, "gas": 30.0 },
-    "variable_wants": { "going_out": 0.0, "misc_other": 0.0 }
+    "variable_needs": {
+      "groceries": 75.0,
+      "gas": 30.0
+    },
+    "variable_wants": {
+      "going_out": 0.0,
+      "misc_other": 0.0
+    }
   },
   "debt": {
-    "delta_amex": { "starting_balance": 5148.26, "monthly_target": 2429.0, "apr": 0.2824 },
-    "blue_cash_preferred": { "pay_in_full": true }
+    "delta_amex": {
+      "starting_balance": 5148.26,
+      "monthly_target": 2429.0,
+      "apr": 0.2824
+    },
+    "blue_cash_preferred": {
+      "pay_in_full": true
+    }
   }
 }
