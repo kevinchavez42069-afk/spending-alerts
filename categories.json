@@ -103,10 +103,12 @@
     "delta_amex": {
       "starting_balance": 5148.26,
       "monthly_target": 2429,
-      "apr": 0.2824
+      "apr": 0.2824,
+      "account_keywords": ["DELTA", "SKYMILES"]
     },
     "blue_cash_preferred": {
-      "pay_in_full": true
+      "pay_in_full": true,
+      "account_keywords": ["BLUE CASH"]
     }
   }
 }

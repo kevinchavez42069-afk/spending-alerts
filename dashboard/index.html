@@ -320,9 +320,11 @@
         const name = key.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
 
         if (d.pay_in_full) {
+          const hasBalance = d.current_balance !== null && d.current_balance !== undefined;
           card.innerHTML = `
             <div class="debt-name">${name}</div>
             <span class="badge">Paid in full each cycle</span>
+            ${hasBalance ? `<div class="meter-sub" style="margin-top:8px">Current balance ${fmt(d.current_balance)}</div>` : ""}
           `;
         } else {
           const isLive = d.current_balance !== null && d.current_balance !== undefined;

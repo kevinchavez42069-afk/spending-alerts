@@ -110,11 +110,11 @@ def get_pay_period_transactions():
 
 
 def get_live_balances():
-    """Fetch current balances across every linked account and pick out the
-    checking, savings, and (first) credit card accounts by subtype. Assumes
-    one checking, one savings, and one credit account across all linked
-    items - fine for now, but would need per-account_id mapping if a second
-    credit card ever gets linked."""
+    """Fetch current balances across every linked account. Checking/savings
+    are picked out by subtype; credit accounts are matched to a debt entry
+    in categories.json by account_keywords against the account's name, since
+    more than one credit card can be linked (e.g. two Amex cards under one
+    Item)."""
     client = get_plaid_client()
     accounts = []
     for access_token in PLAID_ACCESS_TOKENS.values():
@@ -122,17 +122,28 @@ def get_live_balances():
         response = client.accounts_balance_get(request)
         accounts.extend(response["accounts"])
 
-    # TEMP DEBUG - type/subtype only, no names or balances - remove after diagnosing.
-    print(f"DEBUG account types: {[(str(a['type']), str(a['subtype'])) for a in accounts]}")
+    # Plaid's subtype/type fields are enums, not plain strings, so they must
+    # be str()-cast before comparing to a literal - direct == against a
+    # string is always False even though they print identically.
+    checking = next((a for a in accounts if str(a["subtype"]) == "checking"), None)
+    savings = next((a for a in accounts if str(a["subtype"]) == "savings"), None)
+    credit_accounts = [a for a in accounts if str(a["type"]) == "credit"]
 
-    checking = next((a for a in accounts if a["subtype"] == "checking"), None)
-    savings = next((a for a in accounts if a["subtype"] == "savings"), None)
-    credit = next((a for a in accounts if a["type"] == "credit"), None)
+    credit_balances = {}
+    for debt_key, debt_cfg in CATEGORIES.get("debt", {}).items():
+        keywords = [kw.upper() for kw in debt_cfg.get("account_keywords", [])]
+        if not keywords:
+            continue
+        for acct in credit_accounts:
+            label = f"{acct['name'] or ''} {acct['official_name'] or ''}".upper()
+            if any(kw in label for kw in keywords):
+                credit_balances[debt_key] = acct["balances"]["current"]
+                break
 
     return {
         "checking_balance": checking["balances"]["current"] if checking else None,
         "savings_balance": savings["balances"]["current"] if savings else None,
-        "credit_balance": credit["balances"]["current"] if credit else None,
+        "credit_balances": credit_balances,
     }
 
 
@@ -223,8 +234,9 @@ def write_dashboard_data(totals, unmatched, balances):
     goals["actual_savings_balance"] = balances["savings_balance"]
 
     debt = json.loads(json.dumps(CATEGORIES["debt"]))  # deep copy, don't mutate CATEGORIES
-    if balances["credit_balance"] is not None and "delta_amex" in debt:
-        debt["delta_amex"]["current_balance"] = balances["credit_balance"]
+    for debt_key, balance in balances["credit_balances"].items():
+        if debt_key in debt:
+            debt[debt_key]["current_balance"] = balance
 
     output = {
         "last_updated": date.today().isoformat(),

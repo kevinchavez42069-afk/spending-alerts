@@ -1,157 +1,24 @@
 {
-  "last_updated": "2026-07-14",
+  "last_updated": "2026-07-13",
   "period_start": "2026-07-08",
-  "period_end": "2026-07-14",
+  "period_end": "2026-07-13",
   "categories": {
-    "variable_needs": {
-      "groceries": 117.87,
-      "gas": 0.0
-    },
-    "variable_wants": {
-      "dining_out": 49.41,
-      "slop": 57.84,
-      "gym": 0.0,
-      "going_out": 69.96000000000001,
-      "misc_other": 346.46000000000004
-    }
+    "variable_needs": { "groceries": 117.87, "gas": 0.0 },
+    "variable_wants": { "dining_out": 49.41, "slop": 57.84, "gym": 0.0, "going_out": 69.96, "misc_other": 346.46 }
   },
-  "unmatched_transactions": [
-    {
-      "name": "ANTHROPIC* CLAUDE SUB",
-      "amount": 20.0
-    },
-    {
-      "name": "City of Richmond/Parkh",
-      "amount": 2.95
-    },
-    {
-      "name": "GDP*GoGo Ice Cream Tru",
-      "amount": 7.89
-    },
-    {
-      "name": "Starbucks",
-      "amount": 16.32
-    },
-    {
-      "name": "City of Richmond/Parkh",
-      "amount": 4.45
-    },
-    {
-      "name": "City of Richmond/Parkh",
-      "amount": 4.45
-    },
-    {
-      "name": "City of Richmond/Parkh",
-      "amount": 4.45
-    },
-    {
-      "name": "Fandango",
-      "amount": 36.38
-    },
-    {
-      "name": "PARKING CITY OF RICHMO",
-      "amount": 1.65
-    },
-    {
-      "name": "City of Richmond/Parkh",
-      "amount": 4.45
-    },
-    {
-      "name": "Pivot Parking Virginia",
-      "amount": 21.0
-    },
-    {
-      "name": "TST* CASA DEL BARCO",
-      "amount": 20.9
-    },
-    {
-      "name": "TST* URBAN FARMHOUSE M",
-      "amount": 9.92
-    },
-    {
-      "name": "VILLAGE MARKET",
-      "amount": 3.88
-    },
-    {
-      "name": "ESSENTIAL EXPRESS",
-      "amount": 4.23
-    },
-    {
-      "name": "ANTHROPIC* CLAUDE SUB",
-      "amount": 20.0
-    },
-    {
-      "name": "ESSENTIAL EXPRESS",
-      "amount": 4.23
-    },
-    {
-      "name": "LSU HELENS RESTAURANRICHMOND",
-      "amount": 7.68
-    },
-    {
-      "name": "TST* NEW PANDORA CAFRICHMOND",
-      "amount": 9.34
-    },
-    {
-      "name": "TST* NEW PANDORA CAFRICHMOND",
-      "amount": 14.75
-    },
-    {
-      "name": "TUBLY DOWNLOADER",
-      "amount": 1.24
-    },
-    {
-      "name": "AplPay 777 VINTAGE RRICHMOND",
-      "amount": 51.9
-    },
-    {
-      "name": "Starbucks",
-      "amount": 25.97
-    },
-    {
-      "name": "TST* LOSO - RICHMONDRICHMOND",
-      "amount": 14.85
-    },
-    {
-      "name": "TST* LOSO - RICHMONDRICHMOND",
-      "amount": 14.85
-    },
-    {
-      "name": "TST* LOSO - RICHMONDRICHMOND",
-      "amount": 14.85
-    },
-    {
-      "name": "AplPay VILLAGE MARKERICHMOND",
-      "amount": 3.88
-    }
-  ],
+  "unmatched_transactions": [],
   "caps": {
-    "variable_needs": {
-      "groceries": 150,
-      "gas": 60
-    },
-    "variable_wants": {
-      "dining_out": 0,
-      "slop": 0,
-      "gym": null,
-      "going_out": 0,
-      "misc_other": 0
-    }
+    "variable_needs": { "groceries": 150.0, "gas": 60.0 },
+    "variable_wants": { "dining_out": 0.0, "slop": 0.0, "gym": null, "going_out": 0.0, "misc_other": 0.0 }
   },
   "goals": {
-    "target_checking_balance": 1500,
-    "target_savings_balance": 3000,
-    "actual_checking_balance": null,
-    "actual_savings_balance": null
+    "target_checking_balance": 1500.0,
+    "target_savings_balance": 3000.0,
+    "actual_checking_balance": 1123.45,
+    "actual_savings_balance": 3502.10
   },
   "debt": {
-    "delta_amex": {
-      "starting_balance": 5148.26,
-      "monthly_target": 2429,
-      "apr": 0.2824
-    },
-    "blue_cash_preferred": {
-      "pay_in_full": true
-    }
+    "delta_amex": { "starting_balance": 5148.26, "monthly_target": 2429.0, "apr": 0.2824, "current_balance": 4021.13 },
+    "blue_cash_preferred": { "pay_in_full": true, "current_balance": 218.55 }
   }
 }
