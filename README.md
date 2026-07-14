@@ -46,9 +46,17 @@ In this repo, go to **Settings → Secrets and variables → Actions** and add:
 |---|---|
 | `PLAID_CLIENT_ID` | from the Plaid dashboard |
 | `PLAID_SECRET` | from the Plaid dashboard |
-| `PLAID_ACCESS_TOKEN` | from step 2 |
+| `PLAID_ACCESS_TOKEN` | from step 2 (your primary checking account) |
 | `PLAID_ENV` | `sandbox` or `production` |
 | `NTFY_TOPIC` | your private ntfy.sh topic name |
+
+To link an additional account (e.g. a credit card), repeat step 2's Link flow
+for it, then add its `access_token` as a new secret named
+`PLAID_ACCESS_TOKEN_<NAME>` (e.g. `PLAID_ACCESS_TOKEN_AMEX`) — the script
+merges transactions from every `PLAID_ACCESS_TOKEN*` secret automatically.
+You'll also need to add a matching line for it in
+`.github/workflows/check-spending.yml`'s `env:` block, since GitHub Actions
+can't wildcard-match secrets by prefix.
 
 The workflow at
 [`.github/workflows/check-spending.yml`](.github/workflows/check-spending.yml)

@@ -27,6 +27,7 @@ jobs:
           PLAID_CLIENT_ID: ${{ secrets.PLAID_CLIENT_ID }}
           PLAID_SECRET: ${{ secrets.PLAID_SECRET }}
           PLAID_ACCESS_TOKEN: ${{ secrets.PLAID_ACCESS_TOKEN }}
+          PLAID_ACCESS_TOKEN_AMEX: ${{ secrets.PLAID_ACCESS_TOKEN_AMEX }}
           PLAID_ENV: ${{ secrets.PLAID_ENV }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: python check_spending.py

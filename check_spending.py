@@ -9,9 +9,13 @@ the home-screen dashboard can display current progress.
 Environment variables required (set as GitHub Actions secrets):
   PLAID_CLIENT_ID
   PLAID_SECRET
-  PLAID_ACCESS_TOKEN   (obtained once via the Plaid Link flow - see README)
-  PLAID_ENV            ("production" once you're out of sandbox)
-  NTFY_TOPIC           (your private ntfy.sh topic name)
+  PLAID_ACCESS_TOKEN          (obtained once via the Plaid Link flow - see README)
+  PLAID_ACCESS_TOKEN_<NAME>   (optional - one per additional linked account,
+                                e.g. PLAID_ACCESS_TOKEN_AMEX; transactions
+                                from every PLAID_ACCESS_TOKEN* secret are
+                                pulled and merged)
+  PLAID_ENV                   ("production" once you're out of sandbox)
+  NTFY_TOPIC                  (your private ntfy.sh topic name)
 """
 
 import json
@@ -28,9 +32,16 @@ from plaid.api_client import ApiClient
 
 PLAID_CLIENT_ID = os.environ["PLAID_CLIENT_ID"]
 PLAID_SECRET = os.environ["PLAID_SECRET"]
-PLAID_ACCESS_TOKEN = os.environ["PLAID_ACCESS_TOKEN"]
 PLAID_ENV = os.environ.get("PLAID_ENV", "production")
 NTFY_TOPIC = os.environ["NTFY_TOPIC"]
+
+# Every PLAID_ACCESS_TOKEN* env var is a separate linked account (checking,
+# credit card, etc.) - transactions from all of them are pulled and merged.
+PLAID_ACCESS_TOKENS = {
+    key: value
+    for key, value in sorted(os.environ.items())
+    if key.startswith("PLAID_ACCESS_TOKEN") and value
+}
 
 PLAID_HOSTS = {
     "sandbox": "https://sandbox.plaid.com",
@@ -62,12 +73,9 @@ def get_plaid_client():
     return plaid_api.PlaidApi(api_client)
 
 
-def get_pay_period_transactions():
-    client = get_plaid_client()
-    start_date, end_date = current_pay_period()
-
+def get_account_transactions(client, access_token, start_date, end_date):
     request = TransactionsGetRequest(
-        access_token=PLAID_ACCESS_TOKEN,
+        access_token=access_token,
         start_date=start_date,
         end_date=end_date,
     )
@@ -77,7 +85,7 @@ def get_pay_period_transactions():
     # Handle pagination if there are many transactions
     while len(transactions) < response["total_transactions"]:
         request = TransactionsGetRequest(
-            access_token=PLAID_ACCESS_TOKEN,
+            access_token=access_token,
             start_date=start_date,
             end_date=end_date,
             options={"offset": len(transactions)},
@@ -85,6 +93,18 @@ def get_pay_period_transactions():
         response = client.transactions_get(request)
         transactions.extend(response["transactions"])
 
+    return transactions
+
+
+def get_pay_period_transactions():
+    client = get_plaid_client()
+    start_date, end_date = current_pay_period()
+
+    transactions = []
+    for access_token in PLAID_ACCESS_TOKENS.values():
+        transactions.extend(
+            get_account_transactions(client, access_token, start_date, end_date)
+        )
     return transactions
 
 
