@@ -140,7 +140,9 @@
   },
   "goals": {
     "target_checking_balance": 1500,
-    "target_savings_balance": 3000
+    "target_savings_balance": 3000,
+    "actual_checking_balance": null,
+    "actual_savings_balance": null
   },
   "debt": {
     "delta_amex": {
