@@ -1,28 +1,28 @@
 {
-  "last_updated": "2026-07-13",
+  "last_updated": "2026-07-14",
   "period_start": "2026-07-08",
-  "period_end": "2026-07-13",
+  "period_end": "2026-07-14",
   "categories": {
     "variable_needs": {
-      "groceries": 24.51,
+      "groceries": 117.87,
       "gas": 0.0
     },
     "variable_wants": {
-      "dining_out": 23.25,
-      "slop": 18.0,
+      "dining_out": 49.41,
+      "slop": 57.84,
       "gym": 0.0,
       "going_out": 69.96000000000001,
-      "misc_other": 201.2
+      "misc_other": 346.46000000000004
     }
   },
   "unmatched_transactions": [
     {
-      "name": "3 STARS CONVENIENCE",
-      "amount": 17.0
-    },
-    {
       "name": "ANTHROPIC* CLAUDE SUB",
       "amount": 20.0
+    },
+    {
+      "name": "City of Richmond/Parkh",
+      "amount": 2.95
     },
     {
       "name": "GDP*GoGo Ice Cream Tru",
@@ -83,29 +83,69 @@
     {
       "name": "ESSENTIAL EXPRESS",
       "amount": 4.23
+    },
+    {
+      "name": "LSU HELENS RESTAURANRICHMOND",
+      "amount": 7.68
+    },
+    {
+      "name": "TST* NEW PANDORA CAFRICHMOND",
+      "amount": 9.34
+    },
+    {
+      "name": "TST* NEW PANDORA CAFRICHMOND",
+      "amount": 14.75
+    },
+    {
+      "name": "TUBLY DOWNLOADER",
+      "amount": 1.24
+    },
+    {
+      "name": "AplPay 777 VINTAGE RRICHMOND",
+      "amount": 51.9
+    },
+    {
+      "name": "Starbucks",
+      "amount": 25.97
+    },
+    {
+      "name": "TST* LOSO - RICHMONDRICHMOND",
+      "amount": 14.85
+    },
+    {
+      "name": "TST* LOSO - RICHMONDRICHMOND",
+      "amount": 14.85
+    },
+    {
+      "name": "TST* LOSO - RICHMONDRICHMOND",
+      "amount": 14.85
+    },
+    {
+      "name": "AplPay VILLAGE MARKERICHMOND",
+      "amount": 3.88
     }
   ],
   "caps": {
     "variable_needs": {
-      "groceries": 150.0,
-      "gas": 60.0
+      "groceries": 150,
+      "gas": 60
     },
     "variable_wants": {
-      "dining_out": 0.0,
-      "slop": 0.0,
+      "dining_out": 0,
+      "slop": 0,
       "gym": null,
-      "going_out": 0.0,
-      "misc_other": 0.0
+      "going_out": 0,
+      "misc_other": 0
     }
   },
   "goals": {
-    "target_checking_balance": 1500.0,
-    "target_savings_balance": 3000.0
+    "target_checking_balance": 1500,
+    "target_savings_balance": 3000
   },
   "debt": {
     "delta_amex": {
       "starting_balance": 5148.26,
-      "monthly_target": 2429.0,
+      "monthly_target": 2429,
       "apr": 0.2824
     },
     "blue_cash_preferred": {
