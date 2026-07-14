@@ -1,61 +1,108 @@
 {
   "fixed": {
-    "rent": { "expected_amount": 850.00, "keywords": ["CVA Properties", "rent"] },
+    "rent": {
+      "expected_amount": 850,
+      "keywords": [
+        "CVA Properties",
+        "rent"
+      ]
+    },
     "subscriptions": {
-      "allowed": ["AMAZON PRIME", "ANTHROPIC", "SOUNDCLOUD"],
+      "allowed": [
+        "AMAZON PRIME",
+        "ANTHROPIC",
+        "SOUNDCLOUD"
+      ],
       "expected_total": 50.98
     }
   },
   "variable_needs": {
     "groceries": {
-      "biweekly_cap": 150.00,
-      "keywords": ["KROGER", "ALDI", "WAL-MART", "WALMART", "TARGET"]
+      "biweekly_cap": 150,
+      "keywords": [
+        "KROGER",
+        "ALDI",
+        "WAL-MART",
+        "WALMART",
+        "TARGET"
+      ]
     },
     "gas": {
-      "biweekly_cap": 60.00,
-      "keywords": ["WAWA", "SHEETZ", "EXXON", "BP#", "CITGO"]
+      "biweekly_cap": 60,
+      "keywords": [
+        "WAWA",
+        "SHEETZ",
+        "EXXON",
+        "BP#",
+        "CITGO"
+      ]
     }
   },
   "variable_wants": {
     "dining_out": {
-      "biweekly_cap": 0.00,
-      "keywords": ["DOORDASH", "CHIPOTLE", "UBER EATS", "GRUBHUB"]
+      "biweekly_cap": 0,
+      "keywords": [
+        "DOORDASH",
+        "CHIPOTLE",
+        "UBER EATS",
+        "GRUBHUB"
+      ]
     },
     "slop": {
-      "biweekly_cap": 0.00,
-      "keywords": ["CLAYD MARKET", "7-ELEVEN"]
+      "biweekly_cap": 0,
+      "keywords": [
+        "CLAYD MARKET",
+        "7-ELEVEN",
+        "3 STARS CONVENIENCE"
+      ]
     },
     "gym": {
       "biweekly_cap": null,
-      "keywords": ["CARY STREET GYM", "GNC", "VITAMIN SHOPPE"]
+      "keywords": [
+        "CARY STREET GYM",
+        "GNC",
+        "VITAMIN SHOPPE"
+      ]
     },
     "going_out": {
-      "biweekly_cap": 0.00,
+      "biweekly_cap": 0,
       "keywords": [
-        "ELEMENTS", "ECHOSTAGE", "PROJECT GLOW", "SHOTGUN",
-        "TOBACCO COMPANY", "ABC STORE", "WORLD OF BEER",
-        "TICKETMASTER", "TM *", "FANDUEL", "UBER"
+        "ELEMENTS",
+        "ECHOSTAGE",
+        "PROJECT GLOW",
+        "SHOTGUN",
+        "TOBACCO COMPANY",
+        "ABC STORE",
+        "WORLD OF BEER",
+        "TICKETMASTER",
+        "TM *",
+        "FANDUEL",
+        "UBER"
       ]
     },
     "misc_other": {
-      "biweekly_cap": 0.00,
+      "biweekly_cap": 0,
       "keywords": []
     }
   },
   "goals": {
-    "target_checking_balance": 1500.00,
-    "target_savings_balance": 3000.00
+    "target_checking_balance": 1500,
+    "target_savings_balance": 3000
   },
   "excluded": {
     "keywords": [
-      "AMEX EPAYMENT", "TO SAVINGS", "ZELLE", "CASH APP",
-      "APPLE CASH SENT MONEY", "VENMO"
+      "AMEX EPAYMENT",
+      "TO SAVINGS",
+      "ZELLE",
+      "CASH APP",
+      "APPLE CASH SENT MONEY",
+      "VENMO"
     ]
   },
   "debt": {
     "delta_amex": {
       "starting_balance": 5148.26,
-      "monthly_target": 2429.00,
+      "monthly_target": 2429,
       "apr": 0.2824
     },
     "blue_cash_preferred": {
