@@ -280,21 +280,28 @@
         container.innerHTML = `<div class="card empty">No goals set</div>`;
         return;
       }
-      const card = document.createElement("div");
-      card.className = "card";
-      card.innerHTML = `
-        <div class="debt-figures">
-          <div>
-            <div class="debt-figure-label">Target checking</div>
-            <div class="debt-figure-value">${fmt(goals.target_checking_balance)}</div>
+      const rows = [
+        { label: "Checking", actual: goals.actual_checking_balance, target: goals.target_checking_balance },
+        { label: "Savings", actual: goals.actual_savings_balance, target: goals.target_savings_balance },
+      ];
+      for (const r of rows) {
+        const hasActual = r.actual !== null && r.actual !== undefined;
+        const status = hasActual ? (r.actual >= r.target ? "good" : "warning") : "good";
+        const meta = STATUS_META[status];
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+          <div class="meter-row">
+            <span class="meter-label">
+              <span class="meter-icon" style="color:${meta.color}">${meta.icon}</span>
+              ${r.label}
+            </span>
+            <span class="meter-value">${hasActual ? fmt(r.actual) : "—"}</span>
           </div>
-          <div>
-            <div class="debt-figure-label">Target savings</div>
-            <div class="debt-figure-value">${fmt(goals.target_savings_balance)}</div>
-          </div>
-        </div>
-      `;
-      container.appendChild(card);
+          <div class="meter-sub">Target ${fmt(r.target)}</div>
+        `;
+        container.appendChild(card);
+      }
     }
 
     function monthsToPayoff(balance, monthlyPayment, apr) {
@@ -318,7 +325,9 @@
             <span class="badge">Paid in full each cycle</span>
           `;
         } else {
-          const months = monthsToPayoff(d.starting_balance, d.monthly_target, d.apr);
+          const isLive = d.current_balance !== null && d.current_balance !== undefined;
+          const balance = isLive ? d.current_balance : d.starting_balance;
+          const months = monthsToPayoff(balance, d.monthly_target, d.apr);
           let payoffText = "—";
           if (months !== null) {
             const payoffDate = new Date();
@@ -330,8 +339,8 @@
             <div class="meter-sub">${(d.apr * 100).toFixed(2)}% APR</div>
             <div class="debt-figures">
               <div>
-                <div class="debt-figure-label">Balance</div>
-                <div class="debt-figure-value">${fmt(d.starting_balance)}</div>
+                <div class="debt-figure-label">${isLive ? "Current balance" : "Balance"}</div>
+                <div class="debt-figure-value">${fmt(balance)}</div>
               </div>
               <div>
                 <div class="debt-figure-label">Monthly target</div>

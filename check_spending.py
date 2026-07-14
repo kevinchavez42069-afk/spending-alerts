@@ -25,6 +25,7 @@ from datetime import date, timedelta
 import requests
 from plaid.api import plaid_api
 from plaid.model.transactions_get_request import TransactionsGetRequest
+from plaid.model.accounts_balance_get_request import AccountsBalanceGetRequest
 from plaid.configuration import Configuration
 from plaid.api_client import ApiClient
 
@@ -108,6 +109,30 @@ def get_pay_period_transactions():
     return transactions
 
 
+def get_live_balances():
+    """Fetch current balances across every linked account and pick out the
+    checking, savings, and (first) credit card accounts by subtype. Assumes
+    one checking, one savings, and one credit account across all linked
+    items - fine for now, but would need per-account_id mapping if a second
+    credit card ever gets linked."""
+    client = get_plaid_client()
+    accounts = []
+    for access_token in PLAID_ACCESS_TOKENS.values():
+        request = AccountsBalanceGetRequest(access_token=access_token)
+        response = client.accounts_balance_get(request)
+        accounts.extend(response["accounts"])
+
+    checking = next((a for a in accounts if a["subtype"] == "checking"), None)
+    savings = next((a for a in accounts if a["subtype"] == "savings"), None)
+    credit = next((a for a in accounts if a["type"] == "credit"), None)
+
+    return {
+        "checking_balance": checking["balances"]["current"] if checking else None,
+        "savings_balance": savings["balances"]["current"] if savings else None,
+        "credit_balance": credit["balances"]["current"] if credit else None,
+    }
+
+
 # ---------- Categorization ----------
 
 def categorize(transactions):
@@ -187,8 +212,17 @@ def check_caps_and_alert(totals):
 
 # ---------- Dashboard data ----------
 
-def write_dashboard_data(totals, unmatched):
+def write_dashboard_data(totals, unmatched, balances):
     period_start, period_end = current_pay_period()
+
+    goals = dict(CATEGORIES["goals"])
+    goals["actual_checking_balance"] = balances["checking_balance"]
+    goals["actual_savings_balance"] = balances["savings_balance"]
+
+    debt = json.loads(json.dumps(CATEGORIES["debt"]))  # deep copy, don't mutate CATEGORIES
+    if balances["credit_balance"] is not None and "delta_amex" in debt:
+        debt["delta_amex"]["current_balance"] = balances["credit_balance"]
+
     output = {
         "last_updated": date.today().isoformat(),
         "period_start": period_start.isoformat(),
@@ -199,8 +233,8 @@ def write_dashboard_data(totals, unmatched):
             group: {cat: cfg["biweekly_cap"] for cat, cfg in CATEGORIES[group].items()}
             for group in ("variable_needs", "variable_wants")
         },
-        "goals": CATEGORIES["goals"],
-        "debt": CATEGORIES["debt"],
+        "goals": goals,
+        "debt": debt,
     }
     dashboard_path = os.path.join(
         os.path.dirname(__file__), "dashboard", "data.json"
@@ -215,10 +249,12 @@ def main():
     transactions = get_pay_period_transactions()
     totals, unmatched = categorize(transactions)
     alerts = check_caps_and_alert(totals)
-    write_dashboard_data(totals, unmatched)
+    balances = get_live_balances()
+    write_dashboard_data(totals, unmatched, balances)
 
     print(f"Checked {len(transactions)} transactions.")
     print(f"Totals: {json.dumps(totals, indent=2)}")
+    print(f"Balances: {json.dumps(balances, indent=2)}")
     if alerts:
         print(f"Sent {len(alerts)} alert(s).")
     else:
