@@ -122,6 +122,9 @@ def get_live_balances():
         response = client.accounts_balance_get(request)
         accounts.extend(response["accounts"])
 
+    # TEMP DEBUG - type/subtype only, no names or balances - remove after diagnosing.
+    print(f"DEBUG account types: {[(str(a['type']), str(a['subtype'])) for a in accounts]}")
+
     checking = next((a for a in accounts if a["subtype"] == "checking"), None)
     savings = next((a for a in accounts if a["subtype"] == "savings"), None)
     credit = next((a for a in accounts if a["type"] == "credit"), None)
