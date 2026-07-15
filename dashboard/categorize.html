@@ -5,86 +5,129 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Categorize — Spending Alerts</title>
 <link rel="icon" href="icon.svg" type="image/svg+xml">
-<meta name="theme-color" content="#2a78d6">
+<meta name="theme-color" content="#14285e">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
   :root {
-    --page: #f9f9f7;
-    --surface: #fcfcfb;
-    --text-primary: #0b0b0b;
-    --text-secondary: #52514e;
-    --text-muted: #898781;
-    --hairline: #e1e0d9;
-    --border: rgba(11,11,11,0.10);
-    --accent: #2a78d6;
-    --good: #0ca30c;
-    --critical: #d03b3b;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --page: #0d0d0d;
-      --surface: #1a1a19;
-      --text-primary: #ffffff;
-      --text-secondary: #c3c2b7;
-      --text-muted: #898781;
-      --hairline: #2c2c2a;
-      --border: rgba(255,255,255,0.10);
-      --accent: #3987e5;
-      --good: #0ca30c;
-      --critical: #d03b3b;
-    }
+    /* Underworld palette — NES Mario underground: black voids, deep navy
+       brick, cool cyan-blue highlights, coin yellow, pipe green. */
+    --page: #050a1e;
+    --surface: #14285e;
+    --surface2: #1c3576;
+    --text-primary: #eaf1ff;
+    --text-secondary: #9fb6e8;
+    --text-muted: #6b7fac;
+    --hairline: #24407e;
+    --border: #000208;
+    --accent: #4c86e8;
+    --good: #23c76f;
+    --critical: #ff4d4d;
   }
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html { -webkit-text-size-adjust: 100%; }
   body {
     margin: 0;
-    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-    background: var(--page);
+    font-family: 'VT323', monospace;
+    background-color: #03060f;
+    background-image: radial-gradient(rgba(76,134,232,0.18) 1px, transparent 1.4px);
+    background-size: 14px 14px;
     color: var(--text-primary);
-    padding: calc(20px + env(safe-area-inset-top)) calc(16px + env(safe-area-inset-right)) calc(40px + env(safe-area-inset-bottom)) calc(16px + env(safe-area-inset-left));
-    max-width: 480px;
-    margin-inline: auto;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
     overscroll-behavior: none;
   }
-  h1 { font-size: 20px; font-weight: 600; margin: 4px 0 2px; }
-  p { color: var(--text-secondary); font-size: 14px; line-height: 1.5; }
+
+  .retro {
+    max-width: 480px;
+    margin: 18px auto 40px;
+    padding: 14px 14px 22px;
+    background-color: var(--surface);
+    background-image:
+      linear-gradient(45deg, rgba(0,0,0,0.28) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.28) 75%),
+      linear-gradient(45deg, rgba(0,0,0,0.28) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.28) 75%);
+    background-size: 8px 8px;
+    background-position: 0 0, 4px 4px;
+    border: 2px solid var(--border);
+    box-shadow:
+      inset 1px 1px 0 #6fa4f5,
+      inset -1px -1px 0 #050f28,
+      5px 5px 0 rgba(0,0,0,0.55);
+  }
+
+  h1 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    margin: 4px 0 10px;
+    color: #ffe74c;
+    text-shadow:
+      2px 2px 0 #000,
+      0 0 10px rgba(255,231,76,0.35);
+  }
+  p { color: var(--text-secondary); font-size: 16px; line-height: 1.5; }
   a { color: var(--accent); }
+  code {
+    font-family: 'VT323', monospace;
+    font-size: 15px;
+    background: rgba(0,0,0,0.4);
+    padding: 1px 4px;
+    border: 1px solid var(--border);
+  }
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-    font-size: 14px;
+    margin-bottom: 18px;
+    font-family: 'VT323', monospace;
+    font-size: 17px;
+    background: #030712;
+    color: #39ff6a;
+    border: 2px solid var(--border);
+    box-shadow: inset 0 0 6px rgba(57,255,106,0.5);
+    padding: 5px 12px;
   }
-  .back { color: var(--text-secondary); text-decoration: none; }
-  .progress { color: var(--text-muted); font-variant-numeric: tabular-nums; }
+  .back { color: #39ff6a; text-decoration: none; }
+  .progress { color: #39ff6a; font-variant-numeric: tabular-nums; }
   .screen { display: none; }
   .screen.active { display: block; }
 
   /* Token setup */
-  label { display: block; font-size: 13px; color: var(--text-secondary); margin: 16px 0 6px; }
+  label {
+    display: block;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 10px;
+    color: var(--text-secondary);
+    margin: 18px 0 8px;
+  }
   input[type="password"], input[type="text"] {
     width: 100%;
     padding: 12px 14px;
-    border-radius: 10px;
-    border: 1px solid var(--border);
-    background: var(--surface);
+    border-radius: 0;
+    border: 2px solid var(--border);
+    background: #081432;
     color: var(--text-primary);
-    font-size: 16px;
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    box-shadow: inset 2px 2px 4px rgba(0,0,0,0.6);
   }
   .steps { padding-left: 20px; }
-  .steps li { margin-bottom: 6px; font-size: 14px; color: var(--text-secondary); }
+  .steps li { margin-bottom: 6px; font-size: 16px; color: var(--text-secondary); }
   button {
-    font-family: inherit;
-    font-size: 14px;
-    font-weight: 600;
-    border: none;
-    border-radius: 10px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 11px;
+    font-weight: 400;
+    border: 2px solid var(--border);
+    border-radius: 0;
     padding: 12px 16px;
     cursor: pointer;
+    box-shadow: inset 1px 1px 0 rgba(255,255,255,0.35), inset -1px -1px 0 rgba(0,0,0,0.4), 2px 2px 0 rgba(0,0,0,0.5);
   }
-  .btn-primary { background: var(--accent); color: white; width: 100%; margin-top: 16px; }
+  button:active { transform: translate(1px, 1px); box-shadow: inset 1px 1px 0 rgba(255,255,255,0.35), inset -1px -1px 0 rgba(0,0,0,0.4); }
+  .btn-primary { background: var(--accent); color: #fff; width: 100%; margin-top: 16px; }
   .btn-primary:disabled { opacity: 0.5; cursor: default; }
 
   /* Card stack */
@@ -96,9 +139,17 @@
   .card {
     position: absolute;
     inset: 0;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 16px;
+    background: var(--surface2);
+    background-image:
+      linear-gradient(45deg, rgba(0,0,0,0.22) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.22) 75%),
+      linear-gradient(45deg, rgba(0,0,0,0.22) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.22) 75%);
+    background-size: 8px 8px;
+    background-position: 0 0, 4px 4px;
+    border: 2px solid var(--border);
+    box-shadow:
+      inset 1px 1px 0 #6fa4f5,
+      inset -1px -1px 0 #050f28,
+      4px 4px 0 rgba(0,0,0,0.45);
     padding: 24px 20px;
     display: flex;
     flex-direction: column;
@@ -110,21 +161,24 @@
     transition: transform 0.25s ease, opacity 0.25s ease;
   }
   .card-name {
-    font-size: 17px;
-    font-weight: 600;
+    font-family: 'VT323', monospace;
+    font-size: 22px;
     margin-bottom: 8px;
     word-break: break-word;
+    color: var(--text-primary);
   }
   .card-amount {
-    font-size: 28px;
-    font-weight: 700;
+    font-family: 'VT323', monospace;
+    font-size: 34px;
     font-variant-numeric: tabular-nums;
-    color: var(--text-secondary);
+    color: #ffe74c;
+    text-shadow: 1px 1px 0 #000;
   }
   .card-hint {
     position: absolute;
     bottom: 12px;
-    font-size: 11px;
+    font-family: 'VT323', monospace;
+    font-size: 13px;
     color: var(--text-muted);
   }
 
@@ -138,15 +192,19 @@
     color: white;
     text-align: left;
     padding: 12px 14px;
-    border-radius: 10px;
+    border: 2px solid var(--border);
+    border-radius: 0;
+    font-family: 'VT323', monospace;
+    font-size: 17px;
     transform: scale(1);
-    box-shadow: none;
+    box-shadow: inset 1px 1px 0 rgba(255,255,255,0.35), inset -1px -1px 0 rgba(0,0,0,0.4), 2px 2px 0 rgba(0,0,0,0.5);
     transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
   }
   .cat-btn:disabled { opacity: 0.4; }
   .cat-btn.drag-over {
     transform: scale(1.1);
-    box-shadow: 0 0 0 3px var(--page), 0 0 0 6px #1a1a1a, 0 8px 18px rgba(0,0,0,0.4);
+    box-shadow: 0 0 0 3px var(--surface), 0 0 0 6px #ffe74c, 0 8px 18px rgba(0,0,0,0.5);
   }
   .cat-btn.drag-over::after {
     content: "\2713";
@@ -156,17 +214,21 @@
   .skip-link {
     display: block;
     text-align: center;
-    font-size: 13px;
+    font-family: 'VT323', monospace;
+    font-size: 16px;
     color: var(--text-muted);
     margin-top: 8px;
     background: none;
     border: none;
+    box-shadow: none;
     text-decoration: underline;
     width: 100%;
   }
+  .skip-link:active { transform: none; }
 
   .status-msg {
-    font-size: 13px;
+    font-family: 'VT323', monospace;
+    font-size: 16px;
     text-align: center;
     margin-top: 12px;
     min-height: 18px;
@@ -178,48 +240,50 @@
   .change-token {
     display: block;
     text-align: center;
-    font-size: 12px;
+    font-family: 'VT323', monospace;
+    font-size: 14px;
     color: var(--text-muted);
     margin-top: 24px;
   }
 </style>
 </head>
 <body>
+  <div class="retro">
+    <div class="header">
+      <a class="back" href="./">&larr; Dashboard</a>
+      <span class="progress" id="progress"></span>
+    </div>
 
-  <div class="header">
-    <a class="back" href="./">&larr; Dashboard</a>
-    <span class="progress" id="progress"></span>
-  </div>
+    <div id="screen-token" class="screen">
+      <h1>Connect GitHub</h1>
+      <p>To save your categorization choices so future spending checks pick them up automatically, this page needs a GitHub token that can edit <code>categories.json</code> in this repo.</p>
+      <ol class="steps">
+        <li>Go to <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a></li>
+        <li>Under <strong>Repository access</strong>, choose <strong>Only select repositories</strong> → <code>spending-alerts</code></li>
+        <li>Under <strong>Permissions → Repository permissions</strong>, set <strong>Contents</strong> to <strong>Read and write</strong></li>
+        <li>Generate the token and paste it below</li>
+      </ol>
+      <p>The token is stored only in this browser's local storage — it's never sent anywhere except directly to GitHub's API, and never committed to the repo.</p>
+      <label for="token-input">Personal access token</label>
+      <input id="token-input" type="password" placeholder="github_pat_...">
+      <button class="btn-primary" id="save-token-btn">Save & Continue</button>
+      <div class="status-msg" id="token-status"></div>
+    </div>
 
-  <div id="screen-token" class="screen">
-    <h1>Connect GitHub</h1>
-    <p>To save your categorization choices so future spending checks pick them up automatically, this page needs a GitHub token that can edit <code>categories.json</code> in this repo.</p>
-    <ol class="steps">
-      <li>Go to <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a></li>
-      <li>Under <strong>Repository access</strong>, choose <strong>Only select repositories</strong> → <code>spending-alerts</code></li>
-      <li>Under <strong>Permissions → Repository permissions</strong>, set <strong>Contents</strong> to <strong>Read and write</strong></li>
-      <li>Generate the token and paste it below</li>
-    </ol>
-    <p>The token is stored only in this browser's local storage — it's never sent anywhere except directly to GitHub's API, and never committed to the repo.</p>
-    <label for="token-input">Personal access token</label>
-    <input id="token-input" type="password" placeholder="github_pat_...">
-    <button class="btn-primary" id="save-token-btn">Save & Continue</button>
-    <div class="status-msg" id="token-status"></div>
-  </div>
+    <div id="screen-swipe" class="screen">
+      <div class="stack" id="stack"></div>
+      <div class="categories" id="categories"></div>
+      <button class="skip-link" id="skip-btn">Skip for now</button>
+      <div class="status-msg" id="swipe-status"></div>
+      <a class="change-token" id="change-token-link" href="#">Change GitHub token</a>
+    </div>
 
-  <div id="screen-swipe" class="screen">
-    <div class="stack" id="stack"></div>
-    <div class="categories" id="categories"></div>
-    <button class="skip-link" id="skip-btn">Skip for now</button>
-    <div class="status-msg" id="swipe-status"></div>
-    <a class="change-token" id="change-token-link" href="#">Change GitHub token</a>
-  </div>
-
-  <div id="screen-done" class="screen">
-    <div class="empty-state">
-      <h1>All caught up</h1>
-      <p>No uncategorized transactions right now.</p>
-      <p><a href="./">Back to dashboard</a></p>
+    <div id="screen-done" class="screen">
+      <div class="empty-state">
+        <h1>All caught up</h1>
+        <p>No uncategorized transactions right now.</p>
+        <p><a href="./">Back to dashboard</a></p>
+      </div>
     </div>
   </div>
 
