@@ -172,6 +172,124 @@
     color: var(--critical);
     font-size: 13px;
   }
+
+  .chat-fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: white;
+    border: none;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+    z-index: 50;
+  }
+  .chat-panel {
+    position: fixed;
+    inset: 0;
+    background: var(--page);
+    display: none;
+    flex-direction: column;
+    z-index: 100;
+    max-width: 480px;
+    margin-inline: auto;
+  }
+  .chat-panel.open { display: flex; }
+  .chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid var(--hairline);
+    flex-shrink: 0;
+  }
+  .chat-header-title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .chat-header-sub {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-weight: 400;
+  }
+  .chat-close {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 22px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 4px 8px;
+  }
+  .chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .chat-msg {
+    max-width: 85%;
+    padding: 10px 14px;
+    border-radius: 14px;
+    font-size: 14px;
+    line-height: 1.45;
+    white-space: pre-wrap;
+  }
+  .chat-msg.user {
+    align-self: flex-end;
+    background: var(--accent);
+    color: white;
+    border-bottom-right-radius: 4px;
+  }
+  .chat-msg.nancy {
+    align-self: flex-start;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    border-bottom-left-radius: 4px;
+  }
+  .chat-msg.typing {
+    color: var(--text-muted);
+    font-style: italic;
+  }
+  .chat-input-row {
+    display: flex;
+    gap: 8px;
+    padding: 12px 16px;
+    border-top: 1px solid var(--hairline);
+    flex-shrink: 0;
+  }
+  .chat-input-row input {
+    flex: 1;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text-primary);
+    font-size: 14px;
+    font-family: inherit;
+  }
+  .chat-input-row button {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    padding: 0 18px;
+    background: var(--accent);
+    color: white;
+    cursor: pointer;
+  }
+  .chat-input-row button:disabled {
+    opacity: 0.5;
+  }
 </style>
 </head>
 <body>
@@ -192,6 +310,29 @@
     <a class="categorize-link" id="categorize-link" href="categorize.html">Categorize &rarr;</a>
   </h2>
   <div class="card" id="unmatched"></div>
+
+  <button class="chat-fab" id="chat-fab" aria-label="Chat with Nancy">N</button>
+
+  <div class="chat-panel" id="chat-panel">
+    <div class="chat-header">
+      <div>
+        <div class="chat-header-title">Nancy</div>
+        <div class="chat-header-sub">Your budget coach</div>
+      </div>
+      <button class="chat-close" id="chat-close" aria-label="Close chat">&times;</button>
+    </div>
+    <div class="chat-messages" id="chat-messages">
+      <div class="chat-msg nancy">Hey. I'm Nancy — ask me how you're doing, or whether you can afford something. I've got your numbers.</div>
+    </div>
+    <div class="chat-input-row" id="chat-setup-row">
+      <input type="password" id="chat-passphrase-input" placeholder="Enter chat passphrase to unlock" autocomplete="off">
+      <button id="chat-passphrase-save">Unlock</button>
+    </div>
+    <div class="chat-input-row" id="chat-send-row" style="display:none">
+      <input type="text" id="chat-input" placeholder="Ask Nancy..." autocomplete="off">
+      <button id="chat-send">Send</button>
+    </div>
+  </div>
 
   <script>
     const CATEGORY_LABELS = {
@@ -381,11 +522,14 @@
       }
     }
 
+    let latestData = null;
+
     async function load() {
       try {
         const res = await fetch("data.json", { cache: "no-store" });
         if (!res.ok) throw new Error("data.json not found yet");
         const data = await res.json();
+        latestData = data;
 
         const dateOpts = { year: "numeric", month: "short", day: "numeric" };
         if (data.period_start && data.period_end) {
@@ -415,6 +559,89 @@
         document.getElementById("caps").innerHTML = `<div class="card empty">No data yet — runs after the first daily check</div>`;
       }
     }
+
+    // ---------- Nancy chat ----------
+
+    const NANCY_WORKER_URL = "https://nancy-pelosi-budget-bot.kevinchavez.workers.dev";
+    const NANCY_PASSPHRASE_KEY = "spending_alerts_nancy_passphrase";
+
+    function getNancyPassphrase() { return localStorage.getItem(NANCY_PASSPHRASE_KEY); }
+    function setNancyPassphrase(v) { localStorage.setItem(NANCY_PASSPHRASE_KEY, v); }
+
+    function showChatUnlocked(unlocked) {
+      document.getElementById("chat-setup-row").style.display = unlocked ? "none" : "";
+      document.getElementById("chat-send-row").style.display = unlocked ? "" : "none";
+    }
+
+    function appendChatMessage(text, sender) {
+      const messages = document.getElementById("chat-messages");
+      const el = document.createElement("div");
+      el.className = `chat-msg ${sender}`;
+      el.textContent = text;
+      messages.appendChild(el);
+      messages.scrollTop = messages.scrollHeight;
+      return el;
+    }
+
+    async function sendChatMessage() {
+      const input = document.getElementById("chat-input");
+      const question = input.value.trim();
+      if (!question) return;
+
+      appendChatMessage(question, "user");
+      input.value = "";
+      document.getElementById("chat-send").disabled = true;
+      const typingEl = appendChatMessage("Nancy is typing…", "nancy typing");
+
+      try {
+        const res = await fetch(NANCY_WORKER_URL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "X-Chat-Secret": getNancyPassphrase() || "",
+          },
+          body: JSON.stringify({ question, context: latestData }),
+        });
+        const data = await res.json();
+        typingEl.remove();
+        if (res.status === 403) {
+          appendChatMessage("Wrong passphrase. Click below to re-enter it.", "nancy");
+          showChatUnlocked(false);
+        } else {
+          appendChatMessage(res.ok ? data.reply : `Something broke: ${data.error || res.status}`, "nancy");
+        }
+      } catch (err) {
+        typingEl.remove();
+        appendChatMessage(`Couldn't reach Nancy: ${err.message}`, "nancy");
+      } finally {
+        document.getElementById("chat-send").disabled = false;
+        input.focus();
+      }
+    }
+
+    document.getElementById("chat-fab").addEventListener("click", () => {
+      document.getElementById("chat-panel").classList.add("open");
+      document.getElementById("chat-input").focus();
+    });
+    document.getElementById("chat-close").addEventListener("click", () => {
+      document.getElementById("chat-panel").classList.remove("open");
+    });
+    document.getElementById("chat-send").addEventListener("click", sendChatMessage);
+    document.getElementById("chat-input").addEventListener("keydown", (e) => {
+      if (e.key === "Enter") sendChatMessage();
+    });
+    document.getElementById("chat-passphrase-save").addEventListener("click", () => {
+      const val = document.getElementById("chat-passphrase-input").value.trim();
+      if (!val) return;
+      setNancyPassphrase(val);
+      showChatUnlocked(true);
+      document.getElementById("chat-input").focus();
+    });
+    document.getElementById("chat-passphrase-input").addEventListener("keydown", (e) => {
+      if (e.key === "Enter") document.getElementById("chat-passphrase-save").click();
+    });
+
+    showChatUnlocked(!!getNancyPassphrase());
 
     load();
   </script>

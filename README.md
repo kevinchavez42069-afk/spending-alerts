@@ -49,6 +49,7 @@ In this repo, go to **Settings → Secrets and variables → Actions** and add:
 | `PLAID_ACCESS_TOKEN` | from step 2 (your primary checking account) |
 | `PLAID_ENV` | `sandbox` or `production` |
 | `NTFY_TOPIC` | your private ntfy.sh topic name |
+| `ANTHROPIC_API_KEY` | optional — enables Nancy's daily AI summary (see step 6) |
 
 To link an additional account (e.g. a credit card), repeat step 2's Link flow
 for it, then add its `access_token` as a new secret named
@@ -86,6 +87,29 @@ it needs a GitHub token that can write to this repo:
 The token is stored only in your browser's local storage — never committed,
 never sent anywhere but directly to GitHub's API.
 
+### 6. Nancy (AI budget coach)
+
+The dashboard has a chat widget ("N" button, bottom right) backed by a small
+Cloudflare Worker at
+[nancy-pelosi-bot/](../nancy-pelosi-bot) (separate project, not in this repo)
+that calls the Anthropic API. It also powers a daily AI-written summary sent
+via ntfy alongside the regular cap alerts.
+
+1. Get an API key at [console.anthropic.com](https://console.anthropic.com)
+   (Settings → API Keys), with a payment method added under Settings → Billing.
+2. Add it as the `ANTHROPIC_API_KEY` GitHub secret (table above) — this powers
+   the daily summary.
+3. Deploy the Worker (`cd nancy-pelosi-bot && npx wrangler deploy`), then set
+   its two secrets:
+   - `npx.cmd wrangler secret put ANTHROPIC_API_KEY` (same key as above)
+   - `npx.cmd wrangler secret put CHAT_SHARED_SECRET` (any random string —
+     it's a basic filter against random bots hitting the endpoint directly,
+     not real security, since it's embedded in the public page's JS)
+4. Update `NANCY_WORKER_URL` and `NANCY_SHARED_SECRET` in
+   `dashboard/index.html` to match your deployed Worker URL and the secret
+   you picked, and `ALLOWED_ORIGIN` in `nancy-pelosi-bot/wrangler.toml` to
+   your GitHub Pages origin.
+
 ## Local testing
 
 ```
@@ -108,7 +132,7 @@ PLAID_CLIENT_ID=... PLAID_SECRET=... PLAID_ACCESS_TOKEN=... PLAID_ENV=sandbox NT
 - Excluded from spending entirely: credit card payments, savings transfers,
   Zelle/Venmo/Cash App/Apple Cash sent-money (see `excluded.keywords` in
   `categories.json`)
-- Goals: target checking $1,500, target savings $3,000 (shown on dashboard,
-  not yet compared against a live balance)
-- Debt: Delta SkyMiles Amex, ~$2,429/mo target payoff. Blue Cash Preferred paid
-  in full each cycle.
+- Goals: target checking $1,500, target savings $3,000, compared against live
+  balances fetched from Plaid each run
+- Debt: Delta SkyMiles Amex, ~$2,429/mo target payoff, live balance from
+  Plaid. Blue Cash Preferred paid in full each cycle, live balance shown too.

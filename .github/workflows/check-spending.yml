@@ -30,6 +30,7 @@ jobs:
           PLAID_ACCESS_TOKEN_AMEX: ${{ secrets.PLAID_ACCESS_TOKEN_AMEX }}
           PLAID_ENV: ${{ secrets.PLAID_ENV }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python check_spending.py
 
       - name: Commit updated dashboard data

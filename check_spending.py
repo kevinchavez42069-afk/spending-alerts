@@ -16,6 +16,8 @@ Environment variables required (set as GitHub Actions secrets):
                                 pulled and merged)
   PLAID_ENV                   ("production" once you're out of sandbox)
   NTFY_TOPIC                  (your private ntfy.sh topic name)
+  ANTHROPIC_API_KEY           (optional - enables Nancy's daily AI summary;
+                                daily summary is skipped without it)
 """
 
 import json
@@ -35,6 +37,7 @@ PLAID_CLIENT_ID = os.environ["PLAID_CLIENT_ID"]
 PLAID_SECRET = os.environ["PLAID_SECRET"]
 PLAID_ENV = os.environ.get("PLAID_ENV", "production")
 NTFY_TOPIC = os.environ["NTFY_TOPIC"]
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")
 
 # Every PLAID_ACCESS_TOKEN* env var is a separate linked account (checking,
 # credit card, etc.) - transactions from all of them are pulled and merged.
@@ -257,6 +260,59 @@ def write_dashboard_data(totals, unmatched, balances):
     with open(dashboard_path, "w") as f:
         json.dump(output, f, indent=2)
 
+    return output
+
+
+# ---------- Nancy's daily summary ----------
+
+NANCY_SYSTEM_PROMPT = """You are "Nancy" - a blunt, sharp-tongued personal budget coach for a hobby
+spending-tracker app. "Nancy Pelosi" is just a nickname the user picked for
+you; you are not roleplaying as the real public figure, do not reference
+politics, and do not claim any of her real views, statements, or biography -
+stay entirely and only on the topic of this user's personal budget.
+
+You are given the user's current pay-period spending data as JSON. Base your
+summary strictly on those numbers - never invent figures.
+
+Style: concise, direct, a little witty, no hedging, no "I'm not a financial
+advisor" disclaimers - the user knows exactly what this is. Be genuinely
+encouraging when they're doing well, and straightforwardly blunt (not mean)
+when they're overspending. Keep it short - a few sentences, not an essay."""
+
+
+def generate_daily_summary(dashboard_data):
+    if not ANTHROPIC_API_KEY:
+        return None
+
+    response = requests.post(
+        "https://api.anthropic.com/v1/messages",
+        headers={
+            "x-api-key": ANTHROPIC_API_KEY,
+            "anthropic-version": "2023-06-01",
+            "Content-Type": "application/json",
+        },
+        json={
+            "model": "claude-haiku-4-5",
+            "max_tokens": 300,
+            "system": NANCY_SYSTEM_PROMPT,
+            "messages": [
+                {
+                    "role": "user",
+                    "content": (
+                        f"Current budget data (JSON):\n{json.dumps(dashboard_data)}\n\n"
+                        "Write today's daily check-in summary."
+                    ),
+                }
+            ],
+        },
+        timeout=30,
+    )
+    if not response.ok:
+        print(f"Nancy summary failed: {response.status_code} {response.text[:200]}")
+        return None
+
+    return response.json()["content"][0]["text"]
+
 
 # ---------- Main ----------
 
@@ -265,11 +321,16 @@ def main():
     totals, unmatched = categorize(transactions)
     alerts = check_caps_and_alert(totals)
     balances = get_live_balances()
-    write_dashboard_data(totals, unmatched, balances)
+    dashboard_data = write_dashboard_data(totals, unmatched, balances)
+
+    summary = generate_daily_summary(dashboard_data)
+    if summary:
+        send_ntfy(summary, title="Nancy's Daily Check-In", priority="default")
 
     print(f"Checked {len(transactions)} transactions.")
     print(f"Totals: {json.dumps(totals, indent=2)}")
     print(f"Balances: {json.dumps(balances, indent=2)}")
+    print(f"Nancy summary sent: {bool(summary)}")
     if alerts:
         print(f"Sent {len(alerts)} alert(s).")
     else:
