@@ -6,15 +6,15 @@
     "variable_needs": {
       "groceries": 117.87,
       "gas": 0.0,
-      "parking": 41.75,
+      "parking": 43.4,
       "subscriptions": 79.21
     },
     "variable_wants": {
       "partying": 202.79,
       "dining_out": 168.36,
-      "slop": 69.61,
+      "slop": 73.49,
       "gym": 0.0,
-      "misc_other": 53.99
+      "misc_other": 8.46
     }
   },
   "categories_detail": {
@@ -56,6 +56,11 @@
         {
           "name": "City of Richmond/Parkh",
           "amount": 4.45,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 1.65,
           "account": "SoFi Checking"
         },
         {
@@ -222,50 +227,30 @@
           "name": "7-Eleven",
           "amount": 22.84,
           "account": "Blue Cash Preferred\u00ae"
-        }
-      ],
-      "gym": [],
-      "misc_other": [
-        {
-          "name": "To Checking - 4560",
-          "amount": 40.0,
-          "account": "SoFi Savings"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 1.65,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 4.23,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 4.23,
-          "account": "SoFi Checking"
         },
         {
           "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 3.88,
           "account": "Blue Cash Preferred\u00ae"
         }
+      ],
+      "gym": [],
+      "misc_other": [
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 4.23,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 4.23,
+          "account": "SoFi Checking"
+        }
       ]
     }
   },
   "unmatched_transactions": [
     {
-      "name": "To Checking - 4560",
-      "amount": 40.0,
-      "account": "SoFi Savings"
-    },
-    {
-      "name": "PARKING CITY OF RICHMO",
-      "amount": 1.65,
-      "account": "SoFi Checking"
-    },
-    {
       "name": "ESSENTIAL EXPRESS",
       "amount": 4.23,
       "account": "SoFi Checking"
@@ -274,11 +259,6 @@
       "name": "ESSENTIAL EXPRESS",
       "amount": 4.23,
       "account": "SoFi Checking"
-    },
-    {
-      "name": "AplPay VILLAGE MARKERICHMOND",
-      "amount": 3.88,
-      "account": "Blue Cash Preferred\u00ae"
     }
   ],
   "accounts": [
@@ -349,7 +329,7 @@
         {
           "name": "PARKING CITY OF RICHMO",
           "amount": 1.65,
-          "category": "misc_other"
+          "category": "parking"
         },
         {
           "name": "SHOTGUN* SUCK MY DISCO",
@@ -409,17 +389,6 @@
         {
           "name": "ESSENTIAL EXPRESS",
           "amount": 4.23,
-          "category": "misc_other"
-        }
-      ]
-    },
-    {
-      "name": "SoFi Savings",
-      "balance": 761.91,
-      "transactions": [
-        {
-          "name": "To Checking - 4560",
-          "amount": 40.0,
           "category": "misc_other"
         }
       ]
@@ -506,7 +475,7 @@
         {
           "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 3.88,
-          "category": "misc_other"
+          "category": "slop"
         },
         {
           "name": "Chipotle Mexican Grill",
