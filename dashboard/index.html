@@ -27,6 +27,7 @@
     --good: #0ca30c;
     --warning: #fab219;
     --critical: #d03b3b;
+    --orange: #f2802e;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -42,6 +43,7 @@
       --good: #0ca30c;
       --warning: #fab219;
       --critical: #d03b3b;
+      --orange: #f2802e;
     }
   }
   * { box-sizing: border-box; }
@@ -261,6 +263,30 @@
     font-size: 14px;
     color: #6f6d67;
     margin: -4px 0 8px;
+  }
+  .retro .balance-block {
+    text-align: center;
+  }
+  .retro .balance-label {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #6f6d67;
+    margin-bottom: 8px;
+  }
+  .retro .balance-amount {
+    font-family: 'VT323', monospace;
+    font-size: 48px;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+    transition: color 0.3s ease;
+  }
+  .retro .balance-sub {
+    font-family: 'VT323', monospace;
+    font-size: 14px;
+    color: #6f6d67;
+    margin-top: 8px;
   }
   .retro .card.clickable {
     cursor: pointer;
@@ -560,7 +586,10 @@
     <h1>Spending Alerts</h1>
     <p class="updated" id="updated">Loading…</p>
 
-    <h2><span>Balance goals</span></h2>
+    <h2><span>Checking</span></h2>
+    <div id="checking"></div>
+
+    <h2><span>Savings goal</span></h2>
     <div id="goals"></div>
 
     <h2><span>Debt payoff</span></h2>
@@ -836,35 +865,66 @@
       return div;
     }
 
-    function renderGoals(goals) {
+    // Four-tier red/orange/yellow/green read on a balance relative to its
+    // target, for an at-a-glance "how bad is it" signal stronger than the
+    // two-state good/warning used elsewhere.
+    function balanceTierColor(actual, target) {
+      if (actual === null || actual === undefined || !target) return "var(--text-primary)";
+      const pct = actual / target;
+      if (pct < 0.25) return "var(--critical)";
+      if (pct < 0.6) return "var(--orange)";
+      if (pct < 1) return "var(--warning)";
+      return "var(--good)";
+    }
+
+    function renderChecking(goals) {
+      const container = document.getElementById("checking");
+      container.innerHTML = "";
+      if (!goals) {
+        container.innerHTML = `<div class="card empty">No data set</div>`;
+        return;
+      }
+      const actual = goals.actual_checking_balance;
+      const target = goals.target_checking_balance;
+      const hasActual = actual !== null && actual !== undefined;
+      const color = balanceTierColor(actual, target);
+      const card = document.createElement("div");
+      card.className = "card balance-block";
+      card.innerHTML = `
+        <div class="balance-label">Checking balance</div>
+        <div class="balance-amount" style="color:${color}">${hasActual ? fmt(actual) : "—"}</div>
+        <div class="balance-sub">Target ${fmt(target)}</div>
+      `;
+      container.appendChild(card);
+    }
+
+    function renderSavingsGoal(goals) {
       const container = document.getElementById("goals");
       container.innerHTML = "";
       if (!goals) {
         container.innerHTML = `<div class="card empty">No goals set</div>`;
         return;
       }
-      const rows = [
-        { label: "Checking", actual: goals.actual_checking_balance, target: goals.target_checking_balance },
-        { label: "Savings", actual: goals.actual_savings_balance, target: goals.target_savings_balance },
-      ];
-      for (const r of rows) {
-        const hasActual = r.actual !== null && r.actual !== undefined;
-        const status = hasActual ? (r.actual >= r.target ? "good" : "warning") : "good";
-        const meta = STATUS_META[status];
-        const card = document.createElement("div");
-        card.className = "card";
-        card.innerHTML = `
-          <div class="meter-row">
-            <span class="meter-label">
-              <span class="meter-icon" style="color:${meta.color}">${meta.icon}</span>
-              ${r.label}
-            </span>
-            <span class="meter-value">${hasActual ? fmt(r.actual) : "—"}</span>
-          </div>
-          <div class="meter-sub">Target ${fmt(r.target)}</div>
-        `;
-        container.appendChild(card);
-      }
+      const actual = goals.actual_savings_balance;
+      const target = goals.target_savings_balance;
+      const hasActual = actual !== null && actual !== undefined;
+      const pct = hasActual && target > 0 ? Math.min(actual / target, 1) * 100 : 0;
+      const status = hasActual ? (actual >= target ? "good" : "warning") : "good";
+      const meta = STATUS_META[status];
+      const card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = `
+        <div class="meter-row">
+          <span class="meter-label">
+            <span class="meter-icon" style="color:${meta.color}">${meta.icon}</span>
+            Savings
+          </span>
+          <span class="meter-value">${hasActual ? Math.round(pct) + "%" : "—"}</span>
+        </div>
+        <div class="meter-track"><div class="meter-fill" style="width:${pct}%; background:${meta.color}"></div></div>
+        <div class="meter-sub">${hasActual ? fmt(actual) : "—"} of ${fmt(target)} target</div>
+      `;
+      container.appendChild(card);
     }
 
     function monthsToPayoff(balance, monthlyPayment, apr) {
@@ -1024,7 +1084,8 @@
           }
         }
 
-        renderGoals(data.goals);
+        renderChecking(data.goals);
+        renderSavingsGoal(data.goals);
         renderDebt(data.debt || {});
         renderAccounts(data.accounts);
         renderUnmatched(data.unmatched_transactions);

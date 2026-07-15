@@ -288,9 +288,12 @@ def write_dashboard_data(totals, detail, unmatched, by_account, balances, accoun
         if debt_key in debt:
             debt[debt_key]["current_balance"] = balance
 
+    # Every linked account gets a card, even ones with no transactions this
+    # pay period (e.g. a card only used for monthly debt payments) - the
+    # transaction list just comes back empty for those.
     accounts = [
-        {"name": label, "balance": account_balances.get(label), "transactions": txns}
-        for label, txns in by_account.items()
+        {"name": label, "balance": balance, "transactions": by_account.get(label, [])}
+        for label, balance in account_balances.items()
     ]
 
     output = {
