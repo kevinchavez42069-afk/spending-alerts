@@ -13,7 +13,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Spending">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Butcherman&family=Press+Start+2P&family=VT323&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
   :root {
     --page: #f9f9f7;
     --surface: #fcfcfb;
@@ -53,6 +53,7 @@
     background-image: radial-gradient(rgba(0,0,0,0.14) 1px, transparent 1.4px);
     background-size: 14px 14px;
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    overflow-x: hidden;
     overscroll-behavior-y: contain;
   }
 
@@ -76,10 +77,10 @@
       5px 5px 0 rgba(0,0,0,0.35);
   }
   .retro h1 {
-    font-family: 'Butcherman', cursive;
-    font-size: 34px;
-    font-weight: 400;
-    letter-spacing: 1px;
+    font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", cursive;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
     margin: 4px 0 0;
     text-align: center;
     color: #1a1a1a;
@@ -104,6 +105,7 @@
   .retro .updated .error { color: #ff4d4d; font-family: inherit; font-size: inherit; }
   .retro h2 {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 8px;
     font-family: 'Press Start 2P', monospace;
@@ -122,8 +124,15 @@
     height: 2px;
     background: repeating-linear-gradient(90deg, #1a1a1a 0 4px, transparent 4px 8px);
   }
+  .retro h2 span {
+    min-width: 0;
+    overflow-wrap: break-word;
+  }
   .retro h2.section-header {
     justify-content: space-between;
+  }
+  .retro h2.section-header span {
+    flex: 1 1 auto;
   }
   .retro h2.section-header::before {
     content: "\00bb";
@@ -136,6 +145,8 @@
     font-size: 9px;
     color: #b3001b;
     text-decoration: underline;
+    flex-shrink: 0;
+    margin-left: 6px;
   }
   .retro .card {
     background: #d9d6cc;
@@ -494,17 +505,17 @@
     <h1>Spending Alerts</h1>
     <p class="updated" id="updated">Loading…</p>
 
-    <h2>This pay period</h2>
+    <h2><span>This pay period</span></h2>
     <div id="caps"></div>
 
-    <h2>Balance goals</h2>
+    <h2><span>Balance goals</span></h2>
     <div id="goals"></div>
 
-    <h2>Debt payoff</h2>
+    <h2><span>Debt payoff</span></h2>
     <div id="debt"></div>
 
     <h2 class="section-header">
-      Unmatched transactions
+      <span>Unmatched transactions</span>
       <a class="categorize-link" id="categorize-link" href="categorize.html">Categorize &rarr;</a>
     </h2>
     <div class="card" id="unmatched"></div>

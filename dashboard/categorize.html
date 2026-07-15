@@ -6,6 +6,9 @@
 <title>Categorize — Spending Alerts</title>
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#2a78d6">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <style>
   :root {
     --page: #f9f9f7;
@@ -39,7 +42,7 @@
     font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
     background: var(--page);
     color: var(--text-primary);
-    padding: 20px 16px 40px;
+    padding: calc(20px + env(safe-area-inset-top)) calc(16px + env(safe-area-inset-right)) calc(40px + env(safe-area-inset-bottom)) calc(16px + env(safe-area-inset-left));
     max-width: 480px;
     margin-inline: auto;
     overscroll-behavior: none;
@@ -135,8 +138,21 @@
     color: white;
     text-align: left;
     padding: 12px 14px;
+    border-radius: 10px;
+    transform: scale(1);
+    box-shadow: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
   }
   .cat-btn:disabled { opacity: 0.4; }
+  .cat-btn.drag-over {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 3px var(--page), 0 0 0 6px #1a1a1a, 0 8px 18px rgba(0,0,0,0.4);
+  }
+  .cat-btn.drag-over::after {
+    content: "\2713";
+    float: right;
+    font-weight: 700;
+  }
   .skip-link {
     display: block;
     text-align: center;
@@ -310,6 +326,7 @@
       CATEGORY_OPTIONS.forEach(opt => {
         const btn = document.createElement("button");
         btn.className = "cat-btn";
+        btn.dataset.key = opt.key;
         btn.style.background = opt.color;
         btn.textContent = opt.label;
         btn.disabled = busy;
@@ -342,7 +359,7 @@
         card.innerHTML = `
           <div class="card-name">${txn.name}</div>
           <div class="card-amount">${fmt(txn.amount)}</div>
-          ${depth === 0 ? '<div class="card-hint">Drag to skip, or tap a category</div>' : ""}
+          ${depth === 0 ? '<div class="card-hint">Drag onto a category, drag away to skip, or tap a category</div>' : ""}
         `;
         if (depth === 0) attachDrag(card);
         stack.appendChild(card);
@@ -350,14 +367,32 @@
       renderCategoryButtons();
     }
 
+    function bucketUnderPoint(x, y) {
+      const btns = document.querySelectorAll(".cat-btn:not(:disabled)");
+      for (const btn of btns) {
+        const r = btn.getBoundingClientRect();
+        if (x >= r.left && x <= r.right && y >= r.top && y <= r.bottom) {
+          return btn;
+        }
+      }
+      return null;
+    }
+
+    function clearDragOver() {
+      document.querySelectorAll(".cat-btn.drag-over").forEach(el => el.classList.remove("drag-over"));
+    }
+
     function attachDrag(card) {
       let startX = 0, startY = 0, dx = 0, dy = 0, dragging = false;
+      let initRect = null;
+      let hoveredBtn = null;
 
       const onDown = (e) => {
         if (busy) return;
         dragging = true;
         const p = e.touches ? e.touches[0] : e;
         startX = p.clientX; startY = p.clientY;
+        initRect = card.getBoundingClientRect();
         card.style.transition = "none";
       };
       const onMove = (e) => {
@@ -365,21 +400,47 @@
         const p = e.touches ? e.touches[0] : e;
         dx = p.clientX - startX; dy = p.clientY - startY;
         card.style.transform = `translate(${dx}px, ${dy}px) rotate(${dx / 20}deg)`;
+
+        const btn = bucketUnderPoint(p.clientX, p.clientY);
+        if (btn !== hoveredBtn) {
+          clearDragOver();
+          hoveredBtn = btn;
+          if (hoveredBtn) hoveredBtn.classList.add("drag-over");
+        }
+        card.style.boxShadow = hoveredBtn ? `0 0 0 4px ${hoveredBtn.style.background}` : "none";
       };
       const onUp = () => {
         if (!dragging) return;
         dragging = false;
-        card.style.transition = "transform 0.25s ease, opacity 0.25s ease";
-        const dist = Math.hypot(dx, dy);
-        if (dist > 100) {
-          const angle = Math.atan2(dy, dx);
-          card.style.transform = `translate(${Math.cos(angle) * 500}px, ${Math.sin(angle) * 500}px) rotate(${dx / 10}deg)`;
+        card.style.transition = "transform 0.25s ease, opacity 0.25s ease, box-shadow 0.25s ease";
+
+        if (hoveredBtn) {
+          // Fly the card into the bucket it was dropped on, then categorize it.
+          const key = hoveredBtn.dataset.key;
+          const option = CATEGORY_OPTIONS.find(o => o.key === key);
+          const btnRect = hoveredBtn.getBoundingClientRect();
+          const targetX = (btnRect.left + btnRect.width / 2) - (initRect.left + initRect.width / 2);
+          const targetY = (btnRect.top + btnRect.height / 2) - (initRect.top + initRect.height / 2);
+          card.style.transform = `translate(${targetX}px, ${targetY}px) scale(0.25)`;
           card.style.opacity = "0";
-          setTimeout(skipCurrent, 200);
+          card.style.boxShadow = "none";
+          clearDragOver();
+          setTimeout(() => handleAssign(option), 200);
         } else {
-          card.style.transform = "translate(0,0) rotate(0)";
+          const dist = Math.hypot(dx, dy);
+          if (dist > 100) {
+            const angle = Math.atan2(dy, dx);
+            card.style.transform = `translate(${Math.cos(angle) * 500}px, ${Math.sin(angle) * 500}px) rotate(${dx / 10}deg)`;
+            card.style.opacity = "0";
+            card.style.boxShadow = "none";
+            setTimeout(skipCurrent, 200);
+          } else {
+            card.style.transform = "translate(0,0) rotate(0)";
+            card.style.boxShadow = "none";
+          }
         }
         dx = 0; dy = 0;
+        hoveredBtn = null;
       };
 
       card.addEventListener("mousedown", onDown);
