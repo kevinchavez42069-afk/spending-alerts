@@ -53,7 +53,8 @@
       "keywords": [
         "CLAYD MARKET",
         "7-ELEVEN",
-        "3 STARS CONVENIENCE"
+        "3 STARS CONVENIENCE",
+        "ANTHROPIC* CLAUDE SUB"
       ]
     },
     "gym": {
@@ -104,11 +105,16 @@
       "starting_balance": 5148.26,
       "monthly_target": 2429,
       "apr": 0.2824,
-      "account_keywords": ["DELTA", "SKYMILES"]
+      "account_keywords": [
+        "DELTA",
+        "SKYMILES"
+      ]
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
-      "account_keywords": ["BLUE CASH"]
+      "account_keywords": [
+        "BLUE CASH"
+      ]
     }
   }
 }
