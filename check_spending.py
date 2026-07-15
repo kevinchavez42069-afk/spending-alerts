@@ -16,8 +16,8 @@ Environment variables required (set as GitHub Actions secrets):
                                 pulled and merged)
   PLAID_ENV                   ("production" once you're out of sandbox)
   NTFY_TOPIC                  (your private ntfy.sh topic name)
-  ANTHROPIC_API_KEY           (optional - enables Nancy's daily AI summary;
-                                daily summary is skipped without it)
+  ANTHROPIC_API_KEY           (optional - enables Nancy's AI summary, sent
+                                every other day; skipped entirely without it)
 """
 
 import json
@@ -55,6 +55,14 @@ PLAID_HOSTS = {
 # Pay periods are 14-day blocks starting from this anchor date (a payday).
 PAY_PERIOD_ANCHOR = date(2026, 7, 8)
 
+# Nancy's summary only fires every other day (not every run) to cut down on
+# notification noise - gated the same way pay periods are, off a fixed
+# anchor, so it doesn't need any stored "last sent" state.
+NANCY_SUMMARY_INTERVAL_DAYS = 2
+NANCY_SUMMARY_ANCHOR = date(2026, 7, 8)
+
+DASHBOARD_DATA_PATH = os.path.join(os.path.dirname(__file__), "dashboard", "data.json")
+
 with open(os.path.join(os.path.dirname(__file__), "categories.json")) as f:
     CATEGORIES = json.load(f)
 
@@ -64,6 +72,20 @@ def current_pay_period():
     period_index = (today - PAY_PERIOD_ANCHOR).days // 14
     start_date = PAY_PERIOD_ANCHOR + timedelta(days=period_index * 14)
     return start_date, today
+
+
+def should_send_nancy_summary():
+    return (date.today() - NANCY_SUMMARY_ANCHOR).days % NANCY_SUMMARY_INTERVAL_DAYS == 0
+
+
+def load_previous_nancy_messages():
+    if not os.path.exists(DASHBOARD_DATA_PATH):
+        return []
+    with open(DASHBOARD_DATA_PATH) as f:
+        try:
+            return json.load(f).get("nancy_messages", [])
+        except json.JSONDecodeError:
+            return []
 
 
 # ---------- Plaid setup ----------
@@ -288,7 +310,7 @@ def check_caps_and_alert(totals):
 
 # ---------- Dashboard data ----------
 
-def write_dashboard_data(totals, detail, unmatched, by_account, balances, account_labels, balances_by_id):
+def write_dashboard_data(totals, detail, unmatched, by_account, balances, account_labels, balances_by_id, nancy_messages):
     period_start, period_end = current_pay_period()
 
     goals = dict(CATEGORIES["goals"])
@@ -325,11 +347,9 @@ def write_dashboard_data(totals, detail, unmatched, by_account, balances, accoun
         },
         "goals": goals,
         "debt": debt,
+        "nancy_messages": nancy_messages,
     }
-    dashboard_path = os.path.join(
-        os.path.dirname(__file__), "dashboard", "data.json"
-    )
-    with open(dashboard_path, "w") as f:
+    with open(DASHBOARD_DATA_PATH, "w") as f:
         json.dump(output, f, indent=2)
 
     return output
@@ -343,13 +363,15 @@ you are not roleplaying as any real public figure or influencer, do not
 reference politics or anyone's real views/statements/biography - stay
 entirely and only on the topic of this user's personal budget.
 
-Tone: direct to the point of bluntness, no hedging, no coddling, no "I'm not
-a financial advisor" disclaimers - the user knows exactly what this is. You
-do not accept excuses - if they're overspending, say so plainly and tell
-them what to actually do about it, framed as accountability rather than
-cruelty. Short, punchy sentences over long explanations. Genuinely
-enthusiastic and complimentary when they're actually doing well - the
-bluntness cuts both ways, it's not just criticism.
+Tone: a hype, blunt bro - lots of "brah"/"bro", direct to the point of
+bluntness, no hedging, no coddling, no "I'm not a financial advisor"
+disclaimers - the user knows exactly what this is. You do not accept
+excuses - if they're overspending, say so plainly and tell them what to
+actually do about it, framed as accountability rather than cruelty. Short,
+punchy sentences over long explanations. Genuinely enthusiastic and
+complimentary when they're actually doing well - the bluntness cuts both
+ways, it's not just criticism. ALWAYS start every message with the word
+"Brah" as the very first word, no exceptions.
 
 You are given the user's current pay-period spending data as JSON. Base your
 summary strictly on those numbers - never invent figures. Keep it short - a
@@ -376,7 +398,7 @@ def generate_daily_summary(dashboard_data):
                     "role": "user",
                     "content": (
                         f"Current budget data (JSON):\n{json.dumps(dashboard_data)}\n\n"
-                        "Write today's daily check-in summary."
+                        "Write today's check-in summary."
                     ),
                 }
             ],
@@ -405,13 +427,25 @@ def main():
 
     totals, detail, unmatched, by_account = categorize(transactions, account_labels)
     alerts = check_caps_and_alert(totals)
+
+    # Read any prior Nancy messages before write_dashboard_data overwrites
+    # the file, so her summaries accumulate into one running thread the
+    # dashboard chat widget can render - the same text that goes out as a
+    # push notification also shows up as a message in the chat.
+    nancy_messages = load_previous_nancy_messages()
     dashboard_data = write_dashboard_data(
-        totals, detail, unmatched, by_account, balances, account_labels, balances_by_id
+        totals, detail, unmatched, by_account, balances, account_labels, balances_by_id, nancy_messages
     )
 
-    summary = generate_daily_summary(dashboard_data)
-    if summary:
-        send_ntfy(summary, title="Nancy's Daily Check-In", priority="default")
+    summary = None
+    if should_send_nancy_summary():
+        summary = generate_daily_summary(dashboard_data)
+        if summary:
+            nancy_messages.append({"text": summary, "date": date.today().isoformat()})
+            dashboard_data["nancy_messages"] = nancy_messages[-15:]
+            with open(DASHBOARD_DATA_PATH, "w") as f:
+                json.dump(dashboard_data, f, indent=2)
+            send_ntfy(summary, title="Nancy's Check-In", priority="default")
 
     print(f"Checked {len(transactions)} transactions.")
     print(f"Totals: {json.dumps(totals, indent=2)}")

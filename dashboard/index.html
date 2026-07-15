@@ -385,6 +385,18 @@
     object-fit: cover;
     border: 2px solid var(--ig-header-bg);
   }
+  .chat-fab-badge {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #ff3040;
+    border: 2px solid var(--page);
+    display: none;
+  }
+  .chat-fab-badge.show { display: block; }
   .chat-panel {
     position: fixed;
     inset: 0;
@@ -662,7 +674,10 @@
     <button class="redact-toggle" id="redact-toggle" aria-label="Toggle privacy redaction">&bull;</button>
   </div>
 
-  <button class="chat-fab" id="chat-fab" aria-label="Chat with Nancy"><img src="nancy-avatar.jpg?v=2" alt="Nancy"></button>
+  <button class="chat-fab" id="chat-fab" aria-label="Chat with Nancy">
+    <img src="nancy-avatar.jpg?v=2" alt="Nancy">
+    <span class="chat-fab-badge" id="chat-fab-badge"></span>
+  </button>
 
   <div class="chat-panel" id="chat-panel">
     <div class="chat-header">
@@ -681,8 +696,9 @@
       <div class="chat-timestamp" id="chat-timestamp"></div>
       <div class="chat-row nancy">
         <div class="chat-avatar small"><img src="nancy-avatar.jpg?v=2" alt="Nancy"></div>
-        <div class="chat-msg">Hey. I'm Nancy — ask me how you're doing, or whether you can afford something. I've got your numbers.</div>
+        <div class="chat-msg">Brah. I'm Nancy — ask me how you're doing, or whether you can afford something. I've got your numbers.</div>
       </div>
+      <div id="chat-history"></div>
     </div>
     <div class="chat-input-row chat-setup-row" id="chat-setup-row">
       <input type="password" id="chat-passphrase-input" placeholder="Enter chat passphrase to unlock" autocomplete="off">
@@ -1141,6 +1157,7 @@
         renderDebt(data.debt || {});
         renderAccounts(data.accounts);
         renderUnmatched(data.unmatched_transactions);
+        renderNancyHistory(data.nancy_messages || []);
       } catch (err) {
         document.getElementById("updated").innerHTML = `<span class="error">${err.message}</span>`;
         document.getElementById("caps").innerHTML = `<div class="card empty">No data yet — runs after the first daily check</div>`;
@@ -1151,9 +1168,38 @@
 
     const NANCY_WORKER_URL = "https://nancy-pelosi-budget-bot.kevinchavez.workers.dev";
     const NANCY_PASSPHRASE_KEY = "spending_alerts_nancy_passphrase";
+    const NANCY_SEEN_COUNT_KEY = "spending_alerts_nancy_seen_count";
 
     function getNancyPassphrase() { return localStorage.getItem(NANCY_PASSPHRASE_KEY); }
     function setNancyPassphrase(v) { localStorage.setItem(NANCY_PASSPHRASE_KEY, v); }
+
+    function getNancySeenCount() { return parseInt(localStorage.getItem(NANCY_SEEN_COUNT_KEY) || "0", 10); }
+    function setNancySeenCount(n) { localStorage.setItem(NANCY_SEEN_COUNT_KEY, String(n)); }
+
+    // Renders Nancy's push-notification summaries (from check_spending.py)
+    // as messages in the same chat thread the live widget uses, so a
+    // notification and the chat are one conversation instead of two. Shows
+    // an unread badge on the launcher until the panel's been opened.
+    function renderNancyHistory(messages) {
+      const history = document.getElementById("chat-history");
+      history.innerHTML = "";
+      for (const msg of messages) {
+        const row = document.createElement("div");
+        row.className = "chat-row nancy";
+        const avatar = document.createElement("div");
+        avatar.className = "chat-avatar small";
+        avatar.innerHTML = `<img src="nancy-avatar.jpg?v=2" alt="Nancy">`;
+        const bubble = document.createElement("div");
+        bubble.className = "chat-msg";
+        bubble.textContent = msg.text;
+        row.appendChild(avatar);
+        row.appendChild(bubble);
+        history.appendChild(row);
+      }
+      document.getElementById("chat-fab-badge").classList.toggle(
+        "show", messages.length > getNancySeenCount()
+      );
+    }
 
     function showChatUnlocked(unlocked) {
       document.getElementById("chat-setup-row").style.display = unlocked ? "none" : "";
@@ -1243,6 +1289,8 @@
       document.getElementById("chat-timestamp").textContent =
         "Today " + new Date().toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
       document.getElementById("chat-input").focus();
+      setNancySeenCount((latestData && latestData.nancy_messages || []).length);
+      document.getElementById("chat-fab-badge").classList.remove("show");
     });
     document.getElementById("chat-close").addEventListener("click", () => {
       document.getElementById("chat-panel").classList.remove("open");
