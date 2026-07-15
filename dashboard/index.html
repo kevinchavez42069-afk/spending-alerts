@@ -11,6 +11,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Butcherman&family=Press+Start+2P&family=VT323&display=swap');
   :root {
     --page: #f9f9f7;
     --surface: #fcfcfb;
@@ -45,132 +46,199 @@
   body {
     margin: 0;
     font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-    background: var(--page);
-    color: var(--text-primary);
-    padding: 20px 16px 40px;
+    background-color: #d8d4c8;
+    background-image: radial-gradient(rgba(0,0,0,0.14) 1px, transparent 1.4px);
+    background-size: 14px 14px;
+  }
+
+  /* ---- Y2K/Neocities-style shell for the main dashboard ---- */
+  /* Scoped under .retro so it never touches the shared --page/--surface/etc
+     variables the chat panel relies on. */
+  .retro {
     max-width: 480px;
-    margin-inline: auto;
+    margin: 18px auto 40px;
+    padding: 14px 14px 22px;
+    background-color: #ece9e0;
+    background-image:
+      linear-gradient(45deg, rgba(0,0,0,0.035) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.035) 75%),
+      linear-gradient(45deg, rgba(0,0,0,0.035) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.035) 75%);
+    background-size: 8px 8px;
+    background-position: 0 0, 4px 4px;
+    border: 2px solid #1a1a1a;
+    box-shadow:
+      inset 1px 1px 0 #fff,
+      inset -1px -1px 0 #8f8c80,
+      5px 5px 0 rgba(0,0,0,0.35);
   }
-  h1 {
-    font-size: 20px;
-    font-weight: 600;
-    margin: 4px 0 2px;
+  .retro h1 {
+    font-family: 'Butcherman', cursive;
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 4px 0 0;
+    text-align: center;
+    color: #1a1a1a;
+    text-shadow:
+      1px 1px 0 #fff,
+      2px 2px 0 #8f8c80,
+      3px 3px 4px rgba(0,0,0,0.4);
   }
-  .updated {
-    color: var(--text-muted);
-    font-size: 13px;
-    margin: 0 0 20px;
+  .retro .updated {
+    display: block;
+    width: fit-content;
+    margin: 10px auto 20px;
+    padding: 4px 12px;
+    background: #0c0c0c;
+    color: #39ff6a;
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border: 2px solid #000;
+    box-shadow: inset 0 0 6px rgba(57,255,106,0.5);
   }
-  h2 {
-    font-size: 13px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    color: var(--text-secondary);
-    margin: 28px 0 10px;
-  }
-  .section-header {
+  .retro .updated .error { color: #ff4d4d; font-family: inherit; font-size: inherit; }
+  .retro h2 {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 8px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #2b2a26;
+    text-align: center;
+    margin: 26px 0 12px;
   }
-  .categorize-link {
+  .retro h2:not(.section-header)::before,
+  .retro h2:not(.section-header)::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: repeating-linear-gradient(90deg, #1a1a1a 0 4px, transparent 4px 8px);
+  }
+  .retro h2.section-header {
+    justify-content: space-between;
+  }
+  .retro h2.section-header::before {
+    content: "\00bb";
+    margin-right: 4px;
+  }
+  .retro .categorize-link {
     text-transform: none;
     letter-spacing: normal;
-    font-weight: 600;
-    font-size: 13px;
-    color: var(--accent);
-    text-decoration: none;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 9px;
+    color: #b3001b;
+    text-decoration: underline;
   }
-  .card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 14px 16px;
-    margin-bottom: 10px;
+  .retro .card {
+    background: #d9d6cc;
+    border: 1px solid #6f6d67;
+    border-radius: 0;
+    box-shadow:
+      inset 1px 1px 0 #fff,
+      inset -1px -1px 0 #8f8c80,
+      2px 2px 0 rgba(0,0,0,0.25);
+    padding: 12px 14px;
+    margin-bottom: 12px;
   }
-  .meter-row {
+  .retro .meter-row {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 8px;
   }
-  .meter-label {
+  .retro .meter-label {
     display: flex;
     align-items: center;
     gap: 6px;
-    font-size: 14px;
-    font-weight: 500;
+    font-family: 'VT323', monospace;
+    font-size: 17px;
+    color: #1a1a1a;
   }
-  .meter-icon { font-size: 13px; line-height: 1; }
-  .meter-value {
-    font-size: 14px;
-    color: var(--text-secondary);
+  .retro .meter-icon { font-size: 13px; line-height: 1; }
+  .retro .meter-value {
+    font-family: 'VT323', monospace;
+    font-size: 17px;
+    color: #4a4842;
     font-variant-numeric: tabular-nums;
   }
-  .meter-track {
-    height: 8px;
-    border-radius: 4px;
-    background: var(--hairline);
+  .retro .meter-track {
+    height: 12px;
+    border-radius: 0;
+    background: #b9b6ac;
+    border: 1px solid #1a1a1a;
+    box-shadow: inset 1px 1px 2px rgba(0,0,0,0.4);
     overflow: hidden;
   }
-  .meter-fill {
+  .retro .meter-fill {
     height: 100%;
-    border-radius: 4px;
+    border-radius: 0;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), inset 0 -2px 0 rgba(0,0,0,0.25);
     transition: width 0.3s ease;
   }
-  .meter-sub {
-    font-size: 12px;
-    color: var(--text-muted);
+  .retro .meter-sub {
+    font-family: 'VT323', monospace;
+    font-size: 14px;
+    color: #6f6d67;
     margin-top: 6px;
   }
-  .debt-name {
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 2px;
+  .retro .debt-name {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 11px;
+    color: #1a1a1a;
+    margin-bottom: 6px;
   }
-  .debt-figures {
+  .retro .debt-figures {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
   }
-  .debt-figure-label {
-    font-size: 12px;
-    color: var(--text-muted);
+  .retro .debt-figure-label {
+    font-family: 'VT323', monospace;
+    font-size: 13px;
+    color: #6f6d67;
   }
-  .debt-figure-value {
-    font-size: 16px;
-    font-weight: 600;
+  .retro .debt-figure-value {
+    font-family: 'VT323', monospace;
+    font-size: 19px;
+    color: #1a1a1a;
     font-variant-numeric: tabular-nums;
   }
-  .badge {
+  .retro .badge {
     display: inline-block;
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--good);
-    background: color-mix(in srgb, var(--good) 12%, transparent);
+    font-family: 'VT323', monospace;
+    font-size: 13px;
+    color: #1a1a1a;
+    background: #bde8bd;
+    border: 1px solid #1a1a1a;
+    border-radius: 0;
+    box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #8a8a8a;
     padding: 2px 8px;
-    border-radius: 999px;
   }
-  .unmatched-item {
+  .retro .unmatched-item {
     display: flex;
     justify-content: space-between;
-    font-size: 13px;
+    font-family: 'VT323', monospace;
+    font-size: 15px;
     padding: 6px 0;
-    border-bottom: 1px solid var(--hairline);
+    border-bottom: 1px dashed #8f8c80;
   }
-  .unmatched-item:last-child { border-bottom: none; }
-  .unmatched-name { color: var(--text-primary); }
-  .unmatched-amount { color: var(--text-secondary); font-variant-numeric: tabular-nums; }
-  .empty {
-    color: var(--text-muted);
-    font-size: 13px;
+  .retro .unmatched-item:last-child { border-bottom: none; }
+  .retro .unmatched-name { color: #1a1a1a; }
+  .retro .unmatched-amount { color: #4a4842; font-variant-numeric: tabular-nums; }
+  .retro .empty {
+    font-family: 'VT323', monospace;
+    font-size: 15px;
+    color: #6f6d67;
     text-align: center;
     padding: 20px 0;
   }
-  .error {
-    color: var(--critical);
-    font-size: 13px;
+  .retro .error {
+    color: #b3001b;
+    font-family: 'VT323', monospace;
+    font-size: 15px;
   }
 
   :root {
@@ -411,23 +479,25 @@
 </style>
 </head>
 <body>
-  <h1>Spending Alerts</h1>
-  <p class="updated" id="updated">Loading…</p>
+  <div class="retro">
+    <h1>Spending Alerts</h1>
+    <p class="updated" id="updated">Loading…</p>
 
-  <h2>This pay period</h2>
-  <div id="caps"></div>
+    <h2>This pay period</h2>
+    <div id="caps"></div>
 
-  <h2>Balance goals</h2>
-  <div id="goals"></div>
+    <h2>Balance goals</h2>
+    <div id="goals"></div>
 
-  <h2>Debt payoff</h2>
-  <div id="debt"></div>
+    <h2>Debt payoff</h2>
+    <div id="debt"></div>
 
-  <h2 class="section-header">
-    Unmatched transactions
-    <a class="categorize-link" id="categorize-link" href="categorize.html">Categorize &rarr;</a>
-  </h2>
-  <div class="card" id="unmatched"></div>
+    <h2 class="section-header">
+      Unmatched transactions
+      <a class="categorize-link" id="categorize-link" href="categorize.html">Categorize &rarr;</a>
+    </h2>
+    <div class="card" id="unmatched"></div>
+  </div>
 
   <button class="chat-fab" id="chat-fab" aria-label="Chat with Nancy">N</button>
 
