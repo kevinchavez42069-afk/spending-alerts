@@ -360,6 +360,7 @@
     height: 56px;
     border-radius: 50%;
     background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+    padding: 2.5px;
     color: white;
     border: none;
     font-size: 22px;
@@ -367,6 +368,14 @@
     cursor: pointer;
     box-shadow: 0 4px 14px rgba(0,0,0,0.25);
     z-index: 50;
+  }
+  .chat-fab img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--ig-header-bg);
   }
   .chat-panel {
     position: fixed;
@@ -645,7 +654,7 @@
     <button class="redact-toggle" id="redact-toggle" aria-label="Toggle privacy redaction">&bull;</button>
   </div>
 
-  <button class="chat-fab" id="chat-fab" aria-label="Chat with Nancy">N</button>
+  <button class="chat-fab" id="chat-fab" aria-label="Chat with Nancy"><img src="nancy-avatar.jpg?v=2" alt="Nancy"></button>
 
   <div class="chat-panel" id="chat-panel">
     <div class="chat-header">
