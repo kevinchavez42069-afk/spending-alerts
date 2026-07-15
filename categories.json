@@ -1,13 +1,4 @@
 {
-  "fixed": {
-    "rent": {
-      "expected_amount": 850,
-      "keywords": [
-        "CVA Properties",
-        "rent"
-      ]
-    }
-  },
   "variable_needs": {
     "groceries": {
       "biweekly_cap": 150,
@@ -118,6 +109,13 @@
       "CASH APP",
       "APPLE CASH SENT MONEY",
       "VENMO"
+    ]
+  },
+  "excluded_accounts": {
+    "keywords": [
+      "SELF-DIRECTED",
+      "SELF DIRECTED",
+      "RENT"
     ]
   },
   "overrides": {},

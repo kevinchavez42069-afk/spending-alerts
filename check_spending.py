@@ -122,6 +122,18 @@ def get_all_accounts():
     return accounts
 
 
+def is_excluded_account(acct):
+    """True for accounts matching excluded_accounts.keywords in categories.json
+    (e.g. a self-directed brokerage account) - these are dropped entirely
+    from balances, the accounts list, and transaction categorization,
+    since they're not spending accounts this tool should track."""
+    keywords = [kw.upper() for kw in CATEGORIES.get("excluded_accounts", {}).get("keywords", [])]
+    if not keywords:
+        return False
+    label = f"{acct['name'] or ''} {acct['official_name'] or ''}".upper()
+    return any(kw in label for kw in keywords)
+
+
 def build_account_labels(accounts):
     """Map account_id -> friendly display name and -> current balance, so
     transactions (which only carry an account_id) can be grouped/labeled."""
@@ -381,9 +393,13 @@ def generate_daily_summary(dashboard_data):
 # ---------- Main ----------
 
 def main():
-    transactions = get_pay_period_transactions()
-
     accounts = get_all_accounts()
+    excluded_account_ids = {a["account_id"] for a in accounts if is_excluded_account(a)}
+    accounts = [a for a in accounts if a["account_id"] not in excluded_account_ids]
+
+    transactions = get_pay_period_transactions()
+    transactions = [t for t in transactions if t["account_id"] not in excluded_account_ids]
+
     account_labels, balances_by_id = build_account_labels(accounts)
     balances = summarize_balances(accounts)
 

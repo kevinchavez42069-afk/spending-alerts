@@ -161,6 +161,14 @@
     padding: 12px 14px;
     margin-bottom: 12px;
   }
+  .retro .card.compact {
+    padding: 7px 10px;
+    margin-bottom: 6px;
+  }
+  .retro .card.compact .meter-row { margin-bottom: 2px; }
+  .retro .card.compact .meter-label { font-size: 14px; }
+  .retro .card.compact .meter-value { font-size: 14px; }
+  .retro .card.compact .meter-sub { font-size: 12px; margin-top: 2px; }
   .retro .meter-row {
     display: flex;
     justify-content: space-between;
@@ -634,16 +642,16 @@
     <h2><span>Savings goal</span></h2>
     <div id="goals"></div>
 
+    <h2><span>Accounts</span></h2>
+    <p class="hint">Tap an account to see its recent transactions</p>
+    <div id="accounts"></div>
+
     <h2><span>Debt payoff</span></h2>
     <div id="debt"></div>
 
     <h2><span>This pay period</span></h2>
     <p class="hint">Tap a category to see the transactions behind it</p>
     <div id="caps"></div>
-
-    <h2><span>Accounts</span></h2>
-    <p class="hint">Tap an account to see its recent transactions</p>
-    <div id="accounts"></div>
 
     <h2 class="section-header">
       <span>Unmatched transactions</span>
@@ -1057,7 +1065,7 @@
       }
       for (const acct of accounts) {
         const card = document.createElement("div");
-        card.className = "card clickable";
+        card.className = "card clickable compact";
         const hasBalance = acct.balance !== null && acct.balance !== undefined;
         card.innerHTML = `
           <div class="meter-row">

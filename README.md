@@ -123,7 +123,6 @@ PLAID_CLIENT_ID=... PLAID_SECRET=... PLAID_ACCESS_TOKEN=... PLAID_ENV=sandbox NT
 - Pay periods are bi-weekly (14 days), anchored to a payday in
   `PAY_PERIOD_ANCHOR` in `check_spending.py` — update that date if your pay
   schedule shifts.
-- Fixed: Rent $850, Amazon Prime $14.99, Claude $20, SoundCloud $15.99
 - Variable Needs: Groceries $150/period cap, Gas $60/period cap
 - Variable Wants (sprint = $0): Going Out (bars/nightlife/events/rideshare),
   Slop (convenience-store junk food), Dining Out (takeout/delivery/restaurants),
@@ -132,6 +131,10 @@ PLAID_CLIENT_ID=... PLAID_SECRET=... PLAID_ACCESS_TOKEN=... PLAID_ENV=sandbox NT
 - Excluded from spending entirely: credit card payments, savings transfers,
   Zelle/Venmo/Cash App/Apple Cash sent-money (see `excluded.keywords` in
   `categories.json`)
+- Excluded accounts: linked accounts matching `excluded_accounts.keywords` in
+  `categories.json` (e.g. a self-directed brokerage account) are dropped
+  entirely — no balance, no transactions, no entry in the dashboard's
+  Accounts section
 - Goals: target checking $1,500, target savings $3,000, compared against live
   balances fetched from Plaid each run
 - Debt: Delta SkyMiles Amex, ~$2,429/mo target payoff, live balance from
