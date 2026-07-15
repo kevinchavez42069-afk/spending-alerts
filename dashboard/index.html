@@ -788,8 +788,8 @@
       if (cap === null) return "good"; // informational-only category, never alerts
       if (cap === 0) return spent > 0 ? "critical" : "good";
       const pct = spent / cap;
-      if (pct >= 1) return "critical";
-      if (pct >= 0.8) return "warning";
+      if (pct >= 0.8) return "critical";
+      if (pct >= 0.65) return "warning";
       return "good";
     }
 
