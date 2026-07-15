@@ -586,7 +586,7 @@
   <div class="chat-panel" id="chat-panel">
     <div class="chat-header">
       <button class="chat-back" id="chat-close" aria-label="Close chat">&#8249;</button>
-      <div class="chat-avatar"><img src="nancy-avatar.jpg" alt="Nancy"></div>
+      <div class="chat-avatar"><img src="nancy-avatar.jpg?v=2" alt="Nancy"></div>
       <div class="chat-header-names">
         <div class="chat-header-title">Nancy</div>
         <div class="chat-header-sub">Active now</div>
@@ -599,7 +599,7 @@
     <div class="chat-messages" id="chat-messages">
       <div class="chat-timestamp" id="chat-timestamp"></div>
       <div class="chat-row nancy">
-        <div class="chat-avatar small"><img src="nancy-avatar.jpg" alt="Nancy"></div>
+        <div class="chat-avatar small"><img src="nancy-avatar.jpg?v=2" alt="Nancy"></div>
         <div class="chat-msg">Hey. I'm Nancy — ask me how you're doing, or whether you can afford something. I've got your numbers.</div>
       </div>
     </div>
@@ -1054,7 +1054,7 @@
       if (sender === "nancy") {
         const avatar = document.createElement("div");
         avatar.className = "chat-avatar small";
-        avatar.innerHTML = `<img src="nancy-avatar.jpg" alt="Nancy">`;
+        avatar.innerHTML = `<img src="nancy-avatar.jpg?v=2" alt="Nancy">`;
         row.appendChild(avatar);
       }
       const bubble = document.createElement("div");
@@ -1071,7 +1071,7 @@
       const row = document.createElement("div");
       row.className = "chat-row nancy typing";
       row.innerHTML = `
-        <div class="chat-avatar small"><img src="nancy-avatar.jpg" alt="Nancy"></div>
+        <div class="chat-avatar small"><img src="nancy-avatar.jpg?v=2" alt="Nancy"></div>
         <div class="chat-msg">
           <span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span>
         </div>
