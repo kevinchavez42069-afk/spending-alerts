@@ -276,7 +276,7 @@ def check_caps_and_alert(totals):
 
 # ---------- Dashboard data ----------
 
-def write_dashboard_data(totals, detail, unmatched, by_account, balances, account_balances):
+def write_dashboard_data(totals, detail, unmatched, by_account, balances, account_labels, balances_by_id):
     period_start, period_end = current_pay_period()
 
     goals = dict(CATEGORIES["goals"])
@@ -290,10 +290,13 @@ def write_dashboard_data(totals, detail, unmatched, by_account, balances, accoun
 
     # Every linked account gets a card, even ones with no transactions this
     # pay period (e.g. a card only used for monthly debt payments) - the
-    # transaction list just comes back empty for those.
+    # transaction list just comes back empty for those. Keyed by account_id
+    # (not display name) so two accounts that happen to share the same
+    # Plaid-reported name (e.g. SoFi's checking/savings, or multiple cards
+    # under one Amex login) don't collide and silently drop one another.
     accounts = [
-        {"name": label, "balance": balance, "transactions": by_account.get(label, [])}
-        for label, balance in account_balances.items()
+        {"name": account_labels[aid], "balance": balance, "transactions": by_account.get(account_labels[aid], [])}
+        for aid, balance in balances_by_id.items()
     ]
 
     output = {
@@ -382,15 +385,12 @@ def main():
 
     accounts = get_all_accounts()
     account_labels, balances_by_id = build_account_labels(accounts)
-    account_balances_by_label = {
-        account_labels[aid]: bal for aid, bal in balances_by_id.items()
-    }
     balances = summarize_balances(accounts)
 
     totals, detail, unmatched, by_account = categorize(transactions, account_labels)
     alerts = check_caps_and_alert(totals)
     dashboard_data = write_dashboard_data(
-        totals, detail, unmatched, by_account, balances, account_balances_by_label
+        totals, detail, unmatched, by_account, balances, account_labels, balances_by_id
     )
 
     summary = generate_daily_summary(dashboard_data)
