@@ -112,19 +112,32 @@ def get_pay_period_transactions():
     return transactions
 
 
-def get_live_balances():
-    """Fetch current balances across every linked account. Checking/savings
-    are picked out by subtype; credit accounts are matched to a debt entry
-    in categories.json by account_keywords against the account's name, since
-    more than one credit card can be linked (e.g. two Amex cards under one
-    Item)."""
+def get_all_accounts():
     client = get_plaid_client()
     accounts = []
     for access_token in PLAID_ACCESS_TOKENS.values():
         request = AccountsBalanceGetRequest(access_token=access_token)
         response = client.accounts_balance_get(request)
         accounts.extend(response["accounts"])
+    return accounts
 
+
+def build_account_labels(accounts):
+    """Map account_id -> friendly display name and -> current balance, so
+    transactions (which only carry an account_id) can be grouped/labeled."""
+    labels = {}
+    balances_by_id = {}
+    for acct in accounts:
+        labels[acct["account_id"]] = acct["name"] or acct["official_name"] or "Account"
+        balances_by_id[acct["account_id"]] = acct["balances"]["current"]
+    return labels, balances_by_id
+
+
+def summarize_balances(accounts):
+    """Checking/savings are picked out by subtype; credit accounts are
+    matched to a debt entry in categories.json by account_keywords against
+    the account's name, since more than one credit card can be linked (e.g.
+    two Amex cards under one Item)."""
     # Plaid's subtype/type fields are enums, not plain strings, so they must
     # be str()-cast before comparing to a literal - direct == against a
     # string is always False even though they print identically.
@@ -152,40 +165,74 @@ def get_live_balances():
 
 # ---------- Categorization ----------
 
-def categorize(transactions):
-    """Bucket transactions into our categories by merchant name keyword match."""
+def categorize(transactions, account_labels):
+    """Bucket transactions into our categories by merchant name keyword match.
+
+    `overrides` in categories.json (exact uppercased transaction name ->
+    "group.category", or "excluded") takes precedence over keyword matching
+    entirely, so a single mis-categorized merchant can be corrected without
+    disturbing other transactions that share a broad keyword (e.g. "TST*").
+
+    Returns (totals, detail, unmatched, by_account):
+      totals       - {group: {cat: summed_amount}} (unchanged shape from before)
+      detail       - {group: {cat: [{name, amount, account}, ...]}} - the
+                      transactions behind each total, for the dashboard's
+                      per-category drill-down
+      unmatched    - transactions that fell through to misc_other
+      by_account   - {account_label: [{name, amount, category}, ...]} - every
+                      included transaction grouped by linked account, for the
+                      dashboard's per-account view
+    """
     totals = {
         "variable_needs": {cat: 0.0 for cat in CATEGORIES["variable_needs"]},
         "variable_wants": {cat: 0.0 for cat in CATEGORIES["variable_wants"]},
     }
+    detail = {
+        "variable_needs": {cat: [] for cat in CATEGORIES["variable_needs"]},
+        "variable_wants": {cat: [] for cat in CATEGORIES["variable_wants"]},
+    }
     excluded_keywords = [kw.upper() for kw in CATEGORIES.get("excluded", {}).get("keywords", [])]
+    overrides = {k.upper(): v for k, v in CATEGORIES.get("overrides", {}).items()}
     unmatched = []
+    by_account = {}
 
     for txn in transactions:
         amount = txn["amount"]  # Plaid: positive = money out
         if amount <= 0:
             continue  # skip refunds/credits
         name = (txn["name"] or "").upper()
+        account_label = account_labels.get(txn["account_id"], "Other account")
+        override = overrides.get(name)
 
-        if any(kw in name for kw in excluded_keywords):
+        if override == "excluded":
+            continue
+        if override is None and any(kw in name for kw in excluded_keywords):
             continue  # transfer/payment/credit card bill, not discretionary spending
 
-        matched = False
-        for group in ("variable_needs", "variable_wants"):
-            for cat, cfg in CATEGORIES[group].items():
-                if any(kw.upper() in name for kw in cfg["keywords"]):
-                    totals[group][cat] += amount
-                    matched = True
+        if override:
+            group, cat = override.split(".", 1)
+        else:
+            group = cat = None
+            for g in ("variable_needs", "variable_wants"):
+                for c, cfg in CATEGORIES[g].items():
+                    if any(kw.upper() in name for kw in cfg["keywords"]):
+                        group, cat = g, c
+                        break
+                if group:
                     break
-            if matched:
-                break
 
-        if not matched:
-            # Falls into misc/other "bullshit" catch-all
-            totals["variable_wants"]["misc_other"] += amount
-            unmatched.append({"name": txn["name"], "amount": amount})
+        entry = {"name": txn["name"], "amount": amount, "account": account_label}
+        if group is None:
+            group, cat = "variable_wants", "misc_other"
+            unmatched.append(entry)
 
-    return totals, unmatched
+        totals[group][cat] += amount
+        detail[group][cat].append(entry)
+        by_account.setdefault(account_label, []).append(
+            {"name": txn["name"], "amount": amount, "category": cat}
+        )
+
+    return totals, detail, unmatched, by_account
 
 
 # ---------- Alerts ----------
@@ -229,7 +276,7 @@ def check_caps_and_alert(totals):
 
 # ---------- Dashboard data ----------
 
-def write_dashboard_data(totals, unmatched, balances):
+def write_dashboard_data(totals, detail, unmatched, by_account, balances, account_balances):
     period_start, period_end = current_pay_period()
 
     goals = dict(CATEGORIES["goals"])
@@ -241,12 +288,19 @@ def write_dashboard_data(totals, unmatched, balances):
         if debt_key in debt:
             debt[debt_key]["current_balance"] = balance
 
+    accounts = [
+        {"name": label, "balance": account_balances.get(label), "transactions": txns}
+        for label, txns in by_account.items()
+    ]
+
     output = {
         "last_updated": date.today().isoformat(),
         "period_start": period_start.isoformat(),
         "period_end": period_end.isoformat(),
         "categories": totals,
+        "categories_detail": detail,
         "unmatched_transactions": unmatched,
+        "accounts": accounts,
         "caps": {
             group: {cat: cfg["biweekly_cap"] for cat, cfg in CATEGORIES[group].items()}
             for group in ("variable_needs", "variable_wants")
@@ -322,10 +376,19 @@ def generate_daily_summary(dashboard_data):
 
 def main():
     transactions = get_pay_period_transactions()
-    totals, unmatched = categorize(transactions)
+
+    accounts = get_all_accounts()
+    account_labels, balances_by_id = build_account_labels(accounts)
+    account_balances_by_label = {
+        account_labels[aid]: bal for aid, bal in balances_by_id.items()
+    }
+    balances = summarize_balances(accounts)
+
+    totals, detail, unmatched, by_account = categorize(transactions, account_labels)
     alerts = check_caps_and_alert(totals)
-    balances = get_live_balances()
-    dashboard_data = write_dashboard_data(totals, unmatched, balances)
+    dashboard_data = write_dashboard_data(
+        totals, detail, unmatched, by_account, balances, account_balances_by_label
+    )
 
     summary = generate_daily_summary(dashboard_data)
     if summary:

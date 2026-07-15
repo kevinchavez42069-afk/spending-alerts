@@ -256,6 +256,61 @@
     font-family: 'VT323', monospace;
     font-size: 15px;
   }
+  .retro .hint {
+    font-family: 'VT323', monospace;
+    font-size: 14px;
+    color: #6f6d67;
+    margin: -4px 0 8px;
+  }
+  .retro .card.clickable {
+    cursor: pointer;
+  }
+  .retro .drill-down {
+    margin-top: 10px;
+    border-top: 1px dashed #8f8c80;
+    padding-top: 8px;
+  }
+  .retro .txn-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 0;
+    border-bottom: 1px dashed #d8d4c8;
+    flex-wrap: wrap;
+  }
+  .retro .txn-row:last-child { border-bottom: none; }
+  .retro .txn-info { flex: 1; min-width: 120px; }
+  .retro .txn-name {
+    font-family: 'VT323', monospace;
+    font-size: 15px;
+    color: #1a1a1a;
+  }
+  .retro .txn-account {
+    color: #6f6d67;
+  }
+  .retro .txn-amount {
+    font-family: 'VT323', monospace;
+    font-size: 15px;
+    color: #4a4842;
+    font-variant-numeric: tabular-nums;
+  }
+  .retro .txn-status {
+    font-family: 'VT323', monospace;
+    font-size: 12px;
+    color: #2a78d6;
+  }
+  .retro .txn-row.txn-moved {
+    opacity: 0.6;
+  }
+  .retro .recat-select {
+    font-family: 'VT323', monospace;
+    font-size: 14px;
+    padding: 3px 6px;
+    border: 1px solid #1a1a1a;
+    border-radius: 0;
+    background: #fcfcfb;
+    color: #1a1a1a;
+  }
 
   :root {
     --ig-blue: #3797f0;
@@ -324,25 +379,19 @@
     height: 36px;
     border-radius: 50%;
     background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
-    padding: 2px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
     flex-shrink: 0;
-  }
-  .chat-avatar img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid var(--ig-header-bg);
   }
   .chat-avatar.small {
     width: 24px;
     height: 24px;
-    padding: 1.5px;
+    font-size: 10px;
     margin-right: 6px;
-  }
-  .chat-avatar.small img {
-    border-width: 1.5px;
   }
   .chat-header-names {
     flex: 1;
@@ -505,14 +554,19 @@
     <h1>Spending Alerts</h1>
     <p class="updated" id="updated">Loading…</p>
 
-    <h2><span>This pay period</span></h2>
-    <div id="caps"></div>
-
     <h2><span>Balance goals</span></h2>
     <div id="goals"></div>
 
     <h2><span>Debt payoff</span></h2>
     <div id="debt"></div>
+
+    <h2><span>This pay period</span></h2>
+    <p class="hint">Tap a category to see the transactions behind it</p>
+    <div id="caps"></div>
+
+    <h2><span>Accounts</span></h2>
+    <p class="hint">Tap an account to see its recent transactions</p>
+    <div id="accounts"></div>
 
     <h2 class="section-header">
       <span>Unmatched transactions</span>
@@ -526,7 +580,7 @@
   <div class="chat-panel" id="chat-panel">
     <div class="chat-header">
       <button class="chat-back" id="chat-close" aria-label="Close chat">&#8249;</button>
-      <div class="chat-avatar"><img src="nancy-avatar.jpg" alt="Nancy"></div>
+      <div class="chat-avatar">N</div>
       <div class="chat-header-names">
         <div class="chat-header-title">Nancy</div>
         <div class="chat-header-sub">Active now</div>
@@ -539,7 +593,7 @@
     <div class="chat-messages" id="chat-messages">
       <div class="chat-timestamp" id="chat-timestamp"></div>
       <div class="chat-row nancy">
-        <div class="chat-avatar small"><img src="nancy-avatar.jpg" alt="Nancy"></div>
+        <div class="chat-avatar small">N</div>
         <div class="chat-msg">Hey. I'm Nancy — ask me how you're doing, or whether you can afford something. I've got your numbers.</div>
       </div>
     </div>
@@ -568,15 +622,89 @@
     const CATEGORY_LABELS = {
       groceries: "Groceries",
       gas: "Gas",
-      going_out: "Going Out",
-      slop: "Slop",
+      parking: "Parking",
+      subscriptions: "Subscriptions",
+      partying: "Partying",
       dining_out: "Dining Out",
+      slop: "Slop",
       gym: "Gym",
       misc_other: "Misc / Other",
     };
 
+    const RECATEGORIZE_OPTIONS = [
+      { group: "variable_needs", key: "groceries", label: "Groceries", color: "#2a78d6" },
+      { group: "variable_needs", key: "gas", label: "Gas", color: "#1baf7a" },
+      { group: "variable_needs", key: "parking", label: "Parking", color: "#5a8fd6" },
+      { group: "variable_needs", key: "subscriptions", label: "Subscriptions", color: "#7a6fd0" },
+      { group: "variable_wants", key: "dining_out", label: "Dining Out", color: "#eda100" },
+      { group: "variable_wants", key: "slop", label: "Slop", color: "#eb6834" },
+      { group: "variable_wants", key: "gym", label: "Gym", color: "#008300" },
+      { group: "variable_wants", key: "partying", label: "Partying", color: "#e87ba4" },
+      { group: "variable_wants", key: "misc_other", label: "Misc / Other", color: "#767671" },
+      { group: null, key: "excluded", label: "Not Spending", color: "#4a4a48" },
+    ];
+
     function fmt(n) {
       return "$" + n.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+
+    // ---------- GitHub write helpers (recategorization) ----------
+    // Same pattern/token as categorize.html - reuses the PAT already saved
+    // there if the user set one up on this device.
+
+    const GH_OWNER = "kevinchavez42069-afk";
+    const GH_REPO = "spending-alerts";
+    const GH_BRANCH = "main";
+    const GH_TOKEN_KEY = "spending_alerts_gh_pat";
+
+    function getGhToken() { return localStorage.getItem(GH_TOKEN_KEY); }
+    function setGhToken(t) { localStorage.setItem(GH_TOKEN_KEY, t); }
+
+    function b64EncodeUtf8(str) { return btoa(unescape(encodeURIComponent(str))); }
+    function b64DecodeUtf8(str) { return decodeURIComponent(escape(atob(str))); }
+
+    async function ghRequest(path, options = {}) {
+      const res = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/${path}`, {
+        ...options,
+        headers: {
+          Authorization: `Bearer ${getGhToken()}`,
+          Accept: "application/vnd.github+json",
+          ...(options.headers || {}),
+        },
+      });
+      if (!res.ok) {
+        throw new Error(`GitHub API ${res.status}${res.status === 401 ? " (bad token?)" : ""}`);
+      }
+      return res.json();
+    }
+
+    async function fetchCategoriesFile() {
+      const data = await ghRequest(`contents/categories.json?ref=${GH_BRANCH}`);
+      return { content: JSON.parse(b64DecodeUtf8(data.content)), sha: data.sha };
+    }
+
+    async function commitCategoriesFile(content, sha, message) {
+      return ghRequest(`contents/categories.json`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          message,
+          content: b64EncodeUtf8(JSON.stringify(content, null, 2) + "\n"),
+          sha,
+          branch: GH_BRANCH,
+        }),
+      });
+    }
+
+    // Writes an exact-name override, which categorize() checks before any
+    // keyword matching - lets one specific merchant be corrected without
+    // touching broad keywords (like "TST*") that other transactions rely on.
+    async function assignOverride(txnName, option) {
+      const { content, sha } = await fetchCategoriesFile();
+      if (!content.overrides) content.overrides = {};
+      const value = option.key === "excluded" ? "excluded" : `${option.group}.${option.key}`;
+      content.overrides[txnName] = value;
+      await commitCategoriesFile(content, sha, `Recategorize "${txnName}" as ${option.label} (dashboard)`);
     }
 
     // Parse "YYYY-MM-DD" as a local date, not UTC midnight (avoids off-by-one
@@ -601,32 +729,79 @@
       critical: { icon: "■", color: "var(--critical)", label: "over" },
     };
 
-    function renderMeter(key, spent, cap) {
+    function buildRecategorizeSelect(txnName) {
+      const select = document.createElement("select");
+      select.className = "recat-select";
+      const placeholder = document.createElement("option");
+      placeholder.textContent = "Move to…";
+      placeholder.value = "";
+      placeholder.disabled = true;
+      placeholder.selected = true;
+      select.appendChild(placeholder);
+      for (const opt of RECATEGORIZE_OPTIONS) {
+        const el = document.createElement("option");
+        el.value = opt.key;
+        el.textContent = opt.label;
+        select.appendChild(el);
+      }
+      select.addEventListener("click", (e) => e.stopPropagation());
+      select.addEventListener("change", async () => {
+        const opt = RECATEGORIZE_OPTIONS.find(o => o.key === select.value);
+        if (!opt) return;
+        select.disabled = true;
+        const row = select.closest(".txn-row");
+        const statusEl = row.querySelector(".txn-status");
+        statusEl.textContent = "Saving…";
+        try {
+          await assignOverride(txnName, opt);
+          statusEl.textContent = `Moved to ${opt.label}. Refresh after the next check to see it settle.`;
+          row.classList.add("txn-moved");
+        } catch (err) {
+          statusEl.textContent = err.message;
+          select.disabled = false;
+        }
+      });
+      return select;
+    }
+
+    function renderTransactionList(container, txns) {
+      container.innerHTML = "";
+      if (!txns || txns.length === 0) {
+        container.innerHTML = `<div class="empty">No transactions here yet</div>`;
+        return;
+      }
+      for (const txn of txns) {
+        const row = document.createElement("div");
+        row.className = "txn-row";
+        const info = document.createElement("div");
+        info.className = "txn-info";
+        info.innerHTML = `
+          <div class="txn-name">${txn.name}${txn.account ? `<span class="txn-account"> · ${txn.account}</span>` : ""}</div>
+          <div class="txn-status"></div>
+        `;
+        const amount = document.createElement("div");
+        amount.className = "txn-amount";
+        amount.textContent = fmt(txn.amount);
+        row.appendChild(info);
+        row.appendChild(amount);
+        row.appendChild(buildRecategorizeSelect(txn.name));
+        container.appendChild(row);
+      }
+    }
+
+    function renderMeter(group, key, spent, cap, txns) {
       const status = statusFor(spent, cap);
       const meta = STATUS_META[status];
       const label = CATEGORY_LABELS[key] || key;
       const div = document.createElement("div");
-      div.className = "card";
+      div.className = "card clickable";
 
-      if (cap === null) {
-        // Informational-only category (e.g. gym) — track spend, never alert.
-        div.innerHTML = `
-          <div class="meter-row">
-            <span class="meter-label">
-              <span class="meter-icon" style="color:${meta.color}">${meta.icon}</span>
-              ${label}
-            </span>
-            <span class="meter-value">${fmt(spent)}</span>
-          </div>
-          <div class="meter-sub">${fmt(spent)} spent this pay period — no cap</div>
-        `;
-        return div;
-      }
-
-      const pct = cap > 0 ? Math.min(spent / cap, 1) * 100 : (spent > 0 ? 100 : 0);
-      const sub = cap > 0
-        ? `${fmt(spent)} of ${fmt(cap)} this pay period`
-        : (spent > 0 ? `${fmt(spent)} spent (target: $0 this sprint)` : "No spend — on target");
+      const sub = cap === null
+        ? `${fmt(spent)} spent this pay period — no cap`
+        : cap > 0
+          ? `${fmt(spent)} of ${fmt(cap)} this pay period`
+          : (spent > 0 ? `${fmt(spent)} spent (target: $0 this sprint)` : "No spend — on target");
+      const pct = cap === null ? null : (cap > 0 ? Math.min(spent / cap, 1) * 100 : (spent > 0 ? 100 : 0));
 
       div.innerHTML = `
         <div class="meter-row">
@@ -634,13 +809,24 @@
             <span class="meter-icon" style="color:${meta.color}">${meta.icon}</span>
             ${label}
           </span>
-          <span class="meter-value">${cap > 0 ? Math.round(pct) + "%" : ""}</span>
+          <span class="meter-value">${cap !== null && cap > 0 ? Math.round(pct) + "%" : (cap === null ? fmt(spent) : "")}</span>
         </div>
-        <div class="meter-track">
-          <div class="meter-fill" style="width:${pct}%; background:${meta.color}"></div>
-        </div>
+        ${cap !== null ? `<div class="meter-track"><div class="meter-fill" style="width:${pct}%; background:${meta.color}"></div></div>` : ""}
         <div class="meter-sub">${sub}</div>
+        <div class="drill-down" style="display:none"></div>
       `;
+
+      div.addEventListener("click", () => {
+        const panel = div.querySelector(".drill-down");
+        const isOpen = panel.style.display !== "none";
+        if (isOpen) {
+          panel.style.display = "none";
+        } else {
+          renderTransactionList(panel, txns);
+          panel.style.display = "block";
+        }
+      });
+
       return div;
     }
 
@@ -752,6 +938,54 @@
       }
     }
 
+    function renderAccounts(accounts) {
+      const container = document.getElementById("accounts");
+      container.innerHTML = "";
+      if (!accounts || accounts.length === 0) {
+        container.innerHTML = `<div class="card empty">No account activity yet</div>`;
+        return;
+      }
+      for (const acct of accounts) {
+        const card = document.createElement("div");
+        card.className = "card clickable";
+        const hasBalance = acct.balance !== null && acct.balance !== undefined;
+        card.innerHTML = `
+          <div class="meter-row">
+            <span class="meter-label">${acct.name}</span>
+            <span class="meter-value">${hasBalance ? fmt(acct.balance) : ""}</span>
+          </div>
+          <div class="meter-sub">${acct.transactions.length} transaction${acct.transactions.length === 1 ? "" : "s"} this pay period</div>
+          <div class="drill-down" style="display:none"></div>
+        `;
+        card.addEventListener("click", () => {
+          const panel = card.querySelector(".drill-down");
+          const isOpen = panel.style.display !== "none";
+          if (isOpen) {
+            panel.style.display = "none";
+          } else {
+            panel.innerHTML = "";
+            if (acct.transactions.length === 0) {
+              panel.innerHTML = `<div class="empty">No transactions here yet</div>`;
+            } else {
+              for (const txn of acct.transactions) {
+                const row = document.createElement("div");
+                row.className = "txn-row";
+                row.innerHTML = `
+                  <div class="txn-info">
+                    <div class="txn-name">${txn.name}<span class="txn-account"> · ${CATEGORY_LABELS[txn.category] || txn.category}</span></div>
+                  </div>
+                  <div class="txn-amount">${fmt(txn.amount)}</div>
+                `;
+                panel.appendChild(row);
+              }
+            }
+            panel.style.display = "block";
+          }
+        });
+        container.appendChild(card);
+      }
+    }
+
     let latestData = null;
 
     async function load() {
@@ -776,13 +1010,17 @@
         for (const group of ["variable_needs", "variable_wants"]) {
           const spentGroup = data.categories[group] || {};
           const capGroup = data.caps[group] || {};
+          const detailGroup = (data.categories_detail && data.categories_detail[group]) || {};
           for (const key of Object.keys(capGroup)) {
-            capsContainer.appendChild(renderMeter(key, spentGroup[key] || 0, capGroup[key]));
+            capsContainer.appendChild(
+              renderMeter(group, key, spentGroup[key] || 0, capGroup[key], detailGroup[key] || [])
+            );
           }
         }
 
         renderGoals(data.goals);
         renderDebt(data.debt || {});
+        renderAccounts(data.accounts);
         renderUnmatched(data.unmatched_transactions);
       } catch (err) {
         document.getElementById("updated").innerHTML = `<span class="error">${err.message}</span>`;
@@ -810,7 +1048,7 @@
       if (sender === "nancy") {
         const avatar = document.createElement("div");
         avatar.className = "chat-avatar small";
-        avatar.innerHTML = `<img src="nancy-avatar.jpg" alt="Nancy">`;
+        avatar.textContent = "N";
         row.appendChild(avatar);
       }
       const bubble = document.createElement("div");
@@ -827,7 +1065,7 @@
       const row = document.createElement("div");
       row.className = "chat-row nancy typing";
       row.innerHTML = `
-        <div class="chat-avatar small"><img src="nancy-avatar.jpg" alt="Nancy"></div>
+        <div class="chat-avatar small">N</div>
         <div class="chat-msg">
           <span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span>
         </div>

@@ -6,14 +6,6 @@
         "CVA Properties",
         "rent"
       ]
-    },
-    "subscriptions": {
-      "allowed": [
-        "AMAZON PRIME",
-        "ANTHROPIC",
-        "SOUNDCLOUD"
-      ],
-      "expected_total": 50.98
     }
   },
   "variable_needs": {
@@ -36,36 +28,28 @@
         "BP#",
         "CITGO"
       ]
+    },
+    "parking": {
+      "biweekly_cap": 30,
+      "keywords": [
+        "CITY OF RICHMOND/PARK",
+        "PARKING CITY OF RICHMOND",
+        "PIVOT PARKING"
+      ]
+    },
+    "subscriptions": {
+      "biweekly_cap": null,
+      "keywords": [
+        "ANTHROPIC",
+        "AMAZON PRIME",
+        "SOUNDCLOUD",
+        "APPLECOMBILL",
+        "TUBLY"
+      ]
     }
   },
   "variable_wants": {
-    "dining_out": {
-      "biweekly_cap": 0,
-      "keywords": [
-        "DOORDASH",
-        "CHIPOTLE",
-        "UBER EATS",
-        "GRUBHUB"
-      ]
-    },
-    "slop": {
-      "biweekly_cap": 0,
-      "keywords": [
-        "CLAYD MARKET",
-        "7-ELEVEN",
-        "3 STARS CONVENIENCE",
-        "ANTHROPIC* CLAUDE SUB"
-      ]
-    },
-    "gym": {
-      "biweekly_cap": null,
-      "keywords": [
-        "CARY STREET GYM",
-        "GNC",
-        "VITAMIN SHOPPE"
-      ]
-    },
-    "going_out": {
+    "partying": {
       "biweekly_cap": 0,
       "keywords": [
         "ELEMENTS",
@@ -78,7 +62,41 @@
         "TICKETMASTER",
         "TM *",
         "FANDUEL",
-        "UBER"
+        "UBER",
+        "LOSO",
+        "VINTAGE",
+        "FANDANGO"
+      ]
+    },
+    "dining_out": {
+      "biweekly_cap": 0,
+      "keywords": [
+        "DOORDASH",
+        "CHIPOTLE",
+        "UBER EATS",
+        "GRUBHUB",
+        "STARBUCKS",
+        "PANDORA",
+        "HELENS",
+        "TST*"
+      ]
+    },
+    "slop": {
+      "biweekly_cap": 0,
+      "keywords": [
+        "CLAYD MARKET",
+        "7-ELEVEN",
+        "3 STARS CONVENIENCE",
+        "VILLAGE MARKET",
+        "GOGO ICE CREAM"
+      ]
+    },
+    "gym": {
+      "biweekly_cap": null,
+      "keywords": [
+        "CARY STREET GYM",
+        "GNC",
+        "VITAMIN SHOPPE"
       ]
     },
     "misc_other": {
@@ -100,6 +118,7 @@
       "VENMO"
     ]
   },
+  "overrides": {},
   "debt": {
     "delta_amex": {
       "starting_balance": 5148.26,
