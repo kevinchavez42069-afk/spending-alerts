@@ -252,7 +252,7 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 110.2,
+      "balance": 50.93,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
@@ -394,7 +394,7 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 394.18,
+      "balance": 412.15,
       "type": "credit",
       "subtype": "credit card",
       "limit": 1000.0,
@@ -488,7 +488,7 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 5148.26,
+      "balance": 5275.85,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
@@ -513,7 +513,7 @@
   "goals": {
     "target_checking_balance": 1500,
     "target_savings_balance": 3000,
-    "actual_checking_balance": 110.2,
+    "actual_checking_balance": 50.93,
     "actual_savings_balance": 761.91
   },
   "debt": {
@@ -525,14 +525,14 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 5148.26
+      "current_balance": 5275.85
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 394.18
+      "current_balance": 412.15
     }
   },
   "nancy_messages": []
