@@ -579,6 +579,39 @@
     color: white;
     cursor: pointer;
   }
+
+  /* ---- Privacy redaction ---- */
+  .retro .redact-toggle {
+    display: block;
+    margin: 22px auto 0;
+    width: 14px;
+    height: 14px;
+    padding: 10px;
+    border: none;
+    background: none;
+    color: #1a1a1a;
+    opacity: 0.15;
+    font-size: 14px;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .retro .redact-toggle:hover,
+  .retro .redact-toggle:focus-visible {
+    opacity: 0.4;
+  }
+  body.redacted .balance-amount,
+  body.redacted .balance-sub,
+  body.redacted .meter-value,
+  body.redacted .meter-sub,
+  body.redacted .debt-figure-value,
+  body.redacted .unmatched-amount,
+  body.redacted .txn-amount {
+    background: #000 !important;
+    color: transparent !important;
+    border-radius: 2px;
+    box-shadow: none !important;
+    user-select: none;
+  }
 </style>
 </head>
 <body>
@@ -608,6 +641,8 @@
       <a class="categorize-link" id="categorize-link" href="categorize.html">Categorize &rarr;</a>
     </h2>
     <div class="card" id="unmatched"></div>
+
+    <button class="redact-toggle" id="redact-toggle" aria-label="Toggle privacy redaction">&bull;</button>
   </div>
 
   <button class="chat-fab" id="chat-fab" aria-label="Chat with Nancy">N</button>
@@ -617,7 +652,7 @@
       <button class="chat-back" id="chat-close" aria-label="Close chat">&#8249;</button>
       <div class="chat-avatar"><img src="nancy-avatar.jpg?v=2" alt="Nancy"></div>
       <div class="chat-header-names">
-        <div class="chat-header-title">Nancy</div>
+        <div class="chat-header-title">Nancy Pelosi</div>
         <div class="chat-header-sub">Active now</div>
       </div>
       <div class="chat-header-icons">
@@ -1212,6 +1247,17 @@
     });
 
     showChatUnlocked(!!getNancyPassphrase());
+
+    // ---------- Privacy redaction ----------
+
+    const REDACT_KEY = "spending_alerts_redacted";
+    document.getElementById("redact-toggle").addEventListener("click", () => {
+      const on = document.body.classList.toggle("redacted");
+      localStorage.setItem(REDACT_KEY, on ? "1" : "0");
+    });
+    if (localStorage.getItem(REDACT_KEY) === "1") {
+      document.body.classList.add("redacted");
+    }
 
     load();
   </script>
