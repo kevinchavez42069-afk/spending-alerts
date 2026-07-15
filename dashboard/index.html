@@ -945,6 +945,17 @@
       return "var(--good)";
     }
 
+    // Credit utilization read: low usage is healthy (green), high usage is
+    // the risk signal (red) - inverted from balanceTierColor, where a
+    // higher balance is the good outcome.
+    function creditUtilizationColor(balance, limit) {
+      if (balance === null || balance === undefined || !limit) return "var(--text-primary)";
+      const pct = balance / limit;
+      if (pct < 0.2) return "var(--good)";
+      if (pct < 0.5) return "var(--warning)";
+      return "var(--critical)";
+    }
+
     function renderChecking(goals) {
       const container = document.getElementById("checking");
       container.innerHTML = "";
@@ -1072,7 +1083,7 @@
       }
     }
 
-    function renderAccounts(accounts) {
+    function renderAccounts(accounts, goals) {
       const container = document.getElementById("accounts");
       container.innerHTML = "";
       if (!accounts || accounts.length === 0) {
@@ -1083,12 +1094,26 @@
         const card = document.createElement("div");
         card.className = "card clickable compact";
         const hasBalance = acct.balance !== null && acct.balance !== undefined;
+
+        let color = "var(--text-primary)";
+        let sub = `${acct.transactions.length} transaction${acct.transactions.length === 1 ? "" : "s"} this pay period`;
+        if (acct.subtype === "checking") {
+          color = balanceTierColor(acct.balance, goals && goals.target_checking_balance);
+        } else if (acct.subtype === "savings") {
+          color = balanceTierColor(acct.balance, goals && goals.target_savings_balance);
+        } else if (acct.type === "credit") {
+          color = creditUtilizationColor(acct.balance, acct.limit);
+          if (hasBalance && acct.limit) {
+            sub = `${Math.round((acct.balance / acct.limit) * 100)}% used · ${sub}`;
+          }
+        }
+
         card.innerHTML = `
           <div class="meter-row">
             <span class="meter-label">${acct.name}</span>
-            <span class="meter-value">${hasBalance ? fmt(acct.balance) : ""}</span>
+            <span class="meter-value" style="color:${color}">${hasBalance ? fmt(acct.balance) : ""}</span>
           </div>
-          <div class="meter-sub">${acct.transactions.length} transaction${acct.transactions.length === 1 ? "" : "s"} this pay period</div>
+          <div class="meter-sub">${sub}</div>
           <div class="drill-down" style="display:none"></div>
         `;
         card.addEventListener("click", () => {
@@ -1155,7 +1180,7 @@
         renderChecking(data.goals);
         renderSavingsGoal(data.goals);
         renderDebt(data.debt || {});
-        renderAccounts(data.accounts);
+        renderAccounts(data.accounts, data.goals);
         renderUnmatched(data.unmatched_transactions);
         renderNancyHistory(data.nancy_messages || []);
       } catch (err) {

@@ -157,14 +157,25 @@ def is_excluded_account(acct):
 
 
 def build_account_labels(accounts):
-    """Map account_id -> friendly display name and -> current balance, so
-    transactions (which only carry an account_id) can be grouped/labeled."""
+    """Map account_id -> friendly display name, current balance, and
+    type/subtype/credit-limit metadata, so transactions (which only carry
+    an account_id) can be grouped/labeled and the dashboard can render
+    type-aware balance coloring (checking/savings targets, credit
+    utilization)."""
     labels = {}
     balances_by_id = {}
+    meta_by_id = {}
     for acct in accounts:
         labels[acct["account_id"]] = acct["name"] or acct["official_name"] or "Account"
         balances_by_id[acct["account_id"]] = acct["balances"]["current"]
-    return labels, balances_by_id
+        # Plaid's type/subtype fields are enums, not plain strings - str()
+        # them so the dashboard gets a plain JSON string to compare against.
+        meta_by_id[acct["account_id"]] = {
+            "type": str(acct["type"]),
+            "subtype": str(acct["subtype"]),
+            "limit": acct["balances"]["limit"],
+        }
+    return labels, balances_by_id, meta_by_id
 
 
 def summarize_balances(accounts):
@@ -310,7 +321,7 @@ def check_caps_and_alert(totals):
 
 # ---------- Dashboard data ----------
 
-def write_dashboard_data(totals, detail, unmatched, by_account, balances, account_labels, balances_by_id, nancy_messages):
+def write_dashboard_data(totals, detail, unmatched, by_account, balances, account_labels, balances_by_id, meta_by_id, nancy_messages):
     period_start, period_end = current_pay_period()
 
     goals = dict(CATEGORIES["goals"])
@@ -329,7 +340,14 @@ def write_dashboard_data(totals, detail, unmatched, by_account, balances, accoun
     # Plaid-reported name (e.g. SoFi's checking/savings, or multiple cards
     # under one Amex login) don't collide and silently drop one another.
     accounts = [
-        {"name": account_labels[aid], "balance": balance, "transactions": by_account.get(account_labels[aid], [])}
+        {
+            "name": account_labels[aid],
+            "balance": balance,
+            "type": meta_by_id[aid]["type"],
+            "subtype": meta_by_id[aid]["subtype"],
+            "limit": meta_by_id[aid]["limit"],
+            "transactions": by_account.get(account_labels[aid], []),
+        }
         for aid, balance in balances_by_id.items()
     ]
 
@@ -422,7 +440,7 @@ def main():
     transactions = get_pay_period_transactions()
     transactions = [t for t in transactions if t["account_id"] not in excluded_account_ids]
 
-    account_labels, balances_by_id = build_account_labels(accounts)
+    account_labels, balances_by_id, meta_by_id = build_account_labels(accounts)
     balances = summarize_balances(accounts)
 
     totals, detail, unmatched, by_account = categorize(transactions, account_labels)
@@ -434,7 +452,7 @@ def main():
     # push notification also shows up as a message in the chat.
     nancy_messages = load_previous_nancy_messages()
     dashboard_data = write_dashboard_data(
-        totals, detail, unmatched, by_account, balances, account_labels, balances_by_id, nancy_messages
+        totals, detail, unmatched, by_account, balances, account_labels, balances_by_id, meta_by_id, nancy_messages
     )
 
     summary = None
