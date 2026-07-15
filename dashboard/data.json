@@ -12,9 +12,9 @@
     "variable_wants": {
       "partying": 202.79,
       "dining_out": 168.36,
-      "slop": 73.49,
+      "slop": 81.95,
       "gym": 0.0,
-      "misc_other": 8.46
+      "misc_other": 0.0
     }
   },
   "categories_detail": {
@@ -224,6 +224,16 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 4.23,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 4.23,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "7-Eleven",
           "amount": 22.84,
           "account": "Blue Cash Preferred\u00ae"
@@ -235,33 +245,21 @@
         }
       ],
       "gym": [],
-      "misc_other": [
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 4.23,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 4.23,
-          "account": "SoFi Checking"
-        }
-      ]
+      "misc_other": []
     }
   },
-  "unmatched_transactions": [
+  "unmatched_transactions": [],
+  "accounts": [
     {
-      "name": "ESSENTIAL EXPRESS",
-      "amount": 4.23,
-      "account": "SoFi Checking"
+      "name": "SoFi Self-directed",
+      "balance": 0.0,
+      "transactions": []
     },
     {
-      "name": "ESSENTIAL EXPRESS",
-      "amount": 4.23,
-      "account": "SoFi Checking"
-    }
-  ],
-  "accounts": [
+      "name": "Rent",
+      "balance": 1.13,
+      "transactions": []
+    },
     {
       "name": "SoFi Checking",
       "balance": 110.2,
@@ -374,7 +372,7 @@
         {
           "name": "ESSENTIAL EXPRESS",
           "amount": 4.23,
-          "category": "misc_other"
+          "category": "slop"
         },
         {
           "name": "ANTHROPIC* CLAUDE SUB",
@@ -389,9 +387,14 @@
         {
           "name": "ESSENTIAL EXPRESS",
           "amount": 4.23,
-          "category": "misc_other"
+          "category": "slop"
         }
       ]
+    },
+    {
+      "name": "SoFi Savings",
+      "balance": 761.91,
+      "transactions": []
     },
     {
       "name": "Blue Cash Preferred\u00ae",
@@ -483,6 +486,11 @@
           "category": "dining_out"
         }
       ]
+    },
+    {
+      "name": "Delta SkyMiles\u00ae Gold Card",
+      "balance": 5148.26,
+      "transactions": []
     }
   ],
   "caps": {
