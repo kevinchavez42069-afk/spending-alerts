@@ -1,0 +1,12 @@
+name = "nancy-pelosi-budget-bot"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+ALLOWED_ORIGIN = "https://kevinchavez42069-afk.github.io"
+PER_IP_LIMIT_PER_MINUTE = "8"
+GLOBAL_LIMIT_PER_DAY = "100"
+
+[[kv_namespaces]]
+binding = "RATE_LIMIT"
+id = "fd175be3dfad47f3b338b12ebb86d0cf"

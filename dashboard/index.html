@@ -308,19 +308,25 @@
     height: 36px;
     border-radius: 50%;
     background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 14px;
+    padding: 2px;
     flex-shrink: 0;
+  }
+  .chat-avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--ig-header-bg);
   }
   .chat-avatar.small {
     width: 24px;
     height: 24px;
-    font-size: 10px;
+    padding: 1.5px;
     margin-right: 6px;
+  }
+  .chat-avatar.small img {
+    border-width: 1.5px;
   }
   .chat-header-names {
     flex: 1;
@@ -504,7 +510,7 @@
   <div class="chat-panel" id="chat-panel">
     <div class="chat-header">
       <button class="chat-back" id="chat-close" aria-label="Close chat">&#8249;</button>
-      <div class="chat-avatar">N</div>
+      <div class="chat-avatar"><img src="nancy-avatar.jpg" alt="Nancy"></div>
       <div class="chat-header-names">
         <div class="chat-header-title">Nancy</div>
         <div class="chat-header-sub">Active now</div>
@@ -517,7 +523,7 @@
     <div class="chat-messages" id="chat-messages">
       <div class="chat-timestamp" id="chat-timestamp"></div>
       <div class="chat-row nancy">
-        <div class="chat-avatar small">N</div>
+        <div class="chat-avatar small"><img src="nancy-avatar.jpg" alt="Nancy"></div>
         <div class="chat-msg">Hey. I'm Nancy — ask me how you're doing, or whether you can afford something. I've got your numbers.</div>
       </div>
     </div>
@@ -788,7 +794,7 @@
       if (sender === "nancy") {
         const avatar = document.createElement("div");
         avatar.className = "chat-avatar small";
-        avatar.textContent = "N";
+        avatar.innerHTML = `<img src="nancy-avatar.jpg" alt="Nancy">`;
         row.appendChild(avatar);
       }
       const bubble = document.createElement("div");
@@ -805,7 +811,7 @@
       const row = document.createElement("div");
       row.className = "chat-row nancy typing";
       row.innerHTML = `
-        <div class="chat-avatar small">N</div>
+        <div class="chat-avatar small"><img src="nancy-avatar.jpg" alt="Nancy"></div>
         <div class="chat-msg">
           <span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span>
         </div>
