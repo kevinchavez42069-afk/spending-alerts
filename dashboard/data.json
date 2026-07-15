@@ -251,18 +251,11 @@
   "unmatched_transactions": [],
   "accounts": [
     {
-      "name": "SoFi Self-directed",
-      "balance": 0.0,
-      "transactions": []
-    },
-    {
-      "name": "Rent",
-      "balance": 1.13,
-      "transactions": []
-    },
-    {
       "name": "SoFi Checking",
       "balance": 110.2,
+      "type": "depository",
+      "subtype": "checking",
+      "limit": null,
       "transactions": [
         {
           "name": "ANTHROPIC",
@@ -394,11 +387,17 @@
     {
       "name": "SoFi Savings",
       "balance": 761.91,
+      "type": "depository",
+      "subtype": "savings",
+      "limit": null,
       "transactions": []
     },
     {
       "name": "Blue Cash Preferred\u00ae",
       "balance": 394.18,
+      "type": "credit",
+      "subtype": "credit card",
+      "limit": 1000.0,
       "transactions": [
         {
           "name": "APPLECOMBILL",
@@ -490,6 +489,9 @@
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
       "balance": 5148.26,
+      "type": "credit",
+      "subtype": "credit card",
+      "limit": 10800.0,
       "transactions": []
     }
   ],
@@ -532,5 +534,6 @@
       ],
       "current_balance": 394.18
     }
-  }
+  },
+  "nancy_messages": []
 }
