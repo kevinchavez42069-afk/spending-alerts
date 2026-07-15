@@ -6,10 +6,12 @@
 <title>Spending Alerts</title>
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="icon.svg">
+<link rel="apple-touch-icon" href="icon-180.png">
 <meta name="theme-color" content="#2a78d6">
 <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Spending">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Butcherman&family=Press+Start+2P&family=VT323&display=swap');
   :root {
@@ -43,12 +45,15 @@
     }
   }
   * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
   body {
     margin: 0;
     font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
     background-color: #d8d4c8;
     background-image: radial-gradient(rgba(0,0,0,0.14) 1px, transparent 1.4px);
     background-size: 14px 14px;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    overscroll-behavior-y: contain;
   }
 
   /* ---- Y2K/Neocities-style shell for the main dashboard ---- */
@@ -257,8 +262,8 @@
 
   .chat-fab {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: calc(20px + env(safe-area-inset-bottom));
+    right: calc(20px + env(safe-area-inset-right));
     width: 56px;
     height: 56px;
     border-radius: 50%;
@@ -289,7 +294,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 10px 12px;
+    padding: calc(10px + env(safe-area-inset-top)) 12px 10px;
     border-bottom: 1px solid var(--hairline);
     background: var(--ig-header-bg);
     flex-shrink: 0;
@@ -417,7 +422,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 10px 12px;
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
     border-top: 1px solid var(--hairline);
     flex-shrink: 0;
     background: var(--ig-header-bg);
@@ -443,7 +448,7 @@
     border: none;
     background: transparent;
     color: var(--text-primary);
-    font-size: 14px;
+    font-size: 16px;
     font-family: inherit;
     padding: 4px 0;
     outline: none;
@@ -468,7 +473,7 @@
     border: 1px solid var(--border);
     background: var(--surface);
     color: var(--text-primary);
-    font-size: 14px;
+    font-size: 16px;
     font-family: inherit;
   }
   .chat-setup-row button {
