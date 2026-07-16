@@ -1,20 +1,20 @@
 {
-  "last_updated": "2026-07-15",
+  "last_updated": "2026-07-16",
   "period_start": "2026-07-08",
-  "period_end": "2026-07-15",
+  "period_end": "2026-07-16",
   "categories": {
     "variable_needs": {
       "groceries": 117.87,
       "gas": 0.0,
-      "parking": 43.4,
-      "subscriptions": 79.21
+      "parking": 46.349999999999994,
+      "subscriptions": 61.24
     },
     "variable_wants": {
       "partying": 202.79,
       "dining_out": 168.36,
       "slop": 81.95,
       "gym": 0.0,
-      "misc_other": 0.0
+      "misc_other": 177.37
     }
   },
   "categories_detail": {
@@ -38,6 +38,11 @@
       ],
       "gas": [],
       "parking": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.95,
+          "account": "SoFi Checking"
+        },
         {
           "name": "City of Richmond/Parkh",
           "amount": 2.95,
@@ -76,6 +81,11 @@
       ],
       "subscriptions": [
         {
+          "name": "ANTHROPIC* CLAUDE SUB",
+          "amount": 20.0,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "ANTHROPIC",
           "amount": 20.0,
           "account": "SoFi Checking"
@@ -84,21 +94,6 @@
           "name": "ANTHROPIC* CLAUDE SUB",
           "amount": 20.0,
           "account": "SoFi Checking"
-        },
-        {
-          "name": "ANTHROPIC* CLAUDE SUB",
-          "amount": 20.0,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "APPLECOMBILL",
-          "amount": 2.99,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "APPLECOMBILL",
-          "amount": 14.98,
-          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "TUBLY DOWNLOADER",
@@ -245,18 +240,95 @@
         }
       ],
       "gym": [],
-      "misc_other": []
+      "misc_other": [
+        {
+          "name": "CBI*REKORDBOX",
+          "amount": 23.0,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "ONE WAY USA",
+          "amount": 8.81,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 2.99,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 14.98,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Interest Charge on Purchases",
+          "amount": 127.59,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        }
+      ]
     }
   },
-  "unmatched_transactions": [],
+  "unmatched_transactions": [
+    {
+      "name": "CBI*REKORDBOX",
+      "amount": 23.0,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "ONE WAY USA",
+      "amount": 8.81,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "APPLE.COM/BILL INTERNET CHARGE",
+      "amount": 2.99,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "APPLE.COM/BILL INTERNET CHARGE",
+      "amount": 14.98,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Interest Charge on Purchases",
+      "amount": 127.59,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    }
+  ],
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 50.93,
+      "balance": 45.93,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "ANTHROPIC* CLAUDE SUB",
+          "amount": 20.0,
+          "category": "subscriptions"
+        },
+        {
+          "name": "CBI*REKORDBOX",
+          "amount": 23.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.95,
+          "category": "parking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.95,
+          "category": "parking"
+        },
+        {
+          "name": "Starbucks",
+          "amount": 16.32,
+          "category": "dining_out"
+        },
         {
           "name": "ANTHROPIC",
           "amount": 20.0,
@@ -268,16 +340,6 @@
           "category": "slop"
         },
         {
-          "name": "ANTHROPIC* CLAUDE SUB",
-          "amount": 20.0,
-          "category": "subscriptions"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.95,
-          "category": "parking"
-        },
-        {
           "name": "GDP*GoGo Ice Cream Tru",
           "amount": 7.89,
           "category": "slop"
@@ -286,11 +348,6 @@
           "name": "SHOTGUN* PANDORA CAFE",
           "amount": 12.0,
           "category": "partying"
-        },
-        {
-          "name": "Starbucks",
-          "amount": 16.32,
-          "category": "dining_out"
         },
         {
           "name": "UBR* PENDING.UBER.COM",
@@ -386,7 +443,7 @@
     },
     {
       "name": "SoFi Savings",
-      "balance": 761.91,
+      "balance": 746.91,
       "type": "depository",
       "subtype": "savings",
       "limit": null,
@@ -394,20 +451,25 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 412.15,
+      "balance": 426.22,
       "type": "credit",
       "subtype": "credit card",
       "limit": 1000.0,
       "transactions": [
         {
-          "name": "APPLECOMBILL",
-          "amount": 2.99,
-          "category": "subscriptions"
+          "name": "ONE WAY USA",
+          "amount": 8.81,
+          "category": "misc_other"
         },
         {
-          "name": "APPLECOMBILL",
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 2.99,
+          "category": "misc_other"
+        },
+        {
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
           "amount": 14.98,
-          "category": "subscriptions"
+          "category": "misc_other"
         },
         {
           "name": "Chipotle Mexican Grill",
@@ -492,7 +554,13 @@
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
-      "transactions": []
+      "transactions": [
+        {
+          "name": "Interest Charge on Purchases",
+          "amount": 127.59,
+          "category": "misc_other"
+        }
+      ]
     }
   ],
   "caps": {
@@ -513,8 +581,8 @@
   "goals": {
     "target_checking_balance": 1500,
     "target_savings_balance": 3000,
-    "actual_checking_balance": 50.93,
-    "actual_savings_balance": 761.91
+    "actual_checking_balance": 45.93,
+    "actual_savings_balance": 746.91
   },
   "debt": {
     "delta_amex": {
@@ -532,8 +600,13 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 412.15
+      "current_balance": 426.22
     }
   },
-  "nancy_messages": []
+  "nancy_messages": [
+    {
+      "text": "Brah, we need to talk.\n\nYou're $202 over on partying, $168 over on dining out, $82 over on slop, and your checking account is sitting at $46 when it should be at $1,500. Meanwhile you're paying $127.59 in *interest charges* on that Delta card and your subscriptions are double-charged (you got Claude billed THREE times this period, bro).\n\nStop the bleeding: Kill the duplicate subscriptions TODAY. Cut the restaurants and convenience store runs\u2014you're hemorrhaging money on small transactions that add up fast. Your parking alone is almost $50 when your cap is $30.\n\nGet your checking balance back above zero first. Then we fix the rest.\n\nWhat's the move?",
+      "date": "2026-07-16"
+    }
+  ]
 }
