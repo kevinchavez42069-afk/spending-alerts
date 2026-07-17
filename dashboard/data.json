@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-07-16",
+  "last_updated": "2026-07-17",
   "period_start": "2026-07-08",
-  "period_end": "2026-07-16",
+  "period_end": "2026-07-17",
   "categories": {
     "variable_needs": {
       "groceries": 117.87,
       "gas": 0.0,
-      "parking": 46.349999999999994,
+      "parking": 55.25,
       "subscriptions": 61.24
     },
     "variable_wants": {
       "partying": 202.79,
       "dining_out": 168.36,
-      "slop": 81.95,
+      "slop": 101.95,
       "gym": 0.0,
       "misc_other": 177.37
     }
@@ -38,6 +38,16 @@
       ],
       "gas": [],
       "parking": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "account": "SoFi Checking"
+        },
         {
           "name": "City of Richmond/Parkh",
           "amount": 2.95,
@@ -81,12 +91,12 @@
       ],
       "subscriptions": [
         {
-          "name": "ANTHROPIC* CLAUDE SUB",
+          "name": "ANTHROPIC",
           "amount": 20.0,
           "account": "SoFi Checking"
         },
         {
-          "name": "ANTHROPIC",
+          "name": "ANTHROPIC* CLAUDE SUB",
           "amount": 20.0,
           "account": "SoFi Checking"
         },
@@ -229,6 +239,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "CLAYD MARKET",
+          "amount": 20.0,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "7-Eleven",
           "amount": 22.84,
           "account": "Blue Cash Preferred\u00ae"
@@ -299,11 +314,26 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 45.93,
+      "balance": 19.98,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "ANTHROPIC",
+          "amount": 20.0,
+          "category": "subscriptions"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "category": "parking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "category": "parking"
+        },
         {
           "name": "ANTHROPIC* CLAUDE SUB",
           "amount": 20.0,
@@ -328,11 +358,6 @@
           "name": "Starbucks",
           "amount": 16.32,
           "category": "dining_out"
-        },
-        {
-          "name": "ANTHROPIC",
-          "amount": 20.0,
-          "category": "subscriptions"
         },
         {
           "name": "3 STARS CONVENIENCE",
@@ -451,11 +476,21 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 426.22,
+      "balance": 435.03,
       "type": "credit",
       "subtype": "credit card",
       "limit": 1000.0,
       "transactions": [
+        {
+          "name": "CLAYD MARKET",
+          "amount": 20.0,
+          "category": "slop"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "category": "dining_out"
+        },
         {
           "name": "ONE WAY USA",
           "amount": 8.81,
@@ -470,11 +505,6 @@
           "name": "APPLE.COM/BILL INTERNET CHARGE",
           "amount": 14.98,
           "category": "misc_other"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.07,
-          "category": "dining_out"
         },
         {
           "name": "AplPay ALDI 80007 80RICHMOND",
@@ -581,7 +611,7 @@
   "goals": {
     "target_checking_balance": 1500,
     "target_savings_balance": 3000,
-    "actual_checking_balance": 45.93,
+    "actual_checking_balance": 19.98,
     "actual_savings_balance": 746.91
   },
   "debt": {
@@ -600,7 +630,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 426.22
+      "current_balance": 435.03
     }
   },
   "nancy_messages": [
