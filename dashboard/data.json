@@ -1,20 +1,20 @@
 {
-  "last_updated": "2026-07-18",
+  "last_updated": "2026-07-19",
   "period_start": "2026-07-08",
-  "period_end": "2026-07-18",
+  "period_end": "2026-07-19",
   "categories": {
     "variable_needs": {
-      "groceries": 117.87,
-      "gas": 0.0,
-      "parking": 57.57,
-      "subscriptions": 61.24
+      "groceries": 166.06,
+      "gas": 38.21,
+      "parking": 59.27,
+      "subscriptions": 76.23
     },
     "variable_wants": {
       "partying": 202.79,
       "dining_out": 183.51000000000002,
       "slop": 101.95,
       "gym": 0.0,
-      "misc_other": 177.37
+      "misc_other": 384.77
     }
   },
   "categories_detail": {
@@ -24,6 +24,16 @@
           "name": "Kroger",
           "amount": 24.51,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "Kroger",
+          "amount": 21.7,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Target",
+          "amount": 26.49,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay ALDI 80007 80RICHMOND",
@@ -36,8 +46,29 @@
           "account": "Blue Cash Preferred\u00ae"
         }
       ],
-      "gas": [],
+      "gas": [
+        {
+          "name": "WAWA - STORE",
+          "amount": 38.21,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "parking": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 1.7,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "account": "SoFi Checking"
+        },
         {
           "name": "City of Richmond/Parkh",
           "amount": 2.32,
@@ -46,16 +77,6 @@
         {
           "name": "City of Richmond/Parkh",
           "amount": 2.95,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
           "account": "SoFi Checking"
         },
         {
@@ -95,6 +116,11 @@
         }
       ],
       "subscriptions": [
+        {
+          "name": "Amazon Prime",
+          "amount": 14.99,
+          "account": "SoFi Checking"
+        },
         {
           "name": "ANTHROPIC",
           "amount": 20.0,
@@ -249,7 +275,7 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "CLAYD MARKET",
+          "name": "AplPay CLAYD MARKET",
           "amount": 20.0,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -267,9 +293,29 @@
       "gym": [],
       "misc_other": [
         {
+          "name": "AMAZON MKTPLACE PMTS",
+          "amount": 21.19,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "PEARSON VUE GEN",
+          "amount": 150.0,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "CBI*REKORDBOX",
           "amount": 23.0,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 3.23,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Staples",
+          "amount": 32.98,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay ONE WAY USA",
@@ -296,9 +342,29 @@
   },
   "unmatched_transactions": [
     {
+      "name": "AMAZON MKTPLACE PMTS",
+      "amount": 21.19,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "PEARSON VUE GEN",
+      "amount": 150.0,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "CBI*REKORDBOX",
       "amount": 23.0,
       "account": "SoFi Checking"
+    },
+    {
+      "name": "K H M CONVENIENCE STORE",
+      "amount": 3.23,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Staples",
+      "amount": 32.98,
+      "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "AplPay ONE WAY USA",
@@ -324,11 +390,41 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 161.08,
+      "balance": 158.76,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "AMAZON MKTPLACE PMTS",
+          "amount": 21.19,
+          "category": "misc_other"
+        },
+        {
+          "name": "Amazon Prime",
+          "amount": 14.99,
+          "category": "subscriptions"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 1.7,
+          "category": "parking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "category": "parking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "category": "parking"
+        },
+        {
+          "name": "PEARSON VUE GEN",
+          "amount": 150.0,
+          "category": "misc_other"
+        },
         {
           "name": "CBI*REKORDBOX",
           "amount": 23.0,
@@ -348,16 +444,6 @@
           "name": "ANTHROPIC",
           "amount": 20.0,
           "category": "subscriptions"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "category": "parking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "category": "parking"
         },
         {
           "name": "ANTHROPIC* CLAUDE SUB",
@@ -483,7 +569,7 @@
     },
     {
       "name": "SoFi Savings",
-      "balance": 746.91,
+      "balance": 596.91,
       "type": "depository",
       "subtype": "savings",
       "limit": null,
@@ -491,11 +577,41 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 455.03,
+      "balance": 496.67,
       "type": "credit",
       "subtype": "credit card",
       "limit": 1000.0,
       "transactions": [
+        {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 3.23,
+          "category": "misc_other"
+        },
+        {
+          "name": "Kroger",
+          "amount": 21.7,
+          "category": "groceries"
+        },
+        {
+          "name": "Staples",
+          "amount": 32.98,
+          "category": "misc_other"
+        },
+        {
+          "name": "Target",
+          "amount": 26.49,
+          "category": "groceries"
+        },
+        {
+          "name": "WAWA - STORE",
+          "amount": 38.21,
+          "category": "gas"
+        },
+        {
+          "name": "AplPay CLAYD MARKET",
+          "amount": 20.0,
+          "category": "slop"
+        },
         {
           "name": "Chipotle Mexican Grill",
           "amount": 15.15,
@@ -505,11 +621,6 @@
           "name": "AplPay ONE WAY USA",
           "amount": 8.81,
           "category": "misc_other"
-        },
-        {
-          "name": "CLAYD MARKET",
-          "amount": 20.0,
-          "category": "slop"
         },
         {
           "name": "Chipotle Mexican Grill",
@@ -631,8 +742,8 @@
   "goals": {
     "target_checking_balance": 1500,
     "target_savings_balance": 3000,
-    "actual_checking_balance": 161.08,
-    "actual_savings_balance": 746.91
+    "actual_checking_balance": 158.76,
+    "actual_savings_balance": 596.91
   },
   "debt": {
     "delta_amex": {
@@ -650,7 +761,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 455.03
+      "current_balance": 496.67
     }
   },
   "nancy_messages": [
