@@ -1,29 +1,39 @@
 {
-  "last_updated": "2026-07-19",
+  "last_updated": "2026-07-20",
   "period_start": "2026-07-08",
-  "period_end": "2026-07-19",
+  "period_end": "2026-07-20",
   "categories": {
     "variable_needs": {
-      "groceries": 166.06,
-      "gas": 38.21,
-      "parking": 59.27,
+      "groceries": 269.04,
+      "gas": 41.84,
+      "parking": 59.269999999999996,
       "subscriptions": 76.23
     },
     "variable_wants": {
       "partying": 202.79,
-      "dining_out": 183.51000000000002,
+      "dining_out": 204.8,
       "slop": 101.95,
       "gym": 0.0,
-      "misc_other": 384.77
+      "misc_other": 563.09
     }
   },
   "categories_detail": {
     "variable_needs": {
       "groceries": [
         {
+          "name": "Target",
+          "amount": 53.75,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "Kroger",
           "amount": 24.51,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "Aldi",
+          "amount": 49.23,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "Kroger",
@@ -48,7 +58,12 @@
       ],
       "gas": [
         {
-          "name": "WAWA - STORE",
+          "name": "Wawa",
+          "amount": 3.63,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "AplPay WAWA FUEL/CONRICHMOND",
           "amount": 38.21,
           "account": "Blue Cash Preferred\u00ae"
         }
@@ -61,17 +76,17 @@
         },
         {
           "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
           "amount": 2.32,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
           "account": "SoFi Checking"
         },
         {
@@ -188,6 +203,11 @@
       ],
       "dining_out": [
         {
+          "name": "DD *DOORDASH",
+          "amount": 21.29,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "Starbucks",
           "amount": 16.32,
           "account": "SoFi Checking"
@@ -293,6 +313,16 @@
       "gym": [],
       "misc_other": [
         {
+          "name": "Moglabs",
+          "amount": 122.08,
+          "account": "SoFi Savings"
+        },
+        {
+          "name": "Prime Video Channels",
+          "amount": 10.99,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "AMAZON MKTPLACE PMTS",
           "amount": 21.19,
           "account": "SoFi Checking"
@@ -308,8 +338,13 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "K H M CONVENIENCE STORE",
+          "name": "K H M CONVENIENCE STHENRICO",
           "amount": 3.23,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "PENNY LANE PUB",
+          "amount": 45.25,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -342,6 +377,16 @@
   },
   "unmatched_transactions": [
     {
+      "name": "Moglabs",
+      "amount": 122.08,
+      "account": "SoFi Savings"
+    },
+    {
+      "name": "Prime Video Channels",
+      "amount": 10.99,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "AMAZON MKTPLACE PMTS",
       "amount": 21.19,
       "account": "SoFi Checking"
@@ -357,8 +402,13 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "K H M CONVENIENCE STORE",
+      "name": "K H M CONVENIENCE STHENRICO",
       "amount": 3.23,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "PENNY LANE PUB",
+      "amount": 45.25,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -390,16 +440,11 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 158.76,
+      "balance": 88.32,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
-        {
-          "name": "AMAZON MKTPLACE PMTS",
-          "amount": 21.19,
-          "category": "misc_other"
-        },
         {
           "name": "Amazon Prime",
           "amount": 14.99,
@@ -409,6 +454,36 @@
           "name": "City of Richmond/Parkh",
           "amount": 1.7,
           "category": "parking"
+        },
+        {
+          "name": "Prime Video Channels",
+          "amount": 10.99,
+          "category": "misc_other"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.32,
+          "category": "parking"
+        },
+        {
+          "name": "DD *DOORDASH",
+          "amount": 21.29,
+          "category": "dining_out"
+        },
+        {
+          "name": "Target",
+          "amount": 53.75,
+          "category": "groceries"
+        },
+        {
+          "name": "Wawa",
+          "amount": 3.63,
+          "category": "gas"
+        },
+        {
+          "name": "AMAZON MKTPLACE PMTS",
+          "amount": 21.19,
+          "category": "misc_other"
         },
         {
           "name": "City of Richmond/Parkh",
@@ -429,11 +504,6 @@
           "name": "CBI*REKORDBOX",
           "amount": 23.0,
           "category": "misc_other"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.32,
-          "category": "parking"
         },
         {
           "name": "City of Richmond/Parkh",
@@ -569,21 +639,37 @@
     },
     {
       "name": "SoFi Savings",
-      "balance": 596.91,
+      "balance": 474.83,
       "type": "depository",
       "subtype": "savings",
       "limit": null,
-      "transactions": []
+      "transactions": [
+        {
+          "name": "Moglabs",
+          "amount": 122.08,
+          "category": "misc_other"
+        }
+      ]
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 496.67,
+      "balance": 592.79,
       "type": "credit",
       "subtype": "credit card",
       "limit": 1000.0,
       "transactions": [
         {
-          "name": "K H M CONVENIENCE STORE",
+          "name": "Aldi",
+          "amount": 49.23,
+          "category": "groceries"
+        },
+        {
+          "name": "AplPay WAWA FUEL/CONRICHMOND",
+          "amount": 38.21,
+          "category": "gas"
+        },
+        {
+          "name": "K H M CONVENIENCE STHENRICO",
           "amount": 3.23,
           "category": "misc_other"
         },
@@ -593,9 +679,19 @@
           "category": "groceries"
         },
         {
+          "name": "PENNY LANE PUB",
+          "amount": 45.25,
+          "category": "misc_other"
+        },
+        {
           "name": "Staples",
           "amount": 32.98,
           "category": "misc_other"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 15.15,
+          "category": "dining_out"
         },
         {
           "name": "Target",
@@ -603,19 +699,9 @@
           "category": "groceries"
         },
         {
-          "name": "WAWA - STORE",
-          "amount": 38.21,
-          "category": "gas"
-        },
-        {
           "name": "AplPay CLAYD MARKET",
           "amount": 20.0,
           "category": "slop"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 15.15,
-          "category": "dining_out"
         },
         {
           "name": "AplPay ONE WAY USA",
@@ -742,8 +828,8 @@
   "goals": {
     "target_checking_balance": 1500,
     "target_savings_balance": 3000,
-    "actual_checking_balance": 158.76,
-    "actual_savings_balance": 596.91
+    "actual_checking_balance": 88.32,
+    "actual_savings_balance": 474.83
   },
   "debt": {
     "delta_amex": {
@@ -761,7 +847,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 496.67
+      "current_balance": 592.79
     }
   },
   "nancy_messages": [
@@ -772,6 +858,10 @@
     {
       "text": "Brah, your situation got *worse*, not better.\n\nYou're still massively over on partying ($202 over cap), dining out ($183 over), and slop ($101 over). Your checking account is now at $161 instead of the $1,500 target. And you're *still* getting charged $127.59 in interest on that Delta card\u2014that's pure waste, bro.\n\nHere's what needs to happen TODAY: Cancel those duplicate Claude subscriptions (you're being billed THREE times). Stop eating out and hitting convenience stores for a week straight. Cut the partying in half minimum. Your parking cap is $30 and you're at $57\u2014walk or bike more.\n\nYou've got $746 in savings. Transfer it to checking, pay down that Delta card to stop the bleeding, then lock in hard limits on wants. You're not broke because you're not earning\u2014you're broke because you're spending like money doesn't exist.\n\nWhat's actually changing this week?",
       "date": "2026-07-18"
+    },
+    {
+      "text": "Brah, you're still drowning and it's getting worse.\n\n**The damage:** You're $202 over on partying, $205 over on dining out, $102 over on slop. Your checking is at $88\u2014should be $1,500. You've got $127.59 in *interest charges* bleeding from that Delta card, and I see THREE Claude subscriptions still running ($60 total for one service, bro).\n\n**What's actually happening:** You're not broke because you don't make money. You're broke because you're treating your accounts like an all-you-can-spend buffet. Eight parking charges in two weeks. Multiple $14-$26 Starbucks runs. Three separate restaurant/bar visits to LOSO alone. Convenience store runs every other day.\n\n**Today's move:** \n1. Kill those duplicate Claude subs right now\u2014that's $40/period free money.\n2. Your savings has $475. Transfer it to checking today.\n3. Pay that Delta card down hard\u2014stop eating interest charges.\n4. Zero restaurants, zero bars, zero convenience stores for the next week. Full stop.\n\nYou've got the income to fix this. You just gotta actually *do it* instead of talk about it.\n\nWhat are you actually cutting this week?",
+      "date": "2026-07-20"
     }
   ]
 }
