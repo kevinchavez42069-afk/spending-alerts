@@ -1146,6 +1146,7 @@
     }
 
     let latestData = null;
+    let chatHistory = [];
 
     async function load() {
       try {
@@ -1290,15 +1291,20 @@
             "Content-Type": "application/json",
             "X-Chat-Secret": getNancyPassphrase() || "",
           },
-          body: JSON.stringify({ question, context: latestData }),
+          body: JSON.stringify({ question, context: latestData, history: chatHistory }),
         });
         const data = await res.json();
         typingEl.remove();
         if (res.status === 403) {
           appendChatMessage("Wrong passphrase. Click below to re-enter it.", "nancy");
           showChatUnlocked(false);
+        } else if (res.ok) {
+          appendChatMessage(data.reply, "nancy");
+          chatHistory.push({ role: "user", content: question });
+          chatHistory.push({ role: "assistant", content: data.reply });
+          chatHistory = chatHistory.slice(-20);
         } else {
-          appendChatMessage(res.ok ? data.reply : `Something broke: ${data.error || res.status}`, "nancy");
+          appendChatMessage(`Something broke: ${data.error || res.status}`, "nancy");
         }
       } catch (err) {
         typingEl.remove();
