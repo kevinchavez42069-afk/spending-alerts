@@ -1,829 +1,62 @@
 {
-  "last_updated": "2026-07-21",
-  "period_start": "2026-07-08",
-  "period_end": "2026-07-21",
+  "last_updated": "2026-07-22",
+  "period_start": "2026-07-22",
+  "period_end": "2026-07-22",
   "categories": {
     "variable_needs": {
-      "groceries": 269.04,
-      "gas": 41.84,
-      "parking": 60.97,
-      "subscriptions": 76.23
+      "groceries": 0.0,
+      "gas": 0.0,
+      "parking": 0.0,
+      "subscriptions": 0.0
     },
     "variable_wants": {
-      "partying": 202.79,
-      "dining_out": 255.05,
-      "slop": 108.83000000000001,
+      "partying": 0.0,
+      "dining_out": 0.0,
+      "slop": 0.0,
       "gym": 0.0,
-      "misc_other": 530.2
+      "misc_other": 0.0
     }
   },
   "categories_detail": {
     "variable_needs": {
-      "groceries": [
-        {
-          "name": "Target",
-          "amount": 53.75,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "Kroger",
-          "amount": 24.51,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "AplPay ALDI 80007 80RICHMOND",
-          "amount": 49.23,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Kroger",
-          "amount": 21.7,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Target",
-          "amount": 26.49,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay ALDI 80007 80RICHMOND",
-          "amount": 40.82,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Kroger",
-          "amount": 52.54,
-          "account": "Blue Cash Preferred\u00ae"
-        }
-      ],
-      "gas": [
-        {
-          "name": "Wawa",
-          "amount": 3.63,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "AplPay WAWA FUEL/CONRICHMOND",
-          "amount": 38.21,
-          "account": "Blue Cash Preferred\u00ae"
-        }
-      ],
-      "parking": [
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 1.7,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 1.7,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.32,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.95,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.95,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 1.65,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "Pivot Parking Virginia",
-          "amount": 21.0,
-          "account": "SoFi Checking"
-        }
-      ],
-      "subscriptions": [
-        {
-          "name": "Amazon Prime",
-          "amount": 14.99,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "ANTHROPIC",
-          "amount": 20.0,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "ANTHROPIC* CLAUDE SUB",
-          "amount": 20.0,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "ANTHROPIC* CLAUDE SUB",
-          "amount": 20.0,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "TUBLY DOWNLOADER",
-          "amount": 1.24,
-          "account": "Blue Cash Preferred\u00ae"
-        }
-      ]
+      "groceries": [],
+      "gas": [],
+      "parking": [],
+      "subscriptions": []
     },
     "variable_wants": {
-      "partying": [
-        {
-          "name": "SHOTGUN* PANDORA CAFE",
-          "amount": 12.0,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "UBR* PENDING.UBER.COM",
-          "amount": 22.97,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "Fandango",
-          "amount": 36.38,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "SHOTGUN* SUCK MY DISCO",
-          "amount": 34.99,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "AplPay 777 VINTAGE RRICHMOND",
-          "amount": 51.9,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "TST* LOSO - RICHMONDRICHMOND",
-          "amount": 14.85,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "TST* LOSO - RICHMONDRICHMOND",
-          "amount": 14.85,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "TST* LOSO - RICHMONDRICHMOND",
-          "amount": 14.85,
-          "account": "Blue Cash Preferred\u00ae"
-        }
-      ],
-      "dining_out": [
-        {
-          "name": "DD *DOORDASH",
-          "amount": 21.29,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "Starbucks",
-          "amount": 16.32,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "TST* CASA DEL BARCO",
-          "amount": 20.9,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "TST* URBAN FARMHOUSE M",
-          "amount": 9.92,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "DD *DOORDASH",
-          "amount": 23.25,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "TST* PENNY LANE PUB",
-          "amount": 50.25,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 15.15,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.07,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "LSU HELENS RESTAURANRICHMOND",
-          "amount": 7.68,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "TST* NEW PANDORA CAFRICHMOND",
-          "amount": 9.34,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "TST* NEW PANDORA CAFRICHMOND",
-          "amount": 14.75,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Starbucks",
-          "amount": 25.97,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 26.16,
-          "account": "Blue Cash Preferred\u00ae"
-        }
-      ],
-      "slop": [
-        {
-          "name": "3 STARS CONVENIENCE",
-          "amount": 17.0,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "GDP*GoGo Ice Cream Tru",
-          "amount": 7.89,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "*CLAYD MARKET",
-          "amount": 18.0,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 3.88,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 4.23,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 4.23,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 6.88,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay CLAYD MARKET",
-          "amount": 20.0,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 22.84,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 3.88,
-          "account": "Blue Cash Preferred\u00ae"
-        }
-      ],
+      "partying": [],
+      "dining_out": [],
+      "slop": [],
       "gym": [],
-      "misc_other": [
-        {
-          "name": "AMAZON MKTPLACE PMTS",
-          "amount": 21.19,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "Moglabs",
-          "amount": 122.08,
-          "account": "SoFi Savings"
-        },
-        {
-          "name": "Prime Video Channels",
-          "amount": 10.99,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "Vinted",
-          "amount": 12.36,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "PEARSON VUE GEN",
-          "amount": 150.0,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "CBI*REKORDBOX",
-          "amount": 23.0,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "K H M CONVENIENCE STHENRICO",
-          "amount": 3.23,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Staples",
-          "amount": 32.98,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay ONE WAY USA",
-          "amount": 8.81,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "APPLE.COM/BILL INTERNET CHARGE",
-          "amount": 2.99,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "APPLE.COM/BILL INTERNET CHARGE",
-          "amount": 14.98,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Interest Charge on Purchases",
-          "amount": 127.59,
-          "account": "Delta SkyMiles\u00ae Gold Card"
-        }
-      ]
+      "misc_other": []
     }
   },
-  "unmatched_transactions": [
-    {
-      "name": "AMAZON MKTPLACE PMTS",
-      "amount": 21.19,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "Moglabs",
-      "amount": 122.08,
-      "account": "SoFi Savings"
-    },
-    {
-      "name": "Prime Video Channels",
-      "amount": 10.99,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "Vinted",
-      "amount": 12.36,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "PEARSON VUE GEN",
-      "amount": 150.0,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "CBI*REKORDBOX",
-      "amount": 23.0,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "K H M CONVENIENCE STHENRICO",
-      "amount": 3.23,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "Staples",
-      "amount": 32.98,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "AplPay ONE WAY USA",
-      "amount": 8.81,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "APPLE.COM/BILL INTERNET CHARGE",
-      "amount": 2.99,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "APPLE.COM/BILL INTERNET CHARGE",
-      "amount": 14.98,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "Interest Charge on Purchases",
-      "amount": 127.59,
-      "account": "Delta SkyMiles\u00ae Gold Card"
-    }
-  ],
+  "unmatched_transactions": [],
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 63.5,
+      "balance": 1681.02,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
-      "transactions": [
-        {
-          "name": "AMAZON MKTPLACE PMTS",
-          "amount": 21.19,
-          "category": "misc_other"
-        },
-        {
-          "name": "Wawa",
-          "amount": 3.63,
-          "category": "gas"
-        },
-        {
-          "name": "Amazon Prime",
-          "amount": 14.99,
-          "category": "subscriptions"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 1.7,
-          "category": "parking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 1.7,
-          "category": "parking"
-        },
-        {
-          "name": "Prime Video Channels",
-          "amount": 10.99,
-          "category": "misc_other"
-        },
-        {
-          "name": "Vinted",
-          "amount": 12.36,
-          "category": "misc_other"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.32,
-          "category": "parking"
-        },
-        {
-          "name": "DD *DOORDASH",
-          "amount": 21.29,
-          "category": "dining_out"
-        },
-        {
-          "name": "Target",
-          "amount": 53.75,
-          "category": "groceries"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "category": "parking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "category": "parking"
-        },
-        {
-          "name": "PEARSON VUE GEN",
-          "amount": 150.0,
-          "category": "misc_other"
-        },
-        {
-          "name": "CBI*REKORDBOX",
-          "amount": 23.0,
-          "category": "misc_other"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.95,
-          "category": "parking"
-        },
-        {
-          "name": "ANTHROPIC",
-          "amount": 20.0,
-          "category": "subscriptions"
-        },
-        {
-          "name": "ANTHROPIC* CLAUDE SUB",
-          "amount": 20.0,
-          "category": "subscriptions"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.95,
-          "category": "parking"
-        },
-        {
-          "name": "Starbucks",
-          "amount": 16.32,
-          "category": "dining_out"
-        },
-        {
-          "name": "3 STARS CONVENIENCE",
-          "amount": 17.0,
-          "category": "slop"
-        },
-        {
-          "name": "GDP*GoGo Ice Cream Tru",
-          "amount": 7.89,
-          "category": "slop"
-        },
-        {
-          "name": "SHOTGUN* PANDORA CAFE",
-          "amount": 12.0,
-          "category": "partying"
-        },
-        {
-          "name": "UBR* PENDING.UBER.COM",
-          "amount": 22.97,
-          "category": "partying"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "category": "parking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "category": "parking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "category": "parking"
-        },
-        {
-          "name": "Fandango",
-          "amount": 36.38,
-          "category": "partying"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 1.65,
-          "category": "parking"
-        },
-        {
-          "name": "SHOTGUN* SUCK MY DISCO",
-          "amount": 34.99,
-          "category": "partying"
-        },
-        {
-          "name": "*CLAYD MARKET",
-          "amount": 18.0,
-          "category": "slop"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "category": "parking"
-        },
-        {
-          "name": "Kroger",
-          "amount": 24.51,
-          "category": "groceries"
-        },
-        {
-          "name": "Pivot Parking Virginia",
-          "amount": 21.0,
-          "category": "parking"
-        },
-        {
-          "name": "TST* CASA DEL BARCO",
-          "amount": 20.9,
-          "category": "dining_out"
-        },
-        {
-          "name": "TST* URBAN FARMHOUSE M",
-          "amount": 9.92,
-          "category": "dining_out"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 3.88,
-          "category": "slop"
-        },
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 4.23,
-          "category": "slop"
-        },
-        {
-          "name": "ANTHROPIC* CLAUDE SUB",
-          "amount": 20.0,
-          "category": "subscriptions"
-        },
-        {
-          "name": "DD *DOORDASH",
-          "amount": 23.25,
-          "category": "dining_out"
-        },
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 4.23,
-          "category": "slop"
-        }
-      ]
+      "transactions": []
     },
     {
       "name": "SoFi Savings",
-      "balance": 474.83,
+      "balance": 504.83,
       "type": "depository",
       "subtype": "savings",
       "limit": null,
-      "transactions": [
-        {
-          "name": "Moglabs",
-          "amount": 122.08,
-          "category": "misc_other"
-        }
-      ]
+      "transactions": []
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 692.27,
+      "balance": 699.15,
       "type": "credit",
       "subtype": "credit card",
       "limit": 1000.0,
-      "transactions": [
-        {
-          "name": "AplPay ALDI 80007 80RICHMOND",
-          "amount": 49.23,
-          "category": "groceries"
-        },
-        {
-          "name": "TST* PENNY LANE PUB",
-          "amount": 50.25,
-          "category": "dining_out"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 6.88,
-          "category": "slop"
-        },
-        {
-          "name": "AplPay WAWA FUEL/CONRICHMOND",
-          "amount": 38.21,
-          "category": "gas"
-        },
-        {
-          "name": "K H M CONVENIENCE STHENRICO",
-          "amount": 3.23,
-          "category": "misc_other"
-        },
-        {
-          "name": "Kroger",
-          "amount": 21.7,
-          "category": "groceries"
-        },
-        {
-          "name": "Staples",
-          "amount": 32.98,
-          "category": "misc_other"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 15.15,
-          "category": "dining_out"
-        },
-        {
-          "name": "Target",
-          "amount": 26.49,
-          "category": "groceries"
-        },
-        {
-          "name": "AplPay CLAYD MARKET",
-          "amount": 20.0,
-          "category": "slop"
-        },
-        {
-          "name": "AplPay ONE WAY USA",
-          "amount": 8.81,
-          "category": "misc_other"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.07,
-          "category": "dining_out"
-        },
-        {
-          "name": "APPLE.COM/BILL INTERNET CHARGE",
-          "amount": 2.99,
-          "category": "misc_other"
-        },
-        {
-          "name": "APPLE.COM/BILL INTERNET CHARGE",
-          "amount": 14.98,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay ALDI 80007 80RICHMOND",
-          "amount": 40.82,
-          "category": "groceries"
-        },
-        {
-          "name": "Kroger",
-          "amount": 52.54,
-          "category": "groceries"
-        },
-        {
-          "name": "TUBLY DOWNLOADER",
-          "amount": 1.24,
-          "category": "subscriptions"
-        },
-        {
-          "name": "LSU HELENS RESTAURANRICHMOND",
-          "amount": 7.68,
-          "category": "dining_out"
-        },
-        {
-          "name": "TST* NEW PANDORA CAFRICHMOND",
-          "amount": 9.34,
-          "category": "dining_out"
-        },
-        {
-          "name": "TST* NEW PANDORA CAFRICHMOND",
-          "amount": 14.75,
-          "category": "dining_out"
-        },
-        {
-          "name": "AplPay 777 VINTAGE RRICHMOND",
-          "amount": 51.9,
-          "category": "partying"
-        },
-        {
-          "name": "Starbucks",
-          "amount": 25.97,
-          "category": "dining_out"
-        },
-        {
-          "name": "TST* LOSO - RICHMONDRICHMOND",
-          "amount": 14.85,
-          "category": "partying"
-        },
-        {
-          "name": "TST* LOSO - RICHMONDRICHMOND",
-          "amount": 14.85,
-          "category": "partying"
-        },
-        {
-          "name": "TST* LOSO - RICHMONDRICHMOND",
-          "amount": 14.85,
-          "category": "partying"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 22.84,
-          "category": "slop"
-        },
-        {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 3.88,
-          "category": "slop"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 26.16,
-          "category": "dining_out"
-        }
-      ]
+      "transactions": []
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
@@ -831,13 +64,7 @@
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
-      "transactions": [
-        {
-          "name": "Interest Charge on Purchases",
-          "amount": 127.59,
-          "category": "misc_other"
-        }
-      ]
+      "transactions": []
     }
   ],
   "caps": {
@@ -858,8 +85,8 @@
   "goals": {
     "target_checking_balance": 1500,
     "target_savings_balance": 3000,
-    "actual_checking_balance": 63.5,
-    "actual_savings_balance": 474.83
+    "actual_checking_balance": 1681.02,
+    "actual_savings_balance": 504.83
   },
   "debt": {
     "delta_amex": {
@@ -877,7 +104,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 692.27
+      "current_balance": 699.15
     }
   },
   "nancy_messages": [
@@ -892,6 +119,10 @@
     {
       "text": "Brah, you're still drowning and it's getting worse.\n\n**The damage:** You're $202 over on partying, $205 over on dining out, $102 over on slop. Your checking is at $88\u2014should be $1,500. You've got $127.59 in *interest charges* bleeding from that Delta card, and I see THREE Claude subscriptions still running ($60 total for one service, bro).\n\n**What's actually happening:** You're not broke because you don't make money. You're broke because you're treating your accounts like an all-you-can-spend buffet. Eight parking charges in two weeks. Multiple $14-$26 Starbucks runs. Three separate restaurant/bar visits to LOSO alone. Convenience store runs every other day.\n\n**Today's move:** \n1. Kill those duplicate Claude subs right now\u2014that's $40/period free money.\n2. Your savings has $475. Transfer it to checking today.\n3. Pay that Delta card down hard\u2014stop eating interest charges.\n4. Zero restaurants, zero bars, zero convenience stores for the next week. Full stop.\n\nYou've got the income to fix this. You just gotta actually *do it* instead of talk about it.\n\nWhat are you actually cutting this week?",
       "date": "2026-07-20"
+    },
+    {
+      "text": "Brah, we've got a blank slate today\u2014literally zero spending tracked since yesterday. That's either because the period just reset or you haven't logged anything yet, so I can't call you out on the specifics.\n\nBut let's be real: your Delta card is still sitting at $5,275.85 and bleeding interest. Your checking is at $1,681\u2014solid relative to recent weeks, but your savings is still only $504 when it should be $3,000. Those duplicate Claude subscriptions better be dead by now.\n\nUse this clean slate to actually execute: cut the restaurants, kill the partying overspend, and attack that credit card debt. You've got the money in accounts\u2014now prove you can stop leaking it everywhere.\n\nWhat's the plan for this period?",
+      "date": "2026-07-22"
     }
   ]
 }
