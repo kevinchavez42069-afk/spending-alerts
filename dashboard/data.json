@@ -1,46 +1,157 @@
 {
-  "last_updated": "2026-07-22",
+  "last_updated": "2026-07-23",
   "period_start": "2026-07-22",
-  "period_end": "2026-07-22",
+  "period_end": "2026-07-23",
   "categories": {
     "variable_needs": {
       "groceries": 0.0,
       "gas": 0.0,
-      "parking": 0.0,
+      "parking": 1.7,
       "subscriptions": 0.0
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 0.0,
-      "slop": 0.0,
+      "dining_out": 38.66,
+      "slop": 9.2,
       "gym": 0.0,
-      "misc_other": 0.0
+      "misc_other": 863.83
     }
   },
   "categories_detail": {
     "variable_needs": {
       "groceries": [],
       "gas": [],
-      "parking": [],
+      "parking": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 1.7,
+          "account": "SoFi Checking"
+        }
+      ],
       "subscriptions": []
     },
     "variable_wants": {
       "partying": [],
-      "dining_out": [],
-      "slop": [],
+      "dining_out": [
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 17.37,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "DD *DOORDASH",
+          "amount": 21.29,
+          "account": "SoFi Checking"
+        }
+      ],
+      "slop": [
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 9.2,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "gym": [],
-      "misc_other": []
+      "misc_other": [
+        {
+          "name": "AppFolio, Inc. F",
+          "amount": 2.49,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "CVA Properties L",
+          "amount": 825.0,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "Prime Video Channels",
+          "amount": 10.99,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "Vinted",
+          "amount": 12.36,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "SPLICE",
+          "amount": 12.99,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        }
+      ]
     }
   },
-  "unmatched_transactions": [],
+  "unmatched_transactions": [
+    {
+      "name": "AppFolio, Inc. F",
+      "amount": 2.49,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "CVA Properties L",
+      "amount": 825.0,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "Prime Video Channels",
+      "amount": 10.99,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "Vinted",
+      "amount": 12.36,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "SPLICE",
+      "amount": 12.99,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    }
+  ],
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 1681.02,
+      "balance": 53.53,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
-      "transactions": []
+      "transactions": [
+        {
+          "name": "AppFolio, Inc. F",
+          "amount": 2.49,
+          "category": "misc_other"
+        },
+        {
+          "name": "CVA Properties L",
+          "amount": 825.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 17.37,
+          "category": "dining_out"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 1.7,
+          "category": "parking"
+        },
+        {
+          "name": "DD *DOORDASH",
+          "amount": 21.29,
+          "category": "dining_out"
+        },
+        {
+          "name": "Prime Video Channels",
+          "amount": 10.99,
+          "category": "misc_other"
+        },
+        {
+          "name": "Vinted",
+          "amount": 12.36,
+          "category": "misc_other"
+        }
+      ]
     },
     {
       "name": "SoFi Savings",
@@ -56,7 +167,13 @@
       "type": "credit",
       "subtype": "credit card",
       "limit": 1000.0,
-      "transactions": []
+      "transactions": [
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 9.2,
+          "category": "slop"
+        }
+      ]
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
@@ -64,7 +181,13 @@
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
-      "transactions": []
+      "transactions": [
+        {
+          "name": "SPLICE",
+          "amount": 12.99,
+          "category": "misc_other"
+        }
+      ]
     }
   ],
   "caps": {
@@ -85,7 +208,7 @@
   "goals": {
     "target_checking_balance": 1500,
     "target_savings_balance": 3000,
-    "actual_checking_balance": 1681.02,
+    "actual_checking_balance": 53.53,
     "actual_savings_balance": 504.83
   },
   "debt": {
