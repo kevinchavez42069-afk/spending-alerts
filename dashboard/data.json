@@ -163,7 +163,7 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 699.15,
+      "balance": 233.23,
       "type": "credit",
       "subtype": "credit card",
       "limit": 1000.0,
@@ -177,7 +177,7 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 5275.85,
+      "balance": 4988.84,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
@@ -220,14 +220,14 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 5275.85
+      "current_balance": 4988.84
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 699.15
+      "current_balance": 233.23
     }
   },
   "nancy_messages": [
