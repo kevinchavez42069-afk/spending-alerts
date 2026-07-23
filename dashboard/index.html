@@ -537,6 +537,52 @@
     0%, 60%, 100% { transform: translateY(0); opacity: 0.5; }
     30% { transform: translateY(-4px); opacity: 1; }
   }
+  .proposal-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 78%;
+  }
+  .proposal-title {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .proposal-reason {
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  .proposal-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 2px;
+  }
+  .proposal-actions button {
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 16px;
+    padding: 6px 14px;
+    cursor: pointer;
+    border: none;
+  }
+  .proposal-apply {
+    background: var(--ig-blue);
+    color: white;
+  }
+  .proposal-dismiss {
+    background: transparent;
+    color: var(--text-muted);
+    border: 1px solid var(--border) !important;
+  }
+  .proposal-actions button:disabled { opacity: 0.5; cursor: default; }
+  .proposal-status {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  .proposal-card.proposal-applied .proposal-actions,
+  .proposal-card.proposal-dismissed .proposal-actions {
+    display: none;
+  }
 
   /* ---- IG-style pill input bar ---- */
   .chat-input-row {
@@ -675,14 +721,14 @@
   </div>
 
   <button class="chat-fab" id="chat-fab" aria-label="Chat with Nancy">
-    <img src="nancy-avatar.jpg?v=2" alt="Nancy">
+    <img src="jerome-avatar.webp" alt="Jerome">
     <span class="chat-fab-badge" id="chat-fab-badge"></span>
   </button>
 
   <div class="chat-panel" id="chat-panel">
     <div class="chat-header">
       <button class="chat-back" id="chat-close" aria-label="Close chat">&#8249;</button>
-      <div class="chat-avatar"><img src="nancy-avatar.jpg?v=2" alt="Nancy"></div>
+      <div class="chat-avatar"><img src="jerome-avatar.webp" alt="Jerome"></div>
       <div class="chat-header-names">
         <div class="chat-header-title">Nancy Pelosi</div>
         <div class="chat-header-sub">Active now</div>
@@ -695,7 +741,7 @@
     <div class="chat-messages" id="chat-messages">
       <div class="chat-timestamp" id="chat-timestamp"></div>
       <div class="chat-row nancy">
-        <div class="chat-avatar small"><img src="nancy-avatar.jpg?v=2" alt="Nancy"></div>
+        <div class="chat-avatar small"><img src="jerome-avatar.webp" alt="Jerome"></div>
         <div class="chat-msg">Brah. I'm Nancy — ask me how you're doing, or whether you can afford something. I've got your numbers.</div>
       </div>
       <div id="chat-history"></div>
@@ -746,6 +792,30 @@
       { group: "variable_wants", key: "misc_other", label: "Misc / Other", color: "#767671" },
       { group: null, key: "excluded", label: "Not Spending", color: "#4a4a48" },
     ];
+
+    // Nancy's own source of truth for which categories.json fields a chat
+    // proposal may target - checked independently of whatever the Worker
+    // sends, so a bad/compromised Worker response can never point the
+    // Apply button at a field this list doesn't recognize.
+    const BUDGET_FIELD_META = {
+      "goals.target_checking_balance": { label: "Checking balance target", path: ["goals", "target_checking_balance"] },
+      "goals.target_savings_balance": { label: "Savings balance target", path: ["goals", "target_savings_balance"] },
+      "variable_needs.groceries.biweekly_cap": { label: "Groceries cap", path: ["variable_needs", "groceries", "biweekly_cap"] },
+      "variable_needs.gas.biweekly_cap": { label: "Gas cap", path: ["variable_needs", "gas", "biweekly_cap"] },
+      "variable_needs.parking.biweekly_cap": { label: "Parking cap", path: ["variable_needs", "parking", "biweekly_cap"] },
+      "variable_needs.subscriptions.biweekly_cap": { label: "Subscriptions cap", path: ["variable_needs", "subscriptions", "biweekly_cap"] },
+      "variable_wants.partying.biweekly_cap": { label: "Partying cap", path: ["variable_wants", "partying", "biweekly_cap"] },
+      "variable_wants.dining_out.biweekly_cap": { label: "Dining Out cap", path: ["variable_wants", "dining_out", "biweekly_cap"] },
+      "variable_wants.slop.biweekly_cap": { label: "Slop cap", path: ["variable_wants", "slop", "biweekly_cap"] },
+      "variable_wants.gym.biweekly_cap": { label: "Gym cap", path: ["variable_wants", "gym", "biweekly_cap"] },
+      "variable_wants.misc_other.biweekly_cap": { label: "Misc / Other cap", path: ["variable_wants", "misc_other", "biweekly_cap"] },
+    };
+
+    function isValidBudgetProposal(p) {
+      return !!p && typeof p === "object" && !!BUDGET_FIELD_META[p.field]
+        && typeof p.value === "number" && Number.isFinite(p.value)
+        && p.value >= 0 && p.value <= 100000;
+    }
 
     function fmt(n) {
       return "$" + n.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -808,6 +878,18 @@
       const value = option.key === "excluded" ? "excluded" : `${option.group}.${option.key}`;
       content.overrides[txnName] = value;
       await commitCategoriesFile(content, sha, `Recategorize "${txnName}" as ${option.label} (dashboard)`);
+    }
+
+    // Writes a Nancy-proposed goal/cap change. Only ever called from the
+    // Apply button after the user has explicitly confirmed.
+    async function applyBudgetChange(field, value) {
+      const meta = BUDGET_FIELD_META[field];
+      if (!meta) throw new Error(`Unknown field: ${field}`);
+      const { content, sha } = await fetchCategoriesFile();
+      let node = content;
+      for (let i = 0; i < meta.path.length - 1; i++) node = node[meta.path[i]];
+      node[meta.path[meta.path.length - 1]] = value;
+      await commitCategoriesFile(content, sha, `${meta.label} -> ${value} (Nancy chat)`);
     }
 
     // Parse "YYYY-MM-DD" as a local date, not UTC midnight (avoids off-by-one
@@ -1214,7 +1296,7 @@
         row.className = "chat-row nancy";
         const avatar = document.createElement("div");
         avatar.className = "chat-avatar small";
-        avatar.innerHTML = `<img src="nancy-avatar.jpg?v=2" alt="Nancy">`;
+        avatar.innerHTML = `<img src="jerome-avatar.webp" alt="Jerome">`;
         const bubble = document.createElement("div");
         bubble.className = "chat-msg";
         bubble.textContent = msg.text;
@@ -1239,7 +1321,7 @@
       if (sender === "nancy") {
         const avatar = document.createElement("div");
         avatar.className = "chat-avatar small";
-        avatar.innerHTML = `<img src="nancy-avatar.jpg?v=2" alt="Nancy">`;
+        avatar.innerHTML = `<img src="jerome-avatar.webp" alt="Jerome">`;
         row.appendChild(avatar);
       }
       const bubble = document.createElement("div");
@@ -1251,12 +1333,78 @@
       return row;
     }
 
+    // Renders a Nancy-proposed goal/cap change as a confirm/dismiss card in
+    // the chat thread. Nothing is written to categories.json until Apply is
+    // clicked - Dismiss (or just ignoring it) leaves everything untouched.
+    function appendProposalCard(proposal) {
+      const messages = document.getElementById("chat-messages");
+      const row = document.createElement("div");
+      row.className = "chat-row nancy";
+      const avatar = document.createElement("div");
+      avatar.className = "chat-avatar small";
+      avatar.innerHTML = `<img src="jerome-avatar.webp" alt="Jerome">`;
+      row.appendChild(avatar);
+
+      const card = document.createElement("div");
+      card.className = "chat-msg proposal-card";
+
+      if (!isValidBudgetProposal(proposal)) {
+        card.textContent = "Nancy suggested a change I don't recognize, so I'm not showing an Apply button for it.";
+        row.appendChild(card);
+        messages.appendChild(row);
+        messages.scrollTop = messages.scrollHeight;
+        return row;
+      }
+
+      const meta = BUDGET_FIELD_META[proposal.field];
+      card.innerHTML = `
+        <div class="proposal-title">${meta.label} &rarr; ${fmt(proposal.value)}</div>
+        <div class="proposal-reason"></div>
+        <div class="proposal-actions">
+          <button class="proposal-apply">Apply</button>
+          <button class="proposal-dismiss">Dismiss</button>
+        </div>
+        <div class="proposal-status"></div>
+      `;
+      card.querySelector(".proposal-reason").textContent = proposal.reason || "";
+
+      const applyBtn = card.querySelector(".proposal-apply");
+      const dismissBtn = card.querySelector(".proposal-dismiss");
+      const statusEl = card.querySelector(".proposal-status");
+
+      applyBtn.addEventListener("click", async () => {
+        applyBtn.disabled = true;
+        dismissBtn.disabled = true;
+        statusEl.textContent = "Saving…";
+        try {
+          await applyBudgetChange(proposal.field, proposal.value);
+          statusEl.textContent = "Applied. Refresh after the next check to see it settle.";
+          card.classList.add("proposal-applied");
+        } catch (err) {
+          statusEl.textContent = err.message;
+          applyBtn.disabled = false;
+          dismissBtn.disabled = false;
+        }
+      });
+      dismissBtn.addEventListener("click", () => {
+        card.classList.add("proposal-dismissed");
+        applyBtn.disabled = true;
+        dismissBtn.disabled = true;
+        statusEl.textContent = "Dismissed.";
+      });
+
+      row.appendChild(card);
+      messages.appendChild(row);
+      messages.scrollTop = messages.scrollHeight;
+      return row;
+    }
+
     function appendTypingIndicator() {
       const messages = document.getElementById("chat-messages");
       const row = document.createElement("div");
       row.className = "chat-row nancy typing";
       row.innerHTML = `
-        <div class="chat-avatar small"><img src="nancy-avatar.jpg?v=2" alt="Nancy"></div>
+        <div class="chat-avatar small"><img src="jerome-avatar.webp" alt="Jerome"></div>
         <div class="chat-msg">
           <span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span>
         </div>
@@ -1300,6 +1448,7 @@
           showChatUnlocked(false);
         } else if (res.ok) {
           appendChatMessage(data.reply, "nancy");
+          if (data.proposal) appendProposalCard(data.proposal);
           chatHistory.push({ role: "user", content: question });
           chatHistory.push({ role: "assistant", content: data.reply });
           chatHistory = chatHistory.slice(-20);

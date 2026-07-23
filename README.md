@@ -109,6 +109,13 @@ via ntfy alongside the regular cap alerts.
    `dashboard/index.html` to match your deployed Worker URL and the secret
    you picked, and `ALLOWED_ORIGIN` in `nancy-pelosi-bot/wrangler.toml` to
    your GitHub Pages origin.
+5. Nancy can also propose changes to your goals or category caps in
+   conversation (e.g. "bump my savings target to $3,500") — she'll show a
+   confirm/dismiss card in the chat thread and nothing is written until you
+   tap Apply. Applying reuses the same GitHub token as step 5 of
+   "Categorizing unmatched transactions" above (`spending_alerts_gh_pat` in
+   local storage), so if you've already set that up, there's nothing new to
+   configure.
 
 ## Local testing
 
