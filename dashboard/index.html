@@ -720,7 +720,7 @@
     <button class="redact-toggle" id="redact-toggle" aria-label="Toggle privacy redaction">&bull;</button>
   </div>
 
-  <button class="chat-fab" id="chat-fab" aria-label="Chat with Nancy">
+  <button class="chat-fab" id="chat-fab" aria-label="Chat with Paul Bananas">
     <img src="jerome-avatar.webp" alt="Jerome">
     <span class="chat-fab-badge" id="chat-fab-badge"></span>
   </button>
@@ -730,7 +730,7 @@
       <button class="chat-back" id="chat-close" aria-label="Close chat">&#8249;</button>
       <div class="chat-avatar"><img src="jerome-avatar.webp" alt="Jerome"></div>
       <div class="chat-header-names">
-        <div class="chat-header-title">Nancy Pelosi</div>
+        <div class="chat-header-title">Paul Bananas</div>
         <div class="chat-header-sub">Active now</div>
       </div>
       <div class="chat-header-icons">
@@ -742,7 +742,7 @@
       <div class="chat-timestamp" id="chat-timestamp"></div>
       <div class="chat-row nancy">
         <div class="chat-avatar small"><img src="jerome-avatar.webp" alt="Jerome"></div>
-        <div class="chat-msg">Brah. I'm Nancy — ask me how you're doing, or whether you can afford something. I've got your numbers.</div>
+        <div class="chat-msg">Brah. I'm Paul Bananas — ask me how you're doing, or whether you can afford something. I've got your numbers.</div>
       </div>
       <div id="chat-history"></div>
     </div>
@@ -1349,7 +1349,7 @@
       card.className = "chat-msg proposal-card";
 
       if (!isValidBudgetProposal(proposal)) {
-        card.textContent = "Nancy suggested a change I don't recognize, so I'm not showing an Apply button for it.";
+        card.textContent = "Paul Bananas suggested a change I don't recognize, so I'm not showing an Apply button for it.";
         row.appendChild(card);
         messages.appendChild(row);
         messages.scrollTop = messages.scrollHeight;
@@ -1457,7 +1457,7 @@
         }
       } catch (err) {
         typingEl.remove();
-        appendChatMessage(`Couldn't reach Nancy: ${err.message}`, "nancy");
+        appendChatMessage(`Couldn't reach Paul Bananas: ${err.message}`, "nancy");
       } finally {
         document.getElementById("chat-send").disabled = false;
         input.focus();
