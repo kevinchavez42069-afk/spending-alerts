@@ -1,20 +1,20 @@
 {
-  "last_updated": "2026-07-23",
+  "last_updated": "2026-07-24",
   "period_start": "2026-07-22",
-  "period_end": "2026-07-23",
+  "period_end": "2026-07-24",
   "categories": {
     "variable_needs": {
       "groceries": 0.0,
       "gas": 0.0,
       "parking": 1.7,
-      "subscriptions": 0.0
+      "subscriptions": 41.55
     },
     "variable_wants": {
       "partying": 0.0,
       "dining_out": 38.66,
-      "slop": 9.2,
+      "slop": 17.0,
       "gym": 0.0,
-      "misc_other": 863.83
+      "misc_other": 897.9100000000001
     }
   },
   "categories_detail": {
@@ -28,7 +28,13 @@
           "account": "SoFi Checking"
         }
       ],
-      "subscriptions": []
+      "subscriptions": [
+        {
+          "name": "APPLECOMBILL",
+          "amount": 41.55,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ]
     },
     "variable_wants": {
       "partying": [],
@@ -46,8 +52,13 @@
       ],
       "slop": [
         {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 9.2,
+          "name": "7-Eleven",
+          "amount": 6.99,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 10.01,
           "account": "Blue Cash Preferred\u00ae"
         }
       ],
@@ -74,7 +85,17 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "SPLICE",
+          "name": "AplPay ESSENTIAL EXPRichmond",
+          "amount": 9.2,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Chick-fil-A",
+          "amount": 24.88,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "SPLICE.COM",
           "amount": 12.99,
           "account": "Delta SkyMiles\u00ae Gold Card"
         }
@@ -103,7 +124,17 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "SPLICE",
+      "name": "AplPay ESSENTIAL EXPRichmond",
+      "amount": 9.2,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Chick-fil-A",
+      "amount": 24.88,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "SPLICE.COM",
       "amount": 12.99,
       "account": "Delta SkyMiles\u00ae Gold Card"
     }
@@ -111,7 +142,7 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 53.53,
+      "balance": 36.16,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
@@ -169,9 +200,29 @@
       "limit": 1000.0,
       "transactions": [
         {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 9.2,
+          "name": "7-Eleven",
+          "amount": 6.99,
           "category": "slop"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 10.01,
+          "category": "slop"
+        },
+        {
+          "name": "APPLECOMBILL",
+          "amount": 41.55,
+          "category": "subscriptions"
+        },
+        {
+          "name": "AplPay ESSENTIAL EXPRichmond",
+          "amount": 9.2,
+          "category": "misc_other"
+        },
+        {
+          "name": "Chick-fil-A",
+          "amount": 24.88,
+          "category": "misc_other"
         }
       ]
     },
@@ -183,7 +234,7 @@
       "limit": 10800.0,
       "transactions": [
         {
-          "name": "SPLICE",
+          "name": "SPLICE.COM",
           "amount": 12.99,
           "category": "misc_other"
         }
@@ -208,7 +259,7 @@
   "goals": {
     "target_checking_balance": 1500,
     "target_savings_balance": 3000,
-    "actual_checking_balance": 53.53,
+    "actual_checking_balance": 36.16,
     "actual_savings_balance": 504.83
   },
   "debt": {
@@ -246,6 +297,10 @@
     {
       "text": "Brah, we've got a blank slate today\u2014literally zero spending tracked since yesterday. That's either because the period just reset or you haven't logged anything yet, so I can't call you out on the specifics.\n\nBut let's be real: your Delta card is still sitting at $5,275.85 and bleeding interest. Your checking is at $1,681\u2014solid relative to recent weeks, but your savings is still only $504 when it should be $3,000. Those duplicate Claude subscriptions better be dead by now.\n\nUse this clean slate to actually execute: cut the restaurants, kill the partying overspend, and attack that credit card debt. You've got the money in accounts\u2014now prove you can stop leaking it everywhere.\n\nWhat's the plan for this period?",
       "date": "2026-07-22"
+    },
+    {
+      "text": "Brah, three days in and you're already bleeding money again.\n\nYou've dropped $897.91 in misc_other (that $825 CVA Properties charge better be rent and not some random purchase), $38.66 dining out, $17 slop, and you're carrying those subscriptions. Your checking is back down to $36\u2014that's literally gas-money territory, bro. You had $1,681 two days ago. Where did it go?\n\nReal talk: that Delta card is still at $4,988.84 eating interest. Your savings is $504 when it should be $3,000. And you're nickel-and-diming yourself on 7-Eleven runs and DoorDash when you should be zeroing out wants entirely until that checking account hits $1,500.\n\nCut the bleeding this week. No restaurants, no convenience store runs. Figure out what that $825 charge is\u2014if it's legit rent, cool, categorize it. If it's not, that's the problem right there.\n\nWhat's actually changing today?",
+      "date": "2026-07-24"
     }
   ]
 }
