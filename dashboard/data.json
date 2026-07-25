@@ -1,20 +1,20 @@
 {
-  "last_updated": "2026-07-24",
+  "last_updated": "2026-07-25",
   "period_start": "2026-07-22",
-  "period_end": "2026-07-24",
+  "period_end": "2026-07-25",
   "categories": {
     "variable_needs": {
       "groceries": 0.0,
       "gas": 0.0,
       "parking": 1.7,
-      "subscriptions": 41.55
+      "subscriptions": 51.55
     },
     "variable_wants": {
       "partying": 0.0,
       "dining_out": 38.66,
       "slop": 17.0,
       "gym": 0.0,
-      "misc_other": 897.9100000000001
+      "misc_other": 912.0000000000001
     }
   },
   "categories_detail": {
@@ -29,6 +29,11 @@
         }
       ],
       "subscriptions": [
+        {
+          "name": "ANTHROPIC",
+          "amount": 10.0,
+          "account": "SoFi Checking"
+        },
         {
           "name": "APPLECOMBILL",
           "amount": 41.55,
@@ -85,6 +90,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 14.09,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "AplPay ESSENTIAL EXPRichmond",
           "amount": 9.2,
           "account": "Blue Cash Preferred\u00ae"
@@ -124,6 +134,11 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "K H M CONVENIENCE STORE",
+      "amount": 14.09,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "AplPay ESSENTIAL EXPRichmond",
       "amount": 9.2,
       "account": "Blue Cash Preferred\u00ae"
@@ -148,6 +163,16 @@
       "limit": null,
       "transactions": [
         {
+          "name": "ANTHROPIC",
+          "amount": 10.0,
+          "category": "subscriptions"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 17.37,
+          "category": "dining_out"
+        },
+        {
           "name": "AppFolio, Inc. F",
           "amount": 2.49,
           "category": "misc_other"
@@ -156,11 +181,6 @@
           "name": "CVA Properties L",
           "amount": 825.0,
           "category": "misc_other"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 17.37,
-          "category": "dining_out"
         },
         {
           "name": "City of Richmond/Parkh",
@@ -194,7 +214,7 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 233.23,
+      "balance": 291.78,
       "type": "credit",
       "subtype": "credit card",
       "limit": 1000.0,
@@ -208,6 +228,11 @@
           "name": "7-Eleven",
           "amount": 10.01,
           "category": "slop"
+        },
+        {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 14.09,
+          "category": "misc_other"
         },
         {
           "name": "APPLECOMBILL",
@@ -278,7 +303,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 233.23
+      "current_balance": 291.78
     }
   },
   "nancy_messages": [
