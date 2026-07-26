@@ -2,9 +2,11 @@
 Bi-weekly spending alert system.
 
 Pulls the current pay period's transactions from Plaid, checks them against
-the category caps in categories.json, sends a push notification via ntfy.sh
-when you're approaching or over a cap, and writes dashboard/data.json so
-the home-screen dashboard can display current progress.
+the category caps from a Google Sheet (see GOOGLE_SHEET_ID below), sends a
+push notification via ntfy.sh when you're approaching or over a cap, and
+writes dashboard/data.json so the home-screen dashboard can display current
+progress. Merchant-keyword matching rules live in categories.json; goals,
+category caps, debt targets, and Plans live in the Sheet.
 
 Environment variables required (set as GitHub Actions secrets):
   PLAID_CLIENT_ID
@@ -18,12 +20,16 @@ Environment variables required (set as GitHub Actions secrets):
   NTFY_TOPIC                  (your private ntfy.sh topic name)
   ANTHROPIC_API_KEY           (optional - enables Nancy's AI summary, sent
                                 every other day; skipped entirely without it)
+  GCP_SA_JSON                 (Google service account JSON key, shared as
+                                Editor on the budget Google Sheet - see README)
+  GOOGLE_SHEET_ID              (the budget Sheet's ID, from its URL)
 """
 
 import json
 import os
 from datetime import date, timedelta
 
+import gspread
 import requests
 from plaid.api import plaid_api
 from plaid.model.transactions_get_request import TransactionsGetRequest
@@ -38,6 +44,8 @@ PLAID_SECRET = os.environ["PLAID_SECRET"]
 PLAID_ENV = os.environ.get("PLAID_ENV", "production")
 NTFY_TOPIC = os.environ["NTFY_TOPIC"]
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")
+GCP_SA_JSON = os.environ["GCP_SA_JSON"]
+GOOGLE_SHEET_ID = os.environ["GOOGLE_SHEET_ID"]
 
 # Every PLAID_ACCESS_TOKEN* env var is a separate linked account (checking,
 # credit card, etc.) - transactions from all of them are pulled and merged.
@@ -86,6 +94,56 @@ def load_previous_nancy_messages():
             return json.load(f).get("nancy_messages", [])
         except json.JSONDecodeError:
             return []
+
+
+def _num_or_none(value):
+    if value in (None, ""):
+        return None
+    return float(value)
+
+
+def load_sheet_data():
+    """Goals, category caps, debt targets, and Plans now live in a Google
+    Sheet the user can view/edit directly - categories.json keeps only the
+    merchant-keyword matching rules, which aren't spreadsheet-friendly.
+    Returns (goals, caps, debt, plans)."""
+    gc = gspread.service_account_from_dict(json.loads(GCP_SA_JSON))
+    sh = gc.open_by_key(GOOGLE_SHEET_ID)
+
+    goals = {
+        row["Field"]: _num_or_none(row["Value"])
+        for row in sh.worksheet("Goals").get_all_records()
+    }
+
+    caps = {"variable_needs": {}, "variable_wants": {}}
+    for row in sh.worksheet("Caps").get_all_records():
+        caps[row["Group"]][row["Category"]] = _num_or_none(row["Biweekly Cap"])
+
+    debt = {}
+    for row in sh.worksheet("Debt").get_all_records():
+        pay_in_full = str(row.get("Pay In Full", "")).strip().upper() in ("TRUE", "YES", "1")
+        if pay_in_full:
+            debt[row["Name"]] = {"pay_in_full": True}
+        else:
+            debt[row["Name"]] = {
+                "starting_balance": _num_or_none(row["Starting Balance"]),
+                "monthly_target": _num_or_none(row["Monthly Target"]),
+                "apr": _num_or_none(row["APR"]),
+            }
+
+    plans = [
+        {
+            "id": row["ID"],
+            "title": row["Title"],
+            "description": row["Description"],
+            "created_date": row["Created Date"],
+            "target_date": row.get("Target Date") or None,
+            "status": row.get("Status") or "active",
+        }
+        for row in sh.worksheet("Plans").get_all_records()
+    ]
+
+    return goals, caps, debt, plans
 
 
 # ---------- Plaid setup ----------
@@ -292,14 +350,13 @@ def send_ntfy(message, title="Spending Alert", priority="default"):
     )
 
 
-def check_caps_and_alert(totals):
+def check_caps_and_alert(totals, caps):
     alerts_sent = []
     for group in ("variable_needs", "variable_wants"):
-        for cat, cfg in CATEGORIES[group].items():
-            cap = cfg["biweekly_cap"]
+        for cat, cap in caps.get(group, {}).items():
             if cap is None:
                 continue  # informational-only category (e.g. gym), no alerting
-            spent = totals[group][cat]
+            spent = totals[group].get(cat, 0.0)
             label = cat.replace("_", " ").title()
 
             if cap == 0 and spent > 0:
@@ -321,14 +378,20 @@ def check_caps_and_alert(totals):
 
 # ---------- Dashboard data ----------
 
-def write_dashboard_data(totals, detail, unmatched, by_account, balances, account_labels, balances_by_id, meta_by_id, nancy_messages):
+def write_dashboard_data(totals, detail, unmatched, by_account, balances, account_labels, balances_by_id, meta_by_id, nancy_messages, sheet_goals, caps, sheet_debt, plans):
     period_start, period_end = current_pay_period()
 
-    goals = dict(CATEGORIES["goals"])
+    goals = dict(sheet_goals)
     goals["actual_checking_balance"] = balances["checking_balance"]
     goals["actual_savings_balance"] = balances["savings_balance"]
 
-    debt = json.loads(json.dumps(CATEGORIES["debt"]))  # deep copy, don't mutate CATEGORIES
+    # Sheet holds the numbers (starting balance, target, APR), categories.json
+    # holds only account_keywords (used to match a Plaid credit account to a
+    # debt entry by name) - merge the two by debt key.
+    debt = {
+        key: {**sheet_debt.get(key, {}), "account_keywords": cfg.get("account_keywords", [])}
+        for key, cfg in CATEGORIES.get("debt", {}).items()
+    }
     for debt_key, balance in balances["credit_balances"].items():
         if debt_key in debt:
             debt[debt_key]["current_balance"] = balance
@@ -359,12 +422,10 @@ def write_dashboard_data(totals, detail, unmatched, by_account, balances, accoun
         "categories_detail": detail,
         "unmatched_transactions": unmatched,
         "accounts": accounts,
-        "caps": {
-            group: {cat: cfg["biweekly_cap"] for cat, cfg in CATEGORIES[group].items()}
-            for group in ("variable_needs", "variable_wants")
-        },
+        "caps": caps,
         "goals": goals,
         "debt": debt,
+        "plans": plans,
         "nancy_messages": nancy_messages,
     }
     with open(DASHBOARD_DATA_PATH, "w") as f:
@@ -444,7 +505,8 @@ def main():
     balances = summarize_balances(accounts)
 
     totals, detail, unmatched, by_account = categorize(transactions, account_labels)
-    alerts = check_caps_and_alert(totals)
+    goals, caps, sheet_debt, plans = load_sheet_data()
+    alerts = check_caps_and_alert(totals, caps)
 
     # Read any prior Nancy messages before write_dashboard_data overwrites
     # the file, so her summaries accumulate into one running thread the
@@ -452,7 +514,8 @@ def main():
     # push notification also shows up as a message in the chat.
     nancy_messages = load_previous_nancy_messages()
     dashboard_data = write_dashboard_data(
-        totals, detail, unmatched, by_account, balances, account_labels, balances_by_id, meta_by_id, nancy_messages
+        totals, detail, unmatched, by_account, balances, account_labels, balances_by_id, meta_by_id,
+        nancy_messages, goals, caps, sheet_debt, plans
     )
 
     summary = None

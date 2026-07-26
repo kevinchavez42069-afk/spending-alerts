@@ -232,6 +232,29 @@
     color: #1a1a1a;
     font-variant-numeric: tabular-nums;
   }
+  .retro .plan-title {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 11px;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+  }
+  .retro .plan-desc {
+    font-family: 'VT323', monospace;
+    font-size: 15px;
+    color: #4a4842;
+    margin-bottom: 8px;
+  }
+  .retro .plan-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+  }
+  .retro .plan-date {
+    font-family: 'VT323', monospace;
+    font-size: 13px;
+    color: #6f6d67;
+  }
   .retro .badge {
     display: inline-block;
     font-family: 'VT323', monospace;
@@ -707,6 +730,9 @@
     <h2><span>Debt payoff</span></h2>
     <div id="debt"></div>
 
+    <h2><span>Plans</span></h2>
+    <div id="plans"></div>
+
     <h2><span>This pay period</span></h2>
     <p class="hint">Tap a category to see the transactions behind it</p>
     <div id="caps"></div>
@@ -812,9 +838,15 @@
     };
 
     function isValidBudgetProposal(p) {
-      return !!p && typeof p === "object" && !!BUDGET_FIELD_META[p.field]
+      return !!p && typeof p === "object" && p.type === "budget_change" && !!BUDGET_FIELD_META[p.field]
         && typeof p.value === "number" && Number.isFinite(p.value)
         && p.value >= 0 && p.value <= 100000;
+    }
+
+    function isValidPlanProposal(p) {
+      return !!p && typeof p === "object" && p.type === "plan"
+        && typeof p.title === "string" && p.title.trim()
+        && typeof p.description === "string";
     }
 
     function fmt(n) {
@@ -881,15 +913,37 @@
     }
 
     // Writes a Nancy-proposed goal/cap change. Only ever called from the
-    // Apply button after the user has explicitly confirmed.
+    // Apply button after the user has explicitly confirmed. The Sheet write
+    // itself happens server-side in the Worker - it holds the Google
+    // service-account key, which is too sensitive to ever hand to the
+    // browser (unlike the repo-scoped GitHub PAT assignOverride uses above).
     async function applyBudgetChange(field, value) {
-      const meta = BUDGET_FIELD_META[field];
-      if (!meta) throw new Error(`Unknown field: ${field}`);
-      const { content, sha } = await fetchCategoriesFile();
-      let node = content;
-      for (let i = 0; i < meta.path.length - 1; i++) node = node[meta.path[i]];
-      node[meta.path[meta.path.length - 1]] = value;
-      await commitCategoriesFile(content, sha, `${meta.label} -> ${value} (Nancy chat)`);
+      if (!BUDGET_FIELD_META[field]) throw new Error(`Unknown field: ${field}`);
+      const res = await fetch(NANCY_WORKER_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "X-Chat-Secret": getNancyPassphrase() || "",
+        },
+        body: JSON.stringify({ action: "apply_change", field, value }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.error || `Worker error ${res.status}`);
+    }
+
+    // Writes a Nancy-proposed Plan as a new row in the Plans sheet tab, via
+    // the same Worker endpoint and passphrase gate as applyBudgetChange.
+    async function applyPlan(title, description, targetDate) {
+      const res = await fetch(NANCY_WORKER_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "X-Chat-Secret": getNancyPassphrase() || "",
+        },
+        body: JSON.stringify({ action: "apply_plan", title, description, target_date: targetDate || null }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.error || `Worker error ${res.status}`);
     }
 
     // Parse "YYYY-MM-DD" as a local date, not UTC midnight (avoids off-by-one
@@ -1143,6 +1197,45 @@
       }
     }
 
+    function renderPlans(plans) {
+      const container = document.getElementById("plans");
+      container.innerHTML = "";
+      if (!plans || plans.length === 0) {
+        container.innerHTML = `<div class="card empty">No active plans — ask Paul Bananas to set one up</div>`;
+        return;
+      }
+      for (const plan of plans) {
+        const card = document.createElement("div");
+        card.className = "card";
+
+        const title = document.createElement("div");
+        title.className = "plan-title";
+        title.textContent = plan.title || "Untitled plan";
+
+        const desc = document.createElement("div");
+        desc.className = "plan-desc";
+        desc.textContent = plan.description || "";
+
+        const meta = document.createElement("div");
+        meta.className = "plan-meta";
+        const dateSpan = document.createElement("span");
+        dateSpan.className = "plan-date";
+        dateSpan.textContent = plan.target_date
+          ? `Target: ${parseLocalDate(plan.target_date).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" })}`
+          : "No target date";
+        const badge = document.createElement("span");
+        badge.className = "badge";
+        badge.textContent = (plan.status || "active").replace(/\b\w/g, c => c.toUpperCase());
+        meta.appendChild(dateSpan);
+        meta.appendChild(badge);
+
+        card.appendChild(title);
+        card.appendChild(desc);
+        card.appendChild(meta);
+        container.appendChild(card);
+      }
+    }
+
     function renderUnmatched(items) {
       const container = document.getElementById("unmatched");
       const link = document.getElementById("categorize-link");
@@ -1263,6 +1356,7 @@
         renderChecking(data.goals);
         renderSavingsGoal(data.goals);
         renderDebt(data.debt || {});
+        renderPlans(data.plans || []);
         renderAccounts(data.accounts, data.goals);
         renderUnmatched(data.unmatched_transactions);
         renderNancyHistory(data.nancy_messages || []);
@@ -1333,41 +1427,10 @@
       return row;
     }
 
-    // Renders a Nancy-proposed goal/cap change as a confirm/dismiss card in
-    // the chat thread. Nothing is written to categories.json until Apply is
-    // clicked - Dismiss (or just ignoring it) leaves everything untouched.
-    function appendProposalCard(proposal) {
-      const messages = document.getElementById("chat-messages");
-      const row = document.createElement("div");
-      row.className = "chat-row nancy";
-      const avatar = document.createElement("div");
-      avatar.className = "chat-avatar small";
-      avatar.innerHTML = `<img src="jerome-avatar.webp" alt="Jerome">`;
-      row.appendChild(avatar);
-
-      const card = document.createElement("div");
-      card.className = "chat-msg proposal-card";
-
-      if (!isValidBudgetProposal(proposal)) {
-        card.textContent = "Paul Bananas suggested a change I don't recognize, so I'm not showing an Apply button for it.";
-        row.appendChild(card);
-        messages.appendChild(row);
-        messages.scrollTop = messages.scrollHeight;
-        return row;
-      }
-
-      const meta = BUDGET_FIELD_META[proposal.field];
-      card.innerHTML = `
-        <div class="proposal-title">${meta.label} &rarr; ${fmt(proposal.value)}</div>
-        <div class="proposal-reason"></div>
-        <div class="proposal-actions">
-          <button class="proposal-apply">Apply</button>
-          <button class="proposal-dismiss">Dismiss</button>
-        </div>
-        <div class="proposal-status"></div>
-      `;
-      card.querySelector(".proposal-reason").textContent = proposal.reason || "";
-
+    // Shared Apply/Dismiss wiring for both proposal-card variants below.
+    // Nothing is written anywhere until Apply is clicked - Dismiss (or just
+    // ignoring it) leaves everything untouched.
+    function wireProposalButtons(card, applyFn) {
       const applyBtn = card.querySelector(".proposal-apply");
       const dismissBtn = card.querySelector(".proposal-dismiss");
       const statusEl = card.querySelector(".proposal-status");
@@ -1377,7 +1440,7 @@
         dismissBtn.disabled = true;
         statusEl.textContent = "Saving…";
         try {
-          await applyBudgetChange(proposal.field, proposal.value);
+          await applyFn();
           statusEl.textContent = "Applied. Refresh after the next check to see it settle.";
           card.classList.add("proposal-applied");
         } catch (err) {
@@ -1392,6 +1455,52 @@
         dismissBtn.disabled = true;
         statusEl.textContent = "Dismissed.";
       });
+    }
+
+    // Renders a Nancy-proposed goal/cap change or new Plan as a confirm/
+    // dismiss card in the chat thread.
+    function appendProposalCard(proposal) {
+      const messages = document.getElementById("chat-messages");
+      const row = document.createElement("div");
+      row.className = "chat-row nancy";
+      const avatar = document.createElement("div");
+      avatar.className = "chat-avatar small";
+      avatar.innerHTML = `<img src="jerome-avatar.webp" alt="Jerome">`;
+      row.appendChild(avatar);
+
+      const card = document.createElement("div");
+      card.className = "chat-msg proposal-card";
+
+      if (isValidBudgetProposal(proposal)) {
+        const meta = BUDGET_FIELD_META[proposal.field];
+        card.innerHTML = `
+          <div class="proposal-title">${meta.label} &rarr; ${fmt(proposal.value)}</div>
+          <div class="proposal-reason"></div>
+          <div class="proposal-actions">
+            <button class="proposal-apply">Apply</button>
+            <button class="proposal-dismiss">Dismiss</button>
+          </div>
+          <div class="proposal-status"></div>
+        `;
+        card.querySelector(".proposal-reason").textContent = proposal.reason || "";
+        wireProposalButtons(card, () => applyBudgetChange(proposal.field, proposal.value));
+      } else if (isValidPlanProposal(proposal)) {
+        card.innerHTML = `
+          <div class="proposal-title"></div>
+          <div class="proposal-reason"></div>
+          <div class="proposal-actions">
+            <button class="proposal-apply">Apply</button>
+            <button class="proposal-dismiss">Dismiss</button>
+          </div>
+          <div class="proposal-status"></div>
+        `;
+        const targetText = proposal.target_date ? ` (target ${proposal.target_date})` : "";
+        card.querySelector(".proposal-title").textContent = `New plan: ${proposal.title}${targetText}`;
+        card.querySelector(".proposal-reason").textContent = proposal.description || "";
+        wireProposalButtons(card, () => applyPlan(proposal.title, proposal.description, proposal.target_date));
+      } else {
+        card.textContent = "Paul Bananas suggested something I don't recognize, so I'm not showing an Apply button for it.";
+      }
 
       row.appendChild(card);
       messages.appendChild(row);

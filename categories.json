@@ -1,7 +1,6 @@
 {
   "variable_needs": {
     "groceries": {
-      "biweekly_cap": 150,
       "keywords": [
         "KROGER",
         "ALDI",
@@ -11,7 +10,6 @@
       ]
     },
     "gas": {
-      "biweekly_cap": 60,
       "keywords": [
         "WAWA",
         "SHEETZ",
@@ -21,7 +19,6 @@
       ]
     },
     "parking": {
-      "biweekly_cap": 30,
       "keywords": [
         "CITY OF RICHMOND/PARK",
         "PARKING CITY OF RICHMO",
@@ -29,7 +26,6 @@
       ]
     },
     "subscriptions": {
-      "biweekly_cap": null,
       "keywords": [
         "ANTHROPIC",
         "AMAZON PRIME",
@@ -41,7 +37,6 @@
   },
   "variable_wants": {
     "partying": {
-      "biweekly_cap": 0,
       "keywords": [
         "ELEMENTS",
         "ECHOSTAGE",
@@ -60,7 +55,6 @@
       ]
     },
     "dining_out": {
-      "biweekly_cap": 0,
       "keywords": [
         "DOORDASH",
         "CHIPOTLE",
@@ -73,7 +67,6 @@
       ]
     },
     "slop": {
-      "biweekly_cap": 0,
       "keywords": [
         "CLAYD MARKET",
         "7-ELEVEN",
@@ -84,7 +77,6 @@
       ]
     },
     "gym": {
-      "biweekly_cap": null,
       "keywords": [
         "CARY STREET GYM",
         "GNC",
@@ -92,13 +84,8 @@
       ]
     },
     "misc_other": {
-      "biweekly_cap": 0,
       "keywords": []
     }
-  },
-  "goals": {
-    "target_checking_balance": 1500,
-    "target_savings_balance": 3000
   },
   "excluded": {
     "keywords": [
@@ -121,16 +108,12 @@
   "overrides": {},
   "debt": {
     "delta_amex": {
-      "starting_balance": 5148.26,
-      "monthly_target": 2429,
-      "apr": 0.2824,
       "account_keywords": [
         "DELTA",
         "SKYMILES"
       ]
     },
     "blue_cash_preferred": {
-      "pay_in_full": true,
       "account_keywords": [
         "BLUE CASH"
       ]

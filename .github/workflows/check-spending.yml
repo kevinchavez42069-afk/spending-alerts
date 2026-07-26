@@ -31,6 +31,8 @@ jobs:
           PLAID_ENV: ${{ secrets.PLAID_ENV }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GCP_SA_JSON: ${{ secrets.GCP_SA_JSON }}
+          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
         run: python check_spending.py
 
       - name: Commit updated dashboard data
