@@ -123,7 +123,10 @@ def load_sheet_data():
     for row in sh.worksheet("Debt").get_all_records():
         pay_in_full = str(row.get("Pay In Full", "")).strip().upper() in ("TRUE", "YES", "1")
         if pay_in_full:
-            debt[row["Name"]] = {"pay_in_full": True}
+            debt[row["Name"]] = {
+                "pay_in_full": True,
+                "monthly_target": _num_or_none(row.get("Monthly Target")),
+            }
         else:
             debt[row["Name"]] = {
                 "starting_balance": _num_or_none(row["Starting Balance"]),
