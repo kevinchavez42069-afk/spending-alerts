@@ -290,10 +290,12 @@ def categorize(transactions, account_labels):
                       dashboard's per-account view
     """
     totals = {
+        "fixed_costs": {cat: 0.0 for cat in CATEGORIES.get("fixed_costs", {})},
         "variable_needs": {cat: 0.0 for cat in CATEGORIES["variable_needs"]},
         "variable_wants": {cat: 0.0 for cat in CATEGORIES["variable_wants"]},
     }
     detail = {
+        "fixed_costs": {cat: [] for cat in CATEGORIES.get("fixed_costs", {})},
         "variable_needs": {cat: [] for cat in CATEGORIES["variable_needs"]},
         "variable_wants": {cat: [] for cat in CATEGORIES["variable_wants"]},
     }
@@ -319,8 +321,8 @@ def categorize(transactions, account_labels):
             group, cat = override.split(".", 1)
         else:
             group = cat = None
-            for g in ("variable_needs", "variable_wants"):
-                for c, cfg in CATEGORIES[g].items():
+            for g in ("fixed_costs", "variable_needs", "variable_wants"):
+                for c, cfg in CATEGORIES.get(g, {}).items():
                     if any(kw.upper() in name for kw in cfg["keywords"]):
                         group, cat = g, c
                         break

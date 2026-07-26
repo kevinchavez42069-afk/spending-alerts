@@ -720,6 +720,9 @@
     <h2><span>Checking</span></h2>
     <div id="checking"></div>
 
+    <h2><span>Fixed costs</span></h2>
+    <div id="fixed-costs"></div>
+
     <h2><span>Savings goal</span></h2>
     <div id="goals"></div>
 
@@ -795,6 +798,7 @@
 
   <script>
     const CATEGORY_LABELS = {
+      rent: "Rent",
       groceries: "Groceries",
       gas: "Gas",
       parking: "Parking",
@@ -807,6 +811,7 @@
     };
 
     const RECATEGORIZE_OPTIONS = [
+      { group: "fixed_costs", key: "rent", label: "Rent", color: "#1a1a1a" },
       { group: "variable_needs", key: "groceries", label: "Groceries", color: "#2a78d6" },
       { group: "variable_needs", key: "gas", label: "Gas", color: "#1baf7a" },
       { group: "variable_needs", key: "parking", label: "Parking", color: "#5a8fd6" },
@@ -1025,6 +1030,44 @@
         row.appendChild(amount);
         row.appendChild(buildRecategorizeSelect(txn.name));
         container.appendChild(row);
+      }
+    }
+
+    // Fixed costs (rent, etc.) are known recurring amounts, not something to
+    // stay "under" - so unlike renderMeter, this just displays what was
+    // spent this period with no cap bar or over/under alerting.
+    function renderFixedCosts(spentGroup, detailGroup) {
+      const container = document.getElementById("fixed-costs");
+      container.innerHTML = "";
+      const keys = Object.keys(spentGroup || {});
+      if (keys.length === 0) {
+        container.innerHTML = `<div class="card empty">No fixed costs tracked yet</div>`;
+        return;
+      }
+      for (const key of keys) {
+        const label = CATEGORY_LABELS[key] || key;
+        const spent = spentGroup[key] || 0;
+        const txns = (detailGroup && detailGroup[key]) || [];
+        const div = document.createElement("div");
+        div.className = "card clickable";
+        div.innerHTML = `
+          <div class="meter-row">
+            <span class="meter-label">${label}</span>
+            <span class="meter-value">${fmt(spent)}</span>
+          </div>
+          <div class="drill-down" style="display:none"></div>
+        `;
+        div.addEventListener("click", () => {
+          const panel = div.querySelector(".drill-down");
+          const isOpen = panel.style.display !== "none";
+          if (isOpen) {
+            panel.style.display = "none";
+          } else {
+            renderTransactionList(panel, txns);
+            panel.style.display = "block";
+          }
+        });
+        container.appendChild(div);
       }
     }
 
@@ -1356,6 +1399,10 @@
         }
 
         renderChecking(data.goals);
+        renderFixedCosts(
+          (data.categories && data.categories.fixed_costs) || {},
+          (data.categories_detail && data.categories_detail.fixed_costs) || {}
+        );
         renderSavingsGoal(data.goals);
         renderDebt(data.debt || {});
         renderPlans(data.plans || []);

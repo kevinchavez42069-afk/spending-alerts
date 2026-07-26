@@ -1,4 +1,11 @@
 {
+  "fixed_costs": {
+    "rent": {
+      "keywords": [
+        "CVA PROPERTIES"
+      ]
+    }
+  },
   "variable_needs": {
     "groceries": {
       "keywords": [
