@@ -85,6 +85,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "AplPay K H M CONVENIHENRICO",
+          "amount": 14.09,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "Domino's",
           "amount": 11.34,
           "account": "Blue Cash Preferred\u00ae"
@@ -97,11 +102,6 @@
         {
           "name": "APPLE.COM/BILL INTERNET CHARGE",
           "amount": 41.55,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "K H M CONVENIENCE STORE",
-          "amount": 14.09,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -144,6 +144,11 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "AplPay K H M CONVENIHENRICO",
+      "amount": 14.09,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "Domino's",
       "amount": 11.34,
       "account": "Blue Cash Preferred\u00ae"
@@ -156,11 +161,6 @@
     {
       "name": "APPLE.COM/BILL INTERNET CHARGE",
       "amount": 41.55,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "K H M CONVENIENCE STORE",
-      "amount": 14.09,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -245,6 +245,11 @@
       "limit": 1000.0,
       "transactions": [
         {
+          "name": "AplPay K H M CONVENIHENRICO",
+          "amount": 14.09,
+          "category": "misc_other"
+        },
+        {
           "name": "Domino's",
           "amount": 11.34,
           "category": "misc_other"
@@ -267,11 +272,6 @@
         {
           "name": "APPLE.COM/BILL INTERNET CHARGE",
           "amount": 41.55,
-          "category": "misc_other"
-        },
-        {
-          "name": "K H M CONVENIENCE STORE",
-          "amount": 14.09,
           "category": "misc_other"
         },
         {
@@ -303,29 +303,29 @@
   ],
   "caps": {
     "variable_needs": {
-      "groceries": 150,
-      "gas": 60,
-      "parking": 30,
-      "subscriptions": null
+      "groceries": 225.0,
+      "gas": 60.0,
+      "parking": 10.0,
+      "subscriptions": 40.0
     },
     "variable_wants": {
-      "partying": 0,
-      "dining_out": 0,
-      "slop": 0,
+      "partying": 40.0,
+      "dining_out": 75.0,
+      "slop": 50.0,
       "gym": null,
-      "misc_other": 0
+      "misc_other": 150.0
     }
   },
   "goals": {
-    "target_checking_balance": 1500,
-    "target_savings_balance": 3000,
+    "target_checking_balance": 1500.0,
+    "target_savings_balance": 3000.0,
     "actual_checking_balance": 26.16,
     "actual_savings_balance": 504.83
   },
   "debt": {
     "delta_amex": {
       "starting_balance": 5148.26,
-      "monthly_target": 2429,
+      "monthly_target": 1875.0,
       "apr": 0.2824,
       "account_keywords": [
         "DELTA",
@@ -335,12 +335,23 @@
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
+      "monthly_target": 410.0,
       "account_keywords": [
         "BLUE CASH"
       ],
       "current_balance": 305.87
     }
   },
+  "plans": [
+    {
+      "id": "plan_20260726_delta_amex",
+      "title": "Attack Delta Amex + Rebuild Checking",
+      "description": "$1,350 from every non-rent paycheck and $525 from every rent paycheck goes to Delta Amex ($4,988.84 @ 28.24% APR). Route groceries, gas, dining out, and slop (~$410/paycheck) to Blue Cash Preferred for cashback. Caps: groceries $225, gas $60, parking $10, subscriptions $40 (kill duplicates), partying $40, dining out $75, slop $50, misc/other $150.",
+      "created_date": "2026-07-26",
+      "target_date": "2026-09-30",
+      "status": "active"
+    }
+  ],
   "nancy_messages": [
     {
       "text": "Brah, we need to talk.\n\nYou're $202 over on partying, $168 over on dining out, $82 over on slop, and your checking account is sitting at $46 when it should be at $1,500. Meanwhile you're paying $127.59 in *interest charges* on that Delta card and your subscriptions are double-charged (you got Claude billed THREE times this period, bro).\n\nStop the bleeding: Kill the duplicate subscriptions TODAY. Cut the restaurants and convenience store runs\u2014you're hemorrhaging money on small transactions that add up fast. Your parking alone is almost $50 when your cap is $30.\n\nGet your checking balance back above zero first. Then we fix the rest.\n\nWhat's the move?",
@@ -364,6 +375,10 @@
     },
     {
       "text": "Brah, you're still in the danger zone and nothing's actually changed.\n\nThat $825 CVA Properties charge is eating your entire checking balance\u2014you're at $26 when you should be at $1,500. You dropped another $38.66 on DoorDash and Chipotle, $17 on 7-Eleven slop runs, and you're *still* paying $10 for that Anthropic subscription. Your Delta card is at $4,988.84 bleeding interest every single day you don't pay it down.\n\nStop talking about fixing this. Transfer your $504 savings to checking *right now*, kill those restaurants and convenience stores cold turkey, and attack that credit card debt. You've got the money\u2014you're just not using it like you actually care about not being broke.\n\nWhat's moving today?",
+      "date": "2026-07-26"
+    },
+    {
+      "text": "Brah, you're still stuck in the same hole and it's been five days.\n\nYour checking is at $26\u2014should be $1,500. That $825 CVA charge wiped you out, and you're *still* dropping $38 on delivery and $17 on 7-Eleven when you should be locked down completely. Your Delta card is sitting at nearly $5k eating interest while you're here counting pennies. Transfer that $504 savings to checking right now and stop the bleeding.\n\nWhat's actually happening today\u2014are we moving or just talking again?",
       "date": "2026-07-26"
     }
   ]
