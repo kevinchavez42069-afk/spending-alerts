@@ -1,20 +1,20 @@
 {
-  "last_updated": "2026-07-25",
+  "last_updated": "2026-07-26",
   "period_start": "2026-07-22",
-  "period_end": "2026-07-25",
+  "period_end": "2026-07-26",
   "categories": {
     "variable_needs": {
       "groceries": 0.0,
       "gas": 0.0,
       "parking": 1.7,
-      "subscriptions": 51.55
+      "subscriptions": 10.0
     },
     "variable_wants": {
       "partying": 0.0,
       "dining_out": 38.66,
       "slop": 17.0,
       "gym": 0.0,
-      "misc_other": 912.0000000000001
+      "misc_other": 987.8900000000001
     }
   },
   "categories_detail": {
@@ -33,11 +33,6 @@
           "name": "ANTHROPIC",
           "amount": 10.0,
           "account": "SoFi Checking"
-        },
-        {
-          "name": "APPLECOMBILL",
-          "amount": 41.55,
-          "account": "Blue Cash Preferred\u00ae"
         }
       ]
     },
@@ -90,6 +85,21 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "Domino's",
+          "amount": 11.34,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "THE CLAY MARKET",
+          "amount": 23.0,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 41.55,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "K H M CONVENIENCE STORE",
           "amount": 14.09,
           "account": "Blue Cash Preferred\u00ae"
@@ -134,6 +144,21 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "Domino's",
+      "amount": 11.34,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "THE CLAY MARKET",
+      "amount": 23.0,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "APPLE.COM/BILL INTERNET CHARGE",
+      "amount": 41.55,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "K H M CONVENIENCE STORE",
       "amount": 14.09,
       "account": "Blue Cash Preferred\u00ae"
@@ -157,7 +182,7 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 36.16,
+      "balance": 26.16,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
@@ -214,11 +239,21 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 291.78,
+      "balance": 305.87,
       "type": "credit",
       "subtype": "credit card",
       "limit": 1000.0,
       "transactions": [
+        {
+          "name": "Domino's",
+          "amount": 11.34,
+          "category": "misc_other"
+        },
+        {
+          "name": "THE CLAY MARKET",
+          "amount": 23.0,
+          "category": "misc_other"
+        },
         {
           "name": "7-Eleven",
           "amount": 6.99,
@@ -230,14 +265,14 @@
           "category": "slop"
         },
         {
-          "name": "K H M CONVENIENCE STORE",
-          "amount": 14.09,
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 41.55,
           "category": "misc_other"
         },
         {
-          "name": "APPLECOMBILL",
-          "amount": 41.55,
-          "category": "subscriptions"
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 14.09,
+          "category": "misc_other"
         },
         {
           "name": "AplPay ESSENTIAL EXPRichmond",
@@ -284,7 +319,7 @@
   "goals": {
     "target_checking_balance": 1500,
     "target_savings_balance": 3000,
-    "actual_checking_balance": 36.16,
+    "actual_checking_balance": 26.16,
     "actual_savings_balance": 504.83
   },
   "debt": {
@@ -303,7 +338,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 291.78
+      "current_balance": 305.87
     }
   },
   "nancy_messages": [
@@ -326,6 +361,10 @@
     {
       "text": "Brah, three days in and you're already bleeding money again.\n\nYou've dropped $897.91 in misc_other (that $825 CVA Properties charge better be rent and not some random purchase), $38.66 dining out, $17 slop, and you're carrying those subscriptions. Your checking is back down to $36\u2014that's literally gas-money territory, bro. You had $1,681 two days ago. Where did it go?\n\nReal talk: that Delta card is still at $4,988.84 eating interest. Your savings is $504 when it should be $3,000. And you're nickel-and-diming yourself on 7-Eleven runs and DoorDash when you should be zeroing out wants entirely until that checking account hits $1,500.\n\nCut the bleeding this week. No restaurants, no convenience store runs. Figure out what that $825 charge is\u2014if it's legit rent, cool, categorize it. If it's not, that's the problem right there.\n\nWhat's actually changing today?",
       "date": "2026-07-24"
+    },
+    {
+      "text": "Brah, you're still in the danger zone and nothing's actually changed.\n\nThat $825 CVA Properties charge is eating your entire checking balance\u2014you're at $26 when you should be at $1,500. You dropped another $38.66 on DoorDash and Chipotle, $17 on 7-Eleven slop runs, and you're *still* paying $10 for that Anthropic subscription. Your Delta card is at $4,988.84 bleeding interest every single day you don't pay it down.\n\nStop talking about fixing this. Transfer your $504 savings to checking *right now*, kill those restaurants and convenience stores cold turkey, and attack that credit card debt. You've got the money\u2014you're just not using it like you actually care about not being broke.\n\nWhat's moving today?",
+      "date": "2026-07-26"
     }
   ]
 }
