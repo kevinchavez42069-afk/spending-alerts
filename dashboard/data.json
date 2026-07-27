@@ -1,8 +1,11 @@
 {
-  "last_updated": "2026-07-26",
+  "last_updated": "2026-07-27",
   "period_start": "2026-07-22",
-  "period_end": "2026-07-26",
+  "period_end": "2026-07-27",
   "categories": {
+    "fixed_costs": {
+      "rent": 827.49
+    },
     "variable_needs": {
       "groceries": 0.0,
       "gas": 0.0,
@@ -12,12 +15,26 @@
     "variable_wants": {
       "partying": 0.0,
       "dining_out": 38.66,
-      "slop": 17.0,
+      "slop": 29.36,
       "gym": 0.0,
-      "misc_other": 987.8900000000001
+      "misc_other": 148.04000000000002
     }
   },
   "categories_detail": {
+    "fixed_costs": {
+      "rent": [
+        {
+          "name": "AppFolio, Inc. F",
+          "amount": 2.49,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "CVA Properties L",
+          "amount": 825.0,
+          "account": "SoFi Checking"
+        }
+      ]
+    },
     "variable_needs": {
       "groceries": [],
       "gas": [],
@@ -52,6 +69,11 @@
       ],
       "slop": [
         {
+          "name": "Vinted",
+          "amount": 12.36,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "7-Eleven",
           "amount": 6.99,
           "account": "Blue Cash Preferred\u00ae"
@@ -65,23 +87,8 @@
       "gym": [],
       "misc_other": [
         {
-          "name": "AppFolio, Inc. F",
-          "amount": 2.49,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "CVA Properties L",
-          "amount": 825.0,
-          "account": "SoFi Checking"
-        },
-        {
           "name": "Prime Video Channels",
           "amount": 10.99,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "Vinted",
-          "amount": 12.36,
           "account": "SoFi Checking"
         },
         {
@@ -124,23 +131,8 @@
   },
   "unmatched_transactions": [
     {
-      "name": "AppFolio, Inc. F",
-      "amount": 2.49,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "CVA Properties L",
-      "amount": 825.0,
-      "account": "SoFi Checking"
-    },
-    {
       "name": "Prime Video Channels",
       "amount": 10.99,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "Vinted",
-      "amount": 12.36,
       "account": "SoFi Checking"
     },
     {
@@ -200,12 +192,12 @@
         {
           "name": "AppFolio, Inc. F",
           "amount": 2.49,
-          "category": "misc_other"
+          "category": "rent"
         },
         {
           "name": "CVA Properties L",
           "amount": 825.0,
-          "category": "misc_other"
+          "category": "rent"
         },
         {
           "name": "City of Richmond/Parkh",
@@ -225,7 +217,7 @@
         {
           "name": "Vinted",
           "amount": 12.36,
-          "category": "misc_other"
+          "category": "slop"
         }
       ]
     },
@@ -239,7 +231,7 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 305.87,
+      "balance": 340.21,
       "type": "credit",
       "subtype": "credit card",
       "limit": 1000.0,
@@ -339,7 +331,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 305.87
+      "current_balance": 340.21
     }
   },
   "plans": [
