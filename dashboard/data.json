@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-07-27",
+  "last_updated": "2026-07-28",
   "period_start": "2026-07-22",
-  "period_end": "2026-07-27",
+  "period_end": "2026-07-28",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
     },
     "variable_needs": {
-      "groceries": 0.0,
+      "groceries": 123.88999999999999,
       "gas": 0.0,
       "parking": 1.7,
       "subscriptions": 10.0
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 38.66,
-      "slop": 29.36,
+      "dining_out": 51.01,
+      "slop": 33.239999999999995,
       "gym": 0.0,
-      "misc_other": 148.04000000000002
+      "misc_other": 194.95
     }
   },
   "categories_detail": {
@@ -36,7 +36,18 @@
       ]
     },
     "variable_needs": {
-      "groceries": [],
+      "groceries": [
+        {
+          "name": "Aldi",
+          "amount": 75.52,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Target",
+          "amount": 48.37,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "gas": [],
       "parking": [
         {
@@ -65,6 +76,11 @@
           "name": "DD *DOORDASH",
           "amount": 21.29,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "Starbucks",
+          "amount": 12.35,
+          "account": "Blue Cash Preferred\u00ae"
         }
       ],
       "slop": [
@@ -72,6 +88,11 @@
           "name": "Vinted",
           "amount": 12.36,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 3.88,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "7-Eleven",
@@ -87,13 +108,23 @@
       "gym": [],
       "misc_other": [
         {
+          "name": "SEFTON COFFEE CO",
+          "amount": 4.8,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "Prime Video Channels",
           "amount": 10.99,
           "account": "SoFi Checking"
         },
         {
-          "name": "AplPay K H M CONVENIHENRICO",
-          "amount": 14.09,
+          "name": "MICHAELS STORES INC",
+          "amount": 42.11,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay THE CLAY MARKRICHMOND",
+          "amount": 23.0,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -102,8 +133,8 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "THE CLAY MARKET",
-          "amount": 23.0,
+          "name": "AplPay K H M CONVENIHENRICO",
+          "amount": 14.09,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -131,13 +162,23 @@
   },
   "unmatched_transactions": [
     {
+      "name": "SEFTON COFFEE CO",
+      "amount": 4.8,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "Prime Video Channels",
       "amount": 10.99,
       "account": "SoFi Checking"
     },
     {
-      "name": "AplPay K H M CONVENIHENRICO",
-      "amount": 14.09,
+      "name": "MICHAELS STORES INC",
+      "amount": 42.11,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay THE CLAY MARKRICHMOND",
+      "amount": 23.0,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -146,8 +187,8 @@
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "THE CLAY MARKET",
-      "amount": 23.0,
+      "name": "AplPay K H M CONVENIHENRICO",
+      "amount": 14.09,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -179,6 +220,11 @@
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "SEFTON COFFEE CO",
+          "amount": 4.8,
+          "category": "misc_other"
+        },
         {
           "name": "ANTHROPIC",
           "amount": 10.0,
@@ -237,8 +283,33 @@
       "limit": 1000.0,
       "transactions": [
         {
-          "name": "AplPay K H M CONVENIHENRICO",
-          "amount": 14.09,
+          "name": "Starbucks",
+          "amount": 12.35,
+          "category": "dining_out"
+        },
+        {
+          "name": "Aldi",
+          "amount": 75.52,
+          "category": "groceries"
+        },
+        {
+          "name": "MICHAELS STORES INC",
+          "amount": 42.11,
+          "category": "misc_other"
+        },
+        {
+          "name": "Target",
+          "amount": 48.37,
+          "category": "groceries"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 3.88,
+          "category": "slop"
+        },
+        {
+          "name": "AplPay THE CLAY MARKRICHMOND",
+          "amount": 23.0,
           "category": "misc_other"
         },
         {
@@ -247,8 +318,8 @@
           "category": "misc_other"
         },
         {
-          "name": "THE CLAY MARKET",
-          "amount": 23.0,
+          "name": "AplPay K H M CONVENIHENRICO",
+          "amount": 14.09,
           "category": "misc_other"
         },
         {
@@ -372,6 +443,10 @@
     {
       "text": "Brah, you're still stuck in the same hole and it's been five days.\n\nYour checking is at $26\u2014should be $1,500. That $825 CVA charge wiped you out, and you're *still* dropping $38 on delivery and $17 on 7-Eleven when you should be locked down completely. Your Delta card is sitting at nearly $5k eating interest while you're here counting pennies. Transfer that $504 savings to checking right now and stop the bleeding.\n\nWhat's actually happening today\u2014are we moving or just talking again?",
       "date": "2026-07-26"
+    },
+    {
+      "text": "Brah, this week you actually stayed disciplined on the *big* stuff\u2014no partying, no gym splurges, groceries are solid at $124. That's the baseline, and you nailed it.\n\nBut bro, you're *still* bleeding on the small stuff: $51 dining out (you capped at $75, so technically okay but close), $33 on 7-Eleven slop runs, and $195 on random misc charges that shouldn't exist. Your checking is at $26\u2014should be $1,500. Your savings is $504 when it needs to be $3,000. That Delta card is still at $4,988 eating interest every single day.\n\nReal talk: Transfer your savings to checking today. No more 7-Eleven. No more DoorDash. Lock in hard until that checking hits $1,500 and that Delta card gets decimated. You're close to actually executing the plan\u2014don't choke now.",
+      "date": "2026-07-28"
     }
   ]
 }
