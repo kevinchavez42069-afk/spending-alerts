@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-28",
+  "last_updated": "2026-07-29",
   "period_start": "2026-07-22",
-  "period_end": "2026-07-28",
+  "period_end": "2026-07-29",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
@@ -17,7 +17,7 @@
       "dining_out": 51.01,
       "slop": 33.239999999999995,
       "gym": 0.0,
-      "misc_other": 194.95
+      "misc_other": 224.81
     }
   },
   "categories_detail": {
@@ -113,9 +113,19 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "AMAZON MKTPLACE PMTS",
+          "amount": 7.41,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "Prime Video Channels",
           "amount": 10.99,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "FIL-A",
+          "amount": 22.45,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "MICHAELS STORES INC",
@@ -167,9 +177,19 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "AMAZON MKTPLACE PMTS",
+      "amount": 7.41,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "Prime Video Channels",
       "amount": 10.99,
       "account": "SoFi Checking"
+    },
+    {
+      "name": "FIL-A",
+      "amount": 22.45,
+      "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "MICHAELS STORES INC",
@@ -215,7 +235,7 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 26.16,
+      "balance": 166.36,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
@@ -223,6 +243,11 @@
         {
           "name": "SEFTON COFFEE CO",
           "amount": 4.8,
+          "category": "misc_other"
+        },
+        {
+          "name": "AMAZON MKTPLACE PMTS",
+          "amount": 7.41,
           "category": "misc_other"
         },
         {
@@ -277,11 +302,16 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 340.21,
+      "balance": 510.09,
       "type": "credit",
       "subtype": "credit card",
       "limit": 1000.0,
       "transactions": [
+        {
+          "name": "FIL-A",
+          "amount": 22.45,
+          "category": "misc_other"
+        },
         {
           "name": "Starbucks",
           "amount": 12.35,
@@ -382,7 +412,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 26.16,
+    "actual_checking_balance": 166.36,
     "actual_savings_balance": 504.83
   },
   "debt": {
@@ -402,7 +432,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 340.21
+      "current_balance": 510.09
     }
   },
   "plans": [
