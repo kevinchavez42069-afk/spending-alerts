@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-29",
+  "last_updated": "2026-07-30",
   "period_start": "2026-07-22",
-  "period_end": "2026-07-29",
+  "period_end": "2026-07-30",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
@@ -9,15 +9,15 @@
     "variable_needs": {
       "groceries": 123.88999999999999,
       "gas": 0.0,
-      "parking": 1.7,
+      "parking": 5.27,
       "subscriptions": 10.0
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 51.01,
+      "dining_out": 65.08,
       "slop": 33.239999999999995,
       "gym": 0.0,
-      "misc_other": 224.81
+      "misc_other": 301.15999999999997
     }
   },
   "categories_detail": {
@@ -38,7 +38,7 @@
     "variable_needs": {
       "groceries": [
         {
-          "name": "Aldi",
+          "name": "AplPay ALDI 80007 80RICHMOND",
           "amount": 75.52,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -50,6 +50,11 @@
       ],
       "gas": [],
       "parking": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 3.57,
+          "account": "SoFi Checking"
+        },
         {
           "name": "City of Richmond/Parkh",
           "amount": 1.7,
@@ -67,6 +72,11 @@
     "variable_wants": {
       "partying": [],
       "dining_out": [
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "account": "SoFi Checking"
+        },
         {
           "name": "Chipotle Mexican Grill",
           "amount": 17.37,
@@ -90,7 +100,7 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "VILLAGE MARKET",
+          "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 3.88,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -108,13 +118,23 @@
       "gym": [],
       "misc_other": [
         {
-          "name": "SEFTON COFFEE CO",
-          "amount": 4.8,
+          "name": "AMAZON MKTPLACE PMTS",
+          "amount": 7.41,
           "account": "SoFi Checking"
         },
         {
-          "name": "AMAZON MKTPLACE PMTS",
-          "amount": 7.41,
+          "name": "JO-JOS PIZZA",
+          "amount": 11.35,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "OPEN PATH",
+          "amount": 65.0,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "SEFTON COFFEE CO",
+          "amount": 4.8,
           "account": "SoFi Checking"
         },
         {
@@ -123,13 +143,13 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "FIL-A",
-          "amount": 22.45,
+          "name": "AplPay MICHAELS STORHENRICO",
+          "amount": 42.11,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "MICHAELS STORES INC",
-          "amount": 42.11,
+          "name": "FIL-A",
+          "amount": 22.45,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -172,13 +192,23 @@
   },
   "unmatched_transactions": [
     {
-      "name": "SEFTON COFFEE CO",
-      "amount": 4.8,
+      "name": "AMAZON MKTPLACE PMTS",
+      "amount": 7.41,
       "account": "SoFi Checking"
     },
     {
-      "name": "AMAZON MKTPLACE PMTS",
-      "amount": 7.41,
+      "name": "JO-JOS PIZZA",
+      "amount": 11.35,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "OPEN PATH",
+      "amount": 65.0,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "SEFTON COFFEE CO",
+      "amount": 4.8,
       "account": "SoFi Checking"
     },
     {
@@ -187,13 +217,13 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "FIL-A",
-      "amount": 22.45,
+      "name": "AplPay MICHAELS STORHENRICO",
+      "amount": 42.11,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "MICHAELS STORES INC",
-      "amount": 42.11,
+      "name": "FIL-A",
+      "amount": 22.45,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -235,19 +265,39 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 166.36,
+      "balance": 158.95,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
         {
-          "name": "SEFTON COFFEE CO",
-          "amount": 4.8,
+          "name": "AMAZON MKTPLACE PMTS",
+          "amount": 7.41,
           "category": "misc_other"
         },
         {
-          "name": "AMAZON MKTPLACE PMTS",
-          "amount": 7.41,
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "category": "dining_out"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 3.57,
+          "category": "parking"
+        },
+        {
+          "name": "JO-JOS PIZZA",
+          "amount": 11.35,
+          "category": "misc_other"
+        },
+        {
+          "name": "OPEN PATH",
+          "amount": 65.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "SEFTON COFFEE CO",
+          "amount": 4.8,
           "category": "misc_other"
         },
         {
@@ -302,11 +352,26 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 510.09,
+      "balance": 544.89,
       "type": "credit",
       "subtype": "credit card",
       "limit": 1000.0,
       "transactions": [
+        {
+          "name": "AplPay ALDI 80007 80RICHMOND",
+          "amount": 75.52,
+          "category": "groceries"
+        },
+        {
+          "name": "AplPay MICHAELS STORHENRICO",
+          "amount": 42.11,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 3.88,
+          "category": "slop"
+        },
         {
           "name": "FIL-A",
           "amount": 22.45,
@@ -318,24 +383,9 @@
           "category": "dining_out"
         },
         {
-          "name": "Aldi",
-          "amount": 75.52,
-          "category": "groceries"
-        },
-        {
-          "name": "MICHAELS STORES INC",
-          "amount": 42.11,
-          "category": "misc_other"
-        },
-        {
           "name": "Target",
           "amount": 48.37,
           "category": "groceries"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 3.88,
-          "category": "slop"
         },
         {
           "name": "AplPay THE CLAY MARKRICHMOND",
@@ -412,7 +462,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 166.36,
+    "actual_checking_balance": 158.95,
     "actual_savings_balance": 504.83
   },
   "debt": {
@@ -432,7 +482,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 510.09
+      "current_balance": 544.89
     }
   },
   "plans": [
@@ -477,6 +527,10 @@
     {
       "text": "Brah, this week you actually stayed disciplined on the *big* stuff\u2014no partying, no gym splurges, groceries are solid at $124. That's the baseline, and you nailed it.\n\nBut bro, you're *still* bleeding on the small stuff: $51 dining out (you capped at $75, so technically okay but close), $33 on 7-Eleven slop runs, and $195 on random misc charges that shouldn't exist. Your checking is at $26\u2014should be $1,500. Your savings is $504 when it needs to be $3,000. That Delta card is still at $4,988 eating interest every single day.\n\nReal talk: Transfer your savings to checking today. No more 7-Eleven. No more DoorDash. Lock in hard until that checking hits $1,500 and that Delta card gets decimated. You're close to actually executing the plan\u2014don't choke now.",
       "date": "2026-07-28"
+    },
+    {
+      "text": "Brah, you actually kept it together this week\u2014groceries locked in at $124, zero partying, zero gym splurges. That's the discipline right there.\n\nBut bro, you're still leaking cash on the margins: $65 dining out (under cap but still there), $33 on 7-Eleven runs, $301 on misc garbage that shouldn't exist. Your checking is at $159\u2014should be $1,500. Your savings is sitting at $505 doing nothing while that Delta card bleeds $4,988 in interest. Transfer those savings to checking TODAY and strangle that credit card debt, or you're just treading water. What's moving this week?",
+      "date": "2026-07-30"
     }
   ]
 }
