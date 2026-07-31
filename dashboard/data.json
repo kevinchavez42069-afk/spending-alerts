@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-30",
+  "last_updated": "2026-07-31",
   "period_start": "2026-07-22",
-  "period_end": "2026-07-30",
+  "period_end": "2026-07-31",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
@@ -14,8 +14,8 @@
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 65.08,
-      "slop": 33.239999999999995,
+      "dining_out": 73.89,
+      "slop": 48.24999999999999,
       "gym": 0.0,
       "misc_other": 301.15999999999997
     }
@@ -78,6 +78,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 8.81,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "Chipotle Mexican Grill",
           "amount": 17.37,
           "account": "SoFi Checking"
@@ -94,6 +99,16 @@
         }
       ],
       "slop": [
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 6.34,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 8.67,
+          "account": "SoFi Checking"
+        },
         {
           "name": "Vinted",
           "amount": 12.36,
@@ -118,11 +133,6 @@
       "gym": [],
       "misc_other": [
         {
-          "name": "AMAZON MKTPLACE PMTS",
-          "amount": 7.41,
-          "account": "SoFi Checking"
-        },
-        {
           "name": "JO-JOS PIZZA",
           "amount": 11.35,
           "account": "SoFi Checking"
@@ -130,6 +140,11 @@
         {
           "name": "OPEN PATH",
           "amount": 65.0,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "AMAZON MKTPLACE PMTS",
+          "amount": 7.41,
           "account": "SoFi Checking"
         },
         {
@@ -143,13 +158,13 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "AplPay MICHAELS STORHENRICO",
-          "amount": 42.11,
+          "name": "Chick-fil-A",
+          "amount": 22.45,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "FIL-A",
-          "amount": 22.45,
+          "name": "AplPay MICHAELS STORHENRICO",
+          "amount": 42.11,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -192,11 +207,6 @@
   },
   "unmatched_transactions": [
     {
-      "name": "AMAZON MKTPLACE PMTS",
-      "amount": 7.41,
-      "account": "SoFi Checking"
-    },
-    {
       "name": "JO-JOS PIZZA",
       "amount": 11.35,
       "account": "SoFi Checking"
@@ -204,6 +214,11 @@
     {
       "name": "OPEN PATH",
       "amount": 65.0,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "AMAZON MKTPLACE PMTS",
+      "amount": 7.41,
       "account": "SoFi Checking"
     },
     {
@@ -217,13 +232,13 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "AplPay MICHAELS STORHENRICO",
-      "amount": 42.11,
+      "name": "Chick-fil-A",
+      "amount": 22.45,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "FIL-A",
-      "amount": 22.45,
+      "name": "AplPay MICHAELS STORHENRICO",
+      "amount": 42.11,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -265,16 +280,11 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 158.95,
+      "balance": 64.96,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
-        {
-          "name": "AMAZON MKTPLACE PMTS",
-          "amount": 7.41,
-          "category": "misc_other"
-        },
         {
           "name": "Chipotle Mexican Grill",
           "amount": 14.07,
@@ -294,6 +304,26 @@
           "name": "OPEN PATH",
           "amount": 65.0,
           "category": "misc_other"
+        },
+        {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 8.81,
+          "category": "dining_out"
+        },
+        {
+          "name": "AMAZON MKTPLACE PMTS",
+          "amount": 7.41,
+          "category": "misc_other"
+        },
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 6.34,
+          "category": "slop"
+        },
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 8.67,
+          "category": "slop"
         },
         {
           "name": "SEFTON COFFEE CO",
@@ -358,6 +388,16 @@
       "limit": 1000.0,
       "transactions": [
         {
+          "name": "Chick-fil-A",
+          "amount": 22.45,
+          "category": "misc_other"
+        },
+        {
+          "name": "Starbucks",
+          "amount": 12.35,
+          "category": "dining_out"
+        },
+        {
           "name": "AplPay ALDI 80007 80RICHMOND",
           "amount": 75.52,
           "category": "groceries"
@@ -371,16 +411,6 @@
           "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 3.88,
           "category": "slop"
-        },
-        {
-          "name": "FIL-A",
-          "amount": 22.45,
-          "category": "misc_other"
-        },
-        {
-          "name": "Starbucks",
-          "amount": 12.35,
-          "category": "dining_out"
         },
         {
           "name": "Target",
@@ -462,7 +492,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 158.95,
+    "actual_checking_balance": 64.96,
     "actual_savings_balance": 504.83
   },
   "debt": {
