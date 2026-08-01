@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-31",
+  "last_updated": "2026-08-01",
   "period_start": "2026-07-22",
-  "period_end": "2026-07-31",
+  "period_end": "2026-08-01",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
@@ -9,15 +9,15 @@
     "variable_needs": {
       "groceries": 123.88999999999999,
       "gas": 0.0,
-      "parking": 5.27,
+      "parking": 16.490000000000002,
       "subscriptions": 10.0
     },
     "variable_wants": {
       "partying": 0.0,
       "dining_out": 73.89,
-      "slop": 48.24999999999999,
+      "slop": 59.31000000000001,
       "gym": 0.0,
-      "misc_other": 301.15999999999997
+      "misc_other": 335.53999999999996
     }
   },
   "categories_detail": {
@@ -50,6 +50,21 @@
       ],
       "gas": [],
       "parking": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.32,
+          "account": "SoFi Checking"
+        },
         {
           "name": "City of Richmond/Parkh",
           "amount": 3.57,
@@ -110,9 +125,19 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 6.08,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "Vinted",
           "amount": 12.36,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.98,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay VILLAGE MARKERICHMOND",
@@ -156,6 +181,16 @@
           "name": "Prime Video Channels",
           "amount": 10.99,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 6.38,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "MOVIELAND BLVD SQ REST",
+          "amount": 28.0,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "Chick-fil-A",
@@ -232,6 +267,16 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "K H M CONVENIENCE STORE",
+      "amount": 6.38,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "MOVIELAND BLVD SQ REST",
+      "amount": 28.0,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "Chick-fil-A",
       "amount": 22.45,
       "account": "Blue Cash Preferred\u00ae"
@@ -280,11 +325,31 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 64.96,
+      "balance": 50.07,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "category": "parking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "category": "parking"
+        },
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 6.34,
+          "category": "slop"
+        },
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 8.67,
+          "category": "slop"
+        },
         {
           "name": "Chipotle Mexican Grill",
           "amount": 14.07,
@@ -292,8 +357,18 @@
         },
         {
           "name": "City of Richmond/Parkh",
+          "amount": 2.32,
+          "category": "parking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
           "amount": 3.57,
           "category": "parking"
+        },
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 6.08,
+          "category": "slop"
         },
         {
           "name": "JO-JOS PIZZA",
@@ -314,16 +389,6 @@
           "name": "AMAZON MKTPLACE PMTS",
           "amount": 7.41,
           "category": "misc_other"
-        },
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 6.34,
-          "category": "slop"
-        },
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 8.67,
-          "category": "slop"
         },
         {
           "name": "SEFTON COFFEE CO",
@@ -374,7 +439,7 @@
     },
     {
       "name": "SoFi Savings",
-      "balance": 504.83,
+      "balance": 506.09,
       "type": "depository",
       "subtype": "savings",
       "limit": null,
@@ -387,6 +452,21 @@
       "subtype": "credit card",
       "limit": 1000.0,
       "transactions": [
+        {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 6.38,
+          "category": "misc_other"
+        },
+        {
+          "name": "MOVIELAND BLVD SQ REST",
+          "amount": 28.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.98,
+          "category": "slop"
+        },
         {
           "name": "Chick-fil-A",
           "amount": 22.45,
@@ -492,8 +572,8 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 64.96,
-    "actual_savings_balance": 504.83
+    "actual_checking_balance": 50.07,
+    "actual_savings_balance": 506.09
   },
   "debt": {
     "delta_amex": {
@@ -561,6 +641,10 @@
     {
       "text": "Brah, you actually kept it together this week\u2014groceries locked in at $124, zero partying, zero gym splurges. That's the discipline right there.\n\nBut bro, you're still leaking cash on the margins: $65 dining out (under cap but still there), $33 on 7-Eleven runs, $301 on misc garbage that shouldn't exist. Your checking is at $159\u2014should be $1,500. Your savings is sitting at $505 doing nothing while that Delta card bleeds $4,988 in interest. Transfer those savings to checking TODAY and strangle that credit card debt, or you're just treading water. What's moving this week?",
       "date": "2026-07-30"
+    },
+    {
+      "text": "Brah, you're holding steady on the big wins but still leaking cash everywhere else.\n\nGroceries locked in at $124\u2014solid. Zero partying, zero gym splurges\u2014that's discipline. But you dropped $74 on dining out (Chipotle x2, DoorDash, Starbucks), $59 on 7-Eleven and convenience store slop runs, and another $336 in random misc charges. Your checking is at $50 when it should be at $1,500. Your savings is $506 doing absolutely nothing while that Delta card sits at $4,988 *still* eating interest.\n\nTransfer that savings to checking TODAY. Stop the 7-Eleven runs. Cut dining out completely until your checking hits $1,500. You're *this close* to actually executing the plan\u2014don't fumble it now. What's changing?",
+      "date": "2026-08-01"
     }
   ]
 }
