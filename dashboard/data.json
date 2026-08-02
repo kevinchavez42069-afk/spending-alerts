@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-01",
+  "last_updated": "2026-08-02",
   "period_start": "2026-07-22",
-  "period_end": "2026-08-01",
+  "period_end": "2026-08-02",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
@@ -9,15 +9,15 @@
     "variable_needs": {
       "groceries": 123.88999999999999,
       "gas": 0.0,
-      "parking": 16.490000000000002,
+      "parking": 16.49,
       "subscriptions": 10.0
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 73.89,
+      "dining_out": 96.55999999999999,
       "slop": 59.31000000000001,
       "gym": 0.0,
-      "misc_other": 335.53999999999996
+      "misc_other": 524.9499999999999
     }
   },
   "categories_detail": {
@@ -52,17 +52,17 @@
       "parking": [
         {
           "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
           "amount": 2.32,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
           "account": "SoFi Checking"
         },
         {
@@ -88,13 +88,23 @@
       "partying": [],
       "dining_out": [
         {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.07,
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 8.81,
           "account": "SoFi Checking"
         },
         {
           "name": "TST* URBAN FARMHOUSE M",
-          "amount": 8.81,
+          "amount": 4.24,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 6.63,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
           "account": "SoFi Checking"
         },
         {
@@ -108,6 +118,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "Chipotle Mexican Grill",
+          "amount": 11.8,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "Starbucks",
           "amount": 12.35,
           "account": "Blue Cash Preferred\u00ae"
@@ -116,17 +131,17 @@
       "slop": [
         {
           "name": "ESSENTIAL EXPRESS",
+          "amount": 6.08,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "ESSENTIAL EXPRESS",
           "amount": 6.34,
           "account": "SoFi Checking"
         },
         {
           "name": "ESSENTIAL EXPRESS",
           "amount": 8.67,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 6.08,
           "account": "SoFi Checking"
         },
         {
@@ -158,6 +173,16 @@
       "gym": [],
       "misc_other": [
         {
+          "name": "PEARSON VUE GEN",
+          "amount": 150.0,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "TUTORIALS DOJO",
+          "amount": 14.99,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "JO-JOS PIZZA",
           "amount": 11.35,
           "account": "SoFi Checking"
@@ -181,6 +206,21 @@
           "name": "Prime Video Channels",
           "amount": 10.99,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "JAMRA SPECIALTY COFFEE",
+          "amount": 6.76,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "JAMRA SPECIALTY COFFEE",
+          "amount": 10.81,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 6.85,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "K H M CONVENIENCE STORE",
@@ -242,6 +282,16 @@
   },
   "unmatched_transactions": [
     {
+      "name": "PEARSON VUE GEN",
+      "amount": 150.0,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "TUTORIALS DOJO",
+      "amount": 14.99,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "JO-JOS PIZZA",
       "amount": 11.35,
       "account": "SoFi Checking"
@@ -265,6 +315,21 @@
       "name": "Prime Video Channels",
       "amount": 10.99,
       "account": "SoFi Checking"
+    },
+    {
+      "name": "JAMRA SPECIALTY COFFEE",
+      "amount": 6.76,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "JAMRA SPECIALTY COFFEE",
+      "amount": 10.81,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "URBAN FARMHOUSE MARKET AND CAF",
+      "amount": 6.85,
+      "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "K H M CONVENIENCE STORE",
@@ -325,11 +390,26 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 50.07,
+      "balance": 232.86,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.32,
+          "category": "parking"
+        },
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 6.08,
+          "category": "slop"
+        },
+        {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 8.81,
+          "category": "dining_out"
+        },
         {
           "name": "City of Richmond/Parkh",
           "amount": 4.45,
@@ -351,24 +431,34 @@
           "category": "slop"
         },
         {
+          "name": "PEARSON VUE GEN",
+          "amount": 150.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 4.24,
+          "category": "dining_out"
+        },
+        {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 6.63,
+          "category": "dining_out"
+        },
+        {
+          "name": "TUTORIALS DOJO",
+          "amount": 14.99,
+          "category": "misc_other"
+        },
+        {
           "name": "Chipotle Mexican Grill",
           "amount": 14.07,
           "category": "dining_out"
         },
         {
           "name": "City of Richmond/Parkh",
-          "amount": 2.32,
-          "category": "parking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
           "amount": 3.57,
           "category": "parking"
-        },
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 6.08,
-          "category": "slop"
         },
         {
           "name": "JO-JOS PIZZA",
@@ -379,11 +469,6 @@
           "name": "OPEN PATH",
           "amount": 65.0,
           "category": "misc_other"
-        },
-        {
-          "name": "TST* URBAN FARMHOUSE M",
-          "amount": 8.81,
-          "category": "dining_out"
         },
         {
           "name": "AMAZON MKTPLACE PMTS",
@@ -439,7 +524,7 @@
     },
     {
       "name": "SoFi Savings",
-      "balance": 506.09,
+      "balance": 306.09,
       "type": "depository",
       "subtype": "savings",
       "limit": null,
@@ -447,11 +532,31 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 544.89,
+      "balance": 556.25,
       "type": "credit",
       "subtype": "credit card",
       "limit": 1000.0,
       "transactions": [
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 11.8,
+          "category": "dining_out"
+        },
+        {
+          "name": "JAMRA SPECIALTY COFFEE",
+          "amount": 6.76,
+          "category": "misc_other"
+        },
+        {
+          "name": "JAMRA SPECIALTY COFFEE",
+          "amount": 10.81,
+          "category": "misc_other"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 6.85,
+          "category": "misc_other"
+        },
         {
           "name": "K H M CONVENIENCE STORE",
           "amount": 6.38,
@@ -572,8 +677,8 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 50.07,
-    "actual_savings_balance": 506.09
+    "actual_checking_balance": 232.86,
+    "actual_savings_balance": 306.09
   },
   "debt": {
     "delta_amex": {
@@ -592,7 +697,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 544.89
+      "current_balance": 556.25
     }
   },
   "plans": [
