@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-02",
+  "last_updated": "2026-08-03",
   "period_start": "2026-07-22",
-  "period_end": "2026-08-02",
+  "period_end": "2026-08-03",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
@@ -9,15 +9,15 @@
     "variable_needs": {
       "groceries": 123.88999999999999,
       "gas": 0.0,
-      "parking": 16.49,
+      "parking": 16.490000000000002,
       "subscriptions": 10.0
     },
     "variable_wants": {
       "partying": 0.0,
       "dining_out": 96.55999999999999,
       "slop": 59.31000000000001,
-      "gym": 0.0,
-      "misc_other": 524.9499999999999
+      "gym": 48.67,
+      "misc_other": 565.11
     }
   },
   "categories_detail": {
@@ -52,17 +52,17 @@
       "parking": [
         {
           "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
           "amount": 2.32,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
           "account": "SoFi Checking"
         },
         {
@@ -89,17 +89,17 @@
       "dining_out": [
         {
           "name": "TST* URBAN FARMHOUSE M",
-          "amount": 8.81,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "TST* URBAN FARMHOUSE M",
           "amount": 4.24,
           "account": "SoFi Checking"
         },
         {
           "name": "TST* URBAN FARMHOUSE M",
           "amount": 6.63,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 8.81,
           "account": "SoFi Checking"
         },
         {
@@ -150,7 +150,7 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "VILLAGE MARKET",
+          "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 4.98,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -170,16 +170,22 @@
           "account": "Blue Cash Preferred\u00ae"
         }
       ],
-      "gym": [],
-      "misc_other": [
+      "gym": [
         {
-          "name": "PEARSON VUE GEN",
-          "amount": 150.0,
-          "account": "SoFi Checking"
-        },
+          "name": "Vitamin Shoppe",
+          "amount": 48.67,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
+      "misc_other": [
         {
           "name": "TUTORIALS DOJO",
           "amount": 14.99,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "PEARSON VUE GEN",
+          "amount": 150.0,
           "account": "SoFi Checking"
         },
         {
@@ -208,6 +214,21 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "VCU REC WELL",
+          "amount": 35.0,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 5.16,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay K H M CONVENIHENRICO",
+          "amount": 6.38,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "JAMRA SPECIALTY COFFEE",
           "amount": 6.76,
           "account": "Blue Cash Preferred\u00ae"
@@ -220,11 +241,6 @@
         {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
           "amount": 6.85,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "K H M CONVENIENCE STORE",
-          "amount": 6.38,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -282,13 +298,13 @@
   },
   "unmatched_transactions": [
     {
-      "name": "PEARSON VUE GEN",
-      "amount": 150.0,
+      "name": "TUTORIALS DOJO",
+      "amount": 14.99,
       "account": "SoFi Checking"
     },
     {
-      "name": "TUTORIALS DOJO",
-      "amount": 14.99,
+      "name": "PEARSON VUE GEN",
+      "amount": 150.0,
       "account": "SoFi Checking"
     },
     {
@@ -317,6 +333,21 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "VCU REC WELL",
+      "amount": 35.0,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "URBAN FARMHOUSE MARKET AND CAF",
+      "amount": 5.16,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay K H M CONVENIHENRICO",
+      "amount": 6.38,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "JAMRA SPECIALTY COFFEE",
       "amount": 6.76,
       "account": "Blue Cash Preferred\u00ae"
@@ -329,11 +360,6 @@
     {
       "name": "URBAN FARMHOUSE MARKET AND CAF",
       "amount": 6.85,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "K H M CONVENIENCE STORE",
-      "amount": 6.38,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -390,11 +416,36 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 232.86,
+      "balance": 198.1,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "category": "parking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "category": "parking"
+        },
+        {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 4.24,
+          "category": "dining_out"
+        },
+        {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 6.63,
+          "category": "dining_out"
+        },
+        {
+          "name": "TUTORIALS DOJO",
+          "amount": 14.99,
+          "category": "misc_other"
+        },
         {
           "name": "City of Richmond/Parkh",
           "amount": 2.32,
@@ -411,16 +462,6 @@
           "category": "dining_out"
         },
         {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "category": "parking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "category": "parking"
-        },
-        {
           "name": "ESSENTIAL EXPRESS",
           "amount": 6.34,
           "category": "slop"
@@ -433,21 +474,6 @@
         {
           "name": "PEARSON VUE GEN",
           "amount": 150.0,
-          "category": "misc_other"
-        },
-        {
-          "name": "TST* URBAN FARMHOUSE M",
-          "amount": 4.24,
-          "category": "dining_out"
-        },
-        {
-          "name": "TST* URBAN FARMHOUSE M",
-          "amount": 6.63,
-          "category": "dining_out"
-        },
-        {
-          "name": "TUTORIALS DOJO",
-          "amount": 14.99,
           "category": "misc_other"
         },
         {
@@ -532,11 +558,31 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 556.25,
+      "balance": 585.71,
       "type": "credit",
       "subtype": "credit card",
       "limit": 1000.0,
       "transactions": [
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 5.16,
+          "category": "misc_other"
+        },
+        {
+          "name": "Vitamin Shoppe",
+          "amount": 48.67,
+          "category": "gym"
+        },
+        {
+          "name": "AplPay K H M CONVENIHENRICO",
+          "amount": 6.38,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 4.98,
+          "category": "slop"
+        },
         {
           "name": "Chipotle Mexican Grill",
           "amount": 11.8,
@@ -558,19 +604,9 @@
           "category": "misc_other"
         },
         {
-          "name": "K H M CONVENIENCE STORE",
-          "amount": 6.38,
-          "category": "misc_other"
-        },
-        {
           "name": "MOVIELAND BLVD SQ REST",
           "amount": 28.0,
           "category": "misc_other"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 4.98,
-          "category": "slop"
         },
         {
           "name": "Chick-fil-A",
@@ -652,6 +688,11 @@
       "limit": 10800.0,
       "transactions": [
         {
+          "name": "VCU REC WELL",
+          "amount": 35.0,
+          "category": "misc_other"
+        },
+        {
           "name": "SPLICE.COM",
           "amount": 12.99,
           "category": "misc_other"
@@ -677,7 +718,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 232.86,
+    "actual_checking_balance": 198.1,
     "actual_savings_balance": 306.09
   },
   "debt": {
@@ -697,7 +738,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 556.25
+      "current_balance": 585.71
     }
   },
   "plans": [
@@ -750,6 +791,10 @@
     {
       "text": "Brah, you're holding steady on the big wins but still leaking cash everywhere else.\n\nGroceries locked in at $124\u2014solid. Zero partying, zero gym splurges\u2014that's discipline. But you dropped $74 on dining out (Chipotle x2, DoorDash, Starbucks), $59 on 7-Eleven and convenience store slop runs, and another $336 in random misc charges. Your checking is at $50 when it should be at $1,500. Your savings is $506 doing absolutely nothing while that Delta card sits at $4,988 *still* eating interest.\n\nTransfer that savings to checking TODAY. Stop the 7-Eleven runs. Cut dining out completely until your checking hits $1,500. You're *this close* to actually executing the plan\u2014don't fumble it now. What's changing?",
       "date": "2026-08-01"
+    },
+    {
+      "text": "Brah, you're holding the line on the big stuff but *still* bleeding on the small stuff and that's killing you.\n\n**What's working:** Groceries $124 (under cap), zero partying, zero gym splurges\u2014that's actual discipline, bro.\n\n**What's NOT working:** You dropped $97 dining out (Urban Farmhouse, Chipotle x2, DoorDash, Starbucks), $59 on 7-Eleven and convenience store runs, and $565 in random misc charges that shouldn't exist. That Delta card is still $4,988 eating interest while your checking sits at $198 when it should be $1,500. Your savings is $306 doing nothing.\n\n**The move TODAY:** Transfer that $306 savings to checking right now. Stop the 7-Eleven runs completely. Cut dining out cold turkey until checking hits $1,500. You've got the discipline to nail groceries and kill the wants\u2014now actually apply it to the convenience store leaks and that credit card debt. You're so close to executing the real plan, don't choke.\n\nWhat's changing this week?",
+      "date": "2026-08-03"
     }
   ]
 }
