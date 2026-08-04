@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-03",
+  "last_updated": "2026-08-04",
   "period_start": "2026-07-22",
-  "period_end": "2026-08-03",
+  "period_end": "2026-08-04",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
@@ -9,15 +9,15 @@
     "variable_needs": {
       "groceries": 123.88999999999999,
       "gas": 0.0,
-      "parking": 16.490000000000002,
+      "parking": 20.509999999999998,
       "subscriptions": 10.0
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 96.55999999999999,
-      "slop": 59.31000000000001,
+      "dining_out": 103.40999999999998,
+      "slop": 65.41000000000001,
       "gym": 48.67,
-      "misc_other": 565.11
+      "misc_other": 574.1700000000001
     }
   },
   "categories_detail": {
@@ -50,6 +50,16 @@
       ],
       "gas": [],
       "parking": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.32,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 1.7,
+          "account": "SoFi Checking"
+        },
         {
           "name": "City of Richmond/Parkh",
           "amount": 4.45,
@@ -118,6 +128,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 6.85,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "Chipotle Mexican Grill",
           "amount": 11.8,
           "account": "Blue Cash Preferred\u00ae"
@@ -148,6 +163,11 @@
           "name": "Vinted",
           "amount": 12.36,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 6.1,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay VILLAGE MARKERICHMOND",
@@ -214,9 +234,24 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 4.49,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 11.42,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "VCU REC WELL",
           "amount": 35.0,
           "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "AplPay JAMRA SPECIALRICHMOND",
+          "amount": 10.81,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
@@ -231,16 +266,6 @@
         {
           "name": "JAMRA SPECIALTY COFFEE",
           "amount": 6.76,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "JAMRA SPECIALTY COFFEE",
-          "amount": 10.81,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 6.85,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -333,9 +358,24 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "URBAN FARMHOUSE MARKET AND CAF",
+      "amount": 4.49,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "URBAN FARMHOUSE MARKET AND CAF",
+      "amount": 11.42,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "VCU REC WELL",
       "amount": 35.0,
       "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "AplPay JAMRA SPECIALRICHMOND",
+      "amount": 10.81,
+      "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "URBAN FARMHOUSE MARKET AND CAF",
@@ -350,16 +390,6 @@
     {
       "name": "JAMRA SPECIALTY COFFEE",
       "amount": 6.76,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "JAMRA SPECIALTY COFFEE",
-      "amount": 10.81,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "URBAN FARMHOUSE MARKET AND CAF",
-      "amount": 6.85,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -421,6 +451,16 @@
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.32,
+          "category": "parking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 1.7,
+          "category": "parking"
+        },
         {
           "name": "City of Richmond/Parkh",
           "amount": 4.45,
@@ -558,11 +598,41 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 585.71,
+      "balance": 646.3,
       "type": "credit",
       "subtype": "credit card",
       "limit": 1000.0,
       "transactions": [
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 4.49,
+          "category": "misc_other"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 11.42,
+          "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 6.1,
+          "category": "slop"
+        },
+        {
+          "name": "AplPay JAMRA SPECIALRICHMOND",
+          "amount": 10.81,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 6.85,
+          "category": "dining_out"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 11.8,
+          "category": "dining_out"
+        },
         {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
           "amount": 5.16,
@@ -584,23 +654,8 @@
           "category": "slop"
         },
         {
-          "name": "Chipotle Mexican Grill",
-          "amount": 11.8,
-          "category": "dining_out"
-        },
-        {
           "name": "JAMRA SPECIALTY COFFEE",
           "amount": 6.76,
-          "category": "misc_other"
-        },
-        {
-          "name": "JAMRA SPECIALTY COFFEE",
-          "amount": 10.81,
-          "category": "misc_other"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 6.85,
           "category": "misc_other"
         },
         {
@@ -738,7 +793,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 585.71
+      "current_balance": 646.3
     }
   },
   "plans": [
