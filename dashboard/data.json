@@ -82,7 +82,7 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 700.31,
+      "balance": null,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
@@ -96,7 +96,7 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 5023.84,
+      "balance": null,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
@@ -133,7 +133,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 5023.84
+      "current_balance": null
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -141,7 +141,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 700.31
+      "current_balance": null
     }
   },
   "plans": [
@@ -201,6 +201,10 @@
     },
     {
       "text": "Brah, it's a brand new period and you're basically at zero\u2014just $1.70 parking and $51.90 at Dunkin' Donuts so far. That's actually a clean slate, bro.\n\nBut let's be real: that Delta card is *still* at $5,023.84 eating interest, your checking is at $2,196 (solid relative to where you were, finally above $1,500), and your savings is at $306 when it needs to be $3,000. You've got the momentum\u2014now don't blow it on Dunkin' runs and convenience store leaks like you have been.\n\nExecute the plan this period: kill the dining out, zero the 7-Eleven runs, and attack that Delta card debt with every extra dollar. You've shown you can control the big stuff\u2014prove you can control the small stuff too.\n\nWhat's the move?",
+      "date": "2026-08-05"
+    },
+    {
+      "text": "Brah, you're basically at zero for the period\u2014just $1.70 parking and $51.90 at Dunkin' so far. That's fine on its face, but let's talk real: that Delta card is *still* sitting at $5,023.84 eating interest every single day you don't attack it, your checking finally broke $1,500 (good), but your savings is at $306 when it should be $3,000.\n\nYou've got clean momentum right now\u2014don't waste it on Dunkin' runs and convenience store leaks like you've been doing. Lock in: zero dining out this period, kill the 7-Eleven bleeds completely, route every extra dollar to that Delta card, and actually execute the plan instead of just talking about it.\n\nWhat's moving this week?",
       "date": "2026-08-05"
     }
   ]
