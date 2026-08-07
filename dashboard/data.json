@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-05",
+  "last_updated": "2026-08-07",
   "period_start": "2026-08-05",
-  "period_end": "2026-08-05",
+  "period_end": "2026-08-07",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -9,15 +9,15 @@
     "variable_needs": {
       "groceries": 0.0,
       "gas": 0.0,
-      "parking": 1.7,
-      "subscriptions": 0.0
+      "parking": 17.07,
+      "subscriptions": 20.0
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 0.0,
-      "slop": 0.0,
+      "dining_out": 67.52,
+      "slop": 47.96,
       "gym": 0.0,
-      "misc_other": 51.9
+      "misc_other": 107.74000000000001
     }
   },
   "categories_detail": {
@@ -32,19 +32,122 @@
           "name": "City of Richmond/Parkh",
           "amount": 1.7,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 3.75,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 1.7,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.32,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.95,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.95,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 1.7,
+          "account": "SoFi Checking"
         }
       ],
-      "subscriptions": []
+      "subscriptions": [
+        {
+          "name": "ANTHROPIC* CLAUDE SUB",
+          "amount": 20.0,
+          "account": "SoFi Checking"
+        }
+      ]
     },
     "variable_wants": {
       "partying": [],
-      "dining_out": [],
-      "slop": [],
+      "dining_out": [
+        {
+          "name": "TST*NATES BAGELS - CAR",
+          "amount": 5.79,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "TST*NATES BAGELS - CAR",
+          "amount": 12.48,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 6.66,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "DD *DOORDASH",
+          "amount": 19.15,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 6.07,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 17.37,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
+      "slop": [
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 6.78,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 7.25,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 33.93,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "gym": [],
       "misc_other": [
         {
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 1.29,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Chick-fil-A",
+          "amount": 17.68,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "Dunkin' Donuts",
           "amount": 51.9,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Taco Bell",
+          "amount": 25.0,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "McDonald's",
+          "amount": 11.87,
           "account": "Blue Cash Preferred\u00ae"
         }
       ]
@@ -52,15 +155,35 @@
   },
   "unmatched_transactions": [
     {
+      "name": "APPLE.COM/BILL INTERNET CHARGE",
+      "amount": 1.29,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Chick-fil-A",
+      "amount": 17.68,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "Dunkin' Donuts",
       "amount": 51.9,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Taco Bell",
+      "amount": 25.0,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "McDonald's",
+      "amount": 11.87,
       "account": "Blue Cash Preferred\u00ae"
     }
   ],
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 2196.04,
+      "balance": 351.66,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
@@ -69,6 +192,66 @@
           "name": "City of Richmond/Parkh",
           "amount": 1.7,
           "category": "parking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 3.75,
+          "category": "parking"
+        },
+        {
+          "name": "TST*NATES BAGELS - CAR",
+          "amount": 5.79,
+          "category": "dining_out"
+        },
+        {
+          "name": "TST*NATES BAGELS - CAR",
+          "amount": 12.48,
+          "category": "dining_out"
+        },
+        {
+          "name": "ANTHROPIC* CLAUDE SUB",
+          "amount": 20.0,
+          "category": "subscriptions"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 1.7,
+          "category": "parking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.32,
+          "category": "parking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.95,
+          "category": "parking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.95,
+          "category": "parking"
+        },
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 6.78,
+          "category": "slop"
+        },
+        {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 6.66,
+          "category": "dining_out"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 1.7,
+          "category": "parking"
+        },
+        {
+          "name": "DD *DOORDASH",
+          "amount": 19.15,
+          "category": "dining_out"
         }
       ]
     },
@@ -82,21 +265,61 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": null,
+      "balance": 254.71,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
+          "name": "7-Eleven",
+          "amount": 7.25,
+          "category": "slop"
+        },
+        {
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 1.29,
+          "category": "misc_other"
+        },
+        {
+          "name": "Chick-fil-A",
+          "amount": 17.68,
+          "category": "misc_other"
+        },
+        {
           "name": "Dunkin' Donuts",
           "amount": 51.9,
+          "category": "misc_other"
+        },
+        {
+          "name": "Taco Bell",
+          "amount": 25.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 33.93,
+          "category": "slop"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 6.07,
+          "category": "dining_out"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 17.37,
+          "category": "dining_out"
+        },
+        {
+          "name": "McDonald's",
+          "amount": 11.87,
           "category": "misc_other"
         }
       ]
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": null,
+      "balance": 3773.84,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
@@ -121,7 +344,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 2196.04,
+    "actual_checking_balance": 351.66,
     "actual_savings_balance": 306.09
   },
   "debt": {
@@ -133,7 +356,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": null
+      "current_balance": 3773.84
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -141,7 +364,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": null
+      "current_balance": 254.71
     }
   },
   "plans": [
@@ -206,6 +429,10 @@
     {
       "text": "Brah, you're basically at zero for the period\u2014just $1.70 parking and $51.90 at Dunkin' so far. That's fine on its face, but let's talk real: that Delta card is *still* sitting at $5,023.84 eating interest every single day you don't attack it, your checking finally broke $1,500 (good), but your savings is at $306 when it should be $3,000.\n\nYou've got clean momentum right now\u2014don't waste it on Dunkin' runs and convenience store leaks like you've been doing. Lock in: zero dining out this period, kill the 7-Eleven bleeds completely, route every extra dollar to that Delta card, and actually execute the plan instead of just talking about it.\n\nWhat's moving this week?",
       "date": "2026-08-05"
+    },
+    {
+      "text": "Brah, three days in and you're sitting at $260.29 spent\u2014that's fine so far, but bro, let's be real about what's actually happening here.\n\nYou're $7.07 over on parking (cap is $10, you're at $17.07). Dining out is $67.52 and your cap is $75, so technically under but you're creeping. Slop is $47.96 against a $50 cap\u2014basically maxed. And that $107.74 in misc_other is doing *nothing* for you.\n\nHere's the thing: your checking is at $351.66 when it should be at $1,500. Your savings is at $306. That Delta card is *still* at $3,773.84 eating interest. You've shown discipline the last few periods on the big wins\u2014groceries locked down, zero partying\u2014but you're still leaking cash on the small stuff. Stop the parking fines, tighten up the convenience store runs, and don't let dining out inch over that $75 line.\n\nYou're close to executing. Don't fumble it now.\n\nWhat's the move this week?",
+      "date": "2026-08-07"
     }
   ]
 }
