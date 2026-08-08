@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-08-07",
+  "last_updated": "2026-08-08",
   "period_start": "2026-08-05",
-  "period_end": "2026-08-07",
+  "period_end": "2026-08-08",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
-      "groceries": 0.0,
+      "groceries": 4.63,
       "gas": 0.0,
       "parking": 17.07,
       "subscriptions": 20.0
@@ -17,7 +17,7 @@
       "dining_out": 67.52,
       "slop": 47.96,
       "gym": 0.0,
-      "misc_other": 107.74000000000001
+      "misc_other": 167.68
     }
   },
   "categories_detail": {
@@ -25,7 +25,13 @@
       "rent": []
     },
     "variable_needs": {
-      "groceries": [],
+      "groceries": [
+        {
+          "name": "Kroger",
+          "amount": 4.63,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "gas": [],
       "parking": [
         {
@@ -126,6 +132,16 @@
       "gym": [],
       "misc_other": [
         {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 27.64,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Raising Cane's Chicken Fingers",
+          "amount": 32.3,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "APPLE.COM/BILL INTERNET CHARGE",
           "amount": 1.29,
           "account": "Blue Cash Preferred\u00ae"
@@ -155,6 +171,16 @@
   },
   "unmatched_transactions": [
     {
+      "name": "K H M CONVENIENCE STORE",
+      "amount": 27.64,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Raising Cane's Chicken Fingers",
+      "amount": 32.3,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "APPLE.COM/BILL INTERNET CHARGE",
       "amount": 1.29,
       "account": "Blue Cash Preferred\u00ae"
@@ -183,7 +209,7 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 351.66,
+      "balance": 296.12,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
@@ -271,6 +297,21 @@
       "limit": 3000.0,
       "transactions": [
         {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 27.64,
+          "category": "misc_other"
+        },
+        {
+          "name": "Kroger",
+          "amount": 4.63,
+          "category": "groceries"
+        },
+        {
+          "name": "Raising Cane's Chicken Fingers",
+          "amount": 32.3,
+          "category": "misc_other"
+        },
+        {
           "name": "7-Eleven",
           "amount": 7.25,
           "category": "slop"
@@ -344,7 +385,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 351.66,
+    "actual_checking_balance": 296.12,
     "actual_savings_balance": 306.09
   },
   "debt": {
