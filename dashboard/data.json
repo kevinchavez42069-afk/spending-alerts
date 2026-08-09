@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-08",
+  "last_updated": "2026-08-09",
   "period_start": "2026-08-05",
-  "period_end": "2026-08-08",
+  "period_end": "2026-08-09",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -17,7 +17,7 @@
       "dining_out": 67.52,
       "slop": 47.96,
       "gym": 0.0,
-      "misc_other": 167.68
+      "misc_other": 201.03
     }
   },
   "categories_detail": {
@@ -35,13 +35,18 @@
       "gas": [],
       "parking": [
         {
-          "name": "City of Richmond/Parkh",
-          "amount": 1.7,
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 3.75,
           "account": "SoFi Checking"
         },
         {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 3.75,
+          "name": "City of Richmond/Parkh",
+          "amount": 2.95,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 1.7,
           "account": "SoFi Checking"
         },
         {
@@ -52,11 +57,6 @@
         {
           "name": "City of Richmond/Parkh",
           "amount": 2.32,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.95,
           "account": "SoFi Checking"
         },
         {
@@ -92,13 +92,13 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "TST* URBAN FARMHOUSE M",
-          "amount": 6.66,
+          "name": "DD *DOORDASH",
+          "amount": 19.15,
           "account": "SoFi Checking"
         },
         {
-          "name": "DD *DOORDASH",
-          "amount": 19.15,
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 6.66,
           "account": "SoFi Checking"
         },
         {
@@ -132,6 +132,11 @@
       "gym": [],
       "misc_other": [
         {
+          "name": "TEZ*21st St Parking -",
+          "amount": 33.35,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "K H M CONVENIENCE STORE",
           "amount": 27.64,
           "account": "Blue Cash Preferred\u00ae"
@@ -139,6 +144,11 @@
         {
           "name": "Raising Cane's Chicken Fingers",
           "amount": 32.3,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Taco Bell",
+          "amount": 25.0,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -157,11 +167,6 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "Taco Bell",
-          "amount": 25.0,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
           "name": "McDonald's",
           "amount": 11.87,
           "account": "Blue Cash Preferred\u00ae"
@@ -171,6 +176,11 @@
   },
   "unmatched_transactions": [
     {
+      "name": "TEZ*21st St Parking -",
+      "amount": 33.35,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "K H M CONVENIENCE STORE",
       "amount": 27.64,
       "account": "Blue Cash Preferred\u00ae"
@@ -178,6 +188,11 @@
     {
       "name": "Raising Cane's Chicken Fingers",
       "amount": 32.3,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Taco Bell",
+      "amount": 25.0,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -196,11 +211,6 @@
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "Taco Bell",
-      "amount": 25.0,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
       "name": "McDonald's",
       "amount": 11.87,
       "account": "Blue Cash Preferred\u00ae"
@@ -209,16 +219,11 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 296.12,
+      "balance": 274.1,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 1.7,
-          "category": "parking"
-        },
         {
           "name": "PARKING CITY OF RICHMO",
           "amount": 3.75,
@@ -241,6 +246,36 @@
         },
         {
           "name": "City of Richmond/Parkh",
+          "amount": 2.95,
+          "category": "parking"
+        },
+        {
+          "name": "DD *DOORDASH",
+          "amount": 19.15,
+          "category": "dining_out"
+        },
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 6.78,
+          "category": "slop"
+        },
+        {
+          "name": "TEZ*21st St Parking -",
+          "amount": 33.35,
+          "category": "misc_other"
+        },
+        {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 6.66,
+          "category": "dining_out"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 1.7,
+          "category": "parking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
           "amount": 1.7,
           "category": "parking"
         },
@@ -256,28 +291,8 @@
         },
         {
           "name": "City of Richmond/Parkh",
-          "amount": 2.95,
-          "category": "parking"
-        },
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 6.78,
-          "category": "slop"
-        },
-        {
-          "name": "TST* URBAN FARMHOUSE M",
-          "amount": 6.66,
-          "category": "dining_out"
-        },
-        {
-          "name": "City of Richmond/Parkh",
           "amount": 1.7,
           "category": "parking"
-        },
-        {
-          "name": "DD *DOORDASH",
-          "amount": 19.15,
-          "category": "dining_out"
         }
       ]
     },
@@ -291,11 +306,16 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 254.71,
+      "balance": 351.53,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "7-Eleven",
+          "amount": 7.25,
+          "category": "slop"
+        },
         {
           "name": "K H M CONVENIENCE STORE",
           "amount": 27.64,
@@ -312,9 +332,9 @@
           "category": "misc_other"
         },
         {
-          "name": "7-Eleven",
-          "amount": 7.25,
-          "category": "slop"
+          "name": "Taco Bell",
+          "amount": 25.0,
+          "category": "misc_other"
         },
         {
           "name": "APPLE.COM/BILL INTERNET CHARGE",
@@ -329,11 +349,6 @@
         {
           "name": "Dunkin' Donuts",
           "amount": 51.9,
-          "category": "misc_other"
-        },
-        {
-          "name": "Taco Bell",
-          "amount": 25.0,
           "category": "misc_other"
         },
         {
@@ -385,7 +400,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 296.12,
+    "actual_checking_balance": 274.1,
     "actual_savings_balance": 306.09
   },
   "debt": {
@@ -405,7 +420,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 254.71
+      "current_balance": 351.53
     }
   },
   "plans": [
@@ -474,6 +489,10 @@
     {
       "text": "Brah, three days in and you're sitting at $260.29 spent\u2014that's fine so far, but bro, let's be real about what's actually happening here.\n\nYou're $7.07 over on parking (cap is $10, you're at $17.07). Dining out is $67.52 and your cap is $75, so technically under but you're creeping. Slop is $47.96 against a $50 cap\u2014basically maxed. And that $107.74 in misc_other is doing *nothing* for you.\n\nHere's the thing: your checking is at $351.66 when it should be at $1,500. Your savings is at $306. That Delta card is *still* at $3,773.84 eating interest. You've shown discipline the last few periods on the big wins\u2014groceries locked down, zero partying\u2014but you're still leaking cash on the small stuff. Stop the parking fines, tighten up the convenience store runs, and don't let dining out inch over that $75 line.\n\nYou're close to executing. Don't fumble it now.\n\nWhat's the move this week?",
       "date": "2026-08-07"
+    },
+    {
+      "text": "Brah, you're basically sitting tight three days in\u2014$260 spent across the period, which is actually *not terrible* on the surface.\n\nBut let's get real: you're creeping on *every* category. Parking is $17.07 against a $10 cap (you're over). Dining out is $67.52 against a $75 cap (you're close). Slop is $47.96 against a $50 cap (basically maxed). And your checking is at $274 when it should be at $1,500\u2014that Delta card is *still* at $3,773.84 eating your lunch every single day.\n\nHere's what matters: you've proven you can kill the big stuff (zero partying, groceries locked). Now actually tighten the parking fines, cut the convenience store bleeds, and keep dining out *under* that $75 line instead of dancing on it. You're this close to actually executing the plan\u2014don't choke in the final week.\n\nWhat's changing *right now*?",
+      "date": "2026-08-09"
     }
   ]
 }
