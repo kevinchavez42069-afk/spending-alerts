@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-09",
+  "last_updated": "2026-08-10",
   "period_start": "2026-08-05",
-  "period_end": "2026-08-09",
+  "period_end": "2026-08-10",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -17,7 +17,7 @@
       "dining_out": 67.52,
       "slop": 47.96,
       "gym": 0.0,
-      "misc_other": 201.03
+      "misc_other": 268.72
     }
   },
   "categories_detail": {
@@ -132,12 +132,37 @@
       "gym": [],
       "misc_other": [
         {
+          "name": "KOHR'S BROS CUSTARD",
+          "amount": 6.5,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "LEMONADE INSURANCE",
+          "amount": 10.92,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "LEMONADE INSURANCE",
+          "amount": 10.92,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "TEZ*21st St Parking -",
           "amount": 33.35,
           "account": "SoFi Checking"
         },
         {
-          "name": "K H M CONVENIENCE STORE",
+          "name": "FREEDOM FOOD MART",
+          "amount": 11.79,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "PACIFIC BEACHWEAR",
+          "amount": 27.56,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay K H M CONVENIHENRICO",
           "amount": 27.64,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -176,12 +201,37 @@
   },
   "unmatched_transactions": [
     {
+      "name": "KOHR'S BROS CUSTARD",
+      "amount": 6.5,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "LEMONADE INSURANCE",
+      "amount": 10.92,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "LEMONADE INSURANCE",
+      "amount": 10.92,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "TEZ*21st St Parking -",
       "amount": 33.35,
       "account": "SoFi Checking"
     },
     {
-      "name": "K H M CONVENIENCE STORE",
+      "name": "FREEDOM FOOD MART",
+      "amount": 11.79,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "PACIFIC BEACHWEAR",
+      "amount": 27.56,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay K H M CONVENIHENRICO",
       "amount": 27.64,
       "account": "Blue Cash Preferred\u00ae"
     },
@@ -224,6 +274,21 @@
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "KOHR'S BROS CUSTARD",
+          "amount": 6.5,
+          "category": "misc_other"
+        },
+        {
+          "name": "LEMONADE INSURANCE",
+          "amount": 10.92,
+          "category": "misc_other"
+        },
+        {
+          "name": "LEMONADE INSURANCE",
+          "amount": 10.92,
+          "category": "misc_other"
+        },
         {
           "name": "PARKING CITY OF RICHMO",
           "amount": 3.75,
@@ -312,12 +377,17 @@
       "limit": 3000.0,
       "transactions": [
         {
-          "name": "7-Eleven",
-          "amount": 7.25,
-          "category": "slop"
+          "name": "FREEDOM FOOD MART",
+          "amount": 11.79,
+          "category": "misc_other"
         },
         {
-          "name": "K H M CONVENIENCE STORE",
+          "name": "PACIFIC BEACHWEAR",
+          "amount": 27.56,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay K H M CONVENIHENRICO",
           "amount": 27.64,
           "category": "misc_other"
         },
@@ -330,6 +400,11 @@
           "name": "Raising Cane's Chicken Fingers",
           "amount": 32.3,
           "category": "misc_other"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 7.25,
+          "category": "slop"
         },
         {
           "name": "Taco Bell",
