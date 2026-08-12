@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-08-11",
+  "last_updated": "2026-08-12",
   "period_start": "2026-08-05",
-  "period_end": "2026-08-11",
+  "period_end": "2026-08-12",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
       "groceries": 15.219999999999999,
-      "gas": 0.0,
+      "gas": 69.97999999999999,
       "parking": 23.72,
-      "subscriptions": 20.0
+      "subscriptions": 40.0
     },
     "variable_wants": {
       "partying": 0.0,
       "dining_out": 67.52,
-      "slop": 53.16,
+      "slop": 69.41999999999999,
       "gym": 0.0,
-      "misc_other": 468.07000000000005
+      "misc_other": 427.07
     }
   },
   "categories_detail": {
@@ -37,7 +37,18 @@
           "account": "Blue Cash Preferred\u00ae"
         }
       ],
-      "gas": [],
+      "gas": [
+        {
+          "name": "AplPay BP#9708157CAPRICHMOND",
+          "amount": 66.07,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "BP#9708157CAPL VA001RICHMOND",
+          "amount": 3.91,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "parking": [
         {
           "name": "PARKING CITY OF RICHMO",
@@ -90,6 +101,11 @@
           "name": "ANTHROPIC* CLAUDE SUB",
           "amount": 20.0,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "ANTHROPIC* CLAUDE SUB",
+          "amount": 20.0,
+          "account": "SoFi Checking"
         }
       ]
     },
@@ -134,8 +150,18 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "VILLAGE MARKET",
+          "name": "7-Eleven",
+          "amount": 8.06,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 5.2,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 8.2,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -151,6 +177,16 @@
       ],
       "gym": [],
       "misc_other": [
+        {
+          "name": "VERIZON BILL PAYMENT",
+          "amount": 100.32,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "ABI'S BOOK CAFE LL",
+          "amount": 5.83,
+          "account": "SoFi Checking"
+        },
         {
           "name": "KOHR'S BROS CUSTARD",
           "amount": 6.5,
@@ -172,23 +208,8 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "VERIZON BILL PAYMENT",
-          "amount": 100.32,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 14.58,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "BP FDMS CAT",
-          "amount": 3.91,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "BP FDMS CAT",
-          "amount": 66.07,
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 23.15,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -197,12 +218,17 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "FREEDOM FOOD MART",
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 14.58,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay FREEDOM FOOD",
           "amount": 11.79,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "PACIFIC BEACHWEAR",
+          "name": "AplPay PACIFIC BEACHVIRGINIA BEAC",
           "amount": 27.56,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -246,6 +272,16 @@
   },
   "unmatched_transactions": [
     {
+      "name": "VERIZON BILL PAYMENT",
+      "amount": 100.32,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "ABI'S BOOK CAFE LL",
+      "amount": 5.83,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "KOHR'S BROS CUSTARD",
       "amount": 6.5,
       "account": "SoFi Checking"
@@ -266,23 +302,8 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "VERIZON BILL PAYMENT",
-      "amount": 100.32,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "NATES BAGELS - CARY STREET",
-      "amount": 14.58,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "BP FDMS CAT",
-      "amount": 3.91,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "BP FDMS CAT",
-      "amount": 66.07,
+      "name": "K H M CONVENIENCE STORE",
+      "amount": 23.15,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -291,12 +312,17 @@
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "FREEDOM FOOD MART",
+      "name": "NATES BAGELS - CARY STREET",
+      "amount": 14.58,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay FREEDOM FOOD",
       "amount": 11.79,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "PACIFIC BEACHWEAR",
+      "name": "AplPay PACIFIC BEACHVIRGINIA BEAC",
       "amount": 27.56,
       "account": "Blue Cash Preferred\u00ae"
     },
@@ -339,11 +365,36 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 312.41,
+      "balance": 205.44,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 1.65,
+          "category": "parking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 5.0,
+          "category": "parking"
+        },
+        {
+          "name": "VERIZON BILL PAYMENT",
+          "amount": 100.32,
+          "category": "misc_other"
+        },
+        {
+          "name": "ABI'S BOOK CAFE LL",
+          "amount": 5.83,
+          "category": "misc_other"
+        },
+        {
+          "name": "ANTHROPIC* CLAUDE SUB",
+          "amount": 20.0,
+          "category": "subscriptions"
+        },
         {
           "name": "KOHR'S BROS CUSTARD",
           "amount": 6.5,
@@ -362,21 +413,6 @@
         {
           "name": "TEZ*21st St Parking -",
           "amount": 33.35,
-          "category": "misc_other"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 1.65,
-          "category": "parking"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 5.0,
-          "category": "parking"
-        },
-        {
-          "name": "VERIZON BILL PAYMENT",
-          "amount": 100.32,
           "category": "misc_other"
         },
         {
@@ -456,29 +492,44 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 390.88,
+      "balance": 491.12,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 14.58,
+          "name": "7-Eleven",
+          "amount": 8.06,
+          "category": "slop"
+        },
+        {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 23.15,
           "category": "misc_other"
         },
         {
-          "name": "BP FDMS CAT",
-          "amount": 3.91,
-          "category": "misc_other"
-        },
-        {
-          "name": "BP FDMS CAT",
+          "name": "AplPay BP#9708157CAPRICHMOND",
           "amount": 66.07,
-          "category": "misc_other"
+          "category": "gas"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 5.2,
+          "category": "slop"
+        },
+        {
+          "name": "BP#9708157CAPL VA001RICHMOND",
+          "amount": 3.91,
+          "category": "gas"
         },
         {
           "name": "McDonald's",
           "amount": 14.47,
+          "category": "misc_other"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 14.58,
           "category": "misc_other"
         },
         {
@@ -488,16 +539,16 @@
         },
         {
           "name": "VILLAGE MARKET",
-          "amount": 5.2,
+          "amount": 8.2,
           "category": "slop"
         },
         {
-          "name": "FREEDOM FOOD MART",
+          "name": "AplPay FREEDOM FOOD",
           "amount": 11.79,
           "category": "misc_other"
         },
         {
-          "name": "PACIFIC BEACHWEAR",
+          "name": "AplPay PACIFIC BEACHVIRGINIA BEAC",
           "amount": 27.56,
           "category": "misc_other"
         },
@@ -590,7 +641,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 312.41,
+    "actual_checking_balance": 205.44,
     "actual_savings_balance": 206.09
   },
   "debt": {
@@ -610,7 +661,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 390.88
+      "current_balance": 491.12
     }
   },
   "plans": [
