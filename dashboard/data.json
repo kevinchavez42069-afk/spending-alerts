@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-12",
+  "last_updated": "2026-08-13",
   "period_start": "2026-08-05",
-  "period_end": "2026-08-12",
+  "period_end": "2026-08-13",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -10,14 +10,14 @@
       "groceries": 15.219999999999999,
       "gas": 69.97999999999999,
       "parking": 23.72,
-      "subscriptions": 40.0
+      "subscriptions": 41.24
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 67.52,
+      "dining_out": 84.89000000000001,
       "slop": 69.41999999999999,
       "gym": 0.0,
-      "misc_other": 427.07
+      "misc_other": 433.65
     }
   },
   "categories_detail": {
@@ -106,6 +106,11 @@
           "name": "ANTHROPIC* CLAUDE SUB",
           "amount": 20.0,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "TUBLY DOWNLOADER",
+          "amount": 1.24,
+          "account": "Blue Cash Preferred\u00ae"
         }
       ]
     },
@@ -131,6 +136,11 @@
           "name": "TST* URBAN FARMHOUSE M",
           "amount": 6.66,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 17.37,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay TST* URBAN FARICHMOND",
@@ -206,6 +216,11 @@
           "name": "TEZ*21st St Parking -",
           "amount": 33.35,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 6.58,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "K H M CONVENIENCE STORE",
@@ -303,6 +318,11 @@
     },
     {
       "name": "K H M CONVENIENCE STORE",
+      "amount": 6.58,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "K H M CONVENIENCE STORE",
       "amount": 23.15,
       "account": "Blue Cash Preferred\u00ae"
     },
@@ -365,7 +385,7 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 205.44,
+      "balance": 184.21,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
@@ -492,7 +512,7 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 491.12,
+      "balance": 521.96,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
@@ -503,9 +523,24 @@
           "category": "slop"
         },
         {
+          "name": "Chipotle Mexican Grill",
+          "amount": 17.37,
+          "category": "dining_out"
+        },
+        {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 6.58,
+          "category": "misc_other"
+        },
+        {
           "name": "K H M CONVENIENCE STORE",
           "amount": 23.15,
           "category": "misc_other"
+        },
+        {
+          "name": "TUBLY DOWNLOADER",
+          "amount": 1.24,
+          "category": "subscriptions"
         },
         {
           "name": "AplPay BP#9708157CAPRICHMOND",
@@ -641,7 +676,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 205.44,
+    "actual_checking_balance": 184.21,
     "actual_savings_balance": 206.09
   },
   "debt": {
@@ -661,7 +696,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 491.12
+      "current_balance": 521.96
     }
   },
   "plans": [
@@ -675,10 +710,6 @@
     }
   ],
   "nancy_messages": [
-    {
-      "text": "Brah, your situation got *worse*, not better.\n\nYou're still massively over on partying ($202 over cap), dining out ($183 over), and slop ($101 over). Your checking account is now at $161 instead of the $1,500 target. And you're *still* getting charged $127.59 in interest on that Delta card\u2014that's pure waste, bro.\n\nHere's what needs to happen TODAY: Cancel those duplicate Claude subscriptions (you're being billed THREE times). Stop eating out and hitting convenience stores for a week straight. Cut the partying in half minimum. Your parking cap is $30 and you're at $57\u2014walk or bike more.\n\nYou've got $746 in savings. Transfer it to checking, pay down that Delta card to stop the bleeding, then lock in hard limits on wants. You're not broke because you're not earning\u2014you're broke because you're spending like money doesn't exist.\n\nWhat's actually changing this week?",
-      "date": "2026-07-18"
-    },
     {
       "text": "Brah, you're still drowning and it's getting worse.\n\n**The damage:** You're $202 over on partying, $205 over on dining out, $102 over on slop. Your checking is at $88\u2014should be $1,500. You've got $127.59 in *interest charges* bleeding from that Delta card, and I see THREE Claude subscriptions still running ($60 total for one service, bro).\n\n**What's actually happening:** You're not broke because you don't make money. You're broke because you're treating your accounts like an all-you-can-spend buffet. Eight parking charges in two weeks. Multiple $14-$26 Starbucks runs. Three separate restaurant/bar visits to LOSO alone. Convenience store runs every other day.\n\n**Today's move:** \n1. Kill those duplicate Claude subs right now\u2014that's $40/period free money.\n2. Your savings has $475. Transfer it to checking today.\n3. Pay that Delta card down hard\u2014stop eating interest charges.\n4. Zero restaurants, zero bars, zero convenience stores for the next week. Full stop.\n\nYou've got the income to fix this. You just gotta actually *do it* instead of talk about it.\n\nWhat are you actually cutting this week?",
       "date": "2026-07-20"
@@ -734,6 +765,10 @@
     {
       "text": "Brah, you're basically locked at $648.68 for the week and you're creeping over on *everything*.\n\nParking is $23.72 against a $10 cap\u2014you're $13.72 over, bro. Dining out is $67.52 against a $75 cap\u2014you're dancing on the line. Slop is $53.16 against a $50 cap\u2014basically maxed. That's three categories where you're supposed to be disciplined and you're bleeding on all of them. Meanwhile your checking is at $312.41 when it should be at $1,500, and that Delta card is *still* at $3,773.84 eating interest every single day.\n\nYou've shown you can kill the big stuff\u2014zero partying, groceries locked\u2014but you keep fumbling the small stuff. Kill the parking fines, cut the convenience store runs completely, and tighten dining out to *under* $60 this week. You're close to actually executing. Don't choke now.\n\nWhat's actually changing today?",
       "date": "2026-08-11"
+    },
+    {
+      "text": "Brah, you're sitting at $738.41 total spend for the period and you're *over* on basically everything that matters.\n\nParking is $23.72 against a $10 cap\u2014you're $13.72 over. Dining out is $84.89 against a $75 cap\u2014$9.89 over. Slop is $69.42 against a $50 cap\u2014$19.42 over. That's three categories you're supposed to be controlling and you're bleeding on all three. Your checking is at $184.21 when it should be at $1,500. That Delta card is still at $3,773.84 eating interest.\n\nHere's the real problem: you've proven you can nail groceries and kill partying, but you keep leaking cash on parking fines, convenience store runs, and dining out. Stop making excuses about the small stuff\u2014those are the leaks that are keeping you broke. Cut the parking runs, zero the 7-Eleven trips, and lock dining out down to $50 max for the rest of the period.\n\nYou're close to executing. What's actually changing *today*?",
+      "date": "2026-08-13"
     }
   ]
 }
