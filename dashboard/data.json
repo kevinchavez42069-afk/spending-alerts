@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-13",
+  "last_updated": "2026-08-14",
   "period_start": "2026-08-05",
-  "period_end": "2026-08-13",
+  "period_end": "2026-08-14",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -14,10 +14,10 @@
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 84.89000000000001,
-      "slop": 69.41999999999999,
+      "dining_out": 99.47,
+      "slop": 73.53,
       "gym": 0.0,
-      "misc_other": 433.65
+      "misc_other": 440.54999999999995
     }
   },
   "categories_detail": {
@@ -138,6 +138,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 14.58,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "Chipotle Mexican Grill",
           "amount": 17.37,
           "account": "Blue Cash Preferred\u00ae"
@@ -160,18 +165,23 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "7-Eleven",
           "amount": 8.06,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 5.2,
+          "amount": 8.2,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "VILLAGE MARKET",
-          "amount": 8.2,
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 5.2,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -188,13 +198,23 @@
       "gym": [],
       "misc_other": [
         {
-          "name": "VERIZON BILL PAYMENT",
-          "amount": 100.32,
+          "name": "ABI'S BOOK CAFE LL",
+          "amount": 5.83,
           "account": "SoFi Checking"
         },
         {
-          "name": "ABI'S BOOK CAFE LL",
-          "amount": 5.83,
+          "name": "JO-JOS PIZZA",
+          "amount": 8.49,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "gotinder.com/help",
+          "amount": 12.99,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "VERIZON BILL PAYMENT",
+          "amount": 100.32,
           "account": "SoFi Checking"
         },
         {
@@ -230,11 +250,6 @@
         {
           "name": "McDonald's",
           "amount": 14.47,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 14.58,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -287,13 +302,23 @@
   },
   "unmatched_transactions": [
     {
-      "name": "VERIZON BILL PAYMENT",
-      "amount": 100.32,
+      "name": "ABI'S BOOK CAFE LL",
+      "amount": 5.83,
       "account": "SoFi Checking"
     },
     {
-      "name": "ABI'S BOOK CAFE LL",
-      "amount": 5.83,
+      "name": "JO-JOS PIZZA",
+      "amount": 8.49,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "gotinder.com/help",
+      "amount": 12.99,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "VERIZON BILL PAYMENT",
+      "amount": 100.32,
       "account": "SoFi Checking"
     },
     {
@@ -329,11 +354,6 @@
     {
       "name": "McDonald's",
       "amount": 14.47,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "NATES BAGELS - CARY STREET",
-      "amount": 14.58,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -391,6 +411,26 @@
       "limit": null,
       "transactions": [
         {
+          "name": "ABI'S BOOK CAFE LL",
+          "amount": 5.83,
+          "category": "misc_other"
+        },
+        {
+          "name": "ANTHROPIC* CLAUDE SUB",
+          "amount": 20.0,
+          "category": "subscriptions"
+        },
+        {
+          "name": "JO-JOS PIZZA",
+          "amount": 8.49,
+          "category": "misc_other"
+        },
+        {
+          "name": "gotinder.com/help",
+          "amount": 12.99,
+          "category": "misc_other"
+        },
+        {
           "name": "PARKING CITY OF RICHMO",
           "amount": 1.65,
           "category": "parking"
@@ -404,16 +444,6 @@
           "name": "VERIZON BILL PAYMENT",
           "amount": 100.32,
           "category": "misc_other"
-        },
-        {
-          "name": "ABI'S BOOK CAFE LL",
-          "amount": 5.83,
-          "category": "misc_other"
-        },
-        {
-          "name": "ANTHROPIC* CLAUDE SUB",
-          "amount": 20.0,
-          "category": "subscriptions"
         },
         {
           "name": "KOHR'S BROS CUSTARD",
@@ -518,8 +548,23 @@
       "limit": 3000.0,
       "transactions": [
         {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
+          "category": "slop"
+        },
+        {
           "name": "7-Eleven",
           "amount": 8.06,
+          "category": "slop"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 14.58,
+          "category": "dining_out"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 8.2,
           "category": "slop"
         },
         {
@@ -563,19 +608,9 @@
           "category": "misc_other"
         },
         {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 14.58,
-          "category": "misc_other"
-        },
-        {
           "name": "Target",
           "amount": 10.59,
           "category": "groceries"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 8.2,
-          "category": "slop"
         },
         {
           "name": "AplPay FREEDOM FOOD",
