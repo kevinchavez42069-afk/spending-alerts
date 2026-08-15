@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-14",
+  "last_updated": "2026-08-15",
   "period_start": "2026-08-05",
-  "period_end": "2026-08-14",
+  "period_end": "2026-08-15",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -10,14 +10,14 @@
       "groceries": 15.219999999999999,
       "gas": 69.97999999999999,
       "parking": 23.72,
-      "subscriptions": 41.24
+      "subscriptions": 44.230000000000004
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 99.47,
+      "dining_out": 135.68,
       "slop": 73.53,
       "gym": 0.0,
-      "misc_other": 440.54999999999995
+      "misc_other": 530.34
     }
   },
   "categories_detail": {
@@ -108,6 +108,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "APPLECOMBILL",
+          "amount": 2.99,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "TUBLY DOWNLOADER",
           "amount": 1.24,
           "account": "Blue Cash Preferred\u00ae"
@@ -117,6 +122,16 @@
     "variable_wants": {
       "partying": [],
       "dining_out": [
+        {
+          "name": "DD *DOORDASH",
+          "amount": 31.05,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 5.16,
+          "account": "SoFi Checking"
+        },
         {
           "name": "TST*NATES BAGELS - CAR",
           "amount": 5.79,
@@ -138,13 +153,13 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "AplPay TST* NATES BARICHMOND",
-          "amount": 14.58,
+          "name": "Chipotle Mexican Grill",
+          "amount": 17.37,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "Chipotle Mexican Grill",
-          "amount": 17.37,
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 14.58,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -198,6 +213,16 @@
       "gym": [],
       "misc_other": [
         {
+          "name": "NOVA MENTAL HEALTH CO",
+          "amount": 70.0,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "Subway",
+          "amount": 7.71,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "ABI'S BOOK CAFE LL",
           "amount": 5.83,
           "account": "SoFi Checking"
@@ -238,12 +263,17 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "K H M CONVENIENCE STORE",
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 12.08,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay K H M CONVENIHENRICO",
           "amount": 6.58,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "K H M CONVENIENCE STORE",
+          "name": "AplPay K H M CONVENIHENRICO",
           "amount": 23.15,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -302,6 +332,16 @@
   },
   "unmatched_transactions": [
     {
+      "name": "NOVA MENTAL HEALTH CO",
+      "amount": 70.0,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "Subway",
+      "amount": 7.71,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "ABI'S BOOK CAFE LL",
       "amount": 5.83,
       "account": "SoFi Checking"
@@ -342,12 +382,17 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "K H M CONVENIENCE STORE",
+      "name": "URBAN FARMHOUSE MARKET AND CAF",
+      "amount": 12.08,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay K H M CONVENIHENRICO",
       "amount": 6.58,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "K H M CONVENIENCE STORE",
+      "name": "AplPay K H M CONVENIHENRICO",
       "amount": 23.15,
       "account": "Blue Cash Preferred\u00ae"
     },
@@ -405,11 +450,31 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 184.21,
+      "balance": 161.37,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "DD *DOORDASH",
+          "amount": 31.05,
+          "category": "dining_out"
+        },
+        {
+          "name": "NOVA MENTAL HEALTH CO",
+          "amount": 70.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "Subway",
+          "amount": 7.71,
+          "category": "misc_other"
+        },
+        {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 5.16,
+          "category": "dining_out"
+        },
         {
           "name": "ABI'S BOOK CAFE LL",
           "amount": 5.83,
@@ -542,11 +607,41 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 521.96,
+      "balance": 570.3,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "APPLECOMBILL",
+          "amount": 2.99,
+          "category": "subscriptions"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 12.08,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay K H M CONVENIHENRICO",
+          "amount": 6.58,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay K H M CONVENIHENRICO",
+          "amount": 23.15,
+          "category": "misc_other"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 17.37,
+          "category": "dining_out"
+        },
+        {
+          "name": "TUBLY DOWNLOADER",
+          "amount": 1.24,
+          "category": "subscriptions"
+        },
         {
           "name": "VILLAGE MARKET",
           "amount": 4.11,
@@ -566,26 +661,6 @@
           "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 8.2,
           "category": "slop"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 17.37,
-          "category": "dining_out"
-        },
-        {
-          "name": "K H M CONVENIENCE STORE",
-          "amount": 6.58,
-          "category": "misc_other"
-        },
-        {
-          "name": "K H M CONVENIENCE STORE",
-          "amount": 23.15,
-          "category": "misc_other"
-        },
-        {
-          "name": "TUBLY DOWNLOADER",
-          "amount": 1.24,
-          "category": "subscriptions"
         },
         {
           "name": "AplPay BP#9708157CAPRICHMOND",
@@ -711,7 +786,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 184.21,
+    "actual_checking_balance": 161.37,
     "actual_savings_balance": 206.09
   },
   "debt": {
@@ -731,7 +806,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 521.96
+      "current_balance": 570.3
     }
   },
   "plans": [
@@ -745,10 +820,6 @@
     }
   ],
   "nancy_messages": [
-    {
-      "text": "Brah, you're still drowning and it's getting worse.\n\n**The damage:** You're $202 over on partying, $205 over on dining out, $102 over on slop. Your checking is at $88\u2014should be $1,500. You've got $127.59 in *interest charges* bleeding from that Delta card, and I see THREE Claude subscriptions still running ($60 total for one service, bro).\n\n**What's actually happening:** You're not broke because you don't make money. You're broke because you're treating your accounts like an all-you-can-spend buffet. Eight parking charges in two weeks. Multiple $14-$26 Starbucks runs. Three separate restaurant/bar visits to LOSO alone. Convenience store runs every other day.\n\n**Today's move:** \n1. Kill those duplicate Claude subs right now\u2014that's $40/period free money.\n2. Your savings has $475. Transfer it to checking today.\n3. Pay that Delta card down hard\u2014stop eating interest charges.\n4. Zero restaurants, zero bars, zero convenience stores for the next week. Full stop.\n\nYou've got the income to fix this. You just gotta actually *do it* instead of talk about it.\n\nWhat are you actually cutting this week?",
-      "date": "2026-07-20"
-    },
     {
       "text": "Brah, we've got a blank slate today\u2014literally zero spending tracked since yesterday. That's either because the period just reset or you haven't logged anything yet, so I can't call you out on the specifics.\n\nBut let's be real: your Delta card is still sitting at $5,275.85 and bleeding interest. Your checking is at $1,681\u2014solid relative to recent weeks, but your savings is still only $504 when it should be $3,000. Those duplicate Claude subscriptions better be dead by now.\n\nUse this clean slate to actually execute: cut the restaurants, kill the partying overspend, and attack that credit card debt. You've got the money in accounts\u2014now prove you can stop leaking it everywhere.\n\nWhat's the plan for this period?",
       "date": "2026-07-22"
@@ -804,6 +875,10 @@
     {
       "text": "Brah, you're sitting at $738.41 total spend for the period and you're *over* on basically everything that matters.\n\nParking is $23.72 against a $10 cap\u2014you're $13.72 over. Dining out is $84.89 against a $75 cap\u2014$9.89 over. Slop is $69.42 against a $50 cap\u2014$19.42 over. That's three categories you're supposed to be controlling and you're bleeding on all three. Your checking is at $184.21 when it should be at $1,500. That Delta card is still at $3,773.84 eating interest.\n\nHere's the real problem: you've proven you can nail groceries and kill partying, but you keep leaking cash on parking fines, convenience store runs, and dining out. Stop making excuses about the small stuff\u2014those are the leaks that are keeping you broke. Cut the parking runs, zero the 7-Eleven trips, and lock dining out down to $50 max for the rest of the period.\n\nYou're close to executing. What's actually changing *today*?",
       "date": "2026-08-13"
+    },
+    {
+      "text": "Brah, you're sitting at $892.70 total spend for the period and you're *still* over on every single category that matters.\n\n**The damage:** Parking is $23.72 against a $10 cap\u2014you're $13.72 over. Dining out is $135.68 against a $75 cap\u2014you're $60.68 over, bro. Slop is $73.53 against a $50 cap\u2014$23.53 over. That's not creeping anymore, that's drowning. Your checking is at $161.37 when it should be at $1,500. That Delta card is *still* at $3,773.84 eating interest every single day.\n\n**Here's what kills me:** You've proven you can lock down groceries ($15.22 is solid) and kill partying completely. But you keep making the same mistakes. Eight separate parking charges in two weeks. DoorDash runs. Chipotle twice. Nate's Bagels three times. 7-Eleven runs constantly. These aren't accidents\u2014this is you not executing.\n\n**This ends now:** No more dining out for the rest of the period. Zero 7-Eleven trips. One parking charge max. You've got four days left. Lock it down hard or this plan dies.\n\nWhat",
+      "date": "2026-08-15"
     }
   ]
 }
