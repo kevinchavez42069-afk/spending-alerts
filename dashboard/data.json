@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-15",
+  "last_updated": "2026-08-16",
   "period_start": "2026-08-05",
-  "period_end": "2026-08-15",
+  "period_end": "2026-08-16",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -10,14 +10,14 @@
       "groceries": 15.219999999999999,
       "gas": 69.97999999999999,
       "parking": 23.72,
-      "subscriptions": 44.230000000000004
+      "subscriptions": 41.24
     },
     "variable_wants": {
-      "partying": 0.0,
-      "dining_out": 135.68,
+      "partying": 51.9,
+      "dining_out": 163.48000000000002,
       "slop": 73.53,
       "gym": 0.0,
-      "misc_other": 530.34
+      "misc_other": 726.8499999999998
     }
   },
   "categories_detail": {
@@ -108,11 +108,6 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "APPLECOMBILL",
-          "amount": 2.99,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
           "name": "TUBLY DOWNLOADER",
           "amount": 1.24,
           "account": "Blue Cash Preferred\u00ae"
@@ -120,8 +115,24 @@
       ]
     },
     "variable_wants": {
-      "partying": [],
+      "partying": [
+        {
+          "name": "777 VINTAGE RARITIES",
+          "amount": 51.9,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "dining_out": [
+        {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 4.71,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 5.16,
+          "account": "SoFi Checking"
+        },
         {
           "name": "DD *DOORDASH",
           "amount": 31.05,
@@ -154,6 +165,11 @@
         },
         {
           "name": "Chipotle Mexican Grill",
+          "amount": 17.93,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
           "amount": 17.37,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -180,7 +196,7 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "VILLAGE MARKET",
+          "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 4.11,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -213,6 +229,31 @@
       "gym": [],
       "misc_other": [
         {
+          "name": "CBI*rekordbox",
+          "amount": 23.0,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "JO-JOS PIZZA",
+          "amount": 9.85,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "K H M CONVENIENCE STOR",
+          "amount": 7.78,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "K H M CONVENIENCE STOR",
+          "amount": 8.35,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "gotinder.com/help",
+          "amount": 12.99,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "NOVA MENTAL HEALTH CO",
           "amount": 70.0,
           "account": "SoFi Checking"
@@ -225,16 +266,6 @@
         {
           "name": "ABI'S BOOK CAFE LL",
           "amount": 5.83,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "JO-JOS PIZZA",
-          "amount": 8.49,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "gotinder.com/help",
-          "amount": 12.99,
           "account": "SoFi Checking"
         },
         {
@@ -261,6 +292,26 @@
           "name": "TEZ*21st St Parking -",
           "amount": 33.35,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "THE CLAY MARKET",
+          "amount": 14.98,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 24.74,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 2.99,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Interest Charge on Purchases",
+          "amount": 113.31,
+          "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
@@ -332,6 +383,31 @@
   },
   "unmatched_transactions": [
     {
+      "name": "CBI*rekordbox",
+      "amount": 23.0,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "JO-JOS PIZZA",
+      "amount": 9.85,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "K H M CONVENIENCE STOR",
+      "amount": 7.78,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "K H M CONVENIENCE STOR",
+      "amount": 8.35,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "gotinder.com/help",
+      "amount": 12.99,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "NOVA MENTAL HEALTH CO",
       "amount": 70.0,
       "account": "SoFi Checking"
@@ -344,16 +420,6 @@
     {
       "name": "ABI'S BOOK CAFE LL",
       "amount": 5.83,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "JO-JOS PIZZA",
-      "amount": 8.49,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "gotinder.com/help",
-      "amount": 12.99,
       "account": "SoFi Checking"
     },
     {
@@ -380,6 +446,26 @@
       "name": "TEZ*21st St Parking -",
       "amount": 33.35,
       "account": "SoFi Checking"
+    },
+    {
+      "name": "THE CLAY MARKET",
+      "amount": 14.98,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "URBAN FARMHOUSE MARKET AND CAF",
+      "amount": 24.74,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "APPLE.COM/BILL INTERNET CHARGE",
+      "amount": 2.99,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Interest Charge on Purchases",
+      "amount": 113.31,
+      "account": "Delta SkyMiles\u00ae Gold Card"
     },
     {
       "name": "URBAN FARMHOUSE MARKET AND CAF",
@@ -450,11 +536,46 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 161.37,
+      "balance": 78.5,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "CBI*rekordbox",
+          "amount": 23.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "JO-JOS PIZZA",
+          "amount": 9.85,
+          "category": "misc_other"
+        },
+        {
+          "name": "K H M CONVENIENCE STOR",
+          "amount": 7.78,
+          "category": "misc_other"
+        },
+        {
+          "name": "K H M CONVENIENCE STOR",
+          "amount": 8.35,
+          "category": "misc_other"
+        },
+        {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 4.71,
+          "category": "dining_out"
+        },
+        {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 5.16,
+          "category": "dining_out"
+        },
+        {
+          "name": "gotinder.com/help",
+          "amount": 12.99,
+          "category": "misc_other"
+        },
         {
           "name": "DD *DOORDASH",
           "amount": 31.05,
@@ -484,16 +605,6 @@
           "name": "ANTHROPIC* CLAUDE SUB",
           "amount": 20.0,
           "category": "subscriptions"
-        },
-        {
-          "name": "JO-JOS PIZZA",
-          "amount": 8.49,
-          "category": "misc_other"
-        },
-        {
-          "name": "gotinder.com/help",
-          "amount": 12.99,
-          "category": "misc_other"
         },
         {
           "name": "PARKING CITY OF RICHMO",
@@ -607,15 +718,40 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 570.3,
+      "balance": 577.4,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
-          "name": "APPLECOMBILL",
+          "name": "777 VINTAGE RARITIES",
+          "amount": 51.9,
+          "category": "partying"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 17.93,
+          "category": "dining_out"
+        },
+        {
+          "name": "THE CLAY MARKET",
+          "amount": 14.98,
+          "category": "misc_other"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 24.74,
+          "category": "misc_other"
+        },
+        {
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
           "amount": 2.99,
-          "category": "subscriptions"
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 4.11,
+          "category": "slop"
         },
         {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
@@ -641,11 +777,6 @@
           "name": "TUBLY DOWNLOADER",
           "amount": 1.24,
           "category": "subscriptions"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 4.11,
-          "category": "slop"
         },
         {
           "name": "7-Eleven",
@@ -761,11 +892,17 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 3773.84,
+      "balance": 3887.15,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
-      "transactions": []
+      "transactions": [
+        {
+          "name": "Interest Charge on Purchases",
+          "amount": 113.31,
+          "category": "misc_other"
+        }
+      ]
     }
   ],
   "caps": {
@@ -786,7 +923,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 161.37,
+    "actual_checking_balance": 78.5,
     "actual_savings_balance": 206.09
   },
   "debt": {
@@ -798,7 +935,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 3773.84
+      "current_balance": 3887.15
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -806,7 +943,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 570.3
+      "current_balance": 577.4
     }
   },
   "plans": [
