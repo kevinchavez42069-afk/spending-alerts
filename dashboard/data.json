@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-08-17",
+  "last_updated": "2026-08-18",
   "period_start": "2026-08-05",
-  "period_end": "2026-08-17",
+  "period_end": "2026-08-18",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
-      "groceries": 15.219999999999999,
+      "groceries": 88.22,
       "gas": 69.97999999999999,
       "parking": 23.72,
-      "subscriptions": 41.24
+      "subscriptions": 64.2
     },
     "variable_wants": {
       "partying": 51.9,
-      "dining_out": 195.71,
-      "slop": 77.46000000000001,
+      "dining_out": 220.45000000000002,
+      "slop": 87.97999999999999,
       "gym": 0.0,
-      "misc_other": 739.2999999999998
+      "misc_other": 727.5899999999998
     }
   },
   "categories_detail": {
@@ -26,6 +26,11 @@
     },
     "variable_needs": {
       "groceries": [
+        {
+          "name": "Aldi",
+          "amount": 73.0,
+          "account": "Blue Cash Preferred\u00ae"
+        },
         {
           "name": "Target",
           "amount": 10.59,
@@ -108,6 +113,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "APPLECOMBILL",
+          "amount": 22.96,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "TUBLY DOWNLOADER",
           "amount": 1.24,
           "account": "Blue Cash Preferred\u00ae"
@@ -125,12 +135,12 @@
       "dining_out": [
         {
           "name": "TST* URBAN FARMHOUSE M",
-          "amount": 5.16,
+          "amount": 4.71,
           "account": "SoFi Checking"
         },
         {
           "name": "TST* URBAN FARMHOUSE M",
-          "amount": 4.71,
+          "amount": 5.16,
           "account": "SoFi Checking"
         },
         {
@@ -164,6 +174,16 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 24.74,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 17.93,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "DOORDASH",
           "amount": 20.15,
           "account": "Blue Cash Preferred\u00ae"
@@ -171,11 +191,6 @@
         {
           "name": "AplPay TST* URBAN FARICHMOND",
           "amount": 12.08,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 17.93,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -204,6 +219,16 @@
           "name": "ESSENTIAL EXPRESS",
           "amount": 6.78,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 5.87,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.65,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "7-Eleven",
@@ -244,23 +269,13 @@
       "gym": [],
       "misc_other": [
         {
-          "name": "NOVA MENTAL HEALTH CO",
-          "amount": 70.0,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "Subway",
-          "amount": 7.71,
-          "account": "SoFi Checking"
-        },
-        {
           "name": "CBI*rekordbox",
           "amount": 23.0,
           "account": "SoFi Checking"
         },
         {
-          "name": "JO-JOS PIZZA",
-          "amount": 9.85,
+          "name": "CTLP*CANTEEN VENDING",
+          "amount": 1.35,
           "account": "SoFi Checking"
         },
         {
@@ -271,6 +286,21 @@
         {
           "name": "K H M CONVENIENCE STOR",
           "amount": 8.35,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "NOVA MENTAL HEALTH CO",
+          "amount": 70.0,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "Subway",
+          "amount": 7.71,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "JO-JOS PIZZA",
+          "amount": 9.85,
           "account": "SoFi Checking"
         },
         {
@@ -309,23 +339,23 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "FIL-A",
+          "amount": 11.68,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
           "amount": 12.45,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 12.08,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "THE CLAY MARKET",
+          "name": "AplPay THE CLAY MARKRICHMOND",
           "amount": 14.98,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 24.74,
+          "amount": 12.08,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -403,23 +433,13 @@
   },
   "unmatched_transactions": [
     {
-      "name": "NOVA MENTAL HEALTH CO",
-      "amount": 70.0,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "Subway",
-      "amount": 7.71,
-      "account": "SoFi Checking"
-    },
-    {
       "name": "CBI*rekordbox",
       "amount": 23.0,
       "account": "SoFi Checking"
     },
     {
-      "name": "JO-JOS PIZZA",
-      "amount": 9.85,
+      "name": "CTLP*CANTEEN VENDING",
+      "amount": 1.35,
       "account": "SoFi Checking"
     },
     {
@@ -430,6 +450,21 @@
     {
       "name": "K H M CONVENIENCE STOR",
       "amount": 8.35,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "NOVA MENTAL HEALTH CO",
+      "amount": 70.0,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "Subway",
+      "amount": 7.71,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "JO-JOS PIZZA",
+      "amount": 9.85,
       "account": "SoFi Checking"
     },
     {
@@ -468,23 +503,23 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "FIL-A",
+      "amount": 11.68,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "URBAN FARMHOUSE MARKET AND CAF",
       "amount": 12.45,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "URBAN FARMHOUSE MARKET AND CAF",
-      "amount": 12.08,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "THE CLAY MARKET",
+      "name": "AplPay THE CLAY MARKRICHMOND",
       "amount": 14.98,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "URBAN FARMHOUSE MARKET AND CAF",
-      "amount": 24.74,
+      "amount": 12.08,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -561,34 +596,19 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 29.5,
+      "balance": -1.55,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
-        {
-          "name": "NOVA MENTAL HEALTH CO",
-          "amount": 70.0,
-          "category": "misc_other"
-        },
-        {
-          "name": "Subway",
-          "amount": 7.71,
-          "category": "misc_other"
-        },
-        {
-          "name": "TST* URBAN FARMHOUSE M",
-          "amount": 5.16,
-          "category": "dining_out"
-        },
         {
           "name": "CBI*rekordbox",
           "amount": 23.0,
           "category": "misc_other"
         },
         {
-          "name": "JO-JOS PIZZA",
-          "amount": 9.85,
+          "name": "CTLP*CANTEEN VENDING",
+          "amount": 1.35,
           "category": "misc_other"
         },
         {
@@ -610,6 +630,26 @@
           "name": "TST* URBAN FARMHOUSE M",
           "amount": 5.16,
           "category": "dining_out"
+        },
+        {
+          "name": "NOVA MENTAL HEALTH CO",
+          "amount": 70.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "Subway",
+          "amount": 7.71,
+          "category": "misc_other"
+        },
+        {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 5.16,
+          "category": "dining_out"
+        },
+        {
+          "name": "JO-JOS PIZZA",
+          "amount": 9.85,
+          "category": "misc_other"
         },
         {
           "name": "gotinder.com/help",
@@ -743,20 +783,60 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 641.38,
+      "balance": 699.03,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "APPLECOMBILL",
+          "amount": 22.96,
+          "category": "subscriptions"
+        },
+        {
+          "name": "Aldi",
+          "amount": 73.0,
+          "category": "groceries"
+        },
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 5.87,
+          "category": "slop"
+        },
+        {
+          "name": "FIL-A",
+          "amount": 11.68,
+          "category": "misc_other"
+        },
         {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
           "amount": 12.45,
           "category": "misc_other"
         },
         {
+          "name": "VILLAGE MARKET",
+          "amount": 4.65,
+          "category": "slop"
+        },
+        {
           "name": "7-Eleven",
           "amount": 3.93,
           "category": "slop"
+        },
+        {
+          "name": "AplPay THE CLAY MARKRICHMOND",
+          "amount": 14.98,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 24.74,
+          "category": "dining_out"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 17.93,
+          "category": "dining_out"
         },
         {
           "name": "DOORDASH",
@@ -777,21 +857,6 @@
           "name": "AplPay TST* URBAN FARICHMOND",
           "amount": 12.08,
           "category": "dining_out"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 17.93,
-          "category": "dining_out"
-        },
-        {
-          "name": "THE CLAY MARKET",
-          "amount": 14.98,
-          "category": "misc_other"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 24.74,
-          "category": "misc_other"
         },
         {
           "name": "APPLE.COM/BILL INTERNET CHARGE",
@@ -968,7 +1033,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 29.5,
+    "actual_checking_balance": -1.55,
     "actual_savings_balance": 206.09
   },
   "debt": {
@@ -988,7 +1053,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 641.38
+      "current_balance": 699.03
     }
   },
   "plans": [
