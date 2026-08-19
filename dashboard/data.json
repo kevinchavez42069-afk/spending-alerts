@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-08-18",
-  "period_start": "2026-08-05",
-  "period_end": "2026-08-18",
+  "last_updated": "2026-08-19",
+  "period_start": "2026-08-19",
+  "period_end": "2026-08-19",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
-      "groceries": 88.22,
-      "gas": 69.97999999999999,
-      "parking": 23.72,
-      "subscriptions": 64.2
+      "groceries": 0.0,
+      "gas": 0.0,
+      "parking": 0.0,
+      "subscriptions": 0.0
     },
     "variable_wants": {
-      "partying": 51.9,
-      "dining_out": 220.45000000000002,
-      "slop": 87.97999999999999,
+      "partying": 0.0,
+      "dining_out": 0.0,
+      "slop": 0.0,
       "gym": 0.0,
-      "misc_other": 727.5899999999998
+      "misc_other": 0.0
     }
   },
   "categories_detail": {
@@ -25,757 +25,32 @@
       "rent": []
     },
     "variable_needs": {
-      "groceries": [
-        {
-          "name": "Aldi",
-          "amount": 73.0,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Target",
-          "amount": 10.59,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Kroger",
-          "amount": 4.63,
-          "account": "Blue Cash Preferred\u00ae"
-        }
-      ],
-      "gas": [
-        {
-          "name": "AplPay BP#9708157CAPRICHMOND",
-          "amount": 66.07,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "BP#9708157CAPL VA001RICHMOND",
-          "amount": 3.91,
-          "account": "Blue Cash Preferred\u00ae"
-        }
-      ],
-      "parking": [
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 1.65,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 5.0,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 3.75,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.95,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 1.7,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 1.7,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.32,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.95,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 1.7,
-          "account": "SoFi Checking"
-        }
-      ],
-      "subscriptions": [
-        {
-          "name": "ANTHROPIC* CLAUDE SUB",
-          "amount": 20.0,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "ANTHROPIC* CLAUDE SUB",
-          "amount": 20.0,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "APPLECOMBILL",
-          "amount": 22.96,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "TUBLY DOWNLOADER",
-          "amount": 1.24,
-          "account": "Blue Cash Preferred\u00ae"
-        }
-      ]
+      "groceries": [],
+      "gas": [],
+      "parking": [],
+      "subscriptions": []
     },
     "variable_wants": {
-      "partying": [
-        {
-          "name": "AplPay 777 VINTAGE RRICHMOND",
-          "amount": 51.9,
-          "account": "Blue Cash Preferred\u00ae"
-        }
-      ],
-      "dining_out": [
-        {
-          "name": "TST* URBAN FARMHOUSE M",
-          "amount": 4.71,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "TST* URBAN FARMHOUSE M",
-          "amount": 5.16,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "TST* URBAN FARMHOUSE M",
-          "amount": 5.16,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "DD *DOORDASH",
-          "amount": 31.05,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "TST*NATES BAGELS - CAR",
-          "amount": 5.79,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "TST*NATES BAGELS - CAR",
-          "amount": 12.48,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "DD *DOORDASH",
-          "amount": 19.15,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "TST* URBAN FARMHOUSE M",
-          "amount": 6.66,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "AplPay TST* URBAN FARICHMOND",
-          "amount": 24.74,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 17.93,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "DOORDASH",
-          "amount": 20.15,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay TST* URBAN FARICHMOND",
-          "amount": 12.08,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 17.37,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay TST* NATES BARICHMOND",
-          "amount": 14.58,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay TST* URBAN FARICHMOND",
-          "amount": 6.07,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 17.37,
-          "account": "Blue Cash Preferred\u00ae"
-        }
-      ],
-      "slop": [
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 6.78,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 5.87,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 4.65,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 3.93,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 4.11,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 8.06,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 8.2,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 5.2,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 7.25,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 33.93,
-          "account": "Blue Cash Preferred\u00ae"
-        }
-      ],
+      "partying": [],
+      "dining_out": [],
+      "slop": [],
       "gym": [],
-      "misc_other": [
-        {
-          "name": "CBI*rekordbox",
-          "amount": 23.0,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "CTLP*CANTEEN VENDING",
-          "amount": 1.35,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "K H M CONVENIENCE STOR",
-          "amount": 7.78,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "K H M CONVENIENCE STOR",
-          "amount": 8.35,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "NOVA MENTAL HEALTH CO",
-          "amount": 70.0,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "Subway",
-          "amount": 7.71,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "JO-JOS PIZZA",
-          "amount": 9.85,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "gotinder.com/help",
-          "amount": 12.99,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "ABI'S BOOK CAFE LL",
-          "amount": 5.83,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "VERIZON BILL PAYMENT",
-          "amount": 100.32,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "KOHR'S BROS CUSTARD",
-          "amount": 6.5,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "LEMONADE INSURANCE",
-          "amount": 10.92,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "LEMONADE INSURANCE",
-          "amount": 10.92,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "TEZ*21st St Parking -",
-          "amount": 33.35,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "FIL-A",
-          "amount": 11.68,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 12.45,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay THE CLAY MARKRICHMOND",
-          "amount": 14.98,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 12.08,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "APPLE.COM/BILL INTERNET CHARGE",
-          "amount": 2.99,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Interest Charge on Purchases",
-          "amount": 113.31,
-          "account": "Delta SkyMiles\u00ae Gold Card"
-        },
-        {
-          "name": "AplPay K H M CONVENIHENRICO",
-          "amount": 6.58,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay K H M CONVENIHENRICO",
-          "amount": 23.15,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "McDonald's",
-          "amount": 14.47,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay FREEDOM FOOD",
-          "amount": 11.79,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay PACIFIC BEACHVIRGINIA BEAC",
-          "amount": 27.56,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay K H M CONVENIHENRICO",
-          "amount": 27.64,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Raising Cane's Chicken Fingers",
-          "amount": 32.3,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Taco Bell",
-          "amount": 25.0,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "APPLE.COM/BILL INTERNET CHARGE",
-          "amount": 1.29,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Chick-fil-A",
-          "amount": 17.68,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Dunkin' Donuts",
-          "amount": 51.9,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "McDonald's",
-          "amount": 11.87,
-          "account": "Blue Cash Preferred\u00ae"
-        }
-      ]
+      "misc_other": []
     }
   },
-  "unmatched_transactions": [
-    {
-      "name": "CBI*rekordbox",
-      "amount": 23.0,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "CTLP*CANTEEN VENDING",
-      "amount": 1.35,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "K H M CONVENIENCE STOR",
-      "amount": 7.78,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "K H M CONVENIENCE STOR",
-      "amount": 8.35,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "NOVA MENTAL HEALTH CO",
-      "amount": 70.0,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "Subway",
-      "amount": 7.71,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "JO-JOS PIZZA",
-      "amount": 9.85,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "gotinder.com/help",
-      "amount": 12.99,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "ABI'S BOOK CAFE LL",
-      "amount": 5.83,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "VERIZON BILL PAYMENT",
-      "amount": 100.32,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "KOHR'S BROS CUSTARD",
-      "amount": 6.5,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "LEMONADE INSURANCE",
-      "amount": 10.92,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "LEMONADE INSURANCE",
-      "amount": 10.92,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "TEZ*21st St Parking -",
-      "amount": 33.35,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "FIL-A",
-      "amount": 11.68,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "URBAN FARMHOUSE MARKET AND CAF",
-      "amount": 12.45,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "AplPay THE CLAY MARKRICHMOND",
-      "amount": 14.98,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "URBAN FARMHOUSE MARKET AND CAF",
-      "amount": 12.08,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "APPLE.COM/BILL INTERNET CHARGE",
-      "amount": 2.99,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "Interest Charge on Purchases",
-      "amount": 113.31,
-      "account": "Delta SkyMiles\u00ae Gold Card"
-    },
-    {
-      "name": "AplPay K H M CONVENIHENRICO",
-      "amount": 6.58,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "AplPay K H M CONVENIHENRICO",
-      "amount": 23.15,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "McDonald's",
-      "amount": 14.47,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "AplPay FREEDOM FOOD",
-      "amount": 11.79,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "AplPay PACIFIC BEACHVIRGINIA BEAC",
-      "amount": 27.56,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "AplPay K H M CONVENIHENRICO",
-      "amount": 27.64,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "Raising Cane's Chicken Fingers",
-      "amount": 32.3,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "Taco Bell",
-      "amount": 25.0,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "APPLE.COM/BILL INTERNET CHARGE",
-      "amount": 1.29,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "Chick-fil-A",
-      "amount": 17.68,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "Dunkin' Donuts",
-      "amount": 51.9,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "McDonald's",
-      "amount": 11.87,
-      "account": "Blue Cash Preferred\u00ae"
-    }
-  ],
+  "unmatched_transactions": [],
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": -1.55,
+      "balance": 27.1,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
-      "transactions": [
-        {
-          "name": "CBI*rekordbox",
-          "amount": 23.0,
-          "category": "misc_other"
-        },
-        {
-          "name": "CTLP*CANTEEN VENDING",
-          "amount": 1.35,
-          "category": "misc_other"
-        },
-        {
-          "name": "K H M CONVENIENCE STOR",
-          "amount": 7.78,
-          "category": "misc_other"
-        },
-        {
-          "name": "K H M CONVENIENCE STOR",
-          "amount": 8.35,
-          "category": "misc_other"
-        },
-        {
-          "name": "TST* URBAN FARMHOUSE M",
-          "amount": 4.71,
-          "category": "dining_out"
-        },
-        {
-          "name": "TST* URBAN FARMHOUSE M",
-          "amount": 5.16,
-          "category": "dining_out"
-        },
-        {
-          "name": "NOVA MENTAL HEALTH CO",
-          "amount": 70.0,
-          "category": "misc_other"
-        },
-        {
-          "name": "Subway",
-          "amount": 7.71,
-          "category": "misc_other"
-        },
-        {
-          "name": "TST* URBAN FARMHOUSE M",
-          "amount": 5.16,
-          "category": "dining_out"
-        },
-        {
-          "name": "JO-JOS PIZZA",
-          "amount": 9.85,
-          "category": "misc_other"
-        },
-        {
-          "name": "gotinder.com/help",
-          "amount": 12.99,
-          "category": "misc_other"
-        },
-        {
-          "name": "DD *DOORDASH",
-          "amount": 31.05,
-          "category": "dining_out"
-        },
-        {
-          "name": "ABI'S BOOK CAFE LL",
-          "amount": 5.83,
-          "category": "misc_other"
-        },
-        {
-          "name": "ANTHROPIC* CLAUDE SUB",
-          "amount": 20.0,
-          "category": "subscriptions"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 1.65,
-          "category": "parking"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 5.0,
-          "category": "parking"
-        },
-        {
-          "name": "VERIZON BILL PAYMENT",
-          "amount": 100.32,
-          "category": "misc_other"
-        },
-        {
-          "name": "KOHR'S BROS CUSTARD",
-          "amount": 6.5,
-          "category": "misc_other"
-        },
-        {
-          "name": "LEMONADE INSURANCE",
-          "amount": 10.92,
-          "category": "misc_other"
-        },
-        {
-          "name": "LEMONADE INSURANCE",
-          "amount": 10.92,
-          "category": "misc_other"
-        },
-        {
-          "name": "TEZ*21st St Parking -",
-          "amount": 33.35,
-          "category": "misc_other"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 3.75,
-          "category": "parking"
-        },
-        {
-          "name": "TST*NATES BAGELS - CAR",
-          "amount": 5.79,
-          "category": "dining_out"
-        },
-        {
-          "name": "TST*NATES BAGELS - CAR",
-          "amount": 12.48,
-          "category": "dining_out"
-        },
-        {
-          "name": "ANTHROPIC* CLAUDE SUB",
-          "amount": 20.0,
-          "category": "subscriptions"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.95,
-          "category": "parking"
-        },
-        {
-          "name": "DD *DOORDASH",
-          "amount": 19.15,
-          "category": "dining_out"
-        },
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 6.78,
-          "category": "slop"
-        },
-        {
-          "name": "TST* URBAN FARMHOUSE M",
-          "amount": 6.66,
-          "category": "dining_out"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 1.7,
-          "category": "parking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 1.7,
-          "category": "parking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.32,
-          "category": "parking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.95,
-          "category": "parking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 1.7,
-          "category": "parking"
-        }
-      ]
+      "transactions": []
     },
     {
       "name": "SoFi Savings",
-      "balance": 206.09,
+      "balance": 176.09,
       "type": "depository",
       "subtype": "savings",
       "limit": null,
@@ -783,222 +58,11 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 699.03,
+      "balance": 875.06,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
-      "transactions": [
-        {
-          "name": "APPLECOMBILL",
-          "amount": 22.96,
-          "category": "subscriptions"
-        },
-        {
-          "name": "Aldi",
-          "amount": 73.0,
-          "category": "groceries"
-        },
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 5.87,
-          "category": "slop"
-        },
-        {
-          "name": "FIL-A",
-          "amount": 11.68,
-          "category": "misc_other"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 12.45,
-          "category": "misc_other"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 4.65,
-          "category": "slop"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 3.93,
-          "category": "slop"
-        },
-        {
-          "name": "AplPay THE CLAY MARKRICHMOND",
-          "amount": 14.98,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay TST* URBAN FARICHMOND",
-          "amount": 24.74,
-          "category": "dining_out"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 17.93,
-          "category": "dining_out"
-        },
-        {
-          "name": "DOORDASH",
-          "amount": 20.15,
-          "category": "dining_out"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 12.08,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay 777 VINTAGE RRICHMOND",
-          "amount": 51.9,
-          "category": "partying"
-        },
-        {
-          "name": "AplPay TST* URBAN FARICHMOND",
-          "amount": 12.08,
-          "category": "dining_out"
-        },
-        {
-          "name": "APPLE.COM/BILL INTERNET CHARGE",
-          "amount": 2.99,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 4.11,
-          "category": "slop"
-        },
-        {
-          "name": "AplPay K H M CONVENIHENRICO",
-          "amount": 6.58,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay K H M CONVENIHENRICO",
-          "amount": 23.15,
-          "category": "misc_other"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 17.37,
-          "category": "dining_out"
-        },
-        {
-          "name": "TUBLY DOWNLOADER",
-          "amount": 1.24,
-          "category": "subscriptions"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 8.06,
-          "category": "slop"
-        },
-        {
-          "name": "AplPay TST* NATES BARICHMOND",
-          "amount": 14.58,
-          "category": "dining_out"
-        },
-        {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 8.2,
-          "category": "slop"
-        },
-        {
-          "name": "AplPay BP#9708157CAPRICHMOND",
-          "amount": 66.07,
-          "category": "gas"
-        },
-        {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 5.2,
-          "category": "slop"
-        },
-        {
-          "name": "BP#9708157CAPL VA001RICHMOND",
-          "amount": 3.91,
-          "category": "gas"
-        },
-        {
-          "name": "McDonald's",
-          "amount": 14.47,
-          "category": "misc_other"
-        },
-        {
-          "name": "Target",
-          "amount": 10.59,
-          "category": "groceries"
-        },
-        {
-          "name": "AplPay FREEDOM FOOD",
-          "amount": 11.79,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay PACIFIC BEACHVIRGINIA BEAC",
-          "amount": 27.56,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay K H M CONVENIHENRICO",
-          "amount": 27.64,
-          "category": "misc_other"
-        },
-        {
-          "name": "Kroger",
-          "amount": 4.63,
-          "category": "groceries"
-        },
-        {
-          "name": "Raising Cane's Chicken Fingers",
-          "amount": 32.3,
-          "category": "misc_other"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 7.25,
-          "category": "slop"
-        },
-        {
-          "name": "Taco Bell",
-          "amount": 25.0,
-          "category": "misc_other"
-        },
-        {
-          "name": "APPLE.COM/BILL INTERNET CHARGE",
-          "amount": 1.29,
-          "category": "misc_other"
-        },
-        {
-          "name": "Chick-fil-A",
-          "amount": 17.68,
-          "category": "misc_other"
-        },
-        {
-          "name": "Dunkin' Donuts",
-          "amount": 51.9,
-          "category": "misc_other"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 33.93,
-          "category": "slop"
-        },
-        {
-          "name": "AplPay TST* URBAN FARICHMOND",
-          "amount": 6.07,
-          "category": "dining_out"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 17.37,
-          "category": "dining_out"
-        },
-        {
-          "name": "McDonald's",
-          "amount": 11.87,
-          "category": "misc_other"
-        }
-      ]
+      "transactions": []
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
@@ -1006,13 +70,7 @@
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
-      "transactions": [
-        {
-          "name": "Interest Charge on Purchases",
-          "amount": 113.31,
-          "category": "misc_other"
-        }
-      ]
+      "transactions": []
     }
   ],
   "caps": {
@@ -1033,8 +91,8 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": -1.55,
-    "actual_savings_balance": 206.09
+    "actual_checking_balance": 27.1,
+    "actual_savings_balance": 176.09
   },
   "debt": {
     "delta_amex": {
@@ -1053,7 +111,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 699.03
+      "current_balance": 875.06
     }
   },
   "plans": [
@@ -1067,10 +125,6 @@
     }
   ],
   "nancy_messages": [
-    {
-      "text": "Brah, three days in and you're already bleeding money again.\n\nYou've dropped $897.91 in misc_other (that $825 CVA Properties charge better be rent and not some random purchase), $38.66 dining out, $17 slop, and you're carrying those subscriptions. Your checking is back down to $36\u2014that's literally gas-money territory, bro. You had $1,681 two days ago. Where did it go?\n\nReal talk: that Delta card is still at $4,988.84 eating interest. Your savings is $504 when it should be $3,000. And you're nickel-and-diming yourself on 7-Eleven runs and DoorDash when you should be zeroing out wants entirely until that checking account hits $1,500.\n\nCut the bleeding this week. No restaurants, no convenience store runs. Figure out what that $825 charge is\u2014if it's legit rent, cool, categorize it. If it's not, that's the problem right there.\n\nWhat's actually changing today?",
-      "date": "2026-07-24"
-    },
     {
       "text": "Brah, you're still in the danger zone and nothing's actually changed.\n\nThat $825 CVA Properties charge is eating your entire checking balance\u2014you're at $26 when you should be at $1,500. You dropped another $38.66 on DoorDash and Chipotle, $17 on 7-Eleven slop runs, and you're *still* paying $10 for that Anthropic subscription. Your Delta card is at $4,988.84 bleeding interest every single day you don't pay it down.\n\nStop talking about fixing this. Transfer your $504 savings to checking *right now*, kill those restaurants and convenience stores cold turkey, and attack that credit card debt. You've got the money\u2014you're just not using it like you actually care about not being broke.\n\nWhat's moving today?",
       "date": "2026-07-26"
@@ -1126,6 +180,10 @@
     {
       "text": "Brah, you just wrapped the period and you're bleeding on literally everything that matters.\n\n**The full damage:** Parking $23.72 (you're $13.72 over your $10 cap). Dining out $195.71 (you're $120.71 over your $75 cap\u2014almost triple, bro). Slop $77.46 (you're $27.46 over your $50 cap). Subscriptions $41.24 with duplicate Claude subs still running. That's $1,214.77 total spend when your plan says you should be attacking that Delta card sitting at $3,887.15 eating 28.24% interest.\n\n**Real talk:** You nailed groceries at $15.22 and killed partying completely\u2014that discipline exists in you. But then you turned around and dropped $195 on DoorDash, Chipotle, Urban Farmhouse, bagels, and random restaurant runs. Eight parking charges. Constant 7-Eleven bleeds. Your checking is at $29.50 when it should be at $1,500. Your savings is $206.09 when it should be $3,000.\n\nYou're not executing the plan, brah. You're sabotaging it. Next period: zero dining out, zero convenience stores, one parking charge max.",
       "date": "2026-08-17"
+    },
+    {
+      "text": "Brah, you're three days into a brand new period and basically at zero\\\u2014all categories sitting empty right now. That's a clean slate, bro, which is good because you *need* one.\n\nLet's be straight: your checking is at $27.10 when it should be at $1,500. Your savings is at $176.09 when it should be $3,000. That Delta card is still at $3,887.15 eating 28.24% interest every single day. You just torched the last period\\\u2014parking $13.72 over, dining out $120.71 over, slop $27.46 over\\\u2014and your checking got demolished down to $29.\n\nThis period is different. Lock it down hard: zero dining out, kill the 7-Eleven runs completely, one parking charge max, and route *every extra dollar* to that Delta card. You proved you can nail groceries and murder partying\\\u2014now prove you can control the small stuff too instead of sabotaging yourself.\n\nWhat's actually happening this week?",
+      "date": "2026-08-19"
     }
   ]
 }
