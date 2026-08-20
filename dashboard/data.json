@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-08-19",
+  "last_updated": "2026-08-20",
   "period_start": "2026-08-19",
-  "period_end": "2026-08-19",
+  "period_end": "2026-08-20",
   "categories": {
     "fixed_costs": {
-      "rent": 0.0
+      "rent": 827.49
     },
     "variable_needs": {
       "groceries": 0.0,
@@ -14,15 +14,26 @@
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 0.0,
-      "slop": 0.0,
+      "dining_out": 35.72,
+      "slop": 32.16,
       "gym": 0.0,
-      "misc_other": 0.0
+      "misc_other": 92.06
     }
   },
   "categories_detail": {
     "fixed_costs": {
-      "rent": []
+      "rent": [
+        {
+          "name": "AppFolio, Inc. F",
+          "amount": 2.49,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "CVA Properties L",
+          "amount": 825.0,
+          "account": "SoFi Checking"
+        }
+      ]
     },
     "variable_needs": {
       "groceries": [],
@@ -32,21 +43,121 @@
     },
     "variable_wants": {
       "partying": [],
-      "dining_out": [],
-      "slop": [],
+      "dining_out": [
+        {
+          "name": "TST* SECRET SANDWICH S",
+          "amount": 21.36,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.36,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
+      "slop": [
+        {
+          "name": "*CLAYD MARKET",
+          "amount": 32.16,
+          "account": "SoFi Checking"
+        }
+      ],
       "gym": [],
-      "misc_other": []
+      "misc_other": [
+        {
+          "name": "CTLP*CANTEEN VENDING",
+          "amount": 1.35,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "PetSmart",
+          "amount": 25.61,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 14.1,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Goodwill",
+          "amount": 25.0,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Staples",
+          "amount": 26.0,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ]
     }
   },
-  "unmatched_transactions": [],
+  "unmatched_transactions": [
+    {
+      "name": "CTLP*CANTEEN VENDING",
+      "amount": 1.35,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "PetSmart",
+      "amount": 25.61,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "URBAN FARMHOUSE MARKET AND CAF",
+      "amount": 14.1,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Goodwill",
+      "amount": 25.0,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Staples",
+      "amount": 26.0,
+      "account": "Blue Cash Preferred\u00ae"
+    }
+  ],
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 27.1,
+      "balance": 238.49,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
-      "transactions": []
+      "transactions": [
+        {
+          "name": "*CLAYD MARKET",
+          "amount": 32.16,
+          "category": "slop"
+        },
+        {
+          "name": "AppFolio, Inc. F",
+          "amount": 2.49,
+          "category": "rent"
+        },
+        {
+          "name": "CTLP*CANTEEN VENDING",
+          "amount": 1.35,
+          "category": "misc_other"
+        },
+        {
+          "name": "CVA Properties L",
+          "amount": 825.0,
+          "category": "rent"
+        },
+        {
+          "name": "PetSmart",
+          "amount": 25.61,
+          "category": "misc_other"
+        },
+        {
+          "name": "TST* SECRET SANDWICH S",
+          "amount": 21.36,
+          "category": "dining_out"
+        }
+      ]
     },
     {
       "name": "SoFi Savings",
@@ -62,7 +173,28 @@
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
-      "transactions": []
+      "transactions": [
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 14.1,
+          "category": "misc_other"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.36,
+          "category": "dining_out"
+        },
+        {
+          "name": "Goodwill",
+          "amount": 25.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "Staples",
+          "amount": 26.0,
+          "category": "misc_other"
+        }
+      ]
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
@@ -91,7 +223,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 27.1,
+    "actual_checking_balance": 238.49,
     "actual_savings_balance": 176.09
   },
   "debt": {
