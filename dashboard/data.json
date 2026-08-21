@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-20",
+  "last_updated": "2026-08-21",
   "period_start": "2026-08-19",
-  "period_end": "2026-08-20",
+  "period_end": "2026-08-21",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
@@ -9,15 +9,15 @@
     "variable_needs": {
       "groceries": 0.0,
       "gas": 0.0,
-      "parking": 0.0,
-      "subscriptions": 0.0
+      "parking": 3.9699999999999998,
+      "subscriptions": 14.99
     },
     "variable_wants": {
       "partying": 0.0,
       "dining_out": 35.72,
-      "slop": 32.16,
+      "slop": 36.809999999999995,
       "gym": 0.0,
-      "misc_other": 92.06
+      "misc_other": 230.07
     }
   },
   "categories_detail": {
@@ -38,8 +38,25 @@
     "variable_needs": {
       "groceries": [],
       "gas": [],
-      "parking": [],
-      "subscriptions": []
+      "parking": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.32,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 1.65,
+          "account": "SoFi Checking"
+        }
+      ],
+      "subscriptions": [
+        {
+          "name": "Amazon Prime",
+          "amount": 14.99,
+          "account": "SoFi Checking"
+        }
+      ]
     },
     "variable_wants": {
       "partying": [],
@@ -60,10 +77,40 @@
           "name": "*CLAYD MARKET",
           "amount": 32.16,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 4.65,
+          "account": "Blue Cash Preferred\u00ae"
         }
       ],
       "gym": [],
       "misc_other": [
+        {
+          "name": "AMAZON MKTPLACE PMTS",
+          "amount": 28.61,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "Amazon.com",
+          "amount": 12.71,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "CTLP*CANTEEN VENDING",
+          "amount": 1.2,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "NOVA MENTAL HEALTH CO",
+          "amount": 70.0,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "Prime Video Channels",
+          "amount": 10.99,
+          "account": "SoFi Checking"
+        },
         {
           "name": "CTLP*CANTEEN VENDING",
           "amount": 1.35,
@@ -75,8 +122,18 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "CANTEEN VENDING",
+          "amount": 2.1,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
           "amount": 14.1,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay GDP=Kenn TicoRichmond",
+          "amount": 12.4,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -94,6 +151,31 @@
   },
   "unmatched_transactions": [
     {
+      "name": "AMAZON MKTPLACE PMTS",
+      "amount": 28.61,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "Amazon.com",
+      "amount": 12.71,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "CTLP*CANTEEN VENDING",
+      "amount": 1.2,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "NOVA MENTAL HEALTH CO",
+      "amount": 70.0,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "Prime Video Channels",
+      "amount": 10.99,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "CTLP*CANTEEN VENDING",
       "amount": 1.35,
       "account": "SoFi Checking"
@@ -104,8 +186,18 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "CANTEEN VENDING",
+      "amount": 2.1,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "URBAN FARMHOUSE MARKET AND CAF",
       "amount": 14.1,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay GDP=Kenn TicoRichmond",
+      "amount": 12.4,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -122,11 +214,51 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 238.49,
+      "balance": 184.97,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "AMAZON MKTPLACE PMTS",
+          "amount": 28.61,
+          "category": "misc_other"
+        },
+        {
+          "name": "Amazon Prime",
+          "amount": 14.99,
+          "category": "subscriptions"
+        },
+        {
+          "name": "Amazon.com",
+          "amount": 12.71,
+          "category": "misc_other"
+        },
+        {
+          "name": "CTLP*CANTEEN VENDING",
+          "amount": 1.2,
+          "category": "misc_other"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.32,
+          "category": "parking"
+        },
+        {
+          "name": "NOVA MENTAL HEALTH CO",
+          "amount": 70.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 1.65,
+          "category": "parking"
+        },
+        {
+          "name": "Prime Video Channels",
+          "amount": 10.99,
+          "category": "misc_other"
+        },
         {
           "name": "*CLAYD MARKET",
           "amount": 32.16,
@@ -169,15 +301,30 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 875.06,
+      "balance": 492.11,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
+          "name": "CANTEEN VENDING",
+          "amount": 2.1,
+          "category": "misc_other"
+        },
+        {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
           "amount": 14.1,
           "category": "misc_other"
+        },
+        {
+          "name": "AplPay GDP=Kenn TicoRichmond",
+          "amount": 12.4,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 4.65,
+          "category": "slop"
         },
         {
           "name": "Chipotle Mexican Grill",
@@ -198,7 +345,7 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 3887.15,
+      "balance": 3387.15,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
@@ -223,7 +370,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 238.49,
+    "actual_checking_balance": 184.97,
     "actual_savings_balance": 176.09
   },
   "debt": {
@@ -235,7 +382,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 3887.15
+      "current_balance": 3387.15
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -243,7 +390,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 875.06
+      "current_balance": 492.11
     }
   },
   "plans": [
@@ -257,10 +404,6 @@
     }
   ],
   "nancy_messages": [
-    {
-      "text": "Brah, you're still in the danger zone and nothing's actually changed.\n\nThat $825 CVA Properties charge is eating your entire checking balance\u2014you're at $26 when you should be at $1,500. You dropped another $38.66 on DoorDash and Chipotle, $17 on 7-Eleven slop runs, and you're *still* paying $10 for that Anthropic subscription. Your Delta card is at $4,988.84 bleeding interest every single day you don't pay it down.\n\nStop talking about fixing this. Transfer your $504 savings to checking *right now*, kill those restaurants and convenience stores cold turkey, and attack that credit card debt. You've got the money\u2014you're just not using it like you actually care about not being broke.\n\nWhat's moving today?",
-      "date": "2026-07-26"
-    },
     {
       "text": "Brah, you're still stuck in the same hole and it's been five days.\n\nYour checking is at $26\u2014should be $1,500. That $825 CVA charge wiped you out, and you're *still* dropping $38 on delivery and $17 on 7-Eleven when you should be locked down completely. Your Delta card is sitting at nearly $5k eating interest while you're here counting pennies. Transfer that $504 savings to checking right now and stop the bleeding.\n\nWhat's actually happening today\u2014are we moving or just talking again?",
       "date": "2026-07-26"
@@ -316,6 +459,10 @@
     {
       "text": "Brah, you're three days into a brand new period and basically at zero\\\u2014all categories sitting empty right now. That's a clean slate, bro, which is good because you *need* one.\n\nLet's be straight: your checking is at $27.10 when it should be at $1,500. Your savings is at $176.09 when it should be $3,000. That Delta card is still at $3,887.15 eating 28.24% interest every single day. You just torched the last period\\\u2014parking $13.72 over, dining out $120.71 over, slop $27.46 over\\\u2014and your checking got demolished down to $29.\n\nThis period is different. Lock it down hard: zero dining out, kill the 7-Eleven runs completely, one parking charge max, and route *every extra dollar* to that Delta card. You proved you can nail groceries and murder partying\\\u2014now prove you can control the small stuff too instead of sabotaging yourself.\n\nWhat's actually happening this week?",
       "date": "2026-08-19"
+    },
+    {
+      "text": "Brah, you're three days in and basically sitting at zero\u2014$1,148.67 spent, all on the essentials (rent $827.49, parking $3.97, subscriptions $14.99, groceries $0, dining out $35.72, slop $36.81, misc $230.07). That's actually *not terrible* on the surface.\n\nBut bro, let's get real: your checking is at $184.97 when it should be at $1,500. Your savings is at $176.09 when it should be $3,000. That Delta card is *still* at $3,387.15 eating 28.24% interest every single day you don't attack it. You just got demolished last period\u2014parking $13.72 over, dining out $120.71 over, slop $27.46 over\u2014and you're barely clawing back.\n\nHere's what matters: you're staying under your dining out cap so far ($35.72 against $75) and slop is reasonable ($36.81 against $50). Keep that going. But that $230.07 in misc_other is *already* creeping up\u2014Amazon, vending machines, random garbage. Lock it down. This period is about discipline: zero overages, every extra dollar to that Delta card, and actually",
+      "date": "2026-08-21"
     }
   ]
 }
