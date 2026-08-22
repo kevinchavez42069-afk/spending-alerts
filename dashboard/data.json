@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-08-21",
+  "last_updated": "2026-08-22",
   "period_start": "2026-08-19",
-  "period_end": "2026-08-21",
+  "period_end": "2026-08-22",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
     },
     "variable_needs": {
-      "groceries": 0.0,
+      "groceries": 13.76,
       "gas": 0.0,
-      "parking": 3.9699999999999998,
+      "parking": 16.919999999999998,
       "subscriptions": 14.99
     },
     "variable_wants": {
-      "partying": 0.0,
+      "partying": 106.22,
       "dining_out": 35.72,
-      "slop": 36.809999999999995,
+      "slop": 40.949999999999996,
       "gym": 0.0,
-      "misc_other": 230.07
+      "misc_other": 247.22
     }
   },
   "categories_detail": {
@@ -36,9 +36,30 @@
       ]
     },
     "variable_needs": {
-      "groceries": [],
+      "groceries": [
+        {
+          "name": "Kroger",
+          "amount": 13.76,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "gas": [],
       "parking": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.95,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 5.0,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 5.0,
+          "account": "SoFi Checking"
+        },
         {
           "name": "City of Richmond/Parkh",
           "amount": 2.32,
@@ -59,7 +80,33 @@
       ]
     },
     "variable_wants": {
-      "partying": [],
+      "partying": [
+        {
+          "name": "UBR* PENDING.UBER.COM",
+          "amount": 14.97,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "LOSO",
+          "amount": 13.82,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "LOSO",
+          "amount": 17.65,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "SHOTGUN HOUSE OF YES",
+          "amount": 22.7,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "VA ABC STORE",
+          "amount": 37.08,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "dining_out": [
         {
           "name": "TST* SECRET SANDWICH S",
@@ -77,6 +124,11 @@
           "name": "*CLAYD MARKET",
           "amount": 32.16,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.14,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay VILLAGE MARKERICHMOND",
@@ -122,8 +174,23 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 17.15,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay STAPLES 00316RICHMOND",
+          "amount": 26.0,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "CANTEEN VENDING",
           "amount": 2.1,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Goodwill",
+          "amount": 25.0,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -134,16 +201,6 @@
         {
           "name": "AplPay GDP=Kenn TicoRichmond",
           "amount": 12.4,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Goodwill",
-          "amount": 25.0,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Staples",
-          "amount": 26.0,
           "account": "Blue Cash Preferred\u00ae"
         }
       ]
@@ -186,8 +243,23 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "NATES BAGELS - CARY STREET",
+      "amount": 17.15,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay STAPLES 00316RICHMOND",
+      "amount": 26.0,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "CANTEEN VENDING",
       "amount": 2.1,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Goodwill",
+      "amount": 25.0,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -199,26 +271,46 @@
       "name": "AplPay GDP=Kenn TicoRichmond",
       "amount": 12.4,
       "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "Goodwill",
-      "amount": 25.0,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "Staples",
-      "amount": 26.0,
-      "account": "Blue Cash Preferred\u00ae"
     }
   ],
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 184.97,
+      "balance": 159.14,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "*CLAYD MARKET",
+          "amount": 32.16,
+          "category": "slop"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.95,
+          "category": "parking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 5.0,
+          "category": "parking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 5.0,
+          "category": "parking"
+        },
+        {
+          "name": "TST* SECRET SANDWICH S",
+          "amount": 21.36,
+          "category": "dining_out"
+        },
+        {
+          "name": "UBR* PENDING.UBER.COM",
+          "amount": 14.97,
+          "category": "partying"
+        },
         {
           "name": "AMAZON MKTPLACE PMTS",
           "amount": 28.61,
@@ -260,11 +352,6 @@
           "category": "misc_other"
         },
         {
-          "name": "*CLAYD MARKET",
-          "amount": 32.16,
-          "category": "slop"
-        },
-        {
           "name": "AppFolio, Inc. F",
           "amount": 2.49,
           "category": "rent"
@@ -283,17 +370,12 @@
           "name": "PetSmart",
           "amount": 25.61,
           "category": "misc_other"
-        },
-        {
-          "name": "TST* SECRET SANDWICH S",
-          "amount": 21.36,
-          "category": "dining_out"
         }
       ]
     },
     {
       "name": "SoFi Savings",
-      "balance": 176.09,
+      "balance": 76.09,
       "type": "depository",
       "subtype": "savings",
       "limit": null,
@@ -301,14 +383,64 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 492.11,
+      "balance": 557.47,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
+          "name": "Kroger",
+          "amount": 13.76,
+          "category": "groceries"
+        },
+        {
+          "name": "LOSO",
+          "amount": 13.82,
+          "category": "partying"
+        },
+        {
+          "name": "LOSO",
+          "amount": 17.65,
+          "category": "partying"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 17.15,
+          "category": "misc_other"
+        },
+        {
+          "name": "SHOTGUN HOUSE OF YES",
+          "amount": 22.7,
+          "category": "partying"
+        },
+        {
+          "name": "VA ABC STORE",
+          "amount": 37.08,
+          "category": "partying"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.14,
+          "category": "slop"
+        },
+        {
+          "name": "AplPay STAPLES 00316RICHMOND",
+          "amount": 26.0,
+          "category": "misc_other"
+        },
+        {
           "name": "CANTEEN VENDING",
           "amount": 2.1,
+          "category": "misc_other"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.36,
+          "category": "dining_out"
+        },
+        {
+          "name": "Goodwill",
+          "amount": 25.0,
           "category": "misc_other"
         },
         {
@@ -325,21 +457,6 @@
           "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 4.65,
           "category": "slop"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.36,
-          "category": "dining_out"
-        },
-        {
-          "name": "Goodwill",
-          "amount": 25.0,
-          "category": "misc_other"
-        },
-        {
-          "name": "Staples",
-          "amount": 26.0,
-          "category": "misc_other"
         }
       ]
     },
@@ -370,8 +487,8 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 184.97,
-    "actual_savings_balance": 176.09
+    "actual_checking_balance": 159.14,
+    "actual_savings_balance": 76.09
   },
   "debt": {
     "delta_amex": {
@@ -390,7 +507,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 492.11
+      "current_balance": 557.47
     }
   },
   "plans": [
