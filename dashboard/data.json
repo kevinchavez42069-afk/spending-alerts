@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-22",
+  "last_updated": "2026-08-23",
   "period_start": "2026-08-19",
-  "period_end": "2026-08-22",
+  "period_end": "2026-08-23",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
@@ -14,10 +14,10 @@
     },
     "variable_wants": {
       "partying": 106.22,
-      "dining_out": 35.72,
+      "dining_out": 91.72,
       "slop": 40.949999999999996,
       "gym": 0.0,
-      "misc_other": 247.22
+      "misc_other": 266.78
     }
   },
   "categories_detail": {
@@ -47,6 +47,11 @@
       "parking": [
         {
           "name": "City of Richmond/Parkh",
+          "amount": 2.32,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
           "amount": 2.95,
           "account": "SoFi Checking"
         },
@@ -58,11 +63,6 @@
         {
           "name": "PARKING CITY OF RICHMO",
           "amount": 5.0,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.32,
           "account": "SoFi Checking"
         },
         {
@@ -97,7 +97,7 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "SHOTGUN HOUSE OF YES",
+          "name": "SHOTGUN* TONALTHEORYMIAMI",
           "amount": 22.7,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -109,9 +109,24 @@
       ],
       "dining_out": [
         {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 1.42,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "TST*COCHILOCO",
+          "amount": 40.48,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "TST* SECRET SANDWICH S",
           "amount": 21.36,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 14.1,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "Chipotle Mexican Grill",
@@ -175,6 +190,26 @@
         },
         {
           "name": "NATES BAGELS - CARY STREET",
+          "amount": 11.36,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "SPLICE",
+          "amount": 12.99,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 9.31,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay CTLP*CANTEEN",
+          "amount": 2.1,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
           "amount": 17.15,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -184,18 +219,8 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "CANTEEN VENDING",
-          "amount": 2.1,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
           "name": "Goodwill",
           "amount": 25.0,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 14.1,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -244,6 +269,26 @@
     },
     {
       "name": "NATES BAGELS - CARY STREET",
+      "amount": 11.36,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "SPLICE",
+      "amount": 12.99,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "URBAN FARMHOUSE MARKET AND CAF",
+      "amount": 9.31,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay CTLP*CANTEEN",
+      "amount": 2.1,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "NATES BAGELS - CARY STREET",
       "amount": 17.15,
       "account": "Blue Cash Preferred\u00ae"
     },
@@ -253,18 +298,8 @@
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "CANTEEN VENDING",
-      "amount": 2.1,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
       "name": "Goodwill",
       "amount": 25.0,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "URBAN FARMHOUSE MARKET AND CAF",
-      "amount": 14.1,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -276,11 +311,51 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 159.14,
+      "balance": 146.19,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "AMAZON MKTPLACE PMTS",
+          "amount": 28.61,
+          "category": "misc_other"
+        },
+        {
+          "name": "Amazon.com",
+          "amount": 12.71,
+          "category": "misc_other"
+        },
+        {
+          "name": "CTLP*CANTEEN VENDING",
+          "amount": 1.2,
+          "category": "misc_other"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.32,
+          "category": "parking"
+        },
+        {
+          "name": "NOVA MENTAL HEALTH CO",
+          "amount": 70.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "Prime Video Channels",
+          "amount": 10.99,
+          "category": "misc_other"
+        },
+        {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 1.42,
+          "category": "dining_out"
+        },
+        {
+          "name": "TST*COCHILOCO",
+          "amount": 40.48,
+          "category": "dining_out"
+        },
         {
           "name": "*CLAYD MARKET",
           "amount": 32.16,
@@ -312,44 +387,14 @@
           "category": "partying"
         },
         {
-          "name": "AMAZON MKTPLACE PMTS",
-          "amount": 28.61,
-          "category": "misc_other"
-        },
-        {
           "name": "Amazon Prime",
           "amount": 14.99,
           "category": "subscriptions"
         },
         {
-          "name": "Amazon.com",
-          "amount": 12.71,
-          "category": "misc_other"
-        },
-        {
-          "name": "CTLP*CANTEEN VENDING",
-          "amount": 1.2,
-          "category": "misc_other"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.32,
-          "category": "parking"
-        },
-        {
-          "name": "NOVA MENTAL HEALTH CO",
-          "amount": 70.0,
-          "category": "misc_other"
-        },
-        {
           "name": "PARKING CITY OF RICHMO",
           "amount": 1.65,
           "category": "parking"
-        },
-        {
-          "name": "Prime Video Channels",
-          "amount": 10.99,
-          "category": "misc_other"
         },
         {
           "name": "AppFolio, Inc. F",
@@ -383,11 +428,31 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 557.47,
+      "balance": 596.37,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 11.36,
+          "category": "misc_other"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 9.31,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay CTLP*CANTEEN",
+          "amount": 2.1,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 14.1,
+          "category": "dining_out"
+        },
         {
           "name": "Kroger",
           "amount": 13.76,
@@ -409,7 +474,7 @@
           "category": "misc_other"
         },
         {
-          "name": "SHOTGUN HOUSE OF YES",
+          "name": "SHOTGUN* TONALTHEORYMIAMI",
           "amount": 22.7,
           "category": "partying"
         },
@@ -429,11 +494,6 @@
           "category": "misc_other"
         },
         {
-          "name": "CANTEEN VENDING",
-          "amount": 2.1,
-          "category": "misc_other"
-        },
-        {
           "name": "Chipotle Mexican Grill",
           "amount": 14.36,
           "category": "dining_out"
@@ -441,11 +501,6 @@
         {
           "name": "Goodwill",
           "amount": 25.0,
-          "category": "misc_other"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 14.1,
           "category": "misc_other"
         },
         {
@@ -466,7 +521,13 @@
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
-      "transactions": []
+      "transactions": [
+        {
+          "name": "SPLICE",
+          "amount": 12.99,
+          "category": "misc_other"
+        }
+      ]
     }
   ],
   "caps": {
@@ -487,7 +548,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 159.14,
+    "actual_checking_balance": 146.19,
     "actual_savings_balance": 76.09
   },
   "debt": {
@@ -507,7 +568,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 557.47
+      "current_balance": 596.37
     }
   },
   "plans": [
@@ -521,10 +582,6 @@
     }
   ],
   "nancy_messages": [
-    {
-      "text": "Brah, you're still stuck in the same hole and it's been five days.\n\nYour checking is at $26\u2014should be $1,500. That $825 CVA charge wiped you out, and you're *still* dropping $38 on delivery and $17 on 7-Eleven when you should be locked down completely. Your Delta card is sitting at nearly $5k eating interest while you're here counting pennies. Transfer that $504 savings to checking right now and stop the bleeding.\n\nWhat's actually happening today\u2014are we moving or just talking again?",
-      "date": "2026-07-26"
-    },
     {
       "text": "Brah, this week you actually stayed disciplined on the *big* stuff\u2014no partying, no gym splurges, groceries are solid at $124. That's the baseline, and you nailed it.\n\nBut bro, you're *still* bleeding on the small stuff: $51 dining out (you capped at $75, so technically okay but close), $33 on 7-Eleven slop runs, and $195 on random misc charges that shouldn't exist. Your checking is at $26\u2014should be $1,500. Your savings is $504 when it needs to be $3,000. That Delta card is still at $4,988 eating interest every single day.\n\nReal talk: Transfer your savings to checking today. No more 7-Eleven. No more DoorDash. Lock in hard until that checking hits $1,500 and that Delta card gets decimated. You're close to actually executing the plan\u2014don't choke now.",
       "date": "2026-07-28"
@@ -580,6 +637,10 @@
     {
       "text": "Brah, you're three days in and basically sitting at zero\u2014$1,148.67 spent, all on the essentials (rent $827.49, parking $3.97, subscriptions $14.99, groceries $0, dining out $35.72, slop $36.81, misc $230.07). That's actually *not terrible* on the surface.\n\nBut bro, let's get real: your checking is at $184.97 when it should be at $1,500. Your savings is at $176.09 when it should be $3,000. That Delta card is *still* at $3,387.15 eating 28.24% interest every single day you don't attack it. You just got demolished last period\u2014parking $13.72 over, dining out $120.71 over, slop $27.46 over\u2014and you're barely clawing back.\n\nHere's what matters: you're staying under your dining out cap so far ($35.72 against $75) and slop is reasonable ($36.81 against $50). Keep that going. But that $230.07 in misc_other is *already* creeping up\u2014Amazon, vending machines, random garbage. Lock it down. This period is about discipline: zero overages, every extra dollar to that Delta card, and actually",
       "date": "2026-08-21"
+    },
+    {
+      "text": "Brah, you're sitting at $1,368.67 spent with four days left in the period and you're creeping over on the stuff that matters.\n\nParking is $16.92 against a $10 cap\u2014you're $6.92 over already. Dining out is $91.72 against a $75 cap\u2014$16.72 over, bro. Slop is $40.95 against a $50 cap\u2014still okay but close. Your checking is at $146.19 when it should be at $1,500. That Delta card is *still* at $3,387.15 eating 28.24% interest every single day.\n\nHere's the move: zero more dining out for the last four days. Kill the parking runs. Lock down hard and don't let those overages get worse. You've shown you can control groceries ($13.76, solid)\u2014now prove you can actually execute the whole plan instead of bleeding out on restaurants and parking every single period.\n\nWhat's changing right now?",
+      "date": "2026-08-23"
     }
   ]
 }
