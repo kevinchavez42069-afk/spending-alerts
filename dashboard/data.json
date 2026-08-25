@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-24",
+  "last_updated": "2026-08-25",
   "period_start": "2026-08-19",
-  "period_end": "2026-08-24",
+  "period_end": "2026-08-25",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
@@ -14,10 +14,10 @@
     },
     "variable_wants": {
       "partying": 106.22,
-      "dining_out": 123.23,
-      "slop": 44.58,
+      "dining_out": 159.95999999999998,
+      "slop": 49.23,
       "gym": 0.0,
-      "misc_other": 399.67
+      "misc_other": 382.82000000000005
     }
   },
   "categories_detail": {
@@ -125,6 +125,21 @@
         },
         {
           "name": "Chipotle Mexican Grill",
+          "amount": 16.06,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 11.36,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 9.31,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
           "amount": 14.36,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -149,6 +164,11 @@
           "name": "*CLAYD MARKET",
           "amount": 32.16,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.65,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "7-Eleven",
@@ -224,29 +244,24 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 3.82,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
           "amount": 10.99,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "AMEX SEND ACCOUNT",
+          "name": "Amex Send: Add Money",
           "amount": 50.0,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 11.36,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "SPLICE.COM",
           "amount": 12.99,
           "account": "Delta SkyMiles\u00ae Gold Card"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 9.31,
-          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay CTLP*CANTEEN",
@@ -328,29 +343,24 @@
       "account": "Blue Cash Preferred\u00ae"
     },
     {
+      "name": "K H M CONVENIENCE STORE",
+      "amount": 3.82,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "URBAN FARMHOUSE MARKET AND CAF",
       "amount": 10.99,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "AMEX SEND ACCOUNT",
+      "name": "Amex Send: Add Money",
       "amount": 50.0,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "NATES BAGELS - CARY STREET",
-      "amount": 11.36,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "SPLICE.COM",
       "amount": 12.99,
       "account": "Delta SkyMiles\u00ae Gold Card"
-    },
-    {
-      "name": "URBAN FARMHOUSE MARKET AND CAF",
-      "amount": 9.31,
-      "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "AplPay CTLP*CANTEEN",
@@ -376,11 +386,26 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 76.43,
+      "balance": 56.43,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 1.42,
+          "category": "dining_out"
+        },
+        {
+          "name": "TST*COCHILOCO",
+          "amount": 40.48,
+          "category": "dining_out"
+        },
+        {
+          "name": "UBR* PENDING.UBER.COM",
+          "amount": 14.97,
+          "category": "partying"
+        },
         {
           "name": "City of Richmond/Parkh",
           "amount": 2.95,
@@ -437,16 +462,6 @@
           "category": "misc_other"
         },
         {
-          "name": "TST* URBAN FARMHOUSE M",
-          "amount": 1.42,
-          "category": "dining_out"
-        },
-        {
-          "name": "TST*COCHILOCO",
-          "amount": 40.48,
-          "category": "dining_out"
-        },
-        {
           "name": "*CLAYD MARKET",
           "amount": 32.16,
           "category": "slop"
@@ -455,11 +470,6 @@
           "name": "TST* SECRET SANDWICH S",
           "amount": 21.36,
           "category": "dining_out"
-        },
-        {
-          "name": "UBR* PENDING.UBER.COM",
-          "amount": 14.97,
-          "category": "partying"
         },
         {
           "name": "Amazon Prime",
@@ -503,7 +513,7 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 699.97,
+      "balance": 770.64,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
@@ -519,9 +529,24 @@
           "category": "misc_other"
         },
         {
+          "name": "Chipotle Mexican Grill",
+          "amount": 16.06,
+          "category": "dining_out"
+        },
+        {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 3.82,
+          "category": "misc_other"
+        },
+        {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
           "amount": 10.99,
           "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.65,
+          "category": "slop"
         },
         {
           "name": "7-Eleven",
@@ -529,9 +554,19 @@
           "category": "slop"
         },
         {
-          "name": "AMEX SEND ACCOUNT",
+          "name": "Amex Send: Add Money",
           "amount": 50.0,
           "category": "misc_other"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 11.36,
+          "category": "dining_out"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 9.31,
+          "category": "dining_out"
         },
         {
           "name": "Chipotle Mexican Grill",
@@ -554,11 +589,6 @@
           "category": "groceries"
         },
         {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 11.36,
-          "category": "misc_other"
-        },
-        {
           "name": "TST* LOSO - RICHMONDRICHMOND",
           "amount": 13.82,
           "category": "partying"
@@ -567,11 +597,6 @@
           "name": "TST* LOSO - RICHMONDRICHMOND",
           "amount": 17.65,
           "category": "partying"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 9.31,
-          "category": "misc_other"
         },
         {
           "name": "VA ABC STORE 102 00-RICHMOND",
@@ -653,7 +678,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 76.43,
+    "actual_checking_balance": 56.43,
     "actual_savings_balance": 76.09
   },
   "debt": {
@@ -673,7 +698,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 699.97
+      "current_balance": 770.64
     }
   },
   "plans": [
@@ -687,10 +712,6 @@
     }
   ],
   "nancy_messages": [
-    {
-      "text": "Brah, this week you actually stayed disciplined on the *big* stuff\u2014no partying, no gym splurges, groceries are solid at $124. That's the baseline, and you nailed it.\n\nBut bro, you're *still* bleeding on the small stuff: $51 dining out (you capped at $75, so technically okay but close), $33 on 7-Eleven slop runs, and $195 on random misc charges that shouldn't exist. Your checking is at $26\u2014should be $1,500. Your savings is $504 when it needs to be $3,000. That Delta card is still at $4,988 eating interest every single day.\n\nReal talk: Transfer your savings to checking today. No more 7-Eleven. No more DoorDash. Lock in hard until that checking hits $1,500 and that Delta card gets decimated. You're close to actually executing the plan\u2014don't choke now.",
-      "date": "2026-07-28"
-    },
     {
       "text": "Brah, you actually kept it together this week\u2014groceries locked in at $124, zero partying, zero gym splurges. That's the discipline right there.\n\nBut bro, you're still leaking cash on the margins: $65 dining out (under cap but still there), $33 on 7-Eleven runs, $301 on misc garbage that shouldn't exist. Your checking is at $159\u2014should be $1,500. Your savings is sitting at $505 doing nothing while that Delta card bleeds $4,988 in interest. Transfer those savings to checking TODAY and strangle that credit card debt, or you're just treading water. What's moving this week?",
       "date": "2026-07-30"
@@ -746,6 +767,10 @@
     {
       "text": "Brah, you're sitting at $1,368.67 spent with four days left in the period and you're creeping over on the stuff that matters.\n\nParking is $16.92 against a $10 cap\u2014you're $6.92 over already. Dining out is $91.72 against a $75 cap\u2014$16.72 over, bro. Slop is $40.95 against a $50 cap\u2014still okay but close. Your checking is at $146.19 when it should be at $1,500. That Delta card is *still* at $3,387.15 eating 28.24% interest every single day.\n\nHere's the move: zero more dining out for the last four days. Kill the parking runs. Lock down hard and don't let those overages get worse. You've shown you can control groceries ($13.76, solid)\u2014now prove you can actually execute the whole plan instead of bleeding out on restaurants and parking every single period.\n\nWhat's changing right now?",
       "date": "2026-08-23"
+    },
+    {
+      "text": "Brah, you wrapped the period and you're *still* bleeding everywhere despite having a clean slate four days ago.\n\n**The damage:** Parking $16.92 (you're $6.92 over your $10 cap). Dining out $159.96 (you're $84.96 over your $75 cap\u2014more than double, bro). Slop $49.23 (basically maxed). Partying $106.22 (you were supposed to cap at $40\u2014you're $66.22 over). Your checking is at $56.43 when it should be at $1,500. That Delta card is *still* at $3,387.15 eating 28.24% interest every single day.\n\n**Real talk:** You nailed groceries at $13.76. That's the one win. But then you dropped $160 on restaurants (Urban Farmhouse, Chipotle, Secret Sandwich, Nate's), $106 on bars and liquor, eight separate parking charges, and $383 on random misc garbage. You keep saying you'll execute and then you don't.\n\n**Next period:** Zero dining out. Zero bars. One parking charge max. Or this plan doesn't work. You've got the discipline in you\u2014stop choosing not to use it.",
+      "date": "2026-08-25"
     }
   ]
 }
