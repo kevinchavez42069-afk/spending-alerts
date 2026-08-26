@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-08-25",
+  "last_updated": "2026-08-26",
   "period_start": "2026-08-19",
-  "period_end": "2026-08-25",
+  "period_end": "2026-08-26",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
     },
     "variable_needs": {
-      "groceries": 13.76,
+      "groceries": 108.03,
       "gas": 0.0,
-      "parking": 16.919999999999998,
+      "parking": 21.919999999999998,
       "subscriptions": 14.99
     },
     "variable_wants": {
       "partying": 106.22,
       "dining_out": 159.95999999999998,
-      "slop": 49.23,
+      "slop": 54.43,
       "gym": 0.0,
-      "misc_other": 382.82000000000005
+      "misc_other": 403.83000000000004
     }
   },
   "categories_detail": {
@@ -39,12 +39,22 @@
       "groceries": [
         {
           "name": "Kroger",
+          "amount": 94.27,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Kroger",
           "amount": 13.76,
           "account": "Blue Cash Preferred\u00ae"
         }
       ],
       "gas": [],
       "parking": [
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 5.0,
+          "account": "SoFi Checking"
+        },
         {
           "name": "City of Richmond/Parkh",
           "amount": 2.95,
@@ -125,6 +135,11 @@
         },
         {
           "name": "Chipotle Mexican Grill",
+          "amount": 14.36,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
           "amount": 16.06,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -136,11 +151,6 @@
         {
           "name": "AplPay TST* URBAN FARICHMOND",
           "amount": 9.31,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.36,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -167,12 +177,17 @@
         },
         {
           "name": "VILLAGE MARKET",
-          "amount": 4.65,
+          "amount": 5.2,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "7-Eleven",
           "amount": 3.63,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.65,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -189,13 +204,13 @@
       "gym": [],
       "misc_other": [
         {
-          "name": "Lowe's",
-          "amount": 12.89,
+          "name": "WEREALLARTISTS",
+          "amount": 20.0,
           "account": "SoFi Checking"
         },
         {
-          "name": "WEREALLARTISTS",
-          "amount": 20.0,
+          "name": "Lowe's",
+          "amount": 12.89,
           "account": "SoFi Checking"
         },
         {
@@ -234,12 +249,22 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "AMAZON MARKEPLACE NA",
+          "name": "ABIS BOOK CAFE",
+          "amount": 6.39,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Walgreens",
+          "amount": 14.62,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AMAZON MARKETPLACE NAMZN.COM/BILL",
           "amount": 24.37,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "AMAZON MARKEPLACE NA",
+          "name": "AMAZON MARKETPLACE NAMZN.COM/BILL",
           "amount": 31.79,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -288,13 +313,13 @@
   },
   "unmatched_transactions": [
     {
-      "name": "Lowe's",
-      "amount": 12.89,
+      "name": "WEREALLARTISTS",
+      "amount": 20.0,
       "account": "SoFi Checking"
     },
     {
-      "name": "WEREALLARTISTS",
-      "amount": 20.0,
+      "name": "Lowe's",
+      "amount": 12.89,
       "account": "SoFi Checking"
     },
     {
@@ -333,12 +358,22 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "AMAZON MARKEPLACE NA",
+      "name": "ABIS BOOK CAFE",
+      "amount": 6.39,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Walgreens",
+      "amount": 14.62,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AMAZON MARKETPLACE NAMZN.COM/BILL",
       "amount": 24.37,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "AMAZON MARKEPLACE NA",
+      "name": "AMAZON MARKETPLACE NAMZN.COM/BILL",
       "amount": 31.79,
       "account": "Blue Cash Preferred\u00ae"
     },
@@ -386,11 +421,21 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 56.43,
+      "balance": 79.43,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 5.0,
+          "category": "parking"
+        },
+        {
+          "name": "WEREALLARTISTS",
+          "amount": 20.0,
+          "category": "misc_other"
+        },
         {
           "name": "TST* URBAN FARMHOUSE M",
           "amount": 1.42,
@@ -425,11 +470,6 @@
           "name": "PARKING CITY OF RICHMO",
           "amount": 5.0,
           "category": "parking"
-        },
-        {
-          "name": "WEREALLARTISTS",
-          "amount": 20.0,
-          "category": "misc_other"
         },
         {
           "name": "AMAZON MKTPLACE PMTS",
@@ -505,7 +545,7 @@
     },
     {
       "name": "SoFi Savings",
-      "balance": 76.09,
+      "balance": 1.09,
       "type": "depository",
       "subtype": "savings",
       "limit": null,
@@ -513,20 +553,50 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 770.64,
+      "balance": 880.31,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
-          "name": "AMAZON MARKEPLACE NA",
+          "name": "ABIS BOOK CAFE",
+          "amount": 6.39,
+          "category": "misc_other"
+        },
+        {
+          "name": "Walgreens",
+          "amount": 14.62,
+          "category": "misc_other"
+        },
+        {
+          "name": "Kroger",
+          "amount": 94.27,
+          "category": "groceries"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 5.2,
+          "category": "slop"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 3.63,
+          "category": "slop"
+        },
+        {
+          "name": "AMAZON MARKETPLACE NAMZN.COM/BILL",
           "amount": 24.37,
           "category": "misc_other"
         },
         {
-          "name": "AMAZON MARKEPLACE NA",
+          "name": "AMAZON MARKETPLACE NAMZN.COM/BILL",
           "amount": 31.79,
           "category": "misc_other"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.36,
+          "category": "dining_out"
         },
         {
           "name": "Chipotle Mexican Grill",
@@ -549,11 +619,6 @@
           "category": "slop"
         },
         {
-          "name": "7-Eleven",
-          "amount": 3.63,
-          "category": "slop"
-        },
-        {
           "name": "Amex Send: Add Money",
           "amount": 50.0,
           "category": "misc_other"
@@ -566,11 +631,6 @@
         {
           "name": "AplPay TST* URBAN FARICHMOND",
           "amount": 9.31,
-          "category": "dining_out"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.36,
           "category": "dining_out"
         },
         {
@@ -678,8 +738,8 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 56.43,
-    "actual_savings_balance": 76.09
+    "actual_checking_balance": 79.43,
+    "actual_savings_balance": 1.09
   },
   "debt": {
     "delta_amex": {
@@ -698,7 +758,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 770.64
+      "current_balance": 880.31
     }
   },
   "plans": [
