@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-27",
+  "last_updated": "2026-08-28",
   "period_start": "2026-08-19",
-  "period_end": "2026-08-27",
+  "period_end": "2026-08-28",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
@@ -9,15 +9,15 @@
     "variable_needs": {
       "groceries": 108.03,
       "gas": 0.0,
-      "parking": 40.09,
+      "parking": 42.59,
       "subscriptions": 14.99
     },
     "variable_wants": {
       "partying": 106.22,
-      "dining_out": 170.95,
-      "slop": 58.54,
+      "dining_out": 183.38,
+      "slop": 62.17,
       "gym": 0.0,
-      "misc_other": 410.05
+      "misc_other": 430.38
     }
   },
   "categories_detail": {
@@ -52,6 +52,16 @@
       "parking": [
         {
           "name": "City of Richmond/Parkh",
+          "amount": 1.07,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 2.5,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
           "amount": 4.2,
           "account": "SoFi Checking"
         },
@@ -73,11 +83,6 @@
         {
           "name": "PARKING CITY OF RICHMO",
           "amount": 5.0,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 1.07,
           "account": "SoFi Checking"
         },
         {
@@ -159,6 +164,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "Chipotle Mexican Grill",
+          "amount": 12.43,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "AplPay TST* URBAN FARICHMOND",
           "amount": 10.99,
           "account": "Blue Cash Preferred\u00ae"
@@ -204,6 +214,11 @@
           "name": "*CLAYD MARKET",
           "amount": 32.16,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 3.63,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "VILLAGE MARKET",
@@ -284,23 +299,33 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "AplPay ABI'S BOOK CARichmond",
-          "amount": 6.39,
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 16.48,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "FIL-A",
-          "amount": 11.68,
+          "name": "ONE WAY USA",
+          "amount": 3.85,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "K H M CONVENIENCE STORE",
+          "name": "AplPay K H M CONVENIHENRICO",
           "amount": 5.53,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Chick-fil-A",
+          "amount": 11.68,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "Walgreens",
           "amount": 14.62,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay ABI'S BOOK CARichmond",
+          "amount": 6.39,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -398,23 +423,33 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "AplPay ABI'S BOOK CARichmond",
-      "amount": 6.39,
+      "name": "NATES BAGELS - CARY STREET",
+      "amount": 16.48,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "FIL-A",
-      "amount": 11.68,
+      "name": "ONE WAY USA",
+      "amount": 3.85,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "K H M CONVENIENCE STORE",
+      "name": "AplPay K H M CONVENIHENRICO",
       "amount": 5.53,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Chick-fil-A",
+      "amount": 11.68,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "Walgreens",
       "amount": 14.62,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay ABI'S BOOK CARichmond",
+      "amount": 6.39,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -466,11 +501,21 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 74.43,
+      "balance": 205.72,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 1.07,
+          "category": "parking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 2.5,
+          "category": "parking"
+        },
         {
           "name": "City of Richmond/Parkh",
           "amount": 4.2,
@@ -494,11 +539,6 @@
         {
           "name": "PARKING CITY OF RICHMO",
           "amount": 5.0,
-          "category": "parking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 1.07,
           "category": "parking"
         },
         {
@@ -623,15 +663,50 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 986.17,
+      "balance": 1018.0,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
+          "name": "7-Eleven",
+          "amount": 3.63,
+          "category": "slop"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 12.43,
+          "category": "dining_out"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 16.48,
+          "category": "misc_other"
+        },
+        {
+          "name": "ONE WAY USA",
+          "amount": 3.85,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay K H M CONVENIHENRICO",
+          "amount": 5.53,
+          "category": "misc_other"
+        },
+        {
+          "name": "Chick-fil-A",
+          "amount": 11.68,
+          "category": "misc_other"
+        },
+        {
           "name": "VILLAGE MARKET",
           "amount": 4.11,
           "category": "slop"
+        },
+        {
+          "name": "Walgreens",
+          "amount": 14.62,
+          "category": "misc_other"
         },
         {
           "name": "AplPay ABI'S BOOK CARichmond",
@@ -644,24 +719,9 @@
           "category": "slop"
         },
         {
-          "name": "FIL-A",
-          "amount": 11.68,
-          "category": "misc_other"
-        },
-        {
-          "name": "K H M CONVENIENCE STORE",
-          "amount": 5.53,
-          "category": "misc_other"
-        },
-        {
           "name": "Kroger",
           "amount": 94.27,
           "category": "groceries"
-        },
-        {
-          "name": "Walgreens",
-          "amount": 14.62,
-          "category": "misc_other"
         },
         {
           "name": "AplPay K H M CONVENIHENRICO",
@@ -823,7 +883,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 74.43,
+    "actual_checking_balance": 205.72,
     "actual_savings_balance": 1.09
   },
   "debt": {
@@ -843,7 +903,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 986.17
+      "current_balance": 1018.0
     }
   },
   "plans": [
