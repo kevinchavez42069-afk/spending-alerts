@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-29",
+  "last_updated": "2026-08-30",
   "period_start": "2026-08-19",
-  "period_end": "2026-08-29",
+  "period_end": "2026-08-30",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
@@ -14,10 +14,10 @@
     },
     "variable_wants": {
       "partying": 106.22,
-      "dining_out": 183.38,
+      "dining_out": 212.53000000000003,
       "slop": 69.89000000000001,
       "gym": 0.0,
-      "misc_other": 656.1800000000001
+      "misc_other": 823.28
     }
   },
   "categories_detail": {
@@ -51,6 +51,11 @@
       "gas": [],
       "parking": [
         {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 2.5,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "City of Richmond/Parkh",
           "amount": 4.2,
           "account": "SoFi Checking"
@@ -83,11 +88,6 @@
         {
           "name": "City of Richmond/Parkh",
           "amount": 1.07,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 2.5,
           "account": "SoFi Checking"
         },
         {
@@ -174,6 +174,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "Starbucks",
+          "amount": 29.15,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "Chipotle Mexican Grill",
           "amount": 12.43,
           "account": "Blue Cash Preferred\u00ae"
@@ -241,7 +246,7 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "VILLAGE MARKET",
+          "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 4.11,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -322,6 +327,21 @@
           "name": "PetSmart",
           "amount": 25.61,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "Hollister",
+          "amount": 22.0,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "SHELL FRONTIER OIL GAS",
+          "amount": 39.02,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "SHORT PUMP TOWN CENTER",
+          "amount": 106.08,
+          "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
           "name": "K H M CONVENIENCE STORE",
@@ -463,6 +483,21 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "Hollister",
+      "amount": 22.0,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "SHELL FRONTIER OIL GAS",
+      "amount": 39.02,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "SHORT PUMP TOWN CENTER",
+      "amount": 106.08,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
       "name": "K H M CONVENIENCE STORE",
       "amount": 13.03,
       "account": "Blue Cash Preferred\u00ae"
@@ -551,11 +586,16 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 391.6,
+      "balance": 389.1,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 2.5,
+          "category": "parking"
+        },
         {
           "name": "7-Eleven",
           "amount": 3.52,
@@ -599,11 +639,6 @@
         {
           "name": "City of Richmond/Parkh",
           "amount": 1.07,
-          "category": "parking"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 2.5,
           "category": "parking"
         },
         {
@@ -733,11 +768,21 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1022.11,
+      "balance": 1241.37,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "SHELL FRONTIER OIL GAS",
+          "amount": 39.02,
+          "category": "misc_other"
+        },
+        {
+          "name": "Starbucks",
+          "amount": 29.15,
+          "category": "dining_out"
+        },
         {
           "name": "3 STARS CONVENIENCE",
           "amount": 4.2,
@@ -746,6 +791,11 @@
         {
           "name": "7-Eleven",
           "amount": 3.63,
+          "category": "slop"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 4.11,
           "category": "slop"
         },
         {
@@ -782,11 +832,6 @@
           "name": "Chick-fil-A",
           "amount": 11.68,
           "category": "misc_other"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 4.11,
-          "category": "slop"
         },
         {
           "name": "Walgreens",
@@ -943,6 +988,16 @@
       "limit": 10800.0,
       "transactions": [
         {
+          "name": "Hollister",
+          "amount": 22.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "SHORT PUMP TOWN CENTER",
+          "amount": 106.08,
+          "category": "misc_other"
+        },
+        {
           "name": "SPLICE.COM",
           "amount": 12.99,
           "category": "misc_other"
@@ -968,7 +1023,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 391.6,
+    "actual_checking_balance": 389.1,
     "actual_savings_balance": 1.09
   },
   "debt": {
@@ -988,7 +1043,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1022.11
+      "current_balance": 1241.37
     }
   },
   "plans": [
