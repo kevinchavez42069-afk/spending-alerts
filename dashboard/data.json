@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-08-30",
+  "last_updated": "2026-09-01",
   "period_start": "2026-08-19",
-  "period_end": "2026-08-30",
+  "period_end": "2026-09-01",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
     },
     "variable_needs": {
-      "groceries": 108.03,
-      "gas": 0.0,
+      "groceries": 178.09999999999997,
+      "gas": 8.17,
       "parking": 48.690000000000005,
-      "subscriptions": 14.99
+      "subscriptions": 111.16
     },
     "variable_wants": {
       "partying": 106.22,
-      "dining_out": 212.53000000000003,
-      "slop": 69.89000000000001,
+      "dining_out": 244.11,
+      "slop": 79.12,
       "gym": 0.0,
-      "misc_other": 823.28
+      "misc_other": 2597.0899999999992
     }
   },
   "categories_detail": {
@@ -39,6 +39,16 @@
       "groceries": [
         {
           "name": "Kroger",
+          "amount": 21.61,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Target",
+          "amount": 48.46,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Kroger",
           "amount": 94.27,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -48,18 +58,14 @@
           "account": "Blue Cash Preferred\u00ae"
         }
       ],
-      "gas": [],
+      "gas": [
+        {
+          "name": "Wawa",
+          "amount": 8.17,
+          "account": "SoFi Checking"
+        }
+      ],
       "parking": [
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 2.5,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.2,
-          "account": "SoFi Checking"
-        },
         {
           "name": "City of Richmond/Parkh",
           "amount": 4.45,
@@ -68,6 +74,16 @@
         {
           "name": "PARKING CITY OF RICHMO",
           "amount": 1.65,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 2.5,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.2,
           "account": "SoFi Checking"
         },
         {
@@ -123,6 +139,11 @@
       ],
       "subscriptions": [
         {
+          "name": "ANTHROPIC* CLAUDE SUB",
+          "amount": 96.17,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "Amazon Prime",
           "amount": 14.99,
           "account": "SoFi Checking"
@@ -159,6 +180,11 @@
       ],
       "dining_out": [
         {
+          "name": "Chipotle Mexican Grill",
+          "amount": 15.1,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "TST* URBAN FARMHOUSE M",
           "amount": 1.42,
           "account": "SoFi Checking"
@@ -176,6 +202,11 @@
         {
           "name": "Starbucks",
           "amount": 29.15,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 16.48,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -226,6 +257,11 @@
       ],
       "slop": [
         {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 8.78,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "7-Eleven",
           "amount": 3.52,
           "account": "SoFi Checking"
@@ -236,13 +272,13 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "3 STARS CONVENIENCE",
-          "amount": 4.2,
+          "name": "7-Eleven",
+          "amount": 3.63,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "7-Eleven",
-          "amount": 3.63,
+          "name": "VILLAGE MARKET",
+          "amount": 4.65,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -278,6 +314,11 @@
       ],
       "gym": [],
       "misc_other": [
+        {
+          "name": "NOVA MENTAL HEALTH CO",
+          "amount": 70.0,
+          "account": "SoFi Checking"
+        },
         {
           "name": "7ELEVEN-FCTI",
           "amount": 43.5,
@@ -329,38 +370,68 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 9.51,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 25.96,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay THE TUMI STORRICHMOND",
+          "amount": 1494.6,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "KENNTICO",
+          "amount": 12.4,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "SP ROKA SPORTS INC.",
+          "amount": 164.31,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 9.31,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "H&M",
+          "amount": 106.08,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
           "name": "Hollister",
           "amount": 22.0,
           "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
-          "name": "SHELL FRONTIER OIL GAS",
+          "name": "Shell",
           "amount": 39.02,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "SHORT PUMP TOWN CENTER",
-          "amount": 106.08,
-          "account": "Delta SkyMiles\u00ae Gold Card"
+          "name": "AplPay 3 STARS CONVERICHMOND",
+          "amount": 4.2,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "K H M CONVENIENCE STORE",
+          "name": "AplPay K H M CONVENIHENRICO",
           "amount": 13.03,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "MOG LABS",
-          "amount": 169.27,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 16.48,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "ONE WAY USA",
+          "name": "AplPay ONE WAY USA",
           "amount": 3.85,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "MOG LABS 05661700938PORTLAND OR",
+          "amount": 169.27,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -433,6 +504,11 @@
   },
   "unmatched_transactions": [
     {
+      "name": "NOVA MENTAL HEALTH CO",
+      "amount": 70.0,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "7ELEVEN-FCTI",
       "amount": 43.5,
       "account": "SoFi Checking"
@@ -483,38 +559,68 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "URBAN FARMHOUSE MARKET AND CAF",
+      "amount": 9.51,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "APPLE.COM/BILL INTERNET CHARGE",
+      "amount": 25.96,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay THE TUMI STORRICHMOND",
+      "amount": 1494.6,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "KENNTICO",
+      "amount": 12.4,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "SP ROKA SPORTS INC.",
+      "amount": 164.31,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "URBAN FARMHOUSE MARKET AND CAF",
+      "amount": 9.31,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "H&M",
+      "amount": 106.08,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
       "name": "Hollister",
       "amount": 22.0,
       "account": "Delta SkyMiles\u00ae Gold Card"
     },
     {
-      "name": "SHELL FRONTIER OIL GAS",
+      "name": "Shell",
       "amount": 39.02,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "SHORT PUMP TOWN CENTER",
-      "amount": 106.08,
-      "account": "Delta SkyMiles\u00ae Gold Card"
+      "name": "AplPay 3 STARS CONVERICHMOND",
+      "amount": 4.2,
+      "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "K H M CONVENIENCE STORE",
+      "name": "AplPay K H M CONVENIHENRICO",
       "amount": 13.03,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "MOG LABS",
-      "amount": 169.27,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "NATES BAGELS - CARY STREET",
-      "amount": 16.48,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "ONE WAY USA",
+      "name": "AplPay ONE WAY USA",
       "amount": 3.85,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "MOG LABS 05661700938PORTLAND OR",
+      "amount": 169.27,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -586,11 +692,46 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 389.1,
+      "balance": 326.88,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 15.1,
+          "category": "dining_out"
+        },
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 8.78,
+          "category": "slop"
+        },
+        {
+          "name": "Wawa",
+          "amount": 8.17,
+          "category": "gas"
+        },
+        {
+          "name": "ANTHROPIC* CLAUDE SUB",
+          "amount": 96.17,
+          "category": "subscriptions"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "category": "parking"
+        },
+        {
+          "name": "NOVA MENTAL HEALTH CO",
+          "amount": 70.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 1.65,
+          "category": "parking"
+        },
         {
           "name": "PARKING CITY OF RICHMO",
           "amount": 2.5,
@@ -609,16 +750,6 @@
         {
           "name": "City of Richmond/Parkh",
           "amount": 4.2,
-          "category": "parking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "category": "parking"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 1.65,
           "category": "parking"
         },
         {
@@ -760,7 +891,7 @@
     },
     {
       "name": "SoFi Savings",
-      "balance": 1.09,
+      "balance": 1.53,
       "type": "depository",
       "subtype": "savings",
       "limit": null,
@@ -768,13 +899,58 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1241.37,
+      "balance": 1551.9,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
-          "name": "SHELL FRONTIER OIL GAS",
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 9.51,
+          "category": "misc_other"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 3.63,
+          "category": "slop"
+        },
+        {
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 25.96,
+          "category": "misc_other"
+        },
+        {
+          "name": "KENNTICO",
+          "amount": 12.4,
+          "category": "misc_other"
+        },
+        {
+          "name": "Kroger",
+          "amount": 21.61,
+          "category": "groceries"
+        },
+        {
+          "name": "SP ROKA SPORTS INC.",
+          "amount": 164.31,
+          "category": "misc_other"
+        },
+        {
+          "name": "Target",
+          "amount": 48.46,
+          "category": "groceries"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 9.31,
+          "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.65,
+          "category": "slop"
+        },
+        {
+          "name": "Shell",
           "amount": 39.02,
           "category": "misc_other"
         },
@@ -784,19 +960,24 @@
           "category": "dining_out"
         },
         {
-          "name": "3 STARS CONVENIENCE",
+          "name": "AplPay 3 STARS CONVERICHMOND",
           "amount": 4.2,
-          "category": "slop"
+          "category": "misc_other"
         },
         {
-          "name": "7-Eleven",
-          "amount": 3.63,
-          "category": "slop"
+          "name": "AplPay K H M CONVENIHENRICO",
+          "amount": 13.03,
+          "category": "misc_other"
         },
         {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 4.11,
-          "category": "slop"
+          "name": "AplPay ONE WAY USA",
+          "amount": 3.85,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 16.48,
+          "category": "dining_out"
         },
         {
           "name": "Chipotle Mexican Grill",
@@ -804,24 +985,14 @@
           "category": "dining_out"
         },
         {
-          "name": "K H M CONVENIENCE STORE",
-          "amount": 13.03,
-          "category": "misc_other"
-        },
-        {
-          "name": "MOG LABS",
+          "name": "MOG LABS 05661700938PORTLAND OR",
           "amount": 169.27,
           "category": "misc_other"
         },
         {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 16.48,
-          "category": "misc_other"
-        },
-        {
-          "name": "ONE WAY USA",
-          "amount": 3.85,
-          "category": "misc_other"
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 4.11,
+          "category": "slop"
         },
         {
           "name": "AplPay K H M CONVENIHENRICO",
@@ -982,19 +1153,24 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 3400.14,
+      "balance": 5022.82,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
       "transactions": [
         {
-          "name": "Hollister",
-          "amount": 22.0,
+          "name": "AplPay THE TUMI STORRICHMOND",
+          "amount": 1494.6,
           "category": "misc_other"
         },
         {
-          "name": "SHORT PUMP TOWN CENTER",
+          "name": "H&M",
           "amount": 106.08,
+          "category": "misc_other"
+        },
+        {
+          "name": "Hollister",
+          "amount": 22.0,
           "category": "misc_other"
         },
         {
@@ -1023,8 +1199,8 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 389.1,
-    "actual_savings_balance": 1.09
+    "actual_checking_balance": 326.88,
+    "actual_savings_balance": 1.53
   },
   "debt": {
     "delta_amex": {
@@ -1035,7 +1211,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 3400.14
+      "current_balance": 5022.82
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -1043,7 +1219,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1241.37
+      "current_balance": 1551.9
     }
   },
   "plans": [
