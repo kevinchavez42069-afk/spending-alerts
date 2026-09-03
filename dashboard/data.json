@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-02",
+  "last_updated": "2026-09-03",
   "period_start": "2026-09-02",
-  "period_end": "2026-09-02",
+  "period_end": "2026-09-03",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -14,10 +14,10 @@
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 0.0,
-      "slop": 0.0,
+      "dining_out": 19.01,
+      "slop": 12.809999999999999,
       "gym": 0.0,
-      "misc_other": 76.63
+      "misc_other": 121.02
     }
   },
   "categories_detail": {
@@ -38,14 +38,51 @@
     },
     "variable_wants": {
       "partying": [],
-      "dining_out": [],
-      "slop": [],
+      "dining_out": [
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 19.01,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
+      "slop": [
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 8.78,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 4.03,
+          "account": "SoFi Checking"
+        }
+      ],
       "gym": [],
       "misc_other": [
+        {
+          "name": "BOKA TAKO",
+          "amount": 17.48,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "Patreon* Membership",
+          "amount": 10.0,
+          "account": "SoFi Checking"
+        },
         {
           "name": "NOVA MENTAL HEALTH CO",
           "amount": 70.0,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 13.39,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "MIDTOWN MARKET",
+          "amount": 3.52,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
@@ -57,9 +94,29 @@
   },
   "unmatched_transactions": [
     {
+      "name": "BOKA TAKO",
+      "amount": 17.48,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "Patreon* Membership",
+      "amount": 10.0,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "NOVA MENTAL HEALTH CO",
       "amount": 70.0,
       "account": "SoFi Checking"
+    },
+    {
+      "name": "URBAN FARMHOUSE MARKET AND CAF",
+      "amount": 13.39,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "MIDTOWN MARKET",
+      "amount": 3.52,
+      "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "URBAN FARMHOUSE MARKET AND CAF",
@@ -70,11 +127,31 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 1721.24,
+      "balance": 330.95,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "BOKA TAKO",
+          "amount": 17.48,
+          "category": "misc_other"
+        },
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 8.78,
+          "category": "slop"
+        },
+        {
+          "name": "Patreon* Membership",
+          "amount": 10.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 4.03,
+          "category": "slop"
+        },
         {
           "name": "ANTHROPIC* CLAUDE SUB",
           "amount": 96.17,
@@ -97,11 +174,26 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1609.38,
+      "balance": 442.9,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 13.39,
+          "category": "misc_other"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 19.01,
+          "category": "dining_out"
+        },
+        {
+          "name": "MIDTOWN MARKET",
+          "amount": 3.52,
+          "category": "misc_other"
+        },
         {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
           "amount": 6.63,
@@ -111,7 +203,7 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 5022.82,
+      "balance": 4807.82,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
@@ -136,7 +228,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 1721.24,
+    "actual_checking_balance": 330.95,
     "actual_savings_balance": 1.53
   },
   "debt": {
@@ -148,7 +240,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 5022.82
+      "current_balance": 4807.82
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -156,7 +248,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1609.38
+      "current_balance": 442.9
     }
   },
   "plans": [
