@@ -1,15 +1,15 @@
 {
-  "last_updated": "2026-09-03",
+  "last_updated": "2026-09-04",
   "period_start": "2026-09-02",
-  "period_end": "2026-09-03",
+  "period_end": "2026-09-04",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
-      "groceries": 0.0,
-      "gas": 0.0,
-      "parking": 0.0,
+      "groceries": 61.370000000000005,
+      "gas": 51.55,
+      "parking": 6.65,
       "subscriptions": 96.17
     },
     "variable_wants": {
@@ -17,7 +17,7 @@
       "dining_out": 19.01,
       "slop": 12.809999999999999,
       "gym": 0.0,
-      "misc_other": 121.02
+      "misc_other": 156.01999999999998
     }
   },
   "categories_detail": {
@@ -25,9 +25,37 @@
       "rent": []
     },
     "variable_needs": {
-      "groceries": [],
-      "gas": [],
-      "parking": [],
+      "groceries": [
+        {
+          "name": "Aldi",
+          "amount": 35.95,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Target",
+          "amount": 25.42,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
+      "gas": [
+        {
+          "name": "WAWA - STORE",
+          "amount": 51.55,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
+      "parking": [
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 1.65,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 5.0,
+          "account": "SoFi Checking"
+        }
+      ],
       "subscriptions": [
         {
           "name": "ANTHROPIC* CLAUDE SUB",
@@ -88,6 +116,11 @@
           "name": "URBAN FARMHOUSE MARKET AND CAF",
           "amount": 6.63,
           "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "VCU REC WELL 00-0802RICHMOND",
+          "amount": 35.0,
+          "account": "Delta SkyMiles\u00ae Gold Card"
         }
       ]
     }
@@ -122,6 +155,11 @@
       "name": "URBAN FARMHOUSE MARKET AND CAF",
       "amount": 6.63,
       "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "VCU REC WELL 00-0802RICHMOND",
+      "amount": 35.0,
+      "account": "Delta SkyMiles\u00ae Gold Card"
     }
   ],
   "accounts": [
@@ -132,6 +170,16 @@
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 1.65,
+          "category": "parking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 5.0,
+          "category": "parking"
+        },
         {
           "name": "BOKA TAKO",
           "amount": 17.48,
@@ -174,15 +222,30 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 442.9,
+      "balance": 472.06,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
+          "name": "Aldi",
+          "amount": 35.95,
+          "category": "groceries"
+        },
+        {
+          "name": "Target",
+          "amount": 25.42,
+          "category": "groceries"
+        },
+        {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
           "amount": 13.39,
           "category": "misc_other"
+        },
+        {
+          "name": "WAWA - STORE",
+          "amount": 51.55,
+          "category": "gas"
         },
         {
           "name": "Chipotle Mexican Grill",
@@ -207,7 +270,13 @@
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
-      "transactions": []
+      "transactions": [
+        {
+          "name": "VCU REC WELL 00-0802RICHMOND",
+          "amount": 35.0,
+          "category": "misc_other"
+        }
+      ]
     }
   ],
   "caps": {
@@ -248,7 +317,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 442.9
+      "current_balance": 472.06
     }
   },
   "plans": [
