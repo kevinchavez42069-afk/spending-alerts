@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-04",
+  "last_updated": "2026-09-05",
   "period_start": "2026-09-02",
-  "period_end": "2026-09-04",
+  "period_end": "2026-09-05",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -13,11 +13,11 @@
       "subscriptions": 96.17
     },
     "variable_wants": {
-      "partying": 0.0,
-      "dining_out": 19.01,
-      "slop": 12.809999999999999,
+      "partying": 86.9,
+      "dining_out": 25.64,
+      "slop": 16.74,
       "gym": 0.0,
-      "misc_other": 156.01999999999998
+      "misc_other": 231.90000000000003
     }
   },
   "categories_detail": {
@@ -65,8 +65,34 @@
       ]
     },
     "variable_wants": {
-      "partying": [],
+      "partying": [
+        {
+          "name": "ECHOSTAGE* ECHOSTAGE",
+          "amount": 14.0,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "ECHOSTAGE",
+          "amount": 16.9,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "ECHOSTAGE",
+          "amount": 28.0,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "ECHOSTAGE",
+          "amount": 28.0,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "dining_out": [
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 6.63,
+          "account": "Blue Cash Preferred\u00ae"
+        },
         {
           "name": "Chipotle Mexican Grill",
           "amount": 19.01,
@@ -83,10 +109,35 @@
           "name": "7-Eleven",
           "amount": 4.03,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 3.93,
+          "account": "Blue Cash Preferred\u00ae"
         }
       ],
       "gym": [],
       "misc_other": [
+        {
+          "name": "Ekho Events LLC",
+          "amount": 11.66,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "Nayax **SuitlandWashin",
+          "amount": 2.6,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "PMUSA 758021 WASHINGTO",
+          "amount": 0.5,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "PMUSA 758021 WASHINGTO",
+          "amount": 3.95,
+          "account": "SoFi Checking"
+        },
         {
           "name": "BOKA TAKO",
           "amount": 17.48,
@@ -103,18 +154,18 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 13.39,
+          "name": "MOXIES",
+          "amount": 63.8,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "MIDTOWN MARKET",
+          "name": "AplPay MIDTOWN MARKERICHMOND",
           "amount": 3.52,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 6.63,
+          "amount": 13.39,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -126,6 +177,26 @@
     }
   },
   "unmatched_transactions": [
+    {
+      "name": "Ekho Events LLC",
+      "amount": 11.66,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "Nayax **SuitlandWashin",
+      "amount": 2.6,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "PMUSA 758021 WASHINGTO",
+      "amount": 0.5,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "PMUSA 758021 WASHINGTO",
+      "amount": 3.95,
+      "account": "SoFi Checking"
+    },
     {
       "name": "BOKA TAKO",
       "amount": 17.48,
@@ -142,18 +213,18 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "URBAN FARMHOUSE MARKET AND CAF",
-      "amount": 13.39,
+      "name": "MOXIES",
+      "amount": 63.8,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "MIDTOWN MARKET",
+      "name": "AplPay MIDTOWN MARKERICHMOND",
       "amount": 3.52,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "URBAN FARMHOUSE MARKET AND CAF",
-      "amount": 6.63,
+      "amount": 13.39,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -171,6 +242,21 @@
       "limit": null,
       "transactions": [
         {
+          "name": "ECHOSTAGE* ECHOSTAGE",
+          "amount": 14.0,
+          "category": "partying"
+        },
+        {
+          "name": "Ekho Events LLC",
+          "amount": 11.66,
+          "category": "misc_other"
+        },
+        {
+          "name": "Nayax **SuitlandWashin",
+          "amount": 2.6,
+          "category": "misc_other"
+        },
+        {
           "name": "PARKING CITY OF RICHMO",
           "amount": 1.65,
           "category": "parking"
@@ -179,6 +265,16 @@
           "name": "PARKING CITY OF RICHMO",
           "amount": 5.0,
           "category": "parking"
+        },
+        {
+          "name": "PMUSA 758021 WASHINGTO",
+          "amount": 0.5,
+          "category": "misc_other"
+        },
+        {
+          "name": "PMUSA 758021 WASHINGTO",
+          "amount": 3.95,
+          "category": "misc_other"
         },
         {
           "name": "BOKA TAKO",
@@ -222,15 +318,55 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 472.06,
+      "balance": 598.37,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
+          "name": "7-Eleven",
+          "amount": 3.93,
+          "category": "slop"
+        },
+        {
+          "name": "ECHOSTAGE",
+          "amount": 16.9,
+          "category": "partying"
+        },
+        {
+          "name": "ECHOSTAGE",
+          "amount": 28.0,
+          "category": "partying"
+        },
+        {
+          "name": "ECHOSTAGE",
+          "amount": 28.0,
+          "category": "partying"
+        },
+        {
+          "name": "MOXIES",
+          "amount": 63.8,
+          "category": "misc_other"
+        },
+        {
           "name": "Aldi",
           "amount": 35.95,
           "category": "groceries"
+        },
+        {
+          "name": "AplPay MIDTOWN MARKERICHMOND",
+          "amount": 3.52,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 6.63,
+          "category": "dining_out"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 19.01,
+          "category": "dining_out"
         },
         {
           "name": "Target",
@@ -246,21 +382,6 @@
           "name": "WAWA - STORE",
           "amount": 51.55,
           "category": "gas"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 19.01,
-          "category": "dining_out"
-        },
-        {
-          "name": "MIDTOWN MARKET",
-          "amount": 3.52,
-          "category": "misc_other"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 6.63,
-          "category": "misc_other"
         }
       ]
     },
@@ -317,7 +438,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 472.06
+      "current_balance": 598.37
     }
   },
   "plans": [
