@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-09-05",
+  "last_updated": "2026-09-06",
   "period_start": "2026-09-02",
-  "period_end": "2026-09-05",
+  "period_end": "2026-09-06",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
-      "groceries": 61.370000000000005,
+      "groceries": 80.39,
       "gas": 51.55,
       "parking": 6.65,
       "subscriptions": 96.17
     },
     "variable_wants": {
       "partying": 86.9,
-      "dining_out": 25.64,
+      "dining_out": 39.03,
       "slop": 16.74,
       "gym": 0.0,
-      "misc_other": 231.90000000000003
+      "misc_other": 243.38000000000002
     }
   },
   "categories_detail": {
@@ -27,7 +27,12 @@
     "variable_needs": {
       "groceries": [
         {
-          "name": "Aldi",
+          "name": "Kroger",
+          "amount": 19.02,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay ALDI INC 0004RICHMOND",
           "amount": 35.95,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -39,7 +44,7 @@
       ],
       "gas": [
         {
-          "name": "WAWA - STORE",
+          "name": "AplPay WAWA 8688",
           "amount": 51.55,
           "account": "Blue Cash Preferred\u00ae"
         }
@@ -90,6 +95,11 @@
       "dining_out": [
         {
           "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 13.39,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
           "amount": 6.63,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -118,6 +128,11 @@
       ],
       "gym": [],
       "misc_other": [
+        {
+          "name": "Raising Cane's Chicken Fingers",
+          "amount": 20.82,
+          "account": "SoFi Checking"
+        },
         {
           "name": "Ekho Events LLC",
           "amount": 11.66,
@@ -154,6 +169,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 4.05,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "MOXIES",
           "amount": 63.8,
           "account": "Blue Cash Preferred\u00ae"
@@ -161,11 +181,6 @@
         {
           "name": "AplPay MIDTOWN MARKERICHMOND",
           "amount": 3.52,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 13.39,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -177,6 +192,11 @@
     }
   },
   "unmatched_transactions": [
+    {
+      "name": "Raising Cane's Chicken Fingers",
+      "amount": 20.82,
+      "account": "SoFi Checking"
+    },
     {
       "name": "Ekho Events LLC",
       "amount": 11.66,
@@ -213,6 +233,11 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "K H M CONVENIENCE STORE",
+      "amount": 4.05,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "MOXIES",
       "amount": 63.8,
       "account": "Blue Cash Preferred\u00ae"
@@ -220,11 +245,6 @@
     {
       "name": "AplPay MIDTOWN MARKERICHMOND",
       "amount": 3.52,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "URBAN FARMHOUSE MARKET AND CAF",
-      "amount": 13.39,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -236,11 +256,16 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 330.95,
+      "balance": 346.04,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "Raising Cane's Chicken Fingers",
+          "amount": 20.82,
+          "category": "misc_other"
+        },
         {
           "name": "ECHOSTAGE* ECHOSTAGE",
           "amount": 14.0,
@@ -318,15 +343,40 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 598.37,
+      "balance": 759.0,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 4.05,
+          "category": "misc_other"
+        },
+        {
+          "name": "Kroger",
+          "amount": 19.02,
+          "category": "groceries"
+        },
+        {
           "name": "7-Eleven",
           "amount": 3.93,
           "category": "slop"
+        },
+        {
+          "name": "AplPay ALDI INC 0004RICHMOND",
+          "amount": 35.95,
+          "category": "groceries"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 13.39,
+          "category": "dining_out"
+        },
+        {
+          "name": "AplPay WAWA 8688",
+          "amount": 51.55,
+          "category": "gas"
         },
         {
           "name": "ECHOSTAGE",
@@ -349,8 +399,8 @@
           "category": "misc_other"
         },
         {
-          "name": "Aldi",
-          "amount": 35.95,
+          "name": "Target",
+          "amount": 25.42,
           "category": "groceries"
         },
         {
@@ -367,21 +417,6 @@
           "name": "Chipotle Mexican Grill",
           "amount": 19.01,
           "category": "dining_out"
-        },
-        {
-          "name": "Target",
-          "amount": 25.42,
-          "category": "groceries"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 13.39,
-          "category": "misc_other"
-        },
-        {
-          "name": "WAWA - STORE",
-          "amount": 51.55,
-          "category": "gas"
         }
       ]
     },
@@ -418,7 +453,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 330.95,
+    "actual_checking_balance": 346.04,
     "actual_savings_balance": 1.53
   },
   "debt": {
@@ -438,7 +473,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 598.37
+      "current_balance": 759.0
     }
   },
   "plans": [
