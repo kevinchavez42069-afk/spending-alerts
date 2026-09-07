@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-06",
+  "last_updated": "2026-09-07",
   "period_start": "2026-09-02",
-  "period_end": "2026-09-06",
+  "period_end": "2026-09-07",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -14,10 +14,10 @@
     },
     "variable_wants": {
       "partying": 86.9,
-      "dining_out": 39.03,
+      "dining_out": 66.64,
       "slop": 16.74,
       "gym": 0.0,
-      "misc_other": 243.38000000000002
+      "misc_other": 270.34000000000003
     }
   },
   "categories_detail": {
@@ -77,22 +77,32 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "ECHOSTAGE",
+          "name": "AplPay ECHOSTAGE* ECWASHINGTON",
           "amount": 16.9,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "ECHOSTAGE",
+          "name": "AplPay ECHOSTAGE* ECWASHINGTON",
           "amount": 28.0,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "ECHOSTAGE",
+          "name": "AplPay ECHOSTAGE* ECWASHINGTON",
           "amount": 28.0,
           "account": "Blue Cash Preferred\u00ae"
         }
       ],
       "dining_out": [
+        {
+          "name": "DD *DOORDASH",
+          "amount": 22.42,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "Starbucks",
+          "amount": 5.19,
+          "account": "Blue Cash Preferred\u00ae"
+        },
         {
           "name": "AplPay TST* URBAN FARICHMOND",
           "amount": 13.39,
@@ -129,8 +139,18 @@
       "gym": [],
       "misc_other": [
         {
-          "name": "Raising Cane's Chicken Fingers",
-          "amount": 20.82,
+          "name": "ABI'S BOOK CAFE LL",
+          "amount": 6.96,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "PMUSA 758021 WASHINGTO",
+          "amount": 0.5,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "PMUSA 758021 WASHINGTO",
+          "amount": 3.95,
           "account": "SoFi Checking"
         },
         {
@@ -144,13 +164,8 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "PMUSA 758021 WASHINGTO",
-          "amount": 0.5,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "PMUSA 758021 WASHINGTO",
-          "amount": 3.95,
+          "name": "Raising Cane's Chicken Fingers",
+          "amount": 20.82,
           "account": "SoFi Checking"
         },
         {
@@ -169,13 +184,13 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "K H M CONVENIENCE STORE",
+          "name": "AplPay K H M CONVENIHENRICO",
           "amount": 4.05,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "MOXIES",
-          "amount": 63.8,
+          "name": "MOXIES DC 0688800232WASHINGTON",
+          "amount": 83.8,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -193,8 +208,18 @@
   },
   "unmatched_transactions": [
     {
-      "name": "Raising Cane's Chicken Fingers",
-      "amount": 20.82,
+      "name": "ABI'S BOOK CAFE LL",
+      "amount": 6.96,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "PMUSA 758021 WASHINGTO",
+      "amount": 0.5,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "PMUSA 758021 WASHINGTO",
+      "amount": 3.95,
       "account": "SoFi Checking"
     },
     {
@@ -208,13 +233,8 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "PMUSA 758021 WASHINGTO",
-      "amount": 0.5,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "PMUSA 758021 WASHINGTO",
-      "amount": 3.95,
+      "name": "Raising Cane's Chicken Fingers",
+      "amount": 20.82,
       "account": "SoFi Checking"
     },
     {
@@ -233,13 +253,13 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "K H M CONVENIENCE STORE",
+      "name": "AplPay K H M CONVENIHENRICO",
       "amount": 4.05,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "MOXIES",
-      "amount": 63.8,
+      "name": "MOXIES DC 0688800232WASHINGTON",
+      "amount": 83.8,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -256,15 +276,30 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 346.04,
+      "balance": 341.59,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
         {
-          "name": "Raising Cane's Chicken Fingers",
-          "amount": 20.82,
+          "name": "ABI'S BOOK CAFE LL",
+          "amount": 6.96,
           "category": "misc_other"
+        },
+        {
+          "name": "PMUSA 758021 WASHINGTO",
+          "amount": 0.5,
+          "category": "misc_other"
+        },
+        {
+          "name": "PMUSA 758021 WASHINGTO",
+          "amount": 3.95,
+          "category": "misc_other"
+        },
+        {
+          "name": "DD *DOORDASH",
+          "amount": 22.42,
+          "category": "dining_out"
         },
         {
           "name": "ECHOSTAGE* ECHOSTAGE",
@@ -292,13 +327,8 @@
           "category": "parking"
         },
         {
-          "name": "PMUSA 758021 WASHINGTO",
-          "amount": 0.5,
-          "category": "misc_other"
-        },
-        {
-          "name": "PMUSA 758021 WASHINGTO",
-          "amount": 3.95,
+          "name": "Raising Cane's Chicken Fingers",
+          "amount": 20.82,
           "category": "misc_other"
         },
         {
@@ -343,13 +373,13 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 759.0,
+      "balance": 782.07,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
-          "name": "K H M CONVENIENCE STORE",
+          "name": "AplPay K H M CONVENIHENRICO",
           "amount": 4.05,
           "category": "misc_other"
         },
@@ -359,9 +389,34 @@
           "category": "groceries"
         },
         {
+          "name": "Starbucks",
+          "amount": 5.19,
+          "category": "dining_out"
+        },
+        {
           "name": "7-Eleven",
           "amount": 3.93,
           "category": "slop"
+        },
+        {
+          "name": "AplPay ECHOSTAGE* ECWASHINGTON",
+          "amount": 16.9,
+          "category": "partying"
+        },
+        {
+          "name": "AplPay ECHOSTAGE* ECWASHINGTON",
+          "amount": 28.0,
+          "category": "partying"
+        },
+        {
+          "name": "AplPay ECHOSTAGE* ECWASHINGTON",
+          "amount": 28.0,
+          "category": "partying"
+        },
+        {
+          "name": "MOXIES DC 0688800232WASHINGTON",
+          "amount": 83.8,
+          "category": "misc_other"
         },
         {
           "name": "AplPay ALDI INC 0004RICHMOND",
@@ -377,26 +432,6 @@
           "name": "AplPay WAWA 8688",
           "amount": 51.55,
           "category": "gas"
-        },
-        {
-          "name": "ECHOSTAGE",
-          "amount": 16.9,
-          "category": "partying"
-        },
-        {
-          "name": "ECHOSTAGE",
-          "amount": 28.0,
-          "category": "partying"
-        },
-        {
-          "name": "ECHOSTAGE",
-          "amount": 28.0,
-          "category": "partying"
-        },
-        {
-          "name": "MOXIES",
-          "amount": 63.8,
-          "category": "misc_other"
         },
         {
           "name": "Target",
@@ -453,7 +488,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 346.04,
+    "actual_checking_balance": 341.59,
     "actual_savings_balance": 1.53
   },
   "debt": {
@@ -473,7 +508,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 759.0
+      "current_balance": 782.07
     }
   },
   "plans": [
