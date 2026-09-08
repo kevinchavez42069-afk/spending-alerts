@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-07",
+  "last_updated": "2026-09-08",
   "period_start": "2026-09-02",
-  "period_end": "2026-09-07",
+  "period_end": "2026-09-08",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -14,10 +14,10 @@
     },
     "variable_wants": {
       "partying": 86.9,
-      "dining_out": 66.64,
-      "slop": 16.74,
+      "dining_out": 80.71000000000001,
+      "slop": 31.339999999999996,
       "gym": 0.0,
-      "misc_other": 270.34000000000003
+      "misc_other": 298.89
     }
   },
   "categories_detail": {
@@ -94,6 +94,11 @@
       ],
       "dining_out": [
         {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "DD *DOORDASH",
           "amount": 22.42,
           "account": "SoFi Checking"
@@ -131,6 +136,16 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 7.5,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 7.1,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "7-Eleven",
           "amount": 3.93,
           "account": "Blue Cash Preferred\u00ae"
@@ -138,6 +153,11 @@
       ],
       "gym": [],
       "misc_other": [
+        {
+          "name": "Raising Cane's Chicken Fingers",
+          "amount": 20.82,
+          "account": "SoFi Checking"
+        },
         {
           "name": "ABI'S BOOK CAFE LL",
           "amount": 6.96,
@@ -164,11 +184,6 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "Raising Cane's Chicken Fingers",
-          "amount": 20.82,
-          "account": "SoFi Checking"
-        },
-        {
           "name": "BOKA TAKO",
           "amount": 17.48,
           "account": "SoFi Checking"
@@ -182,6 +197,16 @@
           "name": "NOVA MENTAL HEALTH CO",
           "amount": 70.0,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 9.9,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 18.65,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay K H M CONVENIHENRICO",
@@ -208,6 +233,11 @@
   },
   "unmatched_transactions": [
     {
+      "name": "Raising Cane's Chicken Fingers",
+      "amount": 20.82,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "ABI'S BOOK CAFE LL",
       "amount": 6.96,
       "account": "SoFi Checking"
@@ -233,11 +263,6 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "Raising Cane's Chicken Fingers",
-      "amount": 20.82,
-      "account": "SoFi Checking"
-    },
-    {
       "name": "BOKA TAKO",
       "amount": 17.48,
       "account": "SoFi Checking"
@@ -251,6 +276,16 @@
       "name": "NOVA MENTAL HEALTH CO",
       "amount": 70.0,
       "account": "SoFi Checking"
+    },
+    {
+      "name": "URBAN FARMHOUSE MARKET AND CAF",
+      "amount": 9.9,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "NATES BAGELS - CARY STREET",
+      "amount": 18.65,
+      "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "AplPay K H M CONVENIHENRICO",
@@ -276,15 +311,25 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 341.59,
+      "balance": 140.77,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
         {
+          "name": "Raising Cane's Chicken Fingers",
+          "amount": 20.82,
+          "category": "misc_other"
+        },
+        {
           "name": "ABI'S BOOK CAFE LL",
           "amount": 6.96,
           "category": "misc_other"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "category": "dining_out"
         },
         {
           "name": "PMUSA 758021 WASHINGTO",
@@ -325,11 +370,6 @@
           "name": "PARKING CITY OF RICHMO",
           "amount": 5.0,
           "category": "parking"
-        },
-        {
-          "name": "Raising Cane's Chicken Fingers",
-          "amount": 20.82,
-          "category": "misc_other"
         },
         {
           "name": "BOKA TAKO",
@@ -373,11 +413,36 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 782.07,
+      "balance": 787.26,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 7.5,
+          "category": "slop"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 9.9,
+          "category": "misc_other"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 18.65,
+          "category": "misc_other"
+        },
+        {
+          "name": "Starbucks",
+          "amount": 5.19,
+          "category": "dining_out"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 7.1,
+          "category": "slop"
+        },
         {
           "name": "AplPay K H M CONVENIHENRICO",
           "amount": 4.05,
@@ -387,11 +452,6 @@
           "name": "Kroger",
           "amount": 19.02,
           "category": "groceries"
-        },
-        {
-          "name": "Starbucks",
-          "amount": 5.19,
-          "category": "dining_out"
         },
         {
           "name": "7-Eleven",
@@ -488,7 +548,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 341.59,
+    "actual_checking_balance": 140.77,
     "actual_savings_balance": 1.53
   },
   "debt": {
@@ -508,7 +568,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 782.07
+      "current_balance": 787.26
     }
   },
   "plans": [
