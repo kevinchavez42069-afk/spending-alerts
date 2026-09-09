@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-08",
+  "last_updated": "2026-09-09",
   "period_start": "2026-09-02",
-  "period_end": "2026-09-08",
+  "period_end": "2026-09-09",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -9,15 +9,15 @@
     "variable_needs": {
       "groceries": 80.39,
       "gas": 51.55,
-      "parking": 6.65,
+      "parking": 12.0,
       "subscriptions": 96.17
     },
     "variable_wants": {
       "partying": 86.9,
-      "dining_out": 80.71000000000001,
-      "slop": 31.339999999999996,
+      "dining_out": 113.43,
+      "slop": 27.950000000000003,
       "gym": 0.0,
-      "misc_other": 298.89
+      "misc_other": 342.92
     }
   },
   "categories_detail": {
@@ -50,6 +50,16 @@
         }
       ],
       "parking": [
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 2.05,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 3.3,
+          "account": "SoFi Checking"
+        },
         {
           "name": "PARKING CITY OF RICHMO",
           "amount": 1.65,
@@ -104,6 +114,16 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 18.65,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "Starbucks",
           "amount": 5.19,
           "account": "Blue Cash Preferred\u00ae"
@@ -126,6 +146,11 @@
       ],
       "slop": [
         {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "ESSENTIAL EXPRESS",
           "amount": 8.78,
           "account": "SoFi Checking"
@@ -136,12 +161,7 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 7.5,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "VILLAGE MARKET",
+          "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 7.1,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -154,13 +174,23 @@
       "gym": [],
       "misc_other": [
         {
-          "name": "Raising Cane's Chicken Fingers",
-          "amount": 20.82,
+          "name": "7ELEVEN-FCTI",
+          "amount": 43.5,
           "account": "SoFi Checking"
         },
         {
           "name": "ABI'S BOOK CAFE LL",
           "amount": 6.96,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "Chick-fil-A",
+          "amount": 11.68,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "Raising Cane's Chicken Fingers",
+          "amount": 20.82,
           "account": "SoFi Checking"
         },
         {
@@ -199,13 +229,13 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 9.9,
+          "name": "AplPay ESSENTIAL EXPRichmond",
+          "amount": 7.5,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 18.65,
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 9.9,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -233,13 +263,23 @@
   },
   "unmatched_transactions": [
     {
-      "name": "Raising Cane's Chicken Fingers",
-      "amount": 20.82,
+      "name": "7ELEVEN-FCTI",
+      "amount": 43.5,
       "account": "SoFi Checking"
     },
     {
       "name": "ABI'S BOOK CAFE LL",
       "amount": 6.96,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "Chick-fil-A",
+      "amount": 11.68,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "Raising Cane's Chicken Fingers",
+      "amount": 20.82,
       "account": "SoFi Checking"
     },
     {
@@ -278,13 +318,13 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "URBAN FARMHOUSE MARKET AND CAF",
-      "amount": 9.9,
+      "name": "AplPay ESSENTIAL EXPRichmond",
+      "amount": 7.5,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "NATES BAGELS - CARY STREET",
-      "amount": 18.65,
+      "name": "URBAN FARMHOUSE MARKET AND CAF",
+      "amount": 9.9,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -311,14 +351,14 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 140.77,
+      "balance": 53.82,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
         {
-          "name": "Raising Cane's Chicken Fingers",
-          "amount": 20.82,
+          "name": "7ELEVEN-FCTI",
+          "amount": 43.5,
           "category": "misc_other"
         },
         {
@@ -332,6 +372,41 @@
           "category": "dining_out"
         },
         {
+          "name": "DD *DOORDASH",
+          "amount": 22.42,
+          "category": "dining_out"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 2.05,
+          "category": "parking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 3.3,
+          "category": "parking"
+        },
+        {
+          "name": "Chick-fil-A",
+          "amount": 11.68,
+          "category": "misc_other"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "category": "dining_out"
+        },
+        {
+          "name": "Raising Cane's Chicken Fingers",
+          "amount": 20.82,
+          "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
+          "category": "slop"
+        },
+        {
           "name": "PMUSA 758021 WASHINGTO",
           "amount": 0.5,
           "category": "misc_other"
@@ -340,11 +415,6 @@
           "name": "PMUSA 758021 WASHINGTO",
           "amount": 3.95,
           "category": "misc_other"
-        },
-        {
-          "name": "DD *DOORDASH",
-          "amount": 22.42,
-          "category": "dining_out"
         },
         {
           "name": "ECHOSTAGE* ECHOSTAGE",
@@ -413,14 +483,24 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 787.26,
+      "balance": 820.51,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
-          "name": "ESSENTIAL EXPRESS",
+          "name": "AplPay ESSENTIAL EXPRichmond",
           "amount": 7.5,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 18.65,
+          "category": "dining_out"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 7.1,
           "category": "slop"
         },
         {
@@ -429,19 +509,9 @@
           "category": "misc_other"
         },
         {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 18.65,
-          "category": "misc_other"
-        },
-        {
           "name": "Starbucks",
           "amount": 5.19,
           "category": "dining_out"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 7.1,
-          "category": "slop"
         },
         {
           "name": "AplPay K H M CONVENIHENRICO",
@@ -548,7 +618,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 140.77,
+    "actual_checking_balance": 53.82,
     "actual_savings_balance": 1.53
   },
   "debt": {
@@ -568,7 +638,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 787.26
+      "current_balance": 820.51
     }
   },
   "plans": [
