@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-09-09",
+  "last_updated": "2026-09-10",
   "period_start": "2026-09-02",
-  "period_end": "2026-09-09",
+  "period_end": "2026-09-10",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
       "groceries": 80.39,
-      "gas": 51.55,
-      "parking": 12.0,
+      "gas": 117.42999999999999,
+      "parking": 29.049999999999997,
       "subscriptions": 96.17
     },
     "variable_wants": {
       "partying": 86.9,
-      "dining_out": 113.43,
-      "slop": 27.950000000000003,
+      "dining_out": 142.48,
+      "slop": 35.910000000000004,
       "gym": 0.0,
-      "misc_other": 342.92
+      "misc_other": 360.33
     }
   },
   "categories_detail": {
@@ -44,6 +44,11 @@
       ],
       "gas": [
         {
+          "name": "ExxonMobil",
+          "amount": 65.88,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "AplPay WAWA 8688",
           "amount": 51.55,
           "account": "Blue Cash Preferred\u00ae"
@@ -52,12 +57,32 @@
       "parking": [
         {
           "name": "PARKING CITY OF RICHMO",
+          "amount": 5.0,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 2.05,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
           "amount": 2.05,
           "account": "SoFi Checking"
         },
         {
           "name": "PARKING CITY OF RICHMO",
           "amount": 3.3,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 5.0,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 5.0,
           "account": "SoFi Checking"
         },
         {
@@ -109,14 +134,24 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "DD *DOORDASH",
           "amount": 22.42,
           "account": "SoFi Checking"
         },
         {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.07,
-          "account": "SoFi Checking"
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 9.9,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "DOORDASH",
+          "amount": 19.15,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay TST* NATES BARICHMOND",
@@ -161,6 +196,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "7-Eleven",
+          "amount": 7.96,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 7.1,
           "account": "Blue Cash Preferred\u00ae"
@@ -176,6 +216,11 @@
         {
           "name": "7ELEVEN-FCTI",
           "amount": 43.5,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "ABI'S BOOK CAFE LL",
+          "amount": 6.96,
           "account": "SoFi Checking"
         },
         {
@@ -229,13 +274,18 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "AplPay ESSENTIAL EXPRichmond",
-          "amount": 7.5,
+          "name": "Jimmy Johns",
+          "amount": 10.56,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 9.9,
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 9.79,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay ESSENTIAL EXPRichmond",
+          "amount": 7.5,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -265,6 +315,11 @@
     {
       "name": "7ELEVEN-FCTI",
       "amount": 43.5,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "ABI'S BOOK CAFE LL",
+      "amount": 6.96,
       "account": "SoFi Checking"
     },
     {
@@ -318,13 +373,18 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "AplPay ESSENTIAL EXPRichmond",
-      "amount": 7.5,
+      "name": "Jimmy Johns",
+      "amount": 10.56,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "URBAN FARMHOUSE MARKET AND CAF",
-      "amount": 9.9,
+      "name": "K H M CONVENIENCE STORE",
+      "amount": 9.79,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay ESSENTIAL EXPRichmond",
+      "amount": 7.5,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -351,14 +411,34 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 53.82,
+      "balance": 35.64,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
         {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "category": "dining_out"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 5.0,
+          "category": "parking"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
+          "category": "slop"
+        },
+        {
           "name": "7ELEVEN-FCTI",
           "amount": 43.5,
+          "category": "misc_other"
+        },
+        {
+          "name": "ABI'S BOOK CAFE LL",
+          "amount": 6.96,
           "category": "misc_other"
         },
         {
@@ -383,7 +463,22 @@
         },
         {
           "name": "PARKING CITY OF RICHMO",
+          "amount": 2.05,
+          "category": "parking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
           "amount": 3.3,
+          "category": "parking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 5.0,
+          "category": "parking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 5.0,
           "category": "parking"
         },
         {
@@ -392,19 +487,9 @@
           "category": "misc_other"
         },
         {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.07,
-          "category": "dining_out"
-        },
-        {
           "name": "Raising Cane's Chicken Fingers",
           "amount": 20.82,
           "category": "misc_other"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 4.11,
-          "category": "slop"
         },
         {
           "name": "PMUSA 758021 WASHINGTO",
@@ -483,11 +568,41 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 820.51,
+      "balance": 830.41,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "7-Eleven",
+          "amount": 7.96,
+          "category": "slop"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 9.9,
+          "category": "dining_out"
+        },
+        {
+          "name": "DOORDASH",
+          "amount": 19.15,
+          "category": "dining_out"
+        },
+        {
+          "name": "ExxonMobil",
+          "amount": 65.88,
+          "category": "gas"
+        },
+        {
+          "name": "Jimmy Johns",
+          "amount": 10.56,
+          "category": "misc_other"
+        },
+        {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 9.79,
+          "category": "misc_other"
+        },
         {
           "name": "AplPay ESSENTIAL EXPRichmond",
           "amount": 7.5,
@@ -502,11 +617,6 @@
           "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 7.1,
           "category": "slop"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 9.9,
-          "category": "misc_other"
         },
         {
           "name": "Starbucks",
@@ -618,7 +728,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 53.82,
+    "actual_checking_balance": 35.64,
     "actual_savings_balance": 1.53
   },
   "debt": {
@@ -638,7 +748,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 820.51
+      "current_balance": 830.41
     }
   },
   "plans": [
