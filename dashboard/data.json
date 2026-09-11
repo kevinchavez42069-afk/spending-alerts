@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-10",
+  "last_updated": "2026-09-11",
   "period_start": "2026-09-02",
-  "period_end": "2026-09-10",
+  "period_end": "2026-09-11",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -9,15 +9,15 @@
     "variable_needs": {
       "groceries": 80.39,
       "gas": 117.42999999999999,
-      "parking": 29.049999999999997,
+      "parking": 30.7,
       "subscriptions": 96.17
     },
     "variable_wants": {
       "partying": 86.9,
       "dining_out": 142.48,
-      "slop": 35.910000000000004,
+      "slop": 51.36000000000001,
       "gym": 0.0,
-      "misc_other": 360.33
+      "misc_other": 412.55000000000007
     }
   },
   "categories_detail": {
@@ -57,7 +57,7 @@
       "parking": [
         {
           "name": "PARKING CITY OF RICHMO",
-          "amount": 5.0,
+          "amount": 1.65,
           "account": "SoFi Checking"
         },
         {
@@ -73,6 +73,11 @@
         {
           "name": "PARKING CITY OF RICHMO",
           "amount": 3.3,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 5.0,
           "account": "SoFi Checking"
         },
         {
@@ -196,6 +201,16 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 8.46,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 6.99,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "7-Eleven",
           "amount": 7.96,
           "account": "Blue Cash Preferred\u00ae"
@@ -214,16 +229,6 @@
       "gym": [],
       "misc_other": [
         {
-          "name": "7ELEVEN-FCTI",
-          "amount": 43.5,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "ABI'S BOOK CAFE LL",
-          "amount": 6.96,
-          "account": "SoFi Checking"
-        },
-        {
           "name": "ABI'S BOOK CAFE LL",
           "amount": 6.96,
           "account": "SoFi Checking"
@@ -231,6 +236,16 @@
         {
           "name": "Chick-fil-A",
           "amount": 11.68,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "7ELEVEN-FCTI",
+          "amount": 43.5,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "ABI'S BOOK CAFE LL",
+          "amount": 6.96,
           "account": "SoFi Checking"
         },
         {
@@ -274,6 +289,16 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "AMEX SEND ACCOUNT",
+          "amount": 50.0,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "McDonald's",
+          "amount": 2.22,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "Jimmy Johns",
           "amount": 10.56,
           "account": "Blue Cash Preferred\u00ae"
@@ -313,16 +338,6 @@
   },
   "unmatched_transactions": [
     {
-      "name": "7ELEVEN-FCTI",
-      "amount": 43.5,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "ABI'S BOOK CAFE LL",
-      "amount": 6.96,
-      "account": "SoFi Checking"
-    },
-    {
       "name": "ABI'S BOOK CAFE LL",
       "amount": 6.96,
       "account": "SoFi Checking"
@@ -330,6 +345,16 @@
     {
       "name": "Chick-fil-A",
       "amount": 11.68,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "7ELEVEN-FCTI",
+      "amount": 43.5,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "ABI'S BOOK CAFE LL",
+      "amount": 6.96,
       "account": "SoFi Checking"
     },
     {
@@ -373,6 +398,16 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "AMEX SEND ACCOUNT",
+      "amount": 50.0,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "McDonald's",
+      "amount": 2.22,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "Jimmy Johns",
       "amount": 10.56,
       "account": "Blue Cash Preferred\u00ae"
@@ -411,11 +446,46 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 35.64,
+      "balance": 4.6,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "ABI'S BOOK CAFE LL",
+          "amount": 6.96,
+          "category": "misc_other"
+        },
+        {
+          "name": "Chick-fil-A",
+          "amount": 11.68,
+          "category": "misc_other"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 1.65,
+          "category": "parking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 2.05,
+          "category": "parking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 2.05,
+          "category": "parking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 3.3,
+          "category": "parking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 5.0,
+          "category": "parking"
+        },
         {
           "name": "Chipotle Mexican Grill",
           "amount": 14.07,
@@ -442,11 +512,6 @@
           "category": "misc_other"
         },
         {
-          "name": "ABI'S BOOK CAFE LL",
-          "amount": 6.96,
-          "category": "misc_other"
-        },
-        {
           "name": "Chipotle Mexican Grill",
           "amount": 14.07,
           "category": "dining_out"
@@ -458,33 +523,8 @@
         },
         {
           "name": "PARKING CITY OF RICHMO",
-          "amount": 2.05,
-          "category": "parking"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 2.05,
-          "category": "parking"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 3.3,
-          "category": "parking"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
           "amount": 5.0,
           "category": "parking"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 5.0,
-          "category": "parking"
-        },
-        {
-          "name": "Chick-fil-A",
-          "amount": 11.68,
-          "category": "misc_other"
         },
         {
           "name": "Raising Cane's Chicken Fingers",
@@ -568,11 +608,31 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 830.41,
+      "balance": 952.21,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "AMEX SEND ACCOUNT",
+          "amount": 50.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 8.46,
+          "category": "slop"
+        },
+        {
+          "name": "McDonald's",
+          "amount": 2.22,
+          "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 6.99,
+          "category": "slop"
+        },
         {
           "name": "7-Eleven",
           "amount": 7.96,
@@ -728,7 +788,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 35.64,
+    "actual_checking_balance": 4.6,
     "actual_savings_balance": 1.53
   },
   "debt": {
@@ -748,7 +808,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 830.41
+      "current_balance": 952.21
     }
   },
   "plans": [
