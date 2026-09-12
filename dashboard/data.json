@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-11",
+  "last_updated": "2026-09-12",
   "period_start": "2026-09-02",
-  "period_end": "2026-09-11",
+  "period_end": "2026-09-12",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -10,14 +10,14 @@
       "groceries": 80.39,
       "gas": 117.42999999999999,
       "parking": 30.7,
-      "subscriptions": 96.17
+      "subscriptions": 116.17
     },
     "variable_wants": {
-      "partying": 86.9,
-      "dining_out": 142.48,
-      "slop": 51.36000000000001,
+      "partying": 120.84,
+      "dining_out": 123.33,
+      "slop": 47.550000000000004,
       "gym": 0.0,
-      "misc_other": 412.55000000000007
+      "misc_other": 646.9999999999999
     }
   },
   "categories_detail": {
@@ -104,6 +104,11 @@
       "subscriptions": [
         {
           "name": "ANTHROPIC* CLAUDE SUB",
+          "amount": 20.0,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "ANTHROPIC* CLAUDE SUB",
           "amount": 96.17,
           "account": "SoFi Checking"
         }
@@ -115,6 +120,16 @@
           "name": "ECHOSTAGE* ECHOSTAGE",
           "amount": 14.0,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "Uber",
+          "amount": 14.97,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Uber",
+          "amount": 18.97,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay ECHOSTAGE* ECWASHINGTON",
@@ -151,11 +166,6 @@
         {
           "name": "AplPay TST* URBAN FARICHMOND",
           "amount": 9.9,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "DOORDASH",
-          "amount": 19.15,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -201,18 +211,18 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 8.46,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
           "name": "VILLAGE MARKET",
-          "amount": 6.99,
+          "amount": 4.65,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "7-Eleven",
           "amount": 7.96,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 6.99,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -289,13 +299,53 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "SEIBERTS TOWING",
+          "amount": 123.6,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
           "name": "AMEX SEND ACCOUNT",
           "amount": 50.0,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "McDonald's",
-          "amount": 2.22,
+          "name": "COCHILOCO",
+          "amount": 26.1,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 12.75,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "MARATHON PETROLEUM",
+          "amount": 28.02,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 4.38,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 11.99,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay DD *DOORDASAN FRANCISCO",
+          "amount": 19.15,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay ESSENTIAL EXPRichmond",
+          "amount": 8.46,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay K H M CONVENIHENRICO",
+          "amount": 9.79,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -304,8 +354,8 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "K H M CONVENIENCE STORE",
-          "amount": 9.79,
+          "name": "McDonald's",
+          "amount": 2.22,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -398,13 +448,53 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "SEIBERTS TOWING",
+      "amount": 123.6,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
       "name": "AMEX SEND ACCOUNT",
       "amount": 50.0,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "McDonald's",
-      "amount": 2.22,
+      "name": "COCHILOCO",
+      "amount": 26.1,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "K H M CONVENIENCE STORE",
+      "amount": 12.75,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "MARATHON PETROLEUM",
+      "amount": 28.02,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "NATES BAGELS - CARY STREET",
+      "amount": 4.38,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "NATES BAGELS - CARY STREET",
+      "amount": 11.99,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay DD *DOORDASAN FRANCISCO",
+      "amount": 19.15,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay ESSENTIAL EXPRichmond",
+      "amount": 8.46,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay K H M CONVENIHENRICO",
+      "amount": 9.79,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -413,8 +503,8 @@
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "K H M CONVENIENCE STORE",
-      "amount": 9.79,
+      "name": "McDonald's",
+      "amount": 2.22,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -446,7 +536,7 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 4.6,
+      "balance": 99.6,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
@@ -455,6 +545,11 @@
           "name": "ABI'S BOOK CAFE LL",
           "amount": 6.96,
           "category": "misc_other"
+        },
+        {
+          "name": "ANTHROPIC* CLAUDE SUB",
+          "amount": 20.0,
+          "category": "subscriptions"
         },
         {
           "name": "Chick-fil-A",
@@ -608,29 +703,54 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 952.21,
+      "balance": 1011.42,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "Uber",
+          "amount": 14.97,
+          "category": "partying"
+        },
+        {
+          "name": "Uber",
+          "amount": 18.97,
+          "category": "partying"
+        },
         {
           "name": "AMEX SEND ACCOUNT",
           "amount": 50.0,
           "category": "misc_other"
         },
         {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 8.46,
-          "category": "slop"
+          "name": "COCHILOCO",
+          "amount": 26.1,
+          "category": "misc_other"
         },
         {
-          "name": "McDonald's",
-          "amount": 2.22,
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 12.75,
+          "category": "misc_other"
+        },
+        {
+          "name": "MARATHON PETROLEUM",
+          "amount": 28.02,
+          "category": "misc_other"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 4.38,
+          "category": "misc_other"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 11.99,
           "category": "misc_other"
         },
         {
           "name": "VILLAGE MARKET",
-          "amount": 6.99,
+          "amount": 4.65,
           "category": "slop"
         },
         {
@@ -639,14 +759,19 @@
           "category": "slop"
         },
         {
-          "name": "AplPay TST* URBAN FARICHMOND",
-          "amount": 9.9,
-          "category": "dining_out"
+          "name": "AplPay DD *DOORDASAN FRANCISCO",
+          "amount": 19.15,
+          "category": "misc_other"
         },
         {
-          "name": "DOORDASH",
-          "amount": 19.15,
-          "category": "dining_out"
+          "name": "AplPay ESSENTIAL EXPRichmond",
+          "amount": 8.46,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay K H M CONVENIHENRICO",
+          "amount": 9.79,
+          "category": "misc_other"
         },
         {
           "name": "ExxonMobil",
@@ -659,9 +784,19 @@
           "category": "misc_other"
         },
         {
-          "name": "K H M CONVENIENCE STORE",
-          "amount": 9.79,
+          "name": "McDonald's",
+          "amount": 2.22,
           "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 6.99,
+          "category": "slop"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 9.9,
+          "category": "dining_out"
         },
         {
           "name": "AplPay ESSENTIAL EXPRichmond",
@@ -763,6 +898,11 @@
       "limit": 10800.0,
       "transactions": [
         {
+          "name": "SEIBERTS TOWING",
+          "amount": 123.6,
+          "category": "misc_other"
+        },
+        {
           "name": "VCU REC WELL 00-0802RICHMOND",
           "amount": 35.0,
           "category": "misc_other"
@@ -788,7 +928,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 4.6,
+    "actual_checking_balance": 99.6,
     "actual_savings_balance": 1.53
   },
   "debt": {
@@ -808,7 +948,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 952.21
+      "current_balance": 1011.42
     }
   },
   "plans": [
