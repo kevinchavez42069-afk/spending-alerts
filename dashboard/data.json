@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-09-12",
+  "last_updated": "2026-09-13",
   "period_start": "2026-09-02",
-  "period_end": "2026-09-12",
+  "period_end": "2026-09-13",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
       "groceries": 80.39,
-      "gas": 117.42999999999999,
+      "gas": 140.81,
       "parking": 30.7,
-      "subscriptions": 116.17
+      "subscriptions": 117.41
     },
     "variable_wants": {
-      "partying": 120.84,
+      "partying": 169.84,
       "dining_out": 123.33,
       "slop": 47.550000000000004,
       "gym": 0.0,
-      "misc_other": 646.9999999999999
+      "misc_other": 791.7599999999998
     }
   },
   "categories_detail": {
@@ -44,6 +44,11 @@
       ],
       "gas": [
         {
+          "name": "WAWA - STORE",
+          "amount": 23.38,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "ExxonMobil",
           "amount": 65.88,
           "account": "Blue Cash Preferred\u00ae"
@@ -55,6 +60,11 @@
         }
       ],
       "parking": [
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 5.0,
+          "account": "SoFi Checking"
+        },
         {
           "name": "PARKING CITY OF RICHMO",
           "amount": 1.65,
@@ -73,11 +83,6 @@
         {
           "name": "PARKING CITY OF RICHMO",
           "amount": 3.3,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 5.0,
           "account": "SoFi Checking"
         },
         {
@@ -111,6 +116,11 @@
           "name": "ANTHROPIC* CLAUDE SUB",
           "amount": 96.17,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "TUBLY DOWNLOADER",
+          "amount": 1.24,
+          "account": "Blue Cash Preferred\u00ae"
         }
       ]
     },
@@ -120,6 +130,21 @@
           "name": "ECHOSTAGE* ECHOSTAGE",
           "amount": 14.0,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "ECHOSTAGE",
+          "amount": 7.0,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "ECHOSTAGE",
+          "amount": 14.0,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "ECHOSTAGE",
+          "amount": 28.0,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "Uber",
@@ -211,6 +236,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 6.99,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "VILLAGE MARKET",
           "amount": 4.65,
           "account": "Blue Cash Preferred\u00ae"
@@ -218,11 +248,6 @@
         {
           "name": "7-Eleven",
           "amount": 7.96,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 6.99,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -238,6 +263,11 @@
       ],
       "gym": [],
       "misc_other": [
+        {
+          "name": "PMUSA 209010 WASHINGTO",
+          "amount": 2.75,
+          "account": "SoFi Checking"
+        },
         {
           "name": "ABI'S BOOK CAFE LL",
           "amount": 6.96,
@@ -299,12 +329,27 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "DC BOULDERING PROJECT - ECKING",
+          "amount": 2.39,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "MEZCALERO LA COSECHA",
+          "amount": 81.35,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "SEIBERTS TOWING",
           "amount": 123.6,
           "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
-          "name": "AMEX SEND ACCOUNT",
+          "name": "TEDS BULLETIN NOMA",
+          "amount": 58.27,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Amex Send: Add Money",
           "amount": 50.0,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -321,6 +366,11 @@
         {
           "name": "MARATHON PETROLEUM",
           "amount": 28.02,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "McDonald's",
+          "amount": 2.22,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -354,11 +404,6 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "McDonald's",
-          "amount": 2.22,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
           "name": "AplPay ESSENTIAL EXPRichmond",
           "amount": 7.5,
           "account": "Blue Cash Preferred\u00ae"
@@ -387,6 +432,11 @@
     }
   },
   "unmatched_transactions": [
+    {
+      "name": "PMUSA 209010 WASHINGTO",
+      "amount": 2.75,
+      "account": "SoFi Checking"
+    },
     {
       "name": "ABI'S BOOK CAFE LL",
       "amount": 6.96,
@@ -448,12 +498,27 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "DC BOULDERING PROJECT - ECKING",
+      "amount": 2.39,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "MEZCALERO LA COSECHA",
+      "amount": 81.35,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "SEIBERTS TOWING",
       "amount": 123.6,
       "account": "Delta SkyMiles\u00ae Gold Card"
     },
     {
-      "name": "AMEX SEND ACCOUNT",
+      "name": "TEDS BULLETIN NOMA",
+      "amount": 58.27,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Amex Send: Add Money",
       "amount": 50.0,
       "account": "Blue Cash Preferred\u00ae"
     },
@@ -470,6 +535,11 @@
     {
       "name": "MARATHON PETROLEUM",
       "amount": 28.02,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "McDonald's",
+      "amount": 2.22,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -503,11 +573,6 @@
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "McDonald's",
-      "amount": 2.22,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
       "name": "AplPay ESSENTIAL EXPRichmond",
       "amount": 7.5,
       "account": "Blue Cash Preferred\u00ae"
@@ -536,11 +601,21 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 99.6,
+      "balance": 77.95,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 5.0,
+          "category": "parking"
+        },
+        {
+          "name": "PMUSA 209010 WASHINGTO",
+          "amount": 2.75,
+          "category": "misc_other"
+        },
         {
           "name": "ABI'S BOOK CAFE LL",
           "amount": 6.96,
@@ -585,11 +660,6 @@
           "name": "Chipotle Mexican Grill",
           "amount": 14.07,
           "category": "dining_out"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 5.0,
-          "category": "parking"
         },
         {
           "name": "VILLAGE MARKET",
@@ -709,6 +779,41 @@
       "limit": 3000.0,
       "transactions": [
         {
+          "name": "DC BOULDERING PROJECT - ECKING",
+          "amount": 2.39,
+          "category": "misc_other"
+        },
+        {
+          "name": "ECHOSTAGE",
+          "amount": 7.0,
+          "category": "partying"
+        },
+        {
+          "name": "ECHOSTAGE",
+          "amount": 14.0,
+          "category": "partying"
+        },
+        {
+          "name": "ECHOSTAGE",
+          "amount": 28.0,
+          "category": "partying"
+        },
+        {
+          "name": "MEZCALERO LA COSECHA",
+          "amount": 81.35,
+          "category": "misc_other"
+        },
+        {
+          "name": "TEDS BULLETIN NOMA",
+          "amount": 58.27,
+          "category": "misc_other"
+        },
+        {
+          "name": "TUBLY DOWNLOADER",
+          "amount": 1.24,
+          "category": "subscriptions"
+        },
+        {
           "name": "Uber",
           "amount": 14.97,
           "category": "partying"
@@ -719,9 +824,19 @@
           "category": "partying"
         },
         {
-          "name": "AMEX SEND ACCOUNT",
+          "name": "WAWA - STORE",
+          "amount": 23.38,
+          "category": "gas"
+        },
+        {
+          "name": "Amex Send: Add Money",
           "amount": 50.0,
           "category": "misc_other"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 6.99,
+          "category": "slop"
         },
         {
           "name": "COCHILOCO",
@@ -736,6 +851,11 @@
         {
           "name": "MARATHON PETROLEUM",
           "amount": 28.02,
+          "category": "misc_other"
+        },
+        {
+          "name": "McDonald's",
+          "amount": 2.22,
           "category": "misc_other"
         },
         {
@@ -782,16 +902,6 @@
           "name": "Jimmy Johns",
           "amount": 10.56,
           "category": "misc_other"
-        },
-        {
-          "name": "McDonald's",
-          "amount": 2.22,
-          "category": "misc_other"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 6.99,
-          "category": "slop"
         },
         {
           "name": "AplPay TST* URBAN FARICHMOND",
@@ -928,7 +1038,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 99.6,
+    "actual_checking_balance": 77.95,
     "actual_savings_balance": 1.53
   },
   "debt": {
