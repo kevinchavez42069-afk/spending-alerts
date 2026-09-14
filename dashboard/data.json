@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-09-13",
+  "last_updated": "2026-09-14",
   "period_start": "2026-09-02",
-  "period_end": "2026-09-13",
+  "period_end": "2026-09-14",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
       "groceries": 80.39,
-      "gas": 140.81,
+      "gas": 200.81,
       "parking": 30.7,
-      "subscriptions": 117.41
+      "subscriptions": 137.37
     },
     "variable_wants": {
       "partying": 169.84,
-      "dining_out": 123.33,
+      "dining_out": 165.79999999999995,
       "slop": 47.550000000000004,
       "gym": 0.0,
-      "misc_other": 791.7599999999998
+      "misc_other": 749.2899999999997
     }
   },
   "categories_detail": {
@@ -44,6 +44,16 @@
       ],
       "gas": [
         {
+          "name": "WAWA STORE",
+          "amount": 14.63,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "WAWA STORE",
+          "amount": 45.37,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "WAWA - STORE",
           "amount": 23.38,
           "account": "Blue Cash Preferred\u00ae"
@@ -62,12 +72,12 @@
       "parking": [
         {
           "name": "PARKING CITY OF RICHMO",
-          "amount": 5.0,
+          "amount": 1.65,
           "account": "SoFi Checking"
         },
         {
           "name": "PARKING CITY OF RICHMO",
-          "amount": 1.65,
+          "amount": 5.0,
           "account": "SoFi Checking"
         },
         {
@@ -116,6 +126,11 @@
           "name": "ANTHROPIC* CLAUDE SUB",
           "amount": 96.17,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "APPLECOMBILL",
+          "amount": 19.96,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "TUBLY DOWNLOADER",
@@ -189,6 +204,21 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "AplPay TST* COCHILOCRICHMOND",
+          "amount": 26.1,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 4.38,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 11.99,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "AplPay TST* URBAN FARICHMOND",
           "amount": 9.9,
           "account": "Blue Cash Preferred\u00ae"
@@ -237,12 +267,12 @@
         },
         {
           "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 6.99,
+          "amount": 4.65,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "VILLAGE MARKET",
-          "amount": 4.65,
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 6.99,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -329,6 +359,16 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "AplPay K H M CONVENIHENRICO",
+          "amount": 12.75,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay SEIBERT'S TOWRICHMOND",
+          "amount": 123.6,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
           "name": "DC BOULDERING PROJECT - ECKING",
           "amount": 2.39,
           "account": "Blue Cash Preferred\u00ae"
@@ -337,11 +377,6 @@
           "name": "MEZCALERO LA COSECHA",
           "amount": 81.35,
           "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "SEIBERTS TOWING",
-          "amount": 123.6,
-          "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
           "name": "TEDS BULLETIN NOMA",
@@ -354,16 +389,6 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "COCHILOCO",
-          "amount": 26.1,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "K H M CONVENIENCE STORE",
-          "amount": 12.75,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
           "name": "MARATHON PETROLEUM",
           "amount": 28.02,
           "account": "Blue Cash Preferred\u00ae"
@@ -371,16 +396,6 @@
         {
           "name": "McDonald's",
           "amount": 2.22,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 4.38,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 11.99,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -498,6 +513,16 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "AplPay K H M CONVENIHENRICO",
+      "amount": 12.75,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay SEIBERT'S TOWRICHMOND",
+      "amount": 123.6,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
       "name": "DC BOULDERING PROJECT - ECKING",
       "amount": 2.39,
       "account": "Blue Cash Preferred\u00ae"
@@ -506,11 +531,6 @@
       "name": "MEZCALERO LA COSECHA",
       "amount": 81.35,
       "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "SEIBERTS TOWING",
-      "amount": 123.6,
-      "account": "Delta SkyMiles\u00ae Gold Card"
     },
     {
       "name": "TEDS BULLETIN NOMA",
@@ -523,16 +543,6 @@
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "COCHILOCO",
-      "amount": 26.1,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "K H M CONVENIENCE STORE",
-      "amount": 12.75,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
       "name": "MARATHON PETROLEUM",
       "amount": 28.02,
       "account": "Blue Cash Preferred\u00ae"
@@ -540,16 +550,6 @@
     {
       "name": "McDonald's",
       "amount": 2.22,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "NATES BAGELS - CARY STREET",
-      "amount": 4.38,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "NATES BAGELS - CARY STREET",
-      "amount": 11.99,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -601,11 +601,21 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 77.95,
+      "balance": 327.95,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "ANTHROPIC* CLAUDE SUB",
+          "amount": 20.0,
+          "category": "subscriptions"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 1.65,
+          "category": "parking"
+        },
         {
           "name": "PARKING CITY OF RICHMO",
           "amount": 5.0,
@@ -622,19 +632,9 @@
           "category": "misc_other"
         },
         {
-          "name": "ANTHROPIC* CLAUDE SUB",
-          "amount": 20.0,
-          "category": "subscriptions"
-        },
-        {
           "name": "Chick-fil-A",
           "amount": 11.68,
           "category": "misc_other"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 1.65,
-          "category": "parking"
         },
         {
           "name": "PARKING CITY OF RICHMO",
@@ -773,11 +773,51 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1011.42,
+      "balance": 1348.7,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "APPLECOMBILL",
+          "amount": 19.96,
+          "category": "subscriptions"
+        },
+        {
+          "name": "WAWA STORE",
+          "amount": 14.63,
+          "category": "gas"
+        },
+        {
+          "name": "WAWA STORE",
+          "amount": 45.37,
+          "category": "gas"
+        },
+        {
+          "name": "AplPay K H M CONVENIHENRICO",
+          "amount": 12.75,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay TST* COCHILOCRICHMOND",
+          "amount": 26.1,
+          "category": "dining_out"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 4.38,
+          "category": "dining_out"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 11.99,
+          "category": "dining_out"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 4.65,
+          "category": "slop"
+        },
         {
           "name": "DC BOULDERING PROJECT - ECKING",
           "amount": 2.39,
@@ -839,16 +879,6 @@
           "category": "slop"
         },
         {
-          "name": "COCHILOCO",
-          "amount": 26.1,
-          "category": "misc_other"
-        },
-        {
-          "name": "K H M CONVENIENCE STORE",
-          "amount": 12.75,
-          "category": "misc_other"
-        },
-        {
           "name": "MARATHON PETROLEUM",
           "amount": 28.02,
           "category": "misc_other"
@@ -857,21 +887,6 @@
           "name": "McDonald's",
           "amount": 2.22,
           "category": "misc_other"
-        },
-        {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 4.38,
-          "category": "misc_other"
-        },
-        {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 11.99,
-          "category": "misc_other"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 4.65,
-          "category": "slop"
         },
         {
           "name": "7-Eleven",
@@ -1002,13 +1017,13 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 4807.82,
+      "balance": 5030.03,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
       "transactions": [
         {
-          "name": "SEIBERTS TOWING",
+          "name": "AplPay SEIBERT'S TOWRICHMOND",
           "amount": 123.6,
           "category": "misc_other"
         },
@@ -1038,7 +1053,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 77.95,
+    "actual_checking_balance": 327.95,
     "actual_savings_balance": 1.53
   },
   "debt": {
@@ -1050,7 +1065,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 4807.82
+      "current_balance": 5030.03
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -1058,7 +1073,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1011.42
+      "current_balance": 1348.7
     }
   },
   "plans": [
