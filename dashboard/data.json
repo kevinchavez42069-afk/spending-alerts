@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-16",
+  "last_updated": "2026-09-17",
   "period_start": "2026-09-16",
-  "period_end": "2026-09-16",
+  "period_end": "2026-09-17",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -9,15 +9,15 @@
     "variable_needs": {
       "groceries": 0.0,
       "gas": 0.0,
-      "parking": 5.0,
+      "parking": 20.37,
       "subscriptions": 0.0
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 6.85,
+      "dining_out": 27.58,
       "slop": 0.0,
       "gym": 0.0,
-      "misc_other": 18.72
+      "misc_other": 41.72
     }
   },
   "categories_detail": {
@@ -28,6 +28,26 @@
       "groceries": [],
       "gas": [],
       "parking": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 1.65,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.82,
+          "account": "SoFi Checking"
+        },
         {
           "name": "PARKING CITY OF RICHMO",
           "amount": 5.0,
@@ -40,6 +60,16 @@
       "partying": [],
       "dining_out": [
         {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 6.66,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "TST* URBAN FARMHOUSE M",
           "amount": 6.85,
           "account": "SoFi Checking"
@@ -48,6 +78,11 @@
       "slop": [],
       "gym": [],
       "misc_other": [
+        {
+          "name": "CBI*rekordbox",
+          "amount": 23.0,
+          "account": "SoFi Checking"
+        },
         {
           "name": "Domino's",
           "amount": 18.72,
@@ -58,6 +93,11 @@
   },
   "unmatched_transactions": [
     {
+      "name": "CBI*rekordbox",
+      "amount": 23.0,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "Domino's",
       "amount": 18.72,
       "account": "SoFi Checking"
@@ -66,11 +106,46 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 301.48,
+      "balance": 252.98,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "CBI*rekordbox",
+          "amount": 23.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "category": "dining_out"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "category": "parking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "category": "parking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 1.65,
+          "category": "parking"
+        },
+        {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 6.66,
+          "category": "dining_out"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.82,
+          "category": "parking"
+        },
         {
           "name": "Domino's",
           "amount": 18.72,
@@ -98,7 +173,7 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1436.3,
+      "balance": 872.13,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
@@ -106,7 +181,7 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 5030.03,
+      "balance": 4882.11,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
@@ -131,7 +206,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 301.48,
+    "actual_checking_balance": 252.98,
     "actual_savings_balance": 1.53
   },
   "debt": {
@@ -143,7 +218,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 5030.03
+      "current_balance": 4882.11
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -151,7 +226,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1436.3
+      "current_balance": 872.13
     }
   },
   "plans": [
