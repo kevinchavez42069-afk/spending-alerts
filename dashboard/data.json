@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-17",
+  "last_updated": "2026-09-18",
   "period_start": "2026-09-16",
-  "period_end": "2026-09-17",
+  "period_end": "2026-09-18",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -9,15 +9,15 @@
     "variable_needs": {
       "groceries": 0.0,
       "gas": 0.0,
-      "parking": 20.37,
+      "parking": 28.319999999999997,
       "subscriptions": 0.0
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 27.58,
-      "slop": 0.0,
+      "dining_out": 50.69,
+      "slop": 17.270000000000003,
       "gym": 0.0,
-      "misc_other": 41.72
+      "misc_other": 265.17
     }
   },
   "categories_detail": {
@@ -28,6 +28,21 @@
       "groceries": [],
       "gas": [],
       "parking": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.82,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 5.0,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.95,
+          "account": "SoFi Checking"
+        },
         {
           "name": "City of Richmond/Parkh",
           "amount": 4.45,
@@ -41,11 +56,6 @@
         {
           "name": "PARKING CITY OF RICHMO",
           "amount": 1.65,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.82,
           "account": "SoFi Checking"
         },
         {
@@ -60,6 +70,11 @@
       "partying": [],
       "dining_out": [
         {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 6.85,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "Chipotle Mexican Grill",
           "amount": 14.07,
           "account": "SoFi Checking"
@@ -70,12 +85,28 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "TST* URBAN FARMHOUSE M",
-          "amount": 6.85,
-          "account": "SoFi Checking"
+          "name": "AplPay TST* LATIN QUNORTH CHESTERFI",
+          "amount": 23.11,
+          "account": "Blue Cash Preferred\u00ae"
         }
       ],
-      "slop": [],
+      "slop": [
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.55,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 8.07,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 4.65,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "gym": [],
       "misc_other": [
         {
@@ -84,9 +115,29 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "Cook Out",
+          "amount": 7.64,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "Domino's",
           "amount": 18.72,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "COCHILOCO",
+          "amount": 32.54,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "LUCKY ROAD RUN SHOP",
+          "amount": 164.62,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 18.65,
+          "account": "Blue Cash Preferred\u00ae"
         }
       ]
     }
@@ -98,19 +149,54 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "Cook Out",
+      "amount": 7.64,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "Domino's",
       "amount": 18.72,
       "account": "SoFi Checking"
+    },
+    {
+      "name": "COCHILOCO",
+      "amount": 32.54,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "LUCKY ROAD RUN SHOP",
+      "amount": 164.62,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "NATES BAGELS - CARY STREET",
+      "amount": 18.65,
+      "account": "Blue Cash Preferred\u00ae"
     }
   ],
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 252.98,
+      "balance": 241.31,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.82,
+          "category": "parking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 5.0,
+          "category": "parking"
+        },
+        {
+          "name": "TST* URBAN FARMHOUSE M",
+          "amount": 6.85,
+          "category": "dining_out"
+        },
         {
           "name": "CBI*rekordbox",
           "amount": 23.0,
@@ -123,6 +209,11 @@
         },
         {
           "name": "City of Richmond/Parkh",
+          "amount": 2.95,
+          "category": "parking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
           "amount": 4.45,
           "category": "parking"
         },
@@ -130,6 +221,11 @@
           "name": "City of Richmond/Parkh",
           "amount": 4.45,
           "category": "parking"
+        },
+        {
+          "name": "Cook Out",
+          "amount": 7.64,
+          "category": "misc_other"
         },
         {
           "name": "PARKING CITY OF RICHMO",
@@ -142,11 +238,6 @@
           "category": "dining_out"
         },
         {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.82,
-          "category": "parking"
-        },
-        {
           "name": "Domino's",
           "amount": 18.72,
           "category": "misc_other"
@@ -155,11 +246,6 @@
           "name": "PARKING CITY OF RICHMO",
           "amount": 5.0,
           "category": "parking"
-        },
-        {
-          "name": "TST* URBAN FARMHOUSE M",
-          "amount": 6.85,
-          "category": "dining_out"
         }
       ]
     },
@@ -177,7 +263,38 @@
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
-      "transactions": []
+      "transactions": [
+        {
+          "name": "COCHILOCO",
+          "amount": 32.54,
+          "category": "misc_other"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 18.65,
+          "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.55,
+          "category": "slop"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 8.07,
+          "category": "slop"
+        },
+        {
+          "name": "AplPay TST* LATIN QUNORTH CHESTERFI",
+          "amount": 23.11,
+          "category": "dining_out"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 4.65,
+          "category": "slop"
+        }
+      ]
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
@@ -185,7 +302,13 @@
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
-      "transactions": []
+      "transactions": [
+        {
+          "name": "LUCKY ROAD RUN SHOP",
+          "amount": 164.62,
+          "category": "misc_other"
+        }
+      ]
     }
   ],
   "caps": {
@@ -206,7 +329,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 252.98,
+    "actual_checking_balance": 241.31,
     "actual_savings_balance": 1.53
   },
   "debt": {
