@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-09-18",
+  "last_updated": "2026-09-19",
   "period_start": "2026-09-16",
-  "period_end": "2026-09-18",
+  "period_end": "2026-09-19",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
-      "groceries": 0.0,
+      "groceries": 22.7,
       "gas": 0.0,
-      "parking": 28.319999999999997,
-      "subscriptions": 0.0
+      "parking": 31.27,
+      "subscriptions": 14.99
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 50.69,
-      "slop": 17.270000000000003,
+      "dining_out": 131.91000000000003,
+      "slop": 35.27,
       "gym": 0.0,
-      "misc_other": 265.17
+      "misc_other": 735.06
     }
   },
   "categories_detail": {
@@ -25,19 +25,15 @@
       "rent": []
     },
     "variable_needs": {
-      "groceries": [],
+      "groceries": [
+        {
+          "name": "Target",
+          "amount": 22.7,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "gas": [],
       "parking": [
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.82,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 5.0,
-          "account": "SoFi Checking"
-        },
         {
           "name": "City of Richmond/Parkh",
           "amount": 2.95,
@@ -54,6 +50,21 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.95,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.82,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 5.0,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "PARKING CITY OF RICHMO",
           "amount": 1.65,
           "account": "SoFi Checking"
@@ -64,7 +75,13 @@
           "account": "SoFi Checking"
         }
       ],
-      "subscriptions": []
+      "subscriptions": [
+        {
+          "name": "Amazon Prime",
+          "amount": 14.99,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ]
     },
     "variable_wants": {
       "partying": [],
@@ -85,6 +102,21 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "AplPay TST* COCHILOCRICHMOND",
+          "amount": 32.54,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 18.65,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "DOORDASH",
+          "amount": 30.03,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
           "name": "AplPay TST* LATIN QUNORTH CHESTERFI",
           "amount": 23.11,
           "account": "Blue Cash Preferred\u00ae"
@@ -92,7 +124,12 @@
       ],
       "slop": [
         {
-          "name": "VILLAGE MARKET",
+          "name": "*CLAYD MARKET",
+          "amount": 18.0,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 4.55,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -125,19 +162,24 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "COCHILOCO",
-          "amount": 32.54,
+          "name": "AplPay ABI'S BOOK CARichmond",
+          "amount": 6.96,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "LUCKY ROAD RUN SHOP",
+          "name": "AplPay FSP*LUCKY ROARICHMOND",
           "amount": 164.62,
           "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
           "name": "NATES BAGELS - CARY STREET",
-          "amount": 18.65,
+          "amount": 11.47,
           "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "SPORTS BACKERS",
+          "amount": 502.65,
+          "account": "Delta SkyMiles\u00ae Gold Card"
         }
       ]
     }
@@ -159,29 +201,59 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "COCHILOCO",
-      "amount": 32.54,
+      "name": "AplPay ABI'S BOOK CARichmond",
+      "amount": 6.96,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "LUCKY ROAD RUN SHOP",
+      "name": "AplPay FSP*LUCKY ROARICHMOND",
       "amount": 164.62,
       "account": "Delta SkyMiles\u00ae Gold Card"
     },
     {
       "name": "NATES BAGELS - CARY STREET",
-      "amount": 18.65,
+      "amount": 11.47,
       "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "SPORTS BACKERS",
+      "amount": 502.65,
+      "account": "Delta SkyMiles\u00ae Gold Card"
     }
   ],
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 241.31,
+      "balance": 229.46,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.95,
+          "category": "parking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "category": "parking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "category": "parking"
+        },
+        {
+          "name": "*CLAYD MARKET",
+          "amount": 18.0,
+          "category": "slop"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.95,
+          "category": "parking"
+        },
         {
           "name": "City of Richmond/Parkh",
           "amount": 4.82,
@@ -206,21 +278,6 @@
           "name": "Chipotle Mexican Grill",
           "amount": 14.07,
           "category": "dining_out"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.95,
-          "category": "parking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "category": "parking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "category": "parking"
         },
         {
           "name": "Cook Out",
@@ -259,25 +316,45 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 872.13,
+      "balance": 934.83,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
-          "name": "COCHILOCO",
-          "amount": 32.54,
+          "name": "Amazon Prime",
+          "amount": 14.99,
+          "category": "subscriptions"
+        },
+        {
+          "name": "AplPay ABI'S BOOK CARichmond",
+          "amount": 6.96,
           "category": "misc_other"
+        },
+        {
+          "name": "AplPay TST* COCHILOCRICHMOND",
+          "amount": 32.54,
+          "category": "dining_out"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 18.65,
+          "category": "dining_out"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 4.55,
+          "category": "slop"
         },
         {
           "name": "NATES BAGELS - CARY STREET",
-          "amount": 18.65,
+          "amount": 11.47,
           "category": "misc_other"
         },
         {
-          "name": "VILLAGE MARKET",
-          "amount": 4.55,
-          "category": "slop"
+          "name": "Target",
+          "amount": 22.7,
+          "category": "groceries"
         },
         {
           "name": "7-Eleven",
@@ -298,14 +375,24 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 4882.11,
+      "balance": 5046.73,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
       "transactions": [
         {
-          "name": "LUCKY ROAD RUN SHOP",
+          "name": "AplPay FSP*LUCKY ROARICHMOND",
           "amount": 164.62,
+          "category": "misc_other"
+        },
+        {
+          "name": "DOORDASH",
+          "amount": 30.03,
+          "category": "dining_out"
+        },
+        {
+          "name": "SPORTS BACKERS",
+          "amount": 502.65,
           "category": "misc_other"
         }
       ]
@@ -329,7 +416,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 241.31,
+    "actual_checking_balance": 229.46,
     "actual_savings_balance": 1.53
   },
   "debt": {
@@ -341,7 +428,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 4882.11
+      "current_balance": 5046.73
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -349,7 +436,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 872.13
+      "current_balance": 934.83
     }
   },
   "plans": [
