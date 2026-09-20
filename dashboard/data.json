@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-09-19",
+  "last_updated": "2026-09-20",
   "period_start": "2026-09-16",
-  "period_end": "2026-09-19",
+  "period_end": "2026-09-20",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
-      "groceries": 22.7,
+      "groceries": 87.98,
       "gas": 0.0,
       "parking": 31.27,
       "subscriptions": 14.99
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 131.91000000000003,
+      "dining_out": 146.55,
       "slop": 35.27,
-      "gym": 0.0,
-      "misc_other": 735.06
+      "gym": 3.52,
+      "misc_other": 795.8
     }
   },
   "categories_detail": {
@@ -26,6 +26,16 @@
     },
     "variable_needs": {
       "groceries": [
+        {
+          "name": "Aldi",
+          "amount": 40.28,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Target",
+          "amount": 25.0,
+          "account": "Blue Cash Preferred\u00ae"
+        },
         {
           "name": "Target",
           "amount": 22.7,
@@ -40,13 +50,8 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
+          "name": "PARKING CITY OF RICHMO",
+          "amount": 5.0,
           "account": "SoFi Checking"
         },
         {
@@ -56,12 +61,17 @@
         },
         {
           "name": "City of Richmond/Parkh",
-          "amount": 4.82,
+          "amount": 4.45,
           "account": "SoFi Checking"
         },
         {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 5.0,
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.82,
           "account": "SoFi Checking"
         },
         {
@@ -100,6 +110,11 @@
           "name": "TST* URBAN FARMHOUSE M",
           "amount": 6.66,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.64,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay TST* COCHILOCRICHMOND",
@@ -144,22 +159,38 @@
           "account": "Blue Cash Preferred\u00ae"
         }
       ],
-      "gym": [],
-      "misc_other": [
+      "gym": [
         {
-          "name": "CBI*rekordbox",
-          "amount": 23.0,
+          "name": "Vitamin Shoppe",
+          "amount": 3.52,
           "account": "SoFi Checking"
-        },
+        }
+      ],
+      "misc_other": [
         {
           "name": "Cook Out",
           "amount": 7.64,
           "account": "SoFi Checking"
         },
         {
+          "name": "CBI*rekordbox",
+          "amount": 23.0,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "Domino's",
           "amount": 18.72,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "1323 RICHMND WILLOW LAWN",
+          "amount": 37.1,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "LUCKY ROAD RUN SHOP",
+          "amount": 23.64,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay ABI'S BOOK CARichmond",
@@ -186,19 +217,29 @@
   },
   "unmatched_transactions": [
     {
-      "name": "CBI*rekordbox",
-      "amount": 23.0,
+      "name": "Cook Out",
+      "amount": 7.64,
       "account": "SoFi Checking"
     },
     {
-      "name": "Cook Out",
-      "amount": 7.64,
+      "name": "CBI*rekordbox",
+      "amount": 23.0,
       "account": "SoFi Checking"
     },
     {
       "name": "Domino's",
       "amount": 18.72,
       "account": "SoFi Checking"
+    },
+    {
+      "name": "1323 RICHMND WILLOW LAWN",
+      "amount": 37.1,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "LUCKY ROAD RUN SHOP",
+      "amount": 23.64,
+      "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "AplPay ABI'S BOOK CARichmond",
@@ -224,26 +265,11 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 229.46,
+      "balance": 195.87,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.95,
-          "category": "parking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "category": "parking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "category": "parking"
-        },
         {
           "name": "*CLAYD MARKET",
           "amount": 18.0,
@@ -255,13 +281,38 @@
           "category": "parking"
         },
         {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.82,
-          "category": "parking"
+          "name": "Cook Out",
+          "amount": 7.64,
+          "category": "misc_other"
         },
         {
           "name": "PARKING CITY OF RICHMO",
           "amount": 5.0,
+          "category": "parking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.95,
+          "category": "parking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "category": "parking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "category": "parking"
+        },
+        {
+          "name": "Vitamin Shoppe",
+          "amount": 3.52,
+          "category": "gym"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.82,
           "category": "parking"
         },
         {
@@ -278,11 +329,6 @@
           "name": "Chipotle Mexican Grill",
           "amount": 14.07,
           "category": "dining_out"
-        },
-        {
-          "name": "Cook Out",
-          "amount": 7.64,
-          "category": "misc_other"
         },
         {
           "name": "PARKING CITY OF RICHMO",
@@ -321,6 +367,26 @@
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "Aldi",
+          "amount": 40.28,
+          "category": "groceries"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.64,
+          "category": "dining_out"
+        },
+        {
+          "name": "LUCKY ROAD RUN SHOP",
+          "amount": 23.64,
+          "category": "misc_other"
+        },
+        {
+          "name": "Target",
+          "amount": 25.0,
+          "category": "groceries"
+        },
         {
           "name": "Amazon Prime",
           "amount": 14.99,
@@ -381,6 +447,11 @@
       "limit": 10800.0,
       "transactions": [
         {
+          "name": "1323 RICHMND WILLOW LAWN",
+          "amount": 37.1,
+          "category": "misc_other"
+        },
+        {
           "name": "AplPay FSP*LUCKY ROARICHMOND",
           "amount": 164.62,
           "category": "misc_other"
@@ -416,7 +487,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 229.46,
+    "actual_checking_balance": 195.87,
     "actual_savings_balance": 1.53
   },
   "debt": {
