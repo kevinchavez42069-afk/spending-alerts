@@ -1,28 +1,39 @@
 {
-  "last_updated": "2026-09-21",
+  "last_updated": "2026-09-22",
   "period_start": "2026-09-16",
-  "period_end": "2026-09-21",
+  "period_end": "2026-09-22",
   "categories": {
     "fixed_costs": {
-      "rent": 0.0
+      "rent": 827.49
     },
     "variable_needs": {
       "groceries": 87.98,
       "gas": 0.0,
       "parking": 31.27,
-      "subscriptions": 14.99
+      "subscriptions": 33.96
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 127.99,
-      "slop": 73.2,
+      "dining_out": 143.09000000000003,
+      "slop": 77.31,
       "gym": 3.52,
-      "misc_other": 874.18
+      "misc_other": 895.37
     }
   },
   "categories_detail": {
     "fixed_costs": {
-      "rent": []
+      "rent": [
+        {
+          "name": "AppFolio, Inc. F",
+          "amount": 2.49,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "CVA Properties L",
+          "amount": 825.0,
+          "account": "SoFi Checking"
+        }
+      ]
     },
     "variable_needs": {
       "groceries": [
@@ -87,6 +98,11 @@
       ],
       "subscriptions": [
         {
+          "name": "APPLECOMBILL",
+          "amount": 18.97,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "Amazon Prime",
           "amount": 14.99,
           "account": "Blue Cash Preferred\u00ae"
@@ -110,6 +126,11 @@
           "name": "TST* URBAN FARMHOUSE M",
           "amount": 6.66,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 15.1,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "Chipotle Mexican Grill",
@@ -142,6 +163,11 @@
           "name": "*CLAYD MARKET",
           "amount": 18.0,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "7-Eleven",
@@ -191,6 +217,11 @@
           "name": "Domino's",
           "amount": 18.72,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "EXPERIMAC OF RICHMOND",
+          "amount": 21.19,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
@@ -262,6 +293,11 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "EXPERIMAC OF RICHMOND",
+      "amount": 21.19,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "URBAN FARMHOUSE MARKET AND CAF",
       "amount": 7.03,
       "account": "Blue Cash Preferred\u00ae"
@@ -315,11 +351,21 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 192.35,
+      "balance": 139.67,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "AppFolio, Inc. F",
+          "amount": 2.49,
+          "category": "rent"
+        },
+        {
+          "name": "CVA Properties L",
+          "amount": 825.0,
+          "category": "rent"
+        },
         {
           "name": "Vitamin Shoppe",
           "amount": 3.52,
@@ -412,15 +458,35 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1140.34,
+      "balance": 1206.42,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
+          "name": "APPLECOMBILL",
+          "amount": 18.97,
+          "category": "subscriptions"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 15.1,
+          "category": "dining_out"
+        },
+        {
+          "name": "EXPERIMAC OF RICHMOND",
+          "amount": 21.19,
+          "category": "misc_other"
+        },
+        {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
           "amount": 7.03,
           "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
+          "category": "slop"
         },
         {
           "name": "7-Eleven",
@@ -567,7 +633,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 192.35,
+    "actual_checking_balance": 139.67,
     "actual_savings_balance": 1.53
   },
   "debt": {
@@ -587,7 +653,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1140.34
+      "current_balance": 1206.42
     }
   },
   "plans": [
