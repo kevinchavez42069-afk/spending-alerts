@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-09-22",
+  "last_updated": "2026-09-23",
   "period_start": "2026-09-16",
-  "period_end": "2026-09-22",
+  "period_end": "2026-09-23",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
     },
     "variable_needs": {
-      "groceries": 87.98,
+      "groceries": 122.85000000000001,
       "gas": 0.0,
-      "parking": 31.27,
+      "parking": 39.29,
       "subscriptions": 33.96
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 143.09000000000003,
-      "slop": 77.31,
+      "dining_out": 150.12,
+      "slop": 81.17000000000002,
       "gym": 3.52,
-      "misc_other": 895.37
+      "misc_other": 909.59
     }
   },
   "categories_detail": {
@@ -38,6 +38,11 @@
     "variable_needs": {
       "groceries": [
         {
+          "name": "Kroger",
+          "amount": 34.87,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "AplPay ALDI INC 0004RICHMOND",
           "amount": 40.28,
           "account": "Blue Cash Preferred\u00ae"
@@ -55,6 +60,16 @@
       ],
       "gas": [],
       "parking": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 3.57,
+          "account": "SoFi Checking"
+        },
         {
           "name": "City of Richmond/Parkh",
           "amount": 2.95,
@@ -128,6 +143,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 7.03,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "Chipotle Mexican Grill",
           "amount": 15.1,
           "account": "Blue Cash Preferred\u00ae"
@@ -165,8 +185,8 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "VILLAGE MARKET",
-          "amount": 4.11,
+          "name": "7-Eleven",
+          "amount": 3.93,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -176,7 +196,12 @@
         },
         {
           "name": "7-Eleven",
-          "amount": 34.0,
+          "amount": 33.93,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -219,13 +244,18 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "EXPERIMAC OF RICHMOND",
-          "amount": 21.19,
+          "name": "CVS",
+          "amount": 8.26,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 7.03,
+          "name": "SPLICE",
+          "amount": 12.99,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "AplPay EXPERIMAC OF",
+          "amount": 21.19,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -293,13 +323,18 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "EXPERIMAC OF RICHMOND",
-      "amount": 21.19,
+      "name": "CVS",
+      "amount": 8.26,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "URBAN FARMHOUSE MARKET AND CAF",
-      "amount": 7.03,
+      "name": "SPLICE",
+      "amount": 12.99,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "AplPay EXPERIMAC OF",
+      "amount": 21.19,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -356,6 +391,16 @@
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "category": "parking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 3.57,
+          "category": "parking"
+        },
         {
           "name": "AppFolio, Inc. F",
           "amount": 2.49,
@@ -458,35 +503,25 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1206.42,
+      "balance": 1244.6,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
-          "name": "APPLECOMBILL",
-          "amount": 18.97,
-          "category": "subscriptions"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 15.1,
-          "category": "dining_out"
-        },
-        {
-          "name": "EXPERIMAC OF RICHMOND",
-          "amount": 21.19,
-          "category": "misc_other"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 7.03,
-          "category": "misc_other"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 4.11,
+          "name": "7-Eleven",
+          "amount": 3.93,
           "category": "slop"
+        },
+        {
+          "name": "Kroger",
+          "amount": 34.87,
+          "category": "groceries"
+        },
+        {
+          "name": "CVS",
+          "amount": 8.26,
+          "category": "misc_other"
         },
         {
           "name": "7-Eleven",
@@ -495,7 +530,32 @@
         },
         {
           "name": "7-Eleven",
-          "amount": 34.0,
+          "amount": 33.93,
+          "category": "slop"
+        },
+        {
+          "name": "APPLECOMBILL",
+          "amount": 18.97,
+          "category": "subscriptions"
+        },
+        {
+          "name": "AplPay EXPERIMAC OF",
+          "amount": 21.19,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 7.03,
+          "category": "dining_out"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 15.1,
+          "category": "dining_out"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
           "category": "slop"
         },
         {
@@ -587,11 +647,16 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 5616.51,
+      "balance": 5629.5,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
       "transactions": [
+        {
+          "name": "SPLICE",
+          "amount": 12.99,
+          "category": "misc_other"
+        },
         {
           "name": "AplPay DD *DOORDASAN FRANCISCO",
           "amount": 30.03,
@@ -645,7 +710,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 5616.51
+      "current_balance": 5629.5
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -653,7 +718,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1206.42
+      "current_balance": 1244.6
     }
   },
   "plans": [
