@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-09-23",
+  "last_updated": "2026-09-24",
   "period_start": "2026-09-16",
-  "period_end": "2026-09-23",
+  "period_end": "2026-09-24",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
     },
     "variable_needs": {
-      "groceries": 122.85000000000001,
+      "groceries": 129.37,
       "gas": 0.0,
       "parking": 39.29,
-      "subscriptions": 33.96
+      "subscriptions": 14.99
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 150.12,
-      "slop": 81.17000000000002,
+      "dining_out": 159.18,
+      "slop": 89.17000000000002,
       "gym": 3.52,
-      "misc_other": 909.59
+      "misc_other": 945.2600000000001
     }
   },
   "categories_detail": {
@@ -43,6 +43,11 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
+          "name": "Target",
+          "amount": 6.52,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "AplPay ALDI INC 0004RICHMOND",
           "amount": 40.28,
           "account": "Blue Cash Preferred\u00ae"
@@ -62,12 +67,12 @@
       "parking": [
         {
           "name": "City of Richmond/Parkh",
-          "amount": 4.45,
+          "amount": 3.57,
           "account": "SoFi Checking"
         },
         {
           "name": "City of Richmond/Parkh",
-          "amount": 3.57,
+          "amount": 4.45,
           "account": "SoFi Checking"
         },
         {
@@ -113,11 +118,6 @@
       ],
       "subscriptions": [
         {
-          "name": "APPLECOMBILL",
-          "amount": 18.97,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
           "name": "Amazon Prime",
           "amount": 14.99,
           "account": "Blue Cash Preferred\u00ae"
@@ -127,6 +127,11 @@
     "variable_wants": {
       "partying": [],
       "dining_out": [
+        {
+          "name": "TST*NATES BAGELS - CAR",
+          "amount": 9.06,
+          "account": "SoFi Checking"
+        },
         {
           "name": "TST* URBAN FARMHOUSE M",
           "amount": 6.85,
@@ -143,13 +148,13 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "AplPay TST* URBAN FARICHMOND",
-          "amount": 7.03,
+          "name": "Chipotle Mexican Grill",
+          "amount": 15.1,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "Chipotle Mexican Grill",
-          "amount": 15.1,
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 7.03,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -185,8 +190,18 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "CLAYD MARKET",
+          "amount": 8.0,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "7-Eleven",
           "amount": 3.93,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 4.11,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -197,11 +212,6 @@
         {
           "name": "7-Eleven",
           "amount": 33.93,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 4.11,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -230,6 +240,11 @@
       "misc_other": [
         {
           "name": "Cook Out",
+          "amount": 16.7,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "Cook Out",
           "amount": 7.64,
           "account": "SoFi Checking"
         },
@@ -244,12 +259,17 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "CVS",
+          "name": "AplPay CVS PHARMACY",
           "amount": 8.26,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "SPLICE",
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 18.97,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "SPLICE.COM",
           "amount": 12.99,
           "account": "Delta SkyMiles\u00ae Gold Card"
         },
@@ -309,6 +329,11 @@
   "unmatched_transactions": [
     {
       "name": "Cook Out",
+      "amount": 16.7,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "Cook Out",
       "amount": 7.64,
       "account": "SoFi Checking"
     },
@@ -323,12 +348,17 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "CVS",
+      "name": "AplPay CVS PHARMACY",
       "amount": 8.26,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "SPLICE",
+      "name": "APPLE.COM/BILL INTERNET CHARGE",
+      "amount": 18.97,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "SPLICE.COM",
       "amount": 12.99,
       "account": "Delta SkyMiles\u00ae Gold Card"
     },
@@ -386,20 +416,30 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 139.67,
+      "balance": 566.1,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
         {
           "name": "City of Richmond/Parkh",
+          "amount": 3.57,
+          "category": "parking"
+        },
+        {
+          "name": "TST*NATES BAGELS - CAR",
+          "amount": 9.06,
+          "category": "dining_out"
+        },
+        {
+          "name": "City of Richmond/Parkh",
           "amount": 4.45,
           "category": "parking"
         },
         {
-          "name": "City of Richmond/Parkh",
-          "amount": 3.57,
-          "category": "parking"
+          "name": "Cook Out",
+          "amount": 16.7,
+          "category": "misc_other"
         },
         {
           "name": "AppFolio, Inc. F",
@@ -503,15 +543,25 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1244.6,
+      "balance": 1256.79,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
+          "name": "CLAYD MARKET",
+          "amount": 8.0,
+          "category": "slop"
+        },
+        {
           "name": "7-Eleven",
           "amount": 3.93,
           "category": "slop"
+        },
+        {
+          "name": "AplPay CVS PHARMACY",
+          "amount": 8.26,
+          "category": "misc_other"
         },
         {
           "name": "Kroger",
@@ -519,9 +569,24 @@
           "category": "groceries"
         },
         {
-          "name": "CVS",
-          "amount": 8.26,
+          "name": "Target",
+          "amount": 6.52,
+          "category": "groceries"
+        },
+        {
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 18.97,
           "category": "misc_other"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 4.11,
+          "category": "slop"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 15.1,
+          "category": "dining_out"
         },
         {
           "name": "7-Eleven",
@@ -534,11 +599,6 @@
           "category": "slop"
         },
         {
-          "name": "APPLECOMBILL",
-          "amount": 18.97,
-          "category": "subscriptions"
-        },
-        {
           "name": "AplPay EXPERIMAC OF",
           "amount": 21.19,
           "category": "misc_other"
@@ -547,16 +607,6 @@
           "name": "AplPay TST* URBAN FARICHMOND",
           "amount": 7.03,
           "category": "dining_out"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 15.1,
-          "category": "dining_out"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 4.11,
-          "category": "slop"
         },
         {
           "name": "AMAZON DIGITAL SVCS AMZN.COM/BILL",
@@ -653,7 +703,7 @@
       "limit": 10800.0,
       "transactions": [
         {
-          "name": "SPLICE",
+          "name": "SPLICE.COM",
           "amount": 12.99,
           "category": "misc_other"
         },
@@ -698,7 +748,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 139.67,
+    "actual_checking_balance": 566.1,
     "actual_savings_balance": 1.53
   },
   "debt": {
@@ -718,7 +768,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1244.6
+      "current_balance": 1256.79
     }
   },
   "plans": [
