@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-24",
+  "last_updated": "2026-09-25",
   "period_start": "2026-09-16",
-  "period_end": "2026-09-24",
+  "period_end": "2026-09-25",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
@@ -9,15 +9,15 @@
     "variable_needs": {
       "groceries": 129.37,
       "gas": 0.0,
-      "parking": 39.29,
+      "parking": 42.24,
       "subscriptions": 14.99
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 159.18,
-      "slop": 89.17000000000002,
+      "dining_out": 180.24,
+      "slop": 93.28,
       "gym": 3.52,
-      "misc_other": 945.2600000000001
+      "misc_other": 1066.22
     }
   },
   "categories_detail": {
@@ -38,13 +38,13 @@
     "variable_needs": {
       "groceries": [
         {
-          "name": "Kroger",
-          "amount": 34.87,
+          "name": "AplPay TARGET",
+          "amount": 6.52,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "Target",
-          "amount": 6.52,
+          "name": "Kroger",
+          "amount": 34.87,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -67,12 +67,17 @@
       "parking": [
         {
           "name": "City of Richmond/Parkh",
-          "amount": 3.57,
+          "amount": 4.45,
           "account": "SoFi Checking"
         },
         {
           "name": "City of Richmond/Parkh",
-          "amount": 4.45,
+          "amount": 2.95,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 3.57,
           "account": "SoFi Checking"
         },
         {
@@ -127,6 +132,16 @@
     "variable_wants": {
       "partying": [],
       "dining_out": [
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 11.41,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "GrubHub",
+          "amount": 9.65,
+          "account": "SoFi Checking"
+        },
         {
           "name": "TST*NATES BAGELS - CAR",
           "amount": 9.06,
@@ -195,6 +210,11 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "7-Eleven",
           "amount": 3.93,
           "account": "Blue Cash Preferred\u00ae"
@@ -257,6 +277,21 @@
           "name": "Domino's",
           "amount": 18.72,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "AplPay ABI'S BOOK CARichmond",
+          "amount": 15.75,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "PENNY LANE PUB RESTAURANT",
+          "amount": 15.0,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "PENNY LANE PUB RESTAURANT",
+          "amount": 90.21,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay CVS PHARMACY",
@@ -348,6 +383,21 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "AplPay ABI'S BOOK CARichmond",
+      "amount": 15.75,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "PENNY LANE PUB RESTAURANT",
+      "amount": 15.0,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "PENNY LANE PUB RESTAURANT",
+      "amount": 90.21,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "AplPay CVS PHARMACY",
       "amount": 8.26,
       "account": "Blue Cash Preferred\u00ae"
@@ -416,25 +466,40 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 566.1,
+      "balance": 561.65,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
         {
           "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "category": "parking"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 11.41,
+          "category": "dining_out"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 2.95,
+          "category": "parking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
           "amount": 3.57,
           "category": "parking"
+        },
+        {
+          "name": "GrubHub",
+          "amount": 9.65,
+          "category": "dining_out"
         },
         {
           "name": "TST*NATES BAGELS - CAR",
           "amount": 9.06,
           "category": "dining_out"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "category": "parking"
         },
         {
           "name": "Cook Out",
@@ -543,14 +608,44 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1256.79,
+      "balance": 1313.93,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
+          "name": "AplPay ABI'S BOOK CARichmond",
+          "amount": 15.75,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay TARGET",
+          "amount": 6.52,
+          "category": "groceries"
+        },
+        {
           "name": "CLAYD MARKET",
           "amount": 8.0,
+          "category": "slop"
+        },
+        {
+          "name": "Kroger",
+          "amount": 34.87,
+          "category": "groceries"
+        },
+        {
+          "name": "PENNY LANE PUB RESTAURANT",
+          "amount": 15.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "PENNY LANE PUB RESTAURANT",
+          "amount": 90.21,
+          "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
           "category": "slop"
         },
         {
@@ -562,16 +657,6 @@
           "name": "AplPay CVS PHARMACY",
           "amount": 8.26,
           "category": "misc_other"
-        },
-        {
-          "name": "Kroger",
-          "amount": 34.87,
-          "category": "groceries"
-        },
-        {
-          "name": "Target",
-          "amount": 6.52,
-          "category": "groceries"
         },
         {
           "name": "APPLE.COM/BILL INTERNET CHARGE",
@@ -748,7 +833,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 566.1,
+    "actual_checking_balance": 561.65,
     "actual_savings_balance": 1.53
   },
   "debt": {
@@ -768,7 +853,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1256.79
+      "current_balance": 1313.93
     }
   },
   "plans": [
