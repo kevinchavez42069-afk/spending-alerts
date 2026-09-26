@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-25",
+  "last_updated": "2026-09-26",
   "period_start": "2026-09-16",
-  "period_end": "2026-09-25",
+  "period_end": "2026-09-26",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
@@ -15,9 +15,9 @@
     "variable_wants": {
       "partying": 0.0,
       "dining_out": 180.24,
-      "slop": 93.28,
-      "gym": 3.52,
-      "misc_other": 1066.22
+      "slop": 130.38000000000002,
+      "gym": 125.35,
+      "misc_other": 1118.23
     }
   },
   "categories_detail": {
@@ -67,12 +67,12 @@
       "parking": [
         {
           "name": "City of Richmond/Parkh",
-          "amount": 4.45,
+          "amount": 2.95,
           "account": "SoFi Checking"
         },
         {
           "name": "City of Richmond/Parkh",
-          "amount": 2.95,
+          "amount": 4.45,
           "account": "SoFi Checking"
         },
         {
@@ -138,13 +138,13 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "GrubHub",
-          "amount": 9.65,
+          "name": "TST*NATES BAGELS - CAR",
+          "amount": 9.06,
           "account": "SoFi Checking"
         },
         {
-          "name": "TST*NATES BAGELS - CAR",
-          "amount": 9.06,
+          "name": "GrubHub",
+          "amount": 9.65,
           "account": "SoFi Checking"
         },
         {
@@ -205,6 +205,16 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "7-Eleven",
+          "amount": 30.0,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 7.1,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "CLAYD MARKET",
           "amount": 8.0,
           "account": "Blue Cash Preferred\u00ae"
@@ -255,12 +265,32 @@
           "name": "Vitamin Shoppe",
           "amount": 3.52,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "Vitamin Shoppe",
+          "amount": 121.83,
+          "account": "Blue Cash Preferred\u00ae"
         }
       ],
       "misc_other": [
         {
           "name": "Cook Out",
           "amount": 16.7,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "FSP*LUCKY ROAD RUN SHO",
+          "amount": 9.07,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "Jimmy Johns",
+          "amount": 20.87,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "K H M CONVENIENCE STOR",
+          "amount": 11.57,
           "account": "SoFi Checking"
         },
         {
@@ -277,6 +307,11 @@
           "name": "Domino's",
           "amount": 18.72,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 10.5,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay ABI'S BOOK CARichmond",
@@ -368,6 +403,21 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "FSP*LUCKY ROAD RUN SHO",
+      "amount": 9.07,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "Jimmy Johns",
+      "amount": 20.87,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "K H M CONVENIENCE STOR",
+      "amount": 11.57,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "Cook Out",
       "amount": 7.64,
       "account": "SoFi Checking"
@@ -381,6 +431,11 @@
       "name": "Domino's",
       "amount": 18.72,
       "account": "SoFi Checking"
+    },
+    {
+      "name": "NATES BAGELS - CARY STREET",
+      "amount": 10.5,
+      "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "AplPay ABI'S BOOK CARichmond",
@@ -466,16 +521,11 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 561.65,
+      "balance": 521.53,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "category": "parking"
-        },
         {
           "name": "Chipotle Mexican Grill",
           "amount": 11.41,
@@ -487,6 +537,36 @@
           "category": "parking"
         },
         {
+          "name": "Cook Out",
+          "amount": 16.7,
+          "category": "misc_other"
+        },
+        {
+          "name": "TST*NATES BAGELS - CAR",
+          "amount": 9.06,
+          "category": "dining_out"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "category": "parking"
+        },
+        {
+          "name": "FSP*LUCKY ROAD RUN SHO",
+          "amount": 9.07,
+          "category": "misc_other"
+        },
+        {
+          "name": "Jimmy Johns",
+          "amount": 20.87,
+          "category": "misc_other"
+        },
+        {
+          "name": "K H M CONVENIENCE STOR",
+          "amount": 11.57,
+          "category": "misc_other"
+        },
+        {
           "name": "City of Richmond/Parkh",
           "amount": 3.57,
           "category": "parking"
@@ -495,16 +575,6 @@
           "name": "GrubHub",
           "amount": 9.65,
           "category": "dining_out"
-        },
-        {
-          "name": "TST*NATES BAGELS - CAR",
-          "amount": 9.06,
-          "category": "dining_out"
-        },
-        {
-          "name": "Cook Out",
-          "amount": 16.7,
-          "category": "misc_other"
         },
         {
           "name": "AppFolio, Inc. F",
@@ -608,11 +678,31 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1313.93,
+      "balance": 1436.25,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "7-Eleven",
+          "amount": 30.0,
+          "category": "slop"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 10.5,
+          "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 7.1,
+          "category": "slop"
+        },
+        {
+          "name": "Vitamin Shoppe",
+          "amount": 121.83,
+          "category": "gym"
+        },
         {
           "name": "AplPay ABI'S BOOK CARichmond",
           "amount": 15.75,
@@ -833,7 +923,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 561.65,
+    "actual_checking_balance": 521.53,
     "actual_savings_balance": 1.53
   },
   "debt": {
@@ -853,7 +943,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1313.93
+      "current_balance": 1436.25
     }
   },
   "plans": [
