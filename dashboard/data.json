@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-26",
+  "last_updated": "2026-09-27",
   "period_start": "2026-09-16",
-  "period_end": "2026-09-26",
+  "period_end": "2026-09-27",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
@@ -14,10 +14,10 @@
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 180.24,
-      "slop": 130.38000000000002,
+      "dining_out": 290.45,
+      "slop": 138.36,
       "gym": 125.35,
-      "misc_other": 1118.23
+      "misc_other": 1060.94
     }
   },
   "categories_detail": {
@@ -133,6 +133,11 @@
       "partying": [],
       "dining_out": [
         {
+          "name": "GrubHub",
+          "amount": 9.65,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "Chipotle Mexican Grill",
           "amount": 11.41,
           "account": "SoFi Checking"
@@ -140,11 +145,6 @@
         {
           "name": "TST*NATES BAGELS - CAR",
           "amount": 9.06,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "GrubHub",
-          "amount": 9.65,
           "account": "SoFi Checking"
         },
         {
@@ -161,6 +161,11 @@
           "name": "TST* URBAN FARMHOUSE M",
           "amount": 6.66,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "TST* PENNY LANE PUB",
+          "amount": 110.21,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "Chipotle Mexican Grill",
@@ -205,23 +210,28 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "VILLAGE MARKET",
+          "amount": 7.98,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "7-Eleven",
           "amount": 30.0,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "VILLAGE MARKET",
-          "amount": 7.1,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "CLAYD MARKET",
+          "name": "AplPay CLAYD MARKET",
           "amount": 8.0,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "VILLAGE MARKET",
+          "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 4.11,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 7.1,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -274,11 +284,6 @@
       ],
       "misc_other": [
         {
-          "name": "Cook Out",
-          "amount": 16.7,
-          "account": "SoFi Checking"
-        },
-        {
           "name": "FSP*LUCKY ROAD RUN SHO",
           "amount": 9.07,
           "account": "SoFi Checking"
@@ -291,6 +296,11 @@
         {
           "name": "K H M CONVENIENCE STOR",
           "amount": 11.57,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "Cook Out",
+          "amount": 16.7,
           "account": "SoFi Checking"
         },
         {
@@ -309,6 +319,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "FDR LITTLE MEXICO",
+          "amount": 32.92,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "NATES BAGELS - CARY STREET",
           "amount": 10.5,
           "account": "Blue Cash Preferred\u00ae"
@@ -321,11 +336,6 @@
         {
           "name": "PENNY LANE PUB RESTAURANT",
           "amount": 15.0,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "PENNY LANE PUB RESTAURANT",
-          "amount": 90.21,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -398,11 +408,6 @@
   },
   "unmatched_transactions": [
     {
-      "name": "Cook Out",
-      "amount": 16.7,
-      "account": "SoFi Checking"
-    },
-    {
       "name": "FSP*LUCKY ROAD RUN SHO",
       "amount": 9.07,
       "account": "SoFi Checking"
@@ -415,6 +420,11 @@
     {
       "name": "K H M CONVENIENCE STOR",
       "amount": 11.57,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "Cook Out",
+      "amount": 16.7,
       "account": "SoFi Checking"
     },
     {
@@ -433,6 +443,11 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "FDR LITTLE MEXICO",
+      "amount": 32.92,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "NATES BAGELS - CARY STREET",
       "amount": 10.5,
       "account": "Blue Cash Preferred\u00ae"
@@ -445,11 +460,6 @@
     {
       "name": "PENNY LANE PUB RESTAURANT",
       "amount": 15.0,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "PENNY LANE PUB RESTAURANT",
-      "amount": 90.21,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -521,11 +531,31 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 521.53,
+      "balance": 470.37,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "FSP*LUCKY ROAD RUN SHO",
+          "amount": 9.07,
+          "category": "misc_other"
+        },
+        {
+          "name": "GrubHub",
+          "amount": 9.65,
+          "category": "dining_out"
+        },
+        {
+          "name": "Jimmy Johns",
+          "amount": 20.87,
+          "category": "misc_other"
+        },
+        {
+          "name": "K H M CONVENIENCE STOR",
+          "amount": 11.57,
+          "category": "misc_other"
+        },
         {
           "name": "Chipotle Mexican Grill",
           "amount": 11.41,
@@ -552,29 +582,9 @@
           "category": "parking"
         },
         {
-          "name": "FSP*LUCKY ROAD RUN SHO",
-          "amount": 9.07,
-          "category": "misc_other"
-        },
-        {
-          "name": "Jimmy Johns",
-          "amount": 20.87,
-          "category": "misc_other"
-        },
-        {
-          "name": "K H M CONVENIENCE STOR",
-          "amount": 11.57,
-          "category": "misc_other"
-        },
-        {
           "name": "City of Richmond/Parkh",
           "amount": 3.57,
           "category": "parking"
-        },
-        {
-          "name": "GrubHub",
-          "amount": 9.65,
-          "category": "dining_out"
         },
         {
           "name": "AppFolio, Inc. F",
@@ -678,20 +688,45 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1436.25,
+      "balance": 1605.68,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "FDR LITTLE MEXICO",
+          "amount": 32.92,
+          "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 7.98,
+          "category": "slop"
+        },
         {
           "name": "7-Eleven",
           "amount": 30.0,
           "category": "slop"
         },
         {
+          "name": "AplPay CLAYD MARKET",
+          "amount": 8.0,
+          "category": "slop"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 4.11,
+          "category": "slop"
+        },
+        {
           "name": "NATES BAGELS - CARY STREET",
           "amount": 10.5,
           "category": "misc_other"
+        },
+        {
+          "name": "TST* PENNY LANE PUB",
+          "amount": 110.21,
+          "category": "dining_out"
         },
         {
           "name": "VILLAGE MARKET",
@@ -714,11 +749,6 @@
           "category": "groceries"
         },
         {
-          "name": "CLAYD MARKET",
-          "amount": 8.0,
-          "category": "slop"
-        },
-        {
           "name": "Kroger",
           "amount": 34.87,
           "category": "groceries"
@@ -727,16 +757,6 @@
           "name": "PENNY LANE PUB RESTAURANT",
           "amount": 15.0,
           "category": "misc_other"
-        },
-        {
-          "name": "PENNY LANE PUB RESTAURANT",
-          "amount": 90.21,
-          "category": "misc_other"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 4.11,
-          "category": "slop"
         },
         {
           "name": "7-Eleven",
@@ -923,7 +943,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 521.53,
+    "actual_checking_balance": 470.37,
     "actual_savings_balance": 1.53
   },
   "debt": {
@@ -943,7 +963,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1436.25
+      "current_balance": 1605.68
     }
   },
   "plans": [
