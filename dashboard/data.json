@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-09-27",
+  "last_updated": "2026-09-28",
   "period_start": "2026-09-16",
-  "period_end": "2026-09-27",
+  "period_end": "2026-09-28",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
     },
     "variable_needs": {
-      "groceries": 129.37,
+      "groceries": 134.05,
       "gas": 0.0,
       "parking": 42.24,
       "subscriptions": 14.99
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 290.45,
-      "slop": 138.36,
-      "gym": 125.35,
-      "misc_other": 1060.94
+      "dining_out": 345.98,
+      "slop": 138.36000000000004,
+      "gym": 3.52,
+      "misc_other": 1172.27
     }
   },
   "categories_detail": {
@@ -37,6 +37,11 @@
     },
     "variable_needs": {
       "groceries": [
+        {
+          "name": "Kroger",
+          "amount": 4.68,
+          "account": "SoFi Checking"
+        },
         {
           "name": "AplPay TARGET",
           "amount": 6.52,
@@ -163,6 +168,21 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.64,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "DOORDASH",
+          "amount": 30.39,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 10.5,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "TST* PENNY LANE PUB",
           "amount": 110.21,
           "account": "Blue Cash Preferred\u00ae"
@@ -210,13 +230,18 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "VILLAGE MARKET",
+          "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 7.98,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "7-Eleven",
           "amount": 30.0,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 7.1,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -227,11 +252,6 @@
         {
           "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 4.11,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 7.1,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -275,11 +295,6 @@
           "name": "Vitamin Shoppe",
           "amount": 3.52,
           "account": "SoFi Checking"
-        },
-        {
-          "name": "Vitamin Shoppe",
-          "amount": 121.83,
-          "account": "Blue Cash Preferred\u00ae"
         }
       ],
       "misc_other": [
@@ -319,13 +334,13 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "FDR LITTLE MEXICO",
-          "amount": 32.92,
+          "name": "AplPay THE VITAMIN SRICHMOND",
+          "amount": 121.83,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 10.5,
+          "name": "FDR LITTLE MEXICO",
+          "amount": 32.92,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -443,13 +458,13 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "FDR LITTLE MEXICO",
-      "amount": 32.92,
+      "name": "AplPay THE VITAMIN SRICHMOND",
+      "amount": 121.83,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "NATES BAGELS - CARY STREET",
-      "amount": 10.5,
+      "name": "FDR LITTLE MEXICO",
+      "amount": 32.92,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -531,7 +546,7 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 470.37,
+      "balance": 439.69,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
@@ -555,6 +570,11 @@
           "name": "K H M CONVENIENCE STOR",
           "amount": 11.57,
           "category": "misc_other"
+        },
+        {
+          "name": "Kroger",
+          "amount": 4.68,
+          "category": "groceries"
         },
         {
           "name": "Chipotle Mexican Grill",
@@ -688,25 +708,50 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1605.68,
+      "balance": 1613.66,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
-          "name": "FDR LITTLE MEXICO",
-          "amount": 32.92,
-          "category": "misc_other"
-        },
-        {
-          "name": "VILLAGE MARKET",
+          "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 7.98,
           "category": "slop"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.64,
+          "category": "dining_out"
+        },
+        {
+          "name": "DOORDASH",
+          "amount": 30.39,
+          "category": "dining_out"
         },
         {
           "name": "7-Eleven",
           "amount": 30.0,
           "category": "slop"
+        },
+        {
+          "name": "AplPay THE VITAMIN SRICHMOND",
+          "amount": 121.83,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 10.5,
+          "category": "dining_out"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 7.1,
+          "category": "slop"
+        },
+        {
+          "name": "FDR LITTLE MEXICO",
+          "amount": 32.92,
+          "category": "misc_other"
         },
         {
           "name": "AplPay CLAYD MARKET",
@@ -719,24 +764,9 @@
           "category": "slop"
         },
         {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 10.5,
-          "category": "misc_other"
-        },
-        {
           "name": "TST* PENNY LANE PUB",
           "amount": 110.21,
           "category": "dining_out"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 7.1,
-          "category": "slop"
-        },
-        {
-          "name": "Vitamin Shoppe",
-          "amount": 121.83,
-          "category": "gym"
         },
         {
           "name": "AplPay ABI'S BOOK CARichmond",
@@ -943,7 +973,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 470.37,
+    "actual_checking_balance": 439.69,
     "actual_savings_balance": 1.53
   },
   "debt": {
@@ -963,7 +993,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1605.68
+      "current_balance": 1613.66
     }
   },
   "plans": [
