@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-28",
+  "last_updated": "2026-09-29",
   "period_start": "2026-09-16",
-  "period_end": "2026-09-28",
+  "period_end": "2026-09-29",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
@@ -14,10 +14,10 @@
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 345.98,
-      "slop": 138.36000000000004,
+      "dining_out": 315.59,
+      "slop": 149.25000000000003,
       "gym": 3.52,
-      "misc_other": 1172.27
+      "misc_other": 1213.8600000000001
     }
   },
   "categories_detail": {
@@ -173,11 +173,6 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "DOORDASH",
-          "amount": 30.39,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
           "name": "AplPay TST* NATES BARICHMOND",
           "amount": 10.5,
           "account": "Blue Cash Preferred\u00ae"
@@ -228,6 +223,11 @@
           "name": "*CLAYD MARKET",
           "amount": 18.0,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 10.89,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay VILLAGE MARKERICHMOND",
@@ -334,23 +334,28 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "AplPay DD *DOORDASAN FRANCISCO",
+          "amount": 30.39,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay LITTLE MEXICORICHMOND",
+          "amount": 40.16,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "ST LOUIS BREAD601375 ONL",
+          "amount": 18.96,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
           "name": "AplPay THE VITAMIN SRICHMOND",
           "amount": 121.83,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "FDR LITTLE MEXICO",
-          "amount": 32.92,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
           "name": "AplPay ABI'S BOOK CARichmond",
           "amount": 15.75,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "PENNY LANE PUB RESTAURANT",
-          "amount": 15.0,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -458,23 +463,28 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "AplPay DD *DOORDASAN FRANCISCO",
+      "amount": 30.39,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay LITTLE MEXICORICHMOND",
+      "amount": 40.16,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "ST LOUIS BREAD601375 ONL",
+      "amount": 18.96,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
       "name": "AplPay THE VITAMIN SRICHMOND",
       "amount": 121.83,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "FDR LITTLE MEXICO",
-      "amount": 32.92,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
       "name": "AplPay ABI'S BOOK CARichmond",
       "amount": 15.75,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "PENNY LANE PUB RESTAURANT",
-      "amount": 15.0,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -708,15 +718,25 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1613.66,
+      "balance": 1698.85,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 7.98,
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 10.89,
           "category": "slop"
+        },
+        {
+          "name": "AplPay DD *DOORDASAN FRANCISCO",
+          "amount": 30.39,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay LITTLE MEXICORICHMOND",
+          "amount": 40.16,
+          "category": "misc_other"
         },
         {
           "name": "Chipotle Mexican Grill",
@@ -724,9 +744,9 @@
           "category": "dining_out"
         },
         {
-          "name": "DOORDASH",
-          "amount": 30.39,
-          "category": "dining_out"
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 7.98,
+          "category": "slop"
         },
         {
           "name": "7-Eleven",
@@ -747,11 +767,6 @@
           "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 7.1,
           "category": "slop"
-        },
-        {
-          "name": "FDR LITTLE MEXICO",
-          "amount": 32.92,
-          "category": "misc_other"
         },
         {
           "name": "AplPay CLAYD MARKET",
@@ -782,11 +797,6 @@
           "name": "Kroger",
           "amount": 34.87,
           "category": "groceries"
-        },
-        {
-          "name": "PENNY LANE PUB RESTAURANT",
-          "amount": 15.0,
-          "category": "misc_other"
         },
         {
           "name": "7-Eleven",
@@ -928,6 +938,11 @@
       "limit": 10800.0,
       "transactions": [
         {
+          "name": "ST LOUIS BREAD601375 ONL",
+          "amount": 18.96,
+          "category": "misc_other"
+        },
+        {
           "name": "SPLICE.COM",
           "amount": 12.99,
           "category": "misc_other"
@@ -993,7 +1008,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1613.66
+      "current_balance": 1698.85
     }
   },
   "plans": [
