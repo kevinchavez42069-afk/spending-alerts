@@ -1,710 +1,62 @@
 {
-  "last_updated": "2026-09-29",
-  "period_start": "2026-09-16",
-  "period_end": "2026-09-29",
+  "last_updated": "2026-09-30",
+  "period_start": "2026-09-30",
+  "period_end": "2026-09-30",
   "categories": {
     "fixed_costs": {
-      "rent": 827.49
+      "rent": 0.0
     },
     "variable_needs": {
-      "groceries": 134.05,
+      "groceries": 0.0,
       "gas": 0.0,
-      "parking": 42.24,
-      "subscriptions": 14.99
+      "parking": 0.0,
+      "subscriptions": 0.0
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 315.59,
-      "slop": 149.25000000000003,
-      "gym": 3.52,
-      "misc_other": 1213.8600000000001
+      "dining_out": 16.87,
+      "slop": 0.0,
+      "gym": 0.0,
+      "misc_other": 0.0
     }
   },
   "categories_detail": {
     "fixed_costs": {
-      "rent": [
-        {
-          "name": "AppFolio, Inc. F",
-          "amount": 2.49,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "CVA Properties L",
-          "amount": 825.0,
-          "account": "SoFi Checking"
-        }
-      ]
+      "rent": []
     },
     "variable_needs": {
-      "groceries": [
-        {
-          "name": "Kroger",
-          "amount": 4.68,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "AplPay TARGET",
-          "amount": 6.52,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Kroger",
-          "amount": 34.87,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay ALDI INC 0004RICHMOND",
-          "amount": 40.28,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Target",
-          "amount": 22.7,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Target",
-          "amount": 25.0,
-          "account": "Blue Cash Preferred\u00ae"
-        }
-      ],
+      "groceries": [],
       "gas": [],
-      "parking": [
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.95,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 3.57,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.95,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 5.0,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.95,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.82,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 1.65,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 5.0,
-          "account": "SoFi Checking"
-        }
-      ],
-      "subscriptions": [
-        {
-          "name": "Amazon Prime",
-          "amount": 14.99,
-          "account": "Blue Cash Preferred\u00ae"
-        }
-      ]
+      "parking": [],
+      "subscriptions": []
     },
     "variable_wants": {
       "partying": [],
       "dining_out": [
         {
-          "name": "GrubHub",
-          "amount": 9.65,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 11.41,
-          "account": "SoFi Checking"
-        },
-        {
           "name": "TST*NATES BAGELS - CAR",
-          "amount": 9.06,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "TST* URBAN FARMHOUSE M",
-          "amount": 6.85,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.07,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "TST* URBAN FARMHOUSE M",
-          "amount": 6.66,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.64,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay TST* NATES BARICHMOND",
-          "amount": 10.5,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "TST* PENNY LANE PUB",
-          "amount": 110.21,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 15.1,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay TST* URBAN FARICHMOND",
-          "amount": 7.03,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.64,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay TST* NATES BARICHMOND",
-          "amount": 11.47,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay TST* COCHILOCRICHMOND",
-          "amount": 32.54,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay TST* NATES BARICHMOND",
-          "amount": 18.65,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay TST* LATIN QUNORTH CHESTERFI",
-          "amount": 23.11,
-          "account": "Blue Cash Preferred\u00ae"
-        }
-      ],
-      "slop": [
-        {
-          "name": "*CLAYD MARKET",
-          "amount": 18.0,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 10.89,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 7.98,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 30.0,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 7.1,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay CLAYD MARKET",
-          "amount": 8.0,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 4.11,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 3.93,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 4.11,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 3.93,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 33.93,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 4.55,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 8.07,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 4.65,
-          "account": "Blue Cash Preferred\u00ae"
-        }
-      ],
-      "gym": [
-        {
-          "name": "Vitamin Shoppe",
-          "amount": 3.52,
+          "amount": 16.87,
           "account": "SoFi Checking"
         }
       ],
-      "misc_other": [
-        {
-          "name": "FSP*LUCKY ROAD RUN SHO",
-          "amount": 9.07,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "Jimmy Johns",
-          "amount": 20.87,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "K H M CONVENIENCE STOR",
-          "amount": 11.57,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "Cook Out",
-          "amount": 16.7,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "Cook Out",
-          "amount": 7.64,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "CBI*rekordbox",
-          "amount": 23.0,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "Domino's",
-          "amount": 18.72,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "AplPay DD *DOORDASAN FRANCISCO",
-          "amount": 30.39,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay LITTLE MEXICORICHMOND",
-          "amount": 40.16,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "ST LOUIS BREAD601375 ONL",
-          "amount": 18.96,
-          "account": "Delta SkyMiles\u00ae Gold Card"
-        },
-        {
-          "name": "AplPay THE VITAMIN SRICHMOND",
-          "amount": 121.83,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay ABI'S BOOK CARichmond",
-          "amount": 15.75,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay CVS PHARMACY",
-          "amount": 8.26,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "APPLE.COM/BILL INTERNET CHARGE",
-          "amount": 18.97,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "SPLICE.COM",
-          "amount": 12.99,
-          "account": "Delta SkyMiles\u00ae Gold Card"
-        },
-        {
-          "name": "AplPay EXPERIMAC OF",
-          "amount": 21.19,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AMAZON DIGITAL SVCS AMZN.COM/BILL",
-          "amount": 10.99,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay FSP*LUCKY ROARICHMOND",
-          "amount": 23.64,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay TAQUERIA Y ANRICHMOND",
-          "amount": 30.8,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "TAQUERIA Y ANTOJITOSRICHMOND",
-          "amount": 11.0,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay DD *DOORDASAN FRANCISCO",
-          "amount": 30.03,
-          "account": "Delta SkyMiles\u00ae Gold Card"
-        },
-        {
-          "name": "AplPay DSG STORE 132RICHMOND",
-          "amount": 37.1,
-          "account": "Delta SkyMiles\u00ae Gold Card"
-        },
-        {
-          "name": "AplPay SPORTS BACKERHENRICO",
-          "amount": 502.65,
-          "account": "Delta SkyMiles\u00ae Gold Card"
-        },
-        {
-          "name": "AplPay ABI'S BOOK CARichmond",
-          "amount": 6.96,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay FSP*LUCKY ROARICHMOND",
-          "amount": 164.62,
-          "account": "Delta SkyMiles\u00ae Gold Card"
-        }
-      ]
+      "slop": [],
+      "gym": [],
+      "misc_other": []
     }
   },
-  "unmatched_transactions": [
-    {
-      "name": "FSP*LUCKY ROAD RUN SHO",
-      "amount": 9.07,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "Jimmy Johns",
-      "amount": 20.87,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "K H M CONVENIENCE STOR",
-      "amount": 11.57,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "Cook Out",
-      "amount": 16.7,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "Cook Out",
-      "amount": 7.64,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "CBI*rekordbox",
-      "amount": 23.0,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "Domino's",
-      "amount": 18.72,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "AplPay DD *DOORDASAN FRANCISCO",
-      "amount": 30.39,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "AplPay LITTLE MEXICORICHMOND",
-      "amount": 40.16,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "ST LOUIS BREAD601375 ONL",
-      "amount": 18.96,
-      "account": "Delta SkyMiles\u00ae Gold Card"
-    },
-    {
-      "name": "AplPay THE VITAMIN SRICHMOND",
-      "amount": 121.83,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "AplPay ABI'S BOOK CARichmond",
-      "amount": 15.75,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "AplPay CVS PHARMACY",
-      "amount": 8.26,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "APPLE.COM/BILL INTERNET CHARGE",
-      "amount": 18.97,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "SPLICE.COM",
-      "amount": 12.99,
-      "account": "Delta SkyMiles\u00ae Gold Card"
-    },
-    {
-      "name": "AplPay EXPERIMAC OF",
-      "amount": 21.19,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "AMAZON DIGITAL SVCS AMZN.COM/BILL",
-      "amount": 10.99,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "AplPay FSP*LUCKY ROARICHMOND",
-      "amount": 23.64,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "AplPay TAQUERIA Y ANRICHMOND",
-      "amount": 30.8,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "TAQUERIA Y ANTOJITOSRICHMOND",
-      "amount": 11.0,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "AplPay DD *DOORDASAN FRANCISCO",
-      "amount": 30.03,
-      "account": "Delta SkyMiles\u00ae Gold Card"
-    },
-    {
-      "name": "AplPay DSG STORE 132RICHMOND",
-      "amount": 37.1,
-      "account": "Delta SkyMiles\u00ae Gold Card"
-    },
-    {
-      "name": "AplPay SPORTS BACKERHENRICO",
-      "amount": 502.65,
-      "account": "Delta SkyMiles\u00ae Gold Card"
-    },
-    {
-      "name": "AplPay ABI'S BOOK CARichmond",
-      "amount": 6.96,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "AplPay FSP*LUCKY ROARICHMOND",
-      "amount": 164.62,
-      "account": "Delta SkyMiles\u00ae Gold Card"
-    }
-  ],
+  "unmatched_transactions": [],
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 439.69,
+      "balance": 2203.99,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
         {
-          "name": "FSP*LUCKY ROAD RUN SHO",
-          "amount": 9.07,
-          "category": "misc_other"
-        },
-        {
-          "name": "GrubHub",
-          "amount": 9.65,
-          "category": "dining_out"
-        },
-        {
-          "name": "Jimmy Johns",
-          "amount": 20.87,
-          "category": "misc_other"
-        },
-        {
-          "name": "K H M CONVENIENCE STOR",
-          "amount": 11.57,
-          "category": "misc_other"
-        },
-        {
-          "name": "Kroger",
-          "amount": 4.68,
-          "category": "groceries"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 11.41,
-          "category": "dining_out"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.95,
-          "category": "parking"
-        },
-        {
-          "name": "Cook Out",
-          "amount": 16.7,
-          "category": "misc_other"
-        },
-        {
           "name": "TST*NATES BAGELS - CAR",
-          "amount": 9.06,
+          "amount": 16.87,
           "category": "dining_out"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "category": "parking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 3.57,
-          "category": "parking"
-        },
-        {
-          "name": "AppFolio, Inc. F",
-          "amount": 2.49,
-          "category": "rent"
-        },
-        {
-          "name": "CVA Properties L",
-          "amount": 825.0,
-          "category": "rent"
-        },
-        {
-          "name": "Vitamin Shoppe",
-          "amount": 3.52,
-          "category": "gym"
-        },
-        {
-          "name": "*CLAYD MARKET",
-          "amount": 18.0,
-          "category": "slop"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.95,
-          "category": "parking"
-        },
-        {
-          "name": "Cook Out",
-          "amount": 7.64,
-          "category": "misc_other"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 5.0,
-          "category": "parking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 2.95,
-          "category": "parking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "category": "parking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.45,
-          "category": "parking"
-        },
-        {
-          "name": "City of Richmond/Parkh",
-          "amount": 4.82,
-          "category": "parking"
-        },
-        {
-          "name": "TST* URBAN FARMHOUSE M",
-          "amount": 6.85,
-          "category": "dining_out"
-        },
-        {
-          "name": "CBI*rekordbox",
-          "amount": 23.0,
-          "category": "misc_other"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.07,
-          "category": "dining_out"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 1.65,
-          "category": "parking"
-        },
-        {
-          "name": "TST* URBAN FARMHOUSE M",
-          "amount": 6.66,
-          "category": "dining_out"
-        },
-        {
-          "name": "Domino's",
-          "amount": 18.72,
-          "category": "misc_other"
-        },
-        {
-          "name": "PARKING CITY OF RICHMO",
-          "amount": 5.0,
-          "category": "parking"
         }
       ]
     },
@@ -718,256 +70,19 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1698.85,
+      "balance": 1709.74,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
-      "transactions": [
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 10.89,
-          "category": "slop"
-        },
-        {
-          "name": "AplPay DD *DOORDASAN FRANCISCO",
-          "amount": 30.39,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay LITTLE MEXICORICHMOND",
-          "amount": 40.16,
-          "category": "misc_other"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.64,
-          "category": "dining_out"
-        },
-        {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 7.98,
-          "category": "slop"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 30.0,
-          "category": "slop"
-        },
-        {
-          "name": "AplPay THE VITAMIN SRICHMOND",
-          "amount": 121.83,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay TST* NATES BARICHMOND",
-          "amount": 10.5,
-          "category": "dining_out"
-        },
-        {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 7.1,
-          "category": "slop"
-        },
-        {
-          "name": "AplPay CLAYD MARKET",
-          "amount": 8.0,
-          "category": "slop"
-        },
-        {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 4.11,
-          "category": "slop"
-        },
-        {
-          "name": "TST* PENNY LANE PUB",
-          "amount": 110.21,
-          "category": "dining_out"
-        },
-        {
-          "name": "AplPay ABI'S BOOK CARichmond",
-          "amount": 15.75,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay TARGET",
-          "amount": 6.52,
-          "category": "groceries"
-        },
-        {
-          "name": "Kroger",
-          "amount": 34.87,
-          "category": "groceries"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 3.93,
-          "category": "slop"
-        },
-        {
-          "name": "AplPay CVS PHARMACY",
-          "amount": 8.26,
-          "category": "misc_other"
-        },
-        {
-          "name": "APPLE.COM/BILL INTERNET CHARGE",
-          "amount": 18.97,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 4.11,
-          "category": "slop"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 15.1,
-          "category": "dining_out"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 3.93,
-          "category": "slop"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 33.93,
-          "category": "slop"
-        },
-        {
-          "name": "AplPay EXPERIMAC OF",
-          "amount": 21.19,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay TST* URBAN FARICHMOND",
-          "amount": 7.03,
-          "category": "dining_out"
-        },
-        {
-          "name": "AMAZON DIGITAL SVCS AMZN.COM/BILL",
-          "amount": 10.99,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay ALDI INC 0004RICHMOND",
-          "amount": 40.28,
-          "category": "groceries"
-        },
-        {
-          "name": "AplPay FSP*LUCKY ROARICHMOND",
-          "amount": 23.64,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay TAQUERIA Y ANRICHMOND",
-          "amount": 30.8,
-          "category": "misc_other"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.64,
-          "category": "dining_out"
-        },
-        {
-          "name": "TAQUERIA Y ANTOJITOSRICHMOND",
-          "amount": 11.0,
-          "category": "misc_other"
-        },
-        {
-          "name": "Amazon Prime",
-          "amount": 14.99,
-          "category": "subscriptions"
-        },
-        {
-          "name": "AplPay TST* NATES BARICHMOND",
-          "amount": 11.47,
-          "category": "dining_out"
-        },
-        {
-          "name": "Target",
-          "amount": 22.7,
-          "category": "groceries"
-        },
-        {
-          "name": "Target",
-          "amount": 25.0,
-          "category": "groceries"
-        },
-        {
-          "name": "AplPay ABI'S BOOK CARichmond",
-          "amount": 6.96,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay TST* COCHILOCRICHMOND",
-          "amount": 32.54,
-          "category": "dining_out"
-        },
-        {
-          "name": "AplPay TST* NATES BARICHMOND",
-          "amount": 18.65,
-          "category": "dining_out"
-        },
-        {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 4.55,
-          "category": "slop"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 8.07,
-          "category": "slop"
-        },
-        {
-          "name": "AplPay TST* LATIN QUNORTH CHESTERFI",
-          "amount": 23.11,
-          "category": "dining_out"
-        },
-        {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 4.65,
-          "category": "slop"
-        }
-      ]
+      "transactions": []
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 5629.5,
+      "balance": 5648.46,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
-      "transactions": [
-        {
-          "name": "ST LOUIS BREAD601375 ONL",
-          "amount": 18.96,
-          "category": "misc_other"
-        },
-        {
-          "name": "SPLICE.COM",
-          "amount": 12.99,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay DD *DOORDASAN FRANCISCO",
-          "amount": 30.03,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay DSG STORE 132RICHMOND",
-          "amount": 37.1,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay SPORTS BACKERHENRICO",
-          "amount": 502.65,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay FSP*LUCKY ROARICHMOND",
-          "amount": 164.62,
-          "category": "misc_other"
-        }
-      ]
+      "transactions": []
     }
   ],
   "caps": {
@@ -988,7 +103,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 439.69,
+    "actual_checking_balance": 2203.99,
     "actual_savings_balance": 1.53
   },
   "debt": {
@@ -1000,7 +115,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 5629.5
+      "current_balance": 5648.46
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -1008,7 +123,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1698.85
+      "current_balance": 1709.74
     }
   },
   "plans": [
