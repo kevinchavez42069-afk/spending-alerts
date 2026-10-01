@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-30",
+  "last_updated": "2026-10-01",
   "period_start": "2026-09-30",
-  "period_end": "2026-09-30",
+  "period_end": "2026-10-01",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -10,14 +10,14 @@
       "groceries": 0.0,
       "gas": 0.0,
       "parking": 0.0,
-      "subscriptions": 0.0
+      "subscriptions": 20.0
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 16.87,
-      "slop": 0.0,
+      "dining_out": 28.79,
+      "slop": 6.960000000000001,
       "gym": 0.0,
-      "misc_other": 0.0
+      "misc_other": 30.2
     }
   },
   "categories_detail": {
@@ -28,31 +28,95 @@
       "groceries": [],
       "gas": [],
       "parking": [],
-      "subscriptions": []
+      "subscriptions": [
+        {
+          "name": "ANTHROPIC* CLAUDE SUB",
+          "amount": 20.0,
+          "account": "SoFi Checking"
+        }
+      ]
     },
     "variable_wants": {
       "partying": [],
       "dining_out": [
+        {
+          "name": "GrubHub",
+          "amount": 11.92,
+          "account": "SoFi Checking"
+        },
         {
           "name": "TST*NATES BAGELS - CAR",
           "amount": 16.87,
           "account": "SoFi Checking"
         }
       ],
-      "slop": [],
+      "slop": [
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 2.85,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "gym": [],
-      "misc_other": []
+      "misc_other": [
+        {
+          "name": "Jimmy Johns",
+          "amount": 15.11,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "Chick-fil-A",
+          "amount": 15.09,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ]
     }
   },
-  "unmatched_transactions": [],
+  "unmatched_transactions": [
+    {
+      "name": "Jimmy Johns",
+      "amount": 15.11,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "Chick-fil-A",
+      "amount": 15.09,
+      "account": "Blue Cash Preferred\u00ae"
+    }
+  ],
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 2203.99,
+      "balance": 404.17,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "ANTHROPIC* CLAUDE SUB",
+          "amount": 20.0,
+          "category": "subscriptions"
+        },
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 2.85,
+          "category": "slop"
+        },
+        {
+          "name": "GrubHub",
+          "amount": 11.92,
+          "category": "dining_out"
+        },
+        {
+          "name": "Jimmy Johns",
+          "amount": 15.11,
+          "category": "misc_other"
+        },
         {
           "name": "TST*NATES BAGELS - CAR",
           "amount": 16.87,
@@ -62,7 +126,7 @@
     },
     {
       "name": "SoFi Savings",
-      "balance": 1.53,
+      "balance": 1.54,
       "type": "depository",
       "subtype": "savings",
       "limit": null,
@@ -70,15 +134,26 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1709.74,
+      "balance": 1122.17,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
-      "transactions": []
+      "transactions": [
+        {
+          "name": "Chick-fil-A",
+          "amount": 15.09,
+          "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
+          "category": "slop"
+        }
+      ]
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 5648.46,
+      "balance": 4448.46,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
@@ -103,8 +178,8 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 2203.99,
-    "actual_savings_balance": 1.53
+    "actual_checking_balance": 404.17,
+    "actual_savings_balance": 1.54
   },
   "debt": {
     "delta_amex": {
@@ -115,7 +190,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 5648.46
+      "current_balance": 4448.46
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -123,7 +198,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1709.74
+      "current_balance": 1122.17
     }
   },
   "plans": [
