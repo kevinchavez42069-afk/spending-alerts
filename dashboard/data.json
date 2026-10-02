@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-10-01",
+  "last_updated": "2026-10-02",
   "period_start": "2026-09-30",
-  "period_end": "2026-10-01",
+  "period_end": "2026-10-02",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
-      "groceries": 0.0,
+      "groceries": 7.66,
       "gas": 0.0,
       "parking": 0.0,
-      "subscriptions": 20.0
+      "subscriptions": 31.98
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 28.79,
-      "slop": 6.960000000000001,
+      "dining_out": 41.22,
+      "slop": 22.5,
       "gym": 0.0,
-      "misc_other": 30.2
+      "misc_other": 92.07000000000001
     }
   },
   "categories_detail": {
@@ -25,7 +25,13 @@
       "rent": []
     },
     "variable_needs": {
-      "groceries": [],
+      "groceries": [
+        {
+          "name": "Kroger",
+          "amount": 7.66,
+          "account": "SoFi Checking"
+        }
+      ],
       "gas": [],
       "parking": [],
       "subscriptions": [
@@ -33,6 +39,11 @@
           "name": "ANTHROPIC* CLAUDE SUB",
           "amount": 20.0,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "APPLECOMBILL",
+          "amount": 11.98,
+          "account": "Blue Cash Preferred\u00ae"
         }
       ]
     },
@@ -40,14 +51,19 @@
       "partying": [],
       "dining_out": [
         {
+          "name": "TST*NATES BAGELS - CAR",
+          "amount": 16.87,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "GrubHub",
           "amount": 11.92,
           "account": "SoFi Checking"
         },
         {
-          "name": "TST*NATES BAGELS - CAR",
-          "amount": 16.87,
-          "account": "SoFi Checking"
+          "name": "Chipotle Mexican Grill",
+          "amount": 12.43,
+          "account": "Blue Cash Preferred\u00ae"
         }
       ],
       "slop": [
@@ -55,6 +71,16 @@
           "name": "ESSENTIAL EXPRESS",
           "amount": 2.85,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 5.55,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 9.99,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "VILLAGE MARKET",
@@ -70,9 +96,24 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "Patreon* Membership",
+          "amount": 10.0,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 16.87,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "Chick-fil-A",
           "amount": 15.09,
           "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "VCU REC WELL",
+          "amount": 35.0,
+          "account": "Delta SkyMiles\u00ae Gold Card"
         }
       ]
     }
@@ -84,15 +125,30 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "Patreon* Membership",
+      "amount": 10.0,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "NATES BAGELS - CARY STREET",
+      "amount": 16.87,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "Chick-fil-A",
       "amount": 15.09,
       "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "VCU REC WELL",
+      "amount": 35.0,
+      "account": "Delta SkyMiles\u00ae Gold Card"
     }
   ],
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 404.17,
+      "balance": 793.68,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
@@ -108,11 +164,6 @@
           "category": "slop"
         },
         {
-          "name": "GrubHub",
-          "amount": 11.92,
-          "category": "dining_out"
-        },
-        {
           "name": "Jimmy Johns",
           "amount": 15.11,
           "category": "misc_other"
@@ -120,6 +171,26 @@
         {
           "name": "TST*NATES BAGELS - CAR",
           "amount": 16.87,
+          "category": "dining_out"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 5.55,
+          "category": "slop"
+        },
+        {
+          "name": "Kroger",
+          "amount": 7.66,
+          "category": "groceries"
+        },
+        {
+          "name": "Patreon* Membership",
+          "amount": 10.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "GrubHub",
+          "amount": 11.92,
           "category": "dining_out"
         }
       ]
@@ -134,15 +205,35 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1122.17,
+      "balance": 1407.0,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 16.87,
+          "category": "misc_other"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 9.99,
+          "category": "slop"
+        },
+        {
+          "name": "APPLECOMBILL",
+          "amount": 11.98,
+          "category": "subscriptions"
+        },
+        {
           "name": "Chick-fil-A",
           "amount": 15.09,
           "category": "misc_other"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 12.43,
+          "category": "dining_out"
         },
         {
           "name": "VILLAGE MARKET",
@@ -157,7 +248,13 @@
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
-      "transactions": []
+      "transactions": [
+        {
+          "name": "VCU REC WELL",
+          "amount": 35.0,
+          "category": "misc_other"
+        }
+      ]
     }
   ],
   "caps": {
@@ -178,7 +275,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 404.17,
+    "actual_checking_balance": 793.68,
     "actual_savings_balance": 1.54
   },
   "debt": {
@@ -198,7 +295,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1122.17
+      "current_balance": 1407.0
     }
   },
   "plans": [
