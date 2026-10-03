@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-02",
+  "last_updated": "2026-10-03",
   "period_start": "2026-09-30",
-  "period_end": "2026-10-02",
+  "period_end": "2026-10-03",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -10,14 +10,14 @@
       "groceries": 7.66,
       "gas": 0.0,
       "parking": 0.0,
-      "subscriptions": 31.98
+      "subscriptions": 20.0
     },
     "variable_wants": {
       "partying": 0.0,
       "dining_out": 41.22,
-      "slop": 22.5,
+      "slop": 46.97,
       "gym": 0.0,
-      "misc_other": 92.07000000000001
+      "misc_other": 396.08000000000004
     }
   },
   "categories_detail": {
@@ -39,11 +39,6 @@
           "name": "ANTHROPIC* CLAUDE SUB",
           "amount": 20.0,
           "account": "SoFi Checking"
-        },
-        {
-          "name": "APPLECOMBILL",
-          "amount": 11.98,
-          "account": "Blue Cash Preferred\u00ae"
         }
       ]
     },
@@ -51,13 +46,13 @@
       "partying": [],
       "dining_out": [
         {
-          "name": "TST*NATES BAGELS - CAR",
-          "amount": 16.87,
+          "name": "GrubHub",
+          "amount": 11.92,
           "account": "SoFi Checking"
         },
         {
-          "name": "GrubHub",
-          "amount": 11.92,
+          "name": "TST*NATES BAGELS - CAR",
+          "amount": 16.87,
           "account": "SoFi Checking"
         },
         {
@@ -79,11 +74,16 @@
         },
         {
           "name": "7-Eleven",
+          "amount": 24.47,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "7-Eleven",
           "amount": 9.99,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "VILLAGE MARKET",
+          "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 4.11,
           "account": "Blue Cash Preferred\u00ae"
         }
@@ -91,18 +91,23 @@
       "gym": [],
       "misc_other": [
         {
-          "name": "Jimmy Johns",
-          "amount": 15.11,
-          "account": "SoFi Checking"
-        },
-        {
           "name": "Patreon* Membership",
           "amount": 10.0,
           "account": "SoFi Checking"
         },
         {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 16.87,
+          "name": "Jimmy Johns",
+          "amount": 15.11,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "McDonald's",
+          "amount": 11.31,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 11.98,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -111,27 +116,42 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "VCU REC WELL",
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 16.87,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "VCU REC WELL 00-0802RICHMOND",
           "amount": 35.0,
           "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "AplPay MOG LABS 0566PORTLAND OR",
+          "amount": 280.72,
+          "account": "Blue Cash Preferred\u00ae"
         }
       ]
     }
   },
   "unmatched_transactions": [
     {
-      "name": "Jimmy Johns",
-      "amount": 15.11,
-      "account": "SoFi Checking"
-    },
-    {
       "name": "Patreon* Membership",
       "amount": 10.0,
       "account": "SoFi Checking"
     },
     {
-      "name": "NATES BAGELS - CARY STREET",
-      "amount": 16.87,
+      "name": "Jimmy Johns",
+      "amount": 15.11,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "McDonald's",
+      "amount": 11.31,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "APPLE.COM/BILL INTERNET CHARGE",
+      "amount": 11.98,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -140,19 +160,39 @@
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "VCU REC WELL",
+      "name": "NATES BAGELS - CARY STREET",
+      "amount": 16.87,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "VCU REC WELL 00-0802RICHMOND",
       "amount": 35.0,
       "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "AplPay MOG LABS 0566PORTLAND OR",
+      "amount": 280.72,
+      "account": "Blue Cash Preferred\u00ae"
     }
   ],
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 793.68,
+      "balance": 771.76,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "GrubHub",
+          "amount": 11.92,
+          "category": "dining_out"
+        },
+        {
+          "name": "Patreon* Membership",
+          "amount": 10.0,
+          "category": "misc_other"
+        },
         {
           "name": "ANTHROPIC* CLAUDE SUB",
           "amount": 20.0,
@@ -169,6 +209,11 @@
           "category": "misc_other"
         },
         {
+          "name": "McDonald's",
+          "amount": 11.31,
+          "category": "misc_other"
+        },
+        {
           "name": "TST*NATES BAGELS - CAR",
           "amount": 16.87,
           "category": "dining_out"
@@ -182,16 +227,6 @@
           "name": "Kroger",
           "amount": 7.66,
           "category": "groceries"
-        },
-        {
-          "name": "Patreon* Membership",
-          "amount": 10.0,
-          "category": "misc_other"
-        },
-        {
-          "name": "GrubHub",
-          "amount": 11.92,
-          "category": "dining_out"
         }
       ]
     },
@@ -205,15 +240,15 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1407.0,
+      "balance": 1444.06,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 16.87,
-          "category": "misc_other"
+          "name": "7-Eleven",
+          "amount": 24.47,
+          "category": "slop"
         },
         {
           "name": "7-Eleven",
@@ -221,9 +256,9 @@
           "category": "slop"
         },
         {
-          "name": "APPLECOMBILL",
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
           "amount": 11.98,
-          "category": "subscriptions"
+          "category": "misc_other"
         },
         {
           "name": "Chick-fil-A",
@@ -231,26 +266,36 @@
           "category": "misc_other"
         },
         {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 16.87,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay MOG LABS 0566PORTLAND OR",
+          "amount": 280.72,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 4.11,
+          "category": "slop"
+        },
+        {
           "name": "Chipotle Mexican Grill",
           "amount": 12.43,
           "category": "dining_out"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 4.11,
-          "category": "slop"
         }
       ]
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 4448.46,
+      "balance": 4033.46,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
       "transactions": [
         {
-          "name": "VCU REC WELL",
+          "name": "VCU REC WELL 00-0802RICHMOND",
           "amount": 35.0,
           "category": "misc_other"
         }
@@ -275,7 +320,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 793.68,
+    "actual_checking_balance": 771.76,
     "actual_savings_balance": 1.54
   },
   "debt": {
@@ -287,7 +332,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 4448.46
+      "current_balance": 4033.46
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -295,7 +340,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1407.0
+      "current_balance": 1444.06
     }
   },
   "plans": [
