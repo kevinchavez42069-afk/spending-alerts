@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-03",
+  "last_updated": "2026-10-04",
   "period_start": "2026-09-30",
-  "period_end": "2026-10-03",
+  "period_end": "2026-10-04",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -14,10 +14,10 @@
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 41.22,
+      "dining_out": 55.86,
       "slop": 46.97,
       "gym": 0.0,
-      "misc_other": 396.08000000000004
+      "misc_other": 505.58000000000004
     }
   },
   "categories_detail": {
@@ -57,19 +57,24 @@
         },
         {
           "name": "Chipotle Mexican Grill",
+          "amount": 14.64,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
           "amount": 12.43,
           "account": "Blue Cash Preferred\u00ae"
         }
       ],
       "slop": [
         {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 2.85,
+          "name": "VILLAGE MARKET",
+          "amount": 5.55,
           "account": "SoFi Checking"
         },
         {
-          "name": "VILLAGE MARKET",
-          "amount": 5.55,
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 2.85,
           "account": "SoFi Checking"
         },
         {
@@ -104,6 +109,21 @@
           "name": "McDonald's",
           "amount": 11.31,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "BP FDMS CAT",
+          "amount": 9.4,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "BP FDMS CAT",
+          "amount": 68.06,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "CVS",
+          "amount": 32.04,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "APPLE.COM/BILL INTERNET CHARGE",
@@ -150,6 +170,21 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "BP FDMS CAT",
+      "amount": 9.4,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "BP FDMS CAT",
+      "amount": 68.06,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "CVS",
+      "amount": 32.04,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "APPLE.COM/BILL INTERNET CHARGE",
       "amount": 11.98,
       "account": "Blue Cash Preferred\u00ae"
@@ -178,11 +213,16 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 771.76,
+      "balance": 766.21,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 5.55,
+          "category": "slop"
+        },
         {
           "name": "GrubHub",
           "amount": 11.92,
@@ -219,11 +259,6 @@
           "category": "dining_out"
         },
         {
-          "name": "VILLAGE MARKET",
-          "amount": 5.55,
-          "category": "slop"
-        },
-        {
           "name": "Kroger",
           "amount": 7.66,
           "category": "groceries"
@@ -249,6 +284,26 @@
           "name": "7-Eleven",
           "amount": 24.47,
           "category": "slop"
+        },
+        {
+          "name": "BP FDMS CAT",
+          "amount": 9.4,
+          "category": "misc_other"
+        },
+        {
+          "name": "BP FDMS CAT",
+          "amount": 68.06,
+          "category": "misc_other"
+        },
+        {
+          "name": "CVS",
+          "amount": 32.04,
+          "category": "misc_other"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.64,
+          "category": "dining_out"
         },
         {
           "name": "7-Eleven",
@@ -320,7 +375,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 771.76,
+    "actual_checking_balance": 766.21,
     "actual_savings_balance": 1.54
   },
   "debt": {
