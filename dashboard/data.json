@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-10-04",
+  "last_updated": "2026-10-05",
   "period_start": "2026-09-30",
-  "period_end": "2026-10-04",
+  "period_end": "2026-10-05",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
       "groceries": 7.66,
-      "gas": 0.0,
+      "gas": 77.46000000000001,
       "parking": 0.0,
       "subscriptions": 20.0
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 55.86,
-      "slop": 46.97,
+      "dining_out": 125.62,
+      "slop": 57.98,
       "gym": 0.0,
-      "misc_other": 505.58000000000004
+      "misc_other": 418.81000000000006
     }
   },
   "categories_detail": {
@@ -32,7 +32,18 @@
           "account": "SoFi Checking"
         }
       ],
-      "gas": [],
+      "gas": [
+        {
+          "name": "AplPay BP#9708157CAPRICHMOND",
+          "amount": 9.4,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay BP#9708157CAPRICHMOND",
+          "amount": 68.06,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "parking": [],
       "subscriptions": [
         {
@@ -45,6 +56,11 @@
     "variable_wants": {
       "partying": [],
       "dining_out": [
+        {
+          "name": "DD *DOORDASH",
+          "amount": 19.15,
+          "account": "SoFi Checking"
+        },
         {
           "name": "GrubHub",
           "amount": 11.92,
@@ -61,12 +77,27 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
+          "name": "Starbucks",
+          "amount": 33.74,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 16.87,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "Chipotle Mexican Grill",
           "amount": 12.43,
           "account": "Blue Cash Preferred\u00ae"
         }
       ],
       "slop": [
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 11.01,
+          "account": "SoFi Checking"
+        },
         {
           "name": "VILLAGE MARKET",
           "amount": 5.55,
@@ -96,6 +127,11 @@
       "gym": [],
       "misc_other": [
         {
+          "name": "McDonald's",
+          "amount": 11.31,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "Patreon* Membership",
           "amount": 10.0,
           "account": "SoFi Checking"
@@ -106,18 +142,8 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "McDonald's",
-          "amount": 11.31,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "BP FDMS CAT",
-          "amount": 9.4,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "BP FDMS CAT",
-          "amount": 68.06,
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 7.56,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -136,11 +162,6 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 16.87,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
           "name": "VCU REC WELL 00-0802RICHMOND",
           "amount": 35.0,
           "account": "Delta SkyMiles\u00ae Gold Card"
@@ -155,6 +176,11 @@
   },
   "unmatched_transactions": [
     {
+      "name": "McDonald's",
+      "amount": 11.31,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "Patreon* Membership",
       "amount": 10.0,
       "account": "SoFi Checking"
@@ -165,18 +191,8 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "McDonald's",
-      "amount": 11.31,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "BP FDMS CAT",
-      "amount": 9.4,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "BP FDMS CAT",
-      "amount": 68.06,
+      "name": "URBAN FARMHOUSE MARKET AND CAF",
+      "amount": 7.56,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -195,11 +211,6 @@
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "NATES BAGELS - CARY STREET",
-      "amount": 16.87,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
       "name": "VCU REC WELL 00-0802RICHMOND",
       "amount": 35.0,
       "account": "Delta SkyMiles\u00ae Gold Card"
@@ -213,11 +224,26 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 766.21,
+      "balance": 304.9,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 11.01,
+          "category": "slop"
+        },
+        {
+          "name": "McDonald's",
+          "amount": 11.31,
+          "category": "misc_other"
+        },
+        {
+          "name": "DD *DOORDASH",
+          "amount": 19.15,
+          "category": "dining_out"
+        },
         {
           "name": "VILLAGE MARKET",
           "amount": 5.55,
@@ -249,11 +275,6 @@
           "category": "misc_other"
         },
         {
-          "name": "McDonald's",
-          "amount": 11.31,
-          "category": "misc_other"
-        },
-        {
           "name": "TST*NATES BAGELS - CAR",
           "amount": 16.87,
           "category": "dining_out"
@@ -275,25 +296,25 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1444.06,
+      "balance": 1609.54,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
-          "name": "7-Eleven",
-          "amount": 24.47,
-          "category": "slop"
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 7.56,
+          "category": "misc_other"
         },
         {
-          "name": "BP FDMS CAT",
+          "name": "AplPay BP#9708157CAPRICHMOND",
           "amount": 9.4,
-          "category": "misc_other"
+          "category": "gas"
         },
         {
-          "name": "BP FDMS CAT",
+          "name": "AplPay BP#9708157CAPRICHMOND",
           "amount": 68.06,
-          "category": "misc_other"
+          "category": "gas"
         },
         {
           "name": "CVS",
@@ -303,6 +324,21 @@
         {
           "name": "Chipotle Mexican Grill",
           "amount": 14.64,
+          "category": "dining_out"
+        },
+        {
+          "name": "Starbucks",
+          "amount": 33.74,
+          "category": "dining_out"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 24.47,
+          "category": "slop"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 16.87,
           "category": "dining_out"
         },
         {
@@ -318,11 +354,6 @@
         {
           "name": "Chick-fil-A",
           "amount": 15.09,
-          "category": "misc_other"
-        },
-        {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 16.87,
           "category": "misc_other"
         },
         {
@@ -375,7 +406,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 766.21,
+    "actual_checking_balance": 304.9,
     "actual_savings_balance": 1.54
   },
   "debt": {
@@ -395,7 +426,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1444.06
+      "current_balance": 1609.54
     }
   },
   "plans": [
