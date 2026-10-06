@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-10-05",
+  "last_updated": "2026-10-06",
   "period_start": "2026-09-30",
-  "period_end": "2026-10-05",
+  "period_end": "2026-10-06",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
-      "groceries": 7.66,
+      "groceries": 31.49,
       "gas": 77.46000000000001,
       "parking": 0.0,
       "subscriptions": 20.0
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 125.62,
+      "dining_out": 148.75000000000003,
       "slop": 57.98,
       "gym": 0.0,
-      "misc_other": 418.81000000000006
+      "misc_other": 428.28000000000003
     }
   },
   "categories_detail": {
@@ -30,6 +30,11 @@
           "name": "Kroger",
           "amount": 7.66,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "Target",
+          "amount": 23.83,
+          "account": "Blue Cash Preferred\u00ae"
         }
       ],
       "gas": [
@@ -56,6 +61,16 @@
     "variable_wants": {
       "partying": [],
       "dining_out": [
+        {
+          "name": "TST*NATES BAGELS - CAR",
+          "amount": 9.06,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "account": "SoFi Checking"
+        },
         {
           "name": "DD *DOORDASH",
           "amount": 19.15,
@@ -127,6 +142,11 @@
       "gym": [],
       "misc_other": [
         {
+          "name": "CTLP*CANTEEN VENDING",
+          "amount": 3.1,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "McDonald's",
           "amount": 11.31,
           "account": "SoFi Checking"
@@ -140,6 +160,11 @@
           "name": "Jimmy Johns",
           "amount": 15.11,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 6.37,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
@@ -176,6 +201,11 @@
   },
   "unmatched_transactions": [
     {
+      "name": "CTLP*CANTEEN VENDING",
+      "amount": 3.1,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "McDonald's",
       "amount": 11.31,
       "account": "SoFi Checking"
@@ -189,6 +219,11 @@
       "name": "Jimmy Johns",
       "amount": 15.11,
       "account": "SoFi Checking"
+    },
+    {
+      "name": "NATES BAGELS - CARY STREET",
+      "amount": 6.37,
+      "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "URBAN FARMHOUSE MARKET AND CAF",
@@ -224,11 +259,26 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 304.9,
+      "balance": 204.9,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "TST*NATES BAGELS - CAR",
+          "amount": 9.06,
+          "category": "dining_out"
+        },
+        {
+          "name": "CTLP*CANTEEN VENDING",
+          "amount": 3.1,
+          "category": "misc_other"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "category": "dining_out"
+        },
         {
           "name": "ESSENTIAL EXPRESS",
           "amount": 11.01,
@@ -296,11 +346,21 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1609.54,
+      "balance": 1550.84,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 6.37,
+          "category": "misc_other"
+        },
+        {
+          "name": "Target",
+          "amount": 23.83,
+          "category": "groceries"
+        },
         {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
           "amount": 7.56,
@@ -406,7 +466,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 304.9,
+    "actual_checking_balance": 204.9,
     "actual_savings_balance": 1.54
   },
   "debt": {
@@ -426,7 +486,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1609.54
+      "current_balance": 1550.84
     }
   },
   "plans": [
