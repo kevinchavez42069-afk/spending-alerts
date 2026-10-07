@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-06",
+  "last_updated": "2026-10-07",
   "period_start": "2026-09-30",
-  "period_end": "2026-10-06",
+  "period_end": "2026-10-07",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -14,10 +14,10 @@
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 148.75000000000003,
-      "slop": 57.98,
+      "dining_out": 156.31,
+      "slop": 64.42,
       "gym": 0.0,
-      "misc_other": 428.28000000000003
+      "misc_other": 448.1
     }
   },
   "categories_detail": {
@@ -62,11 +62,6 @@
       "partying": [],
       "dining_out": [
         {
-          "name": "TST*NATES BAGELS - CAR",
-          "amount": 9.06,
-          "account": "SoFi Checking"
-        },
-        {
           "name": "Chipotle Mexican Grill",
           "amount": 14.07,
           "account": "SoFi Checking"
@@ -74,6 +69,11 @@
         {
           "name": "DD *DOORDASH",
           "amount": 19.15,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "TST*NATES BAGELS - CAR",
+          "amount": 9.06,
           "account": "SoFi Checking"
         },
         {
@@ -87,13 +87,18 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.64,
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 7.56,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "Starbucks",
           "amount": 33.74,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.64,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -108,6 +113,11 @@
         }
       ],
       "slop": [
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 6.44,
+          "account": "SoFi Checking"
+        },
         {
           "name": "ESSENTIAL EXPRESS",
           "amount": 11.01,
@@ -162,13 +172,18 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 6.56,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "NATES BAGELS - CARY STREET",
           "amount": 6.37,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 7.56,
+          "name": "Raising Cane's Chicken Fingers",
+          "amount": 20.82,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -221,13 +236,18 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "URBAN FARMHOUSE MARKET AND CAF",
+      "amount": 6.56,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "NATES BAGELS - CARY STREET",
       "amount": 6.37,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "URBAN FARMHOUSE MARKET AND CAF",
-      "amount": 7.56,
+      "name": "Raising Cane's Chicken Fingers",
+      "amount": 20.82,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -259,16 +279,11 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 204.9,
+      "balance": 157.57,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
-        {
-          "name": "TST*NATES BAGELS - CAR",
-          "amount": 9.06,
-          "category": "dining_out"
-        },
         {
           "name": "CTLP*CANTEEN VENDING",
           "amount": 3.1,
@@ -280,19 +295,29 @@
           "category": "dining_out"
         },
         {
+          "name": "DD *DOORDASH",
+          "amount": 19.15,
+          "category": "dining_out"
+        },
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 6.44,
+          "category": "slop"
+        },
+        {
           "name": "ESSENTIAL EXPRESS",
           "amount": 11.01,
           "category": "slop"
         },
         {
+          "name": "TST*NATES BAGELS - CAR",
+          "amount": 9.06,
+          "category": "dining_out"
+        },
+        {
           "name": "McDonald's",
           "amount": 11.31,
           "category": "misc_other"
-        },
-        {
-          "name": "DD *DOORDASH",
-          "amount": 19.15,
-          "category": "dining_out"
         },
         {
           "name": "VILLAGE MARKET",
@@ -346,14 +371,24 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1550.84,
+      "balance": 1574.67,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 6.56,
+          "category": "misc_other"
+        },
+        {
           "name": "NATES BAGELS - CARY STREET",
           "amount": 6.37,
+          "category": "misc_other"
+        },
+        {
+          "name": "Raising Cane's Chicken Fingers",
+          "amount": 20.82,
           "category": "misc_other"
         },
         {
@@ -362,9 +397,14 @@
           "category": "groceries"
         },
         {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "name": "AplPay TST* URBAN FARICHMOND",
           "amount": 7.56,
-          "category": "misc_other"
+          "category": "dining_out"
+        },
+        {
+          "name": "Starbucks",
+          "amount": 33.74,
+          "category": "dining_out"
         },
         {
           "name": "AplPay BP#9708157CAPRICHMOND",
@@ -384,11 +424,6 @@
         {
           "name": "Chipotle Mexican Grill",
           "amount": 14.64,
-          "category": "dining_out"
-        },
-        {
-          "name": "Starbucks",
-          "amount": 33.74,
           "category": "dining_out"
         },
         {
@@ -466,7 +501,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 204.9,
+    "actual_checking_balance": 157.57,
     "actual_savings_balance": 1.54
   },
   "debt": {
@@ -486,7 +521,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1550.84
+      "current_balance": 1574.67
     }
   },
   "plans": [
