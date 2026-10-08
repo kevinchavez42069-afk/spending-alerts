@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-07",
+  "last_updated": "2026-10-08",
   "period_start": "2026-09-30",
-  "period_end": "2026-10-07",
+  "period_end": "2026-10-08",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -14,10 +14,10 @@
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 156.31,
-      "slop": 64.42,
+      "dining_out": 187.25000000000006,
+      "slop": 69.19,
       "gym": 0.0,
-      "misc_other": 448.1
+      "misc_other": 441.73
     }
   },
   "categories_detail": {
@@ -62,6 +62,16 @@
       "partying": [],
       "dining_out": [
         {
+          "name": "TST*NATES BAGELS - CAR",
+          "amount": 9.06,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "TST*NATES BAGELS - CAR",
+          "amount": 10.5,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "Chipotle Mexican Grill",
           "amount": 14.07,
           "account": "SoFi Checking"
@@ -69,11 +79,6 @@
         {
           "name": "DD *DOORDASH",
           "amount": 19.15,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "TST*NATES BAGELS - CAR",
-          "amount": 9.06,
           "account": "SoFi Checking"
         },
         {
@@ -85,6 +90,16 @@
           "name": "TST*NATES BAGELS - CAR",
           "amount": 16.87,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 6.37,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay TST* URBAN FARICHMOND",
@@ -113,6 +128,11 @@
         }
       ],
       "slop": [
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 4.77,
+          "account": "SoFi Checking"
+        },
         {
           "name": "ESSENTIAL EXPRESS",
           "amount": 6.44,
@@ -172,18 +192,13 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 6.56,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 6.37,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
           "name": "Raising Cane's Chicken Fingers",
           "amount": 20.82,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 6.56,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -236,18 +251,13 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "URBAN FARMHOUSE MARKET AND CAF",
-      "amount": 6.56,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "NATES BAGELS - CARY STREET",
-      "amount": 6.37,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
       "name": "Raising Cane's Chicken Fingers",
       "amount": 20.82,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "URBAN FARMHOUSE MARKET AND CAF",
+      "amount": 6.56,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -279,11 +289,26 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 157.57,
+      "balance": 148.51,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 4.77,
+          "category": "slop"
+        },
+        {
+          "name": "TST*NATES BAGELS - CAR",
+          "amount": 9.06,
+          "category": "dining_out"
+        },
+        {
+          "name": "TST*NATES BAGELS - CAR",
+          "amount": 10.5,
+          "category": "dining_out"
+        },
         {
           "name": "CTLP*CANTEEN VENDING",
           "amount": 3.1,
@@ -308,11 +333,6 @@
           "name": "ESSENTIAL EXPRESS",
           "amount": 11.01,
           "category": "slop"
-        },
-        {
-          "name": "TST*NATES BAGELS - CAR",
-          "amount": 9.06,
-          "category": "dining_out"
         },
         {
           "name": "McDonald's",
@@ -371,24 +391,29 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1574.67,
+      "balance": 1601.86,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 6.56,
-          "category": "misc_other"
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 6.37,
+          "category": "dining_out"
         },
         {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 6.37,
-          "category": "misc_other"
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "category": "dining_out"
         },
         {
           "name": "Raising Cane's Chicken Fingers",
           "amount": 20.82,
+          "category": "misc_other"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 6.56,
           "category": "misc_other"
         },
         {
@@ -501,7 +526,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 157.57,
+    "actual_checking_balance": 148.51,
     "actual_savings_balance": 1.54
   },
   "debt": {
@@ -521,7 +546,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1574.67
+      "current_balance": 1601.86
     }
   },
   "plans": [
