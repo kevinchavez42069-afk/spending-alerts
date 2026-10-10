@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-09",
+  "last_updated": "2026-10-10",
   "period_start": "2026-09-30",
-  "period_end": "2026-10-09",
+  "period_end": "2026-10-10",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -17,7 +17,7 @@
       "dining_out": 211.12000000000006,
       "slop": 75.85,
       "gym": 0.0,
-      "misc_other": 486.89
+      "misc_other": 543.34
     }
   },
   "categories_detail": {
@@ -62,6 +62,11 @@
       "partying": [],
       "dining_out": [
         {
+          "name": "TST*NATES BAGELS - CAR",
+          "amount": 10.5,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "DD *DOORDASH",
           "amount": 17.31,
           "account": "SoFi Checking"
@@ -69,11 +74,6 @@
         {
           "name": "TST*NATES BAGELS - CAR",
           "amount": 9.06,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "TST*NATES BAGELS - CAR",
-          "amount": 10.5,
           "account": "SoFi Checking"
         },
         {
@@ -140,12 +140,12 @@
       "slop": [
         {
           "name": "ESSENTIAL EXPRESS",
-          "amount": 6.44,
+          "amount": 4.77,
           "account": "SoFi Checking"
         },
         {
           "name": "ESSENTIAL EXPRESS",
-          "amount": 4.77,
+          "amount": 6.44,
           "account": "SoFi Checking"
         },
         {
@@ -187,8 +187,18 @@
       "gym": [],
       "misc_other": [
         {
+          "name": "ALAMO DRFTHS WINCH ECO",
+          "amount": 14.94,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "MARTINS 6078 1950 S PL",
           "amount": 7.25,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "Sunoco",
+          "amount": 2.1,
           "account": "SoFi Checking"
         },
         {
@@ -210,6 +220,16 @@
           "name": "Jimmy Johns",
           "amount": 15.11,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "ALAMO DRAFTHOUSE CINEMA",
+          "amount": 1.01,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "ALAMO DRAFTHOUSE CINEMA",
+          "amount": 38.4,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "K H M CONVENIENCE STORE",
@@ -251,8 +271,18 @@
   },
   "unmatched_transactions": [
     {
+      "name": "ALAMO DRFTHS WINCH ECO",
+      "amount": 14.94,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "MARTINS 6078 1950 S PL",
       "amount": 7.25,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "Sunoco",
+      "amount": 2.1,
       "account": "SoFi Checking"
     },
     {
@@ -274,6 +304,16 @@
       "name": "Jimmy Johns",
       "amount": 15.11,
       "account": "SoFi Checking"
+    },
+    {
+      "name": "ALAMO DRAFTHOUSE CINEMA",
+      "amount": 1.01,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "ALAMO DRAFTHOUSE CINEMA",
+      "amount": 38.4,
+      "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "K H M CONVENIENCE STORE",
@@ -314,11 +354,26 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 334.82,
+      "balance": 414.69,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 4.77,
+          "category": "slop"
+        },
+        {
+          "name": "TST*NATES BAGELS - CAR",
+          "amount": 10.5,
+          "category": "dining_out"
+        },
+        {
+          "name": "ALAMO DRFTHS WINCH ECO",
+          "amount": 14.94,
+          "category": "misc_other"
+        },
         {
           "name": "ESSENTIAL EXPRESS",
           "amount": 6.44,
@@ -330,23 +385,18 @@
           "category": "misc_other"
         },
         {
+          "name": "Sunoco",
+          "amount": 2.1,
+          "category": "misc_other"
+        },
+        {
           "name": "DD *DOORDASH",
           "amount": 17.31,
           "category": "dining_out"
         },
         {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 4.77,
-          "category": "slop"
-        },
-        {
           "name": "TST*NATES BAGELS - CAR",
           "amount": 9.06,
-          "category": "dining_out"
-        },
-        {
-          "name": "TST*NATES BAGELS - CAR",
-          "amount": 10.5,
           "category": "dining_out"
         },
         {
@@ -426,11 +476,21 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1622.49,
+      "balance": 1573.62,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "ALAMO DRAFTHOUSE CINEMA",
+          "amount": 1.01,
+          "category": "misc_other"
+        },
+        {
+          "name": "ALAMO DRAFTHOUSE CINEMA",
+          "amount": 38.4,
+          "category": "misc_other"
+        },
         {
           "name": "AplPay TST* URBAN FARICHMOND",
           "amount": 6.56,
@@ -540,7 +600,7 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 4033.46,
+      "balance": 3933.46,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
@@ -571,7 +631,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 334.82,
+    "actual_checking_balance": 414.69,
     "actual_savings_balance": 1.54
   },
   "debt": {
@@ -583,7 +643,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 4033.46
+      "current_balance": 3933.46
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -591,7 +651,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1622.49
+      "current_balance": 1573.62
     }
   },
   "plans": [
