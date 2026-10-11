@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-10",
+  "last_updated": "2026-10-11",
   "period_start": "2026-09-30",
-  "period_end": "2026-10-10",
+  "period_end": "2026-10-11",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -10,14 +10,14 @@
       "groceries": 31.49,
       "gas": 77.46000000000001,
       "parking": 0.0,
-      "subscriptions": 20.0
+      "subscriptions": 29.97
     },
     "variable_wants": {
       "partying": 0.0,
       "dining_out": 211.12000000000006,
       "slop": 75.85,
       "gym": 0.0,
-      "misc_other": 543.34
+      "misc_other": 625.37
     }
   },
   "categories_detail": {
@@ -55,6 +55,16 @@
           "name": "ANTHROPIC* CLAUDE SUB",
           "amount": 20.0,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "APPLECOMBILL",
+          "amount": 3.98,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "APPLECOMBILL",
+          "amount": 5.99,
+          "account": "Blue Cash Preferred\u00ae"
         }
       ]
     },
@@ -164,7 +174,7 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "VILLAGE MARKET",
+          "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 6.66,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -222,6 +232,26 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "VIBRISSA BEER - WINCHESTER",
+          "amount": 5.13,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "ONELIFE",
+          "amount": 20.0,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "PICCADILLYS PUBLIC HOUSE AND R",
+          "amount": 20.0,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "UNION JACK PUB RESTAURANT",
+          "amount": 36.9,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "ALAMO DRAFTHOUSE CINEMA",
           "amount": 1.01,
           "account": "Blue Cash Preferred\u00ae"
@@ -232,7 +262,7 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "K H M CONVENIENCE STORE",
+          "name": "AplPay K H M CONVENIHENRICO",
           "amount": 44.47,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -306,6 +336,26 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "VIBRISSA BEER - WINCHESTER",
+      "amount": 5.13,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "ONELIFE",
+      "amount": 20.0,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "PICCADILLYS PUBLIC HOUSE AND R",
+      "amount": 20.0,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "UNION JACK PUB RESTAURANT",
+      "amount": 36.9,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "ALAMO DRAFTHOUSE CINEMA",
       "amount": 1.01,
       "account": "Blue Cash Preferred\u00ae"
@@ -316,7 +366,7 @@
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "K H M CONVENIENCE STORE",
+      "name": "AplPay K H M CONVENIHENRICO",
       "amount": 44.47,
       "account": "Blue Cash Preferred\u00ae"
     },
@@ -354,11 +404,16 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 414.69,
+      "balance": 390.87,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "ALAMO DRFTHS WINCH ECO",
+          "amount": 14.94,
+          "category": "misc_other"
+        },
         {
           "name": "ESSENTIAL EXPRESS",
           "amount": 4.77,
@@ -368,11 +423,6 @@
           "name": "TST*NATES BAGELS - CAR",
           "amount": 10.5,
           "category": "dining_out"
-        },
-        {
-          "name": "ALAMO DRFTHS WINCH ECO",
-          "amount": 14.94,
-          "category": "misc_other"
         },
         {
           "name": "ESSENTIAL EXPRESS",
@@ -476,11 +526,41 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1573.62,
+      "balance": 1618.93,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "APPLECOMBILL",
+          "amount": 3.98,
+          "category": "subscriptions"
+        },
+        {
+          "name": "APPLECOMBILL",
+          "amount": 5.99,
+          "category": "subscriptions"
+        },
+        {
+          "name": "VIBRISSA BEER - WINCHESTER",
+          "amount": 5.13,
+          "category": "misc_other"
+        },
+        {
+          "name": "ONELIFE",
+          "amount": 20.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "PICCADILLYS PUBLIC HOUSE AND R",
+          "amount": 20.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "UNION JACK PUB RESTAURANT",
+          "amount": 36.9,
+          "category": "misc_other"
+        },
         {
           "name": "ALAMO DRAFTHOUSE CINEMA",
           "amount": 1.01,
@@ -492,6 +572,16 @@
           "category": "misc_other"
         },
         {
+          "name": "AplPay K H M CONVENIHENRICO",
+          "amount": 44.47,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 6.66,
+          "category": "slop"
+        },
+        {
           "name": "AplPay TST* URBAN FARICHMOND",
           "amount": 6.56,
           "category": "dining_out"
@@ -500,16 +590,6 @@
           "name": "Chipotle Mexican Grill",
           "amount": 14.07,
           "category": "dining_out"
-        },
-        {
-          "name": "K H M CONVENIENCE STORE",
-          "amount": 44.47,
-          "category": "misc_other"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 6.66,
-          "category": "slop"
         },
         {
           "name": "AplPay TST* NATES BARICHMOND",
@@ -631,7 +711,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 414.69,
+    "actual_checking_balance": 390.87,
     "actual_savings_balance": 1.54
   },
   "debt": {
@@ -651,7 +731,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1573.62
+      "current_balance": 1618.93
     }
   },
   "plans": [
