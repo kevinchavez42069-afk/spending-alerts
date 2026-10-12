@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-10-11",
+  "last_updated": "2026-10-12",
   "period_start": "2026-09-30",
-  "period_end": "2026-10-11",
+  "period_end": "2026-10-12",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
       "groceries": 31.49,
-      "gas": 77.46000000000001,
+      "gas": 143.38,
       "parking": 0.0,
-      "subscriptions": 29.97
+      "subscriptions": 40.0
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 211.12000000000006,
+      "dining_out": 256.43,
       "slop": 75.85,
       "gym": 0.0,
-      "misc_other": 625.37
+      "misc_other": 596.69
     }
   },
   "categories_detail": {
@@ -39,6 +39,11 @@
       ],
       "gas": [
         {
+          "name": "WAWA STORE",
+          "amount": 65.92,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "AplPay BP#9708157CAPRICHMOND",
           "amount": 9.4,
           "account": "Blue Cash Preferred\u00ae"
@@ -57,14 +62,9 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "APPLECOMBILL",
-          "amount": 3.98,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "APPLECOMBILL",
-          "amount": 5.99,
-          "account": "Blue Cash Preferred\u00ae"
+          "name": "ANTHROPIC* CLAUDE SUB",
+          "amount": 20.0,
+          "account": "SoFi Checking"
         }
       ]
     },
@@ -72,13 +72,13 @@
       "partying": [],
       "dining_out": [
         {
-          "name": "TST*NATES BAGELS - CAR",
-          "amount": 10.5,
+          "name": "DD *DOORDASH",
+          "amount": 17.31,
           "account": "SoFi Checking"
         },
         {
-          "name": "DD *DOORDASH",
-          "amount": 17.31,
+          "name": "TST*NATES BAGELS - CAR",
+          "amount": 10.5,
           "account": "SoFi Checking"
         },
         {
@@ -105,6 +105,11 @@
           "name": "TST*NATES BAGELS - CAR",
           "amount": 16.87,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "AplPay TST* ALAMO DRWINCHESTER",
+          "amount": 45.31,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay TST* URBAN FARICHMOND",
@@ -232,33 +237,38 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 3.98,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 5.99,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay ONELIFE WINCHWINCHESTER",
+          "amount": 20.0,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "PICCADILLYS PUBLIC HWINCHESTER",
+          "amount": 14.75,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "UNION JACK",
+          "amount": 41.9,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "VIBRISSA BEER - WINCHESTER",
           "amount": 5.13,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "ONELIFE",
-          "amount": 20.0,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "PICCADILLYS PUBLIC HOUSE AND R",
-          "amount": 20.0,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "UNION JACK PUB RESTAURANT",
-          "amount": 36.9,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
           "name": "ALAMO DRAFTHOUSE CINEMA",
           "amount": 1.01,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "ALAMO DRAFTHOUSE CINEMA",
-          "amount": 38.4,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -336,33 +346,38 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "APPLE.COM/BILL INTERNET CHARGE",
+      "amount": 3.98,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "APPLE.COM/BILL INTERNET CHARGE",
+      "amount": 5.99,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay ONELIFE WINCHWINCHESTER",
+      "amount": 20.0,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "PICCADILLYS PUBLIC HWINCHESTER",
+      "amount": 14.75,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "UNION JACK",
+      "amount": 41.9,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "VIBRISSA BEER - WINCHESTER",
       "amount": 5.13,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "ONELIFE",
-      "amount": 20.0,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "PICCADILLYS PUBLIC HOUSE AND R",
-      "amount": 20.0,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "UNION JACK PUB RESTAURANT",
-      "amount": 36.9,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
       "name": "ALAMO DRAFTHOUSE CINEMA",
       "amount": 1.01,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "ALAMO DRAFTHOUSE CINEMA",
-      "amount": 38.4,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -404,15 +419,25 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 390.87,
+      "balance": 423.56,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
         {
+          "name": "DD *DOORDASH",
+          "amount": 17.31,
+          "category": "dining_out"
+        },
+        {
           "name": "ALAMO DRFTHS WINCH ECO",
           "amount": 14.94,
           "category": "misc_other"
+        },
+        {
+          "name": "ANTHROPIC* CLAUDE SUB",
+          "amount": 20.0,
+          "category": "subscriptions"
         },
         {
           "name": "ESSENTIAL EXPRESS",
@@ -438,11 +463,6 @@
           "name": "Sunoco",
           "amount": 2.1,
           "category": "misc_other"
-        },
-        {
-          "name": "DD *DOORDASH",
-          "amount": 17.31,
-          "category": "dining_out"
         },
         {
           "name": "TST*NATES BAGELS - CAR",
@@ -526,20 +546,40 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1618.93,
+      "balance": 1705.55,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
-          "name": "APPLECOMBILL",
-          "amount": 3.98,
-          "category": "subscriptions"
+          "name": "WAWA STORE",
+          "amount": 65.92,
+          "category": "gas"
         },
         {
-          "name": "APPLECOMBILL",
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 3.98,
+          "category": "misc_other"
+        },
+        {
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
           "amount": 5.99,
-          "category": "subscriptions"
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay ONELIFE WINCHWINCHESTER",
+          "amount": 20.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "PICCADILLYS PUBLIC HWINCHESTER",
+          "amount": 14.75,
+          "category": "misc_other"
+        },
+        {
+          "name": "UNION JACK",
+          "amount": 41.9,
+          "category": "misc_other"
         },
         {
           "name": "VIBRISSA BEER - WINCHESTER",
@@ -547,28 +587,13 @@
           "category": "misc_other"
         },
         {
-          "name": "ONELIFE",
-          "amount": 20.0,
-          "category": "misc_other"
-        },
-        {
-          "name": "PICCADILLYS PUBLIC HOUSE AND R",
-          "amount": 20.0,
-          "category": "misc_other"
-        },
-        {
-          "name": "UNION JACK PUB RESTAURANT",
-          "amount": 36.9,
-          "category": "misc_other"
+          "name": "AplPay TST* ALAMO DRWINCHESTER",
+          "amount": 45.31,
+          "category": "dining_out"
         },
         {
           "name": "ALAMO DRAFTHOUSE CINEMA",
           "amount": 1.01,
-          "category": "misc_other"
-        },
-        {
-          "name": "ALAMO DRAFTHOUSE CINEMA",
-          "amount": 38.4,
           "category": "misc_other"
         },
         {
@@ -711,7 +736,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 390.87,
+    "actual_checking_balance": 423.56,
     "actual_savings_balance": 1.54
   },
   "debt": {
@@ -731,7 +756,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1618.93
+      "current_balance": 1705.55
     }
   },
   "plans": [
