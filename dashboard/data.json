@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-12",
+  "last_updated": "2026-10-13",
   "period_start": "2026-09-30",
-  "period_end": "2026-10-12",
+  "period_end": "2026-10-13",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -10,14 +10,14 @@
       "groceries": 31.49,
       "gas": 143.38,
       "parking": 0.0,
-      "subscriptions": 40.0
+      "subscriptions": 41.24
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 256.43,
-      "slop": 75.85,
+      "dining_out": 275.63000000000005,
+      "slop": 79.96,
       "gym": 0.0,
-      "misc_other": 596.69
+      "misc_other": 610.6700000000001
     }
   },
   "categories_detail": {
@@ -65,6 +65,11 @@
           "name": "ANTHROPIC* CLAUDE SUB",
           "amount": 20.0,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "TUBLY DOWNLOADER",
+          "amount": 1.24,
+          "account": "Blue Cash Preferred\u00ae"
         }
       ]
     },
@@ -105,6 +110,16 @@
           "name": "TST*NATES BAGELS - CAR",
           "amount": 16.87,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "AplPay TST* VIBRISSAWINCHESTER",
+          "amount": 5.13,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay TST* ALAMO DRWINCHESTER",
@@ -179,6 +194,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 6.66,
           "account": "Blue Cash Preferred\u00ae"
@@ -237,6 +257,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 19.11,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "APPLE.COM/BILL INTERNET CHARGE",
           "amount": 3.98,
           "account": "Blue Cash Preferred\u00ae"
@@ -259,11 +284,6 @@
         {
           "name": "UNION JACK",
           "amount": 41.9,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "VIBRISSA BEER - WINCHESTER",
-          "amount": 5.13,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -346,6 +366,11 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "URBAN FARMHOUSE MARKET AND CAF",
+      "amount": 19.11,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "APPLE.COM/BILL INTERNET CHARGE",
       "amount": 3.98,
       "account": "Blue Cash Preferred\u00ae"
@@ -368,11 +393,6 @@
     {
       "name": "UNION JACK",
       "amount": 41.9,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "VIBRISSA BEER - WINCHESTER",
-      "amount": 5.13,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -419,11 +439,16 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 423.56,
+      "balance": 203.56,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "ANTHROPIC* CLAUDE SUB",
+          "amount": 20.0,
+          "category": "subscriptions"
+        },
         {
           "name": "DD *DOORDASH",
           "amount": 17.31,
@@ -433,11 +458,6 @@
           "name": "ALAMO DRFTHS WINCH ECO",
           "amount": 14.94,
           "category": "misc_other"
-        },
-        {
-          "name": "ANTHROPIC* CLAUDE SUB",
-          "amount": 20.0,
-          "category": "subscriptions"
         },
         {
           "name": "ESSENTIAL EXPRESS",
@@ -546,11 +566,36 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1705.55,
+      "balance": 1710.68,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 19.11,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay TST* VIBRISSAWINCHESTER",
+          "amount": 5.13,
+          "category": "dining_out"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "category": "dining_out"
+        },
+        {
+          "name": "TUBLY DOWNLOADER",
+          "amount": 1.24,
+          "category": "subscriptions"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
+          "category": "slop"
+        },
         {
           "name": "WAWA STORE",
           "amount": 65.92,
@@ -579,11 +624,6 @@
         {
           "name": "UNION JACK",
           "amount": 41.9,
-          "category": "misc_other"
-        },
-        {
-          "name": "VIBRISSA BEER - WINCHESTER",
-          "amount": 5.13,
           "category": "misc_other"
         },
         {
@@ -736,7 +776,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 423.56,
+    "actual_checking_balance": 203.56,
     "actual_savings_balance": 1.54
   },
   "debt": {
@@ -756,7 +796,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1705.55
+      "current_balance": 1710.68
     }
   },
   "plans": [
