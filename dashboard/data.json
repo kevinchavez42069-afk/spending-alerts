@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-10-13",
-  "period_start": "2026-09-30",
-  "period_end": "2026-10-13",
+  "last_updated": "2026-10-14",
+  "period_start": "2026-10-14",
+  "period_end": "2026-10-14",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
-      "groceries": 31.49,
-      "gas": 143.38,
+      "groceries": 0.0,
+      "gas": 0.0,
       "parking": 0.0,
-      "subscriptions": 41.24
+      "subscriptions": 0.0
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 275.63000000000005,
-      "slop": 79.96,
+      "dining_out": 0.0,
+      "slop": 0.0,
       "gym": 0.0,
-      "misc_other": 610.6700000000001
+      "misc_other": 10.4
     }
   },
   "categories_detail": {
@@ -25,305 +25,20 @@
       "rent": []
     },
     "variable_needs": {
-      "groceries": [
-        {
-          "name": "Kroger",
-          "amount": 7.66,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "Target",
-          "amount": 23.83,
-          "account": "Blue Cash Preferred\u00ae"
-        }
-      ],
-      "gas": [
-        {
-          "name": "WAWA STORE",
-          "amount": 65.92,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay BP#9708157CAPRICHMOND",
-          "amount": 9.4,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay BP#9708157CAPRICHMOND",
-          "amount": 68.06,
-          "account": "Blue Cash Preferred\u00ae"
-        }
-      ],
+      "groceries": [],
+      "gas": [],
       "parking": [],
-      "subscriptions": [
-        {
-          "name": "ANTHROPIC* CLAUDE SUB",
-          "amount": 20.0,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "ANTHROPIC* CLAUDE SUB",
-          "amount": 20.0,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "TUBLY DOWNLOADER",
-          "amount": 1.24,
-          "account": "Blue Cash Preferred\u00ae"
-        }
-      ]
+      "subscriptions": []
     },
     "variable_wants": {
       "partying": [],
-      "dining_out": [
-        {
-          "name": "DD *DOORDASH",
-          "amount": 17.31,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "TST*NATES BAGELS - CAR",
-          "amount": 10.5,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "TST*NATES BAGELS - CAR",
-          "amount": 9.06,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.07,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "DD *DOORDASH",
-          "amount": 19.15,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "GrubHub",
-          "amount": 11.92,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "TST*NATES BAGELS - CAR",
-          "amount": 16.87,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "AplPay TST* VIBRISSAWINCHESTER",
-          "amount": 5.13,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.07,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay TST* ALAMO DRWINCHESTER",
-          "amount": 45.31,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay TST* URBAN FARICHMOND",
-          "amount": 6.56,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.07,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay TST* NATES BARICHMOND",
-          "amount": 6.37,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay TST* URBAN FARICHMOND",
-          "amount": 7.56,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Starbucks",
-          "amount": 33.74,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.64,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay TST* NATES BARICHMOND",
-          "amount": 16.87,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 12.43,
-          "account": "Blue Cash Preferred\u00ae"
-        }
-      ],
-      "slop": [
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 4.77,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 6.44,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 11.01,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 5.55,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 2.85,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 4.11,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 6.66,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 24.47,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 9.99,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 4.11,
-          "account": "Blue Cash Preferred\u00ae"
-        }
-      ],
+      "dining_out": [],
+      "slop": [],
       "gym": [],
       "misc_other": [
         {
-          "name": "ALAMO DRFTHS WINCH ECO",
-          "amount": 14.94,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "MARTINS 6078 1950 S PL",
-          "amount": 7.25,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "Sunoco",
-          "amount": 2.1,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "CTLP*CANTEEN VENDING",
-          "amount": 3.1,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "McDonald's",
-          "amount": 11.31,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "Patreon* Membership",
-          "amount": 10.0,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "Jimmy Johns",
-          "amount": 15.11,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 19.11,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "APPLE.COM/BILL INTERNET CHARGE",
-          "amount": 3.98,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "APPLE.COM/BILL INTERNET CHARGE",
-          "amount": 5.99,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay ONELIFE WINCHWINCHESTER",
-          "amount": 20.0,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "PICCADILLYS PUBLIC HWINCHESTER",
-          "amount": 14.75,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "UNION JACK",
-          "amount": 41.9,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "ALAMO DRAFTHOUSE CINEMA",
-          "amount": 1.01,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AplPay K H M CONVENIHENRICO",
-          "amount": 44.47,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Raising Cane's Chicken Fingers",
-          "amount": 20.82,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "CVS",
-          "amount": 32.04,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "APPLE.COM/BILL INTERNET CHARGE",
-          "amount": 11.98,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Chick-fil-A",
-          "amount": 15.09,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "VCU REC WELL 00-0802RICHMOND",
-          "amount": 35.0,
-          "account": "Delta SkyMiles\u00ae Gold Card"
-        },
-        {
-          "name": "AplPay MOG LABS 0566PORTLAND OR",
-          "amount": 280.72,
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 10.4,
           "account": "Blue Cash Preferred\u00ae"
         }
       ]
@@ -331,108 +46,8 @@
   },
   "unmatched_transactions": [
     {
-      "name": "ALAMO DRFTHS WINCH ECO",
-      "amount": 14.94,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "MARTINS 6078 1950 S PL",
-      "amount": 7.25,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "Sunoco",
-      "amount": 2.1,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "CTLP*CANTEEN VENDING",
-      "amount": 3.1,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "McDonald's",
-      "amount": 11.31,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "Patreon* Membership",
-      "amount": 10.0,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "Jimmy Johns",
-      "amount": 15.11,
-      "account": "SoFi Checking"
-    },
-    {
-      "name": "URBAN FARMHOUSE MARKET AND CAF",
-      "amount": 19.11,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "APPLE.COM/BILL INTERNET CHARGE",
-      "amount": 3.98,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "APPLE.COM/BILL INTERNET CHARGE",
-      "amount": 5.99,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "AplPay ONELIFE WINCHWINCHESTER",
-      "amount": 20.0,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "PICCADILLYS PUBLIC HWINCHESTER",
-      "amount": 14.75,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "UNION JACK",
-      "amount": 41.9,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "ALAMO DRAFTHOUSE CINEMA",
-      "amount": 1.01,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "AplPay K H M CONVENIHENRICO",
-      "amount": 44.47,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "Raising Cane's Chicken Fingers",
-      "amount": 20.82,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "CVS",
-      "amount": 32.04,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "APPLE.COM/BILL INTERNET CHARGE",
-      "amount": 11.98,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "Chick-fil-A",
-      "amount": 15.09,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "VCU REC WELL 00-0802RICHMOND",
-      "amount": 35.0,
-      "account": "Delta SkyMiles\u00ae Gold Card"
-    },
-    {
-      "name": "AplPay MOG LABS 0566PORTLAND OR",
-      "amount": 280.72,
+      "name": "NATES BAGELS - CARY STREET",
+      "amount": 10.4,
       "account": "Blue Cash Preferred\u00ae"
     }
   ],
@@ -443,118 +58,7 @@
       "type": "depository",
       "subtype": "checking",
       "limit": null,
-      "transactions": [
-        {
-          "name": "ANTHROPIC* CLAUDE SUB",
-          "amount": 20.0,
-          "category": "subscriptions"
-        },
-        {
-          "name": "DD *DOORDASH",
-          "amount": 17.31,
-          "category": "dining_out"
-        },
-        {
-          "name": "ALAMO DRFTHS WINCH ECO",
-          "amount": 14.94,
-          "category": "misc_other"
-        },
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 4.77,
-          "category": "slop"
-        },
-        {
-          "name": "TST*NATES BAGELS - CAR",
-          "amount": 10.5,
-          "category": "dining_out"
-        },
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 6.44,
-          "category": "slop"
-        },
-        {
-          "name": "MARTINS 6078 1950 S PL",
-          "amount": 7.25,
-          "category": "misc_other"
-        },
-        {
-          "name": "Sunoco",
-          "amount": 2.1,
-          "category": "misc_other"
-        },
-        {
-          "name": "TST*NATES BAGELS - CAR",
-          "amount": 9.06,
-          "category": "dining_out"
-        },
-        {
-          "name": "CTLP*CANTEEN VENDING",
-          "amount": 3.1,
-          "category": "misc_other"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.07,
-          "category": "dining_out"
-        },
-        {
-          "name": "DD *DOORDASH",
-          "amount": 19.15,
-          "category": "dining_out"
-        },
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 11.01,
-          "category": "slop"
-        },
-        {
-          "name": "McDonald's",
-          "amount": 11.31,
-          "category": "misc_other"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 5.55,
-          "category": "slop"
-        },
-        {
-          "name": "GrubHub",
-          "amount": 11.92,
-          "category": "dining_out"
-        },
-        {
-          "name": "Patreon* Membership",
-          "amount": 10.0,
-          "category": "misc_other"
-        },
-        {
-          "name": "ANTHROPIC* CLAUDE SUB",
-          "amount": 20.0,
-          "category": "subscriptions"
-        },
-        {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 2.85,
-          "category": "slop"
-        },
-        {
-          "name": "Jimmy Johns",
-          "amount": 15.11,
-          "category": "misc_other"
-        },
-        {
-          "name": "TST*NATES BAGELS - CAR",
-          "amount": 16.87,
-          "category": "dining_out"
-        },
-        {
-          "name": "Kroger",
-          "amount": 7.66,
-          "category": "groceries"
-        }
-      ]
+      "transactions": []
     },
     {
       "name": "SoFi Savings",
@@ -566,180 +70,15 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1710.68,
+      "balance": 1796.02,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 19.11,
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 10.4,
           "category": "misc_other"
-        },
-        {
-          "name": "AplPay TST* VIBRISSAWINCHESTER",
-          "amount": 5.13,
-          "category": "dining_out"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.07,
-          "category": "dining_out"
-        },
-        {
-          "name": "TUBLY DOWNLOADER",
-          "amount": 1.24,
-          "category": "subscriptions"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 4.11,
-          "category": "slop"
-        },
-        {
-          "name": "WAWA STORE",
-          "amount": 65.92,
-          "category": "gas"
-        },
-        {
-          "name": "APPLE.COM/BILL INTERNET CHARGE",
-          "amount": 3.98,
-          "category": "misc_other"
-        },
-        {
-          "name": "APPLE.COM/BILL INTERNET CHARGE",
-          "amount": 5.99,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay ONELIFE WINCHWINCHESTER",
-          "amount": 20.0,
-          "category": "misc_other"
-        },
-        {
-          "name": "PICCADILLYS PUBLIC HWINCHESTER",
-          "amount": 14.75,
-          "category": "misc_other"
-        },
-        {
-          "name": "UNION JACK",
-          "amount": 41.9,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay TST* ALAMO DRWINCHESTER",
-          "amount": 45.31,
-          "category": "dining_out"
-        },
-        {
-          "name": "ALAMO DRAFTHOUSE CINEMA",
-          "amount": 1.01,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay K H M CONVENIHENRICO",
-          "amount": 44.47,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 6.66,
-          "category": "slop"
-        },
-        {
-          "name": "AplPay TST* URBAN FARICHMOND",
-          "amount": 6.56,
-          "category": "dining_out"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.07,
-          "category": "dining_out"
-        },
-        {
-          "name": "AplPay TST* NATES BARICHMOND",
-          "amount": 6.37,
-          "category": "dining_out"
-        },
-        {
-          "name": "Raising Cane's Chicken Fingers",
-          "amount": 20.82,
-          "category": "misc_other"
-        },
-        {
-          "name": "Target",
-          "amount": 23.83,
-          "category": "groceries"
-        },
-        {
-          "name": "AplPay TST* URBAN FARICHMOND",
-          "amount": 7.56,
-          "category": "dining_out"
-        },
-        {
-          "name": "Starbucks",
-          "amount": 33.74,
-          "category": "dining_out"
-        },
-        {
-          "name": "AplPay BP#9708157CAPRICHMOND",
-          "amount": 9.4,
-          "category": "gas"
-        },
-        {
-          "name": "AplPay BP#9708157CAPRICHMOND",
-          "amount": 68.06,
-          "category": "gas"
-        },
-        {
-          "name": "CVS",
-          "amount": 32.04,
-          "category": "misc_other"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.64,
-          "category": "dining_out"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 24.47,
-          "category": "slop"
-        },
-        {
-          "name": "AplPay TST* NATES BARICHMOND",
-          "amount": 16.87,
-          "category": "dining_out"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 9.99,
-          "category": "slop"
-        },
-        {
-          "name": "APPLE.COM/BILL INTERNET CHARGE",
-          "amount": 11.98,
-          "category": "misc_other"
-        },
-        {
-          "name": "Chick-fil-A",
-          "amount": 15.09,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay MOG LABS 0566PORTLAND OR",
-          "amount": 280.72,
-          "category": "misc_other"
-        },
-        {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 4.11,
-          "category": "slop"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 12.43,
-          "category": "dining_out"
         }
       ]
     },
@@ -749,13 +88,7 @@
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
-      "transactions": [
-        {
-          "name": "VCU REC WELL 00-0802RICHMOND",
-          "amount": 35.0,
-          "category": "misc_other"
-        }
-      ]
+      "transactions": []
     }
   ],
   "caps": {
@@ -796,7 +129,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1710.68
+      "current_balance": 1796.02
     }
   },
   "plans": [
