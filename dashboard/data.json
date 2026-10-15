@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-10-14",
+  "last_updated": "2026-10-15",
   "period_start": "2026-10-14",
-  "period_end": "2026-10-14",
+  "period_end": "2026-10-15",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
-      "groceries": 0.0,
+      "groceries": 29.79,
       "gas": 0.0,
       "parking": 0.0,
       "subscriptions": 0.0
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 0.0,
+      "dining_out": 33.18,
       "slop": 0.0,
       "gym": 0.0,
-      "misc_other": 10.4
+      "misc_other": 141.54000000000002
     }
   },
   "categories_detail": {
@@ -25,17 +25,49 @@
       "rent": []
     },
     "variable_needs": {
-      "groceries": [],
+      "groceries": [
+        {
+          "name": "Kroger",
+          "amount": 29.79,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "gas": [],
       "parking": [],
       "subscriptions": []
     },
     "variable_wants": {
       "partying": [],
-      "dining_out": [],
+      "dining_out": [
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 19.11,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "slop": [],
       "gym": [],
       "misc_other": [
+        {
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 2.99,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Chick-fil-A",
+          "amount": 11.23,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Interest Charge on Purchases",
+          "amount": 116.92,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
         {
           "name": "NATES BAGELS - CARY STREET",
           "amount": 10.4,
@@ -46,6 +78,21 @@
   },
   "unmatched_transactions": [
     {
+      "name": "APPLE.COM/BILL INTERNET CHARGE",
+      "amount": 2.99,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Chick-fil-A",
+      "amount": 11.23,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Interest Charge on Purchases",
+      "amount": 116.92,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
       "name": "NATES BAGELS - CARY STREET",
       "amount": 10.4,
       "account": "Blue Cash Preferred\u00ae"
@@ -54,11 +101,17 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 203.56,
+      "balance": 1302.42,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
-      "transactions": []
+      "transactions": [
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "category": "dining_out"
+        }
+      ]
     },
     {
       "name": "SoFi Savings",
@@ -70,11 +123,31 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1796.02,
+      "balance": 1429.35,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "Kroger",
+          "amount": 29.79,
+          "category": "groceries"
+        },
+        {
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 2.99,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 19.11,
+          "category": "dining_out"
+        },
+        {
+          "name": "Chick-fil-A",
+          "amount": 11.23,
+          "category": "misc_other"
+        },
         {
           "name": "NATES BAGELS - CARY STREET",
           "amount": 10.4,
@@ -84,11 +157,17 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 3933.46,
+      "balance": 3650.38,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
-      "transactions": []
+      "transactions": [
+        {
+          "name": "Interest Charge on Purchases",
+          "amount": 116.92,
+          "category": "misc_other"
+        }
+      ]
     }
   ],
   "caps": {
@@ -109,7 +188,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 203.56,
+    "actual_checking_balance": 1302.42,
     "actual_savings_balance": 1.54
   },
   "debt": {
@@ -121,7 +200,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 3933.46
+      "current_balance": 3650.38
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -129,7 +208,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1796.02
+      "current_balance": 1429.35
     }
   },
   "plans": [
