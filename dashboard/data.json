@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-15",
+  "last_updated": "2026-10-16",
   "period_start": "2026-10-14",
-  "period_end": "2026-10-15",
+  "period_end": "2026-10-16",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -14,10 +14,10 @@
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 33.18,
-      "slop": 0.0,
+      "dining_out": 52.33,
+      "slop": 6.88,
       "gym": 0.0,
-      "misc_other": 141.54000000000002
+      "misc_other": 1095.5900000000001
     }
   },
   "categories_detail": {
@@ -45,14 +45,55 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "DOORDASH",
+          "amount": 19.15,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
           "name": "AplPay TST* URBAN FARICHMOND",
           "amount": 19.11,
           "account": "Blue Cash Preferred\u00ae"
         }
       ],
-      "slop": [],
+      "slop": [
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 6.88,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "gym": [],
       "misc_other": [
+        {
+          "name": "DEPT EDUCATION",
+          "amount": 839.56,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "CBI*rekordbox",
+          "amount": 23.0,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "AMEX SEND ACCOUNT",
+          "amount": 10.0,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "LUCKY ROAD RUN SHOP",
+          "amount": 9.12,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "PINE STREET BARBER SHOP",
+          "amount": 48.0,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Staples",
+          "amount": 24.37,
+          "account": "Blue Cash Preferred\u00ae"
+        },
         {
           "name": "APPLE.COM/BILL INTERNET CHARGE",
           "amount": 2.99,
@@ -78,6 +119,36 @@
   },
   "unmatched_transactions": [
     {
+      "name": "DEPT EDUCATION",
+      "amount": 839.56,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "CBI*rekordbox",
+      "amount": 23.0,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "AMEX SEND ACCOUNT",
+      "amount": 10.0,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "LUCKY ROAD RUN SHOP",
+      "amount": 9.12,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "PINE STREET BARBER SHOP",
+      "amount": 48.0,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Staples",
+      "amount": 24.37,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "APPLE.COM/BILL INTERNET CHARGE",
       "amount": 2.99,
       "account": "Blue Cash Preferred\u00ae"
@@ -101,11 +172,21 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 1302.42,
+      "balance": 448.79,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "DEPT EDUCATION",
+          "amount": 839.56,
+          "category": "misc_other"
+        },
+        {
+          "name": "CBI*rekordbox",
+          "amount": 23.0,
+          "category": "misc_other"
+        },
         {
           "name": "Chipotle Mexican Grill",
           "amount": 14.07,
@@ -123,15 +204,40 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1429.35,
+      "balance": 1497.75,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
+          "name": "AMEX SEND ACCOUNT",
+          "amount": 10.0,
+          "category": "misc_other"
+        },
+        {
           "name": "Kroger",
           "amount": 29.79,
           "category": "groceries"
+        },
+        {
+          "name": "LUCKY ROAD RUN SHOP",
+          "amount": 9.12,
+          "category": "misc_other"
+        },
+        {
+          "name": "PINE STREET BARBER SHOP",
+          "amount": 48.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "Staples",
+          "amount": 24.37,
+          "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 6.88,
+          "category": "slop"
         },
         {
           "name": "APPLE.COM/BILL INTERNET CHARGE",
@@ -163,6 +269,11 @@
       "limit": 10800.0,
       "transactions": [
         {
+          "name": "DOORDASH",
+          "amount": 19.15,
+          "category": "dining_out"
+        },
+        {
           "name": "Interest Charge on Purchases",
           "amount": 116.92,
           "category": "misc_other"
@@ -188,7 +299,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 1302.42,
+    "actual_checking_balance": 448.79,
     "actual_savings_balance": 1.54
   },
   "debt": {
@@ -208,7 +319,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1429.35
+      "current_balance": 1497.75
     }
   },
   "plans": [
