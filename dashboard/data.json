@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-10-16",
+  "last_updated": "2026-10-17",
   "period_start": "2026-10-14",
-  "period_end": "2026-10-16",
+  "period_end": "2026-10-17",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
       "groceries": 29.79,
-      "gas": 0.0,
+      "gas": 38.58,
       "parking": 0.0,
       "subscriptions": 0.0
     },
     "variable_wants": {
-      "partying": 0.0,
-      "dining_out": 52.33,
-      "slop": 6.88,
+      "partying": 70.98,
+      "dining_out": 62.73,
+      "slop": 19.53,
       "gym": 0.0,
-      "misc_other": 1095.5900000000001
+      "misc_other": 1458.2299999999998
     }
   },
   "categories_detail": {
@@ -32,17 +32,44 @@
           "account": "Blue Cash Preferred\u00ae"
         }
       ],
-      "gas": [],
+      "gas": [
+        {
+          "name": "WAWA - STORE",
+          "amount": 38.58,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "parking": [],
       "subscriptions": []
     },
     "variable_wants": {
-      "partying": [],
+      "partying": [
+        {
+          "name": "SHOTGUN HOUSE OF YES",
+          "amount": 17.03,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Uber",
+          "amount": 18.98,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "VA ABC STORE",
+          "amount": 34.97,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        }
+      ],
       "dining_out": [
         {
           "name": "Chipotle Mexican Grill",
           "amount": 14.07,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 10.4,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "DOORDASH",
@@ -56,6 +83,11 @@
         }
       ],
       "slop": [
+        {
+          "name": "7-Eleven",
+          "amount": 12.65,
+          "account": "Blue Cash Preferred\u00ae"
+        },
         {
           "name": "VILLAGE MARKET",
           "amount": 6.88,
@@ -75,18 +107,33 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "AMEX SEND ACCOUNT",
+          "name": "ALL TIME MERCH",
+          "amount": 106.0,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "ALL TIME MERCH",
+          "amount": 106.0,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "BOUNDRY STONE PUBLIC HOUSE",
+          "amount": 161.04,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Amex Send: Add Money",
           "amount": 10.0,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay PINE STREET BRichmond",
+          "amount": 48.0,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "LUCKY ROAD RUN SHOP",
           "amount": 9.12,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "PINE STREET BARBER SHOP",
-          "amount": 48.0,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -108,11 +155,6 @@
           "name": "Interest Charge on Purchases",
           "amount": 116.92,
           "account": "Delta SkyMiles\u00ae Gold Card"
-        },
-        {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 10.4,
-          "account": "Blue Cash Preferred\u00ae"
         }
       ]
     }
@@ -129,18 +171,33 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "AMEX SEND ACCOUNT",
+      "name": "ALL TIME MERCH",
+      "amount": 106.0,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "ALL TIME MERCH",
+      "amount": 106.0,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "BOUNDRY STONE PUBLIC HOUSE",
+      "amount": 161.04,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Amex Send: Add Money",
       "amount": 10.0,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay PINE STREET BRichmond",
+      "amount": 48.0,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "LUCKY ROAD RUN SHOP",
       "amount": 9.12,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "PINE STREET BARBER SHOP",
-      "amount": 48.0,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -162,21 +219,21 @@
       "name": "Interest Charge on Purchases",
       "amount": 116.92,
       "account": "Delta SkyMiles\u00ae Gold Card"
-    },
-    {
-      "name": "NATES BAGELS - CARY STREET",
-      "amount": 10.4,
-      "account": "Blue Cash Preferred\u00ae"
     }
   ],
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 448.79,
+      "balance": 165.79,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "category": "dining_out"
+        },
         {
           "name": "DEPT EDUCATION",
           "amount": 839.56,
@@ -186,11 +243,6 @@
           "name": "CBI*rekordbox",
           "amount": 23.0,
           "category": "misc_other"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.07,
-          "category": "dining_out"
         }
       ]
     },
@@ -210,9 +262,44 @@
       "limit": 3000.0,
       "transactions": [
         {
-          "name": "AMEX SEND ACCOUNT",
+          "name": "7-Eleven",
+          "amount": 12.65,
+          "category": "slop"
+        },
+        {
+          "name": "ALL TIME MERCH",
+          "amount": 106.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "BOUNDRY STONE PUBLIC HOUSE",
+          "amount": 161.04,
+          "category": "misc_other"
+        },
+        {
+          "name": "SHOTGUN HOUSE OF YES",
+          "amount": 17.03,
+          "category": "partying"
+        },
+        {
+          "name": "WAWA - STORE",
+          "amount": 38.58,
+          "category": "gas"
+        },
+        {
+          "name": "Amex Send: Add Money",
           "amount": 10.0,
           "category": "misc_other"
+        },
+        {
+          "name": "AplPay PINE STREET BRichmond",
+          "amount": 48.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 10.4,
+          "category": "dining_out"
         },
         {
           "name": "Kroger",
@@ -222,11 +309,6 @@
         {
           "name": "LUCKY ROAD RUN SHOP",
           "amount": 9.12,
-          "category": "misc_other"
-        },
-        {
-          "name": "PINE STREET BARBER SHOP",
-          "amount": 48.0,
           "category": "misc_other"
         },
         {
@@ -253,11 +335,6 @@
           "name": "Chick-fil-A",
           "amount": 11.23,
           "category": "misc_other"
-        },
-        {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 10.4,
-          "category": "misc_other"
         }
       ]
     },
@@ -268,6 +345,21 @@
       "subtype": "credit card",
       "limit": 10800.0,
       "transactions": [
+        {
+          "name": "ALL TIME MERCH",
+          "amount": 106.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "Uber",
+          "amount": 18.98,
+          "category": "partying"
+        },
+        {
+          "name": "VA ABC STORE",
+          "amount": 34.97,
+          "category": "partying"
+        },
         {
           "name": "DOORDASH",
           "amount": 19.15,
@@ -299,7 +391,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 448.79,
+    "actual_checking_balance": 165.79,
     "actual_savings_balance": 1.54
   },
   "debt": {
