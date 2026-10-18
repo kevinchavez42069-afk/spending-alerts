@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-17",
+  "last_updated": "2026-10-18",
   "period_start": "2026-10-14",
-  "period_end": "2026-10-17",
+  "period_end": "2026-10-18",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -14,10 +14,10 @@
     },
     "variable_wants": {
       "partying": 70.98,
-      "dining_out": 62.73,
+      "dining_out": 61.51,
       "slop": 19.53,
       "gym": 0.0,
-      "misc_other": 1458.2299999999998
+      "misc_other": 1499.9799999999998
     }
   },
   "categories_detail": {
@@ -67,14 +67,14 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "AplPay TST* NATES BARICHMOND",
-          "amount": 10.4,
+          "name": "Chipotle Mexican Grill",
+          "amount": 17.93,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "DOORDASH",
-          "amount": 19.15,
-          "account": "Delta SkyMiles\u00ae Gold Card"
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 10.4,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay TST* URBAN FARICHMOND",
@@ -89,7 +89,7 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "VILLAGE MARKET",
+          "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 6.88,
           "account": "Blue Cash Preferred\u00ae"
         }
@@ -97,13 +97,18 @@
       "gym": [],
       "misc_other": [
         {
-          "name": "DEPT EDUCATION",
-          "amount": 839.56,
+          "name": "CBI*rekordbox",
+          "amount": 23.0,
           "account": "SoFi Checking"
         },
         {
-          "name": "CBI*rekordbox",
-          "amount": 23.0,
+          "name": "Panera Bread",
+          "amount": 22.6,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "DEPT EDUCATION",
+          "amount": 839.56,
           "account": "SoFi Checking"
         },
         {
@@ -114,6 +119,21 @@
         {
           "name": "ALL TIME MERCH",
           "amount": 106.0,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay DD *DOORDASAN FRANCISCO",
+          "amount": 19.15,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "AplPay FSP*LUCKY ROARICHMOND",
+          "amount": 9.12,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay STAPLES 00316RICHMOND",
+          "amount": 24.37,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -129,16 +149,6 @@
         {
           "name": "AplPay PINE STREET BRichmond",
           "amount": 48.0,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "LUCKY ROAD RUN SHOP",
-          "amount": 9.12,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Staples",
-          "amount": 24.37,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -161,13 +171,18 @@
   },
   "unmatched_transactions": [
     {
-      "name": "DEPT EDUCATION",
-      "amount": 839.56,
+      "name": "CBI*rekordbox",
+      "amount": 23.0,
       "account": "SoFi Checking"
     },
     {
-      "name": "CBI*rekordbox",
-      "amount": 23.0,
+      "name": "Panera Bread",
+      "amount": 22.6,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "DEPT EDUCATION",
+      "amount": 839.56,
       "account": "SoFi Checking"
     },
     {
@@ -178,6 +193,21 @@
     {
       "name": "ALL TIME MERCH",
       "amount": 106.0,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay DD *DOORDASAN FRANCISCO",
+      "amount": 19.15,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "AplPay FSP*LUCKY ROARICHMOND",
+      "amount": 9.12,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay STAPLES 00316RICHMOND",
+      "amount": 24.37,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -193,16 +223,6 @@
     {
       "name": "AplPay PINE STREET BRichmond",
       "amount": 48.0,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "LUCKY ROAD RUN SHOP",
-      "amount": 9.12,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "Staples",
-      "amount": 24.37,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -224,11 +244,21 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 165.79,
+      "balance": 161.86,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "CBI*rekordbox",
+          "amount": 23.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "Panera Bread",
+          "amount": 22.6,
+          "category": "misc_other"
+        },
         {
           "name": "Chipotle Mexican Grill",
           "amount": 14.07,
@@ -237,11 +267,6 @@
         {
           "name": "DEPT EDUCATION",
           "amount": 839.56,
-          "category": "misc_other"
-        },
-        {
-          "name": "CBI*rekordbox",
-          "amount": 23.0,
           "category": "misc_other"
         }
       ]
@@ -256,11 +281,16 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1497.75,
+      "balance": 1567.91,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 17.93,
+          "category": "dining_out"
+        },
         {
           "name": "7-Eleven",
           "amount": 12.65,
@@ -272,9 +302,29 @@
           "category": "misc_other"
         },
         {
+          "name": "AplPay FSP*LUCKY ROARICHMOND",
+          "amount": 9.12,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay STAPLES 00316RICHMOND",
+          "amount": 24.37,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 6.88,
+          "category": "slop"
+        },
+        {
           "name": "BOUNDRY STONE PUBLIC HOUSE",
           "amount": 161.04,
           "category": "misc_other"
+        },
+        {
+          "name": "Kroger",
+          "amount": 29.79,
+          "category": "groceries"
         },
         {
           "name": "SHOTGUN HOUSE OF YES",
@@ -302,26 +352,6 @@
           "category": "dining_out"
         },
         {
-          "name": "Kroger",
-          "amount": 29.79,
-          "category": "groceries"
-        },
-        {
-          "name": "LUCKY ROAD RUN SHOP",
-          "amount": 9.12,
-          "category": "misc_other"
-        },
-        {
-          "name": "Staples",
-          "amount": 24.37,
-          "category": "misc_other"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 6.88,
-          "category": "slop"
-        },
-        {
           "name": "APPLE.COM/BILL INTERNET CHARGE",
           "amount": 2.99,
           "category": "misc_other"
@@ -340,7 +370,7 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 3650.38,
+      "balance": 3669.53,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
@@ -348,6 +378,11 @@
         {
           "name": "ALL TIME MERCH",
           "amount": 106.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay DD *DOORDASAN FRANCISCO",
+          "amount": 19.15,
           "category": "misc_other"
         },
         {
@@ -359,11 +394,6 @@
           "name": "VA ABC STORE",
           "amount": 34.97,
           "category": "partying"
-        },
-        {
-          "name": "DOORDASH",
-          "amount": 19.15,
-          "category": "dining_out"
         },
         {
           "name": "Interest Charge on Purchases",
@@ -391,7 +421,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 165.79,
+    "actual_checking_balance": 161.86,
     "actual_savings_balance": 1.54
   },
   "debt": {
@@ -403,7 +433,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 3650.38
+      "current_balance": 3669.53
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -411,7 +441,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1497.75
+      "current_balance": 1567.91
     }
   },
   "plans": [
