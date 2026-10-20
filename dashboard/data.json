@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-19",
+  "last_updated": "2026-10-20",
   "period_start": "2026-10-14",
-  "period_end": "2026-10-19",
+  "period_end": "2026-10-20",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -14,10 +14,10 @@
     },
     "variable_wants": {
       "partying": 72.82,
-      "dining_out": 245.55,
-      "slop": 27.57,
+      "dining_out": 262.86,
+      "slop": 35.61000000000001,
       "gym": 0.0,
-      "misc_other": 1409.43
+      "misc_other": 1444.9999999999998
     }
   },
   "categories_detail": {
@@ -78,6 +78,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "DOORDASH",
+          "amount": 17.31,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
           "name": "Chipotle Mexican Grill",
           "amount": 17.93,
           "account": "Blue Cash Preferred\u00ae"
@@ -103,6 +108,16 @@
           "name": "7-Eleven",
           "amount": 3.93,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 3.93,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "VILLAGE MARKET",
@@ -141,6 +156,16 @@
           "name": "DEPT EDUCATION",
           "amount": 839.56,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 21.9,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Jimmy Johns",
+          "amount": 13.67,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay FLAGSTOP CAR",
@@ -222,6 +247,16 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "URBAN FARMHOUSE MARKET AND CAF",
+      "amount": 21.9,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Jimmy Johns",
+      "amount": 13.67,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "AplPay FLAGSTOP CAR",
       "amount": 13.99,
       "account": "Blue Cash Preferred\u00ae"
@@ -280,7 +315,7 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 139.26,
+      "balance": 202.76,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
@@ -327,11 +362,31 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1968.13,
+      "balance": 2059.86,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "7-Eleven",
+          "amount": 3.93,
+          "category": "slop"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 21.9,
+          "category": "misc_other"
+        },
+        {
+          "name": "Jimmy Johns",
+          "amount": 13.67,
+          "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
+          "category": "slop"
+        },
         {
           "name": "Aldi",
           "amount": 72.63,
@@ -442,6 +497,11 @@
       "limit": 10800.0,
       "transactions": [
         {
+          "name": "DOORDASH",
+          "amount": 17.31,
+          "category": "dining_out"
+        },
+        {
           "name": "AplPay ALL TIME MERCWashington",
           "amount": 116.0,
           "category": "misc_other"
@@ -487,7 +547,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 139.26,
+    "actual_checking_balance": 202.76,
     "actual_savings_balance": 1.54
   },
   "debt": {
@@ -507,7 +567,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1968.13
+      "current_balance": 2059.86
     }
   },
   "plans": [
