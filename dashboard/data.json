@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-20",
+  "last_updated": "2026-10-21",
   "period_start": "2026-10-14",
-  "period_end": "2026-10-20",
+  "period_end": "2026-10-21",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -14,10 +14,10 @@
     },
     "variable_wants": {
       "partying": 72.82,
-      "dining_out": 262.86,
+      "dining_out": 276.93,
       "slop": 35.61000000000001,
       "gym": 0.0,
-      "misc_other": 1444.9999999999998
+      "misc_other": 1472.1299999999999
     }
   },
   "categories_detail": {
@@ -27,7 +27,7 @@
     "variable_needs": {
       "groceries": [
         {
-          "name": "Aldi",
+          "name": "AplPay ALDI INC 0004RICHMOND",
           "amount": 72.63,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -78,6 +78,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "DOORDASH",
           "amount": 17.31,
           "account": "Delta SkyMiles\u00ae Gold Card"
@@ -115,7 +120,7 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "VILLAGE MARKET",
+          "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 4.11,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -138,13 +143,13 @@
       "gym": [],
       "misc_other": [
         {
-          "name": "Panera Bread",
-          "amount": 22.6,
+          "name": "MOVIELAND AT BOULEVARD",
+          "amount": 36.5,
           "account": "SoFi Checking"
         },
         {
-          "name": "MOVIELAND AT BOULEVARD",
-          "amount": 36.5,
+          "name": "Panera Bread",
+          "amount": 22.6,
           "account": "SoFi Checking"
         },
         {
@@ -158,8 +163,18 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "AMAZON DIGITAL DOWNLOADS",
+          "amount": 10.99,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
           "amount": 21.9,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Whole Foods",
+          "amount": 16.14,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -227,13 +242,13 @@
   },
   "unmatched_transactions": [
     {
-      "name": "Panera Bread",
-      "amount": 22.6,
+      "name": "MOVIELAND AT BOULEVARD",
+      "amount": 36.5,
       "account": "SoFi Checking"
     },
     {
-      "name": "MOVIELAND AT BOULEVARD",
-      "amount": 36.5,
+      "name": "Panera Bread",
+      "amount": 22.6,
       "account": "SoFi Checking"
     },
     {
@@ -247,8 +262,18 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "AMAZON DIGITAL DOWNLOADS",
+      "amount": 10.99,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "URBAN FARMHOUSE MARKET AND CAF",
       "amount": 21.9,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Whole Foods",
+      "amount": 16.14,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -321,6 +346,11 @@
       "limit": null,
       "transactions": [
         {
+          "name": "MOVIELAND AT BOULEVARD",
+          "amount": 36.5,
+          "category": "misc_other"
+        },
+        {
           "name": "Panera Bread",
           "amount": 22.6,
           "category": "misc_other"
@@ -329,11 +359,6 @@
           "name": "7-Eleven",
           "amount": 3.93,
           "category": "slop"
-        },
-        {
-          "name": "MOVIELAND AT BOULEVARD",
-          "amount": 36.5,
-          "category": "misc_other"
         },
         {
           "name": "CBI*rekordbox",
@@ -362,7 +387,7 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 2059.86,
+      "balance": 2092.56,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
@@ -373,9 +398,39 @@
           "category": "slop"
         },
         {
+          "name": "AMAZON DIGITAL DOWNLOADS",
+          "amount": 10.99,
+          "category": "misc_other"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "category": "dining_out"
+        },
+        {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
           "amount": 21.9,
           "category": "misc_other"
+        },
+        {
+          "name": "Whole Foods",
+          "amount": 16.14,
+          "category": "misc_other"
+        },
+        {
+          "name": "Amazon Prime",
+          "amount": 14.99,
+          "category": "subscriptions"
+        },
+        {
+          "name": "AplPay ALDI INC 0004RICHMOND",
+          "amount": 72.63,
+          "category": "groceries"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 4.11,
+          "category": "slop"
         },
         {
           "name": "Jimmy Johns",
@@ -388,16 +443,6 @@
           "category": "slop"
         },
         {
-          "name": "Aldi",
-          "amount": 72.63,
-          "category": "groceries"
-        },
-        {
-          "name": "Amazon Prime",
-          "amount": 14.99,
-          "category": "subscriptions"
-        },
-        {
           "name": "AplPay FLAGSTOP CAR",
           "amount": 13.99,
           "category": "misc_other"
@@ -406,11 +451,6 @@
           "name": "Chipotle Mexican Grill",
           "amount": 17.93,
           "category": "dining_out"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 4.11,
-          "category": "slop"
         },
         {
           "name": "7-Eleven",
@@ -491,7 +531,7 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 3841.32,
+      "balance": 3858.63,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
@@ -559,7 +599,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 3841.32
+      "current_balance": 3858.63
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -567,7 +607,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 2059.86
+      "current_balance": 2092.56
     }
   },
   "plans": [
