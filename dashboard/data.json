@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-21",
+  "last_updated": "2026-10-22",
   "period_start": "2026-10-14",
-  "period_end": "2026-10-21",
+  "period_end": "2026-10-22",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -14,10 +14,10 @@
     },
     "variable_wants": {
       "partying": 72.82,
-      "dining_out": 276.93,
-      "slop": 35.61000000000001,
+      "dining_out": 316.59,
+      "slop": 39.720000000000006,
       "gym": 0.0,
-      "misc_other": 1472.1299999999999
+      "misc_other": 1535.3700000000001
     }
   },
   "categories_detail": {
@@ -73,9 +73,29 @@
       ],
       "dining_out": [
         {
+          "name": "TST* SKYBOX",
+          "amount": 6.81,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "TST* SKYBOX",
+          "amount": 6.81,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "TST* SKYBOX",
+          "amount": 6.81,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "Chipotle Mexican Grill",
           "amount": 14.07,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 21.9,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "Chipotle Mexican Grill",
@@ -83,9 +103,9 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "DOORDASH",
-          "amount": 17.31,
-          "account": "Delta SkyMiles\u00ae Gold Card"
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.64,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "Chipotle Mexican Grill",
@@ -115,6 +135,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "7-Eleven",
           "amount": 3.93,
           "account": "Blue Cash Preferred\u00ae"
@@ -125,7 +150,7 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "VILLAGE MARKET",
+          "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 4.11,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -142,6 +167,11 @@
       ],
       "gym": [],
       "misc_other": [
+        {
+          "name": "COBRA CABANA",
+          "amount": 7.94,
+          "account": "SoFi Checking"
+        },
         {
           "name": "MOVIELAND AT BOULEVARD",
           "amount": 36.5,
@@ -163,19 +193,39 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "AMAZON DIGITAL DOWNLOADS",
-          "amount": 10.99,
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 6.37,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 21.9,
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 10.5,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay JO-JOS PIZZA",
+          "amount": 9.96,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "ONE WAY USA",
+          "amount": 33.06,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "Whole Foods",
           "amount": 16.14,
           "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AMAZON DIGITAL SVCS AMZN.COM/BILL",
+          "amount": 10.99,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay DD *DOORDASAN FRANCISCO",
+          "amount": 17.31,
+          "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
           "name": "Jimmy Johns",
@@ -242,6 +292,11 @@
   },
   "unmatched_transactions": [
     {
+      "name": "COBRA CABANA",
+      "amount": 7.94,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "MOVIELAND AT BOULEVARD",
       "amount": 36.5,
       "account": "SoFi Checking"
@@ -262,19 +317,39 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "AMAZON DIGITAL DOWNLOADS",
-      "amount": 10.99,
+      "name": "NATES BAGELS - CARY STREET",
+      "amount": 6.37,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "URBAN FARMHOUSE MARKET AND CAF",
-      "amount": 21.9,
+      "name": "NATES BAGELS - CARY STREET",
+      "amount": 10.5,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay JO-JOS PIZZA",
+      "amount": 9.96,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "ONE WAY USA",
+      "amount": 33.06,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "Whole Foods",
       "amount": 16.14,
       "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AMAZON DIGITAL SVCS AMZN.COM/BILL",
+      "amount": 10.99,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay DD *DOORDASAN FRANCISCO",
+      "amount": 17.31,
+      "account": "Delta SkyMiles\u00ae Gold Card"
     },
     {
       "name": "Jimmy Johns",
@@ -346,6 +421,26 @@
       "limit": null,
       "transactions": [
         {
+          "name": "COBRA CABANA",
+          "amount": 7.94,
+          "category": "misc_other"
+        },
+        {
+          "name": "TST* SKYBOX",
+          "amount": 6.81,
+          "category": "dining_out"
+        },
+        {
+          "name": "TST* SKYBOX",
+          "amount": 6.81,
+          "category": "dining_out"
+        },
+        {
+          "name": "TST* SKYBOX",
+          "amount": 6.81,
+          "category": "dining_out"
+        },
+        {
           "name": "MOVIELAND AT BOULEVARD",
           "amount": 36.5,
           "category": "misc_other"
@@ -387,20 +482,30 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 2092.56,
+      "balance": 2154.63,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
-          "name": "7-Eleven",
-          "amount": 3.93,
-          "category": "slop"
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 6.37,
+          "category": "misc_other"
         },
         {
-          "name": "AMAZON DIGITAL DOWNLOADS",
-          "amount": 10.99,
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 10.5,
           "category": "misc_other"
+        },
+        {
+          "name": "AplPay JO-JOS PIZZA",
+          "amount": 9.96,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 21.9,
+          "category": "dining_out"
         },
         {
           "name": "Chipotle Mexican Grill",
@@ -408,13 +513,43 @@
           "category": "dining_out"
         },
         {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 21.9,
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.64,
+          "category": "dining_out"
+        },
+        {
+          "name": "ONE WAY USA",
+          "amount": 33.06,
           "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
+          "category": "slop"
         },
         {
           "name": "Whole Foods",
           "amount": 16.14,
+          "category": "misc_other"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 3.93,
+          "category": "slop"
+        },
+        {
+          "name": "AMAZON DIGITAL SVCS AMZN.COM/BILL",
+          "amount": 10.99,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 4.11,
+          "category": "slop"
+        },
+        {
+          "name": "Jimmy Johns",
+          "amount": 13.67,
           "category": "misc_other"
         },
         {
@@ -429,16 +564,6 @@
         },
         {
           "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 4.11,
-          "category": "slop"
-        },
-        {
-          "name": "Jimmy Johns",
-          "amount": 13.67,
-          "category": "misc_other"
-        },
-        {
-          "name": "VILLAGE MARKET",
           "amount": 4.11,
           "category": "slop"
         },
@@ -537,9 +662,9 @@
       "limit": 10800.0,
       "transactions": [
         {
-          "name": "DOORDASH",
+          "name": "AplPay DD *DOORDASAN FRANCISCO",
           "amount": 17.31,
-          "category": "dining_out"
+          "category": "misc_other"
         },
         {
           "name": "AplPay ALL TIME MERCWashington",
@@ -607,7 +732,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 2092.56
+      "current_balance": 2154.63
     }
   },
   "plans": [
