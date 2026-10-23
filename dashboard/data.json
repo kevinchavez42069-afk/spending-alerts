@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-10-22",
+  "last_updated": "2026-10-23",
   "period_start": "2026-10-14",
-  "period_end": "2026-10-22",
+  "period_end": "2026-10-23",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
       "groceries": 102.41999999999999,
-      "gas": 38.58,
+      "gas": 78.83,
       "parking": 0.0,
       "subscriptions": 14.99
     },
     "variable_wants": {
       "partying": 72.82,
-      "dining_out": 316.59,
-      "slop": 39.720000000000006,
+      "dining_out": 322.59,
+      "slop": 54.59,
       "gym": 0.0,
-      "misc_other": 1535.3700000000001
+      "misc_other": 1566.7700000000002
     }
   },
   "categories_detail": {
@@ -38,6 +38,11 @@
         }
       ],
       "gas": [
+        {
+          "name": "WAWA - STORE",
+          "amount": 40.25,
+          "account": "Blue Cash Preferred\u00ae"
+        },
         {
           "name": "AplPay WAWA FUEL/CONRICHMOND",
           "amount": 38.58,
@@ -74,17 +79,17 @@
       "dining_out": [
         {
           "name": "TST* SKYBOX",
-          "amount": 6.81,
+          "amount": 8.81,
           "account": "SoFi Checking"
         },
         {
           "name": "TST* SKYBOX",
-          "amount": 6.81,
+          "amount": 8.81,
           "account": "SoFi Checking"
         },
         {
           "name": "TST* SKYBOX",
-          "amount": 6.81,
+          "amount": 8.81,
           "account": "SoFi Checking"
         },
         {
@@ -136,6 +141,11 @@
         },
         {
           "name": "VILLAGE MARKET",
+          "amount": 14.87,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "VILLAGE MARKET",
           "amount": 4.11,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -169,7 +179,7 @@
       "misc_other": [
         {
           "name": "COBRA CABANA",
-          "amount": 7.94,
+          "amount": 9.53,
           "account": "SoFi Checking"
         },
         {
@@ -193,6 +203,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "Audible",
+          "amount": 8.99,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "NATES BAGELS - CARY STREET",
           "amount": 6.37,
           "account": "Blue Cash Preferred\u00ae"
@@ -200,6 +215,11 @@
         {
           "name": "NATES BAGELS - CARY STREET",
           "amount": 10.5,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Raising Cane's Chicken Fingers",
+          "amount": 20.82,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -293,7 +313,7 @@
   "unmatched_transactions": [
     {
       "name": "COBRA CABANA",
-      "amount": 7.94,
+      "amount": 9.53,
       "account": "SoFi Checking"
     },
     {
@@ -317,6 +337,11 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "Audible",
+      "amount": 8.99,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "NATES BAGELS - CARY STREET",
       "amount": 6.37,
       "account": "Blue Cash Preferred\u00ae"
@@ -324,6 +349,11 @@
     {
       "name": "NATES BAGELS - CARY STREET",
       "amount": 10.5,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Raising Cane's Chicken Fingers",
+      "amount": 20.82,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -415,29 +445,29 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 202.76,
+      "balance": 166.8,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
         {
           "name": "COBRA CABANA",
-          "amount": 7.94,
+          "amount": 9.53,
           "category": "misc_other"
         },
         {
           "name": "TST* SKYBOX",
-          "amount": 6.81,
+          "amount": 8.81,
           "category": "dining_out"
         },
         {
           "name": "TST* SKYBOX",
-          "amount": 6.81,
+          "amount": 8.81,
           "category": "dining_out"
         },
         {
           "name": "TST* SKYBOX",
-          "amount": 6.81,
+          "amount": 8.81,
           "category": "dining_out"
         },
         {
@@ -482,11 +512,16 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 2154.63,
+      "balance": 2206.44,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "Audible",
+          "amount": 8.99,
+          "category": "misc_other"
+        },
         {
           "name": "NATES BAGELS - CARY STREET",
           "amount": 6.37,
@@ -496,6 +531,21 @@
           "name": "NATES BAGELS - CARY STREET",
           "amount": 10.5,
           "category": "misc_other"
+        },
+        {
+          "name": "Raising Cane's Chicken Fingers",
+          "amount": 20.82,
+          "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 14.87,
+          "category": "slop"
+        },
+        {
+          "name": "WAWA - STORE",
+          "amount": 40.25,
+          "category": "gas"
         },
         {
           "name": "AplPay JO-JOS PIZZA",
@@ -712,7 +762,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 202.76,
+    "actual_checking_balance": 166.8,
     "actual_savings_balance": 1.54
   },
   "debt": {
@@ -732,7 +782,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 2154.63
+      "current_balance": 2206.44
     }
   },
   "plans": [
