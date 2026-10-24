@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-23",
+  "last_updated": "2026-10-24",
   "period_start": "2026-10-14",
-  "period_end": "2026-10-23",
+  "period_end": "2026-10-24",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -14,10 +14,10 @@
     },
     "variable_wants": {
       "partying": 72.82,
-      "dining_out": 322.59,
-      "slop": 54.59,
+      "dining_out": 339.46,
+      "slop": 57.14,
       "gym": 0.0,
-      "misc_other": 1566.7700000000002
+      "misc_other": 1567.2300000000002
     }
   },
   "categories_detail": {
@@ -39,7 +39,7 @@
       ],
       "gas": [
         {
-          "name": "WAWA - STORE",
+          "name": "AplPay WAWA FUEL/CONRICHMOND",
           "amount": 40.25,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -98,6 +98,21 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 6.37,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 10.5,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.64,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "AplPay TST* URBAN FARICHMOND",
           "amount": 21.9,
           "account": "Blue Cash Preferred\u00ae"
@@ -105,11 +120,6 @@
         {
           "name": "Chipotle Mexican Grill",
           "amount": 14.07,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.64,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -140,12 +150,17 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "VILLAGE MARKET",
+          "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 14.87,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "VILLAGE MARKET",
+          "amount": 2.55,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 4.11,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -208,14 +223,9 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 6.37,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 10.5,
-          "account": "Blue Cash Preferred\u00ae"
+          "name": "Domino's",
+          "amount": 17.33,
+          "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
           "name": "Raising Cane's Chicken Fingers",
@@ -223,13 +233,13 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "AplPay JO-JOS PIZZA",
-          "amount": 9.96,
+          "name": "AplPay ONE WAY USA",
+          "amount": 33.06,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "ONE WAY USA",
-          "amount": 33.06,
+          "name": "AplPay JO-JOS PIZZA",
+          "amount": 9.96,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -342,14 +352,9 @@
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "NATES BAGELS - CARY STREET",
-      "amount": 6.37,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "NATES BAGELS - CARY STREET",
-      "amount": 10.5,
-      "account": "Blue Cash Preferred\u00ae"
+      "name": "Domino's",
+      "amount": 17.33,
+      "account": "Delta SkyMiles\u00ae Gold Card"
     },
     {
       "name": "Raising Cane's Chicken Fingers",
@@ -357,13 +362,13 @@
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "AplPay JO-JOS PIZZA",
-      "amount": 9.96,
+      "name": "AplPay ONE WAY USA",
+      "amount": 33.06,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "ONE WAY USA",
-      "amount": 33.06,
+      "name": "AplPay JO-JOS PIZZA",
+      "amount": 9.96,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -512,24 +517,34 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 2206.44,
+      "balance": 2308.24,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 6.37,
+          "category": "dining_out"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 10.5,
+          "category": "dining_out"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 14.87,
+          "category": "slop"
+        },
+        {
+          "name": "AplPay WAWA FUEL/CONRICHMOND",
+          "amount": 40.25,
+          "category": "gas"
+        },
+        {
           "name": "Audible",
           "amount": 8.99,
-          "category": "misc_other"
-        },
-        {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 6.37,
-          "category": "misc_other"
-        },
-        {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 10.5,
           "category": "misc_other"
         },
         {
@@ -539,13 +554,23 @@
         },
         {
           "name": "VILLAGE MARKET",
-          "amount": 14.87,
+          "amount": 2.55,
           "category": "slop"
         },
         {
-          "name": "WAWA - STORE",
-          "amount": 40.25,
-          "category": "gas"
+          "name": "AplPay ONE WAY USA",
+          "amount": 33.06,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 4.11,
+          "category": "slop"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.64,
+          "category": "dining_out"
         },
         {
           "name": "AplPay JO-JOS PIZZA",
@@ -561,21 +586,6 @@
           "name": "Chipotle Mexican Grill",
           "amount": 14.07,
           "category": "dining_out"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.64,
-          "category": "dining_out"
-        },
-        {
-          "name": "ONE WAY USA",
-          "amount": 33.06,
-          "category": "misc_other"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 4.11,
-          "category": "slop"
         },
         {
           "name": "Whole Foods",
@@ -712,6 +722,11 @@
       "limit": 10800.0,
       "transactions": [
         {
+          "name": "Domino's",
+          "amount": 17.33,
+          "category": "misc_other"
+        },
+        {
           "name": "AplPay DD *DOORDASAN FRANCISCO",
           "amount": 17.31,
           "category": "misc_other"
@@ -782,7 +797,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 2206.44
+      "current_balance": 2308.24
     }
   },
   "plans": [
