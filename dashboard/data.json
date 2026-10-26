@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-25",
+  "last_updated": "2026-10-26",
   "period_start": "2026-10-14",
-  "period_end": "2026-10-25",
+  "period_end": "2026-10-26",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -10,14 +10,14 @@
       "groceries": 153.07999999999998,
       "gas": 78.83,
       "parking": 0.0,
-      "subscriptions": 14.99
+      "subscriptions": 39.94
     },
     "variable_wants": {
       "partying": 72.82,
-      "dining_out": 351.26,
-      "slop": 61.25,
+      "dining_out": 367.54999999999995,
+      "slop": 64.17,
       "gym": 0.0,
-      "misc_other": 1594.64
+      "misc_other": 1692.1799999999998
     }
   },
   "categories_detail": {
@@ -27,7 +27,7 @@
     "variable_needs": {
       "groceries": [
         {
-          "name": "Aldi",
+          "name": "AplPay ALDI INC 0004RICHMOND",
           "amount": 19.09,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -61,6 +61,11 @@
       ],
       "parking": [],
       "subscriptions": [
+        {
+          "name": "APPLECOMBILL",
+          "amount": 24.95,
+          "account": "Blue Cash Preferred\u00ae"
+        },
         {
           "name": "Amazon Prime",
           "amount": 14.99,
@@ -110,6 +115,11 @@
         {
           "name": "Chipotle Mexican Grill",
           "amount": 11.8,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 16.29,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -165,18 +175,23 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "VILLAGE MARKET",
+          "name": "7-Eleven",
+          "amount": 2.92,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 4.11,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 14.87,
+          "amount": 2.55,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "VILLAGE MARKET",
-          "amount": 2.55,
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 14.87,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -213,6 +228,11 @@
       "gym": [],
       "misc_other": [
         {
+          "name": "K H M CONVENIENCE STOR",
+          "amount": 2.77,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "COBRA CABANA",
           "amount": 9.53,
           "account": "SoFi Checking"
@@ -243,14 +263,19 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "Audible",
-          "amount": 8.99,
-          "account": "Blue Cash Preferred\u00ae"
+          "name": "MOG LABS",
+          "amount": 91.3,
+          "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
           "name": "Domino's",
-          "amount": 17.33,
+          "amount": 20.8,
           "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "Audible",
+          "amount": 8.99,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "Raising Cane's Chicken Fingers",
@@ -347,6 +372,11 @@
   },
   "unmatched_transactions": [
     {
+      "name": "K H M CONVENIENCE STOR",
+      "amount": 2.77,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "COBRA CABANA",
       "amount": 9.53,
       "account": "SoFi Checking"
@@ -377,14 +407,19 @@
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "Audible",
-      "amount": 8.99,
-      "account": "Blue Cash Preferred\u00ae"
+      "name": "MOG LABS",
+      "amount": 91.3,
+      "account": "Delta SkyMiles\u00ae Gold Card"
     },
     {
       "name": "Domino's",
-      "amount": 17.33,
+      "amount": 20.8,
       "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "Audible",
+      "amount": 8.99,
+      "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "Raising Cane's Chicken Fingers",
@@ -480,11 +515,16 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 366.8,
+      "balance": 458.8,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "K H M CONVENIENCE STOR",
+          "amount": 2.77,
+          "category": "misc_other"
+        },
         {
           "name": "COBRA CABANA",
           "amount": 9.53,
@@ -547,20 +587,35 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 2342.36,
+      "balance": 2377.36,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
+          "name": "7-Eleven",
+          "amount": 2.92,
+          "category": "slop"
+        },
+        {
+          "name": "APPLECOMBILL",
+          "amount": 24.95,
+          "category": "subscriptions"
+        },
+        {
+          "name": "AplPay ALDI INC 0004RICHMOND",
+          "amount": 19.09,
+          "category": "groceries"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 4.11,
+          "category": "slop"
+        },
+        {
           "name": "CVS",
           "amount": 27.41,
           "category": "misc_other"
-        },
-        {
-          "name": "Aldi",
-          "amount": 19.09,
-          "category": "groceries"
         },
         {
           "name": "Chipotle Mexican Grill",
@@ -568,14 +623,19 @@
           "category": "dining_out"
         },
         {
+          "name": "Chipotle Mexican Grill",
+          "amount": 16.29,
+          "category": "dining_out"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 2.55,
+          "category": "slop"
+        },
+        {
           "name": "Target",
           "amount": 31.57,
           "category": "groceries"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 4.11,
-          "category": "slop"
         },
         {
           "name": "AplPay TST* NATES BARICHMOND",
@@ -606,11 +666,6 @@
           "name": "Raising Cane's Chicken Fingers",
           "amount": 20.82,
           "category": "misc_other"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 2.55,
-          "category": "slop"
         },
         {
           "name": "AplPay ONE WAY USA",
@@ -777,8 +832,13 @@
       "limit": 10800.0,
       "transactions": [
         {
+          "name": "MOG LABS",
+          "amount": 91.3,
+          "category": "misc_other"
+        },
+        {
           "name": "Domino's",
-          "amount": 17.33,
+          "amount": 20.8,
           "category": "misc_other"
         },
         {
@@ -832,7 +892,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 366.8,
+    "actual_checking_balance": 458.8,
     "actual_savings_balance": 1.54
   },
   "debt": {
@@ -852,7 +912,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 2342.36
+      "current_balance": 2377.36
     }
   },
   "plans": [
