@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-26",
+  "last_updated": "2026-10-27",
   "period_start": "2026-10-14",
-  "period_end": "2026-10-26",
+  "period_end": "2026-10-27",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -10,14 +10,14 @@
       "groceries": 153.07999999999998,
       "gas": 78.83,
       "parking": 0.0,
-      "subscriptions": 39.94
+      "subscriptions": 14.99
     },
     "variable_wants": {
       "partying": 72.82,
       "dining_out": 367.54999999999995,
-      "slop": 64.17,
+      "slop": 72.13,
       "gym": 0.0,
-      "misc_other": 1692.1799999999998
+      "misc_other": 1748.1799999999998
     }
   },
   "categories_detail": {
@@ -61,11 +61,6 @@
       ],
       "parking": [],
       "subscriptions": [
-        {
-          "name": "APPLECOMBILL",
-          "amount": 24.95,
-          "account": "Blue Cash Preferred\u00ae"
-        },
         {
           "name": "Amazon Prime",
           "amount": 14.99,
@@ -114,12 +109,12 @@
         },
         {
           "name": "Chipotle Mexican Grill",
-          "amount": 11.8,
+          "amount": 16.29,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "Chipotle Mexican Grill",
-          "amount": 16.29,
+          "amount": 11.8,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -180,6 +175,11 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
+          "name": "7-Eleven",
+          "amount": 7.96,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 4.11,
           "account": "Blue Cash Preferred\u00ae"
@@ -233,6 +233,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "Panera Bread",
+          "amount": 14.14,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "COBRA CABANA",
           "amount": 9.53,
           "account": "SoFi Checking"
@@ -258,12 +263,22 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "CVS",
+          "name": "AMAZON MARKEPLACE NA",
+          "amount": 16.91,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 24.95,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay CVS PHARMACY",
           "amount": 27.41,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "MOG LABS",
+          "name": "MOG LABS 05661700938PORTLAND OR",
           "amount": 91.3,
           "account": "Delta SkyMiles\u00ae Gold Card"
         },
@@ -377,6 +392,11 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "Panera Bread",
+      "amount": 14.14,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "COBRA CABANA",
       "amount": 9.53,
       "account": "SoFi Checking"
@@ -402,12 +422,22 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "CVS",
+      "name": "AMAZON MARKEPLACE NA",
+      "amount": 16.91,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "APPLE.COM/BILL INTERNET CHARGE",
+      "amount": 24.95,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay CVS PHARMACY",
       "amount": 27.41,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "MOG LABS",
+      "name": "MOG LABS 05661700938PORTLAND OR",
       "amount": 91.3,
       "account": "Delta SkyMiles\u00ae Gold Card"
     },
@@ -515,7 +545,7 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 458.8,
+      "balance": 256.03,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
@@ -523,6 +553,11 @@
         {
           "name": "K H M CONVENIENCE STOR",
           "amount": 2.77,
+          "category": "misc_other"
+        },
+        {
+          "name": "Panera Bread",
+          "amount": 14.14,
           "category": "misc_other"
         },
         {
@@ -587,7 +622,7 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 2377.36,
+      "balance": 2356.89,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
@@ -598,9 +633,29 @@
           "category": "slop"
         },
         {
-          "name": "APPLECOMBILL",
+          "name": "7-Eleven",
+          "amount": 7.96,
+          "category": "slop"
+        },
+        {
+          "name": "AMAZON MARKEPLACE NA",
+          "amount": 16.91,
+          "category": "misc_other"
+        },
+        {
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
           "amount": 24.95,
-          "category": "subscriptions"
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay CVS PHARMACY",
+          "amount": 27.41,
+          "category": "misc_other"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 16.29,
+          "category": "dining_out"
         },
         {
           "name": "AplPay ALDI INC 0004RICHMOND",
@@ -613,18 +668,8 @@
           "category": "slop"
         },
         {
-          "name": "CVS",
-          "amount": 27.41,
-          "category": "misc_other"
-        },
-        {
           "name": "Chipotle Mexican Grill",
           "amount": 11.8,
-          "category": "dining_out"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 16.29,
           "category": "dining_out"
         },
         {
@@ -826,13 +871,13 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 3679.43,
+      "balance": 3670.73,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
       "transactions": [
         {
-          "name": "MOG LABS",
+          "name": "MOG LABS 05661700938PORTLAND OR",
           "amount": 91.3,
           "category": "misc_other"
         },
@@ -892,7 +937,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 458.8,
+    "actual_checking_balance": 256.03,
     "actual_savings_balance": 1.54
   },
   "debt": {
@@ -904,7 +949,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 3679.43
+      "current_balance": 3670.73
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -912,7 +957,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 2377.36
+      "current_balance": 2356.89
     }
   },
   "plans": [
