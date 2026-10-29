@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-10-28",
+  "last_updated": "2026-10-29",
   "period_start": "2026-10-28",
-  "period_end": "2026-10-28",
+  "period_end": "2026-10-29",
   "categories": {
     "fixed_costs": {
-      "rent": 0.0
+      "rent": 827.49
     },
     "variable_needs": {
       "groceries": 0.0,
@@ -15,14 +15,25 @@
     "variable_wants": {
       "partying": 0.0,
       "dining_out": 0.0,
-      "slop": 0.0,
+      "slop": 8.040000000000001,
       "gym": 0.0,
-      "misc_other": 24.64
+      "misc_other": 40.74
     }
   },
   "categories_detail": {
     "fixed_costs": {
-      "rent": []
+      "rent": [
+        {
+          "name": "AppFolio, Inc. F",
+          "amount": 2.49,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "CVA Properties L",
+          "amount": 825.0,
+          "account": "SoFi Checking"
+        }
+      ]
     },
     "variable_needs": {
       "groceries": [],
@@ -33,13 +44,34 @@
     "variable_wants": {
       "partying": [],
       "dining_out": [],
-      "slop": [],
+      "slop": [
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 3.93,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "gym": [],
       "misc_other": [
         {
           "name": "Panera Bread",
           "amount": 14.14,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 6.14,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "JO-JOS PIZZA",
+          "amount": 9.96,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "NATES BAGELS - CARY STREET",
@@ -56,6 +88,16 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "K H M CONVENIENCE STORE",
+      "amount": 6.14,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "JO-JOS PIZZA",
+      "amount": 9.96,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "NATES BAGELS - CARY STREET",
       "amount": 10.5,
       "account": "Blue Cash Preferred\u00ae"
@@ -64,15 +106,30 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 2931.56,
+      "balance": 439.01,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
         {
+          "name": "AppFolio, Inc. F",
+          "amount": 2.49,
+          "category": "rent"
+        },
+        {
+          "name": "CVA Properties L",
+          "amount": 825.0,
+          "category": "rent"
+        },
+        {
           "name": "Panera Bread",
           "amount": 14.14,
           "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
+          "category": "slop"
         }
       ]
     },
@@ -86,11 +143,21 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 2356.89,
+      "balance": 1671.34,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "7-Eleven",
+          "amount": 3.93,
+          "category": "slop"
+        },
+        {
+          "name": "JO-JOS PIZZA",
+          "amount": 9.96,
+          "category": "misc_other"
+        },
         {
           "name": "NATES BAGELS - CARY STREET",
           "amount": 10.5,
@@ -100,11 +167,17 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 3670.73,
+      "balance": 2770.73,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
-      "transactions": []
+      "transactions": [
+        {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 6.14,
+          "category": "misc_other"
+        }
+      ]
     }
   ],
   "caps": {
@@ -125,7 +198,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 2931.56,
+    "actual_checking_balance": 439.01,
     "actual_savings_balance": 601.54
   },
   "debt": {
@@ -137,7 +210,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 3670.73
+      "current_balance": 2770.73
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -145,7 +218,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 2356.89
+      "current_balance": 1671.34
     }
   },
   "plans": [
