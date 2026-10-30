@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-10-29",
+  "last_updated": "2026-10-30",
   "period_start": "2026-10-28",
-  "period_end": "2026-10-29",
+  "period_end": "2026-10-30",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
     },
     "variable_needs": {
-      "groceries": 0.0,
+      "groceries": 12.25,
       "gas": 0.0,
       "parking": 0.0,
       "subscriptions": 0.0
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 0.0,
-      "slop": 8.040000000000001,
-      "gym": 0.0,
-      "misc_other": 40.74
+      "dining_out": 33.6,
+      "slop": 14.700000000000001,
+      "gym": 2.76,
+      "misc_other": 114.47999999999999
     }
   },
   "categories_detail": {
@@ -36,14 +36,36 @@
       ]
     },
     "variable_needs": {
-      "groceries": [],
+      "groceries": [
+        {
+          "name": "Target",
+          "amount": 12.25,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        }
+      ],
       "gas": [],
       "parking": [],
       "subscriptions": []
     },
     "variable_wants": {
       "partying": [],
-      "dining_out": [],
+      "dining_out": [
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 10.5,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 10.73,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 12.37,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "slop": [
         {
           "name": "VILLAGE MARKET",
@@ -54,10 +76,26 @@
           "name": "7-Eleven",
           "amount": 3.93,
           "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 6.66,
+          "account": "Delta SkyMiles\u00ae Gold Card"
         }
       ],
-      "gym": [],
+      "gym": [
+        {
+          "name": "Vitamin Shoppe",
+          "amount": 2.76,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        }
+      ],
       "misc_other": [
+        {
+          "name": "Lucid Software Inc.",
+          "amount": 15.0,
+          "account": "SoFi Checking"
+        },
         {
           "name": "Panera Bread",
           "amount": 14.14,
@@ -69,19 +107,34 @@
           "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
-          "name": "JO-JOS PIZZA",
-          "amount": 9.96,
+          "name": "ONE WAY USA",
+          "amount": 33.06,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "AMAZON MARKETPLACE NAMZN.COM/BILL",
+          "amount": 16.91,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 10.5,
+          "name": "AplPay JO-JOS PIZZA",
+          "amount": 11.55,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Chick-fil-A",
+          "amount": 17.68,
           "account": "Blue Cash Preferred\u00ae"
         }
       ]
     }
   },
   "unmatched_transactions": [
+    {
+      "name": "Lucid Software Inc.",
+      "amount": 15.0,
+      "account": "SoFi Checking"
+    },
     {
       "name": "Panera Bread",
       "amount": 14.14,
@@ -93,24 +146,39 @@
       "account": "Delta SkyMiles\u00ae Gold Card"
     },
     {
-      "name": "JO-JOS PIZZA",
-      "amount": 9.96,
+      "name": "ONE WAY USA",
+      "amount": 33.06,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "AMAZON MARKETPLACE NAMZN.COM/BILL",
+      "amount": 16.91,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "NATES BAGELS - CARY STREET",
-      "amount": 10.5,
+      "name": "AplPay JO-JOS PIZZA",
+      "amount": 11.55,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Chick-fil-A",
+      "amount": 17.68,
       "account": "Blue Cash Preferred\u00ae"
     }
   ],
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 439.01,
+      "balance": 434.9,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
+          "category": "slop"
+        },
         {
           "name": "AppFolio, Inc. F",
           "amount": 2.49,
@@ -122,14 +190,14 @@
           "category": "rent"
         },
         {
-          "name": "Panera Bread",
-          "amount": 14.14,
+          "name": "Lucid Software Inc.",
+          "amount": 15.0,
           "category": "misc_other"
         },
         {
-          "name": "VILLAGE MARKET",
-          "amount": 4.11,
-          "category": "slop"
+          "name": "Panera Bread",
+          "amount": 14.14,
+          "category": "misc_other"
         }
       ]
     },
@@ -143,7 +211,7 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1671.34,
+      "balance": 1685.77,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
@@ -154,14 +222,34 @@
           "category": "slop"
         },
         {
-          "name": "JO-JOS PIZZA",
-          "amount": 9.96,
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 10.5,
+          "category": "dining_out"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 10.73,
+          "category": "dining_out"
+        },
+        {
+          "name": "AMAZON MARKETPLACE NAMZN.COM/BILL",
+          "amount": 16.91,
           "category": "misc_other"
         },
         {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 10.5,
+          "name": "AplPay JO-JOS PIZZA",
+          "amount": 11.55,
           "category": "misc_other"
+        },
+        {
+          "name": "Chick-fil-A",
+          "amount": 17.68,
+          "category": "misc_other"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 12.37,
+          "category": "dining_out"
         }
       ]
     },
@@ -173,9 +261,29 @@
       "limit": 10800.0,
       "transactions": [
         {
+          "name": "Target",
+          "amount": 12.25,
+          "category": "groceries"
+        },
+        {
+          "name": "Vitamin Shoppe",
+          "amount": 2.76,
+          "category": "gym"
+        },
+        {
           "name": "K H M CONVENIENCE STORE",
           "amount": 6.14,
           "category": "misc_other"
+        },
+        {
+          "name": "ONE WAY USA",
+          "amount": 33.06,
+          "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 6.66,
+          "category": "slop"
         }
       ]
     }
@@ -198,7 +306,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 439.01,
+    "actual_checking_balance": 434.9,
     "actual_savings_balance": 601.54
   },
   "debt": {
@@ -218,7 +326,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1671.34
+      "current_balance": 1685.77
     }
   },
   "plans": [
