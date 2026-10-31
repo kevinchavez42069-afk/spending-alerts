@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-30",
+  "last_updated": "2026-10-31",
   "period_start": "2026-10-28",
-  "period_end": "2026-10-30",
+  "period_end": "2026-10-31",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
@@ -13,11 +13,11 @@
       "subscriptions": 0.0
     },
     "variable_wants": {
-      "partying": 0.0,
+      "partying": 59.72,
       "dining_out": 33.6,
-      "slop": 14.700000000000001,
+      "slop": 14.7,
       "gym": 2.76,
-      "misc_other": 114.47999999999999
+      "misc_other": 204.43000000000004
     }
   },
   "categories_detail": {
@@ -48,16 +48,27 @@
       "subscriptions": []
     },
     "variable_wants": {
-      "partying": [],
-      "dining_out": [
+      "partying": [
         {
-          "name": "AplPay TST* NATES BARICHMOND",
-          "amount": 10.5,
-          "account": "Blue Cash Preferred\u00ae"
+          "name": "LOSO",
+          "amount": 26.73,
+          "account": "Delta SkyMiles\u00ae Gold Card"
         },
+        {
+          "name": "Uber",
+          "amount": 32.99,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        }
+      ],
+      "dining_out": [
         {
           "name": "Chipotle Mexican Grill",
           "amount": 10.73,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 10.5,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -73,14 +84,14 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 6.66,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
           "name": "7-Eleven",
           "amount": 3.93,
           "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 6.66,
-          "account": "Delta SkyMiles\u00ae Gold Card"
         }
       ],
       "gym": [
@@ -102,13 +113,28 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "K H M CONVENIENCE STORE",
+          "name": "Amex Send: Add Money",
+          "amount": 60.0,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "AplPay K H M CONVENIHENRICO",
           "amount": 6.14,
           "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
-          "name": "ONE WAY USA",
+          "name": "AplPay ONE WAY USA",
           "amount": 33.06,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "BINGO",
+          "amount": 25.93,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 4.02,
           "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
@@ -141,13 +167,28 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "K H M CONVENIENCE STORE",
+      "name": "Amex Send: Add Money",
+      "amount": 60.0,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "AplPay K H M CONVENIHENRICO",
       "amount": 6.14,
       "account": "Delta SkyMiles\u00ae Gold Card"
     },
     {
-      "name": "ONE WAY USA",
+      "name": "AplPay ONE WAY USA",
       "amount": 33.06,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "BINGO",
+      "amount": 25.93,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "K H M CONVENIENCE STORE",
+      "amount": 4.02,
       "account": "Delta SkyMiles\u00ae Gold Card"
     },
     {
@@ -169,7 +210,7 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 434.9,
+      "balance": 419.9,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
@@ -211,11 +252,21 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1685.77,
+      "balance": 1696.5,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "BINGO",
+          "amount": 25.93,
+          "category": "misc_other"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 10.73,
+          "category": "dining_out"
+        },
         {
           "name": "7-Eleven",
           "amount": 3.93,
@@ -224,11 +275,6 @@
         {
           "name": "AplPay TST* NATES BARICHMOND",
           "amount": 10.5,
-          "category": "dining_out"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 10.73,
           "category": "dining_out"
         },
         {
@@ -255,35 +301,55 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 2770.73,
+      "balance": 2888.84,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
       "transactions": [
+        {
+          "name": "Amex Send: Add Money",
+          "amount": 60.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay K H M CONVENIHENRICO",
+          "amount": 6.14,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay ONE WAY USA",
+          "amount": 33.06,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 6.66,
+          "category": "slop"
+        },
+        {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 4.02,
+          "category": "misc_other"
+        },
+        {
+          "name": "LOSO",
+          "amount": 26.73,
+          "category": "partying"
+        },
         {
           "name": "Target",
           "amount": 12.25,
           "category": "groceries"
         },
         {
+          "name": "Uber",
+          "amount": 32.99,
+          "category": "partying"
+        },
+        {
           "name": "Vitamin Shoppe",
           "amount": 2.76,
           "category": "gym"
-        },
-        {
-          "name": "K H M CONVENIENCE STORE",
-          "amount": 6.14,
-          "category": "misc_other"
-        },
-        {
-          "name": "ONE WAY USA",
-          "amount": 33.06,
-          "category": "misc_other"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 6.66,
-          "category": "slop"
         }
       ]
     }
@@ -306,7 +372,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 434.9,
+    "actual_checking_balance": 419.9,
     "actual_savings_balance": 601.54
   },
   "debt": {
@@ -318,7 +384,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 2770.73
+      "current_balance": 2888.84
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -326,7 +392,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1685.77
+      "current_balance": 1696.5
     }
   },
   "plans": [
