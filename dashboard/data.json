@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-10-31",
+  "last_updated": "2026-11-01",
   "period_start": "2026-10-28",
-  "period_end": "2026-10-31",
+  "period_end": "2026-11-01",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
     },
     "variable_needs": {
-      "groceries": 12.25,
-      "gas": 0.0,
+      "groceries": 53.54,
+      "gas": 3.63,
       "parking": 0.0,
-      "subscriptions": 0.0
+      "subscriptions": 20.0
     },
     "variable_wants": {
       "partying": 59.72,
-      "dining_out": 33.6,
+      "dining_out": 67.65,
       "slop": 14.7,
       "gym": 2.76,
-      "misc_other": 204.43000000000004
+      "misc_other": 490.17
     }
   },
   "categories_detail": {
@@ -38,14 +38,31 @@
     "variable_needs": {
       "groceries": [
         {
+          "name": "Kroger",
+          "amount": 41.29,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "Target",
           "amount": 12.25,
           "account": "Delta SkyMiles\u00ae Gold Card"
         }
       ],
-      "gas": [],
+      "gas": [
+        {
+          "name": "WAWA - STORE",
+          "amount": 3.63,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "parking": [],
-      "subscriptions": []
+      "subscriptions": [
+        {
+          "name": "ANTHROPIC* CLAUDE SUB",
+          "amount": 20.0,
+          "account": "SoFi Checking"
+        }
+      ]
     },
     "variable_wants": {
       "partying": [
@@ -61,6 +78,11 @@
         }
       ],
       "dining_out": [
+        {
+          "name": "DOORDASH",
+          "amount": 34.05,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
         {
           "name": "Chipotle Mexican Grill",
           "amount": 10.73,
@@ -111,6 +133,26 @@
           "name": "Panera Bread",
           "amount": 14.14,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "1323 RICHMND WILLOW LAWN",
+          "amount": 68.9,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "JULIOS BAGELS",
+          "amount": 16.97,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "LUCKY ROAD RUN SHOP",
+          "amount": 15.43,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "Sunglass Hut",
+          "amount": 184.44,
+          "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
           "name": "Amex Send: Add Money",
@@ -167,6 +209,26 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "1323 RICHMND WILLOW LAWN",
+      "amount": 68.9,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "JULIOS BAGELS",
+      "amount": 16.97,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "LUCKY ROAD RUN SHOP",
+      "amount": 15.43,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "Sunglass Hut",
+      "amount": 184.44,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
       "name": "Amex Send: Add Money",
       "amount": 60.0,
       "account": "Delta SkyMiles\u00ae Gold Card"
@@ -210,11 +272,21 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 419.9,
+      "balance": 420.12,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "ANTHROPIC* CLAUDE SUB",
+          "amount": 20.0,
+          "category": "subscriptions"
+        },
+        {
+          "name": "Lucid Software Inc.",
+          "amount": 15.0,
+          "category": "misc_other"
+        },
         {
           "name": "VILLAGE MARKET",
           "amount": 4.11,
@@ -231,11 +303,6 @@
           "category": "rent"
         },
         {
-          "name": "Lucid Software Inc.",
-          "amount": 15.0,
-          "category": "misc_other"
-        },
-        {
           "name": "Panera Bread",
           "amount": 14.14,
           "category": "misc_other"
@@ -244,7 +311,7 @@
     },
     {
       "name": "SoFi Savings",
-      "balance": 601.54,
+      "balance": 601.82,
       "type": "depository",
       "subtype": "savings",
       "limit": null,
@@ -252,11 +319,21 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1696.5,
+      "balance": 1722.43,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "Kroger",
+          "amount": 41.29,
+          "category": "groceries"
+        },
+        {
+          "name": "WAWA - STORE",
+          "amount": 3.63,
+          "category": "gas"
+        },
         {
           "name": "BINGO",
           "amount": 25.93,
@@ -301,11 +378,36 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 2888.84,
+      "balance": 2955.34,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
       "transactions": [
+        {
+          "name": "1323 RICHMND WILLOW LAWN",
+          "amount": 68.9,
+          "category": "misc_other"
+        },
+        {
+          "name": "DOORDASH",
+          "amount": 34.05,
+          "category": "dining_out"
+        },
+        {
+          "name": "JULIOS BAGELS",
+          "amount": 16.97,
+          "category": "misc_other"
+        },
+        {
+          "name": "LUCKY ROAD RUN SHOP",
+          "amount": 15.43,
+          "category": "misc_other"
+        },
+        {
+          "name": "Sunglass Hut",
+          "amount": 184.44,
+          "category": "misc_other"
+        },
         {
           "name": "Amex Send: Add Money",
           "amount": 60.0,
@@ -372,8 +474,8 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 419.9,
-    "actual_savings_balance": 601.54
+    "actual_checking_balance": 420.12,
+    "actual_savings_balance": 601.82
   },
   "debt": {
     "delta_amex": {
@@ -384,7 +486,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 2888.84
+      "current_balance": 2955.34
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -392,7 +494,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1696.5
+      "current_balance": 1722.43
     }
   },
   "plans": [
