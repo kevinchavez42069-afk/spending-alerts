@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-01",
+  "last_updated": "2026-11-02",
   "period_start": "2026-10-28",
-  "period_end": "2026-11-01",
+  "period_end": "2026-11-02",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
@@ -13,11 +13,11 @@
       "subscriptions": 20.0
     },
     "variable_wants": {
-      "partying": 59.72,
-      "dining_out": 67.65,
-      "slop": 14.7,
-      "gym": 2.76,
-      "misc_other": 490.17
+      "partying": 76.71000000000001,
+      "dining_out": 99.37,
+      "slop": 22.46,
+      "gym": 0.0,
+      "misc_other": 650.6799999999998
     }
   },
   "categories_detail": {
@@ -50,7 +50,7 @@
       ],
       "gas": [
         {
-          "name": "WAWA - STORE",
+          "name": "AplPay WAWA 8688",
           "amount": 3.63,
           "account": "Blue Cash Preferred\u00ae"
         }
@@ -67,7 +67,12 @@
     "variable_wants": {
       "partying": [
         {
-          "name": "LOSO",
+          "name": "Uber",
+          "amount": 16.99,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "AplPay TST* LOSO - RRICHMOND",
           "amount": 26.73,
           "account": "Delta SkyMiles\u00ae Gold Card"
         },
@@ -79,9 +84,24 @@
       ],
       "dining_out": [
         {
-          "name": "DOORDASH",
-          "amount": 34.05,
+          "name": "AplPay TST* JULIOS BRICHMOND",
+          "amount": 16.97,
           "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 3.29,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 19.58,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "TST* BINGO - RICHMONRICHMOND",
+          "amount": 25.93,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "Chipotle Mexican Grill",
@@ -106,6 +126,16 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "7-Eleven",
+          "amount": 2.82,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 4.94,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 6.66,
           "account": "Delta SkyMiles\u00ae Gold Card"
@@ -116,14 +146,13 @@
           "account": "Blue Cash Preferred\u00ae"
         }
       ],
-      "gym": [
-        {
-          "name": "Vitamin Shoppe",
-          "amount": 2.76,
-          "account": "Delta SkyMiles\u00ae Gold Card"
-        }
-      ],
+      "gym": [],
       "misc_other": [
+        {
+          "name": "Patreon* Membership",
+          "amount": 10.0,
+          "account": "SoFi Checking"
+        },
         {
           "name": "Lucid Software Inc.",
           "amount": 15.0,
@@ -135,23 +164,53 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "1323 RICHMND WILLOW LAWN",
+          "name": "CANTEEN VENDING",
+          "amount": 2.1,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 14.64,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "SEIBERTS TOWING",
+          "amount": 123.6,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "AplPay DD *DOORDASAN FRANCISCO",
+          "amount": 34.05,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "AplPay DSG STORE 132RICHMOND",
           "amount": 68.9,
           "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
-          "name": "JULIOS BAGELS",
-          "amount": 16.97,
-          "account": "Delta SkyMiles\u00ae Gold Card"
-        },
-        {
-          "name": "LUCKY ROAD RUN SHOP",
+          "name": "AplPay FSP*LUCKY ROARICHMOND",
           "amount": 15.43,
           "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 16.26,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "Sunglass Hut",
           "amount": 184.44,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "AplPay K H M CONVENIHENRICO",
+          "amount": 4.02,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "AplPay THE VITAMIN SRICHMOND",
+          "amount": 2.76,
           "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
@@ -167,16 +226,6 @@
         {
           "name": "AplPay ONE WAY USA",
           "amount": 33.06,
-          "account": "Delta SkyMiles\u00ae Gold Card"
-        },
-        {
-          "name": "BINGO",
-          "amount": 25.93,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "K H M CONVENIENCE STORE",
-          "amount": 4.02,
           "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
@@ -199,6 +248,11 @@
   },
   "unmatched_transactions": [
     {
+      "name": "Patreon* Membership",
+      "amount": 10.0,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "Lucid Software Inc.",
       "amount": 15.0,
       "account": "SoFi Checking"
@@ -209,23 +263,53 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "1323 RICHMND WILLOW LAWN",
+      "name": "CANTEEN VENDING",
+      "amount": 2.1,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "NATES BAGELS - CARY STREET",
+      "amount": 14.64,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "SEIBERTS TOWING",
+      "amount": 123.6,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "AplPay DD *DOORDASAN FRANCISCO",
+      "amount": 34.05,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "AplPay DSG STORE 132RICHMOND",
       "amount": 68.9,
       "account": "Delta SkyMiles\u00ae Gold Card"
     },
     {
-      "name": "JULIOS BAGELS",
-      "amount": 16.97,
-      "account": "Delta SkyMiles\u00ae Gold Card"
-    },
-    {
-      "name": "LUCKY ROAD RUN SHOP",
+      "name": "AplPay FSP*LUCKY ROARICHMOND",
       "amount": 15.43,
       "account": "Delta SkyMiles\u00ae Gold Card"
     },
     {
+      "name": "K H M CONVENIENCE STORE",
+      "amount": 16.26,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "Sunglass Hut",
       "amount": 184.44,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "AplPay K H M CONVENIHENRICO",
+      "amount": 4.02,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "AplPay THE VITAMIN SRICHMOND",
+      "amount": 2.76,
       "account": "Delta SkyMiles\u00ae Gold Card"
     },
     {
@@ -241,16 +325,6 @@
     {
       "name": "AplPay ONE WAY USA",
       "amount": 33.06,
-      "account": "Delta SkyMiles\u00ae Gold Card"
-    },
-    {
-      "name": "BINGO",
-      "amount": 25.93,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "K H M CONVENIENCE STORE",
-      "amount": 4.02,
       "account": "Delta SkyMiles\u00ae Gold Card"
     },
     {
@@ -272,7 +346,7 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 420.12,
+      "balance": 400.12,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
@@ -281,6 +355,11 @@
           "name": "ANTHROPIC* CLAUDE SUB",
           "amount": 20.0,
           "category": "subscriptions"
+        },
+        {
+          "name": "Patreon* Membership",
+          "amount": 10.0,
+          "category": "misc_other"
         },
         {
           "name": "Lucid Software Inc.",
@@ -319,25 +398,55 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1722.43,
+      "balance": 1767.35,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "CANTEEN VENDING",
+          "amount": 2.1,
+          "category": "misc_other"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 14.64,
+          "category": "misc_other"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 2.82,
+          "category": "slop"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 4.94,
+          "category": "slop"
+        },
+        {
+          "name": "AplPay WAWA 8688",
+          "amount": 3.63,
+          "category": "gas"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 19.58,
+          "category": "dining_out"
+        },
+        {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 16.26,
+          "category": "misc_other"
+        },
         {
           "name": "Kroger",
           "amount": 41.29,
           "category": "groceries"
         },
         {
-          "name": "WAWA - STORE",
-          "amount": 3.63,
-          "category": "gas"
-        },
-        {
-          "name": "BINGO",
+          "name": "TST* BINGO - RICHMONRICHMOND",
           "amount": 25.93,
-          "category": "misc_other"
+          "category": "dining_out"
         },
         {
           "name": "Chipotle Mexican Grill",
@@ -378,35 +487,70 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 2955.34,
+      "balance": 3275.13,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
       "transactions": [
         {
-          "name": "1323 RICHMND WILLOW LAWN",
+          "name": "SEIBERTS TOWING",
+          "amount": 123.6,
+          "category": "misc_other"
+        },
+        {
+          "name": "Uber",
+          "amount": 16.99,
+          "category": "partying"
+        },
+        {
+          "name": "AplPay DD *DOORDASAN FRANCISCO",
+          "amount": 34.05,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay DSG STORE 132RICHMOND",
           "amount": 68.9,
           "category": "misc_other"
         },
         {
-          "name": "DOORDASH",
-          "amount": 34.05,
+          "name": "AplPay FSP*LUCKY ROARICHMOND",
+          "amount": 15.43,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay TST* JULIOS BRICHMOND",
+          "amount": 16.97,
           "category": "dining_out"
         },
         {
-          "name": "JULIOS BAGELS",
-          "amount": 16.97,
-          "category": "misc_other"
-        },
-        {
-          "name": "LUCKY ROAD RUN SHOP",
-          "amount": 15.43,
-          "category": "misc_other"
+          "name": "Chipotle Mexican Grill",
+          "amount": 3.29,
+          "category": "dining_out"
         },
         {
           "name": "Sunglass Hut",
           "amount": 184.44,
           "category": "misc_other"
+        },
+        {
+          "name": "AplPay K H M CONVENIHENRICO",
+          "amount": 4.02,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay THE VITAMIN SRICHMOND",
+          "amount": 2.76,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay TST* LOSO - RRICHMOND",
+          "amount": 26.73,
+          "category": "partying"
+        },
+        {
+          "name": "Uber",
+          "amount": 32.99,
+          "category": "partying"
         },
         {
           "name": "Amex Send: Add Money",
@@ -429,29 +573,9 @@
           "category": "slop"
         },
         {
-          "name": "K H M CONVENIENCE STORE",
-          "amount": 4.02,
-          "category": "misc_other"
-        },
-        {
-          "name": "LOSO",
-          "amount": 26.73,
-          "category": "partying"
-        },
-        {
           "name": "Target",
           "amount": 12.25,
           "category": "groceries"
-        },
-        {
-          "name": "Uber",
-          "amount": 32.99,
-          "category": "partying"
-        },
-        {
-          "name": "Vitamin Shoppe",
-          "amount": 2.76,
-          "category": "gym"
         }
       ]
     }
@@ -474,7 +598,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 420.12,
+    "actual_checking_balance": 400.12,
     "actual_savings_balance": 601.82
   },
   "debt": {
@@ -486,7 +610,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 2955.34
+      "current_balance": 3275.13
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -494,7 +618,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1722.43
+      "current_balance": 1767.35
     }
   },
   "plans": [
