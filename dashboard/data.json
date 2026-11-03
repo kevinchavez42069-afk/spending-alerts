@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-11-02",
+  "last_updated": "2026-11-03",
   "period_start": "2026-10-28",
-  "period_end": "2026-11-02",
+  "period_end": "2026-11-03",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
     },
     "variable_needs": {
-      "groceries": 53.54,
+      "groceries": 78.66,
       "gas": 3.63,
       "parking": 0.0,
       "subscriptions": 20.0
@@ -17,7 +17,7 @@
       "dining_out": 99.37,
       "slop": 22.46,
       "gym": 0.0,
-      "misc_other": 650.6799999999998
+      "misc_other": 732.6199999999999
     }
   },
   "categories_detail": {
@@ -37,6 +37,11 @@
     },
     "variable_needs": {
       "groceries": [
+        {
+          "name": "Aldi",
+          "amount": 25.12,
+          "account": "Blue Cash Preferred\u00ae"
+        },
         {
           "name": "Kroger",
           "amount": 41.29,
@@ -164,6 +169,21 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "Chick-fil-A",
+          "amount": 11.76,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AMAZON MARKEPLACE NA",
+          "amount": 38.14,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "AMAZONCOM",
+          "amount": 17.47,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
           "name": "CANTEEN VENDING",
           "amount": 2.1,
           "account": "Blue Cash Preferred\u00ae"
@@ -171,6 +191,11 @@
         {
           "name": "NATES BAGELS - CARY STREET",
           "amount": 14.64,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Raising Cane's Chicken Fingers",
+          "amount": 14.57,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -263,6 +288,21 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "Chick-fil-A",
+      "amount": 11.76,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AMAZON MARKEPLACE NA",
+      "amount": 38.14,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "AMAZONCOM",
+      "amount": 17.47,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
       "name": "CANTEEN VENDING",
       "amount": 2.1,
       "account": "Blue Cash Preferred\u00ae"
@@ -270,6 +310,11 @@
     {
       "name": "NATES BAGELS - CARY STREET",
       "amount": 14.64,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Raising Cane's Chicken Fingers",
+      "amount": 14.57,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -346,20 +391,20 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 400.12,
+      "balance": 390.12,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
         {
-          "name": "ANTHROPIC* CLAUDE SUB",
-          "amount": 20.0,
-          "category": "subscriptions"
-        },
-        {
           "name": "Patreon* Membership",
           "amount": 10.0,
           "category": "misc_other"
+        },
+        {
+          "name": "ANTHROPIC* CLAUDE SUB",
+          "amount": 20.0,
+          "category": "subscriptions"
         },
         {
           "name": "Lucid Software Inc.",
@@ -398,11 +443,21 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1767.35,
+      "balance": 1946.2,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "Aldi",
+          "amount": 25.12,
+          "category": "groceries"
+        },
+        {
+          "name": "Chick-fil-A",
+          "amount": 11.76,
+          "category": "misc_other"
+        },
         {
           "name": "CANTEEN VENDING",
           "amount": 2.1,
@@ -411,6 +466,11 @@
         {
           "name": "NATES BAGELS - CARY STREET",
           "amount": 14.64,
+          "category": "misc_other"
+        },
+        {
+          "name": "Raising Cane's Chicken Fingers",
+          "amount": 14.57,
           "category": "misc_other"
         },
         {
@@ -487,11 +547,21 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 3275.13,
+      "balance": 3402.02,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
       "transactions": [
+        {
+          "name": "AMAZON MARKEPLACE NA",
+          "amount": 38.14,
+          "category": "misc_other"
+        },
+        {
+          "name": "AMAZONCOM",
+          "amount": 17.47,
+          "category": "misc_other"
+        },
         {
           "name": "SEIBERTS TOWING",
           "amount": 123.6,
@@ -598,7 +668,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 400.12,
+    "actual_checking_balance": 390.12,
     "actual_savings_balance": 601.82
   },
   "debt": {
@@ -610,7 +680,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 3275.13
+      "current_balance": 3402.02
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -618,7 +688,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1767.35
+      "current_balance": 1946.2
     }
   },
   "plans": [
