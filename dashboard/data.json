@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-03",
+  "last_updated": "2026-11-04",
   "period_start": "2026-10-28",
-  "period_end": "2026-11-03",
+  "period_end": "2026-11-04",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
@@ -14,10 +14,10 @@
     },
     "variable_wants": {
       "partying": 76.71000000000001,
-      "dining_out": 99.37,
-      "slop": 22.46,
+      "dining_out": 128.07999999999998,
+      "slop": 26.57,
       "gym": 0.0,
-      "misc_other": 732.6199999999999
+      "misc_other": 903.8799999999999
     }
   },
   "categories_detail": {
@@ -89,8 +89,13 @@
       ],
       "dining_out": [
         {
-          "name": "AplPay TST* JULIOS BRICHMOND",
-          "amount": 16.97,
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 14.64,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
           "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
@@ -102,6 +107,11 @@
           "name": "Chipotle Mexican Grill",
           "amount": 19.58,
           "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay TST* JULIOS BRICHMOND",
+          "amount": 16.97,
+          "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
           "name": "TST* BINGO - RICHMONRICHMOND",
@@ -131,6 +141,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
           "name": "7-Eleven",
           "amount": 2.82,
           "account": "Blue Cash Preferred\u00ae"
@@ -154,6 +169,16 @@
       "gym": [],
       "misc_other": [
         {
+          "name": "CTLP*CANTEEN VENDING",
+          "amount": 1.35,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "CTLP*CANTEEN VENDING",
+          "amount": 1.6,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "Patreon* Membership",
           "amount": 10.0,
           "account": "SoFi Checking"
@@ -169,28 +194,23 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "Chick-fil-A",
-          "amount": 11.76,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "AMAZON MARKEPLACE NA",
-          "amount": 38.14,
+          "name": "AMAZON MARKETPLACE NAMZN.COM/BILL",
+          "amount": 12.7,
           "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
-          "name": "AMAZONCOM",
+          "name": "AMAZON.COM AMZN.COM/BILL",
           "amount": 17.47,
           "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
-          "name": "CANTEEN VENDING",
+          "name": "AplPay CTLP*CANTEEN",
           "amount": 2.1,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 14.64,
+          "name": "Chick-fil-A",
+          "amount": 11.76,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -199,9 +219,39 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "SEIBERTS TOWING",
+          "name": "VCU REC WELL",
+          "amount": 35.0,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "AMAZON MARKEPLACE NA",
+          "amount": 38.14,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "AplPay K H M CONVENIHENRICO",
+          "amount": 16.26,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay SEIBERT'S TOWRICHMOND",
           "amount": 123.6,
           "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "Interest Charge on Promotional Balances",
+          "amount": 15.26,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Interest Charge on Purchases",
+          "amount": 24.99,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "RENEWAL MEMBERSHIP FEE",
+          "amount": 95.0,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay DD *DOORDASAN FRANCISCO",
@@ -217,11 +267,6 @@
           "name": "AplPay FSP*LUCKY ROARICHMOND",
           "amount": 15.43,
           "account": "Delta SkyMiles\u00ae Gold Card"
-        },
-        {
-          "name": "K H M CONVENIENCE STORE",
-          "amount": 16.26,
-          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "Sunglass Hut",
@@ -273,6 +318,16 @@
   },
   "unmatched_transactions": [
     {
+      "name": "CTLP*CANTEEN VENDING",
+      "amount": 1.35,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "CTLP*CANTEEN VENDING",
+      "amount": 1.6,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "Patreon* Membership",
       "amount": 10.0,
       "account": "SoFi Checking"
@@ -288,28 +343,23 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "Chick-fil-A",
-      "amount": 11.76,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "AMAZON MARKEPLACE NA",
-      "amount": 38.14,
+      "name": "AMAZON MARKETPLACE NAMZN.COM/BILL",
+      "amount": 12.7,
       "account": "Delta SkyMiles\u00ae Gold Card"
     },
     {
-      "name": "AMAZONCOM",
+      "name": "AMAZON.COM AMZN.COM/BILL",
       "amount": 17.47,
       "account": "Delta SkyMiles\u00ae Gold Card"
     },
     {
-      "name": "CANTEEN VENDING",
+      "name": "AplPay CTLP*CANTEEN",
       "amount": 2.1,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "NATES BAGELS - CARY STREET",
-      "amount": 14.64,
+      "name": "Chick-fil-A",
+      "amount": 11.76,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -318,9 +368,39 @@
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "SEIBERTS TOWING",
+      "name": "VCU REC WELL",
+      "amount": 35.0,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "AMAZON MARKEPLACE NA",
+      "amount": 38.14,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "AplPay K H M CONVENIHENRICO",
+      "amount": 16.26,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay SEIBERT'S TOWRICHMOND",
       "amount": 123.6,
       "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "Interest Charge on Promotional Balances",
+      "amount": 15.26,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Interest Charge on Purchases",
+      "amount": 24.99,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "RENEWAL MEMBERSHIP FEE",
+      "amount": 95.0,
+      "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "AplPay DD *DOORDASAN FRANCISCO",
@@ -336,11 +416,6 @@
       "name": "AplPay FSP*LUCKY ROARICHMOND",
       "amount": 15.43,
       "account": "Delta SkyMiles\u00ae Gold Card"
-    },
-    {
-      "name": "K H M CONVENIENCE STORE",
-      "amount": 16.26,
-      "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "Sunglass Hut",
@@ -397,6 +472,16 @@
       "limit": null,
       "transactions": [
         {
+          "name": "CTLP*CANTEEN VENDING",
+          "amount": 1.35,
+          "category": "misc_other"
+        },
+        {
+          "name": "CTLP*CANTEEN VENDING",
+          "amount": 1.6,
+          "category": "misc_other"
+        },
+        {
           "name": "Patreon* Membership",
           "amount": 10.0,
           "category": "misc_other"
@@ -443,7 +528,7 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1946.2,
+      "balance": 1977.51,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
@@ -454,18 +539,18 @@
           "category": "groceries"
         },
         {
-          "name": "Chick-fil-A",
-          "amount": 11.76,
-          "category": "misc_other"
-        },
-        {
-          "name": "CANTEEN VENDING",
+          "name": "AplPay CTLP*CANTEEN",
           "amount": 2.1,
           "category": "misc_other"
         },
         {
-          "name": "NATES BAGELS - CARY STREET",
+          "name": "AplPay TST* NATES BARICHMOND",
           "amount": 14.64,
+          "category": "dining_out"
+        },
+        {
+          "name": "Chick-fil-A",
+          "amount": 11.76,
           "category": "misc_other"
         },
         {
@@ -484,9 +569,9 @@
           "category": "slop"
         },
         {
-          "name": "AplPay WAWA 8688",
-          "amount": 3.63,
-          "category": "gas"
+          "name": "AplPay K H M CONVENIHENRICO",
+          "amount": 16.26,
+          "category": "misc_other"
         },
         {
           "name": "Chipotle Mexican Grill",
@@ -494,9 +579,24 @@
           "category": "dining_out"
         },
         {
-          "name": "K H M CONVENIENCE STORE",
-          "amount": 16.26,
+          "name": "Interest Charge on Promotional Balances",
+          "amount": 15.26,
           "category": "misc_other"
+        },
+        {
+          "name": "Interest Charge on Purchases",
+          "amount": 24.99,
+          "category": "misc_other"
+        },
+        {
+          "name": "RENEWAL MEMBERSHIP FEE",
+          "amount": 95.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay WAWA 8688",
+          "amount": 3.63,
+          "category": "gas"
         },
         {
           "name": "Kroger",
@@ -547,30 +647,55 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 3402.02,
+      "balance": 3449.18,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
       "transactions": [
+        {
+          "name": "AMAZON MARKETPLACE NAMZN.COM/BILL",
+          "amount": 12.7,
+          "category": "misc_other"
+        },
+        {
+          "name": "AMAZON.COM AMZN.COM/BILL",
+          "amount": 17.47,
+          "category": "misc_other"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "category": "dining_out"
+        },
+        {
+          "name": "Uber",
+          "amount": 16.99,
+          "category": "partying"
+        },
+        {
+          "name": "VCU REC WELL",
+          "amount": 35.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
+          "category": "slop"
+        },
         {
           "name": "AMAZON MARKEPLACE NA",
           "amount": 38.14,
           "category": "misc_other"
         },
         {
-          "name": "AMAZONCOM",
-          "amount": 17.47,
-          "category": "misc_other"
-        },
-        {
-          "name": "SEIBERTS TOWING",
+          "name": "AplPay SEIBERT'S TOWRICHMOND",
           "amount": 123.6,
           "category": "misc_other"
         },
         {
-          "name": "Uber",
-          "amount": 16.99,
-          "category": "partying"
+          "name": "Chipotle Mexican Grill",
+          "amount": 3.29,
+          "category": "dining_out"
         },
         {
           "name": "AplPay DD *DOORDASAN FRANCISCO",
@@ -590,11 +715,6 @@
         {
           "name": "AplPay TST* JULIOS BRICHMOND",
           "amount": 16.97,
-          "category": "dining_out"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 3.29,
           "category": "dining_out"
         },
         {
@@ -680,7 +800,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 3402.02
+      "current_balance": 3449.18
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -688,7 +808,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1946.2
+      "current_balance": 1977.51
     }
   },
   "plans": [
