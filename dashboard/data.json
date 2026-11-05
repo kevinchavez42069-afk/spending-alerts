@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-04",
+  "last_updated": "2026-11-05",
   "period_start": "2026-10-28",
-  "period_end": "2026-11-04",
+  "period_end": "2026-11-05",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
@@ -15,9 +15,9 @@
     "variable_wants": {
       "partying": 76.71000000000001,
       "dining_out": 128.07999999999998,
-      "slop": 26.57,
+      "slop": 30.35,
       "gym": 0.0,
-      "misc_other": 903.8799999999999
+      "misc_other": 922.0699999999999
     }
   },
   "categories_detail": {
@@ -38,7 +38,7 @@
     "variable_needs": {
       "groceries": [
         {
-          "name": "Aldi",
+          "name": "AplPay ALDI INC 0004RICHMOND",
           "amount": 25.12,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -89,14 +89,14 @@
       ],
       "dining_out": [
         {
-          "name": "AplPay TST* NATES BARICHMOND",
-          "amount": 14.64,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
           "name": "Chipotle Mexican Grill",
           "amount": 14.07,
           "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 14.64,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "Chipotle Mexican Grill",
@@ -141,9 +141,14 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "VILLAGE MARKET",
+          "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 4.11,
           "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 3.78,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "7-Eleven",
@@ -194,6 +199,36 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 8.16,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 8.18,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "AMAZON MARKETPLACE NAMZN.COM/BILL",
+          "amount": 38.14,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "CANTEEN VENDING",
+          "amount": 1.85,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Chick-fil-A",
+          "amount": 11.76,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "VCU REC WELL 00-0802RICHMOND",
+          "amount": 35.0,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
           "name": "AMAZON MARKETPLACE NAMZN.COM/BILL",
           "amount": 12.7,
           "account": "Delta SkyMiles\u00ae Gold Card"
@@ -209,24 +244,9 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "Chick-fil-A",
-          "amount": 11.76,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
           "name": "Raising Cane's Chicken Fingers",
           "amount": 14.57,
           "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "VCU REC WELL",
-          "amount": 35.0,
-          "account": "Delta SkyMiles\u00ae Gold Card"
-        },
-        {
-          "name": "AMAZON MARKEPLACE NA",
-          "amount": 38.14,
-          "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
           "name": "AplPay K H M CONVENIHENRICO",
@@ -343,6 +363,36 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "URBAN FARMHOUSE MARKET AND CAF",
+      "amount": 8.16,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "URBAN FARMHOUSE MARKET AND CAF",
+      "amount": 8.18,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "AMAZON MARKETPLACE NAMZN.COM/BILL",
+      "amount": 38.14,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "CANTEEN VENDING",
+      "amount": 1.85,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Chick-fil-A",
+      "amount": 11.76,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "VCU REC WELL 00-0802RICHMOND",
+      "amount": 35.0,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
       "name": "AMAZON MARKETPLACE NAMZN.COM/BILL",
       "amount": 12.7,
       "account": "Delta SkyMiles\u00ae Gold Card"
@@ -358,24 +408,9 @@
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "Chick-fil-A",
-      "amount": 11.76,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
       "name": "Raising Cane's Chicken Fingers",
       "amount": 14.57,
       "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "VCU REC WELL",
-      "amount": 35.0,
-      "account": "Delta SkyMiles\u00ae Gold Card"
-    },
-    {
-      "name": "AMAZON MARKEPLACE NA",
-      "amount": 38.14,
-      "account": "Delta SkyMiles\u00ae Gold Card"
     },
     {
       "name": "AplPay K H M CONVENIHENRICO",
@@ -528,15 +563,35 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1977.51,
+      "balance": 2014.39,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
-          "name": "Aldi",
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 8.16,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay ALDI INC 0004RICHMOND",
           "amount": 25.12,
           "category": "groceries"
+        },
+        {
+          "name": "CANTEEN VENDING",
+          "amount": 1.85,
+          "category": "misc_other"
+        },
+        {
+          "name": "Chick-fil-A",
+          "amount": 11.76,
+          "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 3.78,
+          "category": "slop"
         },
         {
           "name": "AplPay CTLP*CANTEEN",
@@ -547,11 +602,6 @@
           "name": "AplPay TST* NATES BARICHMOND",
           "amount": 14.64,
           "category": "dining_out"
-        },
-        {
-          "name": "Chick-fil-A",
-          "amount": 11.76,
-          "category": "misc_other"
         },
         {
           "name": "Raising Cane's Chicken Fingers",
@@ -647,11 +697,36 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 3449.18,
+      "balance": 3540.5,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
       "transactions": [
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 8.18,
+          "category": "misc_other"
+        },
+        {
+          "name": "AMAZON MARKETPLACE NAMZN.COM/BILL",
+          "amount": 38.14,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 4.11,
+          "category": "slop"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "category": "dining_out"
+        },
+        {
+          "name": "VCU REC WELL 00-0802RICHMOND",
+          "amount": 35.0,
+          "category": "misc_other"
+        },
         {
           "name": "AMAZON MARKETPLACE NAMZN.COM/BILL",
           "amount": 12.7,
@@ -663,29 +738,9 @@
           "category": "misc_other"
         },
         {
-          "name": "Chipotle Mexican Grill",
-          "amount": 14.07,
-          "category": "dining_out"
-        },
-        {
           "name": "Uber",
           "amount": 16.99,
           "category": "partying"
-        },
-        {
-          "name": "VCU REC WELL",
-          "amount": 35.0,
-          "category": "misc_other"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 4.11,
-          "category": "slop"
-        },
-        {
-          "name": "AMAZON MARKEPLACE NA",
-          "amount": 38.14,
-          "category": "misc_other"
         },
         {
           "name": "AplPay SEIBERT'S TOWRICHMOND",
@@ -800,7 +855,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 3449.18
+      "current_balance": 3540.5
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -808,7 +863,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1977.51
+      "current_balance": 2014.39
     }
   },
   "plans": [
