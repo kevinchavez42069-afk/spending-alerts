@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-05",
+  "last_updated": "2026-11-06",
   "period_start": "2026-10-28",
-  "period_end": "2026-11-05",
+  "period_end": "2026-11-06",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
@@ -15,9 +15,9 @@
     "variable_wants": {
       "partying": 76.71000000000001,
       "dining_out": 128.07999999999998,
-      "slop": 30.35,
+      "slop": 43.309999999999995,
       "gym": 0.0,
-      "misc_other": 922.0699999999999
+      "misc_other": 962.1899999999996
     }
   },
   "categories_detail": {
@@ -141,14 +141,24 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 4.11,
+          "name": "7-Eleven",
+          "amount": 8.97,
           "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
-          "name": "VILLAGE MARKET",
+          "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 3.78,
           "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 3.99,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 4.11,
+          "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
           "name": "7-Eleven",
@@ -184,6 +194,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "Cook Out",
+          "amount": 16.15,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "Patreon* Membership",
           "amount": 10.0,
           "account": "SoFi Checking"
@@ -199,6 +214,21 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 11.99,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 11.98,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay CTLP*CANTEEN",
+          "amount": 1.85,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
           "amount": 8.16,
           "account": "Blue Cash Preferred\u00ae"
@@ -212,11 +242,6 @@
           "name": "AMAZON MARKETPLACE NAMZN.COM/BILL",
           "amount": 38.14,
           "account": "Delta SkyMiles\u00ae Gold Card"
-        },
-        {
-          "name": "CANTEEN VENDING",
-          "amount": 1.85,
-          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "Chick-fil-A",
@@ -348,6 +373,11 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "Cook Out",
+      "amount": 16.15,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "Patreon* Membership",
       "amount": 10.0,
       "account": "SoFi Checking"
@@ -363,6 +393,21 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "NATES BAGELS - CARY STREET",
+      "amount": 11.99,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "APPLE.COM/BILL INTERNET CHARGE",
+      "amount": 11.98,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay CTLP*CANTEEN",
+      "amount": 1.85,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "URBAN FARMHOUSE MARKET AND CAF",
       "amount": 8.16,
       "account": "Blue Cash Preferred\u00ae"
@@ -376,11 +421,6 @@
       "name": "AMAZON MARKETPLACE NAMZN.COM/BILL",
       "amount": 38.14,
       "account": "Delta SkyMiles\u00ae Gold Card"
-    },
-    {
-      "name": "CANTEEN VENDING",
-      "amount": 1.85,
-      "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "Chick-fil-A",
@@ -501,7 +541,7 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 390.12,
+      "balance": 387.17,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
@@ -514,6 +554,11 @@
         {
           "name": "CTLP*CANTEEN VENDING",
           "amount": 1.6,
+          "category": "misc_other"
+        },
+        {
+          "name": "Cook Out",
+          "amount": 16.15,
           "category": "misc_other"
         },
         {
@@ -563,15 +608,35 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 2014.39,
+      "balance": 2032.0,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 11.98,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay CTLP*CANTEEN",
+          "amount": 1.85,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 3.78,
+          "category": "slop"
+        },
+        {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
           "amount": 8.16,
           "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 3.99,
+          "category": "slop"
         },
         {
           "name": "AplPay ALDI INC 0004RICHMOND",
@@ -579,19 +644,9 @@
           "category": "groceries"
         },
         {
-          "name": "CANTEEN VENDING",
-          "amount": 1.85,
-          "category": "misc_other"
-        },
-        {
           "name": "Chick-fil-A",
           "amount": 11.76,
           "category": "misc_other"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 3.78,
-          "category": "slop"
         },
         {
           "name": "AplPay CTLP*CANTEEN",
@@ -702,6 +757,16 @@
       "subtype": "credit card",
       "limit": 10800.0,
       "transactions": [
+        {
+          "name": "7-Eleven",
+          "amount": 8.97,
+          "category": "slop"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 11.99,
+          "category": "misc_other"
+        },
         {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
           "amount": 8.18,
@@ -843,7 +908,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 390.12,
+    "actual_checking_balance": 387.17,
     "actual_savings_balance": 601.82
   },
   "debt": {
@@ -863,7 +928,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 2014.39
+      "current_balance": 2032.0
     }
   },
   "plans": [
