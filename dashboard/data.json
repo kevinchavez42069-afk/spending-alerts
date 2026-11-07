@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-06",
+  "last_updated": "2026-11-07",
   "period_start": "2026-10-28",
-  "period_end": "2026-11-06",
+  "period_end": "2026-11-07",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
@@ -14,10 +14,10 @@
     },
     "variable_wants": {
       "partying": 76.71000000000001,
-      "dining_out": 128.07999999999998,
+      "dining_out": 144.42000000000002,
       "slop": 43.309999999999995,
       "gym": 0.0,
-      "misc_other": 962.1899999999996
+      "misc_other": 970.3399999999997
     }
   },
   "categories_detail": {
@@ -89,6 +89,16 @@
       ],
       "dining_out": [
         {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 8.16,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 8.18,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
           "name": "Chipotle Mexican Grill",
           "amount": 14.07,
           "account": "Delta SkyMiles\u00ae Gold Card"
@@ -147,12 +157,12 @@
         },
         {
           "name": "AplPay VILLAGE MARKERICHMOND",
-          "amount": 3.78,
+          "amount": 3.99,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "VILLAGE MARKET",
-          "amount": 3.99,
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 3.78,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -184,6 +194,11 @@
       "gym": [],
       "misc_other": [
         {
+          "name": "CHRISTIANS PIZZA",
+          "amount": 11.51,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "CTLP*CANTEEN VENDING",
           "amount": 1.35,
           "account": "SoFi Checking"
@@ -214,8 +229,18 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 5.84,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "NATES BAGELS - CARY STREET",
           "amount": 11.99,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "ONE WAY USA",
+          "amount": 7.14,
           "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
@@ -227,16 +252,6 @@
           "name": "AplPay CTLP*CANTEEN",
           "amount": 1.85,
           "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 8.16,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 8.18,
-          "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
           "name": "AMAZON MARKETPLACE NAMZN.COM/BILL",
@@ -363,6 +378,11 @@
   },
   "unmatched_transactions": [
     {
+      "name": "CHRISTIANS PIZZA",
+      "amount": 11.51,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "CTLP*CANTEEN VENDING",
       "amount": 1.35,
       "account": "SoFi Checking"
@@ -393,8 +413,18 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "K H M CONVENIENCE STORE",
+      "amount": 5.84,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "NATES BAGELS - CARY STREET",
       "amount": 11.99,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "ONE WAY USA",
+      "amount": 7.14,
       "account": "Delta SkyMiles\u00ae Gold Card"
     },
     {
@@ -406,16 +436,6 @@
       "name": "AplPay CTLP*CANTEEN",
       "amount": 1.85,
       "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "URBAN FARMHOUSE MARKET AND CAF",
-      "amount": 8.16,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "URBAN FARMHOUSE MARKET AND CAF",
-      "amount": 8.18,
-      "account": "Delta SkyMiles\u00ae Gold Card"
     },
     {
       "name": "AMAZON MARKETPLACE NAMZN.COM/BILL",
@@ -547,6 +567,11 @@
       "limit": null,
       "transactions": [
         {
+          "name": "CHRISTIANS PIZZA",
+          "amount": 11.51,
+          "category": "misc_other"
+        },
+        {
           "name": "CTLP*CANTEEN VENDING",
           "amount": 1.35,
           "category": "misc_other"
@@ -608,11 +633,26 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 2032.0,
+      "balance": 2044.15,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 8.16,
+          "category": "dining_out"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 3.99,
+          "category": "slop"
+        },
+        {
+          "name": "K H M CONVENIENCE STORE",
+          "amount": 5.84,
+          "category": "misc_other"
+        },
         {
           "name": "APPLE.COM/BILL INTERNET CHARGE",
           "amount": 11.98,
@@ -626,16 +666,6 @@
         {
           "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 3.78,
-          "category": "slop"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 8.16,
-          "category": "misc_other"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 3.99,
           "category": "slop"
         },
         {
@@ -752,7 +782,7 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 3540.5,
+      "balance": 3557.65,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
@@ -763,13 +793,18 @@
           "category": "slop"
         },
         {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 8.18,
+          "category": "dining_out"
+        },
+        {
           "name": "NATES BAGELS - CARY STREET",
           "amount": 11.99,
           "category": "misc_other"
         },
         {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 8.18,
+          "name": "ONE WAY USA",
+          "amount": 7.14,
           "category": "misc_other"
         },
         {
@@ -920,7 +955,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 3540.5
+      "current_balance": 3557.65
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -928,7 +963,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 2032.0
+      "current_balance": 2044.15
     }
   },
   "plans": [
