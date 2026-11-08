@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-11-07",
+  "last_updated": "2026-11-08",
   "period_start": "2026-10-28",
-  "period_end": "2026-11-07",
+  "period_end": "2026-11-08",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
     },
     "variable_needs": {
-      "groceries": 78.66,
+      "groceries": 146.55,
       "gas": 3.63,
       "parking": 0.0,
       "subscriptions": 20.0
     },
     "variable_wants": {
       "partying": 76.71000000000001,
-      "dining_out": 144.42000000000002,
-      "slop": 43.309999999999995,
+      "dining_out": 198.54999999999998,
+      "slop": 50.190000000000005,
       "gym": 0.0,
-      "misc_other": 970.3399999999997
+      "misc_other": 1008.8599999999997
     }
   },
   "categories_detail": {
@@ -37,6 +37,16 @@
     },
     "variable_needs": {
       "groceries": [
+        {
+          "name": "Aldi",
+          "amount": 37.95,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "Kroger",
+          "amount": 29.94,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
         {
           "name": "AplPay ALDI INC 0004RICHMOND",
           "amount": 25.12,
@@ -88,6 +98,21 @@
         }
       ],
       "dining_out": [
+        {
+          "name": "TST* JUANS MEXICAN CAF",
+          "amount": 12.68,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "TST* NEW YORK DELI - R",
+          "amount": 8.81,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "DOORDASH",
+          "amount": 32.64,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
         {
           "name": "AplPay TST* URBAN FARICHMOND",
           "amount": 8.16,
@@ -149,6 +174,11 @@
           "name": "VILLAGE MARKET",
           "amount": 4.11,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 6.88,
+          "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
           "name": "7-Eleven",
@@ -227,6 +257,21 @@
           "name": "Panera Bread",
           "amount": 14.14,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "AMAZON DIGITAL DOWNLOADS",
+          "amount": 13.99,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AMAZON MARKEPLACE NA",
+          "amount": 9.53,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "AMEX SEND ACCOUNT",
+          "amount": 15.0,
+          "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
           "name": "K H M CONVENIENCE STORE",
@@ -413,6 +458,21 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "AMAZON DIGITAL DOWNLOADS",
+      "amount": 13.99,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AMAZON MARKEPLACE NA",
+      "amount": 9.53,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "AMEX SEND ACCOUNT",
+      "amount": 15.0,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
       "name": "K H M CONVENIENCE STORE",
       "amount": 5.84,
       "account": "Blue Cash Preferred\u00ae"
@@ -561,11 +621,21 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 387.17,
+      "balance": 377.17,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "TST* JUANS MEXICAN CAF",
+          "amount": 12.68,
+          "category": "dining_out"
+        },
+        {
+          "name": "TST* NEW YORK DELI - R",
+          "amount": 8.81,
+          "category": "dining_out"
+        },
         {
           "name": "CHRISTIANS PIZZA",
           "amount": 11.51,
@@ -638,6 +708,11 @@
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "AMAZON DIGITAL DOWNLOADS",
+          "amount": 13.99,
+          "category": "misc_other"
+        },
         {
           "name": "AplPay TST* URBAN FARICHMOND",
           "amount": 8.16,
@@ -787,6 +862,36 @@
       "subtype": "credit card",
       "limit": 10800.0,
       "transactions": [
+        {
+          "name": "AMAZON MARKEPLACE NA",
+          "amount": 9.53,
+          "category": "misc_other"
+        },
+        {
+          "name": "AMEX SEND ACCOUNT",
+          "amount": 15.0,
+          "category": "misc_other"
+        },
+        {
+          "name": "Aldi",
+          "amount": 37.95,
+          "category": "groceries"
+        },
+        {
+          "name": "DOORDASH",
+          "amount": 32.64,
+          "category": "dining_out"
+        },
+        {
+          "name": "Kroger",
+          "amount": 29.94,
+          "category": "groceries"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 6.88,
+          "category": "slop"
+        },
         {
           "name": "7-Eleven",
           "amount": 8.97,
@@ -943,7 +1048,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 387.17,
+    "actual_checking_balance": 377.17,
     "actual_savings_balance": 601.82
   },
   "debt": {
