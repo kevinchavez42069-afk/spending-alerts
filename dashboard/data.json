@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-09",
+  "last_updated": "2026-11-10",
   "period_start": "2026-10-28",
-  "period_end": "2026-11-09",
+  "period_end": "2026-11-10",
   "categories": {
     "fixed_costs": {
       "rent": 827.49
@@ -17,7 +17,7 @@
       "dining_out": 177.9,
       "slop": 55.57,
       "gym": 0.0,
-      "misc_other": 1048.4599999999998
+      "misc_other": 1342.38
     }
   },
   "categories_detail": {
@@ -229,6 +229,11 @@
       "gym": [],
       "misc_other": [
         {
+          "name": "DEPT EDUCATION",
+          "amount": 287.26,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "CHRISTIANS PIZZA",
           "amount": 11.51,
           "account": "SoFi Checking"
@@ -264,6 +269,16 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 6.66,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Whole Foods",
+          "amount": 18.95,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
           "name": "AMAZON DIGITAL SVCS AMZN.COM/BILL",
           "amount": 13.99,
           "account": "Blue Cash Preferred\u00ae"
@@ -281,11 +296,6 @@
         {
           "name": "AplPay DD *DOORDASAN FRANCISCO",
           "amount": 32.64,
-          "account": "Delta SkyMiles\u00ae Gold Card"
-        },
-        {
-          "name": "Whole Foods",
-          "amount": 18.95,
           "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
@@ -433,6 +443,11 @@
   },
   "unmatched_transactions": [
     {
+      "name": "DEPT EDUCATION",
+      "amount": 287.26,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "CHRISTIANS PIZZA",
       "amount": 11.51,
       "account": "SoFi Checking"
@@ -468,6 +483,16 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "URBAN FARMHOUSE MARKET AND CAF",
+      "amount": 6.66,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Whole Foods",
+      "amount": 18.95,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
       "name": "AMAZON DIGITAL SVCS AMZN.COM/BILL",
       "amount": 13.99,
       "account": "Blue Cash Preferred\u00ae"
@@ -485,11 +510,6 @@
     {
       "name": "AplPay DD *DOORDASAN FRANCISCO",
       "amount": 32.64,
-      "account": "Delta SkyMiles\u00ae Gold Card"
-    },
-    {
-      "name": "Whole Foods",
-      "amount": 18.95,
       "account": "Delta SkyMiles\u00ae Gold Card"
     },
     {
@@ -636,11 +656,16 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 328.02,
+      "balance": 40.76,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "DEPT EDUCATION",
+          "amount": 287.26,
+          "category": "misc_other"
+        },
         {
           "name": "CHRISTIANS PIZZA",
           "amount": 11.51,
@@ -728,6 +753,11 @@
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 6.66,
+          "category": "misc_other"
+        },
         {
           "name": "AMAZON DIGITAL SVCS AMZN.COM/BILL",
           "amount": 13.99,
@@ -877,11 +907,16 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 3708.72,
+      "balance": 3727.67,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
       "transactions": [
+        {
+          "name": "Whole Foods",
+          "amount": 18.95,
+          "category": "misc_other"
+        },
         {
           "name": "AMAZON MARKETPLACE NAMZN.COM/BILL",
           "amount": 9.53,
@@ -911,11 +946,6 @@
           "name": "Kroger",
           "amount": 29.94,
           "category": "groceries"
-        },
-        {
-          "name": "Whole Foods",
-          "amount": 18.95,
-          "category": "misc_other"
         },
         {
           "name": "AplPay ONE WAY USA",
@@ -1073,7 +1103,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 328.02,
+    "actual_checking_balance": 40.76,
     "actual_savings_balance": 601.82
   },
   "debt": {
@@ -1085,7 +1115,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 3708.72
+      "current_balance": 3727.67
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
