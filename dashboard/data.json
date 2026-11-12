@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-11",
+  "last_updated": "2026-11-12",
   "period_start": "2026-11-11",
-  "period_end": "2026-11-11",
+  "period_end": "2026-11-12",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -10,14 +10,14 @@
       "groceries": 0.0,
       "gas": 0.0,
       "parking": 0.0,
-      "subscriptions": 0.0
+      "subscriptions": 20.0
     },
     "variable_wants": {
       "partying": 0.0,
-      "dining_out": 0.0,
-      "slop": 5.38,
+      "dining_out": 13.0,
+      "slop": 12.26,
       "gym": 0.0,
-      "misc_other": 0.0
+      "misc_other": 262.04
     }
   },
   "categories_detail": {
@@ -28,31 +28,120 @@
       "groceries": [],
       "gas": [],
       "parking": [],
-      "subscriptions": []
+      "subscriptions": [
+        {
+          "name": "ANTHROPIC* CLAUDE SUB",
+          "amount": 20.0,
+          "account": "SoFi Checking"
+        }
+      ]
     },
     "variable_wants": {
       "partying": [],
-      "dining_out": [],
+      "dining_out": [
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 13.0,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        }
+      ],
       "slop": [
         {
           "name": "ESSENTIAL EXPRESS",
           "amount": 5.38,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 6.88,
+          "account": "Blue Cash Preferred\u00ae"
         }
       ],
       "gym": [],
-      "misc_other": []
+      "misc_other": [
+        {
+          "name": "Cook Out",
+          "amount": 4.46,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 2.27,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 7.37,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "LUCKY ROAD RUN SHOP",
+          "amount": 26.57,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "MOG LABS",
+          "amount": 200.74,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 20.63,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ]
     }
   },
-  "unmatched_transactions": [],
+  "unmatched_transactions": [
+    {
+      "name": "Cook Out",
+      "amount": 4.46,
+      "account": "SoFi Checking"
+    },
+    {
+      "name": "URBAN FARMHOUSE MARKET AND CAF",
+      "amount": 2.27,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "URBAN FARMHOUSE MARKET AND CAF",
+      "amount": 7.37,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "LUCKY ROAD RUN SHOP",
+      "amount": 26.57,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "MOG LABS",
+      "amount": 200.74,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "NATES BAGELS - CARY STREET",
+      "amount": 20.63,
+      "account": "Blue Cash Preferred\u00ae"
+    }
+  ],
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 255.38,
+      "balance": 1930.52,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "ANTHROPIC* CLAUDE SUB",
+          "amount": 20.0,
+          "category": "subscriptions"
+        },
+        {
+          "name": "Cook Out",
+          "amount": 4.46,
+          "category": "misc_other"
+        },
         {
           "name": "ESSENTIAL EXPRESS",
           "amount": 5.38,
@@ -62,7 +151,7 @@
     },
     {
       "name": "SoFi Savings",
-      "balance": 601.82,
+      "balance": 1151.82,
       "type": "depository",
       "subtype": "savings",
       "limit": null,
@@ -74,7 +163,33 @@
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
-      "transactions": []
+      "transactions": [
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 2.27,
+          "category": "misc_other"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 7.37,
+          "category": "misc_other"
+        },
+        {
+          "name": "LUCKY ROAD RUN SHOP",
+          "amount": 26.57,
+          "category": "misc_other"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 20.63,
+          "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 6.88,
+          "category": "slop"
+        }
+      ]
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
@@ -82,7 +197,18 @@
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
-      "transactions": []
+      "transactions": [
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 13.0,
+          "category": "dining_out"
+        },
+        {
+          "name": "MOG LABS",
+          "amount": 200.74,
+          "category": "misc_other"
+        }
+      ]
     }
   ],
   "caps": {
@@ -103,8 +229,8 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 255.38,
-    "actual_savings_balance": 601.82
+    "actual_checking_balance": 1930.52,
+    "actual_savings_balance": 1151.82
   },
   "debt": {
     "delta_amex": {
