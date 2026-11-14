@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-13",
+  "last_updated": "2026-11-14",
   "period_start": "2026-11-11",
-  "period_end": "2026-11-13",
+  "period_end": "2026-11-14",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -13,11 +13,11 @@
       "subscriptions": 21.24
     },
     "variable_wants": {
-      "partying": 125.51,
-      "dining_out": 56.010000000000005,
+      "partying": 126.42,
+      "dining_out": 101.39,
       "slop": 12.26,
       "gym": 0.0,
-      "misc_other": 1031.79
+      "misc_other": 1189.0400000000002
     }
   },
   "categories_detail": {
@@ -44,13 +44,8 @@
     "variable_wants": {
       "partying": [
         {
-          "name": "SHOTGUN HOUSE OF YES",
+          "name": "SHOTGUN* RIMARKABLE",
           "amount": 77.2,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "SHOTGUN* BRIDGET",
-          "amount": 11.35,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -60,14 +55,24 @@
         },
         {
           "name": "Uber",
-          "amount": 19.98,
+          "amount": 20.89,
           "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "SHOTGUN* BRIDGET",
+          "amount": 11.35,
+          "account": "Blue Cash Preferred\u00ae"
         }
       ],
       "dining_out": [
         {
           "name": "TST* HELEN'S RVA",
           "amount": 11.38,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "TST*PENNY LANE PUB & R",
+          "amount": 23.82,
           "account": "SoFi Checking"
         },
         {
@@ -79,6 +84,21 @@
           "name": "TST* HELEN'S RVA",
           "amount": 11.38,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 2.27,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 7.37,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "GrubHub",
+          "amount": 11.92,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay TST* NATES BARICHMOND",
@@ -106,6 +126,11 @@
       "gym": [],
       "misc_other": [
         {
+          "name": "Cook Out",
+          "amount": 4.46,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "RH BROKERAGE DEPOSIT",
           "amount": 700.0,
           "account": "SoFi Checking"
@@ -116,9 +141,19 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "Cook Out",
-          "amount": 4.46,
-          "account": "SoFi Checking"
+          "name": "COBRA CABANA",
+          "amount": 70.96,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Interest Charge on Purchases",
+          "amount": 84.96,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 10.97,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay FSP*LUCKY ROARICHMOND",
@@ -139,21 +174,16 @@
           "name": "MOG LABS 05661700938PORTLAND OR",
           "amount": 200.74,
           "account": "Delta SkyMiles\u00ae Gold Card"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 2.27,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 7.37,
-          "account": "Blue Cash Preferred\u00ae"
         }
       ]
     }
   },
   "unmatched_transactions": [
+    {
+      "name": "Cook Out",
+      "amount": 4.46,
+      "account": "SoFi Checking"
+    },
     {
       "name": "RH BROKERAGE DEPOSIT",
       "amount": 700.0,
@@ -165,9 +195,19 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "Cook Out",
-      "amount": 4.46,
-      "account": "SoFi Checking"
+      "name": "COBRA CABANA",
+      "amount": 70.96,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Interest Charge on Purchases",
+      "amount": 84.96,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "NATES BAGELS - CARY STREET",
+      "amount": 10.97,
+      "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "AplPay FSP*LUCKY ROARICHMOND",
@@ -188,26 +228,21 @@
       "name": "MOG LABS 05661700938PORTLAND OR",
       "amount": 200.74,
       "account": "Delta SkyMiles\u00ae Gold Card"
-    },
-    {
-      "name": "URBAN FARMHOUSE MARKET AND CAF",
-      "amount": 2.27,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "URBAN FARMHOUSE MARKET AND CAF",
-      "amount": 7.37,
-      "account": "Blue Cash Preferred\u00ae"
     }
   ],
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 1210.52,
+      "balance": 1126.06,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "Cook Out",
+          "amount": 4.46,
+          "category": "misc_other"
+        },
         {
           "name": "ANTHROPIC* CLAUDE SUB",
           "amount": 20.0,
@@ -221,6 +256,11 @@
         {
           "name": "TST* HELEN'S RVA",
           "amount": 11.38,
+          "category": "dining_out"
+        },
+        {
+          "name": "TST*PENNY LANE PUB & R",
+          "amount": 23.82,
           "category": "dining_out"
         },
         {
@@ -239,11 +279,6 @@
           "category": "dining_out"
         },
         {
-          "name": "Cook Out",
-          "amount": 4.46,
-          "category": "misc_other"
-        },
-        {
           "name": "ESSENTIAL EXPRESS",
           "amount": 5.38,
           "category": "slop"
@@ -260,11 +295,46 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1230.0,
+      "balance": 1318.08,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 2.27,
+          "category": "dining_out"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 7.37,
+          "category": "dining_out"
+        },
+        {
+          "name": "COBRA CABANA",
+          "amount": 70.96,
+          "category": "misc_other"
+        },
+        {
+          "name": "GrubHub",
+          "amount": 11.92,
+          "category": "dining_out"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 10.97,
+          "category": "misc_other"
+        },
+        {
+          "name": "SHOTGUN* RIMARKABLE",
+          "amount": 77.2,
+          "category": "partying"
+        },
+        {
+          "name": "TUBLY DOWNLOADER",
+          "amount": 1.24,
+          "category": "subscriptions"
+        },
         {
           "name": "AplPay FSP*LUCKY ROARICHMOND",
           "amount": 26.57,
@@ -291,47 +361,22 @@
           "category": "misc_other"
         },
         {
-          "name": "SHOTGUN HOUSE OF YES",
-          "amount": 77.2,
-          "category": "partying"
-        },
-        {
           "name": "SHOTGUN* BRIDGET",
           "amount": 11.35,
           "category": "partying"
-        },
-        {
-          "name": "TUBLY DOWNLOADER",
-          "amount": 1.24,
-          "category": "subscriptions"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 2.27,
-          "category": "misc_other"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 7.37,
-          "category": "misc_other"
         }
       ]
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 3441.41,
+      "balance": 3564.24,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
       "transactions": [
         {
-          "name": "Chipotle Mexican Grill",
-          "amount": 13.0,
-          "category": "dining_out"
-        },
-        {
-          "name": "MOG LABS 05661700938PORTLAND OR",
-          "amount": 200.74,
+          "name": "Interest Charge on Purchases",
+          "amount": 84.96,
           "category": "misc_other"
         },
         {
@@ -341,8 +386,18 @@
         },
         {
           "name": "Uber",
-          "amount": 19.98,
+          "amount": 20.89,
           "category": "partying"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 13.0,
+          "category": "dining_out"
+        },
+        {
+          "name": "MOG LABS 05661700938PORTLAND OR",
+          "amount": 200.74,
+          "category": "misc_other"
         }
       ]
     }
@@ -365,7 +420,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 1210.52,
+    "actual_checking_balance": 1126.06,
     "actual_savings_balance": 451.82
   },
   "debt": {
@@ -377,7 +432,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 3441.41
+      "current_balance": 3564.24
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -385,7 +440,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1230.0
+      "current_balance": 1318.08
     }
   },
   "plans": [
