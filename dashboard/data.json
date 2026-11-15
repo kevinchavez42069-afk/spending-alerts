@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-14",
+  "last_updated": "2026-11-15",
   "period_start": "2026-11-11",
-  "period_end": "2026-11-14",
+  "period_end": "2026-11-15",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -10,14 +10,14 @@
       "groceries": 0.0,
       "gas": 0.0,
       "parking": 0.0,
-      "subscriptions": 21.24
+      "subscriptions": 24.23
     },
     "variable_wants": {
       "partying": 126.42,
-      "dining_out": 101.39,
+      "dining_out": 198.74,
       "slop": 12.26,
       "gym": 0.0,
-      "misc_other": 1189.0400000000002
+      "misc_other": 1194.0400000000002
     }
   },
   "categories_detail": {
@@ -33,6 +33,11 @@
           "name": "ANTHROPIC* CLAUDE SUB",
           "amount": 20.0,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "APPLECOMBILL",
+          "amount": 2.99,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "TUBLY DOWNLOADER",
@@ -67,22 +72,27 @@
       "dining_out": [
         {
           "name": "TST* HELEN'S RVA",
-          "amount": 11.38,
+          "amount": 8.69,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "TST* HELEN'S RVA",
+          "amount": 14.38,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "TST* HELEN'S RVA",
+          "amount": 16.38,
           "account": "SoFi Checking"
         },
         {
           "name": "TST*PENNY LANE PUB & R",
-          "amount": 23.82,
+          "amount": 43.82,
           "account": "SoFi Checking"
         },
         {
-          "name": "TST* HELEN'S RVA",
-          "amount": 5.69,
-          "account": "SoFi Checking"
-        },
-        {
-          "name": "TST* HELEN'S RVA",
-          "amount": 11.38,
+          "name": "TST*PENNY LANE PUB & R",
+          "amount": 66.35,
           "account": "SoFi Checking"
         },
         {
@@ -126,8 +136,8 @@
       "gym": [],
       "misc_other": [
         {
-          "name": "Cook Out",
-          "amount": 4.46,
+          "name": "3 MONKEYS BAR&GRILL",
+          "amount": 44.69,
           "account": "SoFi Checking"
         },
         {
@@ -136,8 +146,8 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "3 MONKEYS BAR&GRILL",
-          "amount": 39.69,
+          "name": "Cook Out",
+          "amount": 4.46,
           "account": "SoFi Checking"
         },
         {
@@ -180,8 +190,8 @@
   },
   "unmatched_transactions": [
     {
-      "name": "Cook Out",
-      "amount": 4.46,
+      "name": "3 MONKEYS BAR&GRILL",
+      "amount": 44.69,
       "account": "SoFi Checking"
     },
     {
@@ -190,8 +200,8 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "3 MONKEYS BAR&GRILL",
-      "amount": 39.69,
+      "name": "Cook Out",
+      "amount": 4.46,
       "account": "SoFi Checking"
     },
     {
@@ -233,20 +243,15 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 1126.06,
+      "balance": 298.1,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
         {
-          "name": "Cook Out",
-          "amount": 4.46,
+          "name": "3 MONKEYS BAR&GRILL",
+          "amount": 44.69,
           "category": "misc_other"
-        },
-        {
-          "name": "ANTHROPIC* CLAUDE SUB",
-          "amount": 20.0,
-          "category": "subscriptions"
         },
         {
           "name": "RH BROKERAGE DEPOSIT",
@@ -255,28 +260,38 @@
         },
         {
           "name": "TST* HELEN'S RVA",
-          "amount": 11.38,
+          "amount": 8.69,
+          "category": "dining_out"
+        },
+        {
+          "name": "TST* HELEN'S RVA",
+          "amount": 14.38,
+          "category": "dining_out"
+        },
+        {
+          "name": "TST* HELEN'S RVA",
+          "amount": 16.38,
           "category": "dining_out"
         },
         {
           "name": "TST*PENNY LANE PUB & R",
-          "amount": 23.82,
+          "amount": 43.82,
           "category": "dining_out"
         },
         {
-          "name": "3 MONKEYS BAR&GRILL",
-          "amount": 39.69,
+          "name": "Cook Out",
+          "amount": 4.46,
           "category": "misc_other"
         },
         {
-          "name": "TST* HELEN'S RVA",
-          "amount": 5.69,
+          "name": "TST*PENNY LANE PUB & R",
+          "amount": 66.35,
           "category": "dining_out"
         },
         {
-          "name": "TST* HELEN'S RVA",
-          "amount": 11.38,
-          "category": "dining_out"
+          "name": "ANTHROPIC* CLAUDE SUB",
+          "amount": 20.0,
+          "category": "subscriptions"
         },
         {
           "name": "ESSENTIAL EXPRESS",
@@ -295,11 +310,16 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1318.08,
+      "balance": 1462.62,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "APPLECOMBILL",
+          "amount": 2.99,
+          "category": "subscriptions"
+        },
         {
           "name": "AplPay TST* URBAN FARICHMOND",
           "amount": 2.27,
@@ -420,7 +440,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 1126.06,
+    "actual_checking_balance": 298.1,
     "actual_savings_balance": 451.82
   },
   "debt": {
@@ -440,7 +460,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1318.08
+      "current_balance": 1462.62
     }
   },
   "plans": [
