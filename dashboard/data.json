@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-11-16",
+  "last_updated": "2026-11-17",
   "period_start": "2026-11-11",
-  "period_end": "2026-11-16",
+  "period_end": "2026-11-17",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
-      "groceries": 0.0,
+      "groceries": 34.28,
       "gas": 0.0,
       "parking": 0.0,
-      "subscriptions": 31.209999999999997
+      "subscriptions": 21.24
     },
     "variable_wants": {
       "partying": 126.42,
-      "dining_out": 224.70999999999998,
-      "slop": 12.26,
+      "dining_out": 237.14,
+      "slop": 21.79,
       "gym": 0.0,
-      "misc_other": 1270.8400000000001
+      "misc_other": 1280.8100000000002
     }
   },
   "categories_detail": {
@@ -25,7 +25,13 @@
       "rent": []
     },
     "variable_needs": {
-      "groceries": [],
+      "groceries": [
+        {
+          "name": "Kroger",
+          "amount": 34.28,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "gas": [],
       "parking": [],
       "subscriptions": [
@@ -33,11 +39,6 @@
           "name": "ANTHROPIC* CLAUDE SUB",
           "amount": 20.0,
           "account": "SoFi Checking"
-        },
-        {
-          "name": "APPLECOMBILL",
-          "amount": 9.97,
-          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "TUBLY DOWNLOADER",
@@ -96,6 +97,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "Chipotle Mexican Grill",
+          "amount": 12.43,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "AplPay TST* NATES BARICHMOND",
           "amount": 10.97,
           "account": "Blue Cash Preferred\u00ae"
@@ -133,6 +139,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 9.53,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 6.88,
           "account": "Blue Cash Preferred\u00ae"
@@ -141,13 +152,13 @@
       "gym": [],
       "misc_other": [
         {
-          "name": "3 MONKEYS BAR&GRILL",
-          "amount": 44.69,
+          "name": "CBI*rekordbox",
+          "amount": 23.0,
           "account": "SoFi Checking"
         },
         {
-          "name": "CBI*rekordbox",
-          "amount": 23.0,
+          "name": "3 MONKEYS BAR&GRILL",
+          "amount": 44.69,
           "account": "SoFi Checking"
         },
         {
@@ -159,6 +170,16 @@
           "name": "Cook Out",
           "amount": 4.46,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 9.97,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay KHM CONVENIENRICHMOND",
+          "amount": 11.71,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "BP FDMS CAT",
@@ -178,11 +199,6 @@
         {
           "name": "APPLE.COM/BILL INTERNET CHARGE",
           "amount": 2.99,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "KHM CONVENIENCE STORE",
-          "amount": 11.71,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -220,13 +236,13 @@
   },
   "unmatched_transactions": [
     {
-      "name": "3 MONKEYS BAR&GRILL",
-      "amount": 44.69,
+      "name": "CBI*rekordbox",
+      "amount": 23.0,
       "account": "SoFi Checking"
     },
     {
-      "name": "CBI*rekordbox",
-      "amount": 23.0,
+      "name": "3 MONKEYS BAR&GRILL",
+      "amount": 44.69,
       "account": "SoFi Checking"
     },
     {
@@ -238,6 +254,16 @@
       "name": "Cook Out",
       "amount": 4.46,
       "account": "SoFi Checking"
+    },
+    {
+      "name": "APPLE.COM/BILL INTERNET CHARGE",
+      "amount": 9.97,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay KHM CONVENIENRICHMOND",
+      "amount": 11.71,
+      "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "BP FDMS CAT",
@@ -257,11 +283,6 @@
     {
       "name": "APPLE.COM/BILL INTERNET CHARGE",
       "amount": 2.99,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "KHM CONVENIENCE STORE",
-      "amount": 11.71,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -298,11 +319,16 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 216.75,
+      "balance": 193.75,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "CBI*rekordbox",
+          "amount": 23.0,
+          "category": "misc_other"
+        },
         {
           "name": "TST*PENNY LANE PUB & R",
           "amount": 81.35,
@@ -311,11 +337,6 @@
         {
           "name": "3 MONKEYS BAR&GRILL",
           "amount": 44.69,
-          "category": "misc_other"
-        },
-        {
-          "name": "CBI*rekordbox",
-          "amount": 23.0,
           "category": "misc_other"
         },
         {
@@ -370,15 +391,40 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1465.61,
+      "balance": 1487.29,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
+          "name": "ESSENTIAL EXPRESS",
+          "amount": 9.53,
+          "category": "slop"
+        },
+        {
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 9.97,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay KHM CONVENIENRICHMOND",
+          "amount": 11.71,
+          "category": "misc_other"
+        },
+        {
           "name": "BP FDMS CAT",
           "amount": 33.5,
           "category": "misc_other"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 12.43,
+          "category": "dining_out"
+        },
+        {
+          "name": "Kroger",
+          "amount": 34.28,
+          "category": "groceries"
         },
         {
           "name": "NATES BAGELS - CARY STREET",
@@ -393,16 +439,6 @@
         {
           "name": "APPLE.COM/BILL INTERNET CHARGE",
           "amount": 2.99,
-          "category": "misc_other"
-        },
-        {
-          "name": "APPLECOMBILL",
-          "amount": 9.97,
-          "category": "subscriptions"
-        },
-        {
-          "name": "KHM CONVENIENCE STORE",
-          "amount": 11.71,
           "category": "misc_other"
         },
         {
@@ -525,7 +561,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 216.75,
+    "actual_checking_balance": 193.75,
     "actual_savings_balance": 451.82
   },
   "debt": {
@@ -545,7 +581,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1465.61
+      "current_balance": 1487.29
     }
   },
   "plans": [
