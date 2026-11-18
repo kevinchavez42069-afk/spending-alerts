@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-11-17",
+  "last_updated": "2026-11-18",
   "period_start": "2026-11-11",
-  "period_end": "2026-11-17",
+  "period_end": "2026-11-18",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
       "groceries": 34.28,
-      "gas": 0.0,
+      "gas": 33.5,
       "parking": 0.0,
       "subscriptions": 21.24
     },
     "variable_wants": {
       "partying": 126.42,
-      "dining_out": 237.14,
-      "slop": 21.79,
+      "dining_out": 253.70999999999998,
+      "slop": 12.26,
       "gym": 0.0,
-      "misc_other": 1280.8100000000002
+      "misc_other": 1263.71
     }
   },
   "categories_detail": {
@@ -32,7 +32,13 @@
           "account": "Blue Cash Preferred\u00ae"
         }
       ],
-      "gas": [],
+      "gas": [
+        {
+          "name": "AplPay BP#9708157CAPRICHMOND",
+          "amount": 33.5,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "parking": [],
       "subscriptions": [
         {
@@ -97,6 +103,16 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 6.07,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 10.5,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "Chipotle Mexican Grill",
           "amount": 12.43,
           "account": "Blue Cash Preferred\u00ae"
@@ -139,11 +155,6 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 9.53,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
           "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 6.88,
           "account": "Blue Cash Preferred\u00ae"
@@ -172,6 +183,16 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 23.44,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay ESSENTIAL EXPRichmond",
+          "amount": 9.53,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "APPLE.COM/BILL INTERNET CHARGE",
           "amount": 9.97,
           "account": "Blue Cash Preferred\u00ae"
@@ -179,21 +200,6 @@
         {
           "name": "AplPay KHM CONVENIENRICHMOND",
           "amount": 11.71,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "BP FDMS CAT",
-          "amount": 33.5,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 6.07,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 10.5,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -256,6 +262,16 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "URBAN FARMHOUSE MARKET AND CAF",
+      "amount": 23.44,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay ESSENTIAL EXPRichmond",
+      "amount": 9.53,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "APPLE.COM/BILL INTERNET CHARGE",
       "amount": 9.97,
       "account": "Blue Cash Preferred\u00ae"
@@ -263,21 +279,6 @@
     {
       "name": "AplPay KHM CONVENIENRICHMOND",
       "amount": 11.71,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "BP FDMS CAT",
-      "amount": 33.5,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "NATES BAGELS - CARY STREET",
-      "amount": 6.07,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "NATES BAGELS - CARY STREET",
-      "amount": 10.5,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -391,30 +392,35 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1487.29,
+      "balance": 1593.6,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
-          "name": "ESSENTIAL EXPRESS",
-          "amount": 9.53,
-          "category": "slop"
-        },
-        {
-          "name": "APPLE.COM/BILL INTERNET CHARGE",
-          "amount": 9.97,
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 23.44,
           "category": "misc_other"
         },
         {
-          "name": "AplPay KHM CONVENIENRICHMOND",
-          "amount": 11.71,
-          "category": "misc_other"
-        },
-        {
-          "name": "BP FDMS CAT",
+          "name": "AplPay BP#9708157CAPRICHMOND",
           "amount": 33.5,
+          "category": "gas"
+        },
+        {
+          "name": "AplPay ESSENTIAL EXPRichmond",
+          "amount": 9.53,
           "category": "misc_other"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 6.07,
+          "category": "dining_out"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 10.5,
+          "category": "dining_out"
         },
         {
           "name": "Chipotle Mexican Grill",
@@ -427,13 +433,13 @@
           "category": "groceries"
         },
         {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 6.07,
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 9.97,
           "category": "misc_other"
         },
         {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 10.5,
+          "name": "AplPay KHM CONVENIENRICHMOND",
+          "amount": 11.71,
           "category": "misc_other"
         },
         {
@@ -581,7 +587,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1487.29
+      "current_balance": 1593.6
     }
   },
   "plans": [
