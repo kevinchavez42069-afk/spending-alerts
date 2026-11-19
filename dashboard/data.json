@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-11-18",
+  "last_updated": "2026-11-19",
   "period_start": "2026-11-11",
-  "period_end": "2026-11-18",
+  "period_end": "2026-11-19",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
-      "groceries": 34.28,
+      "groceries": 99.15,
       "gas": 33.5,
       "parking": 0.0,
-      "subscriptions": 21.24
+      "subscriptions": 36.230000000000004
     },
     "variable_wants": {
       "partying": 126.42,
-      "dining_out": 253.70999999999998,
+      "dining_out": 308.25,
       "slop": 12.26,
       "gym": 0.0,
-      "misc_other": 1263.71
+      "misc_other": 1252.99
     }
   },
   "categories_detail": {
@@ -26,6 +26,11 @@
     },
     "variable_needs": {
       "groceries": [
+        {
+          "name": "Target",
+          "amount": 64.87,
+          "account": "Blue Cash Preferred\u00ae"
+        },
         {
           "name": "Kroger",
           "amount": 34.28,
@@ -45,6 +50,11 @@
           "name": "ANTHROPIC* CLAUDE SUB",
           "amount": 20.0,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "Amazon Prime",
+          "amount": 14.99,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "TUBLY DOWNLOADER",
@@ -101,6 +111,16 @@
           "name": "TST*PENNY LANE PUB & R",
           "amount": 43.82,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 23.44,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "DOORDASH",
+          "amount": 31.1,
+          "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
           "name": "AplPay TST* NATES BARICHMOND",
@@ -184,7 +204,7 @@
         },
         {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 23.44,
+          "amount": 12.72,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -263,7 +283,7 @@
     },
     {
       "name": "URBAN FARMHOUSE MARKET AND CAF",
-      "amount": 23.44,
+      "amount": 12.72,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -320,7 +340,7 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 193.75,
+      "balance": 242.9,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
@@ -392,15 +412,30 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1593.6,
+      "balance": 1617.04,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 23.44,
+          "amount": 12.72,
           "category": "misc_other"
+        },
+        {
+          "name": "Amazon Prime",
+          "amount": 14.99,
+          "category": "subscriptions"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 23.44,
+          "category": "dining_out"
+        },
+        {
+          "name": "Target",
+          "amount": 64.87,
+          "category": "groceries"
         },
         {
           "name": "AplPay BP#9708157CAPRICHMOND",
@@ -522,6 +557,11 @@
       "limit": 10800.0,
       "transactions": [
         {
+          "name": "DOORDASH",
+          "amount": 31.1,
+          "category": "dining_out"
+        },
+        {
           "name": "Interest Charge on Purchases",
           "amount": 84.96,
           "category": "misc_other"
@@ -567,7 +607,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 193.75,
+    "actual_checking_balance": 242.9,
     "actual_savings_balance": 451.82
   },
   "debt": {
@@ -587,7 +627,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1593.6
+      "current_balance": 1617.04
     }
   },
   "plans": [
