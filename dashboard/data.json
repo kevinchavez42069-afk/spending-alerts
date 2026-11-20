@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-19",
+  "last_updated": "2026-11-20",
   "period_start": "2026-11-11",
-  "period_end": "2026-11-19",
+  "period_end": "2026-11-20",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -9,15 +9,15 @@
     "variable_needs": {
       "groceries": 99.15,
       "gas": 33.5,
-      "parking": 0.0,
+      "parking": 4.45,
       "subscriptions": 36.230000000000004
     },
     "variable_wants": {
       "partying": 126.42,
-      "dining_out": 308.25,
-      "slop": 12.26,
+      "dining_out": 299.84,
+      "slop": 15.579999999999998,
       "gym": 0.0,
-      "misc_other": 1252.99
+      "misc_other": 1298.96
     }
   },
   "categories_detail": {
@@ -44,7 +44,13 @@
           "account": "Blue Cash Preferred\u00ae"
         }
       ],
-      "parking": [],
+      "parking": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "account": "SoFi Checking"
+        }
+      ],
       "subscriptions": [
         {
           "name": "ANTHROPIC* CLAUDE SUB",
@@ -113,14 +119,14 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "DOORDASH",
+          "amount": 22.69,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
           "name": "AplPay TST* URBAN FARICHMOND",
           "amount": 23.44,
           "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "DOORDASH",
-          "amount": 31.1,
-          "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
           "name": "AplPay TST* NATES BARICHMOND",
@@ -175,6 +181,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "7-Eleven",
+          "amount": 3.32,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 6.88,
           "account": "Blue Cash Preferred\u00ae"
@@ -201,6 +212,21 @@
           "name": "Cook Out",
           "amount": 4.46,
           "account": "SoFi Checking"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 10.5,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "ROSTOVS COFFEE TEA",
+          "amount": 4.37,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay DD *DOORDASAN FRANCISCO",
+          "amount": 31.1,
+          "account": "Delta SkyMiles\u00ae Gold Card"
         },
         {
           "name": "URBAN FARMHOUSE MARKET AND CAF",
@@ -282,6 +308,21 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "NATES BAGELS - CARY STREET",
+      "amount": 10.5,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "ROSTOVS COFFEE TEA",
+      "amount": 4.37,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay DD *DOORDASAN FRANCISCO",
+      "amount": 31.1,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
       "name": "URBAN FARMHOUSE MARKET AND CAF",
       "amount": 12.72,
       "account": "Blue Cash Preferred\u00ae"
@@ -340,11 +381,16 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 242.9,
+      "balance": 142.91,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "category": "parking"
+        },
         {
           "name": "CBI*rekordbox",
           "amount": 23.0,
@@ -412,15 +458,25 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1617.04,
+      "balance": 1696.9,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 12.72,
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 10.5,
           "category": "misc_other"
+        },
+        {
+          "name": "ROSTOVS COFFEE TEA",
+          "amount": 4.37,
+          "category": "misc_other"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 3.32,
+          "category": "slop"
         },
         {
           "name": "Amazon Prime",
@@ -428,14 +484,19 @@
           "category": "subscriptions"
         },
         {
-          "name": "AplPay TST* URBAN FARICHMOND",
-          "amount": 23.44,
-          "category": "dining_out"
-        },
-        {
           "name": "Target",
           "amount": 64.87,
           "category": "groceries"
+        },
+        {
+          "name": "URBAN FARMHOUSE MARKET AND CAF",
+          "amount": 12.72,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 23.44,
+          "category": "dining_out"
         },
         {
           "name": "AplPay BP#9708157CAPRICHMOND",
@@ -551,14 +612,19 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 3564.24,
+      "balance": 3595.34,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
       "transactions": [
         {
-          "name": "DOORDASH",
+          "name": "AplPay DD *DOORDASAN FRANCISCO",
           "amount": 31.1,
+          "category": "misc_other"
+        },
+        {
+          "name": "DOORDASH",
+          "amount": 22.69,
           "category": "dining_out"
         },
         {
@@ -607,7 +673,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 242.9,
+    "actual_checking_balance": 142.91,
     "actual_savings_balance": 451.82
   },
   "debt": {
@@ -619,7 +685,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 3564.24
+      "current_balance": 3595.34
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -627,7 +693,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1617.04
+      "current_balance": 1696.9
     }
   },
   "plans": [
