@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-20",
+  "last_updated": "2026-11-21",
   "period_start": "2026-11-11",
-  "period_end": "2026-11-20",
+  "period_end": "2026-11-21",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -14,10 +14,10 @@
     },
     "variable_wants": {
       "partying": 126.42,
-      "dining_out": 299.84,
-      "slop": 15.579999999999998,
+      "dining_out": 316.13,
+      "slop": 19.69,
       "gym": 0.0,
-      "misc_other": 1298.96
+      "misc_other": 1368.8700000000003
     }
   },
   "categories_detail": {
@@ -119,6 +119,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "Chipotle Mexican Grill",
+          "amount": 16.29,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "DOORDASH",
           "amount": 22.69,
           "account": "Delta SkyMiles\u00ae Gold Card"
@@ -181,6 +186,11 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "7-Eleven",
           "amount": 3.32,
           "account": "Blue Cash Preferred\u00ae"
@@ -214,8 +224,28 @@
           "account": "SoFi Checking"
         },
         {
+          "name": "AMAZON DIGITAL DOWNLOADS",
+          "amount": 10.99,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "EXPERIMAC OF RICHMOND",
+          "amount": 21.19,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "KHM CONVENIENCE STORE",
+          "amount": 4.66,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
           "name": "NATES BAGELS - CARY STREET",
           "amount": 10.5,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "ONE WAY USA",
+          "amount": 33.07,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -308,8 +338,28 @@
       "account": "SoFi Checking"
     },
     {
+      "name": "AMAZON DIGITAL DOWNLOADS",
+      "amount": 10.99,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "EXPERIMAC OF RICHMOND",
+      "amount": 21.19,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "KHM CONVENIENCE STORE",
+      "amount": 4.66,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
       "name": "NATES BAGELS - CARY STREET",
       "amount": 10.5,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "ONE WAY USA",
+      "amount": 33.07,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -458,20 +508,50 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1696.9,
+      "balance": 1749.49,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "AMAZON DIGITAL DOWNLOADS",
+          "amount": 10.99,
+          "category": "misc_other"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 16.29,
+          "category": "dining_out"
+        },
+        {
+          "name": "EXPERIMAC OF RICHMOND",
+          "amount": 21.19,
+          "category": "misc_other"
+        },
+        {
+          "name": "KHM CONVENIENCE STORE",
+          "amount": 4.66,
+          "category": "misc_other"
+        },
         {
           "name": "NATES BAGELS - CARY STREET",
           "amount": 10.5,
           "category": "misc_other"
         },
         {
+          "name": "ONE WAY USA",
+          "amount": 33.07,
+          "category": "misc_other"
+        },
+        {
           "name": "ROSTOVS COFFEE TEA",
           "amount": 4.37,
           "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
+          "category": "slop"
         },
         {
           "name": "7-Eleven",
@@ -612,7 +692,7 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 3595.34,
+      "balance": 3618.03,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
@@ -685,7 +765,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 3595.34
+      "current_balance": 3618.03
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -693,7 +773,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1696.9
+      "current_balance": 1749.49
     }
   },
   "plans": [
