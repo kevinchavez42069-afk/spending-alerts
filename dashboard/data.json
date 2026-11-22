@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-11-21",
+  "last_updated": "2026-11-22",
   "period_start": "2026-11-11",
-  "period_end": "2026-11-21",
+  "period_end": "2026-11-22",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
-      "groceries": 99.15,
+      "groceries": 112.96000000000001,
       "gas": 33.5,
       "parking": 4.45,
       "subscriptions": 36.230000000000004
     },
     "variable_wants": {
       "partying": 126.42,
-      "dining_out": 316.13,
-      "slop": 19.69,
+      "dining_out": 320.22999999999996,
+      "slop": 19.689999999999998,
       "gym": 0.0,
-      "misc_other": 1368.8700000000003
+      "misc_other": 1388.7400000000002
     }
   },
   "categories_detail": {
@@ -26,6 +26,11 @@
     },
     "variable_needs": {
       "groceries": [
+        {
+          "name": "Target",
+          "amount": 13.81,
+          "account": "Blue Cash Preferred\u00ae"
+        },
         {
           "name": "Target",
           "amount": 64.87,
@@ -120,13 +125,18 @@
         },
         {
           "name": "Chipotle Mexican Grill",
-          "amount": 16.29,
+          "amount": 14.07,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "DOORDASH",
-          "amount": 22.69,
-          "account": "Delta SkyMiles\u00ae Gold Card"
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 12.72,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 16.29,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay TST* URBAN FARICHMOND",
@@ -186,13 +196,13 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "VILLAGE MARKET",
-          "amount": 4.11,
+          "name": "7-Eleven",
+          "amount": 3.32,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "7-Eleven",
-          "amount": 3.32,
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -224,13 +234,28 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "AMAZON DIGITAL DOWNLOADS",
+          "name": "KHM CONVENIENCE STORE",
+          "amount": 9.9,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AMAZON DIGITAL SVCS AMZN.COM/BILL",
           "amount": 10.99,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "EXPERIMAC OF RICHMOND",
+          "name": "AplPay DD *DOORDASAN FRANCISCO",
+          "amount": 22.69,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "AplPay EXPERIMAC OF",
           "amount": 21.19,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay ROSTOVS COFFERICHMOND",
+          "amount": 4.37,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -249,19 +274,9 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "ROSTOVS COFFEE TEA",
-          "amount": 4.37,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
           "name": "AplPay DD *DOORDASAN FRANCISCO",
           "amount": 31.1,
           "account": "Delta SkyMiles\u00ae Gold Card"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 12.72,
-          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "AplPay ESSENTIAL EXPRichmond",
@@ -338,13 +353,28 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "AMAZON DIGITAL DOWNLOADS",
+      "name": "KHM CONVENIENCE STORE",
+      "amount": 9.9,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AMAZON DIGITAL SVCS AMZN.COM/BILL",
       "amount": 10.99,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "EXPERIMAC OF RICHMOND",
+      "name": "AplPay DD *DOORDASAN FRANCISCO",
+      "amount": 22.69,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "AplPay EXPERIMAC OF",
       "amount": 21.19,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay ROSTOVS COFFERICHMOND",
+      "amount": 4.37,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -363,19 +393,9 @@
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "ROSTOVS COFFEE TEA",
-      "amount": 4.37,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
       "name": "AplPay DD *DOORDASAN FRANCISCO",
       "amount": 31.1,
       "account": "Delta SkyMiles\u00ae Gold Card"
-    },
-    {
-      "name": "URBAN FARMHOUSE MARKET AND CAF",
-      "amount": 12.72,
-      "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "AplPay ESSENTIAL EXPRichmond",
@@ -431,7 +451,7 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 142.91,
+      "balance": 138.46,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
@@ -508,25 +528,55 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1749.49,
+      "balance": 1831.93,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
-          "name": "AMAZON DIGITAL DOWNLOADS",
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "category": "dining_out"
+        },
+        {
+          "name": "KHM CONVENIENCE STORE",
+          "amount": 9.9,
+          "category": "misc_other"
+        },
+        {
+          "name": "Target",
+          "amount": 13.81,
+          "category": "groceries"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 3.32,
+          "category": "slop"
+        },
+        {
+          "name": "AMAZON DIGITAL SVCS AMZN.COM/BILL",
           "amount": 10.99,
           "category": "misc_other"
+        },
+        {
+          "name": "AplPay EXPERIMAC OF",
+          "amount": 21.19,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay ROSTOVS COFFERICHMOND",
+          "amount": 4.37,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 12.72,
+          "category": "dining_out"
         },
         {
           "name": "Chipotle Mexican Grill",
           "amount": 16.29,
           "category": "dining_out"
-        },
-        {
-          "name": "EXPERIMAC OF RICHMOND",
-          "amount": 21.19,
-          "category": "misc_other"
         },
         {
           "name": "KHM CONVENIENCE STORE",
@@ -544,18 +594,8 @@
           "category": "misc_other"
         },
         {
-          "name": "ROSTOVS COFFEE TEA",
-          "amount": 4.37,
-          "category": "misc_other"
-        },
-        {
           "name": "VILLAGE MARKET",
           "amount": 4.11,
-          "category": "slop"
-        },
-        {
-          "name": "7-Eleven",
-          "amount": 3.32,
           "category": "slop"
         },
         {
@@ -567,11 +607,6 @@
           "name": "Target",
           "amount": 64.87,
           "category": "groceries"
-        },
-        {
-          "name": "URBAN FARMHOUSE MARKET AND CAF",
-          "amount": 12.72,
-          "category": "misc_other"
         },
         {
           "name": "AplPay TST* URBAN FARICHMOND",
@@ -699,13 +734,13 @@
       "transactions": [
         {
           "name": "AplPay DD *DOORDASAN FRANCISCO",
-          "amount": 31.1,
+          "amount": 22.69,
           "category": "misc_other"
         },
         {
-          "name": "DOORDASH",
-          "amount": 22.69,
-          "category": "dining_out"
+          "name": "AplPay DD *DOORDASAN FRANCISCO",
+          "amount": 31.1,
+          "category": "misc_other"
         },
         {
           "name": "Interest Charge on Purchases",
@@ -753,7 +788,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 142.91,
+    "actual_checking_balance": 138.46,
     "actual_savings_balance": 451.82
   },
   "debt": {
@@ -773,7 +808,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1749.49
+      "current_balance": 1831.93
     }
   },
   "plans": [
