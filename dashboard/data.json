@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-22",
+  "last_updated": "2026-11-24",
   "period_start": "2026-11-11",
-  "period_end": "2026-11-22",
+  "period_end": "2026-11-24",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
@@ -9,15 +9,15 @@
     "variable_needs": {
       "groceries": 112.96000000000001,
       "gas": 33.5,
-      "parking": 4.45,
+      "parking": 8.9,
       "subscriptions": 36.230000000000004
     },
     "variable_wants": {
       "partying": 126.42,
-      "dining_out": 320.22999999999996,
-      "slop": 19.689999999999998,
+      "dining_out": 330.72999999999996,
+      "slop": 26.349999999999998,
       "gym": 0.0,
-      "misc_other": 1388.7400000000002
+      "misc_other": 1482.0000000000002
     }
   },
   "categories_detail": {
@@ -50,6 +50,11 @@
         }
       ],
       "parking": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "account": "SoFi Checking"
+        },
         {
           "name": "City of Richmond/Parkh",
           "amount": 4.45,
@@ -129,13 +134,18 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "AplPay TST* URBAN FARICHMOND",
-          "amount": 12.72,
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 10.5,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "Chipotle Mexican Grill",
           "amount": 16.29,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay TST* URBAN FARICHMOND",
+          "amount": 12.72,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -196,13 +206,18 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "7-Eleven",
-          "amount": 3.32,
+          "name": "VILLAGE MARKET",
+          "amount": 6.66,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "VILLAGE MARKET",
+          "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 4.11,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "7-Eleven",
+          "amount": 3.32,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -234,8 +249,38 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "KHM CONVENIENCE STORE",
+          "name": "BORIS KRUEGER",
+          "amount": 46.0,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 16.87,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay KHM CONVENIENRICHMOND",
           "amount": 9.9,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Audible",
+          "amount": 8.99,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "TAQUERIA Y ANTOJITOS EL CHIDO",
+          "amount": 31.9,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay KHM CONVENIENRICHMOND",
+          "amount": 4.66,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay ONE WAY USA",
+          "amount": 33.07,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -256,21 +301,6 @@
         {
           "name": "AplPay ROSTOVS COFFERICHMOND",
           "amount": 4.37,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "KHM CONVENIENCE STORE",
-          "amount": 4.66,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 10.5,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "ONE WAY USA",
-          "amount": 33.07,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -353,8 +383,38 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "KHM CONVENIENCE STORE",
+      "name": "BORIS KRUEGER",
+      "amount": 46.0,
+      "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "NATES BAGELS - CARY STREET",
+      "amount": 16.87,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay KHM CONVENIENRICHMOND",
       "amount": 9.9,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Audible",
+      "amount": 8.99,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "TAQUERIA Y ANTOJITOS EL CHIDO",
+      "amount": 31.9,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay KHM CONVENIENRICHMOND",
+      "amount": 4.66,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay ONE WAY USA",
+      "amount": 33.07,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -375,21 +435,6 @@
     {
       "name": "AplPay ROSTOVS COFFERICHMOND",
       "amount": 4.37,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "KHM CONVENIENCE STORE",
-      "amount": 4.66,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "NATES BAGELS - CARY STREET",
-      "amount": 10.5,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "ONE WAY USA",
-      "amount": 33.07,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -451,11 +496,16 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 138.46,
+      "balance": 338.46,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "category": "parking"
+        },
         {
           "name": "City of Richmond/Parkh",
           "amount": 4.45,
@@ -520,7 +570,7 @@
     },
     {
       "name": "SoFi Savings",
-      "balance": 451.82,
+      "balance": 251.82,
       "type": "depository",
       "subtype": "savings",
       "limit": null,
@@ -528,20 +578,65 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1831.93,
+      "balance": 1855.9,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 16.87,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay KHM CONVENIENRICHMOND",
+          "amount": 9.9,
+          "category": "misc_other"
+        },
+        {
+          "name": "Audible",
+          "amount": 8.99,
+          "category": "misc_other"
+        },
         {
           "name": "Chipotle Mexican Grill",
           "amount": 14.07,
           "category": "dining_out"
         },
         {
-          "name": "KHM CONVENIENCE STORE",
-          "amount": 9.9,
+          "name": "TAQUERIA Y ANTOJITOS EL CHIDO",
+          "amount": 31.9,
           "category": "misc_other"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 6.66,
+          "category": "slop"
+        },
+        {
+          "name": "AplPay KHM CONVENIENRICHMOND",
+          "amount": 4.66,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay ONE WAY USA",
+          "amount": 33.07,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay TST* NATES BARICHMOND",
+          "amount": 10.5,
+          "category": "dining_out"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 4.11,
+          "category": "slop"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 16.29,
+          "category": "dining_out"
         },
         {
           "name": "Target",
@@ -572,31 +667,6 @@
           "name": "AplPay TST* URBAN FARICHMOND",
           "amount": 12.72,
           "category": "dining_out"
-        },
-        {
-          "name": "Chipotle Mexican Grill",
-          "amount": 16.29,
-          "category": "dining_out"
-        },
-        {
-          "name": "KHM CONVENIENCE STORE",
-          "amount": 4.66,
-          "category": "misc_other"
-        },
-        {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 10.5,
-          "category": "misc_other"
-        },
-        {
-          "name": "ONE WAY USA",
-          "amount": 33.07,
-          "category": "misc_other"
-        },
-        {
-          "name": "VILLAGE MARKET",
-          "amount": 4.11,
-          "category": "slop"
         },
         {
           "name": "Amazon Prime",
@@ -733,6 +803,11 @@
       "limit": 10800.0,
       "transactions": [
         {
+          "name": "BORIS KRUEGER",
+          "amount": 46.0,
+          "category": "misc_other"
+        },
+        {
           "name": "AplPay DD *DOORDASAN FRANCISCO",
           "amount": 22.69,
           "category": "misc_other"
@@ -788,8 +863,8 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 138.46,
-    "actual_savings_balance": 451.82
+    "actual_checking_balance": 338.46,
+    "actual_savings_balance": 251.82
   },
   "debt": {
     "delta_amex": {
@@ -808,7 +883,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1831.93
+      "current_balance": 1855.9
     }
   },
   "plans": [
