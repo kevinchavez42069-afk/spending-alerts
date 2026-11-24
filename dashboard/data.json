@@ -7,17 +7,17 @@
       "rent": 0.0
     },
     "variable_needs": {
-      "groceries": 112.96000000000001,
+      "groceries": 129.91,
       "gas": 33.5,
-      "parking": 8.9,
+      "parking": 26.7,
       "subscriptions": 36.230000000000004
     },
     "variable_wants": {
       "partying": 126.42,
-      "dining_out": 330.72999999999996,
-      "slop": 26.349999999999998,
+      "dining_out": 371.76,
+      "slop": 30.459999999999997,
       "gym": 0.0,
-      "misc_other": 1482.0000000000002
+      "misc_other": 1656.1999999999998
     }
   },
   "categories_detail": {
@@ -26,6 +26,11 @@
     },
     "variable_needs": {
       "groceries": [
+        {
+          "name": "Kroger",
+          "amount": 16.95,
+          "account": "Blue Cash Preferred\u00ae"
+        },
         {
           "name": "Target",
           "amount": 13.81,
@@ -50,6 +55,26 @@
         }
       ],
       "parking": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "account": "SoFi Checking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "account": "SoFi Checking"
+        },
         {
           "name": "City of Richmond/Parkh",
           "amount": 4.45,
@@ -130,6 +155,16 @@
         },
         {
           "name": "Chipotle Mexican Grill",
+          "amount": 12.43,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "DOORDASH",
+          "amount": 28.6,
+          "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
           "amount": 14.07,
           "account": "Blue Cash Preferred\u00ae"
         },
@@ -206,8 +241,13 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "VILLAGE MARKET",
+          "name": "AplPay VILLAGE MARKERICHMOND",
           "amount": 6.66,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "VILLAGE MARKET",
+          "amount": 4.11,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -229,6 +269,11 @@
       "gym": [],
       "misc_other": [
         {
+          "name": "REMITONLINECOM RICHMON",
+          "amount": 93.95,
+          "account": "SoFi Checking"
+        },
+        {
           "name": "CBI*rekordbox",
           "amount": 23.0,
           "account": "SoFi Checking"
@@ -249,9 +294,34 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "BORIS KRUEGER",
+          "name": "Chick-fil-A",
+          "amount": 17.25,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "MARATHON PETROLEUM",
+          "amount": 53.17,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay SP BORIS KRUELOS ANGELES",
           "amount": 46.0,
           "account": "Delta SkyMiles\u00ae Gold Card"
+        },
+        {
+          "name": "AplPay TAQUERIA Y ANRICHMOND",
+          "amount": 36.68,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "Audible",
+          "amount": 8.99,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "CVS",
+          "amount": 5.05,
+          "account": "Blue Cash Preferred\u00ae"
         },
         {
           "name": "NATES BAGELS - CARY STREET",
@@ -261,16 +331,6 @@
         {
           "name": "AplPay KHM CONVENIENRICHMOND",
           "amount": 9.9,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "Audible",
-          "amount": 8.99,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "TAQUERIA Y ANTOJITOS EL CHIDO",
-          "amount": 31.9,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -363,6 +423,11 @@
   },
   "unmatched_transactions": [
     {
+      "name": "REMITONLINECOM RICHMON",
+      "amount": 93.95,
+      "account": "SoFi Checking"
+    },
+    {
       "name": "CBI*rekordbox",
       "amount": 23.0,
       "account": "SoFi Checking"
@@ -383,9 +448,34 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "BORIS KRUEGER",
+      "name": "Chick-fil-A",
+      "amount": 17.25,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "MARATHON PETROLEUM",
+      "amount": 53.17,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay SP BORIS KRUELOS ANGELES",
       "amount": 46.0,
       "account": "Delta SkyMiles\u00ae Gold Card"
+    },
+    {
+      "name": "AplPay TAQUERIA Y ANRICHMOND",
+      "amount": 36.68,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "Audible",
+      "amount": 8.99,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "CVS",
+      "amount": 5.05,
+      "account": "Blue Cash Preferred\u00ae"
     },
     {
       "name": "NATES BAGELS - CARY STREET",
@@ -395,16 +485,6 @@
     {
       "name": "AplPay KHM CONVENIENRICHMOND",
       "amount": 9.9,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "Audible",
-      "amount": 8.99,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "TAQUERIA Y ANTOJITOS EL CHIDO",
-      "amount": 31.9,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -496,11 +576,36 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 338.46,
+      "balance": 238.46,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "category": "parking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "category": "parking"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "category": "parking"
+        },
+        {
+          "name": "REMITONLINECOM RICHMON",
+          "amount": 93.95,
+          "category": "misc_other"
+        },
+        {
+          "name": "City of Richmond/Parkh",
+          "amount": 4.45,
+          "category": "parking"
+        },
         {
           "name": "City of Richmond/Parkh",
           "amount": 4.45,
@@ -570,7 +675,7 @@
     },
     {
       "name": "SoFi Savings",
-      "balance": 251.82,
+      "balance": 151.82,
       "type": "depository",
       "subtype": "savings",
       "limit": null,
@@ -578,20 +683,30 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 1855.9,
+      "balance": 1908.23,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
-          "name": "NATES BAGELS - CARY STREET",
-          "amount": 16.87,
+          "name": "Chick-fil-A",
+          "amount": 17.25,
           "category": "misc_other"
         },
         {
-          "name": "AplPay KHM CONVENIENRICHMOND",
-          "amount": 9.9,
+          "name": "MARATHON PETROLEUM",
+          "amount": 53.17,
           "category": "misc_other"
+        },
+        {
+          "name": "AplPay TAQUERIA Y ANRICHMOND",
+          "amount": 36.68,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay VILLAGE MARKERICHMOND",
+          "amount": 6.66,
+          "category": "slop"
         },
         {
           "name": "Audible",
@@ -599,19 +714,39 @@
           "category": "misc_other"
         },
         {
+          "name": "CVS",
+          "amount": 5.05,
+          "category": "misc_other"
+        },
+        {
           "name": "Chipotle Mexican Grill",
-          "amount": 14.07,
+          "amount": 12.43,
           "category": "dining_out"
         },
         {
-          "name": "TAQUERIA Y ANTOJITOS EL CHIDO",
-          "amount": 31.9,
+          "name": "Kroger",
+          "amount": 16.95,
+          "category": "groceries"
+        },
+        {
+          "name": "NATES BAGELS - CARY STREET",
+          "amount": 16.87,
           "category": "misc_other"
         },
         {
           "name": "VILLAGE MARKET",
-          "amount": 6.66,
+          "amount": 4.11,
           "category": "slop"
+        },
+        {
+          "name": "AplPay KHM CONVENIENRICHMOND",
+          "amount": 9.9,
+          "category": "misc_other"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "amount": 14.07,
+          "category": "dining_out"
         },
         {
           "name": "AplPay KHM CONVENIENRICHMOND",
@@ -797,15 +932,20 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 3618.03,
+      "balance": 3464.03,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
       "transactions": [
         {
-          "name": "BORIS KRUEGER",
+          "name": "AplPay SP BORIS KRUELOS ANGELES",
           "amount": 46.0,
           "category": "misc_other"
+        },
+        {
+          "name": "DOORDASH",
+          "amount": 28.6,
+          "category": "dining_out"
         },
         {
           "name": "AplPay DD *DOORDASAN FRANCISCO",
@@ -863,8 +1003,8 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 338.46,
-    "actual_savings_balance": 251.82
+    "actual_checking_balance": 238.46,
+    "actual_savings_balance": 151.82
   },
   "debt": {
     "delta_amex": {
@@ -875,7 +1015,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 3618.03
+      "current_balance": 3464.03
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -883,7 +1023,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 1855.9
+      "current_balance": 1908.23
     }
   },
   "plans": [
