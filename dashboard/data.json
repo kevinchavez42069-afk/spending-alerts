@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-11-26",
+  "last_updated": "2026-11-27",
   "period_start": "2026-11-25",
-  "period_end": "2026-11-26",
+  "period_end": "2026-11-27",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
-      "groceries": 0.0,
+      "groceries": 7.96,
       "gas": 15.45,
       "parking": 24.569999999999997,
-      "subscriptions": 33.94
+      "subscriptions": 0.0
     },
     "variable_wants": {
-      "partying": 59.06999999999999,
-      "dining_out": 0.0,
+      "partying": 59.07,
+      "dining_out": 27.67,
       "slop": 0.0,
       "gym": 0.0,
-      "misc_other": 289.82
+      "misc_other": 296.09
     }
   },
   "categories_detail": {
@@ -25,7 +25,13 @@
       "rent": []
     },
     "variable_needs": {
-      "groceries": [],
+      "groceries": [
+        {
+          "name": "Walmart",
+          "amount": 7.96,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "gas": [
         {
           "name": "Sheetz",
@@ -65,13 +71,7 @@
           "account": "SoFi Checking"
         }
       ],
-      "subscriptions": [
-        {
-          "name": "APPLECOMBILL",
-          "amount": 33.94,
-          "account": "Blue Cash Preferred\u00ae"
-        }
-      ]
+      "subscriptions": []
     },
     "variable_wants": {
       "partying": [
@@ -81,17 +81,23 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "AplPay VINTAGE IRON",
-          "amount": 24.04,
+          "name": "AplPay VA ABC STORE",
+          "amount": 21.05,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "VA ABC STORE",
-          "amount": 21.05,
+          "name": "AplPay VINTAGE IRON",
+          "amount": 24.04,
           "account": "Blue Cash Preferred\u00ae"
         }
       ],
-      "dining_out": [],
+      "dining_out": [
+        {
+          "name": "AplPay TST* VIBRISSAWINCHESTER",
+          "amount": 27.67,
+          "account": "Blue Cash Preferred\u00ae"
+        }
+      ],
       "slop": [],
       "gym": [],
       "misc_other": [
@@ -111,13 +117,18 @@
           "account": "SoFi Checking"
         },
         {
-          "name": "AplPay MARATHON 7033RICHMOND",
-          "amount": 53.17,
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
+          "amount": 33.94,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "Chick-fil-A",
-          "amount": 17.25,
+          "name": "AplPay BRIGHT BOX* BWINCHESTER",
+          "amount": 13.54,
+          "account": "Blue Cash Preferred\u00ae"
+        },
+        {
+          "name": "AplPay T J MAXX",
+          "amount": 11.57,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
@@ -126,18 +137,13 @@
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "NICK HELMUT PRESENTS",
-          "amount": 13.54,
+          "name": "AplPay MARATHON 7033RICHMOND",
+          "amount": 53.17,
           "account": "Blue Cash Preferred\u00ae"
         },
         {
-          "name": "T.J.Maxx",
-          "amount": 11.57,
-          "account": "Blue Cash Preferred\u00ae"
-        },
-        {
-          "name": "VIBRISSA BEER - WINCHESTER",
-          "amount": 27.67,
+          "name": "Chick-fil-A",
+          "amount": 17.25,
           "account": "Blue Cash Preferred\u00ae"
         }
       ]
@@ -160,13 +166,18 @@
       "account": "SoFi Checking"
     },
     {
-      "name": "AplPay MARATHON 7033RICHMOND",
-      "amount": 53.17,
+      "name": "APPLE.COM/BILL INTERNET CHARGE",
+      "amount": 33.94,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "Chick-fil-A",
-      "amount": 17.25,
+      "name": "AplPay BRIGHT BOX* BWINCHESTER",
+      "amount": 13.54,
+      "account": "Blue Cash Preferred\u00ae"
+    },
+    {
+      "name": "AplPay T J MAXX",
+      "amount": 11.57,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
@@ -175,25 +186,20 @@
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "NICK HELMUT PRESENTS",
-      "amount": 13.54,
+      "name": "AplPay MARATHON 7033RICHMOND",
+      "amount": 53.17,
       "account": "Blue Cash Preferred\u00ae"
     },
     {
-      "name": "T.J.Maxx",
-      "amount": 11.57,
-      "account": "Blue Cash Preferred\u00ae"
-    },
-    {
-      "name": "VIBRISSA BEER - WINCHESTER",
-      "amount": 27.67,
+      "name": "Chick-fil-A",
+      "amount": 17.25,
       "account": "Blue Cash Preferred\u00ae"
     }
   ],
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 119.94,
+      "balance": 2346.78,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
@@ -260,15 +266,50 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 2058.1,
+      "balance": 2208.42,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
         {
-          "name": "APPLECOMBILL",
+          "name": "Walmart",
+          "amount": 7.96,
+          "category": "groceries"
+        },
+        {
+          "name": "APPLE.COM/BILL INTERNET CHARGE",
           "amount": 33.94,
-          "category": "subscriptions"
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay BRIGHT BOX* BWINCHESTER",
+          "amount": 13.54,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay T J MAXX",
+          "amount": 11.57,
+          "category": "misc_other"
+        },
+        {
+          "name": "AplPay TST* VIBRISSAWINCHESTER",
+          "amount": 27.67,
+          "category": "dining_out"
+        },
+        {
+          "name": "AplPay VA ABC STORE",
+          "amount": 21.05,
+          "category": "partying"
+        },
+        {
+          "name": "Hobby Lobby",
+          "amount": 27.1,
+          "category": "misc_other"
+        },
+        {
+          "name": "Sheetz",
+          "amount": 15.45,
+          "category": "gas"
         },
         {
           "name": "AplPay MARATHON 7033RICHMOND",
@@ -283,36 +324,6 @@
         {
           "name": "Chick-fil-A",
           "amount": 17.25,
-          "category": "misc_other"
-        },
-        {
-          "name": "Hobby Lobby",
-          "amount": 27.1,
-          "category": "misc_other"
-        },
-        {
-          "name": "NICK HELMUT PRESENTS",
-          "amount": 13.54,
-          "category": "misc_other"
-        },
-        {
-          "name": "Sheetz",
-          "amount": 15.45,
-          "category": "gas"
-        },
-        {
-          "name": "T.J.Maxx",
-          "amount": 11.57,
-          "category": "misc_other"
-        },
-        {
-          "name": "VA ABC STORE",
-          "amount": 21.05,
-          "category": "partying"
-        },
-        {
-          "name": "VIBRISSA BEER - WINCHESTER",
-          "amount": 27.67,
           "category": "misc_other"
         }
       ]
@@ -344,7 +355,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 119.94,
+    "actual_checking_balance": 2346.78,
     "actual_savings_balance": 151.82
   },
   "debt": {
@@ -364,7 +375,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 2058.1
+      "current_balance": 2208.42
     }
   },
   "plans": [
