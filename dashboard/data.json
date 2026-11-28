@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-11-27",
+  "last_updated": "2026-11-28",
   "period_start": "2026-11-25",
-  "period_end": "2026-11-27",
+  "period_end": "2026-11-28",
   "categories": {
     "fixed_costs": {
       "rent": 0.0
     },
     "variable_needs": {
-      "groceries": 7.96,
+      "groceries": 24.1,
       "gas": 15.45,
       "parking": 24.569999999999997,
       "subscriptions": 0.0
@@ -26,6 +26,11 @@
     },
     "variable_needs": {
       "groceries": [
+        {
+          "name": "Target",
+          "amount": 16.14,
+          "account": "Blue Cash Preferred\u00ae"
+        },
         {
           "name": "Walmart",
           "amount": 7.96,
@@ -199,11 +204,16 @@
   "accounts": [
     {
       "name": "SoFi Checking",
-      "balance": 2346.78,
+      "balance": 2332.8,
       "type": "depository",
       "subtype": "checking",
       "limit": null,
       "transactions": [
+        {
+          "name": "UBR* PENDING.UBER.COM",
+          "amount": 13.98,
+          "category": "partying"
+        },
         {
           "name": "BRIGHT BOX - NICK",
           "amount": 13.57,
@@ -235,11 +245,6 @@
           "category": "misc_other"
         },
         {
-          "name": "UBR* PENDING.UBER.COM",
-          "amount": 13.98,
-          "category": "partying"
-        },
-        {
           "name": "City of Richmond/Parkh",
           "amount": 4.45,
           "category": "parking"
@@ -266,11 +271,16 @@
     },
     {
       "name": "Blue Cash Preferred\u00ae",
-      "balance": 2208.42,
+      "balance": 1566.38,
       "type": "credit",
       "subtype": "credit card",
       "limit": 3000.0,
       "transactions": [
+        {
+          "name": "Target",
+          "amount": 16.14,
+          "category": "groceries"
+        },
         {
           "name": "Walmart",
           "amount": 7.96,
@@ -330,7 +340,7 @@
     },
     {
       "name": "Delta SkyMiles\u00ae Gold Card",
-      "balance": 3492.63,
+      "balance": 3192.63,
       "type": "credit",
       "subtype": "credit card",
       "limit": 10800.0,
@@ -355,7 +365,7 @@
   "goals": {
     "target_checking_balance": 1500.0,
     "target_savings_balance": 3000.0,
-    "actual_checking_balance": 2346.78,
+    "actual_checking_balance": 2332.8,
     "actual_savings_balance": 151.82
   },
   "debt": {
@@ -367,7 +377,7 @@
         "DELTA",
         "SKYMILES"
       ],
-      "current_balance": 3492.63
+      "current_balance": 3192.63
     },
     "blue_cash_preferred": {
       "pay_in_full": true,
@@ -375,7 +385,7 @@
       "account_keywords": [
         "BLUE CASH"
       ],
-      "current_balance": 2208.42
+      "current_balance": 1566.38
     }
   },
   "plans": [
